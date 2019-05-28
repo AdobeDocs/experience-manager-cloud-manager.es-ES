@@ -5,7 +5,7 @@ archtype: administrador
 user-guide-title: Ayuda de Experience Manager Cloud Manager
 index: n
 translation-type: tm+mt
-source-git-commit: 8031df1c1ce9d7fee4ef33de289c6952370b7589
+source-git-commit: 1129ea26c51670c51ff9f7b8e492fbaac654019f
 
 ---
 
@@ -50,5 +50,4 @@ source-git-commit: 8031df1c1ce9d7fee4ef33de289c6952370b7589
    + [Notas de la versión de 2018.7.0](release-notes-2018-7-0.md)
    + [Notas de la versión de 2018.6.0](release-notes-2018-6-0.md)
    + [Notas de la versión de 2018.5.0](release-notes-2018-5-0.md)
-+ [Recursos adicionales](additional-resources.md)
 
