@@ -1,22 +1,22 @@
 ---
 title: Reglas de calidad de código personalizado
 seo-title: Reglas de calidad de código personalizado
-description: Siga esta página para obtener información sobre las reglas de sonarquía personalizadas ejecutadas por Cloud Manager.
-seo-description: Siga esta página para obtener información sobre las reglas de sonarquía personalizadas ejecutadas por Adobe Experience Manager Cloud Manager.
+description: Siga esta página para obtener información sobre las reglas de calidad de código personalizadas ejecutadas por Cloud Manager.
+seo-description: Siga esta página para obtener información sobre las reglas de calidad de código personalizadas ejecutadas por Adobe Experience Manager Cloud Manager.
 uuid: a 7 feb 465-1982-46 be -9 e 57-e 67 b 59849579
 contentOwner: jsyal
 products: SG_ EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: d 2338 c 74-3278-49 e 6-a 186-6 ef 62362509 f
 translation-type: tm+mt
-source-git-commit: 1dfb065c09569f811e5a006d3d74825d3bd7cc8d
+source-git-commit: f8cea9d52ebb01d7f5291d4dfcd82011da8dacc2
 
 ---
 
 
 # Reglas de calidad de código personalizado {#custom-code-quality-rules}
 
-Esta página describe las reglas personalizadas sonarquía ejecutadas por Cloud Manager. Estas reglas aumentan las reglas de sonarquía estándar con las prácticas recomendadas de Ingeniería de AEM.
+Esta página describe las reglas de calidad de código personalizadas ejecutadas por Cloud Manager creadas en función de las prácticas recomendadas de Ingeniería de AEM.
 
 >[!NOTE]
 >
