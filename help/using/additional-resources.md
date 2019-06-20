@@ -6,26 +6,14 @@ seo-description: Siga esta página para obtener más información sobre Adobe AE
 uuid: 9 aa 90 a 99-f 049-422 e -9 e 06-b 00 b 843 ed 98 b
 products: SG_ EXPERIENCEMANAGER/CLOUDMANAGER
 translation-type: tm+mt
-source-git-commit: 7236e9d3bf5955509068757b34c81f0021db4270
+source-git-commit: e3e7fbd9c44c69e5bcdd92e4099c764aa6a99fe4
 
 ---
 
 
-# Recursos adicionales para [!UICONTROL Cloud Manager]{#additional-resources-to-cloud-manager}
+# Additional Resources to [!UICONTROL Cloud Manager]{#additional-resources-to-cloud-manager}
 
-## Introducción {#introduction}
+Primero debe ponerse en contacto con el ingeniero de éxito de los servicios gestionados de Adobe (CSE) para obtener soporte relacionado con Cloud Manager.
+Su CSE le indicará si pueden ayudarle con su problema o si necesita crear un ticket de asistencia técnica usando el Servicio de atención al cliente.
+You can access [Enterprise Support](https://helpx.adobe.com/contact/enterprise-support.ec.html) to create Support tickets. Consulte Acceso al portal de asistencia de AEM para obtener más información sobre la creación de tickets de soporte en el Servicio de atención al cliente.
 
-Esta sección resalta recursos útiles adicionales para [!UICONTROL Cloud Manager], parte de los servicios administrados de Adobe.
-
-## Liga de experiencias {#experience-league-resource}
-
-Siga a [Adobe Experience League](https://expleague.azureedge.net/labs/L722/index.html) para comenzar con las descripciones generales Lab y los tutoriales consolidados de Cloud Manager.
-
-## Serie de seminarios web {#webinar-series}
-
-Siga [los foros de Adobe](https://forums.adobe.com/message/11061595) para obtener una ruta de aprendizaje adicional creada para Cloud Manager como serie de seminarios Web.
-
-## Serie de vídeos Demo {#demo-videos}
-
-Siga [el uso de la canalización de CI/CD en Cloud Manager para AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cloud-manager-cicd-pipeline-feature-video-use.html)
-que incluye series de vídeo centradas en explorar, configurar y ejecutar la cartera CI/CD de Cloud Manager en situaciones de error y de éxito.
