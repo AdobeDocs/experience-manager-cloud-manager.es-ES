@@ -9,7 +9,7 @@ products: SG_ EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: 83299 ed 8-4 b 7 a -4 b 1 c-bd 56-1 bfc 7 e 7318 d 4
 translation-type: tm+mt
-source-git-commit: 4c1c6786db9b8972f9315bd2f12fc1752881492f
+source-git-commit: ea5bf33dc67c9ce174801f6d905abfc4a21886a2
 
 ---
 
@@ -33,6 +33,10 @@ Para cada una de estas puertas, existe una estructura de tres niveles para los p
 * **Crítico** : Son problemas identificados por la puerta que provocan un fallo inmediato en la canalización.
 * **Importante** : Son problemas identificados por la puerta que hacen que el canal introduzca un estado pausado. Un administrador de implementación, un administrador de proyectos o un propietario comercial pueden anular los problemas, en cuyo caso el canalizador continúa o puede aceptar los problemas, en cuyo caso la canalización se detiene con un error.
 * **Información** : Son problemas identificados por la computación que se proporcionan exclusivamente con fines informativos y no tienen impacto en la ejecución del canal.
+
+>[!NOTE]
+>
+>En el canal Solo calidad de código, no se pueden anular los errores importantes en la portada de Comprobación de calidad del código, ya que el paso de comprobación de calidad de código es el último paso en la canalización.
 
 ## Code Quality Testing {#code-quality-testing}
 
