@@ -8,16 +8,16 @@ contentOwner: jsyal
 products: SG_ EXPERIENCEMANAGER/CLOUDMANAGER
 discoiquuid: ebcc 91 a 5-be 9 e -4684-8146-d 88 f 4013 d 4 d 1
 translation-type: tm+mt
-source-git-commit: 47331787d45fe68144cb90c4b907560fe0079b3c
+source-git-commit: 2fda16bb4826171c993ec07c7ff3e38d1675b9f5
 
 ---
 
 
-# Evaulation Phase {#evaluation}
+# Evaluation Phase {#evaluation}
 
-Una vez que haga clic en Iniciar actualización, la primera fase del Asistente de actualización de producto es la fase de evaluación. En esta fase, puede evaluar la complejidad de la actualización con el detector de patrones accesible directamente desde el asistente. Al finalizar este paso, tendrá acceso al informe de evaluación.
+Once you click **[!UICONTROL Start Update]**, the first phase in Product Update Wizard is the Evaluation phase. En esta fase, puede evaluar la complejidad de la actualización con el detector de patrones accesible directamente desde el asistente. Al finalizar este paso, tendrá acceso al informe de evaluación.
 
-El informe generado permite comprobar la capacidad de actualización de Autor mediante la detección de patrones en uso que:
+El informe generado permite comprobar la capacidad de actualización mediante la detección de patrones que:
 
 * Infringe ciertas reglas y se realiza en áreas que se verán afectadas o sobrescribidas por la actualización.
 
@@ -33,11 +33,15 @@ Esto sirve como una evaluación del esfuerzo de desarrollo que está involucrand
 
 Siga los pasos a continuación para ejecutar el evaluador:
 
-1. Select [!UICONTROL Run evaluation] to run the pattern detector. El detector de patrones puede ejecutarse en cualquier entorno. Sin embargo, para aumentar la tasa de detección y evitar cualquier ralentización en las instancias críticas comerciales, el Administrador de nube lo ejecutará en el entorno de ensayo en la instancia de autor.
+1. Select **[!UICONTROL Run Evaluation]** to run the pattern detector. El detector de patrones puede ejecutarse en cualquier entorno. Sin embargo, para aumentar la tasa de detección y evitar cualquier ralentización en las instancias críticas comerciales, el Administrador de nube lo ejecutará en el entorno de ensayo en la instancia de autor.
+
+![](assets/Run-Evaluation.png)
 
 1. El asistente le informa el estado de la acción. You will notice **In progress** or **completed** as applicable when the evaluation report is being generated.
 
 Once the report is generated, you can select [!UICONTROL Download] to save a copy of the evaluation report.
+
+![](assets/Evaluation-1.png)
 
 >[!NOTE]
 >The other four phases succeeding **Evaluation** namely **Remediation**, **Execution**, **Validation**, and **Completion** are coming soon and are not available in the current release.
