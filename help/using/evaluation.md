@@ -8,7 +8,7 @@ contentOwner: jsyal
 products: SG_ EXPERIENCEMANAGER/CLOUDMANAGER
 discoiquuid: ebcc 91 a 5-be 9 e -4684-8146-d 88 f 4013 d 4 d 1
 translation-type: tm+mt
-source-git-commit: 2fda16bb4826171c993ec07c7ff3e38d1675b9f5
+source-git-commit: 2ac4a59f1af46cfb1cae8cda3c24e217620cec70
 
 ---
 
@@ -33,15 +33,22 @@ Esto sirve como una evaluación del esfuerzo de desarrollo que está involucrand
 
 Siga los pasos a continuación para ejecutar el evaluador:
 
-1. Select **[!UICONTROL Run Evaluation]** to run the pattern detector. El detector de patrones puede ejecutarse en cualquier entorno. Sin embargo, para aumentar la tasa de detección y evitar cualquier ralentización en las instancias críticas comerciales, el Administrador de nube lo ejecutará en el entorno de ensayo en la instancia de autor.
+1. Select **[!UICONTROL Run Evaluation]** to run the pattern detector.
 
-![](assets/Run-Evaluation.png)
+   >[!NOTE]
+   >El detector de patrones puede ejecutarse en cualquier entorno. Sin embargo, para aumentar la tasa de detección y evitar cualquier ralentización en las instancias críticas comerciales, el Administrador de nube lo ejecutará en el entorno de ensayo en la instancia de autor.
+
+   ![](assets/Run-Evaluation.png)
 
 1. El asistente le informa el estado de la acción. You will notice **In progress** or **completed** as applicable when the evaluation report is being generated.
 
-Once the report is generated, you can select [!UICONTROL Download] to save a copy of the evaluation report.
+   Once the report is generated, you can click on **[!UICONTROL Download report]** to save a copy of the evaluation report.
 
-![](assets/Evaluation-1.png)
+   ![](assets/Evaluation-1.png)
+
+   Asimismo, puede ver las notificaciones de impulsos actualizadas, ya que su estado se actualiza.
+
+   ![](assets/Evaluation-pulse-notification.png)
 
 >[!NOTE]
 >The other four phases succeeding **Evaluation** namely **Remediation**, **Execution**, **Validation**, and **Completion** are coming soon and are not available in the current release.
