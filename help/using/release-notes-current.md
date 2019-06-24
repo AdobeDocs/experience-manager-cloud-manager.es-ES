@@ -4,7 +4,7 @@ seo-title: Notas de la versión de AEM Cloud Manager para 2019.6.0
 description: Siga esta página para obtener información sobre la versión 2019.6.0 de Cloud Manager.
 seo-description: Siga esta página para obtener información sobre la versión 2019.6.0 de AEM Cloud Manager.
 translation-type: tm+mt
-source-git-commit: 9a1af88238a232c64d9f0229059c5001f314c736
+source-git-commit: ef6a0a0bdc22e37357304823d6f0a70d84917fa4
 
 ---
 
@@ -19,7 +19,7 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2019.6.0 is June 20, 201
 ## Novedades {#whats-new}
 
 * Nuevo asistente de actualización de producto para ayudar a los clientes a ejecutar correctamente una actualización de AEM. Refer to [Product Update Wizard](overview-productupdate-wizard.md) to learn more.
-* Reglas de calidad de código que examinan estructuras de contenido. Refer to [Custom Code Quality Rules](custom-code-quality-rules.md)for more information.
+* Reglas de calidad de código que examinan estructuras de contenido. Refer to [Custom Code Quality Rules](custom-code-quality-rules.md) for more information.
 * El tamaño máximo de una inserción de git ha aumentado a 1 GB.
 
 ## Bug Fixes {#bug-fixes}
@@ -29,4 +29,4 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2019.6.0 is June 20, 201
 ## Problemas conocidos {#known-issues}
 
 * La descarga de CSV de calidad del código no siempre se ordena según la gravedad.
-* False positives may be reported by the *ConfigAndInstallShouldOnlyContainOsgiNodes* rule if OSGi configurations are placed in a nested folder under a config folder.
+* False positives may be reported by the *ConfigAndInstallShouldOnlyContainOsgiNodes* rule if OSGi configurations are placed in a nested folder under a *config* folder.
