@@ -9,7 +9,7 @@ products: SG_ EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: 83299 ed 8-4 b 7 a -4 b 1 c-bd 56-1 bfc 7 e 7318 d 4
 translation-type: tm+mt
-source-git-commit: ea5bf33dc67c9ce174801f6d905abfc4a21886a2
+source-git-commit: e8db535b09f0b273de2d3908a85176f38d307c80
 
 ---
 
@@ -57,7 +57,7 @@ Como parte del canal, se escanea el código fuente para garantizar que las imple
 >
 >Refer to [Metric Definitions](https://docs.sonarqube.org/display/SONAR/Metric+Definitions) for more detailed definitions.
 
-You can download the list of rules here [code-quality-rules.xlsx](/help/using/assets/code-quality-rules.xlsx)
+You can download the list of rules here [code-quality-rules.xlsx](/help/using/assets/CodeQuality-Rules-new.xlsx)
 
 >[!NOTE]
 >
