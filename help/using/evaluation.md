@@ -8,21 +8,20 @@ contentOwner: jsyal
 products: SG_ EXPERIENCEMANAGER/CLOUDMANAGER
 discoiquuid: ebcc 91 a 5-be 9 e -4684-8146-d 88 f 4013 d 4 d 1
 translation-type: tm+mt
-source-git-commit: 2ac4a59f1af46cfb1cae8cda3c24e217620cec70
+source-git-commit: 9a1af88238a232c64d9f0229059c5001f314c736
 
 ---
 
 
 # Evaluation Phase {#evaluation}
 
-Once you click **[!UICONTROL Start Update]**, the first phase in Product Update Wizard is the Evaluation phase. En esta fase, puede evaluar la complejidad de la actualización con el detector de patrones accesible directamente desde el asistente. Al finalizar este paso, tendrá acceso al informe de evaluación.
+Once you click **[!UICONTROL Start Update]**, the first phase in Product Update wizard is the **[!UICONTROL Evaluation]** phase. En esta fase, puede evaluar la complejidad de la actualización con el detector de patrones accesible directamente desde el asistente. Al finalizar este paso, tendrá acceso al informe de evaluación.
 
 El informe generado permite comprobar la capacidad de actualización mediante la detección de patrones que:
 
 * Infringe ciertas reglas y se realiza en áreas que se verán afectadas o sobrescribidas por la actualización.
 
 * Utilice una función AEM 6. x o una API que no sea compatible con el nuevo AEM y que pueda pausar después de la actualización.
-
 
 Esto sirve como una evaluación del esfuerzo de desarrollo que está involucrando la actualización a Adobe Experience Manager (AEM) 6.5.
 
@@ -33,7 +32,7 @@ Esto sirve como una evaluación del esfuerzo de desarrollo que está involucrand
 
 Siga los pasos a continuación para ejecutar el evaluador:
 
-1. Select **[!UICONTROL Run Evaluation]** to run the pattern detector.
+1. Click on **[!UICONTROL Run Evaluation]** to run the pattern detector.
 
    >[!NOTE]
    >El detector de patrones puede ejecutarse en cualquier entorno. Sin embargo, para aumentar la tasa de detección y evitar cualquier ralentización en las instancias críticas comerciales, el Administrador de nube lo ejecutará en el entorno de ensayo en la instancia de autor.
