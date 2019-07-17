@@ -1,32 +1,30 @@
 ---
-title: Notas de la versión de 2019.6.0
-seo-title: Notas de la versión de AEM Cloud Manager para 2019.6.0
-description: Siga esta página para obtener información sobre la versión 2019.6.0 de Cloud Manager.
-seo-description: Siga esta página para obtener información sobre la versión 2019.6.0 de AEM Cloud Manager.
+title: Notas de la versión de 2019.7.0
+seo-title: Notas de la versión de AEM Cloud Manager para 2019.7.0
+description: Siga esta página para obtener información sobre la versión 2019.7.0 de Cloud Manager.
+seo-description: Siga esta página para obtener información sobre la versión 2019.7.0 de AEM Manager.
 translation-type: tm+mt
-source-git-commit: 7373f674b9804c83fad0871a74ef85280ea24962
+source-git-commit: 7cfa0cf66efd5891263bfcc83a5149daec5c8b67
 
 ---
 
-# Release Notes for 2019.6.0 {#release-notes-for}
+# Release Notes for 2019.7.0 {#release-notes-for}
 
-The [!UICONTROL Cloud Manager] 2019.6.0 Release adds new code quality rules and new Product Update wizard. Siga las secciones siguientes para obtener más detalles.
+The [!UICONTROL Cloud Manager] 2019.7.0 Release adds new code quality rules and new Product Update wizard. Siga las secciones siguientes para obtener más detalles.
 
 ## Release Date {#release-date}
 
-The Release Date for [!UICONTROL Cloud Manager] Version 2019.6.0 is June 20, 2019 .
+The Release Date for [!UICONTROL Cloud Manager] Version 2019.7.0 is July 18, 2019 .
 
 ## Novedades {#whats-new}
 
-* Nuevo asistente de actualización de producto para ayudar a los clientes a ejecutar correctamente una actualización de AEM. Refer to [Product Update Wizard](overview-productupdate-wizard.md) to learn more.
-* Reglas de calidad de código que examinan estructuras de contenido. Refer to [Custom Code Quality Rules](custom-code-quality-rules.md) for more information.
-* El tamaño máximo de una inserción de git ha aumentado a 1 GB.
+Ahora hay una notificación de Experience Cloud enviada al comienzo de una implementación de producción.
 
 ## Bug Fixes {#bug-fixes}
 
-* En algunos casos, no se pudieron iniciar los pipeline debido a un fallo previo.
-
-## Problemas conocidos {#known-issues}
-
-* La descarga de CSV de calidad del código no siempre se ordena según la gravedad.
-* False positives may be reported by the *ConfigAndInstallShouldOnlyContainOsgiNodes* rule if OSGi configurations are placed in a nested folder under a *config* folder.
+* En algunos casos, el Administrador de nube realizaría análisis de código estático en archivos Python y PHP.
+* Los paquetes que contenían filevault installhooks no se ejecutaban de forma consistente a través del paso de calidad del código.
+* En ciertas combinaciones, los problemas de calidad del código no se ordenaban de forma consistente.
+* Se han producido algunos problemas visuales en la página de ejecución del canal.
+* El paso de prueba de rendimiento podría fallar aleatoriamente parte de la hora debido a las restricciones de recursos de la infraestructura de nube subyacente.
+* Ciertas compilaciones de clientes fallaban debido a problemas de red.
