@@ -5,7 +5,7 @@ archtype: administrador
 user-guide-title: Ayuda de Experience Manager Cloud Manager
 index: n
 translation-type: tm+mt
-source-git-commit: 75563d3f4b2a27d943c052993c97d830338ead9c
+source-git-commit: 97a2b172d4513161fa729d9f3693569867c6ed3e
 
 ---
 
@@ -43,7 +43,8 @@ source-git-commit: 75563d3f4b2a27d943c052993c97d830338ead9c
    + [Información general](overview-productupdate-wizard.md)
    + [Evaluación](evaluation.md)
 + Notas de versión {#release-notes}
-   + [Notas de la versión actual (2019.6.0)](release-notes-current.md)
+   + [Notas de la versión actual (2019.7.0)](release-notes-current.md)
+   + [Notas de la versión de 2019.6.0](release-notes-2019-6-0.md)
    + [Notas de la versión de 2019.5.0](release-notes-2019-5-0.md)
    + [Notas de la versión de 2019.4.0](release-notes-2019-4-0.md)
    + [Notas de la versión de 2019.3.0](release-notes-2019-3-0.md)
