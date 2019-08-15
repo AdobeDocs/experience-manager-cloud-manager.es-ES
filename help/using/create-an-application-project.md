@@ -9,7 +9,7 @@ products: SG_ EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: introducción
 discoiquuid: 76 c 1 a 8 e 4-d 66 f -4 a 3 b -8 c 0 c-b 80 c 9 e 17700 e
 translation-type: tm+mt
-source-git-commit: 81f4e0b3b31a8be1f0620b70442b0268159e4ec0
+source-git-commit: 365cd6dfe65059c0c529f774bbcda946d47b0db5
 
 ---
 
@@ -270,6 +270,43 @@ Esta misma técnica se puede utilizar para instalar paquetes específicos de idi
 >[!NOTE]
 >
 >La instalación de un paquete de sistema de esta forma **no la** instala en el entorno de tiempo de ejecución utilizado para ejecutar Adobe Experience Manager. Si necesita un paquete de sistema instalado en el entorno de AEM, póngase en contacto con sus ingenieros de éxito de clientes (CSE).
+
+## Omitir paquetes de contenido {#skipping-content-packages}
+
+En Cloud Manager, las compilaciones pueden producir cualquier número de paquetes de contenido.
+Por diversos motivos, puede ser conveniente incluir un paquete de contenido pero no implementarlo. Esto puede resultar útil, por ejemplo, al crear paquetes de contenido utilizados solamente para pruebas o que se volverán a empaquetar con otro paso del proceso de generación, es decir, como subpaquete de otro paquete.
+
+Para dar cabida a estos escenarios, Cloud Manager buscará una propiedad denominada ***cloudmanagertarget*** en las propiedades de paquetes de contenido creados. Si esta propiedad se define como none, el paquete se omitirá y no se implementará. El mecanismo para configurar esta propiedad depende del modo en que la compilación esté produciendo el paquete de contenido. Por ejemplo, con filevault-maven-plugin, configure el complemento como éste:
+
+```xml
+        <plugin>
+            <groupId>org.apache.jackrabbit</groupId>
+            <artifactId>filevault-package-maven-plugin</artifactId>
+            <extensions>true</extensions>
+            <configuration>
+                <properties>
+                    <cloudManagerTarget>none</cloudManagerTarget>
+                </properties>
+        <!-- other configuration -->
+            </configuration>
+        </plugin>
+```
+
+Con content-package-maven-plugin, es similar:
+
+```xml
+        <plugin>
+            <groupId>com.day.jcr.vault</groupId>
+            <artifactId>content-package-maven-plugin</artifactId>
+            <extensions>true</extensions>
+            <configuration>
+                <properties>
+                    <cloudManagerTarget>none</cloudManagerTarget>
+                </properties>
+        <!-- other configuration -->
+            </configuration>
+        </plugin>
+```
 
 ## Desarrollar su código basado en optimizaciones {#develop-your-code-based-on-best-practices}
 
