@@ -9,7 +9,7 @@ products: SG_ EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: 832 a 4647-9 b 83-4 a 9 d-b 373-30 fe 16092 b 15
 translation-type: tm+mt
-source-git-commit: 1dfb065c09569f811e5a006d3d74825d3bd7cc8d
+source-git-commit: 548d18f251cf8c4c827d2208fec04cde235ce731
 
 ---
 
@@ -46,13 +46,13 @@ Una vez configurado **el entorno de la** prueba (repositorio, entorno y prueba),
    * Prueba de generación y unidades
    * Digitalización de código
    * Implementar en escenario
-   ![](assets/Stage_Testing.png)
+   ![](assets/Stage_Deployment1.png)
 
    La prueba **** de etapa incluye los pasos siguientes:
 
    * Prueba de seguridad
    * Prueba de rendimiento
-   ![](assets/Stage_Deployment.png)
+   ![](assets/Stage_Testing1.png)
 
    La implementación **** de producción implica los pasos siguientes:
 
@@ -60,6 +60,8 @@ Una vez configurado **el entorno de la** prueba (repositorio, entorno y prueba),
    * **Programar la implementación de producción** (si está habilitada)
    * **Compatibilidad con** CSE (si se habilita)
    * **Implementar en producción**
+   ![](assets/Prod_Deployment1.png)
+
    >[!NOTE]
    >
    >**La programación Programada de producción** está habilitada mientras se configura la canalización.
