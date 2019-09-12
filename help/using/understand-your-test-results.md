@@ -9,7 +9,7 @@ products: SG_ EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: 83299 ed 8-4 b 7 a -4 b 1 c-bd 56-1 bfc 7 e 7318 d 4
 translation-type: tm+mt
-source-git-commit: 548d18f251cf8c4c827d2208fec04cde235ce731
+source-git-commit: 26014cfabfee6226033ba2fc1167d8f5509e17c6
 
 ---
 
@@ -114,12 +114,12 @@ La siguiente tabla enumera las comprobaciones actuales:
 | Se han cambiado las contraseñas predeterminadas | Cuentas de inicio de sesión predet. | Crítico |
 | El servlet GET predeterminado está protegido frente a los ataques DOS. | Sling Get Servlet | Crítico |
 | Dispatcher está filtrando correctamente las solicitudes | Configuración de CQ Dispatcher | Crítico |
-| El Administrador de biblioteca HTML de Granite de Adobe se configura correctamente | Configuración del administrador de bibliotecas HTML de CQ | Importante |
 | El controlador de secuencias de comandos Sling Java se configura correctamente | Sling Java Script Handler | Crítico |
 | El controlador de secuencias de comandos Sling JSP se configura correctamente | Sling JSP Script Handler | Crítico |
-| El filtro de referentes Sling está configurado para evitar ataques CSRF | Filtro de referente de Sling | Importante |
 | SSL se configura correctamente | Configuración SSL | Crítico |
 | Obviamente no se encontraron políticas de perfil de usuario no seguras | Acceso predet. del perfil de usuario | Crítico |
+| El filtro de referentes Sling está configurado para evitar ataques CSRF | Filtro de referente de Sling | Importante |
+| El Administrador de biblioteca HTML de Granite de Adobe se configura correctamente | Configuración del administrador de bibliotecas HTML de CQ | Importante |
 | Se desactiva el paquete de compatibilidad CRXDE | Compatibilidad con CRXDE | Importante |
 | El servlet y el paquete Sling davex están desactivados | Comprobación de estado de DavEx | Importante |
 | El contenido de muestra no está instalado | Paquetes de contenido de ejemplo | Importante |
