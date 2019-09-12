@@ -10,7 +10,7 @@ topic-tags: using
 content-type: referencia
 discoiquuid: ba 6 c 763 a-b 78 a -439 e -8 c 40-367203 a 719 b 3
 translation-type: tm+mt
-source-git-commit: 1dfb065c09569f811e5a006d3d74825d3bd7cc8d
+source-git-commit: 862501f28f5104d0829a6d2d2ad5f5ce9f8ba341
 
 ---
 
@@ -161,9 +161,9 @@ Siga los pasos a continuación para configurar las invalidaciones de Dispatcher:
 
    >[!NOTE]
    >
-   >Además, una vez configurado el canal, podrá seguir editando los ajustes de la misma opción utilizando **el mosaico Configuración** de pipeline de la interfaz de [!UICONTROL Cloud Manager] usuario.
+   >Además, una vez configurado el canal, podrá seguir editando los ajustes de la misma opción utilizando **el mosaico Configuración** de Pipeline de producción de la [!UICONTROL Cloud Manager] interfaz de usuario.
 
-   ![](assets/Configuring_Pipeline-Settings.png)
+   ![](assets/Prod-Pipeline-Settings-Dialog.png)
 
 ## Canales de no producción y de calidad del código solo
 
