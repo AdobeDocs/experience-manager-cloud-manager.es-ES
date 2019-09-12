@@ -9,18 +9,18 @@ products: SG_ EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: 83299 ed 8-4 b 7 a -4 b 1 c-bd 56-1 bfc 7 e 7318 d 4
 translation-type: tm+mt
-source-git-commit: e8db535b09f0b273de2d3908a85176f38d307c80
+source-git-commit: 548d18f251cf8c4c827d2208fec04cde235ce731
 
 ---
 
 
-# Understand your Test Results {#understand-your-test-results}
+# Comprender los resultados de la prueba {#understand-your-test-results}
 
-During the **Pipeline** process, a number of metrics are captured and compared to either the Key Performance Indicators (KPIs) defined by the business owner, or standards set by Adobe Managed Services.
+Durante el proceso **de Pipeline** , se capturan varias métricas y se comparan con los indicadores de rendimiento clave (KPI) definidos por el propietario del negocio, o con estándares establecidos por Adobe Managed Services.
 
 Se registran usando el sistema de gating de tres niveles como se define en esta sección.
 
-## Three-Tier Gates while Running a Pipeline  {#three-tier-gates-while-running-a-pipeline}
+## Puertas de tres niveles al ejecutar un canal {#three-tier-gates-while-running-a-pipeline}
 
 Hay tres puertas en el canal:
 
@@ -38,16 +38,16 @@ Para cada una de estas puertas, existe una estructura de tres niveles para los p
 >
 >En el canal Solo calidad de código, no se pueden anular los errores importantes en la portada de Comprobación de calidad del código, ya que el paso de comprobación de calidad de código es el último paso en la canalización.
 
-## Code Quality Testing {#code-quality-testing}
+## Prueba de calidad del código {#code-quality-testing}
 
 Como parte del canal, se escanea el código fuente para garantizar que las implementaciones cumplan determinados criterios de calidad. Actualmente, esto se implementa mediante una combinación de sonarchbe y de un examen de nivel de paquete de contenido usando oakpal. Existen más de 100 reglas que combinan reglas genéricas Java y reglas específicas de AEM. En la tabla siguiente se resume la clasificación para los criterios de prueba:
 
 | Nombre | Definición | Categoría | Umbral de error |
 |--- |--- |--- |--- |
-| Clasificación de seguridad | A = 0 Vulnerability <br/>B = at least 1 Minor Vulnerability<br/> C = at least 1 Major Vulnerability <br/>D = at least 1 Critical Vulnerability <br/>E = at least 1 Blocker Vulnerability | Crítico | &lt; B |
-| Clasificación de fiabilidad | A = 0 Bug <br/>B = at least 1 Minor Bug <br/>C = at least 1 Major Bug <br/>D = at least 1 Critical Bug E = at least 1 Blocker Bug | Importante | &lt; C |
-| Clasificación de capacidad de permanencia | Outstanding remediation cost for code smells is: <br/><ul><li>&lt; = 5% del tiempo que ya se ha entrado en la aplicación, la clasificación es A. </li><li>entre 6 y 10% la clasificación es una B </li><li>entre 11 y 20% la clasificación es un C </li><li>entre 21 y 50% la clasificación es un D</li><li>todo lo que supere el 50% es un E</li></ul> | Importante | &lt; A |
-| Cobertura | A mix of unit test line coverage and condition coverage using this formula: <br/>`Coverage = (CT + CF + LC)/(2*B + EL)`  <br/>where: CT = conditions that have been evaluated to &#39;true&#39; at least once while running unit tests <br/>CF = conditions that have been evaluated to &#39;false&#39; at least once while running unit tests <br/>LC = covered lines = lines_to_cover - uncovered_lines <br/><br/> B = total number of conditions <br/>EL = total number of executable lines (lines_to_cover) | Importante | &lt; 50% |
+| Clasificación de seguridad | A = 0 Vulnerabilidad <br/>B = al menos 1 Vulnerabilidad menor<br/> C = por lo menos 1 Vulnerabilidad mayor <br/>D = al menos 1 Vulnerabilidad crítica <br/>E = al menos 1 Vulnerabilidad de bloqueo | Crítico | &lt; B |
+| Clasificación de fiabilidad | A = 0 Bug <br/>B = al menos 1 Error menor <br/>C = al menos 1 error grave <br/>D = al menos 1 error grave E = al menos 1 error de bloqueo | Importante | &lt; C |
+| Clasificación de capacidad de permanencia | El costo de remediación excepcional del código smells es: <br/><ul><li>&lt; = 5% del tiempo que ya se ha entrado en la aplicación, la clasificación es A. </li><li>entre 6 y 10% la clasificación es una B </li><li>entre 11 y 20% la clasificación es un C </li><li>entre 21 y 50% la clasificación es un D</li><li>todo lo que supere el 50% es un E</li></ul> | Importante | &lt; A |
+| Cobertura | Combinación de cobertura de línea de prueba unitaria y cobertura de condición mediante esta fórmula: <br/>`Coverage = (CT + CF + LC)/(2*B + EL)`<br/>donde: CT = condiciones que se han evaluado a'true'al menos una vez mientras se ejecutan las pruebas <br/>de unidad CF = condiciones que se han evaluado en'false'al menos una vez mientras se ejecutan pruebas <br/>unitarias LC = líneas cubiertas = líneas_ to_ cover - uncover_ lines <br/><br/> B = líneas_ to_ cover - <br/>uncover_ lines de líneas ejecutables (líneas_ a_ portada) | Importante | &lt; 50% |
 | Omitir pruebas de unidad | Número de pruebas de unidad omitidas. | Información | &gt; 1 |
 | Problemas abiertos | Tipos de problemas generales: vulnerabilidades, errores y huelgas de código | Información | &gt; 1 |
 | Líneas duplicadas | Número de líneas involucradas en bloques duplicados. <br/>Para que un bloque de código se considere como duplicado: <br/><ul><li>**Proyectos que no son Java:**</li><li>Debe haber al menos 100 tokens duplicados y duplicados.</li><li>Estos tokens deben propagarse al menos en: </li><li>30 líneas de código para COBOL </li><li>20 líneas de código para ABAP </li><li>10 líneas de código para otros idiomas</li><li>**Proyectos Java:**</li><li> Debe haber al menos 10 afirmaciones sucesivas y duplicadas independientemente del número de tokens y líneas.</li></ul> <br/>Las diferencias en la sangría y en los literales de cadena se ignoran al detectar duplicaciones. | Información | &gt; 1% |
@@ -55,19 +55,19 @@ Como parte del canal, se escanea el código fuente para garantizar que las imple
 
 >[!NOTE]
 >
->Refer to [Metric Definitions](https://docs.sonarqube.org/display/SONAR/Metric+Definitions) for more detailed definitions.
+>Consulte Definiciones [de métricas](https://docs.sonarqube.org/display/SONAR/Metric+Definitions) para obtener definiciones más detalladas.
 
-You can download the list of rules here [code-quality-rules.xlsx](/help/using/assets/CodeQuality-Rules-new.xlsx)
+Puede descargar la lista de reglas aquí [code-quality-rules.xlsx](/help/using/assets/CodeQuality-Rules-new.xlsx)
 
 >[!NOTE]
 >
->To learn more about the custom code quality rules executed by [!UICONTROL Cloud Manager], please refer to [Custom Code Quality Rules](custom-code-quality-rules.md).
+>Para obtener más información sobre las reglas de calidad de código personalizadas realizadas por [!UICONTROL Cloud Manager], consulte Reglas de calidad de código [personalizado](custom-code-quality-rules.md).
 
-### Dealing with False Positives {#dealing-with-false-positives}
+### Uso de falsos positivos {#dealing-with-false-positives}
 
-El proceso de digitalización de calidad no es perfecto y a veces identificará incorrectamente los problemas que no son problemáticos. Esto se denomina &quot;falso positivo&quot;.
+El proceso de digitalización de calidad no es perfecto y a veces identificará incorrectamente los problemas que no son problemáticos. Esto se denomina "falso positivo".
 
-In these cases, the source code can be annotated with the standard Java `@SuppressWarnings` annotation specifying the rule ID as the annotation attribute. Por ejemplo, un problema común es que la regla sonarchbe para detectar contraseñas codificadas puede ser agresiva sobre cómo se identifica una contraseña codificada.
+En estos casos, el código fuente se puede anotar con la anotación estándar Java `@SuppressWarnings` que especifica el ID de regla como atributo de anotación. Por ejemplo, un problema común es que la regla sonarchbe para detectar contraseñas codificadas puede ser agresiva sobre cómo se identifica una contraseña codificada.
 
 Para ver un ejemplo específico, este código sería bastante común en un proyecto de AEM que tiene código para conectarse a algún servicio externo:
 
@@ -95,13 +95,13 @@ A continuación, la solución correcta es eliminar la contraseña codificada.
 
 >[!NOTE]
 >
->While it is a best practice to make the `@SuppressWarnings` annotation as specific as possible, i.e. annotate only the specific statement or block causing the issue, it is possible to annotate at a class level.
+>Aunque es recomendable hacer la `@SuppressWarnings` anotación lo más específica posible, es decir, anotar únicamente la afirmación o bloque que causa el problema, es posible anotar en un nivel de clase.
 
-## Security Testing {#security-testing}
+## Prueba de seguridad {#security-testing}
 
 [!UICONTROL Cloud Manager] ejecuta las comprobaciones de seguridad ***de AEM existentes*** en el escenario después de la implementación e informa sobre el estado a través de la interfaz de usuario. Los resultados se agregan desde todas las instancias de AEM en el entorno.
 
-If any of the **Instances** report a failure for a given health check, the entire **Environment** fails that health check. Al igual que con la Calidad del código y la Prueba de rendimiento, estas comprobaciones de estado se organizan en categorías y se registran usando el sistema de gating de tres niveles. La única diferencia es que no hay umbral en el caso de las pruebas de seguridad. Todas las comprobaciones de estado simplemente pasan o dan error.
+Si alguna **de las instancias** indica un error en una comprobación de estado determinada, todo **el Entorno** falla en esa comprobación de estado. Al igual que con la Calidad del código y la Prueba de rendimiento, estas comprobaciones de estado se organizan en categorías y se registran usando el sistema de gating de tres niveles. La única diferencia es que no hay umbral en el caso de las pruebas de seguridad. Todas las comprobaciones de estado simplemente pasan o dan error.
 
 La siguiente tabla enumera las comprobaciones actuales:
 
@@ -114,10 +114,10 @@ La siguiente tabla enumera las comprobaciones actuales:
 | Se han cambiado las contraseñas predeterminadas | Cuentas de inicio de sesión predet. | Crítico |
 | El servlet GET predeterminado está protegido frente a los ataques DOS. | Sling Get Servlet | Crítico |
 | Dispatcher está filtrando correctamente las solicitudes | Configuración de CQ Dispatcher | Crítico |
-| El Administrador de biblioteca HTML de Granite de Adobe se configura correctamente | Configuración del administrador de bibliotecas HTML de CQ | Crítico |
+| El Administrador de biblioteca HTML de Granite de Adobe se configura correctamente | Configuración del administrador de bibliotecas HTML de CQ | Importante |
 | El controlador de secuencias de comandos Sling Java se configura correctamente | Sling Java Script Handler | Crítico |
 | El controlador de secuencias de comandos Sling JSP se configura correctamente | Sling JSP Script Handler | Crítico |
-| El filtro de referentes Sling está configurado para evitar ataques CSRF | Filtro de referente de Sling | Crítico |
+| El filtro de referentes Sling está configurado para evitar ataques CSRF | Filtro de referente de Sling | Importante |
 | SSL se configura correctamente | Configuración SSL | Crítico |
 | Obviamente no se encontraron políticas de perfil de usuario no seguras | Acceso predet. del perfil de usuario | Crítico |
 | Se desactiva el paquete de compatibilidad CRXDE | Compatibilidad con CRXDE | Importante |
@@ -126,19 +126,19 @@ La siguiente tabla enumera las comprobaciones actuales:
 | El filtro de solicitud WCM y el filtro de depuración WCM están desactivados | Configuración de filtros WCM | Importante |
 | El servlet y el paquete Sling webdav se configuran correctamente | Comprobación de estado de WebDAV | Importante |
 | El servidor web está configurado para evitar el rastreo de clics | Configuración de servidor web | Importante |
-| Replicación no está usando el usuario&#39;administrador &#39; | Replicación y usuarios de transporte | Información |
+| Replicación no está usando el usuario'administrador ' | Replicación y usuarios de transporte | Información |
 
-## Performance Testing {#performance-testing}
+## Prueba de rendimiento {#performance-testing}
 
 *Las pruebas de rendimiento* se [!UICONTROL Cloud Manager] implementan con una prueba de 30 minutos.
 
 Durante la configuración de la canalización, el administrador de implementación puede decidir cuánto tráfico dirigir a cada bloque.
 
-You can learn more about bucket controls, from [Configure your CI/CD Pipeline](configuring-pipeline.md).
+Puede obtener más información sobre los controles de bucket, desde [Configurar su flujo de PC/CD](configuring-pipeline.md).
 
 >[!NOTE]
 >
->To setup your program and define your KPIs, see [Setup your Program](setting-up-program.md).
+>Para configurar el programa y definir los KPI, consulte [Configuración del programa](setting-up-program.md).
 
 En la tabla siguiente se resume la matriz de prueba de rendimiento utilizando el sistema de gating de tres niveles:
 
@@ -154,13 +154,13 @@ En la tabla siguiente se resume la matriz de prueba de rendimiento utilizando el
 | Uso de ancho de banda de la red | Importante | &gt;= 90% |
 | Solicitudes por minuto | Información | &lt; 6000 |
 
-### Performance Testing Results Graphs {#performance-testing-results-graphs}
+### Gráficos de resultados de prueba de rendimiento {#performance-testing-results-graphs}
 
 Se han agregado nuevos gráficos y opciones de descarga al cuadro de diálogo Resultados de la prueba de rendimiento.
 
 Cuando abra el cuadro de diálogo Prueba de rendimiento, los paneles de métricas se pueden expandir para mostrar un gráfico, proporcionar un vínculo a una descarga o ambos.
 
-For [!UICONTROL Cloud Manager] Release 2018.7.0, this functionality is available for the following metrics:
+En [!UICONTROL Cloud Manager] la versión 2018.7.0, esta funcionalidad está disponible para las siguientes métricas:
 
 * **Uso de CPU**
    * Gráfico de uso de CPU durante el periodo de prueba.
