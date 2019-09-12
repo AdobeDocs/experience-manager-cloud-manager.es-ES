@@ -4,7 +4,7 @@ seo-title: Monitorear sus entornos
 description: nulo
 seo-description: Siga esta página para obtener información sobre la supervisión del sistema en el Administrador de nube que se realiza observando las instancias individuales dentro de un entorno y rastreando una variedad de métricas para cada instancia.
 translation-type: tm+mt
-source-git-commit: 1dfb065c09569f811e5a006d3d74825d3bd7cc8d
+source-git-commit: 548d18f251cf8c4c827d2208fec04cde235ce731
 
 ---
 
@@ -61,12 +61,12 @@ La navegación a la izquierda mostrará las métricas disponibles dentro de la c
 
 Un gráfico individual mostrará el estado y un gráfico de los datos a lo largo del tiempo junto con los umbrales. Si se muestran varias instancias, los datos de cada instancia estarán en una serie separada.
 
-![](assets/System-Monitoring3.png)
+![](assets/Monitoring_Graphs1.png)
 
 La serie individual puede ocultarse en un gráfico haciendo clic en la serie de la leyenda.
 Por ejemplo, si hace clic en la serie de umbral de advertencia, solo verá el umbral crítico.
 
-![](assets/System_Monitoring4.png)
+![](assets/Monitoring_Graphs2.png)
 
 ### Definiciones de métricas {#metric-definitions}
 
@@ -85,7 +85,7 @@ Por ejemplo, si hace clic en la serie de umbral de advertencia, solo verá el um
 
 **Almacenamiento**
 
-* Espacio en disco: Espacio en disco utilizado (en Megabytes) para cada punto de montaje del host. Existen diferentes métricas para cada punto de montaje. Como mínimo, verá métricas para &quot;/&quot; y &quot;/&quot;, pero las métricas de punto de montaje adicionales pueden estar disponibles en función de la configuración de instancia específica.
+* Espacio en disco: Espacio en disco utilizado (en Megabytes) para cada punto de montaje del host. Existen diferentes métricas para cada punto de montaje. Como mínimo, verá métricas para "/" y "/", pero las métricas de punto de montaje adicionales pueden estar disponibles en función de la configuración de instancia específica.
 * Tamaño de carpeta: Tienda de segmentos de AEM: Espacio en disco utilizado (en Gigabytes) para la tienda de segmentos de AEM.
 
 **Aplicación**
