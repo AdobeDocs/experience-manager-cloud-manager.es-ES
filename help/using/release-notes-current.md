@@ -4,17 +4,17 @@ seo-title: Notas de la versión de AEM Cloud Manager para 2019.9.0
 description: Siga esta página para obtener información sobre la versión 2019.9.0 de Cloud Manager.
 seo-description: Siga esta página para obtener información sobre la versión 2019.9.0 de AEM Manager.
 translation-type: tm+mt
-source-git-commit: 862501f28f5104d0829a6d2d2ad5f5ce9f8ba341
+source-git-commit: 26014cfabfee6226033ba2fc1167d8f5509e17c6
 
 ---
 
 # Notas de la versión de 2019.9.0 {#release-notes-for}
 
-La versión [!UICONTROL Cloud Manager] 2019.9.0 añade actualizaciones a la comprobación de estado del filtro Sling Referrer y a los gráficos de monitoreo.
+La versión [!UICONTROL Cloud Manager] 2019.9.0 actualiza los criterios de prueba de seguridad, agrega gráficos de monitoreo descargables y soluciona algunos problemas de uso informados por los clientes.
 
 ## Fecha de versión {#release-date}
 
-La fecha de versión de [!UICONTROL Cloud Manager] la versión 2019.9.0 es el 11 de septiembre de 2019.
+La fecha de versión de [!UICONTROL Cloud Manager] la versión 2019.9.0 es el 12 de septiembre de 2019.
 
 ## Novedades {#whats-new}
 
@@ -38,4 +38,4 @@ La fecha de versión de [!UICONTROL Cloud Manager] la versión 2019.9.0 es el 11
 
 ## Problemas conocidos {#known-issues}
 
-La descarga de gráficos de monitoreo no está disponible en Safari.
+* La descarga de gráficos de monitoreo no está disponible en Safari.
