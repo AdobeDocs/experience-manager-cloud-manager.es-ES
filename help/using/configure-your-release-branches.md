@@ -1,26 +1,26 @@
 ---
-title: Configurar las ramas de lanzamiento
-seo-title: Configurar las ramas de lanzamiento
-description: Configure las ramas de lanzamiento en Git para AEM Cloud Manager
-seo-description: Siga esta página para obtener información sobre cómo configurar las ramas de lanzamiento en git.
-uuid: d 12 a 8 b 85-b 7 fd -4 b 55-a 05 a-a 0 f 874 ce 598 c
+title: Configurar las ramas de versiones
+seo-title: Configurar las ramas de versiones
+description: Configuración de las ramas de la versión en Git para AEM Cloud Manager
+seo-description: Siga esta página para obtener información sobre cómo configurar las ramas de versiones en git.
+uuid: d12a8b85-b7fd-4b55-a05a-a0f874ce598c
 contentOwner: jsyal
-products: SG_ EXPERIENCEMANAGER/CLOUDMANAGER
+products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: introducción
-discoiquuid: 53807 ea 6-9464-429 d -9322-85 c 9 f 405 dff 6
+discoiquuid: 53807ea6-9464-429d-9322-85c9f405dff6
 translation-type: tm+mt
 source-git-commit: 9c0df236c1e800802d62dea09996bb8e1e7033f7
 
 ---
 
 
-# Configurar las ramas de lanzamiento {#configure-your-release-branches}
+# Configurar las ramas de versiones {#configure-your-release-branches}
 
-## Configuración de su primera rama en Git {#setting-up-your-first-branch-in-git}
+## Configuración de la primera rama en Git {#setting-up-your-first-branch-in-git}
 
-Un repositorio **de Git único y vacío se aprovisiona** para cada programa introducido en el Administrador de nube. Este repositorio puede contener tantas (o pocas) ramas como sigue el proceso de desarrollo, pero debe haber al menos una rama utilizada por el canal CI/CD para implementar el código de aplicación en el escenario y en la producción. La mejor opción es utilizar `master` como nombre de esta rama. Es cómodo, es el comportamiento predeterminado de los clientes Git al configurar nuevos proyectos.
+Se aprovisiona un único repositorio **** Git, inicialmente vacío, para cada programa incorporado en Cloud Manager. Este repositorio puede contener tantas ramas (o tan pocas) como sigue el proceso de desarrollo, pero debe haber al menos una rama que utilice el flujo CI/CD para implementar el código de aplicación en fase y producción. Se recomienda usar `master` como nombre de esta rama. Convenientemente, este es el comportamiento predeterminado de los clientes Git al configurar nuevos proyectos.
 
-Por ejemplo, al configurar un proyecto nuevo, ejecutará un conjunto de comandos como éste:
+Por ejemplo, al configurar un nuevo proyecto, se ejecutará un conjunto de comandos como este:
 
 ```shell
 $ git init
@@ -52,11 +52,11 @@ $ git commit -m "initial commit"
 
 >[!NOTE]
 >
->No es necesario utilizar el cliente de la línea de comandos. Hay una variedad de clientes gráficos gráficos disponibles como aplicaciones independientes o como parte de un entorno de desarrollo integrado (IDE) como Eclipse o intellij. Siempre y cuando la aplicación cliente admita Git con HTTPS, debería ser compatible [!UICONTROL Cloud Manager]con.
+>No es un requisito utilizar el cliente de línea de comandos. Hay una variedad de clientes Git gráficos disponibles como aplicaciones independientes o como parte de un entorno de desarrollo integrado (IDE) como Eclipse o IntelliJ. Siempre que la aplicación cliente admita el Git utilizando HTTPS, debe ser compatible con [!UICONTROL Cloud Manager].
 
-## Insertar su primera rama {#pushing-your-first-branch}
+## Inserción de la primera rama {#pushing-your-first-branch}
 
-Una vez que haya anidado al menos una revisión, puede agregar [!UICONTROL Cloud Manager] el repositorio como **remoto** y, a continuación, insertarlo en:
+Una vez que haya realizado al menos una revisión, puede agregar el [!UICONTROL Cloud Manager] repositorio como **remoto** y, a continuación, insertar los compromisos en él:
 
 ```shell
 $ git remote add adobe <url>
@@ -72,12 +72,12 @@ To <url>
 
 >[!NOTE]
 >
->La dirección URL específica, junto con sus credenciales, le será proporcionada por su ingeniero de éxito de cliente durante [!UICONTROL Cloud Manager] la integración.
+>La dirección URL específica, junto con sus credenciales, la proporcionará el departamento de ingeniería de éxito del cliente durante la [!UICONTROL Cloud Manager] integración.
 
 ## Ramas adicionales {#additional-branches}
 
-Una `master` sola rama puede bastar para proyectos muy sencillos pero en la mayoría de los casos se requiere una estrategia de ramificación más compleja. Muchos clientes siguen un proceso donde las actividades de desarrollo diarias se realizan en una rama llamada `develop` y la rama de desarrollo se combina en `master` la rama cuando es hora de una implementación.
+Una sola `master` rama puede bastar para proyectos muy sencillos, pero en la mayoría de los casos será necesaria una estrategia de ramificación más compleja. Muchos clientes siguen un proceso en el que las actividades de desarrollo cotidianas se realizan en una rama llamada `develop` y la rama de desarrollo se combina en la `master` rama cuando es hora de una implementación.
 
 >[!NOTE]
 >
->Para ver los comandos de git comunes, consulte la Hoja de consejos [de Git](https://github.github.com/training-kit/downloads/github-git-cheat-sheet).
+>Para ver los comandos de git comunes, consulte la [hoja](https://github.github.com/training-kit/downloads/github-git-cheat-sheet)de Git.
