@@ -1,51 +1,51 @@
 ---
 title: Evaluación
 seo-title: Evaluación
-description: 'Esta página sirve como punto de partida para la fase de evaluación del aprendizaje en el Asistente de actualizaciones de productos. '
-seo-description: Esta página sirve como punto de partida para la fase de evaluación del aprendizaje en el Asistente de actualizaciones de productos.
-uuid: 62 d 68 e 79-c 2 ba -4 d 8 b-ba 7 d -33709014 d 5 b 6
+description: 'Esta página sirve como punto de partida para aprender la fase de evaluación en el Asistente para actualización de productos. '
+seo-description: Esta página sirve como punto de partida para aprender la fase de evaluación en el Asistente para actualización de productos.
+uuid: 62d68e79-c2ba-4d8b-ba7d-33709014d5b6
 contentOwner: jsyal
-products: SG_ EXPERIENCEMANAGER/CLOUDMANAGER
-discoiquuid: ebcc 91 a 5-be 9 e -4684-8146-d 88 f 4013 d 4 d 1
+products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
+discoiquuid: ebcc91a5-be9e-4684-8146-d88f4013d4d1
 translation-type: tm+mt
 source-git-commit: 9e33b90818c686f0b7aacaf0955c3f2eba05488f
 
 ---
 
 
-# Evaluation Phase {#evaluation}
+# Fase de evaluación {#evaluation}
 
-The first phase in the Product Update wizard is **[!UICONTROL Evaluation]** phase.
-Aquí puede evaluar la complejidad de la actualización con el detector de patrones accesible directamente desde el asistente. Al finalizar este paso, tendrá acceso al informe de evaluación.
+La primera fase del asistente de actualización de productos es **[!UICONTROL Evaluation]** fase.
+Aquí puede evaluar la complejidad de la actualización con el detector de patrones al que puede acceder directamente desde el asistente. Al final de este paso, tendrá acceso al informe de evaluación.
 
-El informe generado permite comprobar la capacidad de actualización mediante la detección de patrones que:
+El informe generado le permite comprobar la actualizabilidad de la instancia de autor detectando patrones que:
 
-* Infringe ciertas reglas y se realiza en áreas que se verán afectadas o sobrescribidas por la actualización.
+* Violar ciertas reglas y se realizan en áreas que se verán afectadas o sobrescritas por la actualización.
 
-* Utilice una función AEM 6. x o una API que no sea compatible con el nuevo AEM y que pueda pausar después de la actualización.
+* Utilice una función de AEM 6.x o una API que no sea compatible con AEM y que pueda romperse tras la actualización.
 
-Esto sirve como una evaluación del esfuerzo de desarrollo que está involucrando la actualización a Adobe Experience Manager (AEM) 6.5.
+Esto sirve como evaluación del esfuerzo de desarrollo que implica la actualización a Adobe Experience Manager (AEM) 6.5.
 
 >[!NOTE]
->To learn more about pattern detector, refer to [Assessing the Upgrade Complexity with the Pattern Detector](https://helpx.adobe.com/experience-manager/6-4/sites/deploying/using/pattern-detector.html)
+>Para obtener más información sobre el detector de patrones, consulte [Evaluación de la complejidad de la actualización con el detector de patrones](https://helpx.adobe.com/experience-manager/6-4/sites/deploying/using/pattern-detector.html)
 
-## Running the Evaluator {#running-evaluator}
+## Ejecución del evaluador {#running-evaluator}
 
-Siga los pasos a continuación para generar informes de evaluación:
+Siga los pasos a continuación para generar un informe de evaluación:
 
-1. Click on **[!UICONTROL Run Evaluation]**.
+1. Haga clic en **[!UICONTROL Run Evaluation]**.
 
    >[!NOTE]
-   >El detector de patrones puede ejecutarse en cualquier entorno. Sin embargo, para aumentar la tasa de detección y evitar cualquier ralentización en las instancias críticas comerciales, el Administrador de nube lo ejecutará en el entorno de ensayo en la instancia de autor.
+   >El detector de patrones puede ejecutarse en cualquier entorno. Sin embargo, para aumentar la tasa de detección y evitar cualquier desaceleración en instancias críticas para el negocio, Cloud Manager la ejecutará en el entorno de ensayo en la instancia de creación.
 
    ![](assets/Run-Evaluation.png)
 
-1. El asistente le informa del estado de la acción. You will notice **In progress** or **completed** as applicable when the evaluation report is being generated.
+1. El asistente le informa del estado de la acción. Cuando se genere el informe de evaluación, observará **En curso** o **completado** según corresponda.
 
-   Once the report is generated, you can click on **[!UICONTROL Download report]** to save a copy.
+   Una vez generado el informe, puede hacer clic en **[!UICONTROL Download report]** para guardar una copia.
 
    ![](assets/Evaluation-1.png)
 
 
 >[!NOTE]
->The current release of Product Update wizard in Cloud Manager supports the **Evaluation** phase only. The other four phases namely **Remediation**, **Execution**, **Validation**, and **Completion** are coming soon.
+>La versión actual del asistente de actualización de productos en Cloud Manager solo admite la fase de **evaluación** . Las otras cuatro fases, a saber, **Remediación**, **Ejecución**, **Validación** y **Finalización** , están llegando pronto.
