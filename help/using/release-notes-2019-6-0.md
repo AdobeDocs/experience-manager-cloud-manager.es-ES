@@ -8,25 +8,25 @@ source-git-commit: 7cfa0cf66efd5891263bfcc83a5149daec5c8b67
 
 ---
 
-# Release Notes for 2019.6.0 {#release-notes-for}
+# Notas de la versión de 2019.6.0 {#release-notes-for}
 
-The [!UICONTROL Cloud Manager] 2019.6.0 Release adds new code quality rules and new Product Update wizard. Siga las secciones siguientes para obtener más detalles.
+La versión [!UICONTROL Cloud Manager] 2019.6.0 añade nuevas reglas de calidad de código y un nuevo asistente para la actualización de productos. Siga las secciones a continuación para obtener más detalles.
 
-## Release Date {#release-date}
+## Fecha de lanzamiento {#release-date}
 
-The Release Date for [!UICONTROL Cloud Manager] Version 2019.6.0 is June 20, 2019 .
+La fecha de versión de [!UICONTROL Cloud Manager] la versión 2019.6.0 es el 20 de junio de 2019.
 
 ## Novedades {#whats-new}
 
-* Nuevo asistente de actualización de producto para ayudar a los clientes a ejecutar correctamente una actualización de AEM. Refer to [Product Update Wizard](overview-productupdate-wizard.md) to learn more.
-* Reglas de calidad de código que examinan estructuras de contenido. Refer to [Custom Code Quality Rules](custom-code-quality-rules.md) for more information.
-* El tamaño máximo de una inserción de git ha aumentado a 1 GB.
+* Nuevo asistente de actualización de producto para ayudar a los clientes a ejecutar correctamente una actualización de AEM. Para obtener más información, consulte [el Asistente](overview-productupdate-wizard.md) de actualización del producto.
+* Reglas de calidad de código que examinan las estructuras de contenido. Consulte Reglas [de calidad de código](custom-code-quality-rules.md) personalizado para obtener más información.
+* El tamaño máximo de una inserción de git se ha aumentado a 1 GB.
 
-## Bug Fixes {#bug-fixes}
+## Corrección de errores {#bug-fixes}
 
-* En algunos casos, no se pudieron iniciar los pipeline debido a un fallo previo.
+* En algunos casos, los oleoductos no pudieron iniciarse debido a un fallo previo.
 
 ## Problemas conocidos {#known-issues}
 
-* La descarga de CSV de calidad del código no siempre se ordena según la gravedad.
-* False positives may be reported by the *ConfigAndInstallShouldOnlyContainOsgiNodes* rule if OSGi configurations are placed in a nested folder under a *config* folder.
+* La descarga de CSV de calidad de código no siempre se ordena según la gravedad.
+* La regla *ConfigAndInstallMustOnlyContainOsgiNodes* puede informar de falsos positivos si las configuraciones de OSGi se colocan en una carpeta anidada bajo una carpeta *config* .
