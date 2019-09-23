@@ -1,12 +1,12 @@
 ---
-title: Asistente para actualizaciones de productos
-seo-title: Asistente para actualizaciones de productos
-description: 'Esta página sirve como punto de partida para el aprendizaje del Asistente de actualización de productos. '
-seo-description: 'Esta página sirve como punto de partida para el aprendizaje del Asistente de actualización de productos. '
-uuid: 62 d 68 e 79-c 2 ba -4 d 8 b-ba 7 d -33709014 d 5 b 6
+title: Asistente para la actualización de productos
+seo-title: Asistente para la actualización de productos
+description: 'Esta página sirve como punto de partida para aprender el Asistente para actualización de productos. '
+seo-description: 'Esta página sirve como punto de partida para aprender el Asistente para actualización de productos. '
+uuid: 62d68e79-c2ba-4d8b-ba7d-33709014d5b6
 contentOwner: jsyal
-products: SG_ EXPERIENCEMANAGER/CLOUDMANAGER
-discoiquuid: ebcc 91 a 5-be 9 e -4684-8146-d 88 f 4013 d 4 d 1
+products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
+discoiquuid: ebcc91a5-be9e-4684-8146-d88f4013d4d1
 translation-type: tm+mt
 source-git-commit: 7769911253c149f4b1f7d9dec5d94888ccdbcb59
 
@@ -15,9 +15,9 @@ source-git-commit: 7769911253c149f4b1f7d9dec5d94888ccdbcb59
 
 # Información general {#overview-product-update-wizard}
 
-El asistente de actualizaciones de productos es una experiencia guiada paso a paso para clientes de Cloud Manager que están actualizando a Adobe Experience Manager (AEM) más reciente 6.5. Mejora el proceso completo, garantiza el cumplimiento de las optimizaciones de AEM mediante el marco de procesamiento/CD de Cloud Manager y las pruebas automatizadas integradas.
+El asistente de actualización de productos es una experiencia guiada y paso a paso para los clientes de Cloud Manager que están actualizando a la versión más reciente de Adobe Experience Manager (AEM) 6.5. Simplifica el proceso completo, garantiza la adhesión a las prácticas recomendadas de AEM mediante el marco CI/CD de Cloud Manager y las pruebas automatizadas integradas.
 
-El asistente incluye cinco fases que guian al usuario durante una actualización de producto de AEM:
+El asistente incluye cinco fases que guían al usuario durante una actualización de producto de AEM:
 
 * **Evaluación**
 * **Remediación**
@@ -26,15 +26,15 @@ El asistente incluye cinco fases que guian al usuario durante una actualización
 * **Finalización**
 
 
-## Using Product Update Wizard {#using-product-update-wizard}
+## Uso del Asistente para actualización de productos {#using-product-update-wizard}
 
 >[!NOTE]
->Los clientes conectados a Cloud Manager y elegibles para actualizar a AEM 6.5 podrán aprovechar el asistente de actualización de productos. Póngase en contacto con el ingeniero de éxito de clientes (CSE) para obtener más detalles.
+>Los clientes incorporados a Cloud Manager y elegibles para actualizar a AEM 6.5 podrán aprovechar el asistente de actualización de productos. Póngase en contacto con el ingeniero de éxito del cliente (CSE) para obtener más información.
 
-1. Recibirá una notificación de pulse mediante Cloud Manager para informarle de que AEM 6.5 está disponible para su programa.
+1. Recibirá una notificación de impulsos a través de Cloud Manager informándole de que AEM 6.5 está disponible para su programa.
 
-1. An **[!UICONTROL AEM 6.5 Update]** card displays on the overview screen of [!UICONTROL Cloud Manager]. Esta tarjeta ayudará a rastrear qué fase del proceso de actualización se encuentra actualmente y le informará sobre cuál es el paso siguiente que se debe realizar. Select **[!UICONTROL Start Update]** to launch the wizard.
+1. Aparece una **[!UICONTROL AEM 6.5 Update]** tarjeta en la pantalla de información general de [!UICONTROL Cloud Manager]. Esta tarjeta le ayudará a realizar un seguimiento de la fase del proceso de actualización en la que se encuentra actualmente y le informará sobre el próximo paso que debe realizar. Seleccione **[!UICONTROL Start Update]** para iniciar el asistente.
 
    ![](assets/Start-Update.png)
 
-   The wizard now displays the first phase of **[!UICONTROL AEM 6.5 Update]** process as seen in the [Evaluation Phase](evaluation.md).
+   El asistente ahora muestra la primera fase del **[!UICONTROL AEM 6.5 Update]** proceso como se ve en la fase [de](evaluation.md)evaluación.
