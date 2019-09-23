@@ -1,36 +1,36 @@
 ---
-title: Explicación de conceptos antes de utilizar el Administrador de nube
-seo-title: Explicación de conceptos antes de utilizar el Administrador de nube
+title: Conceptos antes de utilizar Cloud Manager
+seo-title: Conceptos antes de utilizar Cloud Manager
 description: nulo
 seo-description: nulo
-page-status-flag: no activado nunca
-uuid: 55 cc 551 a-e 812-4102-96 c 8-13 d 2 cdd 79 c 84
+page-status-flag: nunca activado
+uuid: 55cc551a-e812-4102-96c8-13d2cdd79c84
 contentOwner: jsyal
-discoiquuid: c 3 fd 3 f 4 e -0 b 57-4377-b 923-a 440 c 74773 d 8
+discoiquuid: c3fd3f4e-0b57-4377-b923-a440c74773d8
 preview: verdadero
 translation-type: tm+mt
-source-git-commit: 1dfb065c09569f811e5a006d3d74825d3bd7cc8d
+source-git-commit: f135526c6a47f1502395e6d53f9e286c0f935da5
 
 ---
 
 
-# Explicación de conceptos antes de utilizar el Administrador de nube{#understanding-concepts-before-using-cloud-manager}
+# Conceptos antes de utilizar Cloud Manager{#understanding-concepts-before-using-cloud-manager}
 
-Esta sección proporciona conceptos y terminologías que es bueno saber antes de trabajar en Cloud Manager y abarca los siguientes temas:
+En esta sección se proporcionan conceptos y terminologías que son útiles antes de trabajar en Cloud Manager y se tratan los siguientes temas:
 
 * **Entorno de implementación**
-* **Repositorio de código fuente**
+* **Repositorio de códigos de origen**
 * **Seguridad y privacidad**
-* **Información general de Pipeline**
+* **Información general de canalización**
 * **Recursos de ayuda**
 
 ## Entorno de implementación {#deployment-environment}
 
-Puede ser nuevo en Adobe Experience Manager (AEM) 6.4 o necesitar una actualización a la versión de AEM 6.4.
+Es posible que sea nuevo en Adobe Experience Manager (AEM) 6.4 o que necesite actualizar a la versión 6.4 de AEM.
 
-Si es una novedad de AEM 6.4, ya tiene acceso a Cloud Manager.
+Si es un usuario nuevo de AEM 6.4, ya tiene acceso a Cloud Manager.
 
-Si es cliente existente, debe actualizar a AEM 6.4 para tener acceso a Cloud Manager. Puede empezar a utilizar Cloud Manager, una vez que reciba la dirección URL y las credenciales de los ingenieros de éxito del cliente (CSE).
+Si ya es cliente, debe actualizar a AEM 6.4 para tener acceso a Cloud Manager. Puede empezar a utilizar Cloud Manager, una vez que reciba la dirección URL y las credenciales de los ingenieros de éxito del cliente (CSE).
 
 <!-- 
 
@@ -42,11 +42,11 @@ Section is redundant with the section in the Overview topic
 
  -->
 
-## Repositorio de código fuente {#source-code-repository}
+## Repositorio de códigos de origen {#source-code-repository}
 
-**Varios servidores GIT**: En algunos casos, los clientes tendrán un repositorio de git existente y desean seguir usándolo.
+**Varios Servidores** Git: En algunos casos, los clientes tendrán un repositorio Git existente y desean seguir usándolo.
 
-Para estos casos, puede utilizar la compatibilidad de git con varios repositorios remotos. El desarrollo día a día seguirá produciéndose en el repositorio de git. Cuando se desee una implementación, simplemente puede insertar el código más reciente en el repositorio de git de Cloud Manager.
+En estos casos, puede utilizar la compatibilidad de git para varios repositorios remotos. El desarrollo diario continuaría ocurriendo en el repositorio de Git. Cuando desee una implementación, simplemente puede insertar el código más reciente en el repositorio de Git Cloud Manager.
 
 <!-- 
 
@@ -70,33 +70,33 @@ Query for Brad B.
 
  -->
 
-## Información general de Pipeline {#pipeline-overview}
+## Información general de canalización {#pipeline-overview}
 
-El Administrador de nube admite un único flujo por programa (definición más arriba) que gestiona las implementaciones en fase y producción. ****
+Cloud Manager admitirá una sola canalización por programa (definición anterior) que gestiona las implementaciones en fase y producción. ****
 
-La ramificación de git utilizada para las implementaciones de fase y producción es maestra.
+La rama git utilizada para las implementaciones de fase y producción es maestra.
 
 >[!NOTE]
 >
->Se recomienda utilizar la maestra como rama git para el escenario y la producción, pero puede utilizar cualquier rama al configurar la canalización.
+>Se recomienda utilizar master como rama de git para el escenario y la producción, pero se puede utilizar cualquiera de las ramas al configurar la tubería.
 
-A continuación se muestra el proceso de flujo único:
+A continuación se ilustra el proceso de canalización única:
 
 ![](assets/screen_shot_2018-04-30at30318pm.png)
 
 ### Explicación del flujo {#understanding-the-flow}
 
-Puede configurar su flujo desde [!UICONTROL Pipeline Settings] el mosaico desde la interfaz de usuario de Cloud Manager.
+Puede configurar la canalización desde el [!UICONTROL Pipeline Settings] mosaico desde la interfaz de usuario de Cloud Manager.
 
-Consulte [Uso de Experience Cloud Manager](hhttps://helpx.adobe.com/experience-manager/cloud-manager/using/using-cloud-manager.html) para obtener más información.
+Consulte [Uso de Cloud Manager,](hhttps://helpx.adobe.com/experience-manager/cloud-manager/using/using-cloud-manager.html) para obtener más información.
 
 El Administrador de implementación es responsable de configurar la canalización, es decir:
 
-* asignar rama de aplicación
-* asignar entornos de implementación
-* definir opciones de prueba
+* asignación de rama de aplicación
+* asignación de entornos de implementación
+* definición de opciones de prueba
 
-Al hacerlo, primero selecciona una rama en su repositorio de git. A continuación, defina el activador que iniciará la canalización.
+Al hacerlo, primero se selecciona una rama del repositorio de Git. A continuación, defina el activador que iniciará la canalización.
 
 A continuación, puede definir los parámetros que controlan la implementación de producción.
 
@@ -104,14 +104,14 @@ Finalmente, podrá configurar los parámetros de prueba de rendimiento.
 
 >[!NOTE]
 >
->Para obtener información sobre cómo configurar el comportamiento y las preferencias para su flujo, consulte **la sección de** configuración de Pipeline en [Uso de Cloud Manager](using-cloud-manager.md).
+>Para obtener más información sobre la configuración del comportamiento y las preferencias de la canalización, consulte la sección **Configuración de la canalización** en [Uso de Cloud Manager](using-cloud-manager.md).
 
 ### Recursos de ayuda {#help-resources}
 
-Póngase en contacto con el ingeniero de éxito del cliente de servicios gestionados de Adobe para obtener soporte.
+Póngase en contacto con el consultor de éxito del cliente de los servicios gestionados de Adobe para obtener ayuda.
 
 ### Pasos siguientes {#the-next-steps}
 
-Ahora tiene mejor comprensión de los conceptos de Cloud Manager.
+Ahora tiene una mejor comprensión de los conceptos de Cloud Manager.
 
-Para configurar el proyecto, el entorno y el equipo (usuario y funciones), consulte [Configuración general configuraciones para el Administrador de nube](setting-configurations-for-cloud-manager.md).
+Para configurar el proyecto, el entorno y el equipo (usuario y funciones), consulte [Configuración de configuraciones generales para Cloud Manager](setting-configurations-for-cloud-manager.md).
