@@ -1,15 +1,15 @@
 ---
 title: Entornos aprovisionados
-seo-title: Entornos APROVISIONADOS en AEM Cloud Manager
+seo-title: Entornos aprovisionados en AEM Cloud Manager
 description: Siga esta página para ver los entornos aprovisionados disponibles en Cloud Manager
 seo-description: Siga esta página para ver los entornos aprovisionados disponibles en AEM Cloud Manager.
-uuid: d 04 ee 39 c -7112-4 adc-ad 4 e -56 f 91 cc 4 ecfa
+uuid: d04ee39c-7112-4adc-ad4e-56f91cc4ecfa
 contentOwner: jsyal
-products: SG_ EXPERIENCEMANAGER/CLOUDMANAGER
+products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: requisitos
-discoiquuid: 7 d 32 ba 78-4 ded -4656-aac 2-c 3 e 7 cc 0518 de
+discoiquuid: 7d32ba78-4ded-4656-aac2-c3e7cc0518de
 translation-type: tm+mt
-source-git-commit: 1dfb065c09569f811e5a006d3d74825d3bd7cc8d
+source-git-commit: 15f75ca67c3d52ae511357c5b564daaa3d9def6b
 
 ---
 
@@ -18,14 +18,14 @@ source-git-commit: 1dfb065c09569f811e5a006d3d74825d3bd7cc8d
 
 ## Aprovisionamiento {#provisioning}
 
-Durante el proceso de introducción de clientes, todos los entornos de nube de AEM adquiridos por un cliente se aprovisionarán automáticamente por Adobe y se vincularán a su programa en [!UICONTROL Cloud Manager]. Estos entornos de nube **de AEM** se incluyen en cada suscripción de Servicios gestionados de Adobe y suelen estar compuestos por al menos un entorno de producción, un entorno de etapa y, opcionalmente, uno o varios entornos de desarrollo o prueba.
+Durante el proceso de integración del cliente, Adobe aprovisionará automáticamente todos los entornos de nube de AEM adquiridos por un cliente y los vinculará de nuevo a su programa en [!UICONTROL Cloud Manager]. Estos **entornos** de nube de AEM se incluyen en cada suscripción a los servicios gestionados de Adobe y suelen estar compuestos por al menos un entorno de producción, un entorno de fase y, opcionalmente, uno o varios entornos de prueba o desarrollo.
 
 ## Correo electrónico de bienvenida {#welcome-email}
 
-Una vez completado el proceso de aprovisionamiento de entorno, el administrador del cliente designado recibe un correo electrónico **de bienvenida** con la confirmación de que se les ha concedido acceso a Adobe [!UICONTROL Experience Cloud]. El correo electrónico contiene información detallada sobre cómo empezar a utilizar [!UICONTROL Experience Cloud] los servicios, los entornos [!UICONTROL AEM Managed Services] de nube y el portal [!UICONTROL Cloud Manager] de autoservicio. Además, el correo electrónico contiene información importante, como la información de contacto del ingeniero de éxito del cliente, donde dirigirse a recursos de asistencia, foros o preguntas frecuentes, etc. En la lista de recursos proporcionados en el correo electrónico, también obtendrá detalles sobre cómo acceder a [!UICONTROL Cloud Manager] los entornos de nube de AEM o acceder a ellos.
+Una vez completado el proceso de aprovisionamiento del entorno, el administrador del cliente designado recibe un correo electrónico **de** bienvenida con la confirmación de que se le ha concedido acceso a Adobe [!UICONTROL Experience Cloud]. El correo electrónico contiene información detallada sobre cómo empezar a usar los [!UICONTROL Experience Cloud] servicios, los entornos de [!UICONTROL AEM Managed Services] nube y el portal de [!UICONTROL Cloud Manager] autoservicio. Además, el correo electrónico contiene información importante, como la información de contacto del ingeniero de éxito del cliente, adónde ir para obtener recursos de asistencia, foros o preguntas más frecuentes, etc. En la lista de recursos que se proporciona en el correo electrónico, también obtendrá información sobre cómo acceder a los entornos de nube de AEM [!UICONTROL Cloud Manager] o sobre cómo hacerlo.
 
-## Pasos siguientes {#next-steps}
+## Próximos pasos {#next-steps}
 
-Tras recibir el correo electrónico de bienvenida, podrá iniciar sesión [!UICONTROL Cloud Manager] como administrador con sus credenciales de IMS de Adobe. Una vez que haya iniciado sesión, podrá comprobar que los entornos de producción de nube de AEM y los entornos de no producción están disponibles y se ejecuten correctamente.
+Tras recibir el correo electrónico de bienvenida, podrá iniciar sesión [!UICONTROL Cloud Manager] como administrador con sus credenciales de Adobe IMS. Una vez que haya iniciado sesión, podrá comprobar que los entornos de producción en la nube y de no producción de AEM están disponibles y se ejecutan correctamente.
 
-Estos entornos de nube de AEM se utilizarán para [!UICONTROL Cloud Manager] ejecutar la canalización CI/CD al implementar su código, empezando desde el repositorio de Git [!UICONTROL Cloud Manager]de&#39;s, a través del **entorno** de ensayo y hasta el entorno de producción de AEM. También podrá acceder a sus entornos de nube AEM directamente desde [!UICONTROL Cloud Manager], cuando esté preparado para empezar a crear experiencias digitales para sus propiedades web.
+Estos entornos de nube de AEM se utilizarán [!UICONTROL Cloud Manager] para ejecutar la canalización de CI/CD al implementar su código, empezando desde el repositorio [!UICONTROL Cloud Manager]de Git, a través del **entorno** de ensayo y hasta su entorno de producción de AEM. También podrá acceder a los entornos de nube de AEM directamente desde [!UICONTROL Cloud Manager], cuando esté listo para empezar a crear experiencias digitales para sus propiedades web.
