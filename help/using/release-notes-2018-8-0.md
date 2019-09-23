@@ -3,53 +3,53 @@ title: Notas de la versión de 2018.8.0
 seo-title: Notas de la versión de AEM Cloud Manager para 2018.8.0
 description: Siga esta página para obtener información sobre la versión 2018.8.0 de Cloud Manager.
 seo-description: Siga esta página para obtener información sobre la versión 2018.8.0 de AEM Cloud Manager.
-uuid: e 8 aaba 32-89 b 4-4 bc 5-b 295-09 b 753252612
+uuid: e8aaba32-89b4-4bc5-b295-09b753252612
 contentOwner: jsyal
-products: SG_ EXPERIENCEMANAGER/CLOUDMANAGER
+products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: notas de la versión
-discoiquuid: 9222 ac 3 b -525 e -47 c 1-b 481-ac 9 d 22 e 3 d 559
+discoiquuid: 9222ac3b-525e-47c1-b481-ac9d22e3d559
 translation-type: tm+mt
-source-git-commit: 1dfb065c09569f811e5a006d3d74825d3bd7cc8d
+source-git-commit: 15f75ca67c3d52ae511357c5b564daaa3d9def6b
 
 ---
 
 
 # Notas de la versión de 2018.8.0 {#release-notes-for}
 
-La versión [!UICONTROL Cloud Manager] 2018.8.0 añade compatibilidad para activar la canalización CI/CD automáticamente sobre la git commit y un nuevo asistente para crear proyectos de aplicación en git basadas en el tipo de archetype Project Archetype.
+La versión [!UICONTROL Cloud Manager] 2018.8.0 añade compatibilidad para activar automáticamente el canalizador de CI/CD tras comprometer Git y un nuevo asistente para crear proyectos de aplicación en Git según el arquetipo de proyecto de AEM.
 
-## Fecha de versión {#release-date}
+## Fecha de lanzamiento {#release-date}
 
-La fecha de versión de [!UICONTROL Cloud Manager] la versión 2018.8.0 es el 04 de octubre de 2018.
+La fecha de versión de [!UICONTROL Cloud Manager] la versión 2018.8.0 es el 4 de octubre de 2018.
 
 ## Novedades {#what-s-new}
 
-* **Configuración** del programa: Asistente nuevo para crear un proyecto de aplicación en git con el tipo de archetype de proyecto AEM Consulte [Crear un proyecto de aplicación AEM](create-an-application-project.md) para obtener más información.
+* **Configuración** del programa: nuevo asistente para crear un proyecto de aplicación en Git mediante el arquetipo de proyecto de AEM Consulte [Crear un proyecto](create-an-application-project.md) de aplicación de AEM para obtener más información.
 
-* **Pipeline** CI/CD: Los cambios siguientes se añaden a la cartera CI/CD. Consulte [Configurar su flujo de PC/CD](configuring-pipeline.md) para obtener más información.
+* **Canalización** CI/CD: se añaden los siguientes cambios a la canalización CI/CD. Consulte [Configurar la canalización](configuring-pipeline.md) de CD/CI para obtener más información.
 
-   * En Cambios de Git, se inicia la canalización CI/CD siempre que se haya añadido a la ramificación de git configurada.
-   * Las tarjetas en la pantalla de inicio ahora se vinculan profundo a secciones específicas de la página de ejecución de pipeline.
+   * Al activar Cambios en Git, que inicia la canalización CI/CD cada vez que hay confirmaciones agregadas a la rama git configurada.
+   * Las tarjetas en la pantalla principal ahora se vinculan en profundidad a secciones específicas de la página de ejecución de la canalización.
    * La página Actividad ahora enumera la rama específica utilizada para cada ejecución.
-   * La página de actividad ahora indica la duración en horas y minutos.
-   * La página de ejecución de Pipeline ahora muestra el nombre de la versión o etiqueta creada para la ejecución.
+   * La página Actividad ahora indica la duración en horas y minutos.
+   * La página de ejecución de canalización ahora muestra el nombre de la versión o etiqueta creada para la ejecución.
    * La versión de Apache Maven se ha actualizado a 3.5.3.
 
-* **Navegación** : Se agregan los siguientes cambios al [!UICONTROL Cloud Manager].
+* **Navegación** : se añaden los siguientes cambios a la [!UICONTROL Cloud Manager].
 
-   * El vínculo de recursos en la navegación global navegará al libro de descargas en Sharepoint.
-   * Se ha reorganizado el menú Ayuda para incluir más [!UICONTROL Cloud Manager]contenido específico.
+   * El vínculo Recursos en la navegación global navegará al Runbook en Sharepoint.
+   * El menú Ayuda se ha reorganizado para incluir contenido más [!UICONTROL Cloud Manager]específico.
 
 ## Corrección de errores {#bug-fixes}
 
-* Algunos detalles del cuadro de diálogo Prueba de rendimiento no eran visibles en Firefox.
-* En ocasiones, los tiempos de espera entre sistemas internos causaban que se informara de errores de implementación.
-* El color del icono de la página Actividad no era correcto para algunas ejecuciones de pipeline exitosas.
-* En algunos casos, el cuadro de diálogo Prueba de rendimiento muestra la misma métrica varias veces.
-* Si se agregó una nueva instancia después de haber iniciado la canalización CI/CD, la implementación no se ejecutará en la instancia recién creada.
+* Algunos detalles del cuadro de diálogo Prueba de rendimiento no estaban visibles en Firefox.
+* Los tiempos de espera entre sistemas internos ocasionalmente ocasionan que se informen errores de implementación.
+* El color del icono en la página Actividad no era correcto para algunas ejecuciones de canalización correctas.
+* En algunos casos, el cuadro de diálogo Prueba de rendimiento enumeraba la misma métrica varias veces.
+* Si se añadiera una nueva instancia después de que se hubiera iniciado la canalización CI/CD, la implementación no se ejecutaría en la instancia recién creada.
 
 ## Problemas conocidos {#known-issues}
 
 * Las ramas creadas con el Asistente para proyectos de aplicación no pueden contener guiones.
-* La barra lateral [!UICONTROL Experience Cloud] de notificación puede no cargar notificaciones de forma coherente. Las notificaciones, sin embargo, son visibles en [!UICONTROL Experience Cloud] el y, si se configuran, se envían por correo electrónico.
+* Es posible que la barra lateral de [!UICONTROL Experience Cloud] notificaciones no cargue las notificaciones de forma coherente. Sin embargo, las notificaciones son visibles en el [!UICONTROL Experience Cloud] y, si están configuradas, se enviarán por correo electrónico.
 
