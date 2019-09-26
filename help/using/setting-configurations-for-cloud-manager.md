@@ -154,7 +154,7 @@ Siga las optimizaciones para configurar proyectos en [!UICONTROL Cloud Manager]:
 * La versión de Java instalada es Oracle JDK 8u161.
 * Hay algunos paquetes de sistema adicionales instalados, como bzip2, unzip, libpng, imagemagick y graphicsmagick. Si necesita otros paquetes, deberá solicitarlos a través de su CSE.
 * Maven siempre se ejecuta con el comando mvn -B clean package.
-* Se le proporcionará exactamente un repositorio git. Debe haber un archivo pom.xml en la raíz de este repositorio. Este archivo pom.xml puede referirse a tantos submódulos (que a su vez pueden tener otros submódulos, etc.) si es necesario, pero sólo debe haber un punto de entrada.
+* Se le proporcionará exactamente un repositorio git. Debe haber un archivo pom.xml en la raíz de este repositorio. Este archivo pom.xml puede referirse a tantos submódulos (que a su vez pueden tener otros submódulos, etc.) según sea necesario, pero sólo debe haber un punto de entrada.
 * Maven se configura a nivel del sistema con un archivo settings.xml que incluye automáticamente el repositorio público de artefactos de Adobe (repo.adobe.com).
 * Puede agregar repositorios adicionales en los archivos pom.xml. Sin embargo, no se admite el acceso a repositorios de artefactos protegidos por contraseña o de red.
 * Los paquetes de contenido implementable se descubren mediante la búsqueda de archivos zip contenidos en un directorio denominado target. Nuevamente, cualquier número de submódulos puede producir paquetes de contenido.
