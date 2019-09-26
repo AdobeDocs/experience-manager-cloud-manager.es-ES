@@ -42,11 +42,11 @@ Section is redundant with the section in the Overview topic
 
  -->
 
-## Repositorio de códigos de origen {#source-code-repository}
+## Source Code Repository {#source-code-repository}
 
-**Varios Servidores** Git: En algunos casos, los clientes tendrán un repositorio Git existente y desean seguir usándolo.
+**Multiple Git Servers: In some cases, customers will have an existing git repository and want to keep using it.**
 
-En estos casos, puede utilizar la compatibilidad de git para varios repositorios remotos. El desarrollo diario continuaría ocurriendo en el repositorio de Git. Cuando desee una implementación, simplemente puede insertar el código más reciente en el repositorio de Git Cloud Manager.
+For these cases, the you can use git's support for multiple remote repositories. Day to day development would continue to happen in the your git repository. When a deployment is desired, you can simply push the latest code to the Cloud Manager git repository.
 
 <!-- 
 
@@ -58,7 +58,7 @@ Looks like we lost some content, compared to the previous version
 
  -->
 
-## Seguridad y privacidad {#security-and-privacy}
+## Security and Privacy {#security-and-privacy}
 
 <!-- 
 
@@ -70,23 +70,23 @@ Query for Brad B.
 
  -->
 
-## Información general de canalización {#pipeline-overview}
+## Pipeline Overview {#pipeline-overview}
 
-Cloud Manager admitirá una sola canalización por programa (definición anterior) que gestiona las implementaciones en fase y producción. ****
+Cloud Manager will support a single pipeline per program (definition above) which handles deployments to stage and production. ****
 
 La rama git utilizada para las implementaciones de fase y producción es maestra.
 
 >[!NOTE]
 >
->Se recomienda utilizar master como rama de git para el escenario y la producción, pero se puede utilizar cualquiera de las ramas al configurar la tubería.
+>It is a best practice to to use master as a git branch for stage and production, but you can use any of the branch while setting up the pipeline.
 
-A continuación se ilustra el proceso de canalización única:
+The single pipeline process is illustrated below:
 
 ![](assets/screen_shot_2018-04-30at30318pm.png)
 
-### Explicación del flujo {#understanding-the-flow}
+### Understanding the Flow {#understanding-the-flow}
 
-Puede configurar la canalización desde el [!UICONTROL Pipeline Settings] mosaico desde la interfaz de usuario de Cloud Manager.
+You can configure your pipeline from the [!UICONTROL Pipeline Settings] tile from Cloud Manager UI.
 
 Consulte [Uso de Cloud Manager,](hhttps://helpx.adobe.com/experience-manager/cloud-manager/using/using-cloud-manager.html) para obtener más información.
 
@@ -94,9 +94,9 @@ El Administrador de implementación es responsable de configurar la canalizació
 
 * asignación de rama de aplicación
 * asignación de entornos de implementación
-* definición de opciones de prueba
+* defining test options
 
-Al hacerlo, primero se selecciona una rama del repositorio de Git. A continuación, defina el activador que iniciará la canalización.
+When doing so, you first select a branch from their git repository. A continuación, defina el activador que iniciará la canalización.
 
 A continuación, puede definir los parámetros que controlan la implementación de producción.
 
@@ -106,7 +106,7 @@ Finalmente, podrá configurar los parámetros de prueba de rendimiento.
 >
 >Para obtener más información sobre la configuración del comportamiento y las preferencias de la canalización, consulte la sección **Configuración de la canalización** en [Uso de Cloud Manager](using-cloud-manager.md).
 
-### Recursos de ayuda {#help-resources}
+### Help Resources {#help-resources}
 
 Póngase en contacto con el consultor de éxito del cliente de los servicios gestionados de Adobe para obtener ayuda.
 
