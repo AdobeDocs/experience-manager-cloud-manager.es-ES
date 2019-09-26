@@ -112,7 +112,7 @@ Cloud Manager crea y prueba el código mediante un entorno de compilación espec
 
 En algunos casos limitados, es posible que deba variar ligeramente el proceso de compilación al ejecutarse dentro de Cloud Manager, en lugar de hacerlo en estaciones de trabajo para desarrolladores. En estos casos, se pueden usar perfiles [de ratón](https://maven.apache.org/guides/introduction/introduction-to-profiles.html) para definir cómo la compilación debe ser diferente en diferentes entornos, incluido Cloud Manager.
 
-La activación de un perfil Maven dentro del entorno de compilación de Cloud Manager debe realizarse buscando la presencia de una variable de entorno denominada `CM_BUILD`. Esta variable siempre se configurará dentro del entorno de compilación de Cloud Manager. Por el contrario, un perfil que se va a usar solo fuera del entorno de compilación de Cloud Manager debe realizarse buscando la ausencia de esta variable.
+La activación de un perfil de máquina dentro del entorno de compilación de Cloud Manager debe realizarse buscando la presencia de una variable de entorno denominada `CM_BUILD`. Esta variable siempre se configurará dentro del entorno de compilación de Cloud Manager. Por el contrario, un perfil que se va a usar solo fuera del entorno de compilación de Cloud Manager debe realizarse buscando la ausencia de esta variable.
 
 Por ejemplo, si desea enviar un mensaje sencillo solo cuando la compilación se ejecute dentro de Cloud Manager, puede hacer lo siguiente:
 
