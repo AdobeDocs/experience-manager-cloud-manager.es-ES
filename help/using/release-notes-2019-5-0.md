@@ -9,11 +9,11 @@ source-git-commit: 75563d3f4b2a27d943c052993c97d830338ead9c
 ---
 
 
-# Notas de la versión de 2019.5.0 {#release-notes-for}
+# Release Notes for 2019.5.0 {#release-notes-for}
 
-La versión [!UICONTROL Cloud Manager] 2019.5.0 no contiene cambios funcionales significativos. Siga las secciones a continuación para obtener más detalles.
+The  2019.5.0 Release does not contain significant functional changes. [!UICONTROL Cloud Manager] Siga las secciones a continuación para obtener más detalles.
 
-## Fecha de lanzamiento {#release-date}
+## Release Date {#release-date}
 
 La fecha de versión de [!UICONTROL Cloud Manager] la versión 2019.5.0 es el 23 de mayo de 2019.
 
