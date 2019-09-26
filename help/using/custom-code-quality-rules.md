@@ -1,8 +1,8 @@
 ---
-title: Custom Code Quality Rules
-seo-title: Custom Code Quality Rules
-description: Follow this page to learn about the custom code quality rules executed by Cloud Manager.
-seo-description: Follow this page to learn about the custom code quality rules executed by Adobe Experience Manager Cloud Manager.
+title: Reglas de calidad de código personalizadas
+seo-title: Reglas de calidad de código personalizadas
+description: Siga esta página para conocer las reglas de calidad de código personalizadas ejecutadas por Cloud Manager.
+seo-description: Siga esta página para conocer las reglas de calidad de código personalizadas ejecutadas por Adobe Experience Manager Cloud Manager.
 uuid: a7feb465-1982-46be-9e57-e67b59849579
 contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
@@ -14,19 +14,19 @@ source-git-commit: 4881ff8be97451aa90c3430259ce13faef182e4f
 ---
 
 
-# Custom Code Quality Rules {#custom-code-quality-rules}
+# Reglas de calidad de código personalizadas {#custom-code-quality-rules}
 
-This page describes the custom code quality rules executed by Cloud Manager created based on best practices from AEM Engineering.
+En esta página se describen las reglas de calidad de código personalizadas ejecutadas por Cloud Manager creadas en función de las prácticas recomendadas de ingeniería de AEM.
 
 >[!NOTE]
 >
->The code samples provided here are only for illustrative purposes.
+>Las muestras de código que se proporcionan aquí tienen fines ilustrativos.
 
-## SonarQube Rules {#sonarqube-rules}
+## Reglas de SonarQube {#sonarqube-rules}
 
-The following section highlights the SonarQube Rules:
+La siguiente sección resalta las reglas de SonarQube:
 
-### Do not use potentially dangerous functions {#do-not-use-potentially-dangerous-functions}
+### No utilizar funciones potencialmente peligrosas {#do-not-use-potentially-dangerous-functions}
 
 **Clave**: CQRules:CWE-676
 
@@ -34,11 +34,11 @@ The following section highlights the SonarQube Rules:
 
 **Gravedad**: Mayor
 
-**Desde**: Versión 2018.4.0
+**Since: Version 2018.4.0**
 
-Los métodos ***Thread.stop()*** y ***Thread.interrupt()*** pueden producir problemas difíciles de reproducir y, en algunos casos, vulnerabilidades de seguridad. Su utilización debe ser objeto de un estricto seguimiento y validación. En general, transmitir mensajes es una manera más segura de lograr objetivos similares.
+Los métodos ***Thread.stop()*** y ***Thread.interrupt()*** pueden producir problemas difíciles de reproducir y, en algunos casos, vulnerabilidades de seguridad. Their usage should be tightly monitored and validated. In general, message passing is a safer way to accomplish similar goals.
 
-#### Código no compatible {#non-compliant-code}
+#### Non-Compliant Code {#non-compliant-code}
 
 ```java
 public class DontDoThis implements Runnable {
@@ -61,7 +61,7 @@ public class DontDoThis implements Runnable {
 }
 ```
 
-#### Código compatible {#compliant-code}
+#### Compliant Code {#compliant-code}
 
 ```java
 public class DoThis implements Runnable {
@@ -85,19 +85,19 @@ public class DoThis implements Runnable {
 }
 ```
 
-### No utilizar cadenas de formato que puedan controlarse externamente {#do-not-use-format-strings-which-may-be-externally-controlled}
+### Do not use format strings which may be externally controlled {#do-not-use-format-strings-which-may-be-externally-controlled}
 
-**Clave**: CQRules:CWE-134
+**Key: CQRules:CWE-134**
 
-**Tipo**: Vulnerabilidad
+**Type: Vulnerability**
 
-**Gravedad**: Mayor
+**Severity: Major**
 
-**Desde**: Versión 2018.4.0
+**Since: Version 2018.4.0**
 
-El uso de una cadena de formato de una fuente externa (como un parámetro de solicitud o contenido generado por el usuario) puede producir y exponer una aplicación a ataques de denegación de servicio. Hay circunstancias en las que una cadena de formato puede estar controlada externamente, pero solo se permite desde fuentes de confianza.
+Using a format string from an external source (such a request parameter or user-generated content) can produce can expose an application to denial of service attacks. There are circumstances where a format string may be externally controlled, but is only allowed from trusted sources.
 
-#### Código no compatible {#non-compliant-code-1}
+#### Non-Compliant Code {#non-compliant-code-1}
 
 ```java
 protected void doPost(SlingHttpServletRequest request, SlingHttpServletResponse response) {
@@ -117,7 +117,7 @@ protected void doPost(SlingHttpServletRequest request, SlingHttpServletResponse 
 
 **Desde**: Versión 2018.6.0
 
-Al ejecutar solicitudes HTTP desde una aplicación AEM, es fundamental asegurarse de que se han configurado los tiempos de espera adecuados para evitar un consumo de subproceso innecesario. Desafortunadamente, el comportamiento predeterminado tanto del cliente HTTP predeterminado de Java (java.net.HttpUrlConnection) como del cliente de componentes HTTP Apache que se utiliza habitualmente es no agotar el tiempo de espera, por lo que los tiempos de espera deben establecerse explícitamente. Además, como práctica recomendada, estos tiempos de espera no deben superar los 60 segundos.
+Al ejecutar solicitudes HTTP desde una aplicación AEM, es fundamental asegurarse de que se han configurado los tiempos de espera adecuados para evitar un consumo de subproceso innecesario. Unfortunately, the default behavior of both Java's default HTTP Client (java.net.HttpUrlConnection) and the commonly used Apache HTTP Components client is to never timeout, so timeouts must be explicitly set. Further, as a best practice, these timeouts should be no more than 60 seconds.
 
 #### Código no compatible {#non-compliant-code-2}
 
@@ -189,19 +189,19 @@ public void orDoThis() {
 
 **Clave**: CQBP-84, dependencias CQBP-84
 
-**Type: Bug**
+**Tipo**: Error
 
-**Severity: Critical**
+**Gravedad**: Crítico
 
 **Desde**: Versión 2018.7.0
 
-The AEM API contains Java interfaces and classes which are only meant to be used, but not implemented, by custom code. For example, the interface com.day.cq.wcm.api.Page is designed to be implemented by AEM only.********
+La API de AEM contiene interfaces y clases de Java que solo están pensadas para utilizarse, pero no implementadas, mediante código personalizado. Por ejemplo, la interfaz *com.day.cq.wcm.api.Page* está diseñada para que la implemente solo ****** AEM.
 
-When new methods are added to these interfaces, those additional methods do not impact existing code which uses these interfaces and, as a result, the addition of new methods to these interfaces are considered to be backwards-compatible. However, if custom code implements one of these interfaces, that custom code has introduced a backwards-compatibility risk for the customer.******
+Cuando se añaden nuevos métodos a estas interfaces, esos métodos adicionales no afectan al código existente que utiliza estas interfaces y, como resultado, la adición de nuevos métodos a estas interfaces se considera compatible con versiones anteriores. Sin embargo, si el código personalizado ***implementa*** una de estas interfaces, dicho código personalizado ha introducido un riesgo de compatibilidad con versiones anteriores para el cliente.
 
-Interfaces (and classes) which are only intended to be implemented by AEM are annotated with org.osgi.annotation.versioning.ProviderType (or, in some cases, a similar legacy annotation aQute.bnd.annotation.ProviderType). **** This rule identifies the cases where such an interface is implemented (or a class is extended) by custom code.
+Las interfaces (y clases) que solo AEM pretende implementar se anotan con *org.osgi.anottation.versioning.ProviderType* (o, en algunos casos, una anotación heredada similar *a Qute.bnd.anottation.ProviderType*). Esta regla identifica los casos en los que una interfaz de este tipo se implementa (o una clase se amplía) mediante código personalizado.
 
-#### Non-Compliant Code {#non-compliant-code-3}
+#### Código no compatible {#non-compliant-code-3}
 
 ```java
 import com.day.cq.wcm.api.Page;
@@ -211,21 +211,21 @@ public class DontDoThis implements Page {
 }
 ```
 
-### ResourceResolver objects should always be closed {#resourceresolver-objects-should-always-be-closed}
+### Los objetos ResourceResolver siempre deben cerrarse {#resourceresolver-objects-should-always-be-closed}
 
-**Key: CQRules:CQBP-72**
+**Clave**: CQRules:CQBP-72
 
-**Type: Code Smell**
+**Tipo**: Huele de código
 
-**Severity: Major**
+**Gravedad**: Mayor
 
-**Since: Version 2018.4.0**
+**Desde**: Versión 2018.4.0
 
-ResourceResolver objects obtained from the ResourceResolverFactory consume system resources. Aunque existen medidas para recuperar estos recursos cuando ResourceResolver ya no se utiliza, es más eficaz cerrar explícitamente cualquier objeto ResourceResolver abierto llamando al método close().
+Los objetos ResourceResolver obtenidos de ResourceResolverFactory consumen recursos del sistema. Aunque existen medidas para recuperar estos recursos cuando ResourceResolver ya no se utiliza, es más eficaz cerrar explícitamente cualquier objeto ResourceResolver abierto llamando al método close().
 
 Una idea errónea relativamente común es que los objetos ResourceResolver creados con una sesión de JCR existente no deben cerrarse explícitamente o que, al hacerlo, se cerrará la sesión de JCR subyacente. Este no es el caso, independientemente de cómo se abra un ResourceResolver, debe cerrarse cuando ya no se utilice. Dado que ResourceResolver implementa la interfaz Closeable, también es posible utilizar la sintaxis try-with-resources en lugar de invocar explícitamente close().
 
-#### Código no compatible {#non-compliant-code-4}
+#### Non-Compliant Code {#non-compliant-code-4}
 
 ```java
 public void dontDoThis(Session session) throws Exception {
@@ -234,7 +234,7 @@ public void dontDoThis(Session session) throws Exception {
 }
 ```
 
-#### Código compatible {#compliant-code-2}
+#### Compliant Code {#compliant-code-2}
 
 ```java
 public void doThis(Session session) throws Exception {
@@ -256,19 +256,19 @@ public void orDoThis(Session session) throws Exception {
 }
 ```
 
-### No utilice rutas de servlet Sling para registrar servlets {#do-not-use-sling-servlet-paths-to-register-servlets}
+### Do not use Sling servlet paths to register servlets {#do-not-use-sling-servlet-paths-to-register-servlets}
 
-**Clave**: CQRules:CQBP-75
+**Key: CQRules:CQBP-75**
 
-**Tipo**: Huele de código
+**Type: Code Smell**
 
-**Gravedad**: Mayor
+**Severity: Major**
 
 **Desde**: Versión 2018.4.0
 
-Como se describe en la documentación [de](http://sling.apache.org/documentation/the-sling-engine/servlets.html)Sling, se desaconseja enlazar servlets por rutas. Los servlets enlazados a rutas no pueden utilizar controles de acceso JCR estándar y, como resultado, requieren un rigor de seguridad adicional. En lugar de utilizar servlets enlazados a rutas, se recomienda crear nodos en el repositorio y registrar servlets por tipo de recurso.
+As described in the Sling documentation, bindings servlets by paths is discouraged. [](http://sling.apache.org/documentation/the-sling-engine/servlets.html) Path-bound servlets cannot use standard JCR access controls and, as a result, require additional security rigor. Rather than using path-bound servlets, it is recommended to create nodes in the repository and register servlets by resource type.
 
-#### Código no compatible {#non-compliant-code-5}
+#### Non-Compliant Code {#non-compliant-code-5}
 
 ```java
 @Component(property = {
@@ -289,9 +289,9 @@ public class DontDoThis extends SlingAllMethodsServlet {
 
 **Desde**: Versión 2018.4.0
 
-En general, una excepción debe registrarse exactamente una vez. El registro de excepciones varias veces puede causar confusión, ya que no está claro cuántas veces se produjo una excepción. El patrón más común que lleva a esto es registrar y lanzar una excepción capturada.
+In general, an exception should be logged exactly one time. Logging exceptions multiple times can cause confusion as it is unclear how many times an exception occurred. El patrón más común que lleva a esto es registrar y lanzar una excepción capturada.
 
-#### Non-Compliant Code {#non-compliant-code-6}
+#### Código no compatible {#non-compliant-code-6}
 
 ```java
 public void dontDoThis() throws Exception {
@@ -304,7 +304,7 @@ public void dontDoThis() throws Exception {
 }
 ```
 
-#### Compliant Code {#compliant-code-3}
+#### Código compatible {#compliant-code-3}
 
 ```java
 public void doThis() {
@@ -324,7 +324,7 @@ public void orDoThis() throws MyCustomException {
 }
 ```
 
-### Avoid having a log statement immediately followed by a throw statement {#avoid-having-a-log-statement-immediately-followed-by-a-throw-statement}
+### Evite tener una instrucción de registro seguida inmediatamente de una sentencia de lanzamiento {#avoid-having-a-log-statement-immediately-followed-by-a-throw-statement}
 
 **Clave**: CQRules:CQBP-44—ConsecutivamenteLogAndThrow
 
@@ -361,13 +361,13 @@ public void doThis() throws Exception {
 
 **Gravedad**: Menor
 
-In general, the INFO log level should be used to demarcate important actions and, by default, AEM is configured to log at the INFO level or above. Los métodos GET y HEAD sólo deben ser operaciones de sólo lectura y por lo tanto no constituyen acciones importantes. Es probable que el registro en el nivel INFO en respuesta a las solicitudes GET o HEAD cree un ruido de registro significativo, lo que dificulta la identificación de información útil en los archivos de registro. El registro al administrar las solicitudes GET o HEAD debe estar en los niveles WARN o ERROR cuando algo ha salido mal o en los niveles DEBUG o TRACE si resulta útil obtener información más detallada sobre la solución de problemas.
+En general, el nivel de registro INFO debe utilizarse para delimitar acciones importantes y, de forma predeterminada, AEM está configurado para iniciar sesión en el nivel INFO o superior. Los métodos GET y HEAD sólo deben ser operaciones de sólo lectura y por lo tanto no constituyen acciones importantes. Es probable que el registro en el nivel INFO en respuesta a las solicitudes GET o HEAD cree un ruido de registro significativo, lo que dificulta la identificación de información útil en los archivos de registro. El registro al administrar las solicitudes GET o HEAD debe estar en los niveles WARN o ERROR cuando algo ha salido mal o en los niveles DEBUG o TRACE si resulta útil obtener información más detallada sobre la solución de problemas.
 
 >[!CAUTION]
 >
 >Esto no se aplica al registro de tipo access.log para cada solicitud.
 
-#### Código no compatible {#non-compliant-code-8}
+#### Non-Compliant Code {#non-compliant-code-8}
 
 ```java
 public void doGet() throws Exception {
@@ -375,7 +375,7 @@ public void doGet() throws Exception {
 }
 ```
 
-#### Código compatible {#compliant-code-5}
+#### Compliant Code {#compliant-code-5}
 
 ```java
 public void doGet() throws Exception {
@@ -385,15 +385,15 @@ public void doGet() throws Exception {
 
 ### No use Exception.getMessage() como primer parámetro de una instrucción de registro {#do-not-use-exception-getmessage-as-the-first-parameter-of-a-logging-statement}
 
-**Clave**: CQRules:CQBP-44—ExceptionGetMessageIsFirstLogParam
+**Key: CQRules:CQBP-44---ExceptionGetMessageIsFirstLogParam**
 
 **Type: Code Smell**
 
 **Severity: Minor**
 
-**Desde**: Versión 2018.4.0
+**Since: Version 2018.4.0**
 
-As a best practice, log messages should provide contextual information about where in the application an exception has occurred. Aunque el contexto también se puede determinar mediante el uso de trazos de pila, en general el mensaje de registro será más fácil de leer y comprender. Como resultado, al registrar una excepción, es una mala práctica utilizar el mensaje de excepción como mensaje de registro: el mensaje de excepción contendrá lo que salió mal, mientras que el mensaje de registro debe utilizarse para indicar a un lector de registro qué estaba haciendo la aplicación cuando se produjo la excepción. Se seguirá registrando el mensaje de excepción; al especificar su propio mensaje, los registros serán más fáciles de entender.
+Como práctica recomendada, los mensajes de registro deben proporcionar información contextual sobre dónde se produjo una excepción en la aplicación. Aunque el contexto también se puede determinar mediante el uso de trazos de pila, en general el mensaje de registro será más fácil de leer y comprender. Como resultado, al registrar una excepción, es una mala práctica utilizar el mensaje de excepción como mensaje de registro: el mensaje de excepción contendrá lo que salió mal, mientras que el mensaje de registro debe utilizarse para indicar a un lector de registro qué estaba haciendo la aplicación cuando se produjo la excepción. Se seguirá registrando el mensaje de excepción; al especificar su propio mensaje, los registros serán más fáciles de entender.
 
 #### Código no compatible {#non-compliant-code-9}
 
@@ -421,13 +421,13 @@ public void doThis() {
 
 ### El inicio de sesión en bloques catch debe estar en el nivel WARN o ERROR {#logging-in-catch-blocks-should-be-at-the-warn-or-error-level}
 
-**Key: CQRules:CQBP-44---WrongLogLevelInCatchBlock**
+**Clave**: CQRules:CQBP-44—WrongLogLevelInCatchBlock
 
 **Tipo**: Huele de código
 
 **Gravedad**: Menor
 
-**Since: Version 2018.4.0**
+**Desde**: Versión 2018.4.0
 
 Como sugiere el nombre, las excepciones de Java siempre deben usarse en circunstancias *excepcionales* . Como resultado, cuando se detecta una excepción, es importante asegurarse de que los mensajes de registro se registran en el nivel adecuado, ya sea WARN o ERROR. Esto garantiza que esos mensajes aparezcan correctamente en los registros.
 
@@ -479,7 +479,7 @@ public void dontDoThis() {
 }
 ```
 
-#### Código compatible {#compliant-code-8}
+#### Compliant Code {#compliant-code-8}
 
 ```java
 public void doThis() {
@@ -493,11 +493,11 @@ public void doThis() {
 
 ### Do not output to Standard Output or Standard Error {#do-not-output-to-standard-output-or-standard-error}
 
-**Clave**: CQRules:CQBP-44—LogLevelConsolePrinters
+**Key: CQRules:CQBP-44—LogLevelConsolePrinters**
 
 **Tipo**: Huele de código
 
-**Gravedad**: Menor
+**Severity: Minor**
 
 **Desde**: Versión 2018.4.0
 
@@ -515,7 +515,7 @@ public void dontDoThis() {
 }
 ```
 
-#### Código compatible {#compliant-code-9}
+#### Compliant Code {#compliant-code-9}
 
 ```java
 public void doThis() {
@@ -573,17 +573,17 @@ Debajo de las comprobaciones OakPAL ejecutadas por Cloud Manager.
 
 **Desde**: Versión 2019.6.0
 
-Desde hace tiempo, se recomienda que los clientes consideren el árbol de contenido /libs del repositorio de contenido de AEM como de solo lectura. La modificación de nodos y propiedades en */libs* crea un riesgo significativo para actualizaciones mayores y menores. Las modificaciones a */libs* solo deben realizarlas Adobe a través de canales oficiales.
+Desde hace tiempo, se recomienda que los clientes consideren el árbol de contenido /libs del repositorio de contenido de AEM como de solo lectura. Modifying nodes and properties under /libs creates significant risk for major and minor updates. ** Las modificaciones a */libs* solo deben realizarlas Adobe a través de canales oficiales.
 
 ### Los paquetes no deben contener configuraciones OSGi duplicadas {#oakpal-package-osgi}
 
 **Clave**: DuplicateOsgiConfigurations
 
-**Tipo**: Error
+**Type: Bug**
 
-**Gravedad**: Mayor
+**Severity: Major**
 
-**Desde**: Versión 2019.6.0
+**Since: Version 2019.6.0**
 
 Un problema común que se produce en proyectos complejos es que el mismo componente OSGi se configura varias veces. Esto crea una ambigüedad en cuanto a la configuración que puede funcionar. Esta regla tiene en cuenta el modo de ejecución, ya que solo identificará problemas en los que el mismo componente se haya configurado varias veces en el mismo modo de ejecución (o combinación de modos de ejecución).
 
