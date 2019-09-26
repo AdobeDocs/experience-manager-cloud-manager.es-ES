@@ -45,5 +45,5 @@ La fecha de versión de [!UICONTROL Cloud Manager] la versión 2018.7.0 es el 10
 ## Problemas conocidos {#known-issues}
 
 * Aunque los clientes pueden seleccionar el activador de confirmación, es posible que la canalización no se inicie en función de nuevos compromisos.
-* Es posible que la barra lateral de [!UICONTROL Experience Cloud] notificaciones no cargue las notificaciones de forma coherente. Notifications, however, are visible in the [!UICONTROL Experience Cloud] and, if configured, will still be sent via email.
+* Es posible que la barra lateral de [!UICONTROL Experience Cloud] notificaciones no cargue las notificaciones de forma coherente. Sin embargo, las notificaciones son visibles en el [!UICONTROL Experience Cloud] y, si están configuradas, se enviarán por correo electrónico.
 
