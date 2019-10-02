@@ -1,5 +1,5 @@
 ---
-title: Inicio de sesión por primera vez
+title: First Time Login
 seo-title: Inicio de sesión por primera vez en Adobe AEM Cloud Manager
 description: Siga esta página si ha configurado las configuraciones generales y está listo para usar Cloud Manager por primera vez.
 seo-description: Siga esta página si ha configurado las configuraciones generales y está listo para usar Adobe AEM Cloud Manager por primera vez.
@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: introducción
 discoiquuid: 2221d1d5-dbc2-4175-8371-60344f932a82
 translation-type: tm+mt
-source-git-commit: fea7cbe19989272100d76092198afcfac17c1c3a
+source-git-commit: ec35af20dceeb50610bc365c8e00d5ee0374ea34
 
 ---
 
@@ -22,7 +22,15 @@ Una vez que haya configurado las configuraciones generales para [!UICONTROL Clou
 >
 >Según las funciones asignadas en [!UICONTROL Cloud Manager] y el estado de la aplicación, verá diferentes pantallas mientras utiliza la [!UICONTROL Cloud Manager] interfaz de usuario.
 
-## Inicio de sesión por primera vez {#logging-in-for-the-first-time}
+## Información general sobre los programas {#programs-video}
+
+El siguiente vídeo proporciona información general sobre los programas de Cloud Manager que representan conjuntos de entornos AEM que admiten conjuntos lógicos de iniciativas empresariales, que normalmente corresponden a un contrato de nivel de servicio (SLA) adquirido.
+
+
+[!VIDEO](https://video.tv.adobe.com/v/26313/?quality=12&captions=spa)
+
+
+## Logging in for the First Time {#logging-in-for-the-first-time}
 
 1. Inicie sesión en **Adobe[!UICONTROL Experience Cloud]** y verá la lista de **programas**.
 
