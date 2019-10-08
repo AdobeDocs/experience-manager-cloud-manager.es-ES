@@ -4,7 +4,7 @@ seo-title: Monitorear los entornos
 description: nulo
 seo-description: Siga esta página para conocer la supervisión del sistema en el Administrador de nube, que se realiza observando las instancias individuales dentro de un entorno y rastreando una variedad de métricas para cada instancia.
 translation-type: tm+mt
-source-git-commit: 548d18f251cf8c4c827d2208fec04cde235ce731
+source-git-commit: 519f43ff16e0474951f97798a8e070141e5c124b
 
 ---
 
@@ -48,6 +48,13 @@ El estado de cada categoría es un resumen de métricas individuales: si alguna 
 >[!NOTE]
 >
 >De forma predeterminada, al navegar a esta página, las instancias del entorno de producción están visibles, pero también se pueden abrir otros entornos.
+
+## Vídeo de información general a informes {#video-reports}
+
+Los informes Cloud Manager proporcionan una vista de los entornos del programa y de las instancias de AEM a través de un conjunto de gráficos que informan y rastrean una variedad de métricas para cada instancia de AEM.
+Consulte el siguiente vídeo para obtener más detalles.
+
+>[!VIDEO](https://video.tv.adobe.com/v/26315/?captions=spa)
 
 ## Detalles de supervisión del sistema {#system-monitoring-detail}
 
