@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: 832a4647-9b83-4a9d-b373-30fe16092b15
 translation-type: tm+mt
-source-git-commit: 548d18f251cf8c4c827d2208fec04cde235ce731
+source-git-commit: 519f43ff16e0474951f97798a8e070141e5c124b
 
 ---
 
@@ -93,9 +93,16 @@ Cuando Cloud Manager se implementa en topologías que no son de producción, el 
 
 1. Cloud Manager determina si cada artefacto es un paquete de AEM o de distribuidor.
 1. Cloud Manager elimina todos los distribuidores del equilibrador de carga para aislar el entorno durante la implementación.
+
+   A menos que se configure lo contrario, puede omitir los cambios del equilibrador de carga en las implementaciones de desarrollo y de fase, es decir, separar y adjuntar los pasos en las tuberías que no sean de producción, en los entornos de desarrollo y en la canalización de producción, para los entornos de escenario.
+
+   >[!NOTE]
+   >
+   >Se espera que esta función la utilicen principalmente los clientes 1-1-1.
+
 1. Cada artefacto de AEM se implementa en cada instancia de AEM a través de las API del administrador de paquetes, y las dependencias del paquete determinan el orden de implementación.
 
-   Para obtener más información sobre cómo puede utilizar los paquetes para instalar nueva funcionalidad, transferir contenido entre instancias y realizar una copia de seguridad del contenido del repositorio, consulte Cómo trabajar con paquetes.
+   Para obtener más información sobre cómo puede utilizar los paquetes para instalar nuevas funciones, transferir contenido entre instancias y realizar una copia de seguridad del contenido del repositorio, consulte Cómo trabajar con paquetes.
 
    >[!NOTE]
    >
@@ -113,6 +120,10 @@ Cuando Cloud Manager se implementa en topologías que no son de producción, el 
    >Cloud Manager espera que el artefacto del distribuidor contenga el conjunto de archivos completo.  Todos los archivos de configuración del despachante deben estar presentes en el repositorio git. Si faltan archivos o carpetas, la implementación fallará.
 
 1. Tras la implementación correcta de todos los paquetes de AEM y de despachante en todos los nodos, los despachantes se agregan de nuevo al equilibrador de carga y la implementación se completa.
+
+   >[!NOTE]
+   >
+   >Puede omitir los cambios del equilibrador de carga en implementaciones de desarrollo y de etapa, es decir, separar y adjuntar pasos en las tuberías que no son de producción, en los entornos de desarrollador y en la canalización de producción, en los entornos de escenario. Se espera que esta función la utilicen principalmente los clientes 1-1-1.
 
 ### Implementación en fase de producción {#deployment-production-phase}
 
