@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: introducción
 discoiquuid: 2221d1d5-dbc2-4175-8371-60344f932a82
 translation-type: tm+mt
-source-git-commit: eea425b9bfa178720cbea0653cf8c8f17702281b
+source-git-commit: de9d2834ffa6c235e580227bd020fb8a0b94d22c
 
 ---
 
@@ -26,6 +26,7 @@ Una vez que haya configurado las configuraciones generales para [!UICONTROL Clou
 
 El siguiente vídeo proporciona información general sobre los programas de Cloud Manager que representan conjuntos de entornos AEM que admiten conjuntos lógicos de iniciativas empresariales, que normalmente corresponden a un contrato de nivel de servicio (SLA) adquirido.
 
+>[!VIDEO](https://video.tv.adobe.com/v/26313/?captions=spa)
 
 ## Inicio de sesión por primera vez {#logging-in-for-the-first-time}
 
