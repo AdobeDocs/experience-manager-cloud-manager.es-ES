@@ -7,10 +7,10 @@ uuid: 35fd56ac-dc9c-4aca-8ad6-36c29c4ec497
 contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
-content-type: referencia
+content-type: reference
 discoiquuid: ba6c763a-b78a-439e-8c40-367203a719b3
 translation-type: tm+mt
-source-git-commit: 862501f28f5104d0829a6d2d2ad5f5ce9f8ba341
+source-git-commit: 519f43ff16e0474951f97798a8e070141e5c124b
 
 ---
 
@@ -168,6 +168,13 @@ Siga los pasos a continuación para configurar las validaciones de Dispatcher:
 ## Tuberías de calidad de código y de no producción
 
 Además de la tubería principal que se despliega en el escenario y la producción, los clientes pueden establecer oleoductos adicionales, denominados tuberías **no productivas**. Estas tuberías siempre ejecutan los pasos de generación y calidad del código. Opcionalmente, también pueden implementarse en el entorno de servicios gestionados de Adobe.
+
+### Vídeo sobre tuberías de calidad de código y no producción
+
+Los oleoductos de no producción de CI/CD se dividen en dos categorías: tuberías de calidad del código y tuberías de implementación. La calidad del código canaliza todo el código desde una rama Git para crear y evaluarse en función del análisis de calidad del código del Administrador de nube.
+Consulte el siguiente vídeo para obtener más información.
+
+>[!VIDEO](https://video.tv.adobe.com/v/26316/?captions=spa)
 
 En la pantalla de inicio, estos oleoductos se muestran en una tarjeta nueva:
 
