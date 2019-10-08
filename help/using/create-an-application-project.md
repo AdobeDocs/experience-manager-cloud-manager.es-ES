@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: introducción
 discoiquuid: 76c1a8e4-d66f-4a3b-8c0c-b80c9e17700e
 translation-type: tm+mt
-source-git-commit: 365cd6dfe65059c0c529f774bbcda946d47b0db5
+source-git-commit: 519f43ff16e0474951f97798a8e070141e5c124b
 
 ---
 
@@ -186,7 +186,9 @@ Y si desea enviar un mensaje sencillo solo cuando la compilación se ejecute fue
         </profile>
 ```
 
-## Variables de entorno personalizadas
+## Variables de entorno {#environment-variables}
+
+### Variables de entorno estándar {#standard-environ-variables}
 
 En algunos casos, el proceso de creación de un cliente puede depender de variables de configuración específicas que no sería adecuado colocar en el repositorio git. Cloud Manager permite que un ingeniero de éxito del cliente (CSE) configure estas variables cliente por cliente. Estas variables se almacenan en una ubicación de almacenamiento segura y solo son visibles en el contenedor de compilación para el cliente específico. Los clientes que deseen utilizar esta función deben ponerse en contacto con su CSE para configurar sus variables.
 
