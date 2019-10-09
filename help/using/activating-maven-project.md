@@ -4,7 +4,7 @@ seo-title: Administración de versiones del proyecto de Maven
 description: Obtenga más información sobre la administración de versiones del proyecto de Maven.
 seo-description: Siga esta página para obtener más información sobre la administración de versiones del proyecto de Maven
 translation-type: tm+mt
-source-git-commit: 519f43ff16e0474951f97798a8e070141e5c124b
+source-git-commit: f5ff89820eb843b35b617d300dbbc07f19ca2c17
 
 ---
 
@@ -29,4 +29,4 @@ Si la versión original cumple estos criterios, la versión generada se agregar�
 
 >[!NOTE]
 >
->Independientemente de si la versión original se incorporó o no a la versión inicializada por el Administrador de nube, la versión original está disponible como propiedad Maven con el nombre *cloudManagerOriginalVersion*.
+>Independientemente de si la versión original se incorporó o no a la versión inicializada por el Administrador de nube, la versión original está disponible como propiedad Maven con el nombre *cloudManagerOriginalVersion.*
