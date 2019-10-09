@@ -4,13 +4,14 @@ seo-title: Notas de la versión de AEM Cloud Manager para 2019.10.0
 description: Siga esta página para obtener información sobre la versión 2019.10.0 de Cloud Manager.
 seo-description: Siga esta página para obtener información sobre la versión 2019.10.0 de AEM Cloud Manager.
 translation-type: tm+mt
-source-git-commit: de9d2834ffa6c235e580227bd020fb8a0b94d22c
+source-git-commit: 1e927076e6bc84e8e1761e33a86cff61a3be0d2f
 
 ---
 
 # Notas de la versión de 2019.10.0 {#release-notes-for}
 
-La versión [!UICONTROL Cloud Manager] 2019.10.0 actualiza los criterios de prueba de seguridad, agrega gráficos de supervisión descargables y corrige algunos problemas de uso informados por los clientes.
+La siguiente sección describe las Notas de revisión generales de la versión 2018.10.0 y agrega actualizaciones a los pasos de implementación y al manejo de versiones del proyecto. [!UICONTROL Cloud Manager] 
+Siga la página siguiente para obtener más detalles.
 
 ## Fecha de lanzamiento {#release-date}
 
@@ -24,11 +25,12 @@ La fecha de versión de [!UICONTROL Cloud Manager] la versión 2019.10.0 es el 1
 * Las tuberías que no son de producción se pueden eliminar de la tarjeta en la página Información general, así como en la API.
 * Hay un nuevo paso de aprobación opcional inmediatamente después del paso de implementación de la etapa, pero antes del paso de prueba de seguridad.
 * Al configurar una canalización CI/CD, la desvinculación y asociación de instancias de despachante del equilibrador de carga se puede omitir para entornos de desarrollo y de etapa.
+Consulte Proceso **[de implementación](deploying-code.md#deployment-process)** para obtener más detalles.
 * La CLI de Cloud Manager se ha ampliado para admitir el acceso a los registros de pasos de ejecución.
 * La API de Cloud Manager ahora admite la edición de la rama configurada de un canalizador.
-* Las solicitudes ejecutadas durante la prueba de rendimiento ahora incluyen un token específico ("CloudManagerTest") en el agente de usuario.
+* Las solicitudes ejecutadas durante la prueba de rendimiento ahora incluyen un token ***CloudManagerTest*** específico en el agente de usuario.
 
 ## Corrección de errores {#bug-fixes}
 
-* Algunas de las tarjetas de la página Información general no estaban correctamente alineadas verticalmente.
+* Algunas de las tarjetas de la página **Información general** no estaban correctamente alineadas verticalmente.
 * Ciertas condiciones de fallo no hacían que las ejecuciones de los gasoductos se marcaran correctamente e impedían las ejecuciones posteriores.
