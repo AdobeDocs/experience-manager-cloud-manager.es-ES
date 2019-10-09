@@ -10,7 +10,7 @@ topic-tags: using
 content-type: reference
 discoiquuid: ba6c763a-b78a-439e-8c40-367203a719b3
 translation-type: tm+mt
-source-git-commit: 519f43ff16e0474951f97798a8e070141e5c124b
+source-git-commit: f5ff89820eb843b35b617d300dbbc07f19ca2c17
 
 ---
 
@@ -127,6 +127,11 @@ Siga los pasos a continuación para configurar las validaciones de Dispatcher:
    Haga clic en **Guardar** para mantener esta configuración.
 
    ![](assets/image2018-8-7_15-4-30.png)
+
+   **Aprobar después de la implementación** de la fase Hay un paso opcional **Aprobar después de la implementación** de la fase que se puede configurar en la canalización de producción.
+   >[!NOTE]
+   >
+   >**La aprobación después de la implementación** de la fase funciona de manera similar a la aprobación antes de la implementación de producción, pero se produce inmediatamente después del paso de implementación de la fase, es decir, antes de que se realice la prueba, en comparación con la aprobación antes de la implementación de producción, que se realiza una vez finalizadas todas las pruebas.
 
 1. Acceda a la ficha **Pruebas** para definir los criterios de prueba del programa.
 
