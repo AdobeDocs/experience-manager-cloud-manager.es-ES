@@ -10,7 +10,7 @@ topic-tags: using
 content-type: referencia
 discoiquuid: ba6c763a-b78a-439e-8c40-367203a719b3
 translation-type: tm+mt
-source-git-commit: 316ec3ec088271a6524d4c8fd4c84fd36e2ac4db
+source-git-commit: 581e78ef4163e8e9b2b26613512b82223c214071
 
 ---
 
@@ -193,8 +193,6 @@ Siga los pasos a continuación para configurar las validaciones de Dispatcher:
 ## Tuberías de calidad de código y de no producción
 
 Además de la tubería principal que se despliega en el escenario y la producción, los clientes pueden establecer oleoductos adicionales, denominados tuberías **no productivas**. Estas tuberías siempre ejecutan los pasos de generación y calidad del código. Opcionalmente, también pueden implementarse en el entorno de servicios gestionados de Adobe.
-
-## Vídeo sobre tuberías de calidad de código y no producción
 
 ## Tutorial de vídeo {#video-tutorial-two}
 
