@@ -7,10 +7,10 @@ uuid: 35fd56ac-dc9c-4aca-8ad6-36c29c4ec497
 contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
-content-type: reference
+content-type: referencia
 discoiquuid: ba6c763a-b78a-439e-8c40-367203a719b3
 translation-type: tm+mt
-source-git-commit: f5ff89820eb843b35b617d300dbbc07f19ca2c17
+source-git-commit: dd23fc2277c2e2c51e3ab9b071d6336d2e0d6488
 
 ---
 
@@ -129,9 +129,17 @@ Siga los pasos a continuación para configurar las validaciones de Dispatcher:
    ![](assets/image2018-8-7_15-4-30.png)
 
    **Aprobar después de la implementación** de la fase Hay un paso opcional **Aprobar después de la implementación** de la fase que se puede configurar en la canalización de producción.
+Esta opción está habilitada en una nueva opción de la pantalla **de edición** de tubería:
+
+   ![](assets/post_deployment1.png)
+
+   A continuación, se muestra como un paso independiente durante la ejecución de la canalización:
+   ![](assets/post_deployment2.png)
+
    >[!NOTE]
    >
    >**La aprobación después de la implementación** de la fase funciona de manera similar a la aprobación antes de la implementación de producción, pero se produce inmediatamente después del paso de implementación de la fase, es decir, antes de que se realice la prueba, en comparación con la aprobación antes de la implementación de producción, que se realiza una vez finalizadas todas las pruebas.
+
 
 1. Acceda a la ficha **Pruebas** para definir los criterios de prueba del programa.
 
