@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: c5b39de2-3a9b-437f-98e8-e6e6249a5b3a
 translation-type: tm+mt
-source-git-commit: 519f43ff16e0474951f97798a8e070141e5c124b
+source-git-commit: dd23fc2277c2e2c51e3ab9b071d6336d2e0d6488
 
 ---
 
@@ -22,10 +22,11 @@ Cada uno de los entornos enumerados muestra su estado asociado.
 
 ![](assets/Manage_Environments1.png)
 
-## Vídeo de información general a entornos {#environments-video}
+## Tutorial de vídeo {#video-tutorial}
+
+### Información general sobre el entorno de Cloud Manager {#environ-video}
 
 El siguiente vídeo proporciona información general sobre los entornos de Cloud Manager compuestos por instancias de AEM Author, AEM Publish y Dispatcher.
-Consulte el siguiente vídeo para obtener más detalles.
 
 >[!VIDEO](https://video.tv.adobe.com/v/26318/?captions=spa)
 
