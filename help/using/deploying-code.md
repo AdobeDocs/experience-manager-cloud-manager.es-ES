@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: 832a4647-9b83-4a9d-b373-30fe16092b15
 translation-type: tm+mt
-source-git-commit: 519f43ff16e0474951f97798a8e070141e5c124b
+source-git-commit: dd23fc2277c2e2c51e3ab9b071d6336d2e0d6488
 
 ---
 
@@ -95,6 +95,8 @@ Cuando Cloud Manager se implementa en topologías que no son de producción, el 
 1. Cloud Manager elimina todos los distribuidores del equilibrador de carga para aislar el entorno durante la implementación.
 
    A menos que se configure lo contrario, puede omitir los cambios del equilibrador de carga en las implementaciones de desarrollo y de fase, es decir, separar y adjuntar los pasos en las tuberías que no sean de producción, en los entornos de desarrollo y en la canalización de producción, para los entornos de escenario.
+
+   ![](assets/load_balancer.png)
 
    >[!NOTE]
    >
