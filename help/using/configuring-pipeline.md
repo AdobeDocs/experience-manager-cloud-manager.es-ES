@@ -10,7 +10,7 @@ topic-tags: using
 content-type: referencia
 discoiquuid: ba6c763a-b78a-439e-8c40-367203a719b3
 translation-type: tm+mt
-source-git-commit: dd23fc2277c2e2c51e3ab9b071d6336d2e0d6488
+source-git-commit: 316ec3ec088271a6524d4c8fd4c84fd36e2ac4db
 
 ---
 
@@ -18,6 +18,15 @@ source-git-commit: dd23fc2277c2e2c51e3ab9b071d6336d2e0d6488
 # Configurar la canalización de CD/CI {#configure-your-ci-cd-pipeline}
 
 En la página siguiente se explica cómo configurar la **canalización**. Para obtener más información conceptual sobre el funcionamiento de la canalización, consulte la descripción general [de la canalización](ci-cd-pipeline.md)CI/CD.
+
+## Tutorial de vídeo {#video-tutorial-one}
+
+### Configuración de la canalización en el Administrador de nube {#config-pipeline-video}
+
+La configuración de la tubería de producción CI/CD define el activador que iniciará la canalización, parámetros que controlan la implementación de producción y parámetros de prueba de rendimiento.
+
+>[!VIDEO](https://video.tv.adobe.com/v/26314/?captions=spa)
+
 
 ## Explicación del flujo {#understanding-the-flow}
 
@@ -100,6 +109,21 @@ Seleccione la rama Git y haga clic en **Siguiente**.
 >
 >La opción **Usar supervisión** de CSE no está disponible para todos los clientes.
 
+**Aprobar después de la implementación de la etapa**
+
+Hay un paso opcional **Aprobar después de la implementación** de la etapa que se puede configurar en la canalización de producción.
+Esta opción está habilitada en una nueva opción de la pantalla **de edición** de tubería:
+
+![](assets/post_deployment1.png)
+
+A continuación, se muestra como un paso independiente durante la ejecución de la canalización:
+
+![](assets/post_deployment2.png)
+
+>[!NOTE]
+>
+>**La aprobación después de la implementación** de la fase funciona de manera similar a la aprobación antes de la implementación de producción, pero se produce inmediatamente después del paso de implementación de la fase, es decir, antes de que se realice la prueba, en comparación con la aprobación antes de la implementación de producción, que se realiza una vez finalizadas todas las pruebas.
+
 **Invalidación del despachante**
 
 Como administrador de implementación, tiene la oportunidad de configurar un conjunto de rutas que se **invalidarán** o se **vaciarán** desde la caché de AEM Dispatcher, mientras configura o edita la canalización.
@@ -127,18 +151,6 @@ Siga los pasos a continuación para configurar las validaciones de Dispatcher:
    Haga clic en **Guardar** para mantener esta configuración.
 
    ![](assets/image2018-8-7_15-4-30.png)
-
-   **Aprobar después de la implementación** de la fase Hay un paso opcional **Aprobar después de la implementación** de la fase que se puede configurar en la canalización de producción.
-Esta opción está habilitada en una nueva opción de la pantalla **de edición** de tubería:
-
-   ![](assets/post_deployment1.png)
-
-   A continuación, se muestra como un paso independiente durante la ejecución de la canalización:
-   ![](assets/post_deployment2.png)
-
-   >[!NOTE]
-   >
-   >**La aprobación después de la implementación** de la fase funciona de manera similar a la aprobación antes de la implementación de producción, pero se produce inmediatamente después del paso de implementación de la fase, es decir, antes de que se realice la prueba, en comparación con la aprobación antes de la implementación de producción, que se realiza una vez finalizadas todas las pruebas.
 
 
 1. Acceda a la ficha **Pruebas** para definir los criterios de prueba del programa.
@@ -182,10 +194,13 @@ Esta opción está habilitada en una nueva opción de la pantalla **de edición*
 
 Además de la tubería principal que se despliega en el escenario y la producción, los clientes pueden establecer oleoductos adicionales, denominados tuberías **no productivas**. Estas tuberías siempre ejecutan los pasos de generación y calidad del código. Opcionalmente, también pueden implementarse en el entorno de servicios gestionados de Adobe.
 
-### Vídeo sobre tuberías de calidad de código y no producción
+## Vídeo sobre tuberías de calidad de código y no producción
+
+## Tutorial de vídeo {#video-tutorial-two}
+
+### Canalizaciones de calidad de código y no producción de Cloud Manager {#non-prod-video}
 
 Los oleoductos de no producción de CI/CD se dividen en dos categorías: tuberías de calidad del código y tuberías de implementación. La calidad del código canaliza todo el código desde una rama Git para crear y evaluarse en función del análisis de calidad del código del Administrador de nube.
-Consulte el siguiente vídeo para obtener más información.
 
 >[!VIDEO](https://video.tv.adobe.com/v/26316/?captions=spa)
 
