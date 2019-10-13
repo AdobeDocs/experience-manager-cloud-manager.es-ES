@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: 832a4647-9b83-4a9d-b373-30fe16092b15
 translation-type: tm+mt
-source-git-commit: dd23fc2277c2e2c51e3ab9b071d6336d2e0d6488
+source-git-commit: 5a9d5fc71968741948c519681bcc25bb40d4da45
 
 ---
 
@@ -125,7 +125,7 @@ Cuando Cloud Manager se implementa en topologías que no son de producción, el 
 
    >[!NOTE]
    >
-   >Puede omitir los cambios del equilibrador de carga en implementaciones de desarrollo y de etapa, es decir, separar y adjuntar pasos en las tuberías que no son de producción, en los entornos de desarrollador y en la canalización de producción, en los entornos de escenario. Se espera que esta función la utilicen principalmente los clientes 1-1-1.
+   >Puede omitir los cambios del equilibrador de carga en implementaciones de desarrollo y de etapa, es decir, separar y adjuntar pasos en las tuberías que no son de producción, en los entornos de desarrollador y en la canalización de producción, en los entornos de escenario.
 
 ### Implementación en fase de producción {#deployment-production-phase}
 
