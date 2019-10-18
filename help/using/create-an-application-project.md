@@ -1,6 +1,6 @@
 ---
-title: Creación de un proyecto de aplicación de AEM
-seo-title: Creación de un proyecto de aplicación de AEM
+title: Crear un proyecto de aplicación de AEM
+seo-title: Crear un proyecto de aplicación de AEM
 description: nulo
 seo-description: Siga esta página para obtener más información sobre la configuración de un proyecto de AEM al empezar a usar Cloud Manager.
 uuid: 7b976ebf-5358-49d8-a58d-0bae026303fa
@@ -9,12 +9,12 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: introducción
 discoiquuid: 76c1a8e4-d66f-4a3b-8c0c-b80c9e17700e
 translation-type: tm+mt
-source-git-commit: 2028569406bcaacb27c42879a79832dec7ec91f4
+source-git-commit: 8daee34e6cfaddb31fc447f64de9ce5ca7ed54ba
 
 ---
 
 
-# Creación de un proyecto de aplicación de AEM {#create-an-aem-application-project}
+# Crear un proyecto de aplicación de AEM {#create-an-aem-application-project}
 
 ## Uso del asistente para crear un proyecto de aplicación de AEM {#using-wizard-to-create-an-aem-application-project}
 
@@ -76,7 +76,7 @@ Para poder compilar e implementar correctamente con Cloud Manager, los proyectos
 
 * Los artefactos implementables de Dispatcher se descubren mediante el análisis de archivos *zip* (nuevamente, contenidos en un directorio llamado *target*) que tienen directorios llamados *conf* y *conf.d*.
 
-* Si hay más de un paquete de contenido, no se garantiza el orden de las implementaciones de paquetes. Si se necesita un orden específico, se pueden usar dependencias de paquetes de contenido para definir el orden.
+* Si hay más de un paquete de contenido, no se garantiza el orden de las implementaciones de paquetes. Si se necesita un orden específico, se pueden usar dependencias de paquetes de contenido para definir el orden. Los paquetes pueden [omitirse](#skipping-content-packages) de la implementación.
 
 <!-- 
 
