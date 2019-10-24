@@ -10,7 +10,7 @@ topic-tags: using
 content-type: referencia
 discoiquuid: ba6c763a-b78a-439e-8c40-367203a719b3
 translation-type: tm+mt
-source-git-commit: 581e78ef4163e8e9b2b26613512b82223c214071
+source-git-commit: bc419b96554a40b84878140f8f532c9f4e10c9f3
 
 ---
 
@@ -204,7 +204,7 @@ Los oleoductos de no producción de CI/CD se dividen en dos categorías: tuberí
 
 En la pantalla de inicio, estos oleoductos se muestran en una tarjeta nueva:
 
-1. Acceda al mosaico de las tuberías **** que no son de producción desde la pantalla de inicio del Administrador de nube.
+1. Acceda al mosaico de **las tuberías** que no son de producción desde la pantalla de inicio del Administrador de nube.
 
    ![](assets/Configuring_Pipeline_Add-Production.png)
 
