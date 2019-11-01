@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: 832a4647-9b83-4a9d-b373-30fe16092b15
 translation-type: tm+mt
-source-git-commit: f9df9c05fb708aed3f9ea91780f7a92c24e04673
+source-git-commit: bc9454120c92181503efbf8270ce621af26801d9
 
 ---
 
@@ -51,7 +51,7 @@ Una vez configurada la **canalización** (repositorio, entorno y entorno de prue
 
    La prueba **de** fase incluye los siguientes pasos:
 
-   * Prueba de seguridad: Este paso evalúa el impacto del código de la aplicación en la seguridad del entorno de AEM. Consulte [Explicación de los resultados](understand-your-test-results.md) de la prueba para obtener más información sobre el proceso de prueba.
+   * Prueba de seguridad: Este paso evalúa el impacto en la seguridad del código de la aplicación en el entorno de AEM. Consulte [Explicación de los resultados](understand-your-test-results.md) de la prueba para obtener más información sobre el proceso de prueba.
    * Prueba de rendimiento: Este paso evalúa el rendimiento del código de la aplicación. Consulte [Explicación de los resultados](understand-your-test-results.md) de la prueba para obtener más información sobre el proceso de prueba.
    ![](assets/Stage_Testing1.png)
 
