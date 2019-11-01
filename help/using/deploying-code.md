@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: 832a4647-9b83-4a9d-b373-30fe16092b15
 translation-type: tm+mt
-source-git-commit: 5a9d5fc71968741948c519681bcc25bb40d4da45
+source-git-commit: f9df9c05fb708aed3f9ea91780f7a92c24e04673
 
 ---
 
@@ -43,15 +43,16 @@ Una vez configurada la **canalización** (repositorio, entorno y entorno de prue
 
    La implementación **de la** etapa incluye los siguientes pasos:
 
-   * Prueba de unidad y compilación
-   * Análisis de código
+   * Validación: Este paso garantiza que la canalización esté configurada para utilizar los recursos disponibles actualmente, por ejemplo, que la ramificación configurada exista, que los entornos estén disponibles.
+   * Prueba de generación y unidad: Este paso ejecuta un proceso de compilación en contenedores. Consulte [Creación de un proyecto](create-an-application-project.md) de aplicación de AEM para obtener más información sobre el entorno de compilación.
+   * Análisis de código: Este paso evalúa la calidad del código de la aplicación. Consulte [Explicación de los resultados](understand-your-test-results.md) de la prueba para obtener más información sobre el proceso de prueba.
    * Implementar en etapa
    ![](assets/Stage_Deployment1.png)
 
    La prueba **de** fase incluye los siguientes pasos:
 
-   * Pruebas de seguridad
-   * Prueba de rendimiento
+   * Prueba de seguridad: Este paso evalúa el impacto del código de la aplicación en la seguridad del entorno de AEM. Consulte [Explicación de los resultados](understand-your-test-results.md) de la prueba para obtener más información sobre el proceso de prueba.
+   * Prueba de rendimiento: Este paso evalúa el rendimiento del código de la aplicación. Consulte [Explicación de los resultados](understand-your-test-results.md) de la prueba para obtener más información sobre el proceso de prueba.
    ![](assets/Stage_Testing1.png)
 
    La implementación **** de producción incluye los siguientes pasos:
