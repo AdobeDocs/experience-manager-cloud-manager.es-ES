@@ -1,40 +1,40 @@
 ---
 product: adobe experience manager
-sub-product: administrador de experiencias administrador de nube
+sub-product: experience manager cloud manager
 archetype: administrador
 user-guide-title: Ayuda de Experience Manager Cloud Manager
 translation-type: tm+mt
-source-git-commit: d458e0735b558940a3da3a7f3129dbec49cc1688
+source-git-commit: 52c54568d8ab7b5091c25b3b65b4baa126bf61f5
 
 ---
 
 
-# Experience Manager Help {#using}
+# Ayuda de Experience Manager {#using}
 
 + [Introducción a Cloud Manager](introduction-to-cloud-manager.md)
 + Información general {#overview}
    + [Conceptos clave](key-concepts.md)
-   + [Viaje del cliente](customer-journey.md)
-   + [Canalización CI/CD](ci-cd-pipeline.md)
+   + [Recorrido del cliente](customer-journey.md)
+   + [Canalización de CI/CD](ci-cd-pipeline.md)
    + [Seguridad y privacidad](security-and-privacy.md)
    + [Recursos de ayuda](help-resources.md)
-+ ¿Qué se necesita? {#requirements}
++ ¿Qué es necesario? {#requirements}
    + [Derechos de acceso concedidos](access-rights-granted.md)
    + [Repositorio de códigos de origen](source-code-repository.md)
    + [Agregar usuarios y funciones](setting-up-users-and-roles.md)
    + [Entornos aprovisionados](environments-provisioned.md)
 + Introducción {#getting-started}
-   + [Inicio de sesión por primera vez](first-time-login.md)
+   + [Primer inicio de sesión](first-time-login.md)
    + [Configurar el programa](setting-up-program.md)
-   + [Creación de un proyecto de aplicación de AEM](create-an-application-project.md)
-   + [Configurar las ramas de versiones](configure-your-release-branches.md)
+   + [Crear un proyecto de aplicación de AEM](create-an-application-project.md)
+   + [Configurar las ramas de las versiones](configure-your-release-branches.md)
    + [Administrar las configuraciones de Dispatcher](dispatcher-configurations.md)
-+ Cómo usar {#how-to-use}
++ Usos {#how-to-use}
    + [Configurar la canalización de CD/CI](configuring-pipeline.md)
    + [Implementar el código](deploying-code.md)
    + [Comprender los resultados de la prueba](understand-your-test-results.md)
-   + [Administrar entornos](manage-your-environment.md)
-   + [Monitorear los entornos](monitor-your-environments.md)
+   + [Administrar los entornos](manage-your-environment.md)
+   + [Supervisar los entornos](monitor-your-environments.md)
    + [API de Cloud Manager](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html)
    + [CLI de Cloud Manager](https://github.com/adobe/aio-cli-plugin-cloudmanager/blob/master/README.md)
    + [Notificaciones](notifications.md)
@@ -46,18 +46,19 @@ source-git-commit: d458e0735b558940a3da3a7f3129dbec49cc1688
    + [Información general](overview-productupdate-wizard.md)
    + [Evaluación](evaluation.md)
 + Notas de la versión {#release-notes}
-   + [Notas de la versión actuales (2019.10.0)](release-notes-current.md)
-   + [Notas de la versión de 2019.9.0](release-notes-2019-9-0.md)
-   + [Notas de la versión de 2019.8.0](release-notes-2019-8-0.md)
-   + [Notas de la versión de 2019.7.0](release-notes-2019-7-0.md)
-   + [Notas de la versión de 2019.6.0](release-notes-2019-6-0.md)
-   + [Notas de la versión de 2019.5.0](release-notes-2019-5-0.md)
-   + [Notas de la versión de 2019.4.0](release-notes-2019-4-0.md)
-   + [Notas de la versión de 2019.3.0](release-notes-2019-3-0.md)
-   + [Notas de la versión de 2019.2.0](release-notes-2019-2-0.md)
-   + [Notas de la versión de 2019.1.0](release-notes-2019-1-0.md)
-   + [Notas de la versión de 2018.9.0](release-notes-2018-9-0.md)
-   + [Notas de la versión de 2018.8.0](release-notes-2018-8-0.md)
-   + [Notas de la versión de 2018.7.0](release-notes-2018-7-0.md)
-   + [Notas de la versión de 2018.6.0](release-notes-2018-6-0.md)
-   + [Notas de la versión de 2018.5.0](release-notes-2018-5-0.md)
+   + [Notas de la versión actuales (2019.11.0)](release-notes-current.md)
+   + [Notas de la versión 2019.10.0](release-notes-2019-10-0.md)
+   + [Notas de la versión 2019.9.0](release-notes-2019-9-0.md)
+   + [Notas de la versión 2019.8.0](release-notes-2019-8-0.md)
+   + [Notas de la versión 2019.7.0](release-notes-2019-7-0.md)
+   + [Notas de la versión 2019.6.0](release-notes-2019-6-0.md)
+   + [Notas de la versión 2019.5.0](release-notes-2019-5-0.md)
+   + [Notas de la versión 2019.4.0](release-notes-2019-4-0.md)
+   + [Notas de la versión 2019.3.0](release-notes-2019-3-0.md)
+   + [Notas de la versión 2019.2.0](release-notes-2019-2-0.md)
+   + [Notas de la versión 2019.1.0](release-notes-2019-1-0.md)
+   + [Notas de la versión 2018.9.0](release-notes-2018-9-0.md)
+   + [Notas de la versión 2018.8.0](release-notes-2018-8-0.md)
+   + [Notas de la versión 2018.7.0](release-notes-2018-7-0.md)
+   + [Notas de la versión 2018.6.0](release-notes-2018-6-0.md)
+   + [Notas de la versión 2018.5.0](release-notes-2018-5-0.md)
