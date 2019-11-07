@@ -1,10 +1,10 @@
 ---
-title: Monitorear los entornos
-seo-title: Monitorear los entornos
+title: Supervisar los entornos
+seo-title: Supervisar los entornos
 description: nulo
 seo-description: Siga esta página para conocer la supervisión del sistema en el Administrador de nube, que se realiza observando las instancias individuales dentro de un entorno y rastreando una variedad de métricas para cada instancia.
 translation-type: tm+mt
-source-git-commit: dd23fc2277c2e2c51e3ab9b071d6336d2e0d6488
+source-git-commit: 1edfbc0adb04026cd29ba93b4ba155d3b61439dc
 
 ---
 
@@ -43,7 +43,7 @@ La página Información general de supervisión del sistema enumera los entornos
 
 El estado de cada categoría es un resumen de métricas individuales: si alguna métrica de una categoría está en estado crítico, toda la categoría se encuentra en estado crítico para el propósito de la página de información general. El mismo resumen se puede ver a nivel de entorno y de instancia.
 
-![](assets/Reports.png)
+![](assets/System-Monitoring-Reports.png)
 
 >[!NOTE]
 >
@@ -107,11 +107,11 @@ Por ejemplo, si hace clic en la serie de umbrales de advertencia, verá sólo el
 Los clientes pueden ver el rendimiento de su entorno de producción de AEM en relación con el contrato de nivel de servicio (SLA). Esto está disponible a través de un submenú en la pantalla Informes.
 Por ejemplo: el gráfico siguiente muestra los logros mensuales de SLA en 2018.
 
-![](assets/sla-reporting1.png)
+![](assets/SLA-Reports-one.png)
 
 Al igual que con los gráficos de supervisión del sistema, si se desplaza sobre un punto de datos se muestran los valores específicos de ese mes.
 
-![](assets/sla-reporting2.png)
+![](assets/SLA-Reports-two.png)
 
 La sección Análisis de eventos de este gráfico muestra el conjunto de incidentes que ocurrieron para el programa durante el año seleccionado. Cada incidente tiene un intervalo de tiempo, una causa y un conjunto de comentarios.
 
