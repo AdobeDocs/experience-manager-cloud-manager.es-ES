@@ -10,7 +10,7 @@ topic-tags: using
 content-type: referencia
 discoiquuid: ba6c763a-b78a-439e-8c40-367203a719b3
 translation-type: tm+mt
-source-git-commit: 06154ad565168d25e18de49c10e5944f39a293c2
+source-git-commit: c81243708d938a8bffdec8a35f32a2cf552c1c95
 
 ---
 
@@ -219,7 +219,7 @@ En la pantalla de inicio, estos oleoductos se muestran en una tarjeta nueva:
    * **Editar** : permite editar la configuración de la canalización
    * **Detalle** : muestra la última ejecución de la canalización (si existe)
    * **Generar** : se desplaza a la página de ejecución, desde donde se puede ejecutar la canalización
-   ![](assets/Configuring_Pipeline_Add-Production3.png)
+   ![](assets/Non-prod-2.png)
 
    >[!NOTE]
    >
