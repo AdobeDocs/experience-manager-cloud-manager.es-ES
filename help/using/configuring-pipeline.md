@@ -10,7 +10,7 @@ topic-tags: using
 content-type: referencia
 discoiquuid: ba6c763a-b78a-439e-8c40-367203a719b3
 translation-type: tm+mt
-source-git-commit: bc419b96554a40b84878140f8f532c9f4e10c9f3
+source-git-commit: 06154ad565168d25e18de49c10e5944f39a293c2
 
 ---
 
@@ -58,7 +58,7 @@ Siga estos pasos para configurar el comportamiento y las preferencias de la cana
 
 1. Haga clic en **Configurar tubería** para configurar y configurar la canalización.
 
-   ![](assets/Configure_ci-cd-1.png)
+   ![](assets/Setup-Pipeline.png)
 
 1. Aparece la pantalla **Configurar tubería** .
 
@@ -188,7 +188,7 @@ Siga los pasos a continuación para configurar las validaciones de Dispatcher:
    >
    >Además, una vez que haya configurado la canalización, podrá editar la configuración de la misma mediante el mosaico Ajustes **de** tubería de producción de la [!UICONTROL Cloud Manager] interfaz de usuario.
 
-   ![](assets/Prod-Pipeline-Settings-Dialog.png)
+   ![](assets/Production-Pipeline.png)
 
 ## Tuberías de calidad de código y de no producción
 
@@ -206,7 +206,7 @@ En la pantalla de inicio, estos oleoductos se muestran en una tarjeta nueva:
 
 1. Acceda al mosaico de **las tuberías** que no son de producción desde la pantalla de inicio del Administrador de nube.
 
-   ![](assets/Configuring_Pipeline_Add-Production.png)
+   ![](assets/Non-Production-Pipeline.png)
 
 1. Haga clic en el botón Agregar para especificar el nombre de la canalización, el tipo de canalización y la rama Git.
 
