@@ -1,6 +1,6 @@
 ---
-title: Administrar entornos
-seo-title: Administrar entornos
+title: Administrar los entornos
+seo-title: Administrar los entornos
 description: nulo
 seo-description: Siga esta página para ver la lista de entornos de producción y no de producción que se utilizan para configurar y ejecutar el canalizador de CI/CD en Cloud Manager.
 uuid: 04e67572-11db-4d5d-acf3-fd7f644a95f0
@@ -9,18 +9,18 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: c5b39de2-3a9b-437f-98e8-e6e6249a5b3a
 translation-type: tm+mt
-source-git-commit: dd23fc2277c2e2c51e3ab9b071d6336d2e0d6488
+source-git-commit: 72daabd54cd6216743dfbf4d843f685b3b12b3aa
 
 ---
 
 
-# Administrar entornos {#manage-your-environments}
+# Administrar los entornos {#manage-your-environments}
 
 La página **Información general** de Cloud Manager incluye el mosaico **Entornos** que enumera todos los entornos AEM administrados.
 
 Cada uno de los entornos enumerados muestra su estado asociado.
 
-![](assets/Manage_Environments1.png)
+![](assets/Manage-Environments1.png)
 
 ## Tutorial de vídeo {#video-tutorial}
 
@@ -36,7 +36,7 @@ El mosaico **Entornos** muestra los entornos Producción y Etapa aprovisionados 
 
 El estado es el estado de energía resumido en los nodos del entorno. Es verde si todos los nodos se están ejecutando, rojo si se detiene un nodo, azul si se va a abrir un nodo y amarillo si incluso un nodo tiene un estado de energía no disponible (en este orden de prioridad).
 
-![](assets/manage_environments-screen2.png)
+![](assets/Environments-card-new.png)
 
 ### Entornos {#environments}
 
@@ -48,4 +48,4 @@ La pantalla **Entornos** muestra una tarjeta para los entornos de *producción* 
 >
 >El **ESTADO** del nodo representa el estado de energía de la VM y no refleja el estado de AEM en el servidor. El estado puede ser **En ejecución** (círculo verde), **Detenido** (círculo rojo), **Comenzando** (círculo azul) o **No disponible** (círculo amarillo).
 
-![](assets/Manage_Environments2.png)
+![](assets/Environments-tab.png)
