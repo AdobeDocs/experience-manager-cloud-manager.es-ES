@@ -4,7 +4,7 @@ sub-product: experience manager cloud manager
 archetype: administrator
 user-guide-title: Experience Manager Cloud Manager Help
 translation-type: tm+mt
-source-git-commit: 1f31e654272afa60cac3376ce4dc3bc76f0d9dda
+source-git-commit: e22345e23731cf97502e6a8654d254d68f884ba7
 
 ---
 
@@ -41,12 +41,14 @@ source-git-commit: 1f31e654272afa60cac3376ce4dc3bc76f0d9dda
    + [Reglas de calidad de código personalizadas](custom-code-quality-rules.md)
 + Administrar el código {#managing-code}
    + [Administración de versiones del proyecto de Maven](activating-maven-project.md)
+   + [Acceso a Git](accessing-git.md)
    + [Integración con Git](setup-cloud-manager-git-integration.md)
 + Asistente para la actualización de productos {#product-update-wizard}
    + [Información general](overview-productupdate-wizard.md)
    + [Evaluación](evaluation.md)
 + Notas de la versión {#release-notes}
-   + [Notas de la versión actuales (2019.12.0)](release-notes-current.md)
+   + [Notas de la versión actuales (2020.1.0)](release-notes-current.md)
+   + [Notas de la versión 2019.12.0](release-notes-2019-12-0.md)
    + [Notas de la versión 2019.11.0](release-notes-2019-11-0.md)
    + [Notas de la versión 2019.10.0](release-notes-2019-10-0.md)
    + [Notas de la versión 2019.9.0](release-notes-2019-9-0.md)
