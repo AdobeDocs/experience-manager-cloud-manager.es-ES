@@ -4,7 +4,7 @@ seo-title: Acceso a Git
 description: Esta página describe cómo puede acceder y administrar el repositorio Git.
 seo-description: Siga esta página para conocer cómo acceder y administrar su repositorio Git.
 translation-type: tm+mt
-source-git-commit: f0d11c07ddbde1550e038abfce3bb081f24b6f3c
+source-git-commit: 027408326960153963d2e8604dc0ed33d921df66
 
 ---
 
@@ -25,7 +25,7 @@ Utilice el botón **Administrar Git** disponible en la interfaz de usuario de Cl
 
    Además, si selecciona la ficha Canalización **sin producción** , también verá la opción **Administrar Git** .
 
-   ![](assets/manage-git2.png)
+   ![](assets/manage-git-new2.png)
 
 >[!NOTE]
 >La opción **Administrar Git** está visible para los usuarios en la función Desarrollador o Administrador de implementación. Al hacer clic en este botón, se abre un cuadro de diálogo que permite al usuario encontrar la dirección URL de su repositorio de Git del Administrador de nube junto con su nombre de usuario y contraseña.
