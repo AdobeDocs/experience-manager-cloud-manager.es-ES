@@ -1,36 +1,30 @@
 ---
-title: Notas de la versión 2019.12.0
-seo-title: Notas de la versión de AEM Cloud Manager para 2019.12.0
-description: Siga esta página para obtener información sobre la versión 2019.12.0 de Cloud Manager.
-seo-description: Siga esta página para obtener información sobre la versión 2019.12.0 de AEM Cloud Manager.
+title: Notas de la versión 2020.1.0
+seo-title: Notas de la versión de AEM Cloud Manager para 2020.1.0
+description: Siga esta página para obtener información sobre la versión 2020.1.0 de Cloud Manager
+seo-description: Siga esta página para obtener información sobre la versión 2020.1.0 de AEM Cloud Manager
 translation-type: tm+mt
-source-git-commit: 1f31e654272afa60cac3376ce4dc3bc76f0d9dda
+source-git-commit: e22345e23731cf97502e6a8654d254d68f884ba7
 
 ---
 
-# Notas de la versión 2019.12.0 {#release-notes-for}
+# Notas de la versión 2020.1.0 {#release-notes-for}
 
-La siguiente sección describe las Notas de revisión generales de la [!UICONTROL Cloud Manager] versión 2019.12.0 y agrega actualizaciones a la ejecución de la canalización y mejoras a los análisis de calidad del código.
-Siga las secciones a continuación para obtener más detalles.
+La siguiente sección describe las Notas de revisión generales de la versión 2020.1.0 y agrega actualizaciones para acceder a las credenciales de Git y a la experiencia de inicio de sesión. [!UICONTROL Cloud Manager]
 
 ## Release Date {#release-date}
 
-La fecha de versión de [!UICONTROL Cloud Manager] la versión 2019.12.0 es el 12 de diciembre de 2019.
+La fecha de versión de [!UICONTROL Cloud Manager] la versión 2020.1.0 es el 16 de enero de 2020.
 
 ## Novedades {#whats-new}
 
-* Los pasos en la ejecución de la canalización ahora muestran la marca de tiempo de finalización para cada paso.
-* Los análisis de calidad del código para proyectos que no contienen código Java ahora informan una tasa de cobertura del código del 100%.
-* Se ha eliminado la comprobación de estado de Configuración de CQ Dispatcher.
+* Las credenciales de Git ahora se pueden obtener desde la interfaz de usuario de Cloud Manager. Consulte [Acceso a Git](/help/using/accessing-git.md) para obtener más información.
+* La experiencia de inicio de sesión y la estructura URL han cambiado como parte de una iniciativa de Adobe. Los marcadores antiguos se redireccionarán a las nuevas direcciones URL.
 
 
 ## Corrección de errores {#bug-fixes}
 
-* Las fechas no se mostraban correctamente en determinados exploradores.
-* En casos excepcionales, la canalización de producción pasaría al paso de aprobación mientras la prueba de rendimiento aún se estaba ejecutando.
-* En determinados estados, los botones del área superior de la página de información general no estaban correctamente alineados.
-* En determinadas circunstancias, los usuarios no autorizados vieron un botón para iniciar la canalización, aunque no se pudo hacer clic en el botón mismo.
-* Los botones de acción de las tuberías que no son de producción a veces se mostraban en una ubicación incorrecta.
-* Los paquetes con el tipo de nodo granite:Ranking no pudieron analizarse para detectar determinadas violaciones de reglas de calidad.
-* Ciertos errores en el proceso de calidad del código se contabilizaron incorrectamente como errores.
-* No se pudieron cargar los datos de supervisión para ciertas topologías.
+* Las implementaciones en topologías de solo autor no implementaron cambios en la configuración del despachante.
+* En determinadas configuraciones, no se pudo crear una canalización de sólo calidad de código.
+* A veces, la tarjeta de resumen del entorno de la página de información general no se representaba correctamente.
+* Las ejecuciones de tuberías podrían agotarse en las topologías grandes.
