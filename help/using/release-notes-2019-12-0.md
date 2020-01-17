@@ -4,9 +4,10 @@ seo-title: Notas de la versión de AEM Cloud Manager para 2019.12.0
 description: Siga esta página para obtener información sobre la versión 2019.12.0 de Cloud Manager.
 seo-description: Siga esta página para obtener información sobre la versión 2019.12.0 de AEM Cloud Manager.
 translation-type: tm+mt
-source-git-commit: a96500b57c980d31d3a70341d8be7b92ae73a1c5
+source-git-commit: 0fa1fedccb013e82c8df5838a612ce26a1efb7e8
 
 ---
+
 
 # Notas de la versión 2019.12.0 {#release-notes-for}
 
@@ -22,7 +23,6 @@ La fecha de versión de [!UICONTROL Cloud Manager] la versión 2019.12.0 es el 1
 * Los pasos en la ejecución de la canalización ahora muestran la marca de tiempo de finalización para cada paso.
 * Los análisis de calidad del código para proyectos que no contienen código Java ahora informan una tasa de cobertura del código del 100%.
 * Se ha eliminado la comprobación de estado de Configuración de CQ Dispatcher.
-
 
 ## Corrección de errores {#bug-fixes}
 
