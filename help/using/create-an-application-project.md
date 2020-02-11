@@ -6,10 +6,10 @@ seo-description: Siga esta página para obtener más información sobre la confi
 uuid: 7b976ebf-5358-49d8-a58d-0bae026303fa
 contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
-topic-tags: introducción
+topic-tags: getting-started
 discoiquuid: 76c1a8e4-d66f-4a3b-8c0c-b80c9e17700e
 translation-type: tm+mt
-source-git-commit: 8daee34e6cfaddb31fc447f64de9ce5ca7ed54ba
+source-git-commit: dd892ddb2ac2d003229f5a9e2c8e0013b0f11e1b
 
 ---
 
@@ -18,9 +18,9 @@ source-git-commit: 8daee34e6cfaddb31fc447f64de9ce5ca7ed54ba
 
 ## Uso del asistente para crear un proyecto de aplicación de AEM {#using-wizard-to-create-an-aem-application-project}
 
-Cuando los clientes se incorporan a Cloud Manager, se les proporciona un repositorio de Git vacío. Los clientes actuales de Adobe Managed Services (AMS) (o clientes internos de AEM que están migrando a AMS) generalmente ya tendrán su código de proyecto en git (u otro sistema de control de versiones) e importarán su proyecto al repositorio de Git Cloud Manager. Sin embargo, los nuevos clientes no tienen proyectos existentes.
+Cuando los clientes se incorporan a Cloud Manager, se les proporciona un repositorio de Git vacío. Los clientes actuales de Adobe Managed Services (AMS) (o clientes internos de AEM que están migrando a AMS) generalmente ya tendrán su código de proyecto en git (u otro sistema de control de versiones) e importarán su proyecto en el repositorio de Git de Cloud Manager. Sin embargo, los nuevos clientes no tienen proyectos existentes.
 
-Para ayudar a que los nuevos clientes se inicien, Cloud Manager ahora puede crear un proyecto mínimo de AEM como punto de partida. Este proceso se basa en el arquetipo [**del proyecto de**](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype)AEM.
+Para ayudar a que los nuevos clientes se inicien, Cloud Manager ahora puede crear un proyecto mínimo de AEM como punto de partida. Este proceso se basa en el arquetipo [**del proyecto de **](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype)AEM.
 
 <!-- 
 
@@ -38,6 +38,7 @@ Siga los pasos a continuación para crear un proyecto de aplicación de AEM en C
 
    ![](assets/image2018-10-3_14-29-44.png)
 
+[Shankari] el segundo paso que se describe a continuación es incorrecto. elimínelo.
 1. Haga clic en **Crear** para acceder a la pantalla Configuración **de** tubería.
 
    ![](assets/image2018-10-3_14-30-22.png)
@@ -76,7 +77,7 @@ Para poder compilar e implementar correctamente con Cloud Manager, los proyectos
 
 * Los artefactos implementables de Dispatcher se descubren mediante el análisis de archivos *zip* (nuevamente, contenidos en un directorio llamado *target*) que tienen directorios llamados *conf* y *conf.d*.
 
-* Si hay más de un paquete de contenido, no se garantiza el orden de las implementaciones de paquetes. Si se necesita un orden específico, se pueden usar dependencias de paquetes de contenido para definir el orden. Los paquetes pueden [omitirse](#skipping-content-packages) de la implementación.
+* Si hay más de un paquete de contenido, no se garantiza el orden de las implementaciones de paquetes. Si se necesita un orden específico, se pueden usar dependencias de paquetes de contenido para definir el orden. Es posible que los paquetes se [omitan](#skipping-content-packages) de la implementación.
 
 <!-- 
 
@@ -106,7 +107,7 @@ Cloud Manager crea y prueba el código mediante un entorno de compilación espec
 * Se pueden instalar otros paquetes en el momento de la compilación, como se describe [a continuación](#installing-additional-system-packages).
 * Cada construcción se realiza en un entorno prístino; el contenedor de compilación no mantiene ningún estado entre ejecuciones.
 * Maven siempre se ejecuta con el comando: *mvn —batch-mode clean org.jacoco:jacoco-maven-plugin:paquete prepare-agent*
-* Maven se configura a nivel del sistema con un archivo settings.xml que incluye automáticamente el repositorio público de Adobe **Artiact** . (Para obtener más información, consulte el repositorio [público de](https://repo.adobe.com/) Adobe Maven).
+* Maven se configura a nivel del sistema con un archivo settings.xml que incluye automáticamente el repositorio público de Adobe **Artiact** . (Para obtener más información, consulte el Repositorio [público de](https://repo.adobe.com/) Adobe Maven).
 
 
 ## Variables de entorno {#environment-variables}
@@ -121,7 +122,7 @@ Para admitir esto, Cloud Manager agrega estas variables de entorno estándar al 
 
 | **Nombre de variable** | **Definición** |
 |---|---|
-| CM_BUILD | Siempre definido como "true" |
+| CM_BUILD | Siempre definido como &quot;true&quot; |
 | RAMA | La rama configurada para la ejecución |
 | CM_PIPELINE_ID | El identificador de canalización numérica |
 | CM_PIPELINE_NAME | El nombre de la canalización |
@@ -291,7 +292,7 @@ Esta misma técnica se puede utilizar para instalar paquetes específicos de idi
 
 >[!NOTE]
 >
->La instalación de un paquete de sistema de este modo **no lo instala** en el entorno de tiempo de ejecución utilizado para ejecutar Adobe Experience Manager. Si necesita un paquete de sistema instalado en el entorno AEM, póngase en contacto con los ingenieros de éxito del cliente (CSE).
+>La instalación de un paquete de sistema de este modo **no lo instala** en el entorno de tiempo de ejecución utilizado para ejecutar Adobe Experience Manager. Si necesita un paquete de sistema instalado en el entorno de AEM, póngase en contacto con los ingenieros de éxito del cliente (CSE).
 
 ## Omisión de paquetes de contenido {#skipping-content-packages}
 
