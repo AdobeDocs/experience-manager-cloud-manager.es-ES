@@ -7,10 +7,10 @@ uuid: 35fd56ac-dc9c-4aca-8ad6-36c29c4ec497
 contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
-content-type: referencia
+content-type: reference
 discoiquuid: ba6c763a-b78a-439e-8c40-367203a719b3
 translation-type: tm+mt
-source-git-commit: c81243708d938a8bffdec8a35f32a2cf552c1c95
+source-git-commit: 854c09878a633bd46e4d7e9d604a8335c225a1c4
 
 ---
 
@@ -25,14 +25,14 @@ En la página siguiente se explica cómo configurar la **canalización**. Para o
 
 La configuración de la tubería de producción CI/CD define el activador que iniciará la canalización, parámetros que controlan la implementación de producción y parámetros de prueba de rendimiento.
 
->[!VIDEO](https://video.tv.adobe.com/v/26314/?captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/26314/)
 
 
 ## Explicación del flujo {#understanding-the-flow}
 
-Puede configurar la canalización desde el mosaico Configuración de **canalización** de la [!UICONTROL Cloud Manager] IU.
+Puede configurar la canalización desde el mosaico **Ajustes** de canalización en la [!UICONTROL Cloud Manager] IU.
 
-El Administrador de implementación es responsable de configurar la canalización. Al hacerlo, primero se selecciona una rama del **repositorio** Git. La configuración de tubería consiste en:
+El Administrador de implementación es responsable de configurar la canalización. Al hacerlo, primero se selecciona una rama del **repositorio** Git. La configuración de canalización consiste en:
 
 * definir el activador que iniciará la canalización.
 * definir los parámetros que controlan la implementación de producción.
@@ -50,7 +50,7 @@ Antes de comenzar a implementar el código, debe configurar la configuración de
 >
 >Puede cambiar la configuración de la canalización después de la configuración inicial.
 
-### Configuración de canalización desde [!UICONTROL Cloud Manager]{#configuring-the-pipeline-settings-from-cloud-manager}
+### Configuración de la canalización desde [!UICONTROL Cloud Manager]{#configuring-the-pipeline-settings-from-cloud-manager}
 
 Una vez que haya configurado el programa mediante [!UICONTROL Cloud Manager] la interfaz de usuario, estará listo para configurar la canalización.
 
@@ -76,16 +76,15 @@ Seleccione la rama Git y haga clic en **Siguiente**.
 
    Puede definir el activador para iniciar la canalización:
 
-   * **Al cambiar** Git: inicia la canalización CI/CD cada vez que se añaden confirmaciones a la rama git configurada. Aunque seleccione esta opción, siempre puede iniciar la canalización manualmente.
+   * **Al cambiar** Git: inicia la canalización CI/CD cada vez que se añaden confirmaciones a la ramificación git configurada. Aunque seleccione esta opción, siempre puede iniciar la canalización manualmente.
    * **Manual** : si se utiliza la interfaz de usuario, se iniciará la canalización manualmente.
-   * **Programado** : esta opción estará disponible pronto en una próxima versión.
    Durante la configuración o edición de la canalización, el Administrador de implementación tiene la opción de definir el comportamiento de la canalización cuando se produce un error importante en cualquiera de las compuertas de calidad, como Calidad del código, Pruebas de seguridad y Pruebas de rendimiento.
 
    Esto resulta útil para los clientes que desean procesos más automatizados. Las opciones disponibles son:
 
-* **Preguntar cada vez** : Esta es la configuración predeterminada y requiere intervención manual en caso de error importante.
+* **Preguntar cada vez** : Esta es la configuración predeterminada y requiere una intervención manual en caso de error importante.
 * **Error inmediato** : si se selecciona, la canalización se cancelará siempre que se produzca un error importante. Esto es, esencialmente, emular a un usuario rechazando manualmente cada error.
-* **Continuar inmediatamente** : si se selecciona, la canalización se realizará automáticamente siempre que se produzca un error importante. Esto es, esencialmente, emular a un usuario aprobando manualmente cada error.
+* **Continuar inmediatamente** : si se selecciona, la canalización se realizará automáticamente cada vez que se produzca un error importante. Esto es, esencialmente, emular a un usuario aprobando manualmente cada error.
 
    Ahora define los parámetros que controlan la implementación de producción. Las tres opciones disponibles son las siguientes:
 
@@ -101,7 +100,7 @@ Seleccione la rama Git y haga clic en **Siguiente**.
 >
 >Si la opción **Programado** está seleccionada, puede programar la implementación de producción en la canalización **después** de la implementación de la etapa (y **usar la aprobación** GoLive, si se ha activado) para esperar a que se establezca una programación. El usuario también puede elegir ejecutar la implementación de producción inmediatamente.
 >
->Consulte [**Implementar el código**](deploying-code.md), para establecer la programación de implementación o ejecutar la producción inmediatamente.
+>Consulte [**Implementar el código **](deploying-code.md), para establecer la programación de implementación o ejecutar la producción inmediatamente.
 
 ![](assets/Configure_ci-cd-3.png)
 
@@ -112,7 +111,7 @@ Seleccione la rama Git y haga clic en **Siguiente**.
 **Aprobar después de la implementación de la etapa**
 
 Hay un paso opcional **Aprobar después de la implementación** de la etapa que se puede configurar en la canalización de producción.
-Esta opción está habilitada en una nueva opción de la pantalla **de edición** de tubería:
+Esta opción está habilitada en una nueva opción de la pantalla **de edición** de canalización:
 
 ![](assets/post_deployment1.png)
 
@@ -142,7 +141,7 @@ Siga los pasos a continuación para configurar las validaciones de Dispatcher:
 
    ![](assets/image2018-8-7_14-53-24.png)
 
-1. Introduzca la ruta, seleccione la acción en **Tipo** y haga clic en **Agregar**. Puede especificar hasta 100 rutas por entorno. Una vez agregadas las rutas, haga clic en **Aplicar**.
+1. Introduzca la ruta, seleccione la acción en **Tipo** y haga clic en **Agregar**. Puede especificar hasta 100 rutas por entorno. Una vez que haya agregado las rutas, haga clic en **Aplicar**.
 
    ![](assets/image2018-8-7_14-58-11.png)
 
@@ -161,7 +160,7 @@ Siga los pasos a continuación para configurar las validaciones de Dispatcher:
 
    **AEM Sites:**
 
-   Cloud Manager ejecuta la prueba de rendimiento de los programas de AEM Sites solicitando páginas (como usuario no autenticado) en el servidor de publicación del escenario durante un período de prueba de 30 minutos y midiendo el tiempo de respuesta de cada página, así como varias métricas de nivel de sistema.Las páginas se seleccionan mediante tres conjuntos **de** páginas; puede elegir entre uno y los tres conjuntos. La distribución del tráfico se basa en el número de conjuntos seleccionados, es decir, si se seleccionan los tres, el 33 % del total de vistas de página se coloca en cada conjunto; si se seleccionan dos, el 50 % va a cada conjunto; si se selecciona uno, el 100 % del tráfico se dirige a ese conjunto.
+   Cloud Manager ejecuta la prueba de rendimiento de los programas de AEM Sites solicitando páginas (como usuario no autenticado) en el servidor de publicación del escenario durante un período de prueba de 30 minutos y midiendo el tiempo de respuesta de cada página, así como varias métricas de nivel de sistema.Las páginas se seleccionan mediante tres conjuntos **de** páginas; puede elegir entre uno y los tres conjuntos. La distribución del tráfico se basa en el número de conjuntos seleccionados, es decir, si se seleccionan los tres, el 33 % del total de vistas de página se coloca en cada conjunto; si se seleccionan dos, el 50 % se dirige a cada conjunto; si se selecciona uno, el 100 % del tráfico se dirige a ese conjunto.
 
    Por ejemplo: supongamos que hay una división del 50 %/50 % entre el conjunto Páginas en vivo populares y Páginas nuevas (en este ejemplo, no se utiliza Otras páginas en vivo) y que el conjunto Páginas nuevas contiene 3000 páginas. El KPI de vistas de página por minuto se establece en 200. Durante el período de prueba de 30 minutos:
 
@@ -180,7 +179,7 @@ Siga los pasos a continuación para configurar las validaciones de Dispatcher:
 
    >[!NOTE]
    >
-   >Hay una imagen y un documento PDF predeterminados, pero en la mayoría de los casos los clientes querrán cargar sus propios recursos. Esto se puede realizar desde la pantalla Ajustes de tubería o Editar. Los formatos de imagen comunes como JPEG, PNG, GIF y BMP son compatibles con Photoshop, Illustrator y Postscript.
+   >Hay una imagen y un documento PDF predeterminados, pero en la mayoría de los casos los clientes querrán cargar sus propios recursos. Esto se puede realizar desde la pantalla Ajustes de tubería o Editar. Se admiten formatos de imagen comunes como JPEG, PNG, GIF y BMP, junto con archivos de Photoshop, Illustrator y Postscript.
 
 1. Haga clic en **Guardar** para completar la configuración del proceso de canalización.
 
@@ -192,15 +191,15 @@ Siga los pasos a continuación para configurar las validaciones de Dispatcher:
 
 ## Tuberías de calidad de código y de no producción
 
-Además de la tubería principal que se despliega en el escenario y la producción, los clientes pueden establecer oleoductos adicionales, denominados tuberías **no productivas**. Estas tuberías siempre ejecutan los pasos de generación y calidad del código. Opcionalmente, también pueden implementarse en el entorno de servicios gestionados de Adobe.
+Además de la tubería principal que se despliega en el escenario y la producción, los clientes pueden establecer oleoductos adicionales, denominados **oleoductos** no productivos. Estas tuberías siempre ejecutan los pasos de generación y calidad del código. Opcionalmente, también pueden implementarse en el entorno de servicios gestionados de Adobe.
 
 ## Tutorial de vídeo {#video-tutorial-two}
 
 ### Canalizaciones de calidad de código y no producción de Cloud Manager {#non-prod-video}
 
-Los oleoductos de no producción de CI/CD se dividen en dos categorías: tuberías de calidad del código y tuberías de implementación. La calidad del código canaliza todo el código desde una rama Git para crear y evaluarse en función del análisis de calidad del código del Administrador de nube.
+Los oleoductos de no producción de CI/CD se dividen en dos categorías, los gasoductos de calidad del código y los gasoductos de implementación. La calidad del código canaliza todo el código desde una rama Git para crear y evaluarse en función del análisis de calidad del código del Administrador de nube.
 
->[!VIDEO](https://video.tv.adobe.com/v/26316/?captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/26316/)
 
 En la pantalla de inicio, estos oleoductos se muestran en una tarjeta nueva:
 
