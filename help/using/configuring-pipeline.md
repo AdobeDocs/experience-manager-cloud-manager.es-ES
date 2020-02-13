@@ -10,7 +10,7 @@ topic-tags: using
 content-type: reference
 discoiquuid: ba6c763a-b78a-439e-8c40-367203a719b3
 translation-type: tm+mt
-source-git-commit: f9c8c1d7b63749e6994481324392aee7330046fb
+source-git-commit: fb84c2d41c76c64fc0be1e9f86356ee0cb5bcf9c
 
 ---
 
@@ -211,7 +211,7 @@ En la pantalla de inicio, estos oleoductos se muestran en una tarjeta nueva:
 
    Además, también puede configurar Activador de implementación y Comportamiento de error importante desde Opciones de tubería.
 
-   ![](assets/Configuring_Pipeline_Add-Production2.png)
+   ![](assets/non-prod-pipe.png)
 
 1. Haga clic en **Guardar** y la canalización se mostrará en la tarjeta en la pantalla de inicio con tres acciones:
 
