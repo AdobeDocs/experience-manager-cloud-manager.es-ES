@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: introduction
 discoiquuid: 67a54bae-99a9-4405-91e3-9a0a8b3ccc98
 translation-type: tm+mt
-source-git-commit: a038a3d6e35ff28190441e9d11d9c539641a85af
+source-git-commit: 45548c965b57d53ce931a3c740b0b72ff0496815
 
 ---
 
@@ -42,6 +42,7 @@ Para obtener más información sobre cómo configurar los usuarios, consulte [Co
 |--- |--- |--- |--- |--- |--- |--- |
 | Leer aplicación | Leer KPI de programa. | x | x | x | x | x |
 | Escribir aplicación | Configuración o edición del programa. | x |  |  |  |  |
+| Agregar programa | Agregar nuevo programa. | x |  |  |  |  |
 | Entorno de lectura | Consulte Detalles del entorno. | x | x | x | x | x |
 | Crear ejecución | Iniciar canalización. | x | x | x |  |  |
 | Leer ejecución | Consulte el estado de la ejecución. | x | x | x | x | x |
