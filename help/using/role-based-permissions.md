@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: introduction
 discoiquuid: 67a54bae-99a9-4405-91e3-9a0a8b3ccc98
 translation-type: tm+mt
-source-git-commit: 45548c965b57d53ce931a3c740b0b72ff0496815
+source-git-commit: 157370b193c104915be063d1a4375f81839b88a2
 
 ---
 
@@ -58,3 +58,5 @@ Para obtener más información sobre cómo configurar los usuarios, consulte [Co
 | Aprobación de modificación de tubería | Permite editar la opción Propietario de la empresa. |  | x |  |  |  |
 | Implementación administrada de modificación de tubería | Permite editar la opción Supervisión de CSE. |  | x |  |  |  |
 | Lectura del paso | Consulte los resultados de las métricas de calidad de los pasos. | x | x | x | x | x |
+| Generar token de acceso personal | Acceso a Git. |  | x |  | x |  |
+
