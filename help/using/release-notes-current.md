@@ -1,34 +1,31 @@
 ---
-title: Notas de la versión 2020.2.0
-seo-title: Notas de la versión de AEM Cloud Manager para 2020.2.0
-description: Siga esta página para obtener información sobre la versión 2020.2.0 de Cloud Manager
-seo-description: Siga esta página para obtener información sobre la versión 2020.2.0 de AEM Cloud Manager
+title: Notas de la versión 2020.3.0
+seo-title: Notas de la versión de AEM Cloud Manager para 2020.3.0
+description: Siga esta página para obtener información sobre la versión 2020.3.0 de Cloud Manager
+seo-description: Siga esta página para obtener información sobre la versión 2020.3.0 de AEM Cloud Manager
 translation-type: tm+mt
-source-git-commit: b030b526ab5501059f4d605c8c4b7423696cbd7f
+source-git-commit: 44671d89edad0ccb6ded998b62beb5fa012678e9
 
 ---
 
-# Notas de la versión 2020.2.0 {#release-notes-for}
+# Notas de la versión 2020.3.0 {#release-notes-for}
 
-La siguiente sección describe las Notas de revisión generales de la versión 2020.2.0 [!UICONTROL Cloud Manager] .
+La siguiente sección describe las Notas de revisión generales de la versión 2020.3.0 [!UICONTROL Cloud Manager] .
 
 ## Release Date {#release-date}
 
-La fecha de versión de [!UICONTROL Cloud Manager] la versión 2020.2.0 es el 13 de febrero de 2020.
+La fecha de versión de [!UICONTROL Cloud Manager] la versión 2020.3.0 es el 05 de marzo de 2020.
 
 ## Novedades {#whats-new}
 
-* La versión del arquetipo de Adobe Experience Manager se ha actualizado a la versión 22.
-* Se agregaron instancias activas en los registros de implementaciones de etapa
-* Las direcciones URL utilizadas en las notificaciones de Experience Cloud se optimizaron para evitar una redirección adicional.
-* Los pasos de ejecución de la canalización que agotaron el tiempo de espera ahora lo indican explícitamente.
-* El paso Análisis de código ahora tiene un registro descargable.
-* El paso Prueba de seguridad ahora tiene un registro descargable.
-* La lista de páginas a las que se accede durante la prueba de rendimiento ahora se puede descargar.
-* La hoja de cálculo que contiene problemas detectados durante el análisis de código ahora tiene una columna con un vínculo a la documentación de la regla específica.
-* Si no se puede iniciar el paso Prueba de rendimiento, ahora se muestra el motivo del error.
+* El registro del paso de compilación ya está disponible mientras se ejecuta el paso de compilación.
+* Algunos de los mensajes de la página de detalles de ejecución de la canalización se han editado para mayor claridad.
 
 ## Corrección de errores {#bug-fixes}
 
-* Las políticas de seguridad del explorador a veces evitarían que ciertos botones de la pantalla de ejecución de la canalización funcionaran correctamente.
-* Los vínculos Información general, Entornos y Actividad a veces estaban disponibles en la página de aterrizaje de Cloud Manager.
+* Ciertas configuraciones de implementación podrían hacer que los registros de los pasos de implementación no estuvieran disponibles si la implementación fallaba.
+* Los errores específicos dentro de los pasos de implementación de los programas de servicios administrados podrían ocasionar que las ejecuciones subsiguientes no se inicien.
+* La instancia efímera de SonarQube utilizada en el paso de compilación ocasionalmente no se iniciaba dentro del tiempo de espera configurado.
+* En proyectos específicos, los objetos *ResourceResolver siempre deben cerrarse* producirían una excepción de puntero nulo; sin embargo, esto no afectó a la ejecución de la canalización.
+
+
