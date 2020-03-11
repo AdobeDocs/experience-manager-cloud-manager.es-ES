@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: getting-started
 discoiquuid: 76c1a8e4-d66f-4a3b-8c0c-b80c9e17700e
 translation-type: tm+mt
-source-git-commit: dd892ddb2ac2d003229f5a9e2c8e0013b0f11e1b
+source-git-commit: b093f1712d9ca9e91b87e925a43e2992a4f11cc0
 
 ---
 
@@ -22,23 +22,13 @@ Cuando los clientes se incorporan a Cloud Manager, se les proporciona un reposit
 
 Para ayudar a que los nuevos clientes se inicien, Cloud Manager ahora puede crear un proyecto mínimo de AEM como punto de partida. Este proceso se basa en el arquetipo [**del proyecto de **](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype)AEM.
 
-<!-- 
-
-Comment Type: annotation
-Last Modified By: jsyal
-Last Modified Date: 2018-10-08T12:52:50.071-0400
-
-2018.8.0: Added this new section
-
- -->
 
 Siga los pasos a continuación para crear un proyecto de aplicación de AEM en Cloud Manager:
 
-1. Una vez que inicie sesión en Cloud Manager y se complete la configuración básica del programa, se mostrará una tarjeta de llamada a acción especial en la pantalla **Información general** , si el repositorio está vacío.
+1. Una vez que inicie sesión en Cloud Manager y se complete la configuración básica del programa, se mostrará una tarjeta de llamada a la acción especial en la pantalla **Información general**, si el repositorio está vacío.
 
    ![](assets/image2018-10-3_14-29-44.png)
 
-[Shankari] el segundo paso que se describe a continuación es incorrecto. elimínelo.
 1. Haga clic en **Crear** para acceder a la pantalla Configuración **de** tubería.
 
    ![](assets/image2018-10-3_14-30-22.png)
@@ -75,7 +65,7 @@ Para poder compilar e implementar correctamente con Cloud Manager, los proyectos
 * Puede agregar referencias a repositorios de artefactos Maven adicionales en los archivos *pom.xml* . Sin embargo, no se admite el acceso a repositorios de artefactos protegidos por contraseña o de red.
 * Los paquetes de contenido implementable se descubren mediante la búsqueda de archivos *zip* del paquete de contenido que se encuentran en un directorio denominado *target*. Cualquier número de submódulos puede producir paquetes de contenido.
 
-* Los artefactos implementables de Dispatcher se descubren mediante el análisis de archivos *zip* (nuevamente, contenidos en un directorio llamado *target*) que tienen directorios llamados *conf* y *conf.d*.
+* Los artefactos implementables de Dispatcher se detectan mediante el análisis de archivos *zip* (nuevamente, contenidos en un directorio denominado *target*) que tienen directorios llamados *conf* y *conf.d*.
 
 * Si hay más de un paquete de contenido, no se garantiza el orden de las implementaciones de paquetes. Si se necesita un orden específico, se pueden usar dependencias de paquetes de contenido para definir el orden. Es posible que los paquetes se [omitan](#skipping-content-packages) de la implementación.
 
@@ -122,7 +112,7 @@ Para admitir esto, Cloud Manager agrega estas variables de entorno estándar al 
 
 | **Nombre de variable** | **Definición** |
 |---|---|
-| CM_BUILD | Siempre definido como &quot;true&quot; |
+| CM_BUILD | Siempre configurado como &quot;true&quot; |
 | RAMA | La rama configurada para la ejecución |
 | CM_PIPELINE_ID | El identificador de canalización numérica |
 | CM_PIPELINE_NAME | El nombre de la canalización |
@@ -299,7 +289,7 @@ Esta misma técnica se puede utilizar para instalar paquetes específicos de idi
 En Cloud Manager, las compilaciones pueden producir cualquier número de paquetes de contenido.
 Por diversos motivos, puede que sea conveniente crear un paquete de contenido pero no implementarlo. Esto puede resultar útil, por ejemplo, cuando se generan paquetes de contenido que solo se utilizan para pruebas o que se van a volver a empaquetar con otro paso en el proceso de compilación, es decir, como un subpaquete de otro paquete.
 
-Para dar cabida a estos escenarios, Cloud Manager buscará una propiedad denominada ***cloudManagerTarget*** en las propiedades de los paquetes de contenido creados. Si esta propiedad se establece en ninguno, el paquete se omitirá y no se implementará. El mecanismo para establecer esta propiedad depende de la forma en que la compilación produce el paquete de contenido. Por ejemplo, con el complemento filevault-maven-plugin puede configurar el complemento de esta manera:
+Para dar cabida a estos escenarios, Cloud Manager buscará una propiedad denominada ***cloudManagerTarget*** en las propiedades de los paquetes de contenido creados. Si esta propiedad se establece en “ninguno”, el paquete se omitirá y no se implementará. El mecanismo para establecer esta propiedad depende de la forma en que la compilación produce el paquete de contenido. Por ejemplo, con el complemento filevault-maven-plugin puede configurar el complemento de esta manera:
 
 ```xml
         <plugin>
