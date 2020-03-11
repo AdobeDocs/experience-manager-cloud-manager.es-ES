@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: getting-started
 discoiquuid: 76c1a8e4-d66f-4a3b-8c0c-b80c9e17700e
 translation-type: tm+mt
-source-git-commit: b093f1712d9ca9e91b87e925a43e2992a4f11cc0
+source-git-commit: 25edab26146d7d98ef5a38a45b4fe67b0d5e564e
 
 ---
 
@@ -28,10 +28,6 @@ Siga los pasos a continuación para crear un proyecto de aplicación de AEM en C
 1. Una vez que inicie sesión en Cloud Manager y se complete la configuración básica del programa, se mostrará una tarjeta de llamada a la acción especial en la pantalla **Información general**, si el repositorio está vacío.
 
    ![](assets/image2018-10-3_14-29-44.png)
-
-1. Haga clic en **Crear** para acceder a la pantalla Configuración **de** tubería.
-
-   ![](assets/image2018-10-3_14-30-22.png)
 
 1. Haga clic en **Crear para** abrir un cuadro de diálogo que permite al usuario proporcionar los parámetros requeridos por el arquetipo de proyecto de AEM. En su forma predeterminada, el cuadro de diálogo solicita dos valores:
 
