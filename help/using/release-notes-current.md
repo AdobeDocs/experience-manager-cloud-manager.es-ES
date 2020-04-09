@@ -4,7 +4,7 @@ seo-title: Notas de la versión de AEM Cloud Manager para 2020.4.0
 description: Siga esta página para obtener información sobre la versión 2020.4.0 de Cloud Manager
 seo-description: Siga esta página para obtener información sobre la versión 2020.4.0 de AEM Cloud Manager
 translation-type: tm+mt
-source-git-commit: e7da473a22bec1d3d9b3d39bf654af0c596fe86d
+source-git-commit: ee7fc8a23dd0719eda84638c810842c2dc1772bb
 
 ---
 
@@ -18,9 +18,9 @@ La fecha de versión de [!UICONTROL Cloud Manager] la versión 2020.4.0 es el 9 
 
 ## Novedades {#whats-new}
 
-* Cambios en la página de información general de CM de navegación para permitir que el usuario edite o cambie de programa desde la página de información general de CM.
-* Cambios que permiten al usuario editar programa desde la tarjeta de programa en la página de aterrizaje CM.
-* Se muestra el nuevo estado de canalización &quot;Canalización en curso&quot; en el entorno con el que está asociado.
+* Cambios en la página de información general del Administrador de la nube de navegación para permitir al usuario editar o cambiar de programa.
+* Cambios que permiten al usuario editar programas desde la tarjeta de programa en la página de aterrizaje de Cloud Manager.
+* Nuevo estado de canalización **La ejecución** de canalización se muestra en el entorno con el que está asociada.
 * Mejoras en la comprensión de la página de ejecución de la canalización. Esto incluye la visualización del nombre de la canalización (solo para la canalización que no es de producción) y del tipo, y un distintivo para indicar si el estado de la canalización está en curso/cancelado/fallido.
 * El proceso utilizado para generar contraseñas de git se ha vuelto más resistente a los problemas en la capa de servicio subyacente.
 
