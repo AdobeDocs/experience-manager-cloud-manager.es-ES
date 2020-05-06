@@ -1,35 +1,43 @@
 ---
-title: Notas de la versión 2020.4.0
-seo-title: Notas de la versión de AEM Cloud Manager para 2020.4.0
-description: Siga esta página para obtener información sobre la versión 2020.4.0 de Cloud Manager
-seo-description: Siga esta página para obtener información sobre la versión 2020.4.0 de AEM Cloud Manager
+title: Notas de la versión 2020.5.0
+seo-title: Notas de la versión de AEM Cloud Manager para 2020.5.0
+description: Siga esta página para obtener información sobre la versión 2020.5.0 de Cloud Manager
+seo-description: Siga esta página para obtener información sobre la versión 2020.5.0 de AEM Cloud Manager
 translation-type: tm+mt
-source-git-commit: ee7fc8a23dd0719eda84638c810842c2dc1772bb
+source-git-commit: 278858465592482449080fedc3c0165805db223d
+workflow-type: tm+mt
+source-wordcount: '187'
+ht-degree: 6%
 
 ---
 
-# Notas de la versión 2020.4.0 {#release-notes-for}
+# Notas de la versión 2020.5.0 {#release-notes-for}
 
-La siguiente sección describe las Notas de revisión generales de la versión 2020.4.0 [!UICONTROL Cloud Manager] .
+La siguiente sección describe las Notas de revisión generales de la versión 2020.5.0 [!UICONTROL Cloud Manager] .
 
-## Release Date {#release-date}
+## Fecha de la versión {#release-date}
 
-La fecha de versión de [!UICONTROL Cloud Manager] la versión 2020.4.0 es el 9 de abril de 2020.
+La fecha de versión de [!UICONTROL Cloud Manager] la versión 2020.5.0 es el 7 de mayo de 2020.
 
 ## Novedades {#whats-new}
 
-* Cambios en la página de información general del Administrador de la nube de navegación para permitir al usuario editar o cambiar de programa.
-* Cambios que permiten al usuario editar programas desde la tarjeta de programa en la página de aterrizaje de Cloud Manager.
-* Nuevo estado de canalización **La ejecución** de canalización se muestra en el entorno con el que está asociada.
-* Mejoras en la comprensión de la página de ejecución de la canalización. Esto incluye la visualización del nombre de la canalización (solo para la canalización que no es de producción) y del tipo, y un distintivo para indicar si el estado de la canalización está en curso/cancelado/fallido.
-* El proceso utilizado para generar contraseñas de git se ha vuelto más resistente a los problemas en la capa de servicio subyacente.
+* Se han agregado seis reglas de calidad de código adicionales para ayudar a los clientes a identificar posibles problemas al planificar una migración a Cloud Service.
+
+* Se ha añadido una nueva métrica Compatibilidad *de servicio de* nube para resumir el número de problemas relacionados con la compatibilidad.
+
+* Se ha mejorado el rendimiento de la página de Actividad y de la API de Lista de las ejecuciones de tubería.
+
+* El registro de calidad del código ahora contiene todos los seguimientos de pila para excepciones.
 
 ## Corrección de errores {#bug-fixes}
 
-* Los datos de supervisión pueden mostrarse a veces de manera incorrecta o no basarse en ninguna variación menor de los valores técnicos.
-* La configuración Maven utilizada en el contenedor de compilación se actualizó para evitar interbloqueos al descargar metadatos de artefactos.
-* En ocasiones, el proceso de prueba de rendimiento de Recursos no pudo descifrar la contraseña de AEM, lo que provocó errores en la prueba.
-* Algunas topologías con instancias de espera podrían tener falsos negativos en las pruebas de seguridad.
-* Si el entorno del escenario contenía una instancia detenida, el paso de la prueba de seguridad a veces fallaba.
-* Las notificaciones de Experience Cloud no se recibían de forma coherente.
+* Se mostraba una tarjeta engañosa en la página de información general mientras se ejecutaba la canalización de producción.
+
+* La regla de calidad del código *DontImplementeOrExtendProviderTypesPomCheck* puede producir a veces una excepción de puntero nulo.
+
+* Algunos vínculos de documentación de la página de información general no funcionaban correctamente.
+
+* Algunas tarjetas de la página de información general no mostraban correctamente los nombres de entidades.
+
+* Determinadas configuraciones de topología harían que el paso de la prueba de rendimiento generara un error, en lugar de sistema de informes de las métricas que faltan.
 
