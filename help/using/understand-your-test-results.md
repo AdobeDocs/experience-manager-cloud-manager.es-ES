@@ -2,14 +2,17 @@
 title: Comprender los resultados de la prueba
 seo-title: Comprender los resultados de la prueba
 description: nulo
-seo-description: Siga esta página para obtener información sobre tres puertas de nivel mientras ejecuta una canalización, análisis de código, rendimiento y pruebas de seguridad que validan el programa en Cloud Manager.
+seo-description: Siga esta página para obtener información sobre tres puertas de nivel mientras ejecuta una canalización, análisis de código, rendimiento y pruebas de seguridad que validan su programa en Cloud Manager.
 uuid: 93caa01f-0df2-4a6f-81dc-23dfee24dc93
 contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: 83299ed8-4b7a-4b1c-bd56-1bfc7e7318d4
 translation-type: tm+mt
-source-git-commit: 1f31e654272afa60cac3376ce4dc3bc76f0d9dda
+source-git-commit: 278858465592482449080fedc3c0165805db223d
+workflow-type: tm+mt
+source-wordcount: '1461'
+ht-degree: 8%
 
 ---
 
@@ -20,7 +23,7 @@ Durante el proceso de **canalización** , se capturan varias métricas y se comp
 
 Estos informes se registran utilizando el sistema de enlace de tres niveles definido en esta sección.
 
-## Puerta de tres niveles mientras se ejecuta una canalización {#three-tier-gates-while-running-a-pipeline}
+## Puerta de tres niveles mientras se ejecuta una canalización  {#three-tier-gates-while-running-a-pipeline}
 
 Hay tres puertas en el oleoducto:
 
@@ -47,17 +50,18 @@ Como parte de la canalización, se analiza el código fuente para asegurarse de 
 | Clasificación de seguridad | A = 0 Vulnerabilidad <br/>B = al menos 1 vulnerabilidad<br/> menor C = al menos 1 vulnerabilidad grave <br/>D = al menos 1 vulnerabilidad crítica <br/>E = al menos 1 vulnerabilidad de bloqueador | Crítico | &lt; B |
 | Clasificación de confiabilidad | A = 0 Error <br/>B = al menos 1 Error menor <br/>C = al menos 1 Error mayor <br/>D = al menos 1 Error crítico E = al menos 1 Error de bloqueo | Importante | &lt; C |
 | Clasificación de mantenimiento | El costo de corrección sobresaliente de los olores de código es: <br/><ul><li>&lt;=5% del tiempo que ya ha pasado a la aplicación, la clasificación es A </li><li>entre el 6 y el 10 % la calificación es B </li><li>entre el 11 y el 20 % la calificación es una C </li><li>entre el 21 y el 50 % la calificación es una D</li><li>cualquier cosa superior al 50% es una E</li></ul> | Importante | &lt; A |
-| Cobertura | Combinación de cobertura de la línea de prueba unitaria y cobertura de condición mediante esta fórmula: <br/>`Coverage = (CT + CF + LC)/(2*B + EL)` donde <br/>: CT = condiciones que se han evaluado en 'true' al menos una vez mientras se ejecutan las pruebas unitarias <br/>CF = condiciones que se han evaluado en 'false' al menos una vez mientras se ejecutan las pruebas unitarias <br/>LC = líneas cubiertas = líneas_to_cover - líneasdescubiertas <br/><br/> B = número total de condiciones <br/>EL = número total de líneas ejecutables (lines_to_cover) | Importante | &lt; 50% |
-| Pruebas unitarias omitidas | Número de pruebas unitarias omitidas. | Información | &gt; 1 |
-| Problemas abiertos | Tipos de problemas generales: Vulnerabilidades, errores y huecos de código | Información | &gt; 1 |
-| Líneas duplicadas | Número de líneas involucradas en bloques duplicados. <br/>Para que un bloque de código se considere como duplicado: <br/><ul><li>**Proyectos que no son de Java:**</li><li>Debe haber al menos 100 tokens sucesivos y duplicados.</li><li>Estos tokens deben propagarse al menos en: </li><li>30 líneas de código para COBOL </li><li>20 líneas de código para ABAP </li><li>10 líneas de código para otros idiomas</li><li>**Proyectos de Java:**</li><li> Debe haber al menos 10 declaraciones sucesivas y duplicadas, independientemente del número de tokens y líneas.</li></ul> <br/>Las diferencias en sangría y en literales de cadena se omiten al detectar duplicaciones. | Información | &gt; 1% |
+| Cobertura | Combinación de cobertura de la línea de prueba unitaria y cobertura de condición mediante esta fórmula: <br/>`Coverage = (CT + CF + LC)/(2*B + EL)`  <br/>donde: CT = condiciones que se han evaluado en &#39;true&#39; al menos una vez mientras se ejecutan las pruebas unitarias <br/>CF = condiciones que se han evaluado en &#39;false&#39; al menos una vez mientras se ejecutan las pruebas unitarias <br/>LC = líneas cubiertas = líneas_to_cover - líneasdescubiertas <br/><br/> B = número total de condiciones <br/>EL = número total de líneas ejecutables (lines_to_cover) | Importante | &lt; 50% |
+| Pruebas unitarias omitidas | Número de pruebas unitarias omitidas. | Información | > 1 |
+| Problemas abiertos | Tipos de problemas generales: Vulnerabilidades, errores y huecos de código | Información | > 1 |
+| Líneas duplicadas | Número de líneas involucradas en bloques duplicados. <br/>Para que un bloque de código se considere como duplicado: <br/><ul><li>**Proyectos que no son de Java:**</li><li>Debe haber al menos 100 tokens sucesivos y duplicados.</li><li>Estos tokens deben propagarse al menos en: </li><li>30 líneas de código para COBOL </li><li>20 líneas de código para ABAP </li><li>10 líneas de código para otros idiomas</li><li>**Proyectos de Java:**</li><li> Debe haber al menos 10 declaraciones sucesivas y duplicadas, independientemente del número de tokens y líneas.</li></ul> <br/>Las diferencias en sangría y en literales de cadena se omiten al detectar duplicaciones. | Información | > 1% |
+| Compatibilidad del servicio de nube | Número de problemas de compatibilidad con los servicios de nube identificados. | Información | >0 |
 
 
 >[!NOTE]
 >
 >Consulte Definiciones [de métricas](https://docs.sonarqube.org/display/SONAR/Metric+Definitions) para obtener definiciones más detalladas.
 
-Puede descargar la lista de reglas aquí [code-quality-rules.xlsx](/help/using/assets/CodeQuality-Rules-new.xlsx)
+Puede descargar la lista de reglas aquí [code-quality-rules.xlsx](/help/using/assets/CodeQuality-rules-latest.xlsx)
 
 >[!NOTE]
 >
@@ -65,7 +69,7 @@ Puede descargar la lista de reglas aquí [code-quality-rules.xlsx](/help/using/a
 
 ### Tratar con falsos positivos {#dealing-with-false-positives}
 
-El proceso de análisis de calidad no es perfecto y a veces identifica incorrectamente problemas que no son realmente problemáticos. Esto se denomina "falso positivo".
+El proceso de análisis de calidad no es perfecto y a veces identifica incorrectamente problemas que no son realmente problemáticos. Esto se denomina &quot;falso positivo&quot;.
 
 En estos casos, el código fuente se puede anotar con la anotación estándar de Java `@SuppressWarnings` que especifica el ID de la regla como el atributo de anotación. Por ejemplo, un problema común es que la regla SonarQube para detectar contraseñas codificadas puede ser agresiva sobre cómo se identifica una contraseña codificada.
 
@@ -101,9 +105,9 @@ A continuación, la solución correcta es quitar la contraseña codificada.
 
 [!UICONTROL Cloud Manager] ejecuta las comprobaciones ***de estado de seguridad de*** AEM existentes en el escenario después de la implementación e informa del estado a través de la interfaz de usuario. Los resultados se agregan de todas las instancias de AEM en el entorno.
 
-Si alguna de las **instancias** indica un error en una comprobación de estado determinada, todo el **entorno** falla en esa comprobación de estado. Al igual que con las pruebas de calidad y rendimiento del código, estas comprobaciones de estado se organizan en categorías y se notifican mediante el sistema de enlace de tres niveles. La única distinción es que no hay umbral en el caso de las pruebas de seguridad. Todos los controles de salud son simplemente aprobados o no.
+Si alguna de las **Instancias** indica un error en una determinada comprobación de estado, todo el **Entorno** falla en esa comprobación de estado. Al igual que con las pruebas de calidad y rendimiento del código, estas comprobaciones de estado se organizan en categorías y se notifican mediante el sistema de enlace de tres niveles. La única distinción es que no hay umbral en el caso de las pruebas de seguridad. Todos los controles de salud son simplemente aprobados o no.
 
-En la tabla siguiente se muestran las comprobaciones actuales:
+La siguiente tabla lista las comprobaciones actuales:
 
 | **Nombre** | **Implementación de la comprobación de estado** | **Categoría** |
 |---|---|---|
@@ -117,7 +121,7 @@ En la tabla siguiente se muestran las comprobaciones actuales:
 | Sling JSP Script Handler está configurado correctamente | Sling JSP Script Handler | Crítico |
 | SSL está configurado correctamente | Configuración SSL | Crítico |
 | No se encontraron directivas de perfil de usuario obviamente inseguras | Acceso predet. del perfil de usuario | Crítico |
-| El filtro de referente de Sling está configurado para evitar ataques de CSRF | Filtro de referente de Sling | Importante |
+| El filtro Remitente del reenvío Sling está configurado para evitar ataques de CSRF | Filtro de referente de Sling | Importante |
 | Adobe Granite HTML Library Manager está configurado correctamente | Configuración del administrador de bibliotecas HTML de CQ | Importante |
 | El paquete de compatibilidad con CRXDE está deshabilitado | Compatibilidad con CRXDE | Importante |
 | El paquete y servlet Sling DavEx están desactivados | Comprobación de estado de DavEx | Importante |
@@ -125,7 +129,7 @@ En la tabla siguiente se muestran las comprobaciones actuales:
 | El filtro de solicitud WCM y el filtro de depuración WCM están desactivados | Configuración de filtros WCM | Importante |
 | El paquete y servlet Sling WebDAV están correctamente configurados | Comprobación de estado de WebDAV | Importante |
 | El servidor web está configurado para evitar el rastreo de clics | Configuración de servidor web | Importante |
-| La replicación no utiliza el usuario 'admin' | Replicación y usuarios de transporte | Información |
+| La replicación no utiliza el usuario &#39;admin&#39; | Replicación y usuarios de transporte | Información |
 
 ## Prueba de rendimiento {#performance-testing}
 
@@ -137,20 +141,20 @@ Puede obtener más información sobre los controles de bucket en [Configurar la 
 
 >[!NOTE]
 >
->Para configurar el programa y definir los KPI, consulte [Configuración del programa](setting-up-program.md).
+>Para configurar el programa y definir los KPI, consulte [Configuración del Programa](setting-up-program.md).
 
 En la tabla siguiente se resume la matriz de prueba de rendimiento utilizando el sistema de enlace de tres niveles:
 
 | **Métrica** | **Categoría** | **Umbral de error** |
 |---|---|---|
-| Tasa de errores de solicitud de página % | Crítico | &gt;= 2% |
-| Tasa de utilización de CPU | Crítico | &gt;= 80% |
-| Tiempo de espera de E/S de disco | Crítico | &gt;= 50% |
-| Tiempo de respuesta del 95 % | Importante | &gt;= KPI a nivel de programa |
-| Tiempo máximo de respuesta | Importante | &gt;= 18 segundos |
-| Vistas de página por minuto | Importante | &lt; KPI a nivel de programa |
-| Uso del ancho de banda del disco | Importante | &gt;= 90% |
-| Uso del ancho de banda de la red | Importante | &gt;= 90% |
+| Tasa de errores de solicitud de página % | Crítico | >= 2% |
+| Tasa de utilización de CPU | Crítico | >= 80% |
+| Tiempo de espera de E/S de disco | Crítico | >= 50% |
+| Tiempo de respuesta del 95 % | Importante | >= KPI de nivel de Programa |
+| Tiempo máximo de respuesta | Importante | >= 18 segundos |
+| Vistas de página por minuto | Importante | &lt; KPI de nivel de Programa |
+| Uso del ancho de banda del disco | Importante | >= 90% |
+| Uso del ancho de banda de la red | Importante | >= 90% |
 | Solicitudes por minuto | Información | &lt; 6000 |
 
 ### Gráficos de resultados de la prueba de rendimiento {#performance-testing-results-graphs}
