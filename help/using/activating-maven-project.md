@@ -1,21 +1,24 @@
 ---
-title: Administración de versiones del proyecto de Maven
-seo-title: Administración de versiones del proyecto de Maven
+title: Administrar versiones del proyecto de Maven
+seo-title: Administrar versiones del proyecto de Maven
 description: Obtenga más información sobre la administración de versiones del proyecto de Maven.
-seo-description: Siga esta página para obtener más información sobre la administración de versiones del proyecto de Maven
+seo-description: Siga esta página para obtener más información sobre la administración de versiones del proyecto de Maven.
 translation-type: tm+mt
-source-git-commit: f5ff89820eb843b35b617d300dbbc07f19ca2c17
+source-git-commit: e2187565e7f06d64841eb2af9b4b1a56feb5ebe4
+workflow-type: tm+mt
+source-wordcount: '253'
+ht-degree: 7%
 
 ---
 
 
-# Administración de versiones del proyecto de Maven {#project-version}
+# Administrar versiones del proyecto de Maven {#project-version}
 
-## Explicación de la administración de versiones del proyecto de Maven {#understanding-project-version}
+## Understanding Maven Project Version Handling {#understanding-project-version}
 
 Para implementaciones de fase y producción, Cloud Manager genera una versión única e incremental.
 
-Esta versión se ve en la página de detalles de la ejecución de la canalización, así como en la página de actividades. Cuando se ejecuta una compilación, el proyecto Maven se actualiza para utilizar esta versión y se crea una etiqueta en el repositorio git con esa versión como nombre.
+Esta versión se ve en la página de detalles de la ejecución de la canalización, así como en la página de actividad. Cuando se ejecuta una compilación, el proyecto Maven se actualiza para utilizar esta versión y se crea una etiqueta en el repositorio git con esa versión como nombre.
 
 Si la versión original del proyecto cumple ciertos criterios, la versión actualizada del proyecto de Maven combinará la versión original del proyecto y la versión generada por Cloud Manager. Sin embargo, la etiqueta siempre utiliza la versión generada. Para que se produzca esta combinación, la versión original del proyecto debe estar formada con exactamente tres segmentos de versión, por ejemplo, 1.0.0 o 1.2.3, pero no 1.0 ni 1, y la versión original no debe terminar en -SNAPSHOT.
 
