@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: introduction
 discoiquuid: 67a54bae-99a9-4405-91e3-9a0a8b3ccc98
 translation-type: tm+mt
-source-git-commit: 7cbc42108a6ccc8f7303eb76fd8ca2e9027f49e0
+source-git-commit: e2187565e7f06d64841eb2af9b4b1a56feb5ebe4
+workflow-type: tm+mt
+source-wordcount: '231'
+ht-degree: 2%
 
 ---
 
@@ -27,7 +30,7 @@ Los clientes que utilicen [!UICONTROL Cloud Manager] sus credenciales de IMS deb
 
 ## Seguridad de datos {#data-security}
 
-El código en [!UICONTROL Cloud Manager] se cifra en tránsito. Los binarios que crea Coud Manager también se cifran en tránsito y se cifran cuando se almacenan.
+El código en [!UICONTROL Cloud Manager] se cifra en tránsito. Los binarios que crea Cloud Manager también se cifran en tránsito y se cifran cuando se almacenan.
 
 Cada cliente obtiene su propio **repositorio** Git y su código es seguro y no se comparte con ninguna otra **organización**.
 
