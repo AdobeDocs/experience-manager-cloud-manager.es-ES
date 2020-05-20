@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: 83299ed8-4b7a-4b1c-bd56-1bfc7e7318d4
 translation-type: tm+mt
-source-git-commit: 4fbcb42157af0200ece491df9b8da4d0ed83efb5
+source-git-commit: f062ee126ad12d164c36b2e1535ee709f43b6900
 workflow-type: tm+mt
 source-wordcount: '1461'
 ht-degree: 8%
@@ -48,7 +48,7 @@ Como parte de la canalización, se analiza el código fuente para asegurarse de 
 | Nombre | Definición | Categoría | Umbral de error |
 |--- |--- |--- |--- |
 | Clasificación de seguridad | A = 0 Vulnerabilidad <br/>B = al menos 1 vulnerabilidad<br/> menor C = al menos 1 vulnerabilidad grave <br/>D = al menos 1 vulnerabilidad crítica <br/>E = al menos 1 vulnerabilidad de bloqueador | Crítico | &lt; B |
-| Clasificación de confiabilidad | A = 0 Error <br/>B = al menos 1 Error menor <br/>C = al menos 1 Error mayor <br/>D = al menos 1 Error crítico E = al menos 1 Error de bloqueo | Importante | &lt; C |
+| Clasificación de confiabilidad | A = 0 Error <br/>B = al menos 1 Error menor <br/>C = al menos 1 Error mayor <br/>D = al menos 1<br/>Error críticoE = al menos 1 Error de bloqueador | Importante | &lt; C |
 | Clasificación de mantenimiento | El costo de corrección sobresaliente de los olores de código es: <br/><ul><li>&lt;=5% del tiempo que ya ha pasado a la aplicación, la clasificación es A </li><li>entre el 6 y el 10 % la calificación es B </li><li>entre el 11 y el 20 % la calificación es una C </li><li>entre el 21 y el 50 % la calificación es una D</li><li>cualquier cosa superior al 50% es una E</li></ul> | Importante | &lt; A |
 | Cobertura | Combinación de cobertura de la línea de prueba unitaria y cobertura de condición mediante esta fórmula: <br/>`Coverage = (CT + CF + LC)/(2*B + EL)`  <br/>donde: CT = condiciones que se han evaluado en &#39;true&#39; al menos una vez mientras se ejecutan las pruebas unitarias <br/>CF = condiciones que se han evaluado en &#39;false&#39; al menos una vez mientras se ejecutan las pruebas unitarias <br/>LC = líneas cubiertas = líneas_to_cover - líneasdescubiertas <br/><br/> B = número total de condiciones <br/>EL = número total de líneas ejecutables (lines_to_cover) | Importante | &lt; 50% |
 | Pruebas unitarias omitidas | Número de pruebas unitarias omitidas. | Información | > 1 |
