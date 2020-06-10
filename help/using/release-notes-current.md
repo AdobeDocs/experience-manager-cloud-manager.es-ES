@@ -4,7 +4,7 @@ seo-title: Notas de la versión de AEM Cloud Manager para 2020.6.0
 description: Siga esta página para obtener información sobre la versión 2020.6.0 de Cloud Manager
 seo-description: Siga esta página para obtener información sobre la versión 2020.6.0 de AEM Cloud Manager
 translation-type: tm+mt
-source-git-commit: 0652436ec0c1c95d270a06a600424dbfd0140b27
+source-git-commit: fddfc8cef28bc07fb32d7f8ca6a815e888beefef
 workflow-type: tm+mt
 source-wordcount: '177'
 ht-degree: 6%
@@ -13,7 +13,7 @@ ht-degree: 6%
 
 # Notas de la versión 2020.6.0 {#release-notes-for}
 
-La siguiente sección describe las Notas de revisión generales de la versión 2020.5.0 [!UICONTROL Cloud Manager] .
+En la siguiente sección se describen las Notas de revisión generales de la versión 2020.6.0 [!UICONTROL Cloud Manager] .
 
 ## Fecha de la versión {#release-date}
 
@@ -33,9 +33,6 @@ La fecha de versión de [!UICONTROL Cloud Manager] la versión 2020.6.0 es el 04
 
 ## Corrección de errores {#bug-fixes}
 
-
 * Al configurar la canalización de producción, la opción Implementación programada no estaba visible para algunos clientes.
 
 * Algunos mensajes de implementación se truncaron.
-
-
