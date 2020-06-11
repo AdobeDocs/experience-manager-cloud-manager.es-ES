@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: getting-started
 discoiquuid: c2393540-e852-4f7c-aafd-1427209065d2
 translation-type: tm+mt
-source-git-commit: 16893b8bcd2b2d681a14bb6be3786e358e1952fb
+source-git-commit: 6851884b08c0c0a971242a958f72a7673a1a1196
+workflow-type: tm+mt
+source-wordcount: '687'
+ht-degree: 2%
 
 ---
 
@@ -26,7 +29,7 @@ Los KPI definidos sirven de referencia para las pruebas de rendimiento que se pa
 >
 >Por ejemplo, un usuario que espere un promedio de 1000 vistas de página por minuto en el **Entorno** de producción y tenga cuatro servidores de distribución/publicación en producción debería escalarlo a 250 vistas de página por minuto (suponiendo que su entorno de etapa consiste en un solo par de despachantes/servidores de publicación).
 >
->Además, muchos usuarios tendrán una red de Envío de contenido (CDN), como Akamai o CloudFront, frente al entorno de producción. Dado que [!UICONTROL Cloud Manager] las pruebas se comparan directamente con el entorno del escenario, el KPI debe reflejar únicamente el tráfico que se espera que pase a través de la CDN, es decir, los errores de caché. Normalmente, este será un subconjunto relativamente pequeño del tráfico total de producción.
+>Además, muchos usuarios tendrán una red de Envío de contenido (CDN), como Akamai o CloudFront, delante del entorno de producción. Dado que [!UICONTROL Cloud Manager] las pruebas se comparan directamente con el entorno del escenario, el KPI debe reflejar únicamente el tráfico que se espera que pase a través de la CDN, es decir, los errores de caché. Normalmente, este será un subconjunto relativamente pequeño del tráfico total de producción.
 
 ## Uso [!UICONTROL Cloud Manager] para configurar el Programa {#using-cloud-manager-to-setup-your-program}
 
@@ -69,7 +72,7 @@ Durante la configuración de Programa, se especifican KPI específicos de recurs
    * Recursos cargados por minuto
    ![](assets/Setup_Program-KPIs.png)
 
-1. En **Aprovisionamiento**, puede realizar la vista o editar la configuración de aprovisionamiento para entornos de producción y no de producción en su programa. Verá que la escala **automática está activada** si la escala automática se ha activado para el programa.
+1. En **Aprovisionamiento**, puede realizar la vista o editar la configuración de aprovisionamiento para entornos de producción y no de producción en el programa. Verá que la escala **automática está activada** si la escala automática se ha activado para el programa.
 
    >[!NOTE]
    >
