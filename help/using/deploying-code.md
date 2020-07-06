@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: 832a4647-9b83-4a9d-b373-30fe16092b15
 translation-type: tm+mt
-source-git-commit: ce3ed17e74a5cb7e798bb583ddd75b18518a59bd
+source-git-commit: 509a74b2e85d5880bafa56cd0ab3bae9c57b0683
 workflow-type: tm+mt
-source-wordcount: '953'
+source-wordcount: '952'
 ht-degree: 3%
 
 ---
@@ -118,7 +118,7 @@ Cuando Cloud Manager se implementa en topologías que no son de producción, el 
 
    1. Se realiza una copia de seguridad de las configuraciones actuales y se copian en una ubicación temporal
    1. Todas las configuraciones se eliminan excepto los archivos inmutables. Consulte Administrar las configuraciones de Dispatcher para obtener más detalles. Esto borra los directorios para asegurarse de que no quedan archivos huérfanos.
-   1. El artefacto se extrae en el directorio httpd.  Los archivos inmutables no se sobrescriben. Los cambios que realice en los archivos inmutables del repositorio de Git se ignorarán en el momento de la implementación.  Estos archivos son fundamentales para el marco de distribución de AMS y no se pueden cambiar.
+   1. El artefacto se extrae en el `httpd` directorio.  Los archivos inmutables no se sobrescriben. Los cambios que realice en los archivos inmutables del repositorio de Git se ignorarán en el momento de la implementación.  Estos archivos son fundamentales para el marco de distribución de AMS y no se pueden cambiar.
    1. Apache realiza una prueba de configuración. Si no se encuentran errores, se vuelve a cargar el servicio. Si se produce un error, las configuraciones se restauran desde la copia de seguridad, el servicio se vuelve a cargar y el error se devuelve al Administrador de nube.
    1. Cada ruta especificada en la configuración de la canalización se invalida o se borra de la caché del despachante.
    >[!NOTE]
