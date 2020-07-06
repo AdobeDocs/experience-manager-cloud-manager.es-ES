@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: d2338c74-3278-49e6-a186-6ef62362509f
 translation-type: tm+mt
-source-git-commit: 3663bd773c0043282359d690621de5023fa2974c
+source-git-commit: 8c651bcb187d911448475f6031c93bf956277e9f
 workflow-type: tm+mt
 source-wordcount: '2282'
 ht-degree: 6%
@@ -621,7 +621,8 @@ Un problema común que se produce en proyectos complejos es que el mismo compone
 
 #### Código no compatible {#non-compliant-code-osgi}
 
-```+ apps
+```
++ apps
   + projectA
     + config
       + com.day.cq.commons.impl.ExternalizerImpl
@@ -632,7 +633,8 @@ Un problema común que se produce en proyectos complejos es que el mismo compone
 
 #### Código compatible {#compliant-code-osgi}
 
-```+ apps
+```
++ apps
   + shared-config
     + config
       + com.day.cq.commons.impl.ExternalizerImpl
@@ -723,9 +725,9 @@ La documentación de las herramientas de modernización de AEM proporciona docum
 
 **Desde**: Versión 2020.5.0
 
-Para ser compatible con el modelo de implementación de Cloud Service, los paquetes de contenido individuales deben contener contenido para las áreas inmutables del repositorio (es decir, no `/apps and /libs, although /libs` deben ser modificados por el código del cliente y causarán una infracción por separado) o el área mutable (es decir, todo lo demás), pero no ambos. Por ejemplo, un paquete que incluye ambos `/apps/myco/components/text and /etc/clientlibs/myco` no es compatible con Cloud Service y provocará que se informe de un problema.
+Para ser compatibles con el modelo de implementación de Cloud Service, los paquetes de contenido individuales deben contener contenido para las áreas inmutables del repositorio (es decir, no `/apps and /libs, although /libs` deben ser modificados por el código del cliente y causarán una infracción por separado) o el área mutable (es decir, todo lo demás), pero no ambos. Por ejemplo, un paquete que incluye ambos `/apps/myco/components/text and /etc/clientlibs/myco` no es compatible con Cloud Service y provocará que se informe de un problema.
 
-Consulte Estructura [del proyecto de](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) AEM para obtener más información.
+Refer to [AEM Project Structure](https://docs.adobe.com/content/help/es-ES/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) for more details.
 
 ### No Deben Utilizarse Agentes De Replicación Inversa {#oakpal-reverse-replication}
 
@@ -737,7 +739,7 @@ Consulte Estructura [del proyecto de](https://docs.adobe.com/content/help/en/exp
 
 **Desde**: Versión 2020.5.0
 
-La compatibilidad con la replicación inversa no está disponible en implementaciones de servicios en la nube, como se describe en las Notas [de la versión: Eliminación de agentes](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/release-notes/aem-cloud-changes.html#replication-agents)de replicación.
+La compatibilidad con la replicación inversa no está disponible en implementaciones de Cloud Service, como se describe en las Notas [de la versión: Eliminación de agentes](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/release-notes/aem-cloud-changes.html#replication-agents)de replicación.
 
 Los clientes que utilizan replicación inversa deben ponerse en contacto con Adobe para obtener soluciones alternativas.
 
