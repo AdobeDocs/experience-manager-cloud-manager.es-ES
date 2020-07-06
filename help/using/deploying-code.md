@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: 832a4647-9b83-4a9d-b373-30fe16092b15
 translation-type: tm+mt
-source-git-commit: bc9454120c92181503efbf8270ce621af26801d9
+source-git-commit: ce3ed17e74a5cb7e798bb583ddd75b18518a59bd
+workflow-type: tm+mt
+source-wordcount: '953'
+ht-degree: 3%
 
 ---
 
@@ -20,13 +23,13 @@ source-git-commit: bc9454120c92181503efbf8270ce621af26801d9
 
 Una vez configurada la **canalización** (repositorio, entorno y entorno de prueba), estará listo para implementar el código.
 
-1. Haga clic en **Implementar** desde Cloud Manager para iniciar el proceso de implementación.
+1. Haga clic en **Implementar** desde el Administrador de nube para realizar el inicio del proceso de implementación.
 
    ![](assets/Deploy1.png)
 
 1. Aparece la pantalla Ejecución **de la canalización** .
 
-   Haga clic en **Generar** para iniciar el proceso.
+   Haga clic en **Generar** para inicio del proceso.
 
    ![](assets/Deploy2.png)
 
@@ -41,7 +44,7 @@ Una vez configurada la **canalización** (repositorio, entorno y entorno de prue
    >
    >Además, puede revisar los pasos de varios procesos de implementación mediante la visualización de registros o la revisión de los resultados de los criterios de prueba.
 
-   La implementación **de la** etapa incluye los siguientes pasos:
+   La **implementación por fases** incluye los siguientes pasos:
 
    * Validación: Este paso garantiza que la canalización esté configurada para utilizar los recursos disponibles actualmente, por ejemplo, que la ramificación configurada exista, que los entornos estén disponibles.
    * Prueba de generación y unidad: Este paso ejecuta un proceso de compilación en contenedores. Consulte [Creación de un proyecto](create-an-application-project.md) de aplicación de AEM para obtener más información sobre el entorno de compilación.
@@ -49,13 +52,13 @@ Una vez configurada la **canalización** (repositorio, entorno y entorno de prue
    * Implementar en etapa
    ![](assets/Stage_Deployment1.png)
 
-   La prueba **de** fase incluye los siguientes pasos:
+   The **Stage Testing**, involves the following steps:
 
    * Prueba de seguridad: Este paso evalúa el impacto en la seguridad del código de la aplicación en el entorno de AEM. Consulte [Explicación de los resultados](understand-your-test-results.md) de la prueba para obtener más información sobre el proceso de prueba.
    * Prueba de rendimiento: Este paso evalúa el rendimiento del código de la aplicación. Consulte [Explicación de los resultados](understand-your-test-results.md) de la prueba para obtener más información sobre el proceso de prueba.
    ![](assets/Stage_Testing1.png)
 
-   La implementación **** de producción incluye los siguientes pasos:
+   The **Production Deployment**, involves the following steps:
 
    * **Solicitud de aprobación** (si está activada)
    * **Programar implementación** de producción (si está habilitado)
@@ -88,14 +91,14 @@ Una vez configurada la **canalización** (repositorio, entorno y entorno de prue
 
 En la siguiente sección se describe cómo se implementan los paquetes AEM y Dispatcher en la fase de fase y en la fase de producción.
 
-Cloud Manager carga todos los archivos target/*.zip producidos por el proceso de compilación en una ubicación de almacenamiento.  Estos artefactos se recuperan de esta ubicación durante las fases de implementación de la canalización.
+Cloud Manager carga todos los archivos destinatario/*.zip producidos por el proceso de compilación en una ubicación de almacenamiento.  Estos artefactos se recuperan de esta ubicación durante las fases de implementación de la canalización.
 
 Cuando Cloud Manager se implementa en topologías que no son de producción, el objetivo es completar la implementación lo más rápido posible y, por lo tanto, los artefactos se implementan en todos los nodos simultáneamente de la siguiente manera:
 
 1. Cloud Manager determina si cada artefacto es un paquete de AEM o de distribuidor.
 1. Cloud Manager elimina todos los distribuidores del equilibrador de carga para aislar el entorno durante la implementación.
 
-   A menos que se configure lo contrario, puede omitir los cambios del equilibrador de carga en las implementaciones de desarrollo y de fase, es decir, separar y adjuntar los pasos en las tuberías que no sean de producción, en los entornos de desarrollo y en la canalización de producción, para los entornos de escenario.
+   A menos que se haya configurado lo contrario, puede omitir los cambios del equilibrador de carga en las implementaciones de desarrollo y de fase, es decir, desconectar y adjuntar pasos en las tuberías que no sean de producción, en los entornos de desarrollo y en la canalización de producción, para los entornos de fase.
 
    ![](assets/load_balancer.png)
 
@@ -105,7 +108,7 @@ Cuando Cloud Manager se implementa en topologías que no son de producción, el 
 
 1. Cada artefacto de AEM se implementa en cada instancia de AEM a través de las API del administrador de paquetes, y las dependencias del paquete determinan el orden de implementación.
 
-   Para obtener más información sobre cómo puede utilizar los paquetes para instalar nuevas funciones, transferir contenido entre instancias y realizar una copia de seguridad del contenido del repositorio, consulte Cómo trabajar con paquetes.
+   Para obtener más información sobre cómo puede utilizar los paquetes para instalar nueva funcionalidad, transferir contenido entre instancias y realizar una copia de seguridad del contenido del repositorio, consulte Cómo trabajar con paquetes.
 
    >[!NOTE]
    >
@@ -114,19 +117,19 @@ Cuando Cloud Manager se implementa en topologías que no son de producción, el 
 1. El artefacto del despachante se implementa en cada distribuidor de la siguiente manera:
 
    1. Se realiza una copia de seguridad de las configuraciones actuales y se copian en una ubicación temporal
-   1. Todas las configuraciones se eliminan excepto los archivos inmutables. Consulte Administrar las configuraciones de despachante para obtener más detalles. Esto borra los directorios para asegurarse de que no quedan archivos huérfanos.
+   1. Todas las configuraciones se eliminan excepto los archivos inmutables. Consulte Administrar las configuraciones de Dispatcher para obtener más detalles. Esto borra los directorios para asegurarse de que no quedan archivos huérfanos.
    1. El artefacto se extrae en el directorio httpd.  Los archivos inmutables no se sobrescriben. Los cambios que realice en los archivos inmutables del repositorio de Git se ignorarán en el momento de la implementación.  Estos archivos son fundamentales para el marco de distribución de AMS y no se pueden cambiar.
    1. Apache realiza una prueba de configuración. Si no se encuentran errores, se vuelve a cargar el servicio. Si se produce un error, las configuraciones se restauran desde la copia de seguridad, el servicio se vuelve a cargar y el error se devuelve al Administrador de nube.
    1. Cada ruta especificada en la configuración de la canalización se invalida o se borra de la caché del despachante.
    >[!NOTE]
    >
-   >Cloud Manager espera que el artefacto del distribuidor contenga el conjunto de archivos completo.  Todos los archivos de configuración del despachante deben estar presentes en el repositorio git. Si faltan archivos o carpetas, la implementación fallará.
+   >Cloud Manager espera que el artefacto del distribuidor contenga el conjunto de archivos completo.  Todos los archivos de configuración del despachante deben estar presentes en el repositorio git. Si faltan archivos o carpetas, se producirá un error en la implementación.
 
 1. Tras la implementación correcta de todos los paquetes de AEM y de despachante en todos los nodos, los despachantes se agregan de nuevo al equilibrador de carga y la implementación se completa.
 
    >[!NOTE]
    >
-   >Puede omitir los cambios del equilibrador de carga en implementaciones de desarrollo y de etapa, es decir, separar y adjuntar pasos en las tuberías que no son de producción, en los entornos de desarrollador y en la canalización de producción, en los entornos de escenario.
+   >Puede omitir los cambios del equilibrador de carga en las implementaciones de desarrollo y de fase, es decir, separar y adjuntar pasos tanto en las tuberías que no son de producción, para los entornos de desarrollador y en la canalización de producción, para los entornos de fase.
 
 ### Implementación en fase de producción {#deployment-production-phase}
 
