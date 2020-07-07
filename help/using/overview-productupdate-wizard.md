@@ -8,7 +8,10 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 discoiquuid: ebcc91a5-be9e-4684-8146-d88f4013d4d1
 translation-type: tm+mt
-source-git-commit: 7769911253c149f4b1f7d9dec5d94888ccdbcb59
+source-git-commit: 3bb435aae932b9446867c30b7dd6b0a8e0839ee2
+workflow-type: tm+mt
+source-wordcount: '202'
+ht-degree: 5%
 
 ---
 
@@ -26,9 +29,10 @@ El asistente incluye cinco fases que guían al usuario durante una actualizació
 * **Finalización**
 
 
-## Uso del Asistente para actualización de productos {#using-product-update-wizard}
+## Using Product Update Wizard {#using-product-update-wizard}
 
 >[!NOTE]
+>
 >Los clientes incorporados a Cloud Manager y elegibles para actualizar a AEM 6.5 podrán aprovechar el asistente de actualización de productos. Póngase en contacto con el ingeniero de éxito del cliente (CSE) para obtener más información.
 
 1. Recibirá una notificación de impulsos a través de Cloud Manager informándole de que AEM 6.5 está disponible para su programa.
