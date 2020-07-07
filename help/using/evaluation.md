@@ -8,7 +8,10 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 discoiquuid: ebcc91a5-be9e-4684-8146-d88f4013d4d1
 translation-type: tm+mt
-source-git-commit: 9e33b90818c686f0b7aacaf0955c3f2eba05488f
+source-git-commit: 3bb435aae932b9446867c30b7dd6b0a8e0839ee2
+workflow-type: tm+mt
+source-wordcount: '289'
+ht-degree: 0%
 
 ---
 
@@ -27,6 +30,7 @@ El informe generado le permite comprobar la actualizabilidad de la instancia de 
 Esto sirve como evaluación del esfuerzo de desarrollo que implica la actualización a Adobe Experience Manager (AEM) 6.5.
 
 >[!NOTE]
+>
 >Para obtener más información sobre el detector de patrones, consulte [Evaluación de la complejidad de la actualización con el detector de patrones](https://helpx.adobe.com/experience-manager/6-4/sites/deploying/using/pattern-detector.html)
 
 ## Ejecución del evaluador {#running-evaluator}
@@ -36,7 +40,7 @@ Siga los pasos a continuación para generar un informe de evaluación:
 1. Haga clic en **[!UICONTROL Run Evaluation]**.
 
    >[!NOTE]
-   >El detector de patrones puede ejecutarse en cualquier entorno. Sin embargo, para aumentar la tasa de detección y evitar cualquier desaceleración en instancias críticas para el negocio, Cloud Manager la ejecutará en el entorno de ensayo en la instancia de creación.
+   >El detector de patrones puede ejecutarse en cualquier entorno. Sin embargo, para aumentar la tasa de detección y evitar cualquier desaceleración en las instancias críticas de la empresa, Cloud Manager la ejecutará en el entorno de ensayo en la instancia de creación.
 
    ![](assets/Run-Evaluation.png)
 
@@ -47,5 +51,6 @@ Siga los pasos a continuación para generar un informe de evaluación:
    ![](assets/Evaluation-1.png)
 
 
->[!NOTE]
->La versión actual del asistente de actualización de productos en Cloud Manager solo admite la fase de **evaluación** . Las otras cuatro fases, a saber, **Remediación**, **Ejecución**, **Validación** y **Finalización** , están llegando pronto.
+   >[!NOTE]
+   >
+   >La versión actual del asistente de actualización de productos en Cloud Manager solo admite la fase de **evaluación** . Las otras cuatro fases, a saber, **Remediación**, **Ejecución**, **Validación** y **Finalización** , están llegando pronto.
