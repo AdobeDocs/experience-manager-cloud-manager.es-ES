@@ -1,38 +1,40 @@
 ---
-title: Notas de la versión 2020.6.0
-seo-title: Notas de la versión de AEM Cloud Manager para 2020.6.0
-description: Siga esta página para obtener información sobre la versión 2020.6.0 de Cloud Manager
-seo-description: Siga esta página para obtener información sobre la versión 2020.6.0 de AEM Cloud Manager
+title: Notas de la versión 2020.7.0
+seo-title: Notas de la versión de AEM Cloud Manager para 2020.7.0
+description: Siga esta página para obtener información sobre la versión 2020.7.0 de Cloud Manager
+seo-description: Siga esta página para obtener información sobre la versión 2020.7.0 de AEM Cloud Manager
 translation-type: tm+mt
-source-git-commit: fddfc8cef28bc07fb32d7f8ca6a815e888beefef
+source-git-commit: 26492dc02371d21670778f3cd60d26146439548e
 workflow-type: tm+mt
-source-wordcount: '177'
-ht-degree: 6%
+source-wordcount: '166'
+ht-degree: 8%
 
 ---
 
-# Notas de la versión 2020.6.0 {#release-notes-for}
+# Notas de la versión 2020.7.0 {#release-notes-for}
 
-En la siguiente sección se describen las Notas de revisión generales de la versión 2020.6.0 [!UICONTROL Cloud Manager] .
+En la siguiente sección se describen las Notas de revisión generales de la versión 2020.7.0 [!UICONTROL Cloud Manager] .
 
 ## Fecha de la versión {#release-date}
 
-La fecha de versión de [!UICONTROL Cloud Manager] la versión 2020.6.0 es el 04 de junio de 2020.
+La fecha de versión de [!UICONTROL Cloud Manager] la versión 2020.6.0 es el 9 de julio de 2020.
 
 ## Novedades {#whats-new}
 
-* Marcas de entrenador en la página de aterrizaje para informar e instruir al usuario sobre la navegación básica.
+* La desvinculación y la asociación de instancias de despachante de los equilibradores de carga durante las implementaciones de producción ahora funcionan de forma más coherente.
 
-* Ahora hay disponible una página **APRENDIZAJE** en Cloud Manager, a la que se puede acceder desde la barra de navegación superior. Esta página incluye recursos para ayudar a los usuarios a conocer los flujos de trabajo utilizados con más frecuencia según su función asignada en Cloud Manager.
+* El contenedor de compilación de Cloud Manager ahora admite Java 8 y Java 11.
 
-* El valor máximo del tiempo de procesamiento del percentil 95 de Assets se ha aumentado a 500 segundos.
-
-* El registro de compilación ahora incluye la lista de artefactos descubiertos, incluidos los paquetes de contenido omitido.
-
-* El paso Generar ahora valida que todos los paquetes de contenido generados incluyen todas las propiedades obligatorias: nombre, grupo y versión.
+* Las canalizaciones de Cloud Manager ahora admiten las variables y los secretos establecidos por el cliente.
 
 ## Corrección de errores {#bug-fixes}
 
-* Al configurar la canalización de producción, la opción Implementación programada no estaba visible para algunos clientes.
+* Las opciones **Cancelar** y **Guardar** de la página Editar tubería no de producción no siempre estaban visibles.
 
-* Algunos mensajes de implementación se truncaron.
+* Ciertos errores en el proceso de calidad del código podrían ocasionar que el archivo de registro no se genere correctamente.
+
+* Algunos registros de pasos de canalización de gran tamaño no se podían descargar de forma consistente a través de la interfaz de usuario.
+
+## Problemas conocidos {#known-issues}
+
+* Cuando un entorno de AMS contiene una instancia de espera, el mensaje registrado indica que la instancia está inactiva en lugar de estar en modo de espera.
