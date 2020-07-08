@@ -1,37 +1,40 @@
 ---
-title: Notas de la versión de 2018.8.0
+title: Notas de la versión 2018.8.0
 seo-title: Notas de la versión de AEM Cloud Manager para 2018.8.0
 description: Siga esta página para obtener información sobre la versión 2018.8.0 de Cloud Manager.
 seo-description: Siga esta página para obtener información sobre la versión 2018.8.0 de AEM Cloud Manager.
 uuid: e8aaba32-89b4-4bc5-b295-09b753252612
 contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
-topic-tags: notas de la versión
+topic-tags: release-notes
 discoiquuid: 9222ac3b-525e-47c1-b481-ac9d22e3d559
 translation-type: tm+mt
-source-git-commit: 15f75ca67c3d52ae511357c5b564daaa3d9def6b
+source-git-commit: cdf2c82192c2e9c375316ae6e28646594ba2a462
+workflow-type: tm+mt
+source-wordcount: '340'
+ht-degree: 4%
 
 ---
 
 
-# Notas de la versión de 2018.8.0 {#release-notes-for}
+# Notas de la versión 2018.8.0 {#release-notes-for}
 
 La versión [!UICONTROL Cloud Manager] 2018.8.0 añade compatibilidad para activar automáticamente el canalizador de CI/CD tras comprometer Git y un nuevo asistente para crear proyectos de aplicación en Git según el arquetipo de proyecto de AEM.
 
-## Fecha de lanzamiento {#release-date}
+## Fecha de la versión {#release-date}
 
-La fecha de versión de [!UICONTROL Cloud Manager] la versión 2018.8.0 es el 4 de octubre de 2018.
+La fecha de versión de [!UICONTROL Cloud Manager] la versión 2018.8.0 es el 04 de octubre de 2018.
 
 ## Novedades {#what-s-new}
 
-* **Configuración** del programa: nuevo asistente para crear un proyecto de aplicación en Git mediante el arquetipo de proyecto de AEM Consulte [Crear un proyecto](create-an-application-project.md) de aplicación de AEM para obtener más información.
+* **Configuración** de Programa: nuevo asistente para crear un proyecto de aplicación en Git mediante el arquetipo de proyecto de AEM Consulte [Crear un proyecto](/help/using/create-an-application-project.md) de aplicación de AEM para obtener más información.
 
 * **Canalización** CI/CD: se añaden los siguientes cambios a la canalización CI/CD. Consulte [Configurar la canalización](configuring-pipeline.md) de CD/CI para obtener más información.
 
-   * Al activar Cambios en Git, que inicia la canalización CI/CD cada vez que hay confirmaciones agregadas a la rama git configurada.
+   * Al activar Cambios en Git, que inicio la canalización CI/CD cada vez que hay confirmaciones agregadas a la rama git configurada.
    * Las tarjetas en la pantalla principal ahora se vinculan en profundidad a secciones específicas de la página de ejecución de la canalización.
-   * La página Actividad ahora enumera la rama específica utilizada para cada ejecución.
-   * La página Actividad ahora indica la duración en horas y minutos.
+   * La página de Actividad ahora lista la rama específica utilizada para cada ejecución.
+   * La página de Actividad ahora indica la duración en horas y minutos.
    * La página de ejecución de canalización ahora muestra el nombre de la versión o etiqueta creada para la ejecución.
    * La versión de Apache Maven se ha actualizado a 3.5.3.
 
@@ -44,7 +47,7 @@ La fecha de versión de [!UICONTROL Cloud Manager] la versión 2018.8.0 es el 4 
 
 * Algunos detalles del cuadro de diálogo Prueba de rendimiento no estaban visibles en Firefox.
 * Los tiempos de espera entre sistemas internos ocasionalmente ocasionan que se informen errores de implementación.
-* El color del icono en la página Actividad no era correcto para algunas ejecuciones de canalización correctas.
+* El color del icono en la página de Actividad no era correcto para algunas ejecuciones de canalización correctas.
 * En algunos casos, el cuadro de diálogo Prueba de rendimiento enumeraba la misma métrica varias veces.
 * Si se añadiera una nueva instancia después de que se hubiera iniciado la canalización CI/CD, la implementación no se ejecutaría en la instancia recién creada.
 
