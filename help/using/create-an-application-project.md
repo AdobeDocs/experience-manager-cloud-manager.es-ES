@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: getting-started
 discoiquuid: 76c1a8e4-d66f-4a3b-8c0c-b80c9e17700e
 translation-type: tm+mt
-source-git-commit: c07e88564dc1419bd0305c9d25173a8e0e1f47cf
+source-git-commit: 02515ac6e3ac54909e23a276a78f571ea5c249c4
 workflow-type: tm+mt
-source-wordcount: '1514'
+source-wordcount: '1518'
 ht-degree: 7%
 
 ---
@@ -153,13 +153,15 @@ Para admitir esto, Cloud Manager agrega estas variables de entorno estándar al 
 
 ### Variables de canalización {#pipeline-variables}
 
-En algunos casos, el proceso de creación de un cliente puede depender de variables de configuración específicas que no sería adecuado colocar en el repositorio git. Cloud Manager permite configurar estas variables mediante la API de Cloud Manager o la CLI de Cloud Manager por canalización. Las variables pueden almacenarse como texto sin formato o cifradas en reposo. En cualquier caso, las variables están disponibles dentro del entorno de compilación como una variable de entorno a la que se puede hacer referencia desde el archivo pom.xml u otras secuencias de comandos de compilación.
+En algunos casos, el proceso de creación de un cliente puede depender de variables de configuración específicas que no sería adecuado colocar en el repositorio Git. Cloud Manager permite configurar estas variables mediante la API de Cloud Manager o la CLI de Cloud Manager por canalización.
 
-Para configurar una variable mediante la CLI, ejecute un comando como:
+Las variables pueden almacenarse como texto sin formato o cifradas en reposo. En cualquier caso, las variables están disponibles dentro del entorno de compilación como una variable de entorno a la que se puede hacer referencia desde el archivo pom.xml u otras secuencias de comandos de compilación.
+
+Utilice el comando siguiente para configurar una variable mediante la CLI:
 
 `$ aio cloudmanager:set-pipeline-variables PIPELINEID --variable MY_CUSTOM_VARIABLE test`
 
-Se pueden enumerar las variables actuales:
+Puede realizar la lista de las variables actuales, como se muestra a continuación:
 
 `$ aio cloudmanager:list-pipeline-variables PIPELINEID`
 
