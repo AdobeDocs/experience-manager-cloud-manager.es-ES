@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: getting-started
 discoiquuid: 76c1a8e4-d66f-4a3b-8c0c-b80c9e17700e
 translation-type: tm+mt
-source-git-commit: 02515ac6e3ac54909e23a276a78f571ea5c249c4
+source-git-commit: 33aeba59c149e5ba3300b9d798356ec5e9bcd4b8
 workflow-type: tm+mt
-source-wordcount: '1518'
+source-wordcount: '1479'
 ht-degree: 7%
 
 ---
@@ -137,7 +137,7 @@ Para ello, en el archivo pom.xml, agregue una `<plugin>` entrada con este aspect
 
 En algunos casos, los clientes consideran necesario variar el proceso de compilación en función de la información sobre el programa o la canalización.
 
-Por ejemplo, si se está realizando la minimización de JavaScript en tiempo de compilación, a través de una herramienta como gulp, puede haber un deseo de usar un nivel de minificación diferente cuando se construye para un entorno de desarrollo en lugar de construir para etapa y producción.
+Por ejemplo, si se está realizando la minimización de JavaScript en tiempo de compilación, a través de una herramienta como gulp, puede haber un deseo de usar un nivel de Minificación diferente al construir para un entorno de desarrollo en lugar de construir para etapa y producción.
 
 Para admitir esto, Cloud Manager agrega estas variables de entorno estándar al contenedor de compilación para cada ejecución.
 
@@ -151,37 +151,30 @@ Para admitir esto, Cloud Manager agrega estas variables de entorno estándar al 
 | CM_PROGRAMA_NAME | El nombre del programa |
 | ARTIFACTS_VERSION | Para una fase o canalización de producción, la versión sintética generada por Cloud Manager |
 
-### Variables de canalización {#pipeline-variables}
+### Variables de Entorno personalizadas {#custom-variables}
 
-En algunos casos, el proceso de creación de un cliente puede depender de variables de configuración específicas que no sería adecuado colocar en el repositorio Git. Cloud Manager permite configurar estas variables mediante la API de Cloud Manager o la CLI de Cloud Manager por canalización.
+En algunos casos, el proceso de creación de un cliente puede depender de variables de configuración específicas que no sería adecuado colocar en el repositorio git. Cloud Manager permite que un ingeniero de éxito del cliente (CSE) configure estas variables cliente por cliente.
 
-Las variables pueden almacenarse como texto sin formato o cifradas en reposo. En cualquier caso, las variables están disponibles dentro del entorno de compilación como una variable de entorno a la que se puede hacer referencia desde el archivo pom.xml u otras secuencias de comandos de compilación.
+Estas variables se almacenan en una ubicación de almacenamiento segura y solo son visibles en el contenedor de compilación para el cliente específico. Los clientes que deseen utilizar esta función deben ponerse en contacto con su CSE para configurar sus variables.
+Una vez configuradas, estas variables estarán disponibles como variables de entorno. Para utilizarlas como propiedades de Maven, puede hacer referencia a ellas dentro del archivo pom.xml, potencialmente dentro de un perfil como se describe anteriormente:
 
-Utilice el comando siguiente para configurar una variable mediante la CLI:
-
-`$ aio cloudmanager:set-pipeline-variables PIPELINEID --variable MY_CUSTOM_VARIABLE test`
-
-Puede realizar la lista de las variables actuales, como se muestra a continuación:
-
-`$ aio cloudmanager:list-pipeline-variables PIPELINEID`
-
-Los nombres de variables solo pueden contener caracteres alfanuméricos y de subrayado. Por convención, los nombres deben estar en mayúsculas. Hay un límite de 200 variables por canalización, cada nombre debe tener menos de 100 caracteres y cada valor debe tener menos de 2048 caracteres.
-
-Cuando se utiliza dentro de un archivo pom.xml de Maven, suele ser útil asignar estas variables a las propiedades de Maven mediante una sintaxis similar a esta:
 
 ```xml
         <profile>
             <id>cmBuild</id>
             <activation>
-            <property>
-                <name>env.CM_BUILD</name>
-            </property>
+                  <property>
+                        <name>env.CM_BUILD</name>
+                  </property>
             </activation>
-                <properties>
-                <my.custom.property>${env.MY_CUSTOM_VARIABLE}</my.custom.property> 
-                </properties>
+            <properties>
+                  <my.custom.property>${env.MY_CUSTOM_PROPERTY}</my.custom.property>  
+            </properties>
         </profile>
 ```
+
+>[!NOTE]
+>Los nombres de las variables de Entorno sólo pueden contener caracteres alfanuméricos y de subrayado (_). Por convención, los nombres deben estar en mayúsculas.
 
 ## Activación de Perfiles Maven en Cloud Manager {#activating-maven-profiles-in-cloud-manager}
 
