@@ -10,9 +10,9 @@ topic-tags: using
 content-type: reference
 discoiquuid: ba6c763a-b78a-439e-8c40-367203a719b3
 translation-type: tm+mt
-source-git-commit: 18b539951e286cb14d5c10404b42ba80682bbef0
+source-git-commit: afbb9a9f9f227309946f0d1891172a89d15de7a7
 workflow-type: tm+mt
-source-wordcount: '1563'
+source-wordcount: '1634'
 ht-degree: 2%
 
 ---
@@ -81,6 +81,7 @@ Seleccione la rama Git y haga clic en **Siguiente**.
 
    * **Al cambiar** Git: inicio la canalización CI/CD cada vez que se añaden confirmaciones a la rama git configurada. Incluso si selecciona esta opción, siempre puede realizar el inicio de la canalización manualmente.
    * **Manual** : el uso de la interfaz de usuario inicio manualmente la canalización.
+
    Durante la configuración o edición de la canalización, el Administrador de implementación tiene la opción de definir el comportamiento de la canalización cuando se produce un error importante en cualquiera de las compuertas de calidad, como Calidad del código, Pruebas de seguridad y Pruebas de rendimiento.
 
    Esto resulta útil para los clientes que desean procesos más automatizados. Las opciones disponibles son:
@@ -126,21 +127,21 @@ A continuación, se muestra como un paso independiente durante la ejecución de 
 >
 >**La aprobación después de la implementación** de la fase funciona de manera similar a la aprobación antes de la implementación de producción, pero se produce inmediatamente después del paso de implementación de la fase, es decir, antes de que se realice la prueba, en comparación con la aprobación antes de la implementación de producción, que se realiza una vez finalizadas todas las pruebas.
 
-**Invalidación del despachante**
+**Invalidación de Dispatcher**
 
-Como administrador de implementación, tiene la oportunidad de configurar un conjunto de rutas de contenido que se **invalidarán** o se **vaciarán** desde la caché de AEM Dispatcher, mientras configura o edita la canalización.
+Como administrador de implementación, tiene la oportunidad de configurar un conjunto de rutas de contenido que se **invalidarán** o se **vaciarán** de la memoria caché de Dispatcher de AEM, al configurar o editar la canalización.
 
-Puede configurar un conjunto independiente de rutas para la implementación de fase y producción. Si se configuran, estas acciones de caché se realizarán como parte del paso de la canalización de implementación, justo después de implementar cualquier paquete de contenido. Esta configuración utiliza el comportamiento estándar de AEM Dispatcher: invalidate realiza una invalidación de caché, similar a cuando el contenido se activa de autor a publicación; flush realiza una eliminación de caché.
+Puede configurar un conjunto independiente de rutas para la implementación de fase y producción. Si se configuran, estas acciones de caché se realizarán como parte del paso de la canalización de implementación, justo después de implementar cualquier paquete de contenido. Esta configuración utiliza el comportamiento estándar de AEM Dispatcher: invalidate realiza una invalidación de caché, similar a cuando el contenido se activa de la creación a la publicación; flush realiza una eliminación de caché.
 
 En general, es preferible el uso de la acción de invalidación, pero puede haber casos en los que sea necesario vaciar, especialmente cuando se utilizan bibliotecas de cliente HTML de AEM.
 
 >[!NOTE]
 >
->Consulte [Información general](dispatcher-configurations.md) de Dispatcher para obtener más información sobre el almacenamiento en caché de Dispatcher.
+>Consulte Información general [de](dispatcher-configurations.md) Dispatcher para obtener más información sobre el almacenamiento en caché de Dispatcher.
 
-Siga los pasos a continuación para configurar las validaciones de Dispatcher:
+Siga los pasos a continuación para configurar las Invalidaciones de Dispatcher:
 
-1. Haga clic en **Configurar** en el encabezado Configuración del despachante
+1. Haga clic en **Configurar** en el encabezado Configuración de Dispatcher
 
    ![](assets/image2018-8-7_14-53-24.png)
 
@@ -159,17 +160,22 @@ Siga los pasos a continuación para configurar las validaciones de Dispatcher:
 
    Ahora puede configurar los parámetros de prueba de rendimiento.
 
-   Puede configurar las pruebas de rendimiento de *AEM Sites* y *AEM Assets* , en función de los productos con licencia.
+   Puede configurar la prueba de rendimiento de *AEM Sites* y *AEM Assets* , según los productos con licencia.
 
    **AEM Sites:**
 
-   Cloud Manager ejecuta la prueba de rendimiento para los programas de AEM Sites solicitando páginas (como usuario no autenticado) en el servidor de publicación del escenario durante un período de prueba de 30 minutos y midiendo el tiempo de respuesta para cada página, así como varias métricas de nivel de sistema. Las páginas se seleccionan mediante tres conjuntos **de** páginas; puede elegir entre uno y los tres conjuntos. La distribución del tráfico se basa en el número de conjuntos seleccionados, es decir, si se seleccionan los tres, el 33 % del total de vistas de página se destinan a cada conjunto; si se seleccionan dos, el 50 % se dirige a cada conjunto; si se selecciona uno, el 100 % del tráfico se dirige a ese conjunto.
+   Cloud Manager ejecuta pruebas de rendimiento para programas de AEM Sites solicitando páginas (como usuario no autenticado) en el servidor de publicación de la etapa durante un período de prueba de 30 minutos y midiendo el tiempo de respuesta para cada página, así como varias métricas a nivel de sistema.
+
+   Antes del inicio del período de prueba de 30 minutos, Cloud Manager rastreará el entorno de la etapa utilizando un conjunto de una o más direcciones URL *iniciales* configuradas por el ingeniero de éxito del cliente. A partir de estas direcciones URL, se inspecciona el HTML de cada página y los vínculos se atraviesan de forma que tengan un ancho inicial. Este proceso de rastreo está limitado a un máximo de 5000 páginas. Las solicitudes del rastreador tienen un tiempo de espera fijo de 10 segundos.
+
+   Las páginas se seleccionan mediante tres conjuntos **de** páginas; puede elegir entre uno y los tres conjuntos. La distribución del tráfico se basa en el número de conjuntos seleccionados, es decir, si se seleccionan los tres, el 33 % del total de vistas de página se destinan a cada conjunto; si se seleccionan dos, el 50 % se dirige a cada conjunto; si se selecciona uno, el 100 % del tráfico se dirige a ese conjunto.
 
    Por ejemplo: supongamos que hay una división del 50 %/50 % entre el conjunto Páginas en vivo populares y Páginas nuevas (en este ejemplo, no se utiliza Otras páginas en vivo) y que el conjunto Páginas nuevas contiene 3000 páginas. El KPI de vistas de página por minuto se establece en 200. Durante el período de prueba de 30 minutos:
 
    * Cada una de las 25 páginas del conjunto de páginas en vivo populares se visita 240 veces - (200 * 0.5) / 25) * 30 = 120
 
    * Cada una de las 3000 páginas del conjunto Nuevas páginas se visita una vez - (200 * 0.5) / 3000) * 30 = 1
+
    ![](assets/Configuring_Pipeline_AEM-Sites.png)
 
    **AEM Assets:**
@@ -194,7 +200,7 @@ Siga los pasos a continuación para configurar las validaciones de Dispatcher:
 
 ## Tuberías de calidad de código y de no producción
 
-Además de la tubería principal que se despliega en el escenario y la producción, los clientes pueden establecer oleoductos adicionales, denominados **oleoductos** no productivos. Estas tuberías siempre ejecutan los pasos de generación y calidad del código. Opcionalmente, también pueden implementarse en Adobe Managed Services entorno.
+Además de la tubería principal que se despliega en el escenario y la producción, los clientes pueden establecer oleoductos adicionales, denominados **oleoductos** no productivos. Estas tuberías siempre ejecutan los pasos de generación y calidad del código. Opcionalmente, también se pueden implementar en el entorno de Adobes Managed Services.
 
 ## Tutorial de vídeo {#video-tutorial-two}
 
@@ -221,6 +227,7 @@ En la pantalla de inicio, estos oleoductos se muestran en una tarjeta nueva:
    * **Editar** : permite editar la configuración de la canalización
    * **Detalle** : muestra la última ejecución de la canalización (si existe)
    * **Generar** : se desplaza a la página de ejecución, desde donde se puede ejecutar la canalización
+
    ![](assets/Non-prod-2.png)
 
    >[!NOTE]
