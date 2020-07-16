@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: getting-started
 discoiquuid: 76c1a8e4-d66f-4a3b-8c0c-b80c9e17700e
 translation-type: tm+mt
-source-git-commit: ae22e0641111096c19d5413f3e78f339010bf512
+source-git-commit: a4ea83c0b64515915871956c1cd3e53606f1c26b
 workflow-type: tm+mt
-source-wordcount: '1476'
+source-wordcount: '1494'
 ht-degree: 7%
 
 ---
@@ -98,6 +98,9 @@ Cloud Manager crea y prueba el código mediante un entorno de compilación espec
 * Cada obra se construye sobre un entorno prístino; el contenedor de compilación no mantiene ningún estado entre las ejecuciones.
 * Maven siempre se ejecuta con el comando: *mvn —batch-mode clean org.jacoco:jacoco-maven-plugin:prepare-agent package*
 * Maven se configura a nivel del sistema con un archivo settings.xml que incluye automáticamente el repositorio público de Adobe **Artiact** . (Para obtener más información, consulte el Repositorio [público de](https://repo.adobe.com/) Adobe Maven).
+
+>[!NOTE]
+>Aunque Cloud Manager no define una versión específica del `jacoco-maven-plugin`, la versión utilizada debe ser al menos `0.7.5.201505241946`.
 
 ### Uso de Java 11 {#using-java-11}
 
