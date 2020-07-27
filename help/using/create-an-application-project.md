@@ -9,10 +9,10 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: getting-started
 discoiquuid: 76c1a8e4-d66f-4a3b-8c0c-b80c9e17700e
 translation-type: tm+mt
-source-git-commit: 0d46abc386460ccbaf7ba10b93286bc8e4af2395
+source-git-commit: 0fda91c2fe319fb58b3a6dd09f75eac7a60d9038
 workflow-type: tm+mt
-source-wordcount: '1537'
-ht-degree: 7%
+source-wordcount: '1705'
+ht-degree: 6%
 
 ---
 
@@ -62,7 +62,7 @@ Para poder compilar e implementar correctamente con Cloud Manager, los proyectos
 * Los proyectos deben crearse con Apache Maven.
 * Debe haber un *archivo pom.xml* en la raíz del repositorio Git. Este archivo *pom.xml* puede referirse a tantos submódulos (que a su vez pueden tener otros submódulos, etc.) según sea necesario.
 
-* Puede agregar referencias a repositorios de artefactos Maven adicionales en los archivos *pom.xml* . Sin embargo, no se admite el acceso a repositorios de artefactos protegidos por contraseña o de red.
+* Puede agregar referencias a repositorios de artefactos Maven adicionales en los archivos *pom.xml* . El acceso a repositorios [de artefactos protegidos con](#password-protected-maven-repositories) contraseña se admite cuando se configura. Sin embargo, no se admite el acceso a repositorios de artefactos protegidos por la red.
 * Los paquetes de contenido implementable se descubren mediante la búsqueda de archivos *zip* del paquete de contenido que se encuentran en un directorio denominado *destinatario*. Cualquier número de submódulos puede producir paquetes de contenido.
 
 * Los artefactos de Dispatcher implementables se descubren mediante la búsqueda de archivos *zip* (nuevamente, contenidos en un directorio llamado *destinatario*) que tienen directorios llamados *conf* y *conf.d*.
@@ -262,6 +262,75 @@ Y si desea enviar un mensaje sencillo solo cuando la compilación se ejecute fue
                 </plugins>
             </build>
         </profile>
+```
+
+## Compatibilidad con repositorio Maven protegido por contraseña {#password-protected-maven-repositories}
+
+Para utilizar un repositorio Maven protegido por contraseña de Cloud Manager, especifique la contraseña (y, opcionalmente, el nombre de usuario) como una variable [secreta de](#pipeline-variables) canalización y, a continuación, haga referencia a ese secreto dentro de un archivo denominado `.cloudmanager/maven/settings.xml` en el repositorio git. Este archivo sigue el esquema [Maven Settings File](https://maven.apache.org/settings.html) . Cuando el administrador de nube genera inicios de proceso, el `<servers>` elemento de este archivo se combina en el archivo `settings.xml` predeterminado proporcionado por Cloud Manager. Con este archivo en su lugar, se haría referencia a la identificación del servidor desde dentro de un elemento `<repository>` y/o `<pluginRepository>` dentro del `pom.xml` archivo. Por lo general, estos `<repository>` y/o `<pluginRepository>` elementos se contendrían dentro de un perfil [específico del Administrador de]{#activating-maven-profiles-in-cloud-manager}nube, aunque eso no es estrictamente necesario.
+
+Por ejemplo, supongamos que el repositorio se encuentra en https://repository.myco.com/maven2, el nombre de usuario Cloud Manager debe utilizarse `cloudmanager` y la contraseña es `secretword`.
+
+Primero, establezca la contraseña como un secreto en la canalización:
+
+`$ aio cloudmanager:set-pipeline-variables PIPELINEID --secret CUSTOM_MYCO_REPOSITORY_PASSWORD secretword`
+
+A continuación, haga referencia a esto desde el `.cloudmanager/maven/settings.xml` archivo:
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">
+    <servers>
+        <server>
+            <id>myco-repository</id>
+            <username>cloudmanager</username>
+            <password>${env.CUSTOM_MYCO_REPOSITORY_PASSWORD}</password>
+        </server>
+    </servers>
+</settings>
+```
+
+Y finalmente haga referencia al ID de servidor dentro del `pom.xml` archivo:
+
+```xml
+<profiles>
+    <profile>
+        <id>cmBuild</id>
+        <activation>
+                <property>
+                    <name>env.CM_BUILD</name>
+                </property>
+        </activation>
+        <build>
+            <repositories>
+                <repository>
+                    <id>myco-repository</id>
+                    <name>MyCo Releases</name>
+                    <url>https://repository.myco.com/maven2</url>
+                    <snapshots>
+                        <enabled>false</enabled>
+                    </snapshots>
+                    <releases>
+                        <enabled>true</enabled>
+                    </releases>
+                </repository>
+            </repositories>
+            <pluginRepositories>
+                <pluginRepository>
+                    <id>myco-repository</id>
+                    <name>MyCo Releases</name>
+                    <url>https://repository.myco.com/maven2</url>
+                    <snapshots>
+                        <enabled>false</enabled>
+                    </snapshots>
+                    <releases>
+                        <enabled>true</enabled>
+                    </releases>
+                </pluginRepository>
+            </pluginRepositories>
+        </build>
+    </profile>
+</profiles>
 ```
 
 ## Instalación de paquetes de sistema adicionales {#installing-additional-system-packages}
