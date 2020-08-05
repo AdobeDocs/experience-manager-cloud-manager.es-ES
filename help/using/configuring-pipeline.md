@@ -2,7 +2,7 @@
 title: Configurar la canalización de CD/CI
 seo-title: Configurar la canalización de CD/CI
 description: Siga esta página para configurar la canalización desde el Administrador de nube.
-seo-description: 'Antes de realizar el inicio para implementar el código, debe configurar la configuración de la canalización desde AEM Cloud Manager. '
+seo-description: 'Para poder implementar el código con inicio, debe configurar la configuración de la canalización desde el Administrador de nube de AEM. '
 uuid: 35fd56ac-dc9c-4aca-8ad6-36c29c4ec497
 contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
@@ -10,10 +10,10 @@ topic-tags: using
 content-type: reference
 discoiquuid: ba6c763a-b78a-439e-8c40-367203a719b3
 translation-type: tm+mt
-source-git-commit: afbb9a9f9f227309946f0d1891172a89d15de7a7
+source-git-commit: 3be958aa21d5423ddf371c286825d01afd554c4b
 workflow-type: tm+mt
-source-wordcount: '1634'
-ht-degree: 2%
+source-wordcount: '1755'
+ht-degree: 1%
 
 ---
 
@@ -102,7 +102,7 @@ Seleccione la rama Git y haga clic en **Siguiente**.
 
 >[!NOTE]
 >
->Si la opción **Programado** está seleccionada, puede programar la implementación de producción en la canalización **después** de la implementación de la etapa (y **usar la aprobación** GoLive, si se ha activado) para esperar a que se establezca una programación. El usuario también puede elegir ejecutar la implementación de producción inmediatamente.
+>Si la opción **Programado** está seleccionada, puede programar la implementación de producción en la canalización **después** de la implementación de la fase (y **usar aprobación** de GoLive, si se ha activado) para esperar a que se establezca una programación. El usuario también puede elegir ejecutar la implementación de producción inmediatamente.
 >
 >Consulte [**Implementar el código **](deploying-code.md), para establecer la programación de implementación o ejecutar la producción inmediatamente.
 
@@ -127,21 +127,21 @@ A continuación, se muestra como un paso independiente durante la ejecución de 
 >
 >**La aprobación después de la implementación** de la fase funciona de manera similar a la aprobación antes de la implementación de producción, pero se produce inmediatamente después del paso de implementación de la fase, es decir, antes de que se realice la prueba, en comparación con la aprobación antes de la implementación de producción, que se realiza una vez finalizadas todas las pruebas.
 
-**Invalidación de Dispatcher**
+**Invalidación del despachante**
 
-Como administrador de implementación, tiene la oportunidad de configurar un conjunto de rutas de contenido que se **invalidarán** o se **vaciarán** de la memoria caché de Dispatcher de AEM, al configurar o editar la canalización.
+Como administrador de implementación, tiene la oportunidad de configurar un conjunto de rutas de contenido que se **invalidarán** o se **vaciarán** desde la caché de AEM Dispatcher, mientras configura o edita la canalización.
 
-Puede configurar un conjunto independiente de rutas para la implementación de fase y producción. Si se configuran, estas acciones de caché se realizarán como parte del paso de la canalización de implementación, justo después de implementar cualquier paquete de contenido. Esta configuración utiliza el comportamiento estándar de AEM Dispatcher: invalidate realiza una invalidación de caché, similar a cuando el contenido se activa de la creación a la publicación; flush realiza una eliminación de caché.
+Puede configurar un conjunto independiente de rutas para la implementación de fase y producción. Si se configuran, estas acciones de caché se realizarán como parte del paso de la canalización de implementación, justo después de implementar cualquier paquete de contenido. Esta configuración utiliza el comportamiento estándar AEM Dispatcher: invalidate realiza una invalidación de caché, similar a cuando el contenido se activa de la creación a la publicación; flush realiza una eliminación de caché.
 
-En general, es preferible el uso de la acción de invalidación, pero puede haber casos en los que sea necesario vaciar, especialmente cuando se utilizan bibliotecas de cliente HTML de AEM.
+En general, es preferible el uso de la acción de invalidación, pero puede haber casos en los que sea necesario vaciar, especialmente cuando se utilizan AEM bibliotecas cliente HTML.
 
 >[!NOTE]
 >
->Consulte Información general [de](dispatcher-configurations.md) Dispatcher para obtener más información sobre el almacenamiento en caché de Dispatcher.
+>Consulte [Información general](dispatcher-configurations.md) de Dispatcher para obtener más información sobre el almacenamiento en caché de Dispatcher.
 
-Siga los pasos a continuación para configurar las Invalidaciones de Dispatcher:
+Siga los pasos a continuación para configurar las validaciones de Dispatcher:
 
-1. Haga clic en **Configurar** en el encabezado Configuración de Dispatcher
+1. Haga clic en **Configurar** en el encabezado Configuración del despachante
 
    ![](assets/image2018-8-7_14-53-24.png)
 
@@ -160,11 +160,11 @@ Siga los pasos a continuación para configurar las Invalidaciones de Dispatcher:
 
    Ahora puede configurar los parámetros de prueba de rendimiento.
 
-   Puede configurar la prueba de rendimiento de *AEM Sites* y *AEM Assets* , según los productos con licencia.
+   Puede configurar las pruebas de rendimiento de *AEM Sites* y *AEM Assets* , en función de los productos con licencia.
 
    **AEM Sites:**
 
-   Cloud Manager ejecuta pruebas de rendimiento para programas de AEM Sites solicitando páginas (como usuario no autenticado) en el servidor de publicación de la etapa durante un período de prueba de 30 minutos y midiendo el tiempo de respuesta para cada página, así como varias métricas a nivel de sistema.
+   Cloud Manager ejecuta pruebas de rendimiento para programas de AEM Sites solicitando páginas (como usuario no autenticado de forma predeterminada) en el servidor de publicación de la fase durante un período de prueba de 30 minutos y midiendo el tiempo de respuesta para cada página, así como varias métricas a nivel del sistema.
 
    Antes del inicio del período de prueba de 30 minutos, Cloud Manager rastreará el entorno de la etapa utilizando un conjunto de una o más direcciones URL *iniciales* configuradas por el ingeniero de éxito del cliente. A partir de estas direcciones URL, se inspecciona el HTML de cada página y los vínculos se atraviesan de forma que tengan un ancho inicial. Este proceso de rastreo está limitado a un máximo de 5000 páginas. Las solicitudes del rastreador tienen un tiempo de espera fijo de 10 segundos.
 
@@ -178,6 +178,9 @@ Siga los pasos a continuación para configurar las Invalidaciones de Dispatcher:
 
    ![](assets/Configuring_Pipeline_AEM-Sites.png)
 
+
+   Consulte Prueba [de rendimiento de sitios](configuring-pipeline.md#authenticated-sites-performance) autenticados para obtener información sobre cómo autenticar las pruebas de rendimiento de AEM Sites.
+
    **AEM Assets:**
 
    Cloud Manager ejecuta pruebas de rendimiento para programas de AEM Assets cargando los recursos repetidamente durante un período de prueba de 30 minutos y midiendo el tiempo de procesamiento de cada recurso, así como varias métricas a nivel de sistema. Esta función puede cargar imágenes y documentos PDF. La distribución de cuántos recursos de cada tipo se cargan por minuto se establece en la pantalla de configuración de tubería o de edición.
@@ -188,7 +191,7 @@ Siga los pasos a continuación para configurar las Invalidaciones de Dispatcher:
 
    >[!NOTE]
    >
-   >Hay una imagen y un documento PDF predeterminados, pero en la mayoría de los casos, los clientes querrán cargar sus propios recursos. Esto se puede realizar desde la pantalla Ajustes de tubería o Editar. Se admiten formatos de imagen comunes como JPEG, PNG, GIF y BMP, junto con archivos de Photoshop, Illustrator y Postscript.
+   >Hay una imagen y un documento PDF predeterminados, pero en la mayoría de los casos, los clientes querrán cargar sus propios recursos. Esto se puede realizar desde la pantalla Ajustes de tubería o Editar. Los formatos de imagen comunes como JPEG, PNG, GIF y BMP son compatibles con archivos Photoshop, Illustrator y Postscript.
 
 1. Haga clic en **Guardar** para completar la configuración del proceso de canalización.
 
@@ -198,9 +201,25 @@ Siga los pasos a continuación para configurar las Invalidaciones de Dispatcher:
 
    ![](assets/Production-Pipeline.png)
 
+### Prueba de rendimiento de sitios autenticados {#authenticated-sites-performance}
+
+Los clientes de los servicios gestionados de Adobe (AMS) con sitios autenticados pueden especificar un nombre de usuario y una contraseña que Cloud Manager utilizará para acceder al sitio web durante las pruebas de rendimiento del sitio.
+
+El nombre de usuario y la contraseña se especifican como Variables de canalización con los nombres `CM_PERF_TEST_BASIC_USERNAME` y `CM_PERF_TEST_BASIC_PASSWORD` .
+
+>[!NOTE]
+> Aunque no es estrictamente necesario, se recomienda utilizar el tipo de variable de cadena para el nombre de usuario y el tipo de variable secretString para la contraseña. Si se especifican ambas, todas las solicitudes del rastreador de prueba de rendimiento y los usuarios virtuales de prueba contendrán estas credenciales como autenticación HTTP Basic.
+
+Para configurar estas variables mediante la CLI de Cloud Manager, ejecute:
+
+`$ aio cloudmanager:set-pipeline-variables <pipeline id> --variable CM_PERF_TEST_BASIC_USERNAME <username> --secret CM_PERF_TEST_BASIC_PASSWORD <password>`
+
+
+
+
 ## Tuberías de calidad de código y de no producción
 
-Además de la tubería principal que se despliega en el escenario y la producción, los clientes pueden establecer oleoductos adicionales, denominados **oleoductos** no productivos. Estas tuberías siempre ejecutan los pasos de generación y calidad del código. Opcionalmente, también se pueden implementar en el entorno de Adobes Managed Services.
+Además de la tubería principal que se despliega en el escenario y la producción, los clientes pueden establecer oleoductos adicionales, denominados **oleoductos** no productivos. Estas tuberías siempre ejecutan los pasos de generación y calidad del código. Opcionalmente, también pueden implementarse en Adobe Managed Services entorno.
 
 ## Tutorial de vídeo {#video-tutorial-two}
 
