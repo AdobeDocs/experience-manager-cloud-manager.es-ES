@@ -1,40 +1,47 @@
 ---
-title: Notas de la versión 2020.7.0
-seo-title: Notas de la versión de AEM Cloud Manager para 2020.7.0
-description: Siga esta página para obtener información sobre la versión 2020.7.0 de Cloud Manager
-seo-description: Siga esta página para obtener información sobre la versión 2020.7.0 de AEM Cloud Manager
+title: Notas de la versión 2020.8.0
+seo-title: Notas de la versión de AEM Cloud Manager para 2020.8.0
+description: Siga esta página para obtener información sobre la versión 2020.8.0 de Cloud Manager
+seo-description: Siga esta página para obtener información sobre la versión 2020.8.0 de AEM Cloud Manager
 translation-type: tm+mt
-source-git-commit: 0d46abc386460ccbaf7ba10b93286bc8e4af2395
+source-git-commit: 3be958aa21d5423ddf371c286825d01afd554c4b
 workflow-type: tm+mt
-source-wordcount: '210'
-ht-degree: 6%
+source-wordcount: '243'
+ht-degree: 20%
 
 ---
 
-# Notas de la versión 2020.7.0 {#release-notes-for}
+# Notas de la versión 2020.8.0 {#release-notes-for}
 
-En la siguiente sección se describen las Notas de revisión generales de la versión 2020.7.0 [!UICONTROL Cloud Manager] .
+La siguiente sección describe las Notas de revisión generales de la versión 2020.8.0 [!UICONTROL Cloud Manager] .
 
 ## Fecha de la versión {#release-date}
 
-La fecha de versión de [!UICONTROL Cloud Manager] la versión 2020.7.0 es el 9 de julio de 2020.
+La fecha de versión de [!UICONTROL Cloud Manager] la versión 2020.8.0 es el 06 de agosto de 2020.
 
 ## Novedades {#whats-new}
 
-* La desvinculación y la asociación de instancias de despachante de los equilibradores de carga durante las implementaciones de producción ahora funcionan de forma más coherente.
+* La prueba de rendimiento de sitios ahora admite el uso opcional de la autenticación.
 
-* El contenedor de compilación de Cloud Manager ahora admite Java 8 y Java 11.
+   Consulte para obtener más detalles.
 
-* Las canalizaciones de Cloud Manager ahora admiten las variables y los secretos establecidos por el cliente.
-Consulte [Variables](/help/using/create-an-application-project.md#pipeline-variables) de canalización para obtener más detalles.
+* Ahora se admiten repositorios privados de Maven enlazados a autenticación.
 
 ## Corrección de errores {#bug-fixes}
 
-* Las opciones **Cancelar** y **Guardar** de la página Editar tubería no de producción no siempre estaban visibles.
+* Algunos complementos innecesarios y no deseados de SonarQube se estaban ejecutando como parte de la exploración de calidad del código.
 
-* Ciertos errores en el proceso de calidad del código podrían ocasionar que el archivo de registro no se genere correctamente.
+* En la página de ejecución de la canalización, el nombre de la ramificación tenía un formato incorrecto.
 
-* Algunos registros de pasos de canalización de gran tamaño no se podían descargar de forma consistente a través de la interfaz de usuario.
+* Al implementar en topologías con una sola publicación, un único despachante y un autor en espera en frío, el despachante se eliminaba erróneamente del equilibrador de carga.
+
+* En algunos casos, las ejecuciones de los trámites terminados no se registraban correctamente por haberse completado, lo que impedía la ejecución de los nuevos trámites.
+
+* Ocasionalmente, las ejecuciones por tuberías se *quedaban atascadas* debido a problemas de comunicación interna.
+
+* La información sobre herramientas de las tarjetas de programa no era coherente.
+
+* Hubo una discordancia de color en la página de información general.
 
 ## Problemas conocidos {#known-issues}
 
