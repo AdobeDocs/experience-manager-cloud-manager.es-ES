@@ -5,9 +5,9 @@ archetype: administrator
 user-guide-title: Ayuda de Experience Manager Cloud Manager
 user-guide-description: Learn to use Adobe Managed Cloud Services to self-manage Experience Manager in the cloud.
 translation-type: tm+mt
-source-git-commit: ebd5496a33d86e577b1db857c6ae6fff92e2331a
+source-git-commit: 3be958aa21d5423ddf371c286825d01afd554c4b
 workflow-type: tm+mt
-source-wordcount: '204'
+source-wordcount: '207'
 ht-degree: 87%
 
 ---
@@ -52,7 +52,8 @@ ht-degree: 87%
    + [Información general](overview-productupdate-wizard.md)
    + [Evaluación](evaluation.md)
 + Notas de la versión {#release-notes}
-   + [Notas de la versión actual (2020.7.0)](release-notes-current.md)
+   + [Notas de la versión actual (2020.8.0)](release-notes-current.md)
+   + [Notas de la versión 2020.7.0](release-notes-2020-7-0.md)
    + [Notas de la versión 2020.6.0](release-notes-2020-6-0.md)
    + [Notas de la versión 2020.5.0](release-notes-2020-5-0.md)
    + [Notas de la versión 2020.4.0](release-notes-2020-4-0.md)
