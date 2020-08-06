@@ -10,10 +10,10 @@ topic-tags: using
 content-type: reference
 discoiquuid: ba6c763a-b78a-439e-8c40-367203a719b3
 translation-type: tm+mt
-source-git-commit: 68330a3a6d9e1f95782418dbd72cbc0e6ee7362c
+source-git-commit: cff6f23a674fda2f57ea481d89644de9be3f5722
 workflow-type: tm+mt
-source-wordcount: '1759'
-ht-degree: 1%
+source-wordcount: '1636'
+ht-degree: 2%
 
 ---
 
@@ -178,9 +178,6 @@ Siga los pasos a continuación para configurar las validaciones de Dispatcher:
 
    ![](assets/Configuring_Pipeline_AEM-Sites.png)
 
-
-   Consulte Prueba [de rendimiento de sitios](configuring-pipeline.md#authenticated-sites-performance) autenticados para obtener información sobre cómo autenticar las pruebas de rendimiento de AEM Sites.
-
    **AEM Assets:**
 
    Cloud Manager ejecuta pruebas de rendimiento para programas de AEM Assets cargando los recursos repetidamente durante un período de prueba de 30 minutos y midiendo el tiempo de procesamiento de cada recurso, así como varias métricas a nivel de sistema. Esta función puede cargar imágenes y documentos PDF. La distribución de cuántos recursos de cada tipo se cargan por minuto se establece en la pantalla de configuración de tubería o de edición.
@@ -201,18 +198,6 @@ Siga los pasos a continuación para configurar las validaciones de Dispatcher:
 
    ![](assets/Production-Pipeline.png)
 
-### Prueba de rendimiento de sitios autenticados {#authenticated-sites-performance}
-
-Los clientes de los servicios gestionados de Adobe (AMS) con sitios autenticados pueden especificar un nombre de usuario y una contraseña que Cloud Manager utilizará para acceder al sitio web durante las pruebas de rendimiento del sitio.
-
-El nombre de usuario y la contraseña se especifican como [Variables](create-an-application-project.md#pipeline-variables) de canalización con los nombres `CM_PERF_TEST_BASIC_USERNAME` y `CM_PERF_TEST_BASIC_PASSWORD` .
-
->[!NOTE]
-> Aunque no es estrictamente necesario, se recomienda utilizar el tipo de variable de cadena para el nombre de usuario y el tipo de variable secretString para la contraseña. Si se especifican ambas, todas las solicitudes del rastreador de prueba de rendimiento y los usuarios virtuales de prueba contendrán estas credenciales como autenticación HTTP Basic.
-
-Para configurar estas variables mediante la CLI [de](https://github.com/adobe/aio-cli-plugin-cloudmanager)Cloud Manager, ejecute:
-
-`$ aio cloudmanager:set-pipeline-variables <pipeline id> --variable CM_PERF_TEST_BASIC_USERNAME <username> --secret CM_PERF_TEST_BASIC_PASSWORD <password>`
 
 ## Tuberías de calidad de código y de no producción
 
