@@ -2,16 +2,16 @@
 title: Crear un proyecto de aplicación de AEM
 seo-title: Crear un proyecto de aplicación de AEM
 description: nulo
-seo-description: Siga esta página para obtener más información sobre la configuración de un proyecto de AEM al empezar a usar Cloud Manager.
+seo-description: Siga esta página para obtener más información sobre la configuración de un proyecto AEM al empezar a usar Cloud Manager.
 uuid: 7b976ebf-5358-49d8-a58d-0bae026303fa
 contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: getting-started
 discoiquuid: 76c1a8e4-d66f-4a3b-8c0c-b80c9e17700e
 translation-type: tm+mt
-source-git-commit: 0fda91c2fe319fb58b3a6dd09f75eac7a60d9038
+source-git-commit: 200057885f068ff8df889601a401e06d89981209
 workflow-type: tm+mt
-source-wordcount: '1705'
+source-wordcount: '1721'
 ht-degree: 6%
 
 ---
@@ -19,20 +19,20 @@ ht-degree: 6%
 
 # Crear un proyecto de aplicación de AEM {#create-an-aem-application-project}
 
-## Uso del asistente para crear un proyecto de aplicación de AEM {#using-wizard-to-create-an-aem-application-project}
+## Uso del Asistente para crear un proyecto de aplicación AEM {#using-wizard-to-create-an-aem-application-project}
 
-Cuando los clientes se incorporan a Cloud Manager, se les proporciona un repositorio de Git vacío. Los clientes actuales de Adobes Managed Services (AMS) (o clientes internos de AEM que están migrando a AMS) generalmente ya tendrán su código de proyecto en git (u otro sistema de control de versiones) e importarán su proyecto en el repositorio de Git de Cloud Manager. Sin embargo, los nuevos clientes no tienen proyectos existentes.
+Cuando los clientes se incorporan a Cloud Manager, se les proporciona un repositorio de Git vacío. Los clientes actuales de Adobe Managed Services (AMS) (o los clientes internos AEM que están migrando a AMS) generalmente ya tendrán su código de proyecto en git (u otro sistema de control de versiones) e importarán su proyecto en el repositorio de Git de Cloud Manager. Sin embargo, los nuevos clientes no tienen proyectos existentes.
 
-Para ayudar a que los nuevos clientes se inicien, Cloud Manager ahora puede crear un proyecto mínimo de AEM como punto de partida. Este proceso se basa en el arquetipo [**del proyecto de **](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype)AEM.
+Para ayudar a que los nuevos clientes se inicien, Cloud Manager ahora puede crear un proyecto de AEM mínimo como punto de partida. Este proceso se basa en el [**AEM Arquetipo **](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype)del Proyecto.
 
 
-Siga los pasos a continuación para crear un proyecto de aplicación de AEM en Cloud Manager:
+Siga los pasos a continuación para crear un proyecto de aplicación AEM en Cloud Manager:
 
 1. Una vez que inicie sesión en Cloud Manager y se complete la configuración básica del programa, se mostrará una tarjeta de llamada a la acción especial en la pantalla **Información general**, si el repositorio está vacío.
 
    ![](assets/image2018-10-3_14-29-44.png)
 
-1. Haga clic en **Crear para** abrir un cuadro de diálogo que permite al usuario proporcionar los parámetros requeridos por el arquetipo de proyecto de AEM. En su forma predeterminada, el cuadro de diálogo solicita dos valores:
+1. Haga clic en **Crear para** abrir un cuadro de diálogo que permite al usuario proporcionar los parámetros requeridos por el arquetipo de proyecto AEM. En su forma predeterminada, el cuadro de diálogo solicita dos valores:
 
    * **Título** : de forma predeterminada, se establece en el nombre del *Programa*
 
@@ -65,7 +65,7 @@ Para poder compilar e implementar correctamente con Cloud Manager, los proyectos
 * Puede agregar referencias a repositorios de artefactos Maven adicionales en los archivos *pom.xml* . El acceso a repositorios [de artefactos protegidos con](#password-protected-maven-repositories) contraseña se admite cuando se configura. Sin embargo, no se admite el acceso a repositorios de artefactos protegidos por la red.
 * Los paquetes de contenido implementable se descubren mediante la búsqueda de archivos *zip* del paquete de contenido que se encuentran en un directorio denominado *destinatario*. Cualquier número de submódulos puede producir paquetes de contenido.
 
-* Los artefactos de Dispatcher implementables se descubren mediante la búsqueda de archivos *zip* (nuevamente, contenidos en un directorio llamado *destinatario*) que tienen directorios llamados *conf* y *conf.d*.
+* Los artefactos de Dispatcher implementables se detectan mediante el análisis de archivos *zip* (nuevamente, contenidos en un directorio denominado *destinatario*) que tienen directorios llamados *conf* y *conf.d*.
 
 * Si hay más de un paquete de contenido, no se garantiza el orden de las implementaciones de paquetes. Si se necesita un orden específico, se pueden usar dependencias de paquetes de contenido para definir el orden. Es posible que los paquetes se [omitan](#skipping-content-packages) de la implementación.
 
@@ -97,7 +97,7 @@ Cloud Manager crea y prueba el código mediante un entorno de compilación espec
 * Se pueden instalar otros paquetes en el momento de la compilación, como se describe [a continuación](#installing-additional-system-packages).
 * Cada obra se construye sobre un entorno prístino; el contenedor de compilación no mantiene ningún estado entre las ejecuciones.
 * Maven siempre se ejecuta con el comando: *mvn —batch-mode clean org.jacoco:jacoco-maven-plugin:prepare-agent package*
-* Maven se configura a nivel del sistema con un archivo settings.xml que incluye automáticamente el repositorio público de Adobe **Artiact** . (Para obtener más información, consulte el Repositorio [público de](https://repo.adobe.com/) Adobe Maven).
+* Maven se configura a nivel de sistema con un archivo settings.xml que incluye automáticamente el repositorio público de Adobe **Artiact** . (Consulte Repositorio [de Maven Público de](https://repo.adobe.com/) Adobe para obtener más detalles).
 
 >[!NOTE]
 >Aunque Cloud Manager no define una versión específica del `jacoco-maven-plugin`, la versión utilizada debe ser al menos `0.7.5.201505241946`.
@@ -134,7 +134,7 @@ Para ello, en el archivo pom.xml, agregue una `<plugin>` entrada con este aspect
 >[!NOTE]
 >Los `vendor` valores admitidos son `oracle` y `sun` y los `version` valores admitidos son `1.8`, `1.11`y `11`.
 
-## Variables de Entorno {#environment-variables}
+## Variables de entorno {#environment-variables}
 
 ### Variables de Entorno estándar {#standard-environ-variables}
 
@@ -190,7 +190,7 @@ Cuando se utiliza dentro de un `Maven pom.xml` archivo, generalmente resulta út
 
 En algunos casos limitados, es posible que deba variar ligeramente el proceso de compilación al ejecutarse dentro de Cloud Manager, en lugar de hacerlo en estaciones de trabajo para desarrolladores. En estos casos, los Perfiles [](https://maven.apache.org/guides/introduction/introduction-to-profiles.html) Maven se pueden usar para definir cómo la compilación debe ser diferente en diferentes entornos, incluido Cloud Manager.
 
-La Activación de un Perfil Maven dentro del entorno de compilación de Cloud Manager debe realizarse buscando la variable de entorno CM_BUILD descrita anteriormente. Por el contrario, un perfil que se pretenda usar solamente fuera del entorno de compilación de Cloud Manager debería realizarse buscando la ausencia de esta variable.
+La activación de un Perfil Maven dentro del entorno de compilación de Cloud Manager debe realizarse buscando la variable de entorno CM_BUILD descrita anteriormente. Por el contrario, un perfil que se pretenda usar solamente fuera del entorno de compilación de Cloud Manager debería realizarse buscando la ausencia de esta variable.
 
 Por ejemplo, si desea enviar un mensaje sencillo solo cuando la compilación se ejecute dentro de Cloud Manager, puede hacer lo siguiente:
 
@@ -266,7 +266,7 @@ Y si desea enviar un mensaje sencillo solo cuando la compilación se ejecute fue
 
 ## Compatibilidad con repositorio Maven protegido por contraseña {#password-protected-maven-repositories}
 
-Para utilizar un repositorio Maven protegido por contraseña de Cloud Manager, especifique la contraseña (y, opcionalmente, el nombre de usuario) como una variable [secreta de](#pipeline-variables) canalización y, a continuación, haga referencia a ese secreto dentro de un archivo denominado `.cloudmanager/maven/settings.xml` en el repositorio git. Este archivo sigue el esquema [Maven Settings File](https://maven.apache.org/settings.html) . Cuando el administrador de nube genera inicios de proceso, el `<servers>` elemento de este archivo se combina en el archivo `settings.xml` predeterminado proporcionado por Cloud Manager. Con este archivo en su lugar, se haría referencia a la identificación del servidor desde dentro de un elemento `<repository>` y/o `<pluginRepository>` dentro del `pom.xml` archivo. Por lo general, estos `<repository>` y/o `<pluginRepository>` elementos se contendrían dentro de un perfil [específico del Administrador de]{#activating-maven-profiles-in-cloud-manager}nube, aunque eso no es estrictamente necesario.
+Para utilizar un repositorio Maven protegido por contraseña de Cloud Manager, especifique la contraseña (y, opcionalmente, el nombre de usuario) como una variable [secreta de](#pipeline-variables) canalización y, a continuación, haga referencia a ese secreto dentro de un archivo denominado `.cloudmanager/maven/settings.xml` en el repositorio git. Este archivo sigue el esquema [Maven Settings File](https://maven.apache.org/settings.html) . Cuando el administrador de nube genera inicios de proceso, el `<servers>` elemento de este archivo se combina en el archivo `settings.xml` predeterminado proporcionado por Cloud Manager. Los ID de servidor que comienzan con `adobe` y `cloud-manager` se consideran reservados y no deben ser utilizados por servidores personalizados. Con este archivo en su lugar, se haría referencia a la identificación del servidor desde dentro de un elemento `<repository>` y/o `<pluginRepository>` dentro del `pom.xml` archivo. Por lo general, estos `<repository>` y/o `<pluginRepository>` elementos se contendrían dentro de un perfil [específico del Administrador de]{#activating-maven-profiles-in-cloud-manager}nube, aunque eso no es estrictamente necesario.
 
 Por ejemplo, supongamos que el repositorio se encuentra en https://repository.myco.com/maven2, el nombre de usuario Cloud Manager debe utilizarse `cloudmanager` y la contraseña es `secretword`.
 
@@ -433,4 +433,4 @@ Con el content-package-maven-plugin es similar:
 
 ## Desarrollar el código en base a las optimizaciones {#develop-your-code-based-on-best-practices}
 
-Los equipos de ingeniería y consultoría de Adobe han desarrollado un [completo conjunto de prácticas recomendadas para los desarrolladores](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/best-practices.html)de AEM.
+Los equipos de Ingeniería y Consultoría de Adobe han desarrollado un [completo conjunto de optimizaciones para desarrolladores](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/best-practices.html)de AEM.
