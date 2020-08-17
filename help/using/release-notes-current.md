@@ -4,10 +4,10 @@ seo-title: Notas de la versión de AEM Cloud Manager para 2020.8.0
 description: Siga esta página para obtener información sobre la versión 2020.8.0 de Cloud Manager
 seo-description: Siga esta página para obtener información sobre la versión 2020.8.0 de AEM Cloud Manager
 translation-type: tm+mt
-source-git-commit: cff6f23a674fda2f57ea481d89644de9be3f5722
+source-git-commit: c2f5caf50f2e20c07807369aee7914c17fded4de
 workflow-type: tm+mt
-source-wordcount: '166'
-ht-degree: 7%
+source-wordcount: '192'
+ht-degree: 6%
 
 ---
 
@@ -37,5 +37,9 @@ Ahora se admiten repositorios privados de Maven enlazados a autenticación.
 
 * La información sobre herramientas de las tarjetas de programa no era coherente.
 
-* Hubo una discordancia de color en la página de información general.
+* Había una discordancia de color en la página **Información general** .
+
+* La prueba de rendimiento de sitios ahora admite el uso opcional de la autenticación.
+
+* Las memorias caché de despachante para instancias de autor se vacian automáticamente cuando las configuraciones de despachante se implementan a través de Cloud Manager.
 
