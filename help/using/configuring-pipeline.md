@@ -10,10 +10,10 @@ topic-tags: using
 content-type: reference
 discoiquuid: ba6c763a-b78a-439e-8c40-367203a719b3
 translation-type: tm+mt
-source-git-commit: cff6f23a674fda2f57ea481d89644de9be3f5722
+source-git-commit: c2f5caf50f2e20c07807369aee7914c17fded4de
 workflow-type: tm+mt
-source-wordcount: '1636'
-ht-degree: 2%
+source-wordcount: '1751'
+ht-degree: 1%
 
 ---
 
@@ -104,7 +104,7 @@ Seleccione la rama Git y haga clic en **Siguiente**.
 >
 >Si la opción **Programado** está seleccionada, puede programar la implementación de producción en la canalización **después** de la implementación de la fase (y **usar aprobación** de GoLive, si se ha activado) para esperar a que se establezca una programación. El usuario también puede elegir ejecutar la implementación de producción inmediatamente.
 >
->Consulte [**Implementar el código **](deploying-code.md), para establecer la programación de implementación o ejecutar la producción inmediatamente.
+>Consulte [**Implementar el código**](deploying-code.md), para establecer la programación de implementación o ejecutar la producción inmediatamente.
 
 ![](assets/configure-pipeline3.png)
 
@@ -129,7 +129,7 @@ A continuación, se muestra como un paso independiente durante la ejecución de 
 
 **Invalidación del despachante**
 
-Como administrador de implementación, tiene la oportunidad de configurar un conjunto de rutas de contenido que se **invalidarán** o se **vaciarán** desde la caché de AEM Dispatcher, mientras configura o edita la canalización.
+Como administrador de implementación, tiene la oportunidad de configurar un conjunto de rutas de contenido que se **invalidarán** o se **vaciarán** de la memoria caché de AEM Dispatcher para instancias de publicación, al configurar o editar la canalización.
 
 Puede configurar un conjunto independiente de rutas para la implementación de fase y producción. Si se configuran, estas acciones de caché se realizarán como parte del paso de la canalización de implementación, justo después de implementar cualquier paquete de contenido. Esta configuración utiliza el comportamiento estándar AEM Dispatcher: invalidate realiza una invalidación de caché, similar a cuando el contenido se activa de la creación a la publicación; flush realiza una eliminación de caché.
 
@@ -178,6 +178,8 @@ Siga los pasos a continuación para configurar las validaciones de Dispatcher:
 
    ![](assets/Configuring_Pipeline_AEM-Sites.png)
 
+   Consulte Prueba [de rendimiento](#authenticated-performance-testing) autenticada para obtener más detalles.
+
    **AEM Assets:**
 
    Cloud Manager ejecuta pruebas de rendimiento para programas de AEM Assets cargando los recursos repetidamente durante un período de prueba de 30 minutos y midiendo el tiempo de procesamiento de cada recurso, así como varias métricas a nivel de sistema. Esta función puede cargar imágenes y documentos PDF. La distribución de cuántos recursos de cada tipo se cargan por minuto se establece en la pantalla de configuración de tubería o de edición.
@@ -198,6 +200,17 @@ Siga los pasos a continuación para configurar las validaciones de Dispatcher:
 
    ![](assets/Production-Pipeline.png)
 
+### Prueba de rendimiento autenticada {#authenticated-performance-testing}
+
+Los clientes de AMS con sitios autenticados pueden especificar un nombre de usuario y una contraseña que Cloud Manager utilizará para acceder al sitio web durante la prueba de rendimiento del sitio.
+
+El nombre de usuario y la contraseña se especifican como [Variables](/help/using/create-an-application-project.md#pipeline-variables) de canalización con los nombres `CM_PERF_TEST_BASIC_USERNAME` y `CM_PERF_TEST_BASIC_PASSWORD`.
+
+Aunque no es estrictamente necesario, se recomienda utilizar el tipo de variable de cadena para el nombre de usuario y el tipo de variable secretString para la contraseña. Si se especifican ambas, todas las solicitudes del rastreador de prueba de rendimiento y los usuarios virtuales de prueba contendrán estas credenciales como autenticación HTTP Basic.
+
+Para configurar estas variables mediante la CLI [de](https://github.com/adobe/aio-cli-plugin-cloudmanager)Cloud Manager, ejecute:
+
+`$ aio cloudmanager:set-pipeline-variables <pipeline id> --variable CM_PERF_TEST_BASIC_USERNAME <username> --secret CM_PERF_TEST_BASIC_PASSWORD <password>`
 
 ## Tuberías de calidad de código y de no producción
 
