@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: getting-started
 discoiquuid: 76c1a8e4-d66f-4a3b-8c0c-b80c9e17700e
 translation-type: tm+mt
-source-git-commit: ea9c4836caba1221cae75c600f77fd542a71d52c
+source-git-commit: f281b919b0ffaf4ca20a241d056c132e08e95206
 workflow-type: tm+mt
-source-wordcount: '1741'
+source-wordcount: '1867'
 ht-degree: 6%
 
 ---
@@ -21,9 +21,9 @@ ht-degree: 6%
 
 ## Uso del Asistente para crear un proyecto de aplicación AEM {#using-wizard-to-create-an-aem-application-project}
 
-Cuando los clientes se incorporan a Cloud Manager, se les proporciona un repositorio de Git vacío. Los clientes actuales de Adobe Managed Services (AMS) (o los clientes internos AEM que están migrando a AMS) generalmente ya tendrán su código de proyecto en git (u otro sistema de control de versiones) e importarán su proyecto en el repositorio de Git de Cloud Manager. Sin embargo, los nuevos clientes no tienen proyectos existentes.
+Cuando los clientes se incorporan a Cloud Manager, se les proporciona un repositorio de Git vacío. Los clientes actuales de Adobe Managed Services (AMS) (o los clientes internos AEM que están migrando a AMS) generalmente ya tendrán su código de proyecto en git (u otro sistema de control de versiones) e importarán su proyecto en el repositorio de Git Cloud Manager. Sin embargo, los nuevos clientes no tienen proyectos existentes.
 
-Para ayudar a que los nuevos clientes se inicien, Cloud Manager ahora puede crear un proyecto de AEM mínimo como punto de partida. Este proceso se basa en el [**AEM Arquetipo **](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype)del Proyecto.
+Para ayudar a que los nuevos clientes se inicien, Cloud Manager ahora puede crear un proyecto de AEM mínimo como punto de partida. Este proceso se basa en el [**AEM Arquetipo**](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype)del Proyecto.
 
 
 Siga los pasos a continuación para crear un proyecto de aplicación AEM en Cloud Manager:
@@ -146,7 +146,7 @@ Para admitir esto, Cloud Manager agrega estas variables de entorno estándar al 
 
 | **Nombre de variable** | **Definición** |
 |---|---|
-| CM_BUILD | Siempre configurado como &quot;true&quot; |
+| CM_BUILD | Siempre definido como &quot;true&quot; |
 | RAMA | La rama configurada para la ejecución |
 | CM_PIPELINE_ID | El identificador de canalización numérica |
 | CM_PIPELINE_NAME | El nombre de la canalización |
@@ -266,6 +266,9 @@ Y si desea enviar un mensaje sencillo solo cuando la compilación se ejecute fue
 
 ## Compatibilidad con repositorio Maven protegido por contraseña {#password-protected-maven-repositories}
 
+>[!NOTE]
+>Los artefactos de un repositorio Maven protegido por contraseña solo deben utilizarse con mucha cautela, ya que el código implementado a través de este mecanismo no se ejecuta actualmente a través de las compuertas de calidad del Administrador de nubes. Por lo tanto, sólo debe utilizarse en casos excepcionales y para código no vinculado a AEM. También se recomienda implementar las fuentes Java, así como todo el código fuente del proyecto, junto con el binario.
+
 Para utilizar un repositorio Maven protegido por contraseña de Cloud Manager, especifique la contraseña (y, opcionalmente, el nombre de usuario) como una variable [secreta de](#pipeline-variables) canalización y, a continuación, haga referencia a ese secreto dentro de un archivo denominado `.cloudmanager/maven/settings.xml` en el repositorio git. Este archivo sigue el esquema [Maven Settings File](https://maven.apache.org/settings.html) . Cuando el administrador de nube genera inicios de proceso, el `<servers>` elemento de este archivo se combina en el archivo `settings.xml` predeterminado proporcionado por Cloud Manager. Los ID de servidor que comienzan con `adobe` y `cloud-manager` se consideran reservados y no deben ser utilizados por servidores personalizados. Los ID de servidor que **no** coincidan con uno de estos prefijos o el ID predeterminado nunca `central` será reflejado por Cloud Manager. Con este archivo en su lugar, se haría referencia a la identificación del servidor desde dentro de un elemento `<repository>` y/o `<pluginRepository>` dentro del `pom.xml` archivo. Por lo general, estos `<repository>` y/o `<pluginRepository>` elementos se contendrían dentro de un perfil [específico del Administrador de](/help/using/create-an-application-project.md#activating-maven-profiles-in-cloud-manager)nube, aunque esto no es estrictamente necesario.
 
 Por ejemplo, supongamos que el repositorio se encuentra en https://repository.myco.com/maven2, el nombre de usuario Cloud Manager debe utilizarse `cloudmanager` y la contraseña es `secretword`.
@@ -331,6 +334,54 @@ Y finalmente haga referencia al ID de servidor dentro del `pom.xml` archivo:
         </build>
     </profile>
 </profiles>
+```
+
+### Implementación de fuentes {#deploying-sources}
+
+Se recomienda implementar las fuentes Java junto con el binario en un repositorio Maven.
+
+Configure el complemento maven-source-plugin en su proyecto:
+
+```xml
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-source-plugin</artifactId>
+            <executions>
+                <execution>
+                    <id>attach-sources</id>
+                    <goals>
+                        <goal>jar-no-fork</goal>
+                    </goals>
+                </execution>
+            </executions>
+        </plugin>
+```
+
+### Implementación de fuentes de proyectos {#deploying-project-sources}
+
+Es recomendable implementar todo el origen del proyecto junto con el binario en un repositorio Maven, lo que permite reconstruir el artefacto exacto.
+
+Configure el complemento maven-assembly-plugin en su proyecto:
+
+```xml
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-assembly-plugin</artifactId>
+            <executions>
+                <execution>
+                    <id>project-assembly</id>
+                    <phase>package</phase>
+                    <goals>
+                        <goal>single</goal>
+                    </goals>
+                    <configuration>
+                        <descriptorRefs>
+                            <descriptorRef>project</descriptorRef>
+                        </descriptorRefs>
+                    </configuration>
+                </execution>
+            </executions>
+        </plugin>
 ```
 
 ## Instalación de paquetes de sistema adicionales {#installing-additional-system-packages}
