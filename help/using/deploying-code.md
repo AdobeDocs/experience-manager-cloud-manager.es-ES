@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: 832a4647-9b83-4a9d-b373-30fe16092b15
 translation-type: tm+mt
-source-git-commit: d38b6da61c552a3e9ad03dac49a64553f0cb00b4
+source-git-commit: ace032fbb26235d87d61552a11996ec2bb42abce
 workflow-type: tm+mt
 source-wordcount: '953'
 ht-degree: 1%
@@ -127,13 +127,11 @@ Cuando Cloud Manager se implementa en topologías que no son de producción, el 
    1. Cada ruta especificada en la configuración de la canalización se invalida o se borra de la caché del despachante.
 
    >[!NOTE]
-   >
    >Cloud Manager espera que el artefacto del distribuidor contenga el conjunto de archivos completo.  Todos los archivos de configuración del despachante deben estar presentes en el repositorio git. Si faltan archivos o carpetas, se producirá un error en la implementación.
 
 1. Tras la implementación correcta de todos los paquetes de AEM y despachantes en todos los nodos, los despachantes se agregan de nuevo al equilibrador de carga y la implementación se completa.
 
    >[!NOTE]
-   >
    >Puede omitir los cambios del equilibrador de carga en las implementaciones de desarrollo y de fase, es decir, separar y adjuntar pasos tanto en las tuberías que no son de producción, para los entornos de desarrollador y en la canalización de producción, para los entornos de fase.
 
 ### Implementación en fase de producción {#deployment-production-phase}
