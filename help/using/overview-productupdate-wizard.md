@@ -8,7 +8,7 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 discoiquuid: ebcc91a5-be9e-4684-8146-d88f4013d4d1
 translation-type: tm+mt
-source-git-commit: 3bb435aae932b9446867c30b7dd6b0a8e0839ee2
+source-git-commit: ace032fbb26235d87d61552a11996ec2bb42abce
 workflow-type: tm+mt
 source-wordcount: '202'
 ht-degree: 5%
@@ -18,9 +18,9 @@ ht-degree: 5%
 
 # Información general {#overview-product-update-wizard}
 
-El asistente de actualización de productos es una experiencia guiada y paso a paso para los clientes de Cloud Manager que están actualizando a la versión más reciente de Adobe Experience Manager (AEM) 6.5. Simplifica el proceso completo, garantiza la adhesión a las prácticas recomendadas de AEM mediante el marco CI/CD de Cloud Manager y las pruebas automatizadas integradas.
+El asistente de actualización de productos es una experiencia guiada y paso a paso para los clientes de Cloud Manager que están actualizando a la última versión de Adobe Experience Manager (AEM) 6.5. Simplifica el proceso completo, garantiza la adhesión a AEM prácticas recomendadas mediante el marco CI/CD del Administrador de nube y las pruebas automatizadas integradas.
 
-El asistente incluye cinco fases que guían al usuario durante una actualización de producto de AEM:
+El asistente incluye cinco fases que guían al usuario durante una actualización de producto AEM:
 
 * **Evaluación**
 * **Remediación**
@@ -33,9 +33,9 @@ El asistente incluye cinco fases que guían al usuario durante una actualizació
 
 >[!NOTE]
 >
->Los clientes incorporados a Cloud Manager y elegibles para actualizar a AEM 6.5 podrán aprovechar el asistente de actualización de productos. Póngase en contacto con el ingeniero de éxito del cliente (CSE) para obtener más información.
+>Los clientes que estén incorporados a Cloud Manager y reúnan los requisitos para actualizar a AEM 6.5 podrán aprovechar el asistente de actualización de productos. Póngase en contacto con el ingeniero de éxito del cliente (CSE) para obtener más información.
 
-1. Recibirá una notificación de impulsos a través de Cloud Manager informándole de que AEM 6.5 está disponible para su programa.
+1. Recibirá una notificación de impulsos a través de Cloud Manager informándole de que el AEM 6.5 está disponible para su programa.
 
 1. Aparece una **[!UICONTROL AEM 6.5 Update]** tarjeta en la pantalla de información general de [!UICONTROL Cloud Manager]. Esta tarjeta le ayudará a realizar un seguimiento de la fase del proceso de actualización en la que se encuentra actualmente y le informará sobre el próximo paso que debe realizar. Seleccione **[!UICONTROL Start Update]** para iniciar el asistente.
 
