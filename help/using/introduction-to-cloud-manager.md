@@ -6,10 +6,13 @@ seo-description: 'Esta página sirve como punto de partida para obtener informac
 uuid: 62d68e79-c2ba-4d8b-ba7d-33709014d5b6
 contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
-topic-tags: introducción
+topic-tags: introduction
 discoiquuid: ebcc91a5-be9e-4684-8146-d88f4013d4d1
-translation-type: ht
-source-git-commit: d7c9ab3795fb3df02ab7dffd1328760ccd914a18
+translation-type: tm+mt
+source-git-commit: ace032fbb26235d87d61552a11996ec2bb42abce
+workflow-type: tm+mt
+source-wordcount: '660'
+ht-degree: 91%
 
 ---
 
@@ -18,7 +21,7 @@ source-git-commit: d7c9ab3795fb3df02ab7dffd1328760ccd914a18
 
 ## Introducción {#introduction}
 
-[!UICONTROL Cloud Manager], una parte de los servicios administrados en la nube de Adobe, permite a las organizaciones controlar Experience Manager en la nube. Incluye un marco de integración y entrega continuas (CI/CD) que permite a los equipo de TI y a los asociados de la implementación acelerar la entrega de las personalizaciones o actualizaciones sin poner en riesgo el rendimiento o la seguridad.
+[!UICONTROL Cloud Manager], que forma parte de los servicios gestionados de Adobe, permite a las organizaciones administrar su propio Experience Manager en la nube. Incluye un marco de integración y entrega continuas (CI/CD) que permite a los equipo de TI y a los asociados de la implementación acelerar la entrega de las personalizaciones o actualizaciones sin poner en riesgo el rendimiento o la seguridad.
 
 Gracias al portal de autoservicio para clientes [!UICONTROL Cloud Manager], las **organizaciones** pueden realizar y aprovechar al máximo las siguientes opciones:
 
@@ -41,7 +44,7 @@ La interfaz de usuario (IU) para [!UICONTROL Cloud Manager] permite a los client
 
 Los clientes definen los Indicadores clave de rendimiento (KPI) específicos de la aplicación: visitas máximas por minuto de páginas y tiempo de respuesta esperado al cargar una página; en última instancia, estos datos constituyen la base para medir una implementación exitosa. Las funciones y los permisos de los distintos integrantes del equipo se pueden definir fácilmente. Aunque la nueva interfaz de autoservicio le permite controlarlo todo con facilidad, también le ofrece vínculos a procedimientos recomendados y le da la oportunidad de contactar con expertos de Adobe que pueden proporcionarle la orientación necesaria.
 
-Para explorar y empezar a usar la interfaz de usuario de [!UICONTROL Cloud Manager], consulte el [primer inicio de sesión](https://helpx.adobe.com/experience-manager/cloud-manager/using/first-time-login.html).
+To explore and get started with [!UICONTROL Cloud Manager]&#39;s UI, see [First Time Login](https://helpx.adobe.com/experience-manager/cloud-manager/using/first-time-login.html).
 
 ### Canalización de CI/CD {#ci-cd-pipeline}
 
@@ -49,7 +52,7 @@ Una de las funciones clave de [!UICONTROL Cloud Manager] es la capacidad de util
 
 A través de la interfaz de usuario de [!UICONTROL Cloud Manager], los clientes pueden configurar y poner en marcha su canalización de CD/CI. Durante esta canalización, se realiza un análisis exhaustivo del código para garantizar que solo las aplicaciones de alta calidad pasen al entorno de producción.
 
-Para obtener más información sobre la configuración de la canalización desde la interfaz de usuario de [!UICONTROL Cloud Manager], consulte [Configuración de la canalización de CI/CD](https://helpx.adobe.com/experience-manager/cloud-manager/using/configuring-pipeline.html).
+To learn more about configuring pipeline from [!UICONTROL Cloud Manager]&#39;s UI, see [Configure your CI/CD Pipeline](https://helpx.adobe.com/experience-manager/cloud-manager/using/configuring-pipeline.html).
 
 ### Modos de implementación flexibles {#flexible-deployment-modes}
 
