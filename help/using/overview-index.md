@@ -6,8 +6,11 @@ seo-description: Descripción general de la ayuda de Adobe AEM Cloud Manager
 uuid: d4a23a6e-347e-41c3-9e3b-b7b7469c4754
 contentOwner: jsyal
 discoiquuid: 5ca5a413-639e-43fb-93dd-16ce8935a3fd
-translation-type: ht
-source-git-commit: 617b04e7465fa41542606b733ded76a32467738d
+translation-type: tm+mt
+source-git-commit: ace032fbb26235d87d61552a11996ec2bb42abce
+workflow-type: tm+mt
+source-wordcount: '108'
+ht-degree: 73%
 
 ---
 
@@ -18,7 +21,7 @@ source-git-commit: 617b04e7465fa41542606b733ded76a32467738d
 
 Esta sección proporciona una vista de alto nivel de la lista de recursos que le permite empezar a utilizar [!UICONTROL Cloud Manager].
 
-Siga los pasos de los recursos que aparecen a continuación para empezar a utilizar [!UICONTROL Cloud Manager]; aquí podrá entender los conceptos y la terminología claves para instalar la configuración (requisitos previos), que finalmente le permitirán empezar a usar [!UICONTROL Cloud Manager].
+Follow the resources below to begin your journey for using [!UICONTROL Cloud Manager], from understanding the key concepts and terminologies to setting up configurations (pre-requisites), that finally lets you get started with [!UICONTROL Cloud Manager].
 
 La siguiente imagen ilustra el plan de desarrollo de su aprendizaje de [!UICONTROL Cloud Manager]:
 
@@ -26,7 +29,7 @@ La siguiente imagen ilustra el plan de desarrollo de su aprendizaje de [!UICONTR
 
 Siga los pasos de los recursos de la sección Información general para obtener una introducción a [!UICONTROL Cloud Manager]:
 
-* **[Introducción a [!UICONTROL Cloud Manager]](introduction-to-cloud-manager.md)**
+* **[Introducción a[!UICONTROL Cloud Manager]](introduction-to-cloud-manager.md)**
 * **[Conceptos clave](key-concepts.md)**
 * **[[!UICONTROL Customer Journey]](customer-journey.md)**
 
