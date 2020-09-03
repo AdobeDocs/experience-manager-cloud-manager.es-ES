@@ -4,7 +4,7 @@ seo-title: Notas de la versión de AEM Cloud Manager para 2020.9.0
 description: Siga esta página para obtener información sobre la versión 2020.9.0 de Cloud Manager
 seo-description: Siga esta página para obtener información sobre la versión 2020.9.0 de AEM Cloud Manager
 translation-type: tm+mt
-source-git-commit: c1d07c95088a279376ef495001a5165c7e459642
+source-git-commit: 988cebcb0503725946d33751d111e10f28f09ce7
 workflow-type: tm+mt
 source-wordcount: '99'
 ht-degree: 10%
@@ -17,7 +17,7 @@ La siguiente sección describe las Notas de revisión generales de la versión 2
 
 ## Fecha de la versión {#release-date}
 
-La fecha de versión de [!UICONTROL Cloud Manager] la versión 2020.8.0 es el 3 de septiembre de 2020.
+La fecha de versión de [!UICONTROL Cloud Manager] la versión 2020.9.0 es el 3 de septiembre de 2020.
 
 ## Novedades {#whats-new}
 
