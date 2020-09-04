@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: getting-started
 discoiquuid: 8888dd80-d908-464e-927d-779db1a832a4
 translation-type: tm+mt
-source-git-commit: ace032fbb26235d87d61552a11996ec2bb42abce
+source-git-commit: 2ada697ca21acd0c73dbce2bce3e9481ac50272c
 workflow-type: tm+mt
 source-wordcount: '597'
 ht-degree: 2%
@@ -23,7 +23,7 @@ ht-degree: 2%
 
 Cloud Manager puede implementar archivos de configuración de servidores web y despachantes siempre que se almacenen en el repositorio **** Git, además de los paquetes de contenido AEM normales.
 
-Para aprovechar esta capacidad, la compilación de Maven debe producir un archivo zip que contenga al menos dos directorios: ***conf*** y ***conf.d***. Este archivo zip se puede producir utilizando el complemento maven-assembly-plugin. Los proyectos generados por Cloud Manager mediante el [asistente](/help/using/create-an-application-project.md) integrado tienen la estructura de proyecto Maven correcta como parte de la creación del proyecto. Esta es la ruta recomendada para los nuevos clientes de Managed Services.
+Para aprovechar esta capacidad, la compilación de Maven debe producir un archivo zip que contenga al menos dos directorios: ***conf*** y ***conf.d***. Este archivo zip se puede producir utilizando el complemento maven-assembly-plugin. Los proyectos generados por Cloud Manager mediante el [asistente](/help/using/using-the-wizard.md) integrado tienen la estructura de proyecto Maven correcta, creada como parte de la creación del proyecto. Esta es la ruta recomendada para los nuevos clientes de Managed Services.
 
 Tras la implementación en una **instancia** de distribuidor, el contenido de estos directorios sobrescribirá el contenido de estos directorios en la instancia de Dispatcher. Debido a que los archivos de configuración de Dispatcher y servidores Web requieren con frecuencia información específica de entorno, para que esta capacidad se utilice correctamente, primero deberá trabajar con los Ingenieros de éxito del cliente (CSE) para configurar estas variables de entorno en `/etc/sysconfig/httpd`.
 
