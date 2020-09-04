@@ -4,7 +4,7 @@ seo-title: Notas de la versión de AEM Cloud Manager para 2020.7.0
 description: Siga esta página para obtener información sobre la versión 2020.7.0 de Cloud Manager
 seo-description: Siga esta página para obtener información sobre la versión 2020.7.0 de AEM Cloud Manager
 translation-type: tm+mt
-source-git-commit: 3be958aa21d5423ddf371c286825d01afd554c4b
+source-git-commit: c35398110e9d8311bf58f217efdd082cf0cfd90a
 workflow-type: tm+mt
 source-wordcount: '210'
 ht-degree: 51%
@@ -26,7 +26,7 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2020.7.0 is July 09, 202
 * El contenedor de generación de Cloud Manager ahora admite Java 8 y Java 11.
 
 * Las canalizaciones de Cloud Manager ahora admiten las variables y los secretos establecidos por el cliente.
-Consulte [Variables de canalización](/help/using/create-an-application-project.md#pipeline-variables) para obtener más detalles.
+Consulte [Variables de canalización](/help/using/build-environment-details.md#pipeline-variables) para obtener más detalles.
 
 ## Corrección de errores {#bug-fixes}
 
