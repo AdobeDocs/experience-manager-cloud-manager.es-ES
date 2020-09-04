@@ -10,10 +10,10 @@ topic-tags: using
 content-type: reference
 discoiquuid: ba6c763a-b78a-439e-8c40-367203a719b3
 translation-type: tm+mt
-source-git-commit: c2f5caf50f2e20c07807369aee7914c17fded4de
+source-git-commit: c35398110e9d8311bf58f217efdd082cf0cfd90a
 workflow-type: tm+mt
 source-wordcount: '1751'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -129,7 +129,7 @@ A continuación, se muestra como un paso independiente durante la ejecución de 
 
 **Invalidación del despachante**
 
-Como administrador de implementación, tiene la oportunidad de configurar un conjunto de rutas de contenido que se **invalidarán** o se **vaciarán** de la memoria caché de AEM Dispatcher para instancias de publicación, al configurar o editar la canalización.
+Como administrador de implementación, tiene la oportunidad de configurar un conjunto de rutas de contenido que se **invalidarán** o se **vaciarán** de la caché de AEM Dispatcher para instancias de publicación, mientras se configura o se edita la canalización.
 
 Puede configurar un conjunto independiente de rutas para la implementación de fase y producción. Si se configuran, estas acciones de caché se realizarán como parte del paso de la canalización de implementación, justo después de implementar cualquier paquete de contenido. Esta configuración utiliza el comportamiento estándar AEM Dispatcher: invalidate realiza una invalidación de caché, similar a cuando el contenido se activa de la creación a la publicación; flush realiza una eliminación de caché.
 
@@ -204,7 +204,7 @@ Siga los pasos a continuación para configurar las validaciones de Dispatcher:
 
 Los clientes de AMS con sitios autenticados pueden especificar un nombre de usuario y una contraseña que Cloud Manager utilizará para acceder al sitio web durante la prueba de rendimiento del sitio.
 
-El nombre de usuario y la contraseña se especifican como [Variables](/help/using/create-an-application-project.md#pipeline-variables) de canalización con los nombres `CM_PERF_TEST_BASIC_USERNAME` y `CM_PERF_TEST_BASIC_PASSWORD`.
+El nombre de usuario y la contraseña se especifican como [Variables](/help/using/build-environment-details.md#pipeline-variables) de canalización con los nombres `CM_PERF_TEST_BASIC_USERNAME` y `CM_PERF_TEST_BASIC_PASSWORD`.
 
 Aunque no es estrictamente necesario, se recomienda utilizar el tipo de variable de cadena para el nombre de usuario y el tipo de variable secretString para la contraseña. Si se especifican ambas, todas las solicitudes del rastreador de prueba de rendimiento y los usuarios virtuales de prueba contendrán estas credenciales como autenticación HTTP Basic.
 
