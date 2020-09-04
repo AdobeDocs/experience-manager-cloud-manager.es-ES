@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: 832a4647-9b83-4a9d-b373-30fe16092b15
 translation-type: tm+mt
-source-git-commit: ace032fbb26235d87d61552a11996ec2bb42abce
+source-git-commit: c35398110e9d8311bf58f217efdd082cf0cfd90a
 workflow-type: tm+mt
-source-wordcount: '953'
+source-wordcount: '952'
 ht-degree: 1%
 
 ---
@@ -48,7 +48,7 @@ Una vez configurada la tubería de producción (repositorio, entorno y entorno d
    La **implementación por fases** incluye los siguientes pasos:
 
    * Validación: Este paso garantiza que la canalización esté configurada para utilizar los recursos disponibles actualmente, por ejemplo, que la ramificación configurada exista, que los entornos estén disponibles.
-   * Prueba de generación y unidad: Este paso ejecuta un proceso de compilación en contenedores. Consulte [Creación de un proyecto](create-an-application-project.md) de aplicación AEM para obtener más información sobre el entorno de compilación.
+   * Prueba de generación y unidad: Este paso ejecuta un proceso de compilación en contenedores. Consulte [Explicación del Entorno](/help/using/build-environment-details.md) de compilación para obtener más detalles sobre el entorno de compilación.
    * Análisis de código: Este paso evalúa la calidad del código de la aplicación. Consulte [Explicación de los resultados](understand-your-test-results.md) de la prueba para obtener más información sobre el proceso de prueba.
    * Implementar en etapa
 
