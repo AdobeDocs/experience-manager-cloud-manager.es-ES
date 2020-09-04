@@ -4,7 +4,7 @@ seo-title: Notas de la versión de AEM Cloud Manager para 2020.9.0
 description: Siga esta página para obtener información sobre la versión 2020.9.0 de Cloud Manager
 seo-description: Siga esta página para obtener información sobre la versión 2020.9.0 de AEM Cloud Manager
 translation-type: tm+mt
-source-git-commit: 988cebcb0503725946d33751d111e10f28f09ce7
+source-git-commit: 92249cbb7134082fcc66455c90dda8bdcb9dbf1d
 workflow-type: tm+mt
 source-wordcount: '99'
 ht-degree: 10%
@@ -23,6 +23,6 @@ La fecha de versión de [!UICONTROL Cloud Manager] la versión 2020.9.0 es el 3 
 
 * El proceso de compilación se ha separado en tres comandos Maven independientes.
 * Si el repositorio de git no se clona, se volverá a crear hasta tres veces.
-* Ahora hay un indicador en la página de detalles de ejecución de la canalización cuando se utiliza la autenticación durante la prueba de rendimiento
+* Ahora hay un indicador en la página de detalles de ejecución de la canalización cuando se utiliza la autenticación durante las pruebas de rendimiento.
 
 
