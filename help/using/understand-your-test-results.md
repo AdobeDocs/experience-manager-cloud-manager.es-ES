@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: 83299ed8-4b7a-4b1c-bd56-1bfc7e7318d4
 translation-type: tm+mt
-source-git-commit: d38b6da61c552a3e9ad03dac49a64553f0cb00b4
+source-git-commit: 39e6af753cdd43da96746c7609a8f502b3ac9e77
 workflow-type: tm+mt
 source-wordcount: '1544'
 ht-degree: 7%
@@ -162,7 +162,7 @@ En la tabla siguiente se resume la matriz de prueba de rendimiento utilizando el
 | Vistas de página por minuto | Importante | &lt; KPI de nivel de Programa |
 | Uso del ancho de banda del disco | Importante | >= 90% |
 | Uso del ancho de banda de la red | Importante | >= 90% |
-| Solicitudes por minuto | Información | &lt; 6000 |
+| Solicitudes por minuto | Información | >= 6000 |
 
 ### Gráficos de resultados de la prueba de rendimiento {#performance-testing-results-graphs}
 
