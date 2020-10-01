@@ -1,28 +1,28 @@
 ---
-title: Notas de la versión 2020.9.0
-seo-title: Notas de la versión de AEM Cloud Manager para 2020.9.0
-description: Siga esta página para obtener información sobre la versión 2020.9.0 de Cloud Manager
-seo-description: Siga esta página para obtener información sobre la versión 2020.9.0 de AEM Cloud Manager
+title: Notas de la versión 2020.10.0
+seo-title: Notas de la versión de AEM Cloud Manager para 2020.10.0
+description: Siga esta página para obtener información sobre la versión 2020.10.0 de Cloud Manager
+seo-description: Siga esta página para obtener información sobre la versión 2020.10.0 de AEM Cloud Manager
 translation-type: tm+mt
-source-git-commit: 92249cbb7134082fcc66455c90dda8bdcb9dbf1d
+source-git-commit: aad2da58e5934999884553619dd97d42cc725d88
 workflow-type: tm+mt
-source-wordcount: '99'
-ht-degree: 10%
+source-wordcount: '102'
+ht-degree: 9%
 
 ---
 
-# Notas de la versión 2020.9.0 {#release-notes-for}
+# Notas de la versión 2020.10.0 {#release-notes-for}
 
-La siguiente sección describe las Notas de revisión generales de la versión 2020.9.0 [!UICONTROL Cloud Manager] .
+En la siguiente sección se describen las Notas de revisión generales de la versión 2020.10.0 [!UICONTROL Cloud Manager] .
 
 ## Fecha de la versión {#release-date}
 
-La fecha de versión de [!UICONTROL Cloud Manager] la versión 2020.9.0 es el 3 de septiembre de 2020.
+La fecha de versión de [!UICONTROL Cloud Manager] la versión 2020.10.0 es el 1 de octubre de 2020.
 
-## Novedades {#whats-new}
+## Corrección de errores {#bug-fixes}
 
-* El proceso de compilación se ha separado en tres comandos Maven independientes.
-* Si el repositorio de git no se clona, se volverá a crear hasta tres veces.
-* Ahora hay un indicador en la página de detalles de ejecución de la canalización cuando se utiliza la autenticación durante las pruebas de rendimiento.
+* El buscador utilizado para la prueba de rendimiento consideraba incorrectamente ciertos tipos de recursos como vínculos Web válidos.
 
+* En algunas situaciones, el paso de finalización de las pruebas de rendimiento no se gestionaba correctamente, lo que daba lugar a pasos de larga duración.
 
+* Cuando se configuró la invalidación de caché del despachante para implementaciones de producción, la invalidación se ejecutó dos veces.
