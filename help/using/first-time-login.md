@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: getting-started
 discoiquuid: 2221d1d5-dbc2-4175-8371-60344f932a82
 translation-type: tm+mt
-source-git-commit: 16893b8bcd2b2d681a14bb6be3786e358e1952fb
+source-git-commit: 2005b7e7689d3bc0656f92ecdbe368519f0d52a9
+workflow-type: tm+mt
+source-wordcount: '247'
+ht-degree: 8%
 
 ---
 
@@ -19,7 +22,6 @@ source-git-commit: 16893b8bcd2b2d681a14bb6be3786e358e1952fb
 Una vez que haya configurado las configuraciones generales para [!UICONTROL Cloud Manager], estará listo para usar la interfaz de usuario (IU) para [!UICONTROL Cloud Manager].
 
 >[!NOTE]
->
 >Según las funciones asignadas en [!UICONTROL Cloud Manager] y el estado de la aplicación, verá diferentes pantallas mientras utiliza la [!UICONTROL Cloud Manager] interfaz de usuario.
 
 ## Tutorial de vídeo {#video-tutorial-one}
@@ -32,7 +34,7 @@ El siguiente vídeo proporciona información general sobre los Programas de Clou
 
 ## Inicio de sesión por primera vez {#logging-in-for-the-first-time}
 
-1. Inicie sesión en **Adobe[!UICONTROL Experience Cloud]**y verá la lista de** Programas **.
+1. Inicie sesión en el **Adobe[!UICONTROL Experience Cloud]** y verá la lista de **Programas**.
 
    ![](assets/screen_shot_2018-06-04at120643pm.png)
 
