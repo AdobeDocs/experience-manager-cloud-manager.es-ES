@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: introduction
 discoiquuid: ebcc91a5-be9e-4684-8146-d88f4013d4d1
 translation-type: tm+mt
-source-git-commit: 2005b7e7689d3bc0656f92ecdbe368519f0d52a9
+source-git-commit: d3f17b1fd4fcc1c75836c9dd67d54e22422db120
 workflow-type: tm+mt
 source-wordcount: '680'
 ht-degree: 89%
@@ -73,4 +73,4 @@ En un evento de escalado automático, [!UICONTROL Cloud Manager] activa automát
 La función escalado automático se aplicará solo a Dispatcher o a las capas publicadas y se ejecutará siempre mediante un método de escalado horizontal, con un segmento adicional de Dispatcher o del par publicado como mínimo y un máximo de diez segmentos. Se escalará manualmente cualquier capacidad adicional aprovisionada en un periodo de diez días laborables, tal como determine el CSE (ingeniero de administración del éxito del cliente).
 
 >[!NOTE]
->Los clientes interesados en explorar si la escala automática es adecuada o no para su aplicación deben ponerse en contacto con su representante de CSE o Adobe.
+>Los clientes interesados en explorar si la escalación automática es adecuada o no para su aplicación deben ponerse en contacto con su representante de CSE o Adobe.
