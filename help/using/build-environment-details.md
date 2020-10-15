@@ -2,9 +2,9 @@
 title: Explicación del Entorno de compilación
 description: Siga esta página para conocer los entornos
 translation-type: tm+mt
-source-git-commit: 57a99792e151bd5fe69c8372b6a9d3b100036a51
+source-git-commit: 000843f902a180181981de2b1307fd2777d32994
 workflow-type: tm+mt
-source-wordcount: '709'
+source-wordcount: '723'
 ht-degree: 0%
 
 ---
@@ -107,7 +107,7 @@ Se pueden enumerar las variables actuales:
 
 `$ aio cloudmanager:list-pipeline-variables PIPELINEID`
 
-Los nombres de variables solo pueden contener caracteres alfanuméricos y de subrayado (_). Por convención, los nombres deben estar en mayúsculas. Hay un límite de 200 variables por canalización, cada nombre debe tener menos de 100 caracteres y cada valor debe tener menos de 2048 caracteres.
+Los nombres de variables solo pueden contener caracteres alfanuméricos y de subrayado (_). Por convención, los nombres deben estar en mayúsculas. Hay un límite de 200 variables por canalización, cada nombre debe tener menos de 100 caracteres y cada valor debe tener menos de 2048 caracteres en el caso de las variables de tipo de cadena y 500 caracteres en el caso de las variables de tipo secretString.
 
 Cuando se utiliza dentro de un `Maven pom.xml` archivo, generalmente resulta útil asignar estas variables a las propiedades de Maven con una sintaxis similar a esta:
 
@@ -183,5 +183,4 @@ Algunas compilaciones requieren que se instalen paquetes de sistema adicionales 
 Esta misma técnica se puede utilizar para instalar paquetes específicos de idioma, es decir, `gem` para RubyGems o `pip` para paquetes Python.
 
 >[!NOTE]
->
->La instalación de un paquete de sistema de esta manera **no** lo instala en el entorno de tiempo de ejecución utilizado para ejecutar Adobe Experience Manager. Si necesita un paquete de sistema instalado en el entorno de AEM, póngase en contacto con los ingenieros de éxito del cliente (CSE).
+>La instalación de un paquete de sistema de esta manera **no** lo instala en el entorno de tiempo de ejecución utilizado para ejecutar Adobe Experience Manager. Si necesita un paquete de sistema instalado en el entorno de AEM, póngase en contacto con su representante de Adobe.
