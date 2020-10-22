@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: d2338c74-3278-49e6-a186-6ef62362509f
 translation-type: tm+mt
-source-git-commit: 3bb435aae932b9446867c30b7dd6b0a8e0839ee2
+source-git-commit: a8cd1ac2448b9f875c1d925c62e7fe42c8ceec2a
 workflow-type: tm+mt
-source-wordcount: '2282'
+source-wordcount: '2296'
 ht-degree: 6%
 
 ---
@@ -19,11 +19,10 @@ ht-degree: 6%
 
 # Reglas de calidad de código personalizadas {#custom-code-quality-rules}
 
-En esta página se describen las reglas de calidad de código personalizadas ejecutadas por Cloud Manager creadas en función de las prácticas recomendadas de ingeniería de AEM.
+En esta página se describen las reglas de calidad de código personalizadas ejecutadas por Cloud Manager creadas en función de las prácticas recomendadas de AEM ingeniería.
 
 >[!NOTE]
->
->Las muestras de código que se proporcionan aquí tienen fines ilustrativos.
+>Las muestras de código que se proporcionan aquí tienen fines ilustrativos. Consulte [Conceptos](https://docs.sonarqube.org/7.4/user-guide/concepts/) para conocer los conceptos y las reglas de calidad de SonarQube.
 
 ## Reglas de SonarQube {#sonarqube-rules}
 
@@ -120,7 +119,7 @@ protected void doPost(SlingHttpServletRequest request, SlingHttpServletResponse 
 
 **Desde**: Versión 2018.6.0
 
-Al ejecutar solicitudes HTTP desde una aplicación AEM, es fundamental asegurarse de que se han configurado los tiempos de espera adecuados para evitar un consumo de subproceso innecesario. Desafortunadamente, el comportamiento predeterminado tanto del cliente HTTP predeterminado de Java (java.net.HttpUrlConnection) como del cliente de componentes HTTP Apache que se utiliza habitualmente es no agotar el tiempo de espera, por lo que los tiempos de espera deben establecerse explícitamente. Además, como práctica recomendada, estos tiempos de espera no deben superar los 60 segundos.
+Cuando se ejecutan solicitudes HTTP desde dentro de una aplicación AEM, es fundamental asegurarse de que se han configurado los tiempos de espera adecuados para evitar el consumo innecesario de subprocesos. Desafortunadamente, el comportamiento predeterminado tanto del cliente HTTP predeterminado de Java (java.net.HttpUrlConnection) como del cliente de componentes HTTP Apache que se utiliza habitualmente es no agotar el tiempo de espera, por lo que los tiempos de espera deben establecerse explícitamente. Además, como práctica recomendada, estos tiempos de espera no deben superar los 60 segundos.
 
 #### Código no compatible {#non-compliant-code-2}
 
@@ -202,7 +201,7 @@ La API de AEM contiene interfaces y clases de Java que solo están pensadas para
 
 Cuando se añaden nuevos métodos a estas interfaces, esos métodos adicionales no afectan al código existente que utiliza estas interfaces y, como resultado, la adición de nuevos métodos a estas interfaces se considera compatible con versiones anteriores. Sin embargo, si el código personalizado ***implementa*** una de estas interfaces, dicho código personalizado ha introducido un riesgo de compatibilidad con versiones anteriores para el cliente.
 
-Las interfaces (y clases) que solo AEM pretende implementar se anotan con *org.osgi.anottation.versioning.ProviderType* (o, en algunos casos, una anotación heredada similar *a Qute.bnd.anottation.ProviderType*). Esta regla identifica los casos en los que una interfaz de este tipo se implementa (o una clase se amplía) mediante código personalizado.
+Las interfaces (y clases) que solo están destinadas a ser implementadas por AEM están anotadas con *org.osgi.anottation.versioning.ProviderType* (o, en algunos casos, una anotación heredada similar *aQute.bnd.anottation.ProviderType*). Esta regla identifica los casos en los que una interfaz de este tipo se implementa (o una clase se amplía) mediante código personalizado.
 
 #### Código no compatible {#non-compliant-code-3}
 
@@ -356,7 +355,7 @@ public void doThis() throws Exception {
 }
 ```
 
-### Evite iniciar sesión en INFO al administrar solicitudes GET o HEAD {#avoid-logging-at-info-when-handling-get-or-head-requests}
+### Evite iniciar sesión en INFO al gestionar solicitudes de GET o HEAD {#avoid-logging-at-info-when-handling-get-or-head-requests}
 
 **Clave**: CQRules:CQBP-44—LogInfoInGetOrHeadRequests
 
@@ -364,7 +363,7 @@ public void doThis() throws Exception {
 
 **Gravedad**: Menor
 
-En general, el nivel de registro INFO debe utilizarse para delimitar acciones importantes y, de forma predeterminada, AEM está configurado para iniciar sesión en el nivel INFO o superior. Los métodos GET y HEAD sólo deben ser operaciones de sólo lectura y por lo tanto no constituyen acciones importantes. Es probable que el registro en el nivel INFO en respuesta a las solicitudes GET o HEAD cree un ruido de registro significativo, lo que dificulta la identificación de información útil en los archivos de registro. El registro al administrar las solicitudes GET o HEAD debe estar en los niveles WARN o ERROR cuando algo ha salido mal o en los niveles DEBUG o TRACE si resulta útil obtener información más detallada sobre la solución de problemas.
+En general, el nivel de registro INFO debe utilizarse para demarcar acciones importantes y, de forma predeterminada, AEM está configurado para registrar en el nivel INFO o superior. Los métodos de GET y HEAD sólo deben ser operaciones de sólo lectura y, por tanto, no constituyen acciones importantes. Es probable que el registro en el nivel INFO en respuesta a solicitudes de GET o HEAD cree un ruido de registro significativo, lo que dificulta la identificación de información útil en los archivos de registro. El registro cuando se gestionen solicitudes de GET o HEAD debe estar en los niveles ADVERTENCIA o ERROR cuando algo haya salido mal o en los niveles DEBUG o TRACE si resulta útil disponer de información más detallada sobre la solución de problemas.
 
 >[!CAUTION]
 >
@@ -468,7 +467,7 @@ public void doThis() {
 
 **Desde**: Versión 2018.4.0
 
-Como se ha mencionado anteriormente, el contexto es fundamental para comprender los mensajes de registro. El uso de Exception.printStackTrace() hace que **solo** el seguimiento de pila se envíe al flujo de error estándar, con lo que se pierde todo el contexto. Además, en una aplicación con varios subprocesos como AEM, si se imprimen varias excepciones mediante este método en paralelo, sus trazos de pila pueden superponerse, lo que produce una confusión significativa. Las excepciones solo se deben registrar a través del módulo de registro.
+Como se ha mencionado anteriormente, el contexto es fundamental para comprender los mensajes de registro. El uso de Exception.printStackTrace() hace que **solo** el seguimiento de pila se envíe al flujo de error estándar, con lo que se pierde todo el contexto. Además, en una aplicación con varios subprocesos, como AEM, si se imprimen varias excepciones mediante este método en paralelo, sus trazos de pila pueden superponerse, lo que produce una confusión significativa. Las excepciones solo se deben registrar a través del módulo de registro.
 
 #### Código no compatible {#non-compliant-code-11}
 
@@ -504,7 +503,7 @@ public void doThis() {
 
 **Desde**: Versión 2018.4.0
 
-El inicio de sesión en AEM siempre debe realizarse a través del marco de registro (SLF4J). La salida directa a los flujos de error estándar o de salida estándar pierde la información estructural y contextual proporcionada por el marco de registro y, en algunos casos, puede causar problemas de rendimiento.
+El inicio de sesión AEM siempre debe realizarse a través del marco de registro (SLF4J). La salida directa a los flujos de error estándar o de salida estándar pierde la información estructural y contextual proporcionada por el marco de registro y, en algunos casos, puede causar problemas de rendimiento.
 
 #### Código no compatible {#non-compliant-code-12}
 
@@ -572,7 +571,7 @@ El Planificador Sling no debe utilizarse para tareas que requieran una ejecució
 
 Consulte [Apache Sling Eventing y Job Handling](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html) para obtener más información sobre cómo se gestionan los trabajos Sling en entornos agrupados.
 
-### No se deben usar las API obsoletas de AEM {#sonarqube-aem-deprecated}
+### AEM API obsoletas no deben usarse {#sonarqube-aem-deprecated}
 
 **Clave**: AMSCORE-553
 
@@ -582,11 +581,11 @@ Consulte [Apache Sling Eventing y Job Handling](https://sling.apache.org/documen
 
 **Desde**: Versión 2020.5.0
 
-La superficie de la API de AEM está en constante revisión para identificar las API para las que se desaconseja el uso y, por tanto, se considera obsoleta.
+La superficie de la API de AEM está bajo constante revisión para identificar las API para las que se desaconseja el uso y, por lo tanto, se considera obsoleta.
 
 En muchos casos, estas API quedan obsoletas mediante la anotación estándar Java *@Deprecated* y, como tal, según lo identifica `squid:CallToDeprecatedMethod`.
 
-Sin embargo, hay casos en los que una API está en desuso en el contexto de AEM, pero puede que no esté en desuso en otros contextos. Esta regla identifica esta segunda clase.
+Sin embargo, hay casos en los que una API está en desuso en el contexto de la AEM, pero puede que no quede en desuso en otros contextos. Esta regla identifica esta segunda clase.
 
 ## Reglas de contenido OakPAL {#oakpal-rules}
 
@@ -594,7 +593,7 @@ Debajo de las comprobaciones OakPAL ejecutadas por Cloud Manager.
 
 >[!NOTE]
 >
->OakPAL es un marco de trabajo desarrollado por un socio de AEM (y ganador de AEM Rockstar Norteamérica en 2019) que valida los paquetes de contenido mediante un repositorio Oak independiente.
+>OakPAL es un marco de trabajo desarrollado por un socio AEM (y ganador de 2019 AEM Rockstar Norteamérica) que valida los paquetes de contenido usando un repositorio Oak independiente.
 
 ### Los paquetes de clientes no deben crear ni modificar nodos en /libs {#oakpal-customer-package}
 
@@ -606,7 +605,7 @@ Debajo de las comprobaciones OakPAL ejecutadas por Cloud Manager.
 
 **Desde**: Versión 2019.6.0
 
-Desde hace tiempo, se recomienda que los clientes consideren el árbol de contenido /libs del repositorio de contenido de AEM como de solo lectura. La modificación de nodos y propiedades en */libs* crea un riesgo significativo para actualizaciones mayores y menores. Las modificaciones a */libs* solo deben realizarlas Adobe a través de canales oficiales.
+Desde hace mucho tiempo, se recomienda que los clientes consideren el árbol de contenido /libs del repositorio de contenido de AEM como de solo lectura. La modificación de nodos y propiedades en */libs* crea un riesgo significativo para actualizaciones mayores y menores. Las modificaciones a */libs* sólo deben hacerse por Adobe mediante canales oficiales.
 
 ### Los Paquetes No Deben Contener Configuraciones OSGi Duplicado {#oakpal-package-osgi}
 
@@ -651,7 +650,7 @@ Un problema común que se produce en proyectos complejos es que el mismo compone
 
 **Desde**: Versión 2019.6.0
 
-Por motivos de seguridad, las rutas que contienen */config/ y /install/* solo las pueden leer los usuarios administrativos en AEM y solo deben utilizarse para la configuración OSGi y los paquetes OSGi. Colocar otros tipos de contenido bajo rutas que contengan estos segmentos resulta en un comportamiento de aplicación que varía involuntariamente entre usuarios administrativos y no administrativos.
+Por motivos de seguridad, las rutas que contienen */config/ y /install/* solo son legibles por los usuarios administrativos en AEM y solo deben utilizarse para la configuración OSGi y los paquetes OSGi. Colocar otros tipos de contenido bajo rutas que contengan estos segmentos resulta en un comportamiento de aplicación que varía involuntariamente entre usuarios administrativos y no administrativos.
 
 Un problema común es el uso de nodos denominados `config` dentro de los cuadros de diálogo de componentes o al especificar la configuración del editor de texto enriquecido para la edición en línea. Para resolver esto, se debe cambiar el nombre del nodo infractor por un nombre compatible. Para la configuración del editor de texto enriquecido, utilice la `configPath` propiedad del `cq:inplaceEditing` nodo para especificar la nueva ubicación.
 
@@ -696,7 +695,7 @@ De forma similar a los *paquetes no deben contener configuraciones OSGi Duplicad
 
 **Desde**: Versión 2020.5.0
 
-La configuración OSGi `com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl` define el modo de creación predeterminado en AEM. Como la IU clásica ha quedado obsoleta desde AEM 6.4, ahora se generará un problema cuando el modo de creación predeterminado se configure en la IU clásica.
+La configuración OSGi `com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl` define el modo de creación predeterminado dentro de AEM. Como la IU clásica ha quedado obsoleta desde AEM 6.4, ahora se generará un problema cuando el modo de creación predeterminado se configure en la IU clásica.
 
 ### Los Componentes Con Diálogos Deben Tener Diálogos De IU Táctiles {#oakpal-components-dialogs}
 
@@ -708,13 +707,13 @@ La configuración OSGi `com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl` def
 
 **Desde**: Versión 2020.5.0
 
-Los componentes de AEM que tengan un cuadro de diálogo de IU clásica siempre deben tener un cuadro de diálogo de IU táctil correspondiente para ofrecer una experiencia de creación óptima y para ser compatibles con el modelo de implementación de Cloud Service, en el que la IU clásica no es compatible. Esta regla comprueba los siguientes escenarios:
+AEM Los componentes que tienen un cuadro de diálogo de IU clásica siempre deben tener un cuadro de diálogo de IU táctil correspondiente para ofrecer una experiencia de creación óptima y para ser compatibles con el modelo de implementación de Cloud Service, en el que la IU clásica no es compatible. Esta regla comprueba los siguientes escenarios:
 
 * Un componente con un cuadro de diálogo de IU clásica (es decir, un nodo secundario de cuadro de diálogo) debe tener un cuadro de diálogo de IU táctil correspondiente (es decir, un nodo secundario `cq:dialog` ).
 * Un componente con un cuadro de diálogo de diseño de la IU clásica (es decir, un nodo design_dialog) debe tener un cuadro de diálogo de diseño de la IU táctil correspondiente (es decir, un nodo secundario `cq:design_dialog` ).
 * Un componente con un cuadro de diálogo de IU clásica y un cuadro de diálogo de diseño de IU clásica debe tener un cuadro de diálogo de IU táctil correspondiente y un cuadro de diálogo de diseño de IU táctil correspondiente.
 
-La documentación de las herramientas de modernización de AEM proporciona documentación y herramientas para convertir componentes de la IU clásica a la IU táctil. Consulte [las Herramientas](https://opensource.adobe.com/aem-modernize-tools/pages/tools.html) de modernización de AEM para obtener más información.
+La documentación de AEM Herramientas de modernización proporciona documentación y herramientas para convertir componentes de la IU clásica a la IU táctil. Consulte [Las herramientas](https://opensource.adobe.com/aem-modernize-tools/pages/tools.html) de modernización de AEM para obtener más detalles.
 
 ### Los paquetes no deben mezclar contenido mutable e inmutable {#oakpal-packages-immutable}
 
