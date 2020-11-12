@@ -1,28 +1,36 @@
 ---
-title: Notas de la versión 2020.10.0
-seo-title: Notas de la versión de AEM Cloud Manager para 2020.10.0
-description: Siga esta página para obtener información sobre la versión 2020.10.0 de Cloud Manager
-seo-description: Siga esta página para obtener información sobre la versión 2020.10.0 de AEM Cloud Manager
+title: Notas de la versión 2020.11.0
+seo-title: Notas de la versión de AEM Cloud Manager para 2020.11.0
+description: Siga esta página para obtener información sobre la versión 2020.11.0 de Cloud Manager
+seo-description: Siga esta página para obtener información sobre la versión 2020.11.0 de AEM Cloud Manager
 translation-type: tm+mt
-source-git-commit: aad2da58e5934999884553619dd97d42cc725d88
+source-git-commit: 30d782f5a095b1b07ec4f2039def9ba30a559325
 workflow-type: tm+mt
-source-wordcount: '102'
-ht-degree: 9%
+source-wordcount: '160'
+ht-degree: 7%
 
 ---
 
-# Notas de la versión 2020.10.0 {#release-notes-for}
+# Notas de la versión 2020.11.0 {#release-notes-for}
 
-En la siguiente sección se describen las Notas de revisión generales de la versión 2020.10.0 [!UICONTROL Cloud Manager] .
+La siguiente sección describe las Notas de revisión generales de la versión 2020.11.0 [!UICONTROL Cloud Manager] .
 
 ## Fecha de la versión {#release-date}
 
-La fecha de versión de [!UICONTROL Cloud Manager] la versión 2020.10.0 es el 1 de octubre de 2020.
+La fecha de versión de [!UICONTROL Cloud Manager] la versión 2020.11.0 es el 12 de noviembre de 2020.
+
+## Novedades {#whats-new}
+
+* La ficha **Aprender** de Cloud Manager se actualiza con nuevas imágenes en la interfaz de usuario.
 
 ## Corrección de errores {#bug-fixes}
 
-* El buscador utilizado para la prueba de rendimiento consideraba incorrectamente ciertos tipos de recursos como vínculos Web válidos.
+* Determinados errores de implementación causados por el cliente aparecerán ahora explícitamente en los registros de implementación.
 
-* En algunas situaciones, el paso de finalización de las pruebas de rendimiento no se gestionaba correctamente, lo que daba lugar a pasos de larga duración.
+* La carga de dependencias realizada antes de la ejecución de la compilación requería la descarga de un complemento de Maven.
 
-* Cuando se configuró la invalidación de caché del despachante para implementaciones de producción, la invalidación se ejecutó dos veces.
+* El vínculo del pie de página del Administrador de nubes para seleccionar un idioma ahora se desplazará a la ubicación correcta.
+
+* A veces, durante la digitalización del código, el proceso SonarQube no se inicio. Esto se detectará automáticamente y se intentará reiniciar.
+
+* Durante el proceso de rastreo del sitio que se utiliza en las pruebas de rendimiento, las solicitudes cuyo tiempo de espera en los tres primeros niveles de inversión de profundidad se reintentarán automáticamente.
