@@ -25,7 +25,7 @@ Cloud Manager crea y prueba el código mediante un entorno de compilación espec
    * imagemagick
    * graphicsmagick
 
-* Se pueden instalar otros paquetes en el momento de la compilación, como se describe [a continuación](#installing-additional-system-packages).
+* Se pueden instalar otros paquetes en tiempo de compilación como se describe [a1/>.](#installing-additional-system-packages)
 * Cada obra se construye sobre un entorno prístino; el contenedor de compilación no mantiene ningún estado entre las ejecuciones.
 * Maven siempre se ejecuta con estos tres comandos:
 
@@ -33,16 +33,16 @@ Cloud Manager crea y prueba el código mediante un entorno de compilación espec
    * `mvn --batch-mode org.apache.maven.plugins:maven-clean-plugin:3.1.0:clean -Dmaven.clean.failOnError=false`
    * `mvn --batch-mode org.jacoco:jacoco-maven-plugin:prepare-agent package`
 
-* Maven se configura a nivel de sistema con un archivo settings.xml que incluye automáticamente el repositorio público de Adobe **Artiact** . (Consulte Repositorio [de Maven Público de](https://repo.adobe.com/) Adobe para obtener más detalles).
+* Maven se configura a nivel del sistema con un archivo settings.xml que incluye automáticamente el repositorio público de Adobes **Artact**. (Consulte [Repositorio público de Adobe para Maven](https://repo.adobe.com/) para obtener más detalles).
 
 >[!NOTE]
->Aunque Cloud Manager no define una versión específica del `jacoco-maven-plugin`, la versión utilizada debe ser al menos `0.7.5.201505241946`.
+>Aunque Cloud Manager no define una versión específica de `jacoco-maven-plugin`, la versión utilizada debe ser al menos `0.7.5.201505241946`.
 
 ## Uso de Java 11 {#using-java-11}
 
-Cloud Manager ahora admite la creación de proyectos de clientes con Java 8 y Java 11. De forma predeterminada, los proyectos se crean con Java 8. Los clientes que deseen utilizar Java 11 en sus proyectos pueden hacerlo usando el complemento [Apache Maven Toolchain](https://maven.apache.org/plugins/maven-toolchains-plugin/).
+Cloud Manager ahora admite la creación de proyectos de clientes con Java 8 y Java 11. De forma predeterminada, los proyectos se crean con Java 8. Los clientes que deseen utilizar Java 11 en sus proyectos pueden hacerlo mediante el [Complemento Apache Maven Toolchain](https://maven.apache.org/plugins/maven-toolchains-plugin/).
 
-Para ello, en el archivo pom.xml, agregue una `<plugin>` entrada con este aspecto:
+Para ello, en el archivo pom.xml, agregue una entrada `<plugin>` con este aspecto:
 
 ```xml
         <plugin>
@@ -68,10 +68,10 @@ Para ello, en el archivo pom.xml, agregue una `<plugin>` entrada con este aspect
 ```
 
 >[!NOTE]
->Los `vendor` valores admitidos son `oracle` y `sun` y los `version` valores admitidos son `1.8`, `1.11`y `11`.
+>Los valores `vendor` admitidos son `oracle` y `sun` y los valores `version` admitidos son `1.8`, `1.11` y `11`.
 
 >[!NOTE]
->La compilación del proyecto de Cloud Manager sigue usando Java 8 para invocar Maven, por lo tanto la comprobación o aplicación de la versión de Java configurada en el complemento toolchain a través de complementos como el complemento [](https://maven.apache.org/enforcer/maven-enforcer-plugin/) Apache Maven Enforcer no funciona y estos complementos no deben utilizarse.
+>La compilación del proyecto de Cloud Manager sigue utilizando Java 8 para invocar Maven, por lo que la comprobación o aplicación de la versión de Java configurada en el complemento toolchain a través de complementos como el [Complemento Apache Maven Enforcer](https://maven.apache.org/enforcer/maven-enforcer-plugin/) no funciona y estos complementos no deben usarse.
 
 ## Variables de entorno {#environment-variables}
 
@@ -97,7 +97,7 @@ Para admitir esto, Cloud Manager agrega estas variables de entorno estándar al 
 
 En algunos casos, el proceso de generación de un cliente puede depender de variables de configuración específicas que no se pueden colocar en el repositorio Git o que necesitan variar entre las ejecuciones de canalizaciones que utilizan la misma rama.
 
-Cloud Manager permite configurar estas variables mediante la API de Cloud Manager o la CLI de Cloud Manager por canalización. Las variables pueden almacenarse como texto sin formato o cifradas en reposo. En cualquier caso, las variables se ponen a disposición dentro del entorno de compilación como una variable de entorno a la que se puede hacer referencia desde dentro del `pom.xml` archivo u otras secuencias de comandos de compilación.
+Cloud Manager permite configurar estas variables mediante la API de Cloud Manager o la CLI de Cloud Manager por canalización. Las variables pueden almacenarse como texto sin formato o cifradas en reposo. En cualquier caso, las variables están disponibles dentro del entorno de compilación como una variable de entorno a la que se puede hacer referencia desde el archivo `pom.xml` u otras secuencias de comandos de compilación.
 
 Para configurar una variable mediante la CLI, ejecute un comando como:
 
@@ -109,7 +109,7 @@ Se pueden enumerar las variables actuales:
 
 Los nombres de variables solo pueden contener caracteres alfanuméricos y de subrayado (_). Por convención, los nombres deben estar en mayúsculas. Hay un límite de 200 variables por canalización, cada nombre debe tener menos de 100 caracteres y cada valor debe tener menos de 2048 caracteres en el caso de las variables de tipo de cadena y 500 caracteres en el caso de las variables de tipo secretString.
 
-Cuando se utiliza dentro de un `Maven pom.xml` archivo, generalmente resulta útil asignar estas variables a las propiedades de Maven con una sintaxis similar a esta:
+Cuando se utiliza dentro de un archivo `Maven pom.xml`, generalmente resulta útil asignar estas variables a las propiedades de Maven mediante una sintaxis similar a esta:
 
 ```xml
         <profile>
@@ -180,7 +180,7 @@ Algunas compilaciones requieren que se instalen paquetes de sistema adicionales 
         </profile>
 ```
 
-Esta misma técnica se puede utilizar para instalar paquetes específicos de idioma, es decir, `gem` para RubyGems o `pip` para paquetes Python.
+Esta misma técnica se puede utilizar para instalar paquetes específicos de idioma, por ejemplo, utilizando `gem` para RubyGems o `pip` para paquetes Python.
 
 >[!NOTE]
->La instalación de un paquete de sistema de esta manera **no** lo instala en el entorno de tiempo de ejecución utilizado para ejecutar Adobe Experience Manager. Si necesita un paquete de sistema instalado en el entorno de AEM, póngase en contacto con su representante de Adobe.
+>Al instalar un paquete de sistema de esta manera **no** se instala en el entorno de tiempo de ejecución utilizado para ejecutar Adobe Experience Manager. Si necesita un paquete de sistema instalado en el entorno de AEM, póngase en contacto con su representante de Adobe.
