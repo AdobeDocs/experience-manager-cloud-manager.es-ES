@@ -13,11 +13,11 @@ ht-degree: 6%
 
 # Notas de la versión 2020.8.0 {#release-notes-for}
 
-La siguiente sección describe las Notas de revisión generales de la versión 2020.8.0 [!UICONTROL Cloud Manager] .
+La siguiente sección describe las Notas de revisión generales de la [!UICONTROL Cloud Manager] versión 2020.8.0.
 
 ## Fecha de la versión {#release-date}
 
-La fecha de versión de [!UICONTROL Cloud Manager] la versión 2020.8.0 es el 06 de agosto de 2020.
+La fecha de versión de [!UICONTROL Cloud Manager] versión 2020.8.0 es el 06 de agosto de 2020.
 
 ## Novedades {#whats-new}
 
@@ -33,11 +33,11 @@ Ahora se admiten repositorios privados de Maven enlazados a autenticación.
 
 * En algunos casos, las ejecuciones de los trámites terminados no se registraban correctamente por haberse completado, lo que impedía la ejecución de los nuevos trámites.
 
-* Ocasionalmente, las ejecuciones por tuberías se *quedaban atascadas* debido a problemas de comunicación interna.
+* Las ejecuciones de tuberías ocasionalmente se *atascaran* debido a problemas de comunicación interna.
 
 * La información sobre herramientas de las tarjetas de programa no era coherente.
 
-* Había una discordancia de color en la página **Información general** .
+* Hubo una discordancia de color en la página **Información general**.
 
 * La prueba de rendimiento de sitios ahora admite el uso opcional de la autenticación.
 
