@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Fase de evaluación {#evaluation}
 
-La primera fase del asistente de actualización de productos es **[!UICONTROL Evaluation]** fase.
+La primera fase del asistente de actualización de productos es **[!UICONTROL Evaluation]**.
 Aquí puede evaluar la complejidad de la actualización con el detector de patrones al que puede acceder directamente desde el asistente. Al final de este paso, tendrá acceso al informe de evaluación.
 
 El informe generado permite comprobar la actualización de la instancia de autor detectando patrones que:
@@ -45,7 +45,7 @@ Siga los pasos a continuación para generar un informe de evaluación:
 
    ![](assets/Run-Evaluation.png)
 
-1. El asistente le informa del estado de la acción. Cuando se genere el informe de evaluación, observará **En curso** o **completado** según corresponda.
+1. El asistente le informa del estado de la acción. Cuando se genere el informe de evaluación, observará **En curso** o **completados** según corresponda.
 
    Una vez generado el informe, puede hacer clic en **[!UICONTROL Download report]** para guardar una copia.
 
@@ -54,4 +54,4 @@ Siga los pasos a continuación para generar un informe de evaluación:
 
    >[!NOTE]
    >
-   >La versión actual del asistente de actualización de productos en Cloud Manager solo admite la fase de **evaluación** . Las otras cuatro fases, a saber, **Remediación**, **Ejecución**, **Validación** y **Finalización** , están llegando pronto.
+   >La versión actual del Asistente para la actualización de productos en Cloud Manager solo admite la fase **Evaluación**. Las otras cuatro fases, a saber, **Remediación**, **Ejecución**, **Validación** y **Finalización**, están próximas.
