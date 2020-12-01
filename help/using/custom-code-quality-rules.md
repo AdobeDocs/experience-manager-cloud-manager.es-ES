@@ -28,7 +28,7 @@ En esta página se describen las reglas de calidad de código personalizadas eje
 
 La siguiente sección resalta las reglas de SonarQube:
 
-### No utilizar funciones potencialmente peligrosas {#do-not-use-potentially-dangerous-functions}
+### No use funciones potencialmente peligrosas {#do-not-use-potentially-dangerous-functions}
 
 **Clave**: CQRules:CWE-676
 
@@ -87,7 +87,7 @@ public class DoThis implements Runnable {
 }
 ```
 
-### No utilizar cadenas de formato que puedan controlarse externamente {#do-not-use-format-strings-which-may-be-externally-controlled}
+### No utilice cadenas de formato que puedan estar controladas externamente {#do-not-use-format-strings-which-may-be-externally-controlled}
 
 **Clave**: CQRules:CWE-134
 
@@ -109,7 +109,7 @@ protected void doPost(SlingHttpServletRequest request, SlingHttpServletResponse 
 }
 ```
 
-### Las solicitudes HTTP siempre deben tener tiempos de espera de conexión y socket {#http-requests-should-always-have-socket-and-connect-timeouts}
+### Las solicitudes HTTP siempre deben tener socket y tiempos de espera de conexión {#http-requests-should-always-have-socket-and-connect-timeouts}
 
 **Clave**: CQRules:ConnectionTimeoutFacility
 
@@ -187,7 +187,7 @@ public void orDoThis() {
 }
 ```
 
-### Las API de producto anotadas con @ProviderType no deben ser implementadas o ampliadas por los clientes {#product-apis-annotated-with-providertype-should-not-be-implemented-or-extended-by-customers}
+### Las API de producto anotadas con @ProviderType no deben ser implementadas o extendidas por los clientes {#product-apis-annotated-with-providertype-should-not-be-implemented-or-extended-by-customers}
 
 **Clave**: CQBP-84, dependencias CQBP-84
 
@@ -201,7 +201,7 @@ La API de AEM contiene interfaces y clases de Java que solo están pensadas para
 
 Cuando se añaden nuevos métodos a estas interfaces, esos métodos adicionales no afectan al código existente que utiliza estas interfaces y, como resultado, la adición de nuevos métodos a estas interfaces se considera compatible con versiones anteriores. Sin embargo, si el código personalizado ***implementa*** una de estas interfaces, dicho código personalizado ha introducido un riesgo de compatibilidad con versiones anteriores para el cliente.
 
-Las interfaces (y clases) que solo están destinadas a ser implementadas por AEM están anotadas con *org.osgi.anottation.versioning.ProviderType* (o, en algunos casos, una anotación heredada similar *aQute.bnd.anottation.ProviderType*). Esta regla identifica los casos en los que una interfaz de este tipo se implementa (o una clase se amplía) mediante código personalizado.
+Las interfaces (y clases) que solo están destinadas a ser implementadas por AEM están anotadas con *org.osgi.anottation.versioning.ProviderType* (o, en algunos casos, con una anotación heredada similar *Qute.bnd.anottation.ProviderType*). Esta regla identifica los casos en los que una interfaz de este tipo se implementa (o una clase se amplía) mediante código personalizado.
 
 #### Código no compatible {#non-compliant-code-3}
 
@@ -268,7 +268,7 @@ public void orDoThis(Session session) throws Exception {
 
 **Desde**: Versión 2018.4.0
 
-Como se describe en la documentación [de](http://sling.apache.org/documentation/the-sling-engine/servlets.html)Sling, se desaconseja enlazar servlets por rutas. Los servlets enlazados a rutas no pueden utilizar controles de acceso de JCR estándar y, como resultado, requieren mayor rigor de seguridad. En lugar de utilizar servlets enlazados a rutas, se recomienda crear nodos en el repositorio y registrar servlets por tipo de recurso.
+Como se describe en la [documentación de Sling](http://sling.apache.org/documentation/the-sling-engine/servlets.html), se desaconseja enlazar servlets por rutas. Los servlets enlazados a rutas no pueden utilizar controles de acceso de JCR estándar y, como resultado, requieren mayor rigor de seguridad. En lugar de utilizar servlets enlazados a rutas, se recomienda crear nodos en el repositorio y registrar servlets por tipo de recurso.
 
 #### Código no compatible {#non-compliant-code-5}
 
@@ -281,7 +281,7 @@ public class DontDoThis extends SlingAllMethodsServlet {
 }
 ```
 
-### Las excepciones capturadas deben registrarse o emitirse, pero no ambas {#caught-exceptions-should-be-logged-or-thrown-but-not-both}
+### Las excepciones capturadas deben registrarse o emitirse, pero no tanto {#caught-exceptions-should-be-logged-or-thrown-but-not-both}
 
 **Clave**: CQRules:CQBP-44—CatchAndOrLogOrThrow
 
@@ -326,7 +326,7 @@ public void orDoThis() throws MyCustomException {
 }
 ```
 
-### Evite tener una instrucción de registro seguida inmediatamente de una sentencia de lanzamiento {#avoid-having-a-log-statement-immediately-followed-by-a-throw-statement}
+### Evite tener una instrucción log seguida inmediatamente por una sentencia de lanzamiento {#avoid-having-a-log-statement-immediately-followed-by-a-throw-statement}
 
 **Clave**: CQRules:CQBP-44—ConsecutivamenteLogAndThrow
 
@@ -355,7 +355,7 @@ public void doThis() throws Exception {
 }
 ```
 
-### Evite iniciar sesión en INFO al gestionar solicitudes de GET o HEAD {#avoid-logging-at-info-when-handling-get-or-head-requests}
+### Evite iniciar sesión en INFO al administrar solicitudes de GET o HEAD {#avoid-logging-at-info-when-handling-get-or-head-requests}
 
 **Clave**: CQRules:CQBP-44—LogInfoInGetOrHeadRequests
 
@@ -385,7 +385,7 @@ public void doGet() throws Exception {
 }
 ```
 
-### No use Exception.getMessage() como primer parámetro de una instrucción de registro {#do-not-use-exception-getmessage-as-the-first-parameter-of-a-logging-statement}
+### No utilice Exception.getMessage() como primer parámetro de una instrucción de registro {#do-not-use-exception-getmessage-as-the-first-parameter-of-a-logging-statement}
 
 **Clave**: CQRules:CQBP-44—ExceptionGetMessageIsFirstLogParam
 
@@ -431,7 +431,7 @@ public void doThis() {
 
 **Desde**: Versión 2018.4.0
 
-Como sugiere el nombre, las excepciones de Java siempre deben usarse en circunstancias *excepcionales* . Como resultado, cuando se detecta una excepción, es importante asegurarse de que los mensajes de registro se registran en el nivel adecuado, ya sea WARN o ERROR. Esto garantiza que esos mensajes aparezcan correctamente en los registros.
+Como sugiere el nombre, las excepciones de Java siempre deben usarse en circunstancias *excepcionales*. Como resultado, cuando se detecta una excepción, es importante asegurarse de que los mensajes de registro se registran en el nivel adecuado, ya sea WARN o ERROR. Esto garantiza que esos mensajes aparezcan correctamente en los registros.
 
 #### Código no compatible {#non-compliant-code-10}
 
@@ -467,7 +467,7 @@ public void doThis() {
 
 **Desde**: Versión 2018.4.0
 
-Como se ha mencionado anteriormente, el contexto es fundamental para comprender los mensajes de registro. El uso de Exception.printStackTrace() hace que **solo** el seguimiento de pila se envíe al flujo de error estándar, con lo que se pierde todo el contexto. Además, en una aplicación con varios subprocesos, como AEM, si se imprimen varias excepciones mediante este método en paralelo, sus trazos de pila pueden superponerse, lo que produce una confusión significativa. Las excepciones solo se deben registrar a través del módulo de registro.
+Como se ha mencionado anteriormente, el contexto es fundamental para comprender los mensajes de registro. El uso de Exception.printStackTrace() hace que **solamente** el seguimiento de pila se envíe al flujo de error estándar, perdiendo así todo el contexto. Además, en una aplicación con varios subprocesos, como AEM, si se imprimen varias excepciones mediante este método en paralelo, sus trazos de pila pueden superponerse, lo que produce una confusión significativa. Las excepciones solo se deben registrar a través del módulo de registro.
 
 #### Código no compatible {#non-compliant-code-11}
 
@@ -493,7 +493,7 @@ public void doThis() {
 }
 ```
 
-### No generar salida en Salida estándar o Error estándar {#do-not-output-to-standard-output-or-standard-error}
+### No mostrar salida a Salida estándar o error estándar {#do-not-output-to-standard-output-or-standard-error}
 
 **Clave**: CQRules:CQBP-44—LogLevelConsolePrinters
 
@@ -557,7 +557,7 @@ public void doThis(Resource resource) {
 }
 ```
 
-### No Debe Utilizarse El Planificador Sling {#sonarqube-sling-scheduler}
+### El Planificador Sling No Debe Utilizarse {#sonarqube-sling-scheduler}
 
 **Clave**: CQRules:AMSCORE-554
 
@@ -569,7 +569,7 @@ public void doThis(Resource resource) {
 
 El Planificador Sling no debe utilizarse para tareas que requieran una ejecución garantizada. Los trabajos programados de Sling garantizan la ejecución y se adaptan mejor a los entornos agrupados y no agrupados.
 
-Consulte [Apache Sling Eventing y Job Handling](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html) para obtener más información sobre cómo se gestionan los trabajos Sling en entornos agrupados.
+Consulte [Apache Sling Eventing and Job Handling](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html) para obtener más información sobre cómo se gestionan los trabajos Sling en entornos agrupados.
 
 ### AEM API obsoletas no deben usarse {#sonarqube-aem-deprecated}
 
@@ -583,7 +583,7 @@ Consulte [Apache Sling Eventing y Job Handling](https://sling.apache.org/documen
 
 La superficie de la API de AEM está bajo constante revisión para identificar las API para las que se desaconseja el uso y, por lo tanto, se considera obsoleta.
 
-En muchos casos, estas API quedan obsoletas mediante la anotación estándar Java *@Deprecated* y, como tal, según lo identifica `squid:CallToDeprecatedMethod`.
+En muchos casos, estas API están en desuso usando la anotación estándar de Java *@Deprecated* y, como tal, identificadas por `squid:CallToDeprecatedMethod`.
 
 Sin embargo, hay casos en los que una API está en desuso en el contexto de la AEM, pero puede que no quede en desuso en otros contextos. Esta regla identifica esta segunda clase.
 
@@ -605,9 +605,9 @@ Debajo de las comprobaciones OakPAL ejecutadas por Cloud Manager.
 
 **Desde**: Versión 2019.6.0
 
-Desde hace mucho tiempo, se recomienda que los clientes consideren el árbol de contenido /libs del repositorio de contenido de AEM como de solo lectura. La modificación de nodos y propiedades en */libs* crea un riesgo significativo para actualizaciones mayores y menores. Las modificaciones a */libs* sólo deben hacerse por Adobe mediante canales oficiales.
+Desde hace mucho tiempo, se recomienda que los clientes consideren el árbol de contenido /libs del repositorio de contenido de AEM como de solo lectura. La modificación de nodos y propiedades en */libs* crea un riesgo significativo para actualizaciones mayores y menores. Las modificaciones a */libs* sólo deben realizarse por Adobe mediante canales oficiales.
 
-### Los Paquetes No Deben Contener Configuraciones OSGi Duplicado {#oakpal-package-osgi}
+### Los Paquetes No Deben Contener Configuraciones OSGi De Duplicado {#oakpal-package-osgi}
 
 **Clave**: DuplicateOsgiConfigurations
 
@@ -640,7 +640,7 @@ Un problema común que se produce en proyectos complejos es que el mismo compone
       + com.day.cq.commons.impl.ExternalizerImpl
 ```
 
-### Las carpetas de configuración e instalación solo deben contener nodos OSGi {#oakpal-config-install}
+### Las carpetas de configuración e instalación sólo deben contener nodos OSGi {#oakpal-config-install}
 
 **Clave**: ConfigAndInstallMustOnlyContainOsgiNodes
 
@@ -650,9 +650,9 @@ Un problema común que se produce en proyectos complejos es que el mismo compone
 
 **Desde**: Versión 2019.6.0
 
-Por motivos de seguridad, las rutas que contienen */config/ y /install/* solo son legibles por los usuarios administrativos en AEM y solo deben utilizarse para la configuración OSGi y los paquetes OSGi. Colocar otros tipos de contenido bajo rutas que contengan estos segmentos resulta en un comportamiento de aplicación que varía involuntariamente entre usuarios administrativos y no administrativos.
+Por motivos de seguridad, las rutas que contienen */config/ y /install/* sólo pueden leerlas los usuarios administrativos en AEM y solo deben utilizarse para la configuración OSGi y los paquetes OSGi. Colocar otros tipos de contenido bajo rutas que contengan estos segmentos resulta en un comportamiento de aplicación que varía involuntariamente entre usuarios administrativos y no administrativos.
 
-Un problema común es el uso de nodos denominados `config` dentro de los cuadros de diálogo de componentes o al especificar la configuración del editor de texto enriquecido para la edición en línea. Para resolver esto, se debe cambiar el nombre del nodo infractor por un nombre compatible. Para la configuración del editor de texto enriquecido, utilice la `configPath` propiedad del `cq:inplaceEditing` nodo para especificar la nueva ubicación.
+Un problema común es el uso de nodos denominados `config` dentro de los cuadros de diálogo de componentes o al especificar la configuración del editor de texto enriquecido para la edición en línea. Para resolver esto, se debe cambiar el nombre del nodo infractor por un nombre compatible. Para la configuración del editor de texto enriquecido, utilice la propiedad `configPath` en el nodo `cq:inplaceEditing` para especificar la nueva ubicación.
 
 #### Código no compatible {#non-compliant-code-config-install}
 
@@ -683,7 +683,7 @@ Un problema común es el uso de nodos denominados `config` dentro de los cuadros
 
 **Desde**: Versión 2019.6.0
 
-De forma similar a los *paquetes no deben contener configuraciones OSGi Duplicado* , este es un problema común en proyectos complejos en los que la misma ruta de nodo se escribe en varios paquetes de contenido independientes. Aunque se pueden utilizar dependencias de paquetes de contenido para garantizar un resultado coherente, es mejor evitar las superposiciones por completo.
+De manera similar a *Los paquetes no deben contener configuraciones OSGi de Duplicado*, este es un problema común en los proyectos complejos en los que la misma ruta de nodo está escrita por varios paquetes de contenido independientes. Aunque se pueden utilizar dependencias de paquetes de contenido para garantizar un resultado coherente, es mejor evitar las superposiciones por completo.
 
 ### El modo de creación predeterminado no debe ser la IU clásica {#oakpal-default-authoring}
 
@@ -709,11 +709,11 @@ La configuración OSGi `com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl` def
 
 AEM Los componentes que tienen un cuadro de diálogo de IU clásica siempre deben tener un cuadro de diálogo de IU táctil correspondiente para ofrecer una experiencia de creación óptima y para ser compatibles con el modelo de implementación de Cloud Service, en el que la IU clásica no es compatible. Esta regla comprueba los siguientes escenarios:
 
-* Un componente con un cuadro de diálogo de IU clásica (es decir, un nodo secundario de cuadro de diálogo) debe tener un cuadro de diálogo de IU táctil correspondiente (es decir, un nodo secundario `cq:dialog` ).
-* Un componente con un cuadro de diálogo de diseño de la IU clásica (es decir, un nodo design_dialog) debe tener un cuadro de diálogo de diseño de la IU táctil correspondiente (es decir, un nodo secundario `cq:design_dialog` ).
+* Un componente con un cuadro de diálogo de IU clásica (es decir, un nodo secundario de cuadro de diálogo) debe tener un cuadro de diálogo de IU táctil correspondiente (es decir, un nodo secundario `cq:dialog`).
+* Un componente con un cuadro de diálogo de diseño de IU clásica (es decir, un nodo design_dialog) debe tener un cuadro de diálogo de diseño de IU táctil correspondiente (es decir, un nodo secundario `cq:design_dialog`).
 * Un componente con un cuadro de diálogo de IU clásica y un cuadro de diálogo de diseño de IU clásica debe tener un cuadro de diálogo de IU táctil correspondiente y un cuadro de diálogo de diseño de IU táctil correspondiente.
 
-La documentación de AEM Herramientas de modernización proporciona documentación y herramientas para convertir componentes de la IU clásica a la IU táctil. Consulte [Las herramientas](https://opensource.adobe.com/aem-modernize-tools/pages/tools.html) de modernización de AEM para obtener más detalles.
+La documentación de AEM Herramientas de modernización proporciona documentación y herramientas para convertir componentes de la IU clásica a la IU táctil. Consulte [Herramientas de modernización de AEM](https://opensource.adobe.com/aem-modernize-tools/pages/tools.html) para obtener más detalles.
 
 ### Los paquetes no deben mezclar contenido mutable e inmutable {#oakpal-packages-immutable}
 
@@ -725,11 +725,11 @@ La documentación de AEM Herramientas de modernización proporciona documentaci�
 
 **Desde**: Versión 2020.5.0
 
-Para ser compatibles con el modelo de implementación de Cloud Service, los paquetes de contenido individuales deben contener contenido para las áreas inmutables del repositorio (es decir, no `/apps and /libs, although /libs` deben ser modificados por el código del cliente y causarán una infracción por separado) o el área mutable (es decir, todo lo demás), pero no ambos. Por ejemplo, un paquete que incluye ambos `/apps/myco/components/text and /etc/clientlibs/myco` no es compatible con Cloud Service y provocará que se informe de un problema.
+Para ser compatibles con el modelo de implementación de Cloud Service, los paquetes de contenido individuales deben contener contenido para las áreas inmutables del repositorio (es decir, `/apps and /libs, although /libs` no debe ser modificado por el código del cliente y causará una infracción por separado) o el área mutable (es decir, todo lo demás), pero no ambos. Por ejemplo, un paquete que incluye `/apps/myco/components/text and /etc/clientlibs/myco` no es compatible con Cloud Service y provocará que se informe de un problema.
 
-Refer to [AEM Project Structure](https://docs.adobe.com/content/help/es-ES/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) for more details.
+Consulte [Estructura del proyecto de AEM](https://docs.adobe.com/content/help/es-ES/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) para obtener más detalles.
 
-### No Deben Utilizarse Agentes De Replicación Inversa {#oakpal-reverse-replication}
+### Los Agentes De Replicación Inversa No Deben Utilizarse {#oakpal-reverse-replication}
 
 **Clave**: ReverseReplication
 
@@ -739,7 +739,7 @@ Refer to [AEM Project Structure](https://docs.adobe.com/content/help/es-ES/exper
 
 **Desde**: Versión 2020.5.0
 
-La compatibilidad con la replicación inversa no está disponible en implementaciones de Cloud Service, como se describe en las Notas [de la versión: Eliminación de agentes](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/release-notes/aem-cloud-changes.html#replication-agents)de replicación.
+La compatibilidad con la replicación inversa no está disponible en implementaciones de Cloud Service, como se describe en [Notas de la versión: Eliminación de agentes de replicación](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/release-notes/aem-cloud-changes.html#replication-agents).
 
 Los clientes que utilizan replicación inversa deben ponerse en contacto con Adobe para obtener soluciones alternativas.
 
