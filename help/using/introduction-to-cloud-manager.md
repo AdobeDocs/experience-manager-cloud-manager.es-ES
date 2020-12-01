@@ -44,7 +44,7 @@ La interfaz de usuario (IU) para [!UICONTROL Cloud Manager] permite a los client
 
 Los clientes definen los Indicadores clave de rendimiento (KPI) específicos de la aplicación: visitas máximas por minuto de páginas y tiempo de respuesta esperado al cargar una página; en última instancia, estos datos constituyen la base para medir una implementación exitosa. Las funciones y los permisos de los distintos integrantes del equipo se pueden definir fácilmente. Aunque la nueva interfaz de autoservicio le permite controlarlo todo con facilidad, también le ofrece vínculos a procedimientos recomendados y le da la oportunidad de contactar con expertos de Adobe que pueden proporcionarle la orientación necesaria.
 
-To explore and get started with [!UICONTROL Cloud Manager]&#39;s UI, see [First Time Login](https://helpx.adobe.com/experience-manager/cloud-manager/using/first-time-login.html).
+Para explorar y comenzar con la IU de [!UICONTROL Cloud Manager], consulte [Inicio de sesión por primera vez](https://helpx.adobe.com/experience-manager/cloud-manager/using/first-time-login.html).
 
 ### Canalización de CI/CD {#ci-cd-pipeline}
 
@@ -52,7 +52,7 @@ Una de las funciones clave de [!UICONTROL Cloud Manager] es la capacidad de util
 
 A través de la interfaz de usuario de [!UICONTROL Cloud Manager], los clientes pueden configurar y poner en marcha su canalización de CD/CI. Durante esta canalización, se realiza un análisis exhaustivo del código para garantizar que solo las aplicaciones de alta calidad pasen al entorno de producción.
 
-To learn more about configuring pipeline from [!UICONTROL Cloud Manager]&#39;s UI, see [Configure your CI/CD Pipeline](https://helpx.adobe.com/experience-manager/cloud-manager/using/configuring-pipeline.html).
+Para obtener más información sobre la configuración de canalización desde la interfaz de usuario de [!UICONTROL Cloud Manager], consulte [Configuración de la canalización CI/CD](https://helpx.adobe.com/experience-manager/cloud-manager/using/configuring-pipeline.html).
 
 ### Modos de implementación flexibles {#flexible-deployment-modes}
 
