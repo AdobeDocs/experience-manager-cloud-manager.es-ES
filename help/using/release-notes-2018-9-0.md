@@ -19,15 +19,15 @@ ht-degree: 5%
 
 # Notas de la versión 2018.9.0 {#release-notes-for}
 
-La versión [!UICONTROL Cloud Manager] 2018.9.0 añade compatibilidad con una API basada en E/S de Adobe, incluidos Eventos, para integrar el flujo de CD/CI [!UICONTROL Cloud Manager]de Adobe con otros sistemas. También comienza la reescritura de la capa UI en React.
+La [!UICONTROL Cloud Manager] versión 2018.9.0 añade compatibilidad con una API basada en Adobe I/O, incluidos Eventos, para integrar el flujo de CD/CI de [!UICONTROL Cloud Manager] con otros sistemas. También comienza la reescritura de la capa UI en React.
 
 ## Fecha de la versión {#release-date}
 
-La fecha de versión de [!UICONTROL Cloud Manager] la versión 2018.9.0 es el 1 de noviembre de 2018.
+La fecha de versión de [!UICONTROL Cloud Manager] versión 2018.9.0 es el 1 de noviembre de 2018.
 
 ## Novedades {#whats-new}
 
-* **Canalización** CI/CD - Nueva API y sistema de Evento para la integración [!UICONTROL Cloud Manager]de la canalización CI/CD con otros sistemas. Consulte la documentación de [!UICONTROL Cloud Manager] la API (https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html) para obtener más información.
+* **Canalización**  CI/CD: nueva API y sistema de Evento para integrar la canalización de CI/CD  [!UICONTROL Cloud Manager]de la empresa con otros sistemas. Consulte la [!UICONTROL Cloud Manager] Documentación de API (https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html) para obtener más información.
 
 * **UI** : introducción de una nueva capa de interfaz de usuario que ofrece una mayor capacidad de respuesta.
 
@@ -39,11 +39,11 @@ La fecha de versión de [!UICONTROL Cloud Manager] la versión 2018.9.0 es el 1 
 * En algunas circunstancias, si se hace clic en el botón Detalles de la página Actividad, se redirige a la página Información general.
 * Algunas circunstancias excepcionales e inesperadas hicieron que faltara una tarjeta en la página Información general.
 * El icono Recursos se mostraba en la página de Lista de Programas para todos los clientes.
-* Cuando se producían errores en el back-end, a veces parecía que la ejecución de una canalización permanecía en el paso *Validar* .
+* Cuando se producían errores en el back-end, a veces parecía que una ejecución de canalización permanecía en el paso *Validar*.
 * En determinadas circunstancias, la longitud de la descripción del programa se calculó erróneamente.
 
 ## Problemas conocidos {#known-issues}
 
 * Las ramas creadas con el Asistente para proyectos de aplicación no pueden contener guiones.
-* Es posible que la barra lateral de notificaciones de Adobe [!UICONTROL Experience Cloud] no cargue las notificaciones de forma coherente. Sin embargo, las notificaciones son visibles en el Adobe [!UICONTROL Experience Cloud] y, si se configuran, se enviarán por correo electrónico.
+* Es posible que la barra lateral de notificaciones de Adobe [!UICONTROL Experience Cloud] no cargue las notificaciones de forma coherente. Sin embargo, las notificaciones son visibles en el Adobe [!UICONTROL Experience Cloud] y, si están configuradas, se seguirán enviando por correo electrónico.
 
