@@ -19,10 +19,10 @@ ht-degree: 8%
 
 # Primer inicio de sesión {#first-time-login}
 
-Una vez que haya configurado las configuraciones generales para [!UICONTROL Cloud Manager], estará listo para usar la interfaz de usuario (IU) para [!UICONTROL Cloud Manager].
+Una vez que haya configurado las configuraciones generales para [!UICONTROL Cloud Manager], estará listo para usar la interfaz de usuario (UI) para [!UICONTROL Cloud Manager].
 
 >[!NOTE]
->Según las funciones asignadas en [!UICONTROL Cloud Manager] y el estado de la aplicación, verá diferentes pantallas mientras utiliza la [!UICONTROL Cloud Manager] interfaz de usuario.
+>Según las funciones asignadas en [!UICONTROL Cloud Manager] y el estado de la aplicación, verá diferentes pantallas mientras utiliza la [!UICONTROL Cloud Manager] IU.
 
 ## Tutorial de vídeo {#video-tutorial-one}
 
@@ -42,7 +42,7 @@ El siguiente vídeo proporciona información general sobre los Programas de Clou
 
    ![](assets/first-timea1.png)
 
-1. Se [!UICONTROL Cloud Manager] muestra el panel de.
+1. Se muestra el panel para [!UICONTROL Cloud Manager].
 
    ![](assets/FirstLogin1.png)
 
@@ -50,7 +50,7 @@ El siguiente vídeo proporciona información general sobre los Programas de Clou
 
    >[!NOTE]
    >
-   >Consulte [Configuración del Programa](https://helpx.adobe.com/experience-manager/cloud-manager/using/setting-up-program.html) para completar los siguientes pasos.
+   >Consulte [Configure el Programa](https://helpx.adobe.com/experience-manager/cloud-manager/using/setting-up-program.html) para completar los siguientes pasos.
 
 ## Tutorial de vídeo {#video-tutorial-two}
 
