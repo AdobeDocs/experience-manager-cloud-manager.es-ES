@@ -13,11 +13,11 @@ ht-degree: 51%
 
 # Notas de la versión 2020.7.0 {#release-notes-for}
 
-En la siguiente sección se describen las Notas de revisión generales de la versión 2020.7.0 [!UICONTROL Cloud Manager] .
+La siguiente sección describe las Notas de revisión generales de la [!UICONTROL Cloud Manager] versión 2020.7.0.
 
 ## Fecha de la versión {#release-date}
 
-The Release Date for [!UICONTROL Cloud Manager] Version 2020.7.0 is July 09, 2020.
+La fecha de versión de [!UICONTROL Cloud Manager] versión 2020.7.0 es el 9 de julio de 2020.
 
 ## Novedades {#whats-new}
 
@@ -30,7 +30,7 @@ Consulte [Variables de canalización](/help/using/build-environment-details.md#p
 
 ## Corrección de errores {#bug-fixes}
 
-* The **Cancel** and **Save** options on the Non-Production Pipeline Edit page were not always visible.
+* Las opciones **Cancelar** y **Guardar** de la página de edición de tubería sin producción no siempre estaban visibles.
 
 * Ciertos errores en el proceso de calidad del código podrían ocasionar que el archivo de registro no se genere correctamente.
 
