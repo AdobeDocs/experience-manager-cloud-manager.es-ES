@@ -19,17 +19,17 @@ ht-degree: 4%
 
 # Notas de la versión 2018.8.0 {#release-notes-for}
 
-La versión [!UICONTROL Cloud Manager] 2018.8.0 añade compatibilidad para activar automáticamente el canalizador de CI/CD tras comprometer git y un nuevo asistente para crear proyectos de aplicación en git según el arquetipo de proyecto AEM.
+La [!UICONTROL Cloud Manager] versión 2018.8.0 añade compatibilidad para activar automáticamente el canalizador de CI/CD tras comprometer git y un nuevo asistente para crear proyectos de aplicación en git según el arquetipo de proyecto AEM.
 
 ## Fecha de la versión {#release-date}
 
-La fecha de versión de [!UICONTROL Cloud Manager] la versión 2018.8.0 es el 04 de octubre de 2018.
+La fecha de versión de [!UICONTROL Cloud Manager] versión 2018.8.0 es el 4 de octubre de 2018.
 
 ## Novedades {#what-s-new}
 
-* **Configuración** de programa: nuevo asistente para crear un proyecto de aplicación en Git mediante el arquetipo de proyecto de AEM
+* **Configuración**  de programa: nuevo asistente para crear un proyecto de aplicación en Git mediante el arquetipo de proyecto AEM
 
-* **Canalización** CI/CD: se añaden los siguientes cambios a la canalización CI/CD. Consulte [Configurar la canalización](configuring-pipeline.md) de CD/CI para obtener más información.
+* **Canalización**  CI/CD: se añaden los siguientes cambios a la canalización CI/CD. Consulte [Configuración de la canalización CI/CD](configuring-pipeline.md) para obtener más información.
 
    * Al activar Cambios en Git, que inicio la canalización CI/CD cada vez que hay confirmaciones agregadas a la rama git configurada.
    * Las tarjetas en la pantalla principal ahora se vinculan en profundidad a secciones específicas de la página de ejecución de la canalización.
@@ -38,10 +38,10 @@ La fecha de versión de [!UICONTROL Cloud Manager] la versión 2018.8.0 es el 04
    * La página de ejecución de canalización ahora muestra el nombre de la versión o etiqueta creada para la ejecución.
    * La versión de Apache Maven se ha actualizado a 3.5.3.
 
-* **Navegación** : se añaden los siguientes cambios a la [!UICONTROL Cloud Manager].
+* **Navegación** : se añaden los siguientes cambios a la  [!UICONTROL Cloud Manager].
 
    * El vínculo Recursos en la navegación global navegará al Runbook en Sharepoint.
-   * El menú Ayuda se ha reorganizado para incluir contenido más [!UICONTROL Cloud Manager]específico.
+   * El menú Ayuda se ha reorganizado para incluir más contenido específico de [!UICONTROL Cloud Manager].
 
 ## Corrección de errores {#bug-fixes}
 
@@ -54,5 +54,5 @@ La fecha de versión de [!UICONTROL Cloud Manager] la versión 2018.8.0 es el 04
 ## Problemas conocidos {#known-issues}
 
 * Las ramas creadas con el Asistente para proyectos de aplicación no pueden contener guiones.
-* Es posible que la barra lateral de [!UICONTROL Experience Cloud] notificaciones no cargue las notificaciones de forma coherente. Sin embargo, las notificaciones son visibles en el [!UICONTROL Experience Cloud] y, si están configuradas, se enviarán por correo electrónico.
+* Es posible que la barra lateral de notificación [!UICONTROL Experience Cloud] no cargue las notificaciones de forma coherente. Sin embargo, las notificaciones son visibles en [!UICONTROL Experience Cloud] y, si están configuradas, se enviarán por correo electrónico.
 
