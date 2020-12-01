@@ -14,7 +14,7 @@ ht-degree: 9%
 
 Cuando los clientes se incorporan a Cloud Manager, se les proporciona un repositorio de Git vacío. Los clientes actuales de Adobe Managed Services (AMS) (o los clientes internos AEM que están migrando a AMS) generalmente ya tendrán su código de proyecto en git (u otro sistema de control de versiones) e importarán su proyecto en el repositorio de Git Cloud Manager. Sin embargo, los nuevos clientes no tienen proyectos existentes.
 
-Para ayudar a que los nuevos clientes se inicien, Cloud Manager ahora puede crear un proyecto de AEM mínimo como punto de partida. Este proceso se basa en el [**AEM Arquetipo**](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype)del Proyecto.
+Para ayudar a que los nuevos clientes se inicien, Cloud Manager ahora puede crear un proyecto de AEM mínimo como punto de partida. Este proceso se basa en el [**AEM Arquetipo de proyecto**](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype).
 
 
 Siga los pasos a continuación para crear un proyecto de aplicación AEM en Cloud Manager:
@@ -23,11 +23,11 @@ Siga los pasos a continuación para crear un proyecto de aplicación AEM en Clou
 
    ![](assets/image2018-10-3_14-29-44.png)
 
-1. Haga clic en **Crear para** abrir un cuadro de diálogo que permite al usuario proporcionar los parámetros requeridos por el arquetipo de proyecto AEM. En su forma predeterminada, el cuadro de diálogo solicita dos valores:
+1. Haga clic en **Crear para** abrir un cuadro de diálogo, que permite al usuario proporcionar los parámetros requeridos por el arquetipo de proyecto AEM. En su forma predeterminada, el cuadro de diálogo solicita dos valores:
 
-   * **Título** : de forma predeterminada, se establece en el nombre del *Programa*
+   * **Título** : de forma predeterminada, se establece en el nombre del  *Programa*
 
-   * **Nuevo nombre** de rama: de forma predeterminada es *maestro*
+   * **Nuevo nombre**  de rama: de forma predeterminada es  *maestro*
 
    ![](assets/screen_shot_2018-10-08at55825am.png)
 
@@ -37,9 +37,9 @@ Siga los pasos a continuación para crear un proyecto de aplicación AEM en Clou
 
    >[!NOTE]
    >
-   >Por ejemplo, si el **Título** es ***We.Finance***, el parámetro de ID de artefacto de la base se genera como ***com.wefinance***. Estos valores se pueden cambiar, si se desea.
+   >Por ejemplo, si el **Título** es ***We.Finance***, el parámetro de identificación de artefacto de maven base se genera como ***com.wefinance***. Estos valores se pueden cambiar, si se desea.
    >
    >
-   >Por ejemplo, puede cambiar del ***valor generado com.wefinance*** a ***net.weFinance***.
+   >Por ejemplo, puede cambiar del ***valor com.wefinance*** generado a ***net.wefinance***.
 
-1. Haga clic en **Crear** en el paso anterior para crear el proyecto de inicio mediante el arquetipo y confirmarlo con la rama de git con nombre. Una vez hecho esto, puede configurar la canalización.
+1. Haga clic en **Crear** en el paso anterior para crear el proyecto de inicio mediante el arquetipo y confirmar en la rama de git con nombre. Una vez hecho esto, puede configurar la canalización.
