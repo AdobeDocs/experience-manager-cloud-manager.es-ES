@@ -23,11 +23,11 @@ ht-degree: 1%
 
 Una vez configurada la tubería de producción (repositorio, entorno y entorno de prueba), estará listo para implementar el código.
 
-1. Haga clic en **Implementar** desde el Administrador de nube para realizar el inicio del proceso de implementación.
+1. Haga clic en **Implementar** desde el Administrador de la nube para inicio del proceso de implementación.
 
    ![](assets/Deploy1.png)
 
-1. Aparece la pantalla Ejecución **de la canalización** .
+1. Aparece la pantalla **Ejecución de tubería**.
 
    Haga clic en **Generar** para inicio del proceso.
 
@@ -48,31 +48,31 @@ Una vez configurada la tubería de producción (repositorio, entorno y entorno d
    La **implementación por fases** incluye los siguientes pasos:
 
    * Validación: Este paso garantiza que la canalización esté configurada para utilizar los recursos disponibles actualmente, por ejemplo, que la ramificación configurada exista, que los entornos estén disponibles.
-   * Prueba de generación y unidad: Este paso ejecuta un proceso de compilación en contenedores. Consulte [Explicación del Entorno](/help/using/build-environment-details.md) de compilación para obtener más detalles sobre el entorno de compilación.
-   * Análisis de código: Este paso evalúa la calidad del código de la aplicación. Consulte [Explicación de los resultados](understand-your-test-results.md) de la prueba para obtener más información sobre el proceso de prueba.
+   * Prueba de generación y unidad: Este paso ejecuta un proceso de compilación en contenedores. Consulte [Explicación del Entorno de compilación](/help/using/build-environment-details.md) para obtener más información sobre el entorno de compilación.
+   * Análisis de código: Este paso evalúa la calidad del código de la aplicación. Consulte [Explicación de los resultados de la prueba](understand-your-test-results.md) para obtener detalles sobre el proceso de prueba.
    * Implementar en etapa
 
    ![](assets/Stage_Deployment1.png)
 
-   The **Stage Testing**, involves the following steps:
+   La **Prueba de etapa** incluye los siguientes pasos:
 
-   * Prueba de seguridad: Este paso evalúa el impacto en la seguridad del código de la aplicación en el entorno de AEM. Consulte [Explicación de los resultados](understand-your-test-results.md) de la prueba para obtener más información sobre el proceso de prueba.
-   * Prueba de rendimiento: Este paso evalúa el rendimiento del código de la aplicación. Consulte [Explicación de los resultados](understand-your-test-results.md) de la prueba para obtener más información sobre el proceso de prueba.
+   * Prueba de seguridad: Este paso evalúa el impacto en la seguridad del código de la aplicación en el entorno de AEM. Consulte [Explicación de los resultados de la prueba](understand-your-test-results.md) para obtener detalles sobre el proceso de prueba.
+   * Prueba de rendimiento: Este paso evalúa el rendimiento del código de la aplicación. Consulte [Explicación de los resultados de la prueba](understand-your-test-results.md) para obtener detalles sobre el proceso de prueba.
 
    ![](assets/Stage_Testing1.png)
 
-   The **Production Deployment**, involves the following steps:
+   La **Implementación de producción** incluye los siguientes pasos:
 
-   * **Solicitud de aprobación** (si está activada)
-   * **Programar implementación** de producción (si está habilitado)
-   * **Compatibilidad** con CSE (si está habilitada)
+   * **Solicitud de aprobación**  (si está activada)
+   * **Programar implementación**  de producción (si está habilitado)
+   * **Compatibilidad**  con CSE (si está habilitada)
    * **Implementar en producción**
 
    ![](assets/Prod_Deployment1.png)
 
    >[!NOTE]
    >
-   >La implementación **de producción** programada está habilitada mientras se configura la canalización.
+   >La **Programar implementación de producción** está habilitada al configurar la canalización.
    >
    >
    >Con esta opción, puede programar la implementación de producción o hacer clic en **Ahora** para ejecutar la implementación de producción inmediatamente.
@@ -81,13 +81,13 @@ Una vez configurada la tubería de producción (repositorio, entorno y entorno d
    >La fecha y la hora programadas se especifican en función de la zona horaria del usuario.
    >
    >
-   >Haga clic en **Confirmar** para comprobar la configuración.
+   >Haga clic en **Confirmar** para verificar la configuración.
 
    ![](assets/Production_Deployment1.png)
 
    Una vez que confirme el programa de implementación, se completará la implementación del código.
 
-   Se muestra la siguiente pantalla cuando se selecciona la opción **Ahora** en el paso anterior.
+   Se muestra la siguiente pantalla cuando se selecciona la opción **Ahora** del paso anterior.
 
    ![](assets/Production_Deployment2.png)
 
@@ -122,7 +122,7 @@ Cuando Cloud Manager se implementa en topologías que no son de producción, el 
 
    1. Se realiza una copia de seguridad de las configuraciones actuales y se copian en una ubicación temporal
    1. Todas las configuraciones se eliminan excepto los archivos inmutables. Consulte Administrar las configuraciones de despachante para obtener más detalles. Esto borra los directorios para asegurarse de que no quedan archivos huérfanos.
-   1. El artefacto se extrae en el `httpd` directorio.  Los archivos inmutables no se sobrescriben. Los cambios que realice en los archivos inmutables del repositorio de Git se ignorarán en el momento de la implementación.  Estos archivos son fundamentales para el marco de distribución de AMS y no se pueden cambiar.
+   1. El artefacto se extrae en el directorio `httpd`.  Los archivos inmutables no se sobrescriben. Los cambios que realice en los archivos inmutables del repositorio de Git se ignorarán en el momento de la implementación.  Estos archivos son fundamentales para el marco de distribución de AMS y no se pueden cambiar.
    1. Apache realiza una prueba de configuración. Si no se encuentran errores, se vuelve a cargar el servicio. Si se produce un error, las configuraciones se restauran desde la copia de seguridad, el servicio se vuelve a cargar y el error se devuelve al Administrador de nube.
    1. Cada ruta especificada en la configuración de la canalización se invalida o se borra de la caché del despachante.
 
