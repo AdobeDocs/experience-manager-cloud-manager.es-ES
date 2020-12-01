@@ -13,15 +13,15 @@ ht-degree: 7%
 
 # Notas de la versión 2020.11.0 {#release-notes-for}
 
-La siguiente sección describe las Notas de revisión generales de la versión 2020.11.0 [!UICONTROL Cloud Manager] .
+La siguiente sección describe las Notas de revisión generales de la [!UICONTROL Cloud Manager] versión 2020.11.0.
 
 ## Fecha de la versión {#release-date}
 
-La fecha de versión de [!UICONTROL Cloud Manager] la versión 2020.11.0 es el 12 de noviembre de 2020.
+La fecha de versión de [!UICONTROL Cloud Manager] versión 2020.11.0 es el 12 de noviembre de 2020.
 
 ## Novedades {#whats-new}
 
-* La ficha **Aprender** de Cloud Manager se actualiza con nuevas imágenes en la interfaz de usuario.
+* La ficha **Learn** de Cloud Manager se actualiza con nuevas imágenes en la interfaz de usuario.
 
 ## Corrección de errores {#bug-fixes}
 
