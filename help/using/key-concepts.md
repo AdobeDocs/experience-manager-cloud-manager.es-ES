@@ -21,28 +21,28 @@ ht-degree: 1%
 
 En esta página se describe una terminología básica utilizada en Cloud Manager. Le recomendamos encarecidamente que lea esta página antes de revisar el resto de la documentación de Cloud Manager.
 
-**Aplicación** Conjunto de personalizaciones y configuraciones creadas por un cliente para adaptar la solución subyacente a sus casos y necesidades de uso específicos. Una aplicación es una unidad lógica que puede estar compuesta de varios artefactos.
+**** AplicaciónConjunto de personalizaciones y configuraciones creadas por un cliente para adaptar la solución subyacente a sus necesidades y casos de uso específicos. Una aplicación es una unidad lógica que puede estar compuesta de varios artefactos.
 
 Por ejemplo, *We.Retail*.
 
-**Artefacto** Unidad desplegable. Resultado de un proceso de compilación que transforma el código fuente en una sola unidad. Por ejemplo, un archivo Zip que contiene el código fuente.
+**** ArtefactoUna unidad desplegable. Resultado de un proceso de compilación que transforma el código fuente en una sola unidad. Por ejemplo, un archivo Zip que contiene el código fuente.
 
-**Repositorio** de artefactos Ubicación de almacenamiento en la que se guardan y protegen los artefactos específicos del cliente.
+**Repositorio** de artefactosUbicación de almacenamiento en la que se guardan y protegen los artefactos específicos del cliente.
 
-**Entorno** Un solo clúster de máquinas virtuales dentro de un programa. Por AEM, se compone de una instancia de autor (opcionalmente con una instancia de autor en espera en frío adicional), cero o más instancias de publicación, una o más instancias de despachante y un equilibrador de carga.
+**** EntornoUn único clúster de máquinas virtuales dentro de un programa. Por AEM, se compone de una instancia de autor (opcionalmente con una instancia de autor en espera en frío adicional), cero o más instancias de publicación, una o más instancias de despachante y un equilibrador de carga.
 
-**Repositorio** Git Ubicación en la que se almacena el código fuente específico del cliente, accesible mediante el protocolo Git.
+**Repositorio** GitUbicación en la que se almacena el código fuente específico del cliente, accesible mediante el protocolo Git.
 
-**Instancia** Un servidor virtual específico que ejecuta la solución AEM. Las instancias representan una sola unidad lógica desde la perspectiva de la implementación.
+**** InstanciaUn servidor virtual específico que ejecuta la solución AEM. Las instancias representan una sola unidad lógica desde la perspectiva de la implementación.
 
-**Construcción de Adobe de organización** que representa a un cliente de Enterprise. Una compañía puede tener varias organizaciones en función de cómo se aprovisionaron originalmente en el sistema Identity Management de Adobe.
+**** OrganizationConstrucción de Adobe que representa a un cliente de Enterprise. Una compañía puede tener varias organizaciones en función de cómo se aprovisionaron originalmente en el sistema Identity Management de Adobe.
 
-**Canalización** Conjunto de pasos de implementación que se ejecutan de forma secuencial.
+**** CanalizaciónConjunto de pasos de implementación que se ejecutan de forma secuencial.
 
-**Producto** Un conjunto específico de funcionalidades dentro de una solución con licencia de una organización. Diferentes programas de una organización pueden tener derecho a diferentes conjuntos de productos. Por ejemplo, Sitios, Recursos de Forms.
+**** ProductoUn conjunto específico de funcionalidades dentro de una solución con licencia de una organización. Diferentes programas de una organización pueden tener derecho a diferentes conjuntos de productos. Por ejemplo, Sitios, Recursos de Forms.
 
-**Programa** Un conjunto de entornos que admiten una agrupación lógica de iniciativas de clientes, que generalmente corresponden a un contrato de nivel de servicio (SLA) adquirido. Cada programa tiene exactamente un entorno de producción y puede tener muchos entornos que no son de producción.
+**** ProgramaConjunto de entornos que admiten una agrupación lógica de las iniciativas de los clientes, que generalmente corresponden a un contrato de nivel de servicio (SLA) adquirido. Cada programa tiene exactamente un entorno de producción y puede tener muchos entornos que no son de producción.
 
-**Solución** Una de las soluciones de Adobe [!UICONTROL Experience Cloud] . Por ejemplo, Adobe Experience Manager, Adobe Target o Adobe Analytics.
+**** SoluciónUna de las  [!UICONTROL Experience Cloud] soluciones de Adobe. Por ejemplo, Adobe Experience Manager, Adobe Target o Adobe Analytics.
 
-**Paso** Un conjunto de instrucciones configurado que logra alguna unidad de trabajo, bloque de creación de una canalización.
+**** PasoUn conjunto de instrucciones configurado que logra una unidad de trabajo, componente de una canalización.
