@@ -5,21 +5,24 @@ description: nulo
 seo-description: Siga esta página para conocer la supervisión del sistema en el Administrador de nube, que se realiza observando las instancias individuales dentro de un entorno y rastreando una variedad de métricas para cada instancia.
 translation-type: tm+mt
 source-git-commit: 16893b8bcd2b2d681a14bb6be3786e358e1952fb
+workflow-type: tm+mt
+source-wordcount: '958'
+ht-degree: 1%
 
 ---
 
 
 # Monitoreo del sistema {#system-monitoring}
 
-La supervisión del sistema [!UICONTROL Cloud Manager] se realiza observando las instancias individuales dentro de un entorno y rastreando una variedad de métricas para cada instancia. Cada métrica tiene dos umbrales definidos: un umbral *de* advertencia y un umbral ** crítico.
+La supervisión del sistema en [!UICONTROL Cloud Manager] se realiza observando las instancias individuales dentro de un entorno y rastreando una variedad de métricas para cada instancia. Cada métrica tiene dos umbrales definidos: un *umbral de advertencia* y un *umbral crítico*.
 
-Si una métrica está por encima de su umbral crítico, se considera que se encuentra en un estado crítico; si una métrica está por encima de su umbral de advertencia (pero por debajo de su umbral crítico), se considera que está en estado de advertencia. Los umbrales los establecen los servicios administrados de Adobe y se pueden visualizar en [!UICONTROL Cloud Manager]. En la mayoría de los casos, los umbrales son coherentes entre los clientes, pero en algunos casos los servicios gestionados de Adobe modificarán los umbrales para que coincidan con los requisitos específicos del cliente. Las preguntas sobre los umbrales deben dirigirse a su ingeniero de éxito del cliente (CSE).
+Si una métrica supera su umbral crítico, se considera que se encuentra en un estado crítico; si una métrica está por encima de su umbral de advertencia (pero por debajo de su umbral crítico), se considera que está en estado de advertencia. Los umbrales los establecen los servicios administrados de Adobe y se pueden visualizar en [!UICONTROL Cloud Manager]. En la mayoría de los casos, los umbrales son coherentes entre los clientes, pero en algunos casos los servicios gestionados de Adobe modificarán los umbrales para que coincidan con los requisitos específicos del cliente. Las preguntas sobre los umbrales deben dirigirse a su ingeniero de éxito del cliente (CSE).
 
-## Navegación a la supervisión del sistema {#navigating-system-monitoring}
+## Navegación a System Monitoring {#navigating-system-monitoring}
 
 La navegación a la función de supervisión del sistema se puede realizar de dos maneras.
 
-1. Inicie sesión en **Managed Services - página de aterrizaje de Programas** .
+1. Inicie sesión en la página de aterrizaje **Managed Services - Programas**.
 
    ![](assets/ProgramLanding.png)
 
@@ -29,7 +32,7 @@ La navegación a la función de supervisión del sistema se puede realizar de do
 
    *O bien*,
 
-* Navegue hasta la página de aterrizaje **de supervisión** del sistema a través del elemento de menú de navegación global de **Informes** dentro de [!UICONTROL Cloud Manager].
+* Vaya a la página de aterrizaje **System Monitoring** a través del elemento de menú de navegación global **Reports** dentro de [!UICONTROL Cloud Manager].
 
 
 ## Página de información general de supervisión del sistema {#system-monitoring-overview-page}
@@ -53,7 +56,7 @@ El estado de cada categoría es un resumen de las métricas individuales: si alg
 
 ### Información general sobre los informes de Cloud Manager {#reports-video}
 
-Los informes de Cloud Manager proporcionan una vista en los Entornos del Programa y en las instancias de AEM a través de un conjunto de gráficos que informan y rastrean una variedad de métricas para cada instancia de AEM.
+Los informes del Administrador de nubes proporcionan una vista en los Entornos y las instancias de AEM del Programa a través de un conjunto de gráficos que informan y rastrean una variedad de métricas para cada instancia de AEM.
 Consulte el siguiente vídeo para obtener más detalles.
 
 >[!VIDEO](https://video.tv.adobe.com/v/26315/)
@@ -95,16 +98,16 @@ Por ejemplo, si hace clic en la serie de umbrales de advertencia, verá sólo el
 **Almacenamiento**
 
 * Espacio en disco: Espacio en disco usado (en megabytes) para cada punto de montaje en el host. Existen diferentes métricas para cada punto de montaje. Como mínimo, verá las métricas de &quot;/&quot; y &quot;/mnt&quot;, pero es posible que haya métricas adicionales de punto de montaje disponibles en función de la configuración de instancia específica.
-* Tamaño de la carpeta: Tienda de segmentos de AEM: Espacio en disco usado (en gigabytes) para el almacén de segmentos de AEM.
+* Tamaño de la carpeta: Almacén de segmentos de AEM: Espacio en disco usado (en gigabytes) para el almacén de segmentos de AEM.
 
 **Aplicación**
 
 * Agente de replicación: Tiempo, en segundos, para un evento de replicación de prueba. Existen métricas independientes para cada agente de replicación.
 * Dispatcher Flush: Número de elementos que hay actualmente en la cola de vaciado del despachante.
 
-## Sistema de informes de SLA {#sla-reporting}
+## SISTEMA DE INFORMES de SLA {#sla-reporting}
 
-Los clientes pueden ver el rendimiento del entorno de AEM de producción en relación con el contrato de nivel de servicio (SLA). Esto está disponible a través de un submenú en la pantalla Informes.
+Los clientes pueden ver el rendimiento de su entorno de producción AEM en relación con el contrato de nivel de servicio (SLA). Esto está disponible a través de un submenú en la pantalla Informes.
 Por ejemplo: el gráfico siguiente muestra los logros mensuales de SLA en 2018.
 
 ![](assets/SLA-Reports-one.png)
@@ -121,12 +124,12 @@ La sección Análisis de Eventos de este gráfico muestra el conjunto de inciden
 
 * **Contrato** de autor: Este es el SLA definido en su contrato con los servicios gestionados de Adobe para el nivel de creación.
 
-* **SLA** de creación de AMS: Este es el tiempo de actividad medido de los incidentes de factoring de nivel de autor de producción causados por Adobe o nuestros proveedores.
+* **SLA** de creación de AMS: Este es el tiempo de actividad medido de los incidentes de factoring de nivel de autor de producción causados por Adobes o nuestros proveedores.
 
 * **SLA** de creación: Es el tiempo de actividad medido del nivel de creación que ignora el tiempo de inactividad programado, como las ventanas de mantenimiento.
 
 * **Contrato** de usuario final: Este es el SLA definido en su contrato con los servicios gestionados de Adobe para el nivel de publicación.
 
-* **SLA** del usuario final de AMS: Este es el tiempo de actividad medido de los incidentes de factorización del nivel de publicación de producción causados por Adobe o nuestros proveedores.
+* **SLA** del usuario final de AMS: Este es el tiempo de actividad medido de los incidentes de factoring de nivel de publicación de producción causados por Adobes o nuestros proveedores.
 
 * **SLA** del usuario final: Es el tiempo de actividad medido del nivel de publicación que ignora el tiempo de inactividad programado, como las ventanas de mantenimiento.
