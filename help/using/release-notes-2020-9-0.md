@@ -13,11 +13,11 @@ ht-degree: 10%
 
 # Notas de la versión 2020.9.0 {#release-notes-for}
 
-La siguiente sección describe las Notas de revisión generales de la versión 2020.9.0 [!UICONTROL Cloud Manager] .
+La siguiente sección describe las Notas de revisión generales de la [!UICONTROL Cloud Manager] versión 2020.7.0.
 
 ## Fecha de la versión {#release-date}
 
-La fecha de versión de [!UICONTROL Cloud Manager] la versión 2020.9.0 es el 3 de septiembre de 2020.
+La fecha de versión de [!UICONTROL Cloud Manager] versión 2020.9.0 es el 3 de septiembre de 2020.
 
 ## Novedades {#whats-new}
 
