@@ -13,11 +13,11 @@ ht-degree: 66%
 
 # Notas de la versión 2020.5.0 {#release-notes-for}
 
-La siguiente sección describe las Notas de revisión generales de la versión 2020.5.0 [!UICONTROL Cloud Manager] .
+La siguiente sección describe las Notas de revisión generales de la [!UICONTROL Cloud Manager] versión 2020.5.0.
 
 ## Fecha de la versión {#release-date}
 
-La fecha de versión de [!UICONTROL Cloud Manager] la versión 2020.5.0 es el 7 de mayo de 2020.
+La fecha de versión de [!UICONTROL Cloud Manager] versión 2020.5.0 es el 7 de mayo de 2020.
 
 ## Novedades {#whats-new}
 
