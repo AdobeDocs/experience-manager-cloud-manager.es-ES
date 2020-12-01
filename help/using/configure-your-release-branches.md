@@ -1,24 +1,27 @@
 ---
-title: Configurar las ramas de versiones
-seo-title: Configurar las ramas de versiones
-description: Configuración de las ramas de la versión en Git para AEM Cloud Manager
+title: Configurar las ramas de las versiones
+seo-title: Configurar las ramas de las versiones
+description: Configurar las ramas de la versión en Git para AEM Cloud Manager
 seo-description: Siga esta página para obtener información sobre cómo configurar las ramas de versiones en git.
 uuid: d12a8b85-b7fd-4b55-a05a-a0f874ce598c
 contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
-topic-tags: introducción
+topic-tags: getting-started
 discoiquuid: 53807ea6-9464-429d-9322-85c9f405dff6
 translation-type: tm+mt
 source-git-commit: 9c0df236c1e800802d62dea09996bb8e1e7033f7
+workflow-type: tm+mt
+source-wordcount: '307'
+ht-degree: 3%
 
 ---
 
 
-# Configurar las ramas de versiones {#configure-your-release-branches}
+# Configurar las ramas de las versiones {#configure-your-release-branches}
 
 ## Configuración de la primera rama en Git {#setting-up-your-first-branch-in-git}
 
-Se aprovisiona un único repositorio **** Git, inicialmente vacío, para cada programa incorporado en Cloud Manager. Este repositorio puede contener tantas ramas (o tan pocas) como sigue el proceso de desarrollo, pero debe haber al menos una rama que utilice el flujo CI/CD para implementar el código de aplicación en fase y producción. Se recomienda usar `master` como nombre de esta rama. Convenientemente, este es el comportamiento predeterminado de los clientes Git al configurar nuevos proyectos.
+Se aprovisiona un único **Repositorio de Git**, inicialmente vacío, para cada programa incorporado en Cloud Manager. Este repositorio puede contener tantas ramas (o tan pocas) como sigue el proceso de desarrollo, pero debe haber al menos una rama que utilice el flujo CI/CD para implementar el código de aplicación en fase y producción. Lo mejor es utilizar `master` como nombre de esta rama. Convenientemente, este es el comportamiento predeterminado de los clientes de Git al configurar nuevos proyectos.
 
 Por ejemplo, al configurar un nuevo proyecto, se ejecutará un conjunto de comandos como este:
 
@@ -52,11 +55,11 @@ $ git commit -m "initial commit"
 
 >[!NOTE]
 >
->No es un requisito utilizar el cliente de línea de comandos. Hay una variedad de clientes Git gráficos disponibles como aplicaciones independientes o como parte de un entorno de desarrollo integrado (IDE) como Eclipse o IntelliJ. Siempre que la aplicación cliente admita el Git utilizando HTTPS, debe ser compatible con [!UICONTROL Cloud Manager].
+>No es un requisito utilizar el cliente de línea de comandos. Hay una variedad de clientes Git gráficos disponibles como aplicaciones independientes o como parte de un Entorno de Desarrollo Integrado (IDE) como Eclipse o IntelliJ. Siempre que la aplicación cliente admita el Git usando HTTPS, debe ser compatible con [!UICONTROL Cloud Manager].
 
 ## Inserción de la primera rama {#pushing-your-first-branch}
 
-Una vez que haya realizado al menos una revisión, puede agregar el [!UICONTROL Cloud Manager] repositorio como **remoto** y, a continuación, insertar los compromisos en él:
+Una vez que haya realizado al menos una revisión, puede agregar el repositorio [!UICONTROL Cloud Manager] como **remoto** y luego insertar los compromisos en él:
 
 ```shell
 $ git remote add adobe <url>
@@ -76,8 +79,8 @@ To <url>
 
 ## Ramas adicionales {#additional-branches}
 
-Una sola `master` rama puede bastar para proyectos muy sencillos, pero en la mayoría de los casos será necesaria una estrategia de ramificación más compleja. Muchos clientes siguen un proceso en el que las actividades de desarrollo cotidianas se realizan en una rama llamada `develop` y la rama de desarrollo se combina en la `master` rama cuando es hora de una implementación.
+Una sola rama `master` puede ser suficiente para proyectos muy simples, pero en la mayoría de los casos se requerirá una estrategia de ramificación más compleja. Muchos clientes siguen un proceso en el que las actividades de desarrollo cotidianas se realizan en una rama llamada `develop` y la rama de desarrollo se combina en la rama `master` cuando es hora de una implementación.
 
 >[!NOTE]
 >
->Para ver los comandos de git comunes, consulte la [hoja](https://github.github.com/training-kit/downloads/github-git-cheat-sheet)de Git.
+>Para obtener la vista de los comandos git comunes, consulte la [Hoja de control de Git](https://github.github.com/training-kit/downloads/github-git-cheat-sheet).
