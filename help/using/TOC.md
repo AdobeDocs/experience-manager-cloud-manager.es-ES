@@ -6,10 +6,10 @@ user-guide-title: Guía del Experience Manager Cloud Manager
 breadcrumb-title: Guía de Cloud Manager
 user-guide-description: Aprenda a utilizar Adobe Managed Services para administrar Experience Manager en la nube.
 translation-type: tm+mt
-source-git-commit: 30d782f5a095b1b07ec4f2039def9ba30a559325
+source-git-commit: f5359dee907b32cefa2db2c4ad2baf8e337f6060
 workflow-type: tm+mt
-source-wordcount: '243'
-ht-degree: 87%
+source-wordcount: '249'
+ht-degree: 85%
 
 ---
 
@@ -52,6 +52,7 @@ ht-degree: 87%
    + [Administrar versiones del proyecto de Maven](activating-maven-project.md)
    + [Acceder a Git](accessing-git.md)
    + [Integración con Git](setup-cloud-manager-git-integration.md)
+   + [Trabajar con varios repositorios Git de origen](/help/using/working-with-multiple-source-git-repos.md)
 + Asistente para la actualización de productos {#product-update-wizard}
    + [Información general](overview-productupdate-wizard.md)
    + [Evaluación](evaluation.md)
