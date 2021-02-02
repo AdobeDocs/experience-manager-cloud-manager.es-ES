@@ -10,7 +10,7 @@ topic-tags: using
 content-type: reference
 discoiquuid: ba6c763a-b78a-439e-8c40-367203a719b3
 translation-type: tm+mt
-source-git-commit: d02292e4f6369e0e0bf8fcf60cb8fe299854b3cc
+source-git-commit: bbcd5e59a9f9e8cb83cefb8af79d3ce7987bf388
 workflow-type: tm+mt
 source-wordcount: '1776'
 ht-degree: 2%
@@ -26,7 +26,7 @@ La siguiente página explica cómo configurar la **Canalización**. Para obtener
 
 ### Configuración de la canalización en el Administrador de nube {#config-pipeline-video}
 
-La configuración de la tubería de producción CI/CD define el activador que iniciará la canalización, parámetros que controlan la implementación de producción y parámetros de prueba de rendimiento.
+La configuración de la tubería de producción CI/CD define el déclencheur que iniciará la canalización, parámetros que controlan la implementación de producción y parámetros de prueba de rendimiento.
 
 >[!VIDEO](https://video.tv.adobe.com/v/26314/)
 
@@ -37,7 +37,7 @@ Puede configurar la canalización desde el mosaico **Configuración de canalizac
 
 El Administrador de implementación es responsable de configurar la canalización. Al hacerlo, primero debe seleccionar una rama del **Repositorio de Git**. La configuración de canalización consiste en:
 
-* definir el activador que va a inicio de la canalización.
+* definir el déclencheur que va a inicio de la tubería.
 * definir los parámetros que controlan la implementación de producción.
 * configuración de los parámetros de prueba de rendimiento.
 
@@ -75,7 +75,7 @@ Seleccione la rama Git y haga clic en **Siguiente**.
 
 1. Acceda a la ficha **Entornos** para seleccionar las opciones **Escenario** y **Producción**.
 
-   Puede definir el activador para el inicio de la canalización:
+   Puede definir el déclencheur para el inicio de la canalización:
 
    * **Al cambiar**  Git: inicio la canalización CI/CD cada vez que haya confirmaciones agregadas a la rama git configurada. Incluso si selecciona esta opción, siempre puede realizar el inicio de la canalización manualmente.
    * **Manual** : el uso manual de la interfaz de usuario inicio la canalización.
@@ -170,7 +170,7 @@ Siga los pasos a continuación para configurar las validaciones de Dispatcher:
 
    Por ejemplo: supongamos que hay una división del 50 %/50 % entre el conjunto Páginas en vivo populares y Páginas nuevas (en este ejemplo, no se utiliza Otras páginas en vivo) y que el conjunto Páginas nuevas contiene 3000 páginas. El KPI de vistas de página por minuto se establece en 200. Durante el período de prueba de 30 minutos:
 
-   * Cada una de las 25 páginas del conjunto de páginas en vivo populares se visita 240 veces - (200 * 0.5) / 25) * 30 = 120
+   * Cada una de las 25 páginas del conjunto de páginas en vivo populares se visita 120 veces - (200 * 0.5) / 25) * 30 = 120
 
    * Cada una de las 3000 páginas del conjunto Nuevas páginas se visita una vez - (200 * 0.5) / 3000) * 30 = 1
 
@@ -230,7 +230,7 @@ En la pantalla de inicio, estos oleoductos se muestran en una tarjeta nueva:
 
 1. Haga clic en el botón Añadir para especificar el nombre de la canalización, el tipo de canalización y la rama de Git.
 
-   Además, también puede configurar Activador de implementación y Comportamiento de error importante desde Opciones de tubería.
+   Además, también puede configurar el Déclencheur de implementación y el comportamiento de error importante desde Opciones de tubería.
 
    ![](assets/non-prod-pipe.png)
 
