@@ -2,7 +2,7 @@
 title: Notas de la versión 2018.7.0
 seo-title: Notas de la versión 2018.7.0
 description: nulo
-seo-description: Siga esta página para obtener información sobre la versión 2019.7.0 de Cloud Manager.
+seo-description: Siga esta página para obtener información sobre la versión 2018.7.0 de Cloud Manager.
 uuid: d7b49e32-01dc-48ce-b744-e6a806fbdd8a
 contentOwner: jsyal
 topic-tags: release-notes
@@ -42,11 +42,11 @@ La fecha de versión de [!UICONTROL Cloud Manager] versión 2018.7.0 es el 10 de
 ## Corrección de errores {#bug-fixes}
 
 * En determinadas circunstancias, la sincronización interna del sistema falló incorrectamente, lo que dio lugar a vistas incoherentes de los datos.
-* En algunos casos, el activador de canalización manual no se seleccionaba automáticamente, lo que provocaba problemas de validación del formulario.
+* En algunos casos, el déclencheur de canalización manual no se seleccionaba automáticamente, lo que provocaba problemas de validación del formulario.
 * Las secuencias de comandos de compilación específicas del cliente podrían provocar errores durante el paso de compilación en función de las incompatibilidades del complemento.
 
 ## Problemas conocidos {#known-issues}
 
-* Aunque los clientes pueden seleccionar el activador de confirmación, es posible que el inicio de la canalización no se base en nuevos compromisos.
+* Aunque los clientes pueden seleccionar el déclencheur de confirmación, es posible que la canalización no genere inicios en función de nuevos compromisos.
 * Es posible que la barra lateral de notificación [!UICONTROL Experience Cloud] no cargue las notificaciones de forma coherente. Sin embargo, las notificaciones son visibles en [!UICONTROL Experience Cloud] y, si están configuradas, se enviarán por correo electrónico.
 
