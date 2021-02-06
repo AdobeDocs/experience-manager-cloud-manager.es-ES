@@ -31,7 +31,7 @@ La fecha de versión de [!UICONTROL Cloud Manager] versión 2018.8.0 es el 4 de 
 
 * **Canalización**  CI/CD: se añaden los siguientes cambios a la canalización CI/CD. Consulte [Configuración de la canalización CI/CD](configuring-pipeline.md) para obtener más información.
 
-   * Al activar Cambios en Git, que inicio la canalización CI/CD cada vez que hay confirmaciones agregadas a la rama git configurada.
+   * En el déclencheur Cambios en Git, que inicio la canalización CI/CD cada vez que hay confirmaciones agregadas a la rama git configurada.
    * Las tarjetas en la pantalla principal ahora se vinculan en profundidad a secciones específicas de la página de ejecución de la canalización.
    * La página de actividad ahora lista la rama específica utilizada para cada ejecución.
    * La página de actividad ahora indica la duración en horas y minutos.
