@@ -2,9 +2,9 @@
 title: Explicación del Entorno de compilación
 description: Siga esta página para conocer los entornos
 translation-type: tm+mt
-source-git-commit: 000843f902a180181981de2b1307fd2777d32994
+source-git-commit: 60270a7adb612355ff6d6928adcff8e94cabe092
 workflow-type: tm+mt
-source-wordcount: '723'
+source-wordcount: '768'
 ht-degree: 0%
 
 ---
@@ -37,6 +37,14 @@ Cloud Manager crea y prueba el código mediante un entorno de compilación espec
 
 >[!NOTE]
 >Aunque Cloud Manager no define una versión específica de `jacoco-maven-plugin`, la versión utilizada debe ser al menos `0.7.5.201505241946`.
+
+
+>[!NOTE]
+>Consulte los siguientes recursos adicionales para aprender a utilizar las API de Cloud Manager:
+> * [aio-cli-plugin-cloudmanager](https://github.com/adobe/aio-cli-plugin-cloudmanager)
+>* [Creación de una integración de API](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html#!AdobeDocs/cloudmanager-api-docs/master/create-api-integration.md)
+>* [Permisos de API](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html#!AdobeDocs/cloudmanager-api-docs/master/permissions.md)
+
 
 ## Uso de Java 11 {#using-java-11}
 
@@ -124,6 +132,7 @@ Cuando se utiliza dentro de un archivo `Maven pom.xml`, generalmente resulta út
             </properties>
         </profile>
 ```
+
 
 ## Instalación de paquetes de sistema adicionales {#installing-additional-system-packages}
 
