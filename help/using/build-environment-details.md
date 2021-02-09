@@ -2,7 +2,7 @@
 title: Explicación del Entorno de compilación
 description: Siga esta página para conocer los entornos
 translation-type: tm+mt
-source-git-commit: 60270a7adb612355ff6d6928adcff8e94cabe092
+source-git-commit: 5a6148fd7750544def87147c5f012c09077b2b60
 workflow-type: tm+mt
 source-wordcount: '768'
 ht-degree: 0%
@@ -33,7 +33,8 @@ Cloud Manager crea y prueba el código mediante un entorno de compilación espec
    * `mvn --batch-mode org.apache.maven.plugins:maven-clean-plugin:3.1.0:clean -Dmaven.clean.failOnError=false`
    * `mvn --batch-mode org.jacoco:jacoco-maven-plugin:prepare-agent package`
 
-* Maven se configura a nivel del sistema con un archivo settings.xml que incluye automáticamente el repositorio público de Adobes **Artact**. (Consulte [Repositorio público de Adobe para Maven](https://repo.adobe.com/) para obtener más detalles).
+* Maven se configura a nivel del sistema con un archivo settings.xml que incluye automáticamente el repositorio público de Adobes **Artact**.
+Consulte [Repositorio público de Adobe para Maven](https://repo.adobe.com/) para obtener más detalles.
 
 >[!NOTE]
 >Aunque Cloud Manager no define una versión específica de `jacoco-maven-plugin`, la versión utilizada debe ser al menos `0.7.5.201505241946`.
