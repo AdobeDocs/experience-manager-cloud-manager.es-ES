@@ -1,8 +1,8 @@
 ---
 title: Recorrido del cliente
-seo-title: Viaje del cliente de Adobe AEM Cloud Manager
-description: Siga esta página para conocer su viaje como cliente y empezar a utilizar Cloud Manager.
-seo-description: Siga esta página para conocer su viaje como cliente y empezar a utilizar Adobe AEM Cloud Manager.
+seo-title: Recorrido del cliente de Adobe AEM Cloud Manager
+description: Siga esta página para conocer su recorrido como cliente y empezar a usar Cloud Manager.
+seo-description: Siga esta página para conocer su recorrido como cliente y empezar a usar Adobe AEM Cloud Manager.
 uuid: d4468eb6-5bde-48dd-b96e-0cc61e046f96
 contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # Recorrido del cliente {#customer-journey}
 
-Como cliente, puede que sea nuevo en Adobe Experience Manager (AEM), que actualmente utiliza AEM 6.4, o que necesite actualizar a la versión AEM 6.4 para poder utilizar [!UICONTROL Cloud Manager]. Los siguientes escenarios explican su viaje como cliente nuevo o existente para comenzar con [!UICONTROL Cloud Manager].
+Como cliente, puede que sea nuevo en Adobe Experience Manager (AEM), que actualmente utiliza AEM 6.4, o que necesite actualizar a la versión AEM 6.4 para poder utilizar [!UICONTROL Cloud Manager]. Los siguientes escenarios explican su recorrido como cliente nuevo o existente para comenzar con [!UICONTROL Cloud Manager].
 
 >[!NOTE]
 >
@@ -55,9 +55,9 @@ Una vez que haya iniciado sesión en [!UICONTROL Cloud Manager], lo primero que 
 
 A continuación, debe configurar sus ramas de código fuente en el **Repositorio de Git**, definir sus objetivos en términos de KPI de carga y rendimiento y probar los escenarios para implementar correctamente su código en los entornos de etapa y producción una vez que todas las comprobaciones de calidad se hayan superado correctamente.
 
-## Camino de finalización a finalización {#end-to-end-journey}
+## Recorrido de extremo a extremo {#end-to-end-journey}
 
-El siguiente diagrama ilustra el viaje del cliente a un nivel alto, al utilizar [!UICONTROL Cloud Manager] flujo de CD/CI para implementar los cambios de código en los entornos de etapa y producción.
+El diagrama siguiente ilustra el recorrido del cliente en un nivel alto, al utilizar [!UICONTROL Cloud Manager] flujo de CD/CI para implementar los cambios de código en los entornos de etapa y producción.
 
 ![](assets/screen_shot_2018-05-15at124004pm.png)
 
