@@ -1,15 +1,15 @@
 ---
 title: Canalización de CI/CD
 seo-title: Canalización de CI/CD
-description: nulo
-seo-description: Siga esta sección para obtener información sobre el canalizador de CI/CD, que gestiona las implementaciones en el escenario y la producción en Cloud Manager.
+description: Descripción general de la canalización de CD/CI, que gestiona las implementaciones en el escenario y la producción en Cloud Manager
+seo-description: Siga esta sección para obtener información sobre el canalizador de CI/CD, que gestiona las implementaciones en el escenario y la producción en Cloud Manager
 uuid: 763ddb24-05cd-463f-8d72-a2e69bbe6b7e
 topic-tags: introduction
 discoiquuid: 1cdb76eb-1a91-4689-8579-0fa9fccc0592
 translation-type: tm+mt
-source-git-commit: 8580cec50ac5dafb4e2525371a39d58c82f1cbc9
+source-git-commit: 2dda85baa5e7ed9bfd8933df3580ec6fc3c210fd
 workflow-type: tm+mt
-source-wordcount: '532'
+source-wordcount: '546'
 ht-degree: 1%
 
 ---
@@ -33,14 +33,14 @@ En la tabla siguiente se detalla lo que sucede durante cada paso del proceso:
 
 | Etapa de proceso de canalización | ¿Qué está pasando? |
 |---|---|
-| 1. Inicio de una versión | Un administrador de implementación desencadena una versión manualmente, con una confirmación Git o según una programación recurrente. |
+| 1. Inicio de una versión | Un administrador de implementación déclencheur una versión manualmente, con una confirmación Git o según una programación recurrente. |
 | 2. Crear etiqueta de lanzamiento | [!UICONTROL Cloud Manager] crea una etiqueta Git para marcar la versión con un número de versión generado automáticamente. Por ejemplo: 2018.531.245527.0000001222 |
 | 3. Creado como versión con versión generada automáticamente | [!UICONTROL Cloud Manager] crea la aplicación con el número de versión recién asignado. |
 | 4. Evaluar la calidad del código | [!UICONTROL Cloud Manager] analiza el código fuente y proporciona un resumen antes de que el código se pueda implementar en el entorno del escenario |
 | 5. Artefactos con versión almacenados | Los artefactos de lanzamiento se almacenan para su uso posterior en los pasos de implementación. |
 | 6. Implementación automática de artefactos en la fase de AEM de AMS | El artefacto de liberación se implementa en el entorno del escenario. |
-| 7. Activar pruebas automatizadas | [!UICONTROL Cloud Manager] ejecuta las pruebas de rendimiento y seguridad del artefacto. |
-| 8. Implementación del activador de producción | Una vez finalizadas las pruebas automatizadas, [!UICONTROL Cloud Manager] inicio la implementación en producción. |
+| 7. Pruebas automatizadas de déclencheur | [!UICONTROL Cloud Manager] ejecuta las pruebas de rendimiento y seguridad del artefacto. |
+| 8. Implementación de Déclencheur de producción | Una vez finalizadas las pruebas automatizadas, [!UICONTROL Cloud Manager] inicio la implementación en producción. |
 | 9. [!UICONTROL Cloud Manager] obtiene artefactos para implementar | [!UICONTROL Cloud Manager] extrae los artefactos de liberación almacenados. |
 | 10. Depurar artefactos a la producción | Los artefactos de la versión se implementan en el entorno de producción. |
 
