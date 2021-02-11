@@ -1,17 +1,17 @@
 ---
 title: Implementar el código
 seo-title: Implementar el código
-description: nulo
-seo-description: Una vez configurada la canalización (repositorio, entorno y entorno de prueba), estará listo para implementar el código. Siga esta página para obtener más información.
+description: Proporciona información general sobre el proceso de implementación en Cloud Manager
+seo-description: Obtenga información sobre cómo implementar el código una vez que haya configurado la canalización (repositorio, entorno y entorno de pruebas)
 uuid: 4e3807e1-437e-4922-ba48-0bcadf293a99
 contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: 832a4647-9b83-4a9d-b373-30fe16092b15
 translation-type: tm+mt
-source-git-commit: c35398110e9d8311bf58f217efdd082cf0cfd90a
+source-git-commit: 2dda85baa5e7ed9bfd8933df3580ec6fc3c210fd
 workflow-type: tm+mt
-source-wordcount: '952'
+source-wordcount: '957'
 ht-degree: 1%
 
 ---
@@ -142,10 +142,10 @@ Las implementaciones de producción generalmente siguen los mismos pasos que ant
 
 1. Implemente AEM paquetes para crear.
 1. Separe dispatcher1 del equilibrador de carga.
-1. Implemente AEM paquetes para publicar1 y el paquete dispatcher para distribuir1, vacíe la caché del despachante.
+1. Implemente AEM paquetes para publicar1 y el paquete dispatcher para distribuir1 en paralelo, vaciando la caché del despachante.
 1. Vuelva a colocar dispatcher1 en el equilibrador de carga.
 1. Una vez que el distribuidor1 vuelva a estar en servicio, separe el distribuidor2 del equilibrador de carga.
-1. Implemente AEM paquetes para publicar2 y el paquete dispatcher en dispatcher2, vacíe la caché del despachante.
+1. Implemente AEM paquetes para publicar2 y el paquete dispatcher para distribuir2 en paralelo y vaciar la caché del despachante.
 1. Vuelva a colocar dispatcher2 en el equilibrador de carga.
 Este proceso continúa hasta que la implementación ha llegado a todos los editores y despachantes de la topología.
 
