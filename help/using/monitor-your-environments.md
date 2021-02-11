@@ -1,12 +1,12 @@
 ---
 title: Supervisar los entornos
 seo-title: Supervisar los entornos
-description: nulo
+description: Obtenga información sobre cómo supervisar sus entornos en Cloud Manager
 seo-description: Siga esta página para conocer la supervisión del sistema en el Administrador de nube, que se realiza observando las instancias individuales dentro de un entorno y rastreando una variedad de métricas para cada instancia.
 translation-type: tm+mt
-source-git-commit: 16893b8bcd2b2d681a14bb6be3786e358e1952fb
+source-git-commit: 2dda85baa5e7ed9bfd8933df3580ec6fc3c210fd
 workflow-type: tm+mt
-source-wordcount: '958'
+source-wordcount: '966'
 ht-degree: 1%
 
 ---
