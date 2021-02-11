@@ -1,7 +1,7 @@
 ---
 title: Comprender los resultados de la prueba
 seo-title: Comprender los resultados de la prueba
-description: nulo
+description: Obtenga más información sobre tres puertas de nivel mientras se ejecuta un canalizador en Cloud Manager
 seo-description: Siga esta página para obtener información sobre tres puertas de nivel mientras ejecuta una canalización, análisis de código, rendimiento y pruebas de seguridad que validan su programa en Cloud Manager.
 uuid: 93caa01f-0df2-4a6f-81dc-23dfee24dc93
 contentOwner: jsyal
@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: 83299ed8-4b7a-4b1c-bd56-1bfc7e7318d4
 translation-type: tm+mt
-source-git-commit: 39e6af753cdd43da96746c7609a8f502b3ac9e77
+source-git-commit: 2dda85baa5e7ed9bfd8933df3580ec6fc3c210fd
 workflow-type: tm+mt
-source-wordcount: '1544'
+source-wordcount: '1556'
 ht-degree: 7%
 
 ---
@@ -50,7 +50,7 @@ Este paso evalúa la calidad del código de la aplicación. Es el objetivo centr
 En la prueba de calidad del código, se analiza el código fuente para asegurarse de que cumple ciertos criterios de calidad. Actualmente, esto se implementa mediante una combinación de SonarQube y un examen a nivel de paquete de contenido con OakPAL. Existen más de 100 reglas que combinan reglas genéricas de Java y reglas específicas de AEM. Algunas de las reglas específicas de AEM se crean en base a las optimizaciones de AEM ingeniería y se denominan [Reglas de calidad de código personalizado](/help/using/custom-code-quality-rules.md).
 
 >[!NOTE]
->Puede descargar la lista completa de las reglas [aquí](/help/using/assets/CodeQuality-rules-latest.xlsx).
+>Puede descargar la lista completa de las reglas [aquí](/help/using/assets/CodeQuality-rules-latest-AMS.xlsx).
 
 Los resultados de este paso se entregan como *Clasificación*. En la tabla siguiente se resumen las clasificaciones de los distintos criterios de prueba:
 
