@@ -1,7 +1,7 @@
 ---
 title: Notas de la versión 2020.2.0
 seo-title: Notas de la versión de AEM Cloud Manager para 2020.2.0
-description: Siga esta página para obtener información sobre la versión 2020.2.0 de Cloud Manager
+description: Siga esta página para obtener información sobre la versión 2021.2.0 de Cloud Manager
 seo-description: Siga esta página para obtener información sobre la versión 2020.2.0 de AEM Cloud Manager
 translation-type: tm+mt
 source-git-commit: 44671d89edad0ccb6ded998b62beb5fa012678e9
