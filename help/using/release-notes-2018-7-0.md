@@ -1,18 +1,18 @@
 ---
 title: Notas de la versión 2018.7.0
 seo-title: Notas de la versión 2018.7.0
-description: nulo
-seo-description: Siga esta página para obtener información sobre la versión 2018.7.0 de Cloud Manager.
+description: Obtenga información sobre la versión 2018.7.0 de Cloud Manager
+seo-description: Siga esta página para obtener información sobre la versión 2019.7.0 de Cloud Manager.
 uuid: d7b49e32-01dc-48ce-b744-e6a806fbdd8a
 contentOwner: jsyal
 topic-tags: release-notes
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 discoiquuid: b64bf9ab-27ed-4f33-adc8-d73d34094f1b
 translation-type: tm+mt
-source-git-commit: ace032fbb26235d87d61552a11996ec2bb42abce
+source-git-commit: 2dda85baa5e7ed9bfd8933df3580ec6fc3c210fd
 workflow-type: tm+mt
-source-wordcount: '350'
-ht-degree: 5%
+source-wordcount: '354'
+ht-degree: 4%
 
 ---
 
