@@ -9,10 +9,10 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: d2338c74-3278-49e6-a186-6ef62362509f
 translation-type: tm+mt
-source-git-commit: 71a760997ec2a0873a7f39d206086a8b4fd6854e
+source-git-commit: 7cfa7826f851cb55be72211f8e8a980451846f3b
 workflow-type: tm+mt
-source-wordcount: '2314'
-ht-degree: 6%
+source-wordcount: '3251'
+ht-degree: 4%
 
 ---
 
@@ -743,6 +743,183 @@ La compatibilidad con la replicación inversa no está disponible en implementac
 
 Los clientes que utilizan replicación inversa deben ponerse en contacto con Adobe para obtener soluciones alternativas.
 
+### OakPAL: Los recursos contenidos en las bibliotecas de cliente habilitadas por proxy deben estar en una carpeta denominada resources {#oakpal-resources-proxy}
+
+**Clave**: ClientlibProxyResource
+
+**Tipo**: Error
+
+**Gravedad**: Menor
+
+**Desde**: Versión 2021.2.0
+
+AEM bibliotecas cliente pueden contener recursos estáticos como imágenes y fuentes. Como se describe en [Uso de preprocesadores](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html?lang=en#using-preprocessors), al utilizar bibliotecas de cliente proxy, estos recursos estáticos deben estar contenidos en una carpeta secundaria denominada resources para que se haga referencia a ellos de forma efectiva en las instancias de publicación.
+
+#### Código no compatible {#non-compliant-proxy-enabled}
+
+```
++ apps
+  + projectA
+    + clientlib
+      - allowProxy=true
+      + images
+        + myimage.jpg
+```
+
+#### Código compatible {#compliant-proxy-enabled}
+
+```
++ apps
+  + projectA
+    + clientlib
+      - allowProxy=true
+      + resources
+        + myimage.jpg
+```
+
+### OakPAL: Uso de procesos de flujo de trabajo no compatibles con Cloud Service {#oakpal-usage-cloud-service}
+
+**Clave**: CloudServiceIncompatibleWorkflowProcess
+
+**Tipo**: Huele de código
+
+**Gravedad**: Menor
+
+**Desde**: Versión 2021.2.0
+
+Con el paso a los microservicios de activos para el procesamiento de recursos en AEM Cloud Service, varios procesos de flujo de trabajo que se utilizaron en las versiones in situ y AMS de AEM han pasado a ser innecesarios o no admitidos. La herramienta de migración de [aem-cloud-Migration](https://github.com/adobe/aem-cloud-migration) se puede utilizar para actualizar modelos de flujo de trabajo durante AEM migración de Cloud Service.
+
+### OakPAL: se desaconseja el uso de plantillas estáticas en favor de plantillas editables {#oakpal-static-template}
+
+**Clave**: StaticTemplateUsage
+
+**Tipo**: Huele de código
+
+**Gravedad**: Menor
+
+**Desde**: Versión 2021.2.0
+
+Aunque el uso de plantillas estáticas ha sido muy común en AEM proyectos, se recomienda encarecidamente utilizar plantillas editables, ya que proporcionan la mayor flexibilidad y admiten funciones adicionales que no están presentes en plantillas estáticas. Puede encontrar más información en [Plantillas de página - Editable](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/templates/page-templates-editable.html?lang=en). La migración de plantillas estáticas a editables se puede automatizar en gran medida mediante las [Herramientas de modernización de AEM](https://opensource.adobe.com/aem-modernize-tools/).
+
+### OakPAL: se desaconseja el uso de componentes de base heredados {#oakpal-usage-legacy}
+
+**Clave**: LegacyFoundationComponentUsage
+
+**Tipo**: Huele de código
+
+**Gravedad**: Menor
+
+**Desde**: Versión 2021.2.0
+
+Los componentes de base heredados (es decir, los componentes de `/libs/foundation`) han quedado obsoletos en varias versiones de AEM en favor de los componentes principales de WCM. El uso de los componentes de base heredados como base para los componentes personalizados (ya sea por superposición o herencia) se desaconseja y debe convertirse al componente principal correspondiente. Esta conversión se puede facilitar mediante las [Herramientas de modernización de AEM](https://opensource.adobe.com/aem-modernize-tools/).
+
+### OakPAL: Solo Se Deben Usar los Nombres y Pedidos de Modo de Ejecución Compatibles {#oakpal-supported-runmodes}
+
+**Clave**: SupportedRunmode
+
+**Tipo**: Huele de código
+
+**Gravedad**: Menor
+
+**Desde**: Versión 2021.2.0
+
+AEM Cloud Service aplica una política de nomenclatura estricta para los nombres de modo de ejecución y un orden estricto para dichos modos de ejecución. La lista de los modos de ejecución admitidos se puede encontrar en [Modos de ejecución](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=en#runmodes) y cualquier desviación de esto se identificará como un problema.
+
+### OakPAL: los nodos de definición de índice de búsqueda personalizados deben ser elementos secundarios directos de /oak:index {#oakpal-custom-search}
+
+**Clave**: OakIndexLocation
+
+**Tipo**: Huele de código
+
+**Gravedad**: Menor
+
+**Desde**: Versión 2021.2.0
+
+AEM Cloud Service requiere que las definiciones de índice de búsqueda personalizadas (es decir, nodos de tipo oak:QueryIndexDefinition) sean nodos secundarios directos de `/oak:index`. Los índices de otras ubicaciones se deben mover para que sean compatibles con AEM Cloud Service. Puede encontrar más información sobre los índices de búsqueda en [Búsqueda de contenido e indización](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en).
+
+### OakPAL: los nodos de definición de índice de búsqueda personalizados deben tener una versión compatVersion de 2 {#oakpal-custom-search-compatVersion}
+
+**Clave**: IndexCompatVersion
+
+**Tipo**: Huele de código
+
+**Gravedad**: Menor
+
+**Desde**: Versión 2021.2.0
+
+AEM Cloud Service requiere que las definiciones de índice de búsqueda personalizadas (es decir, los nodos del tipo oak:QueryIndexDefinition) tengan la propiedad compatVersion establecida en 2. AEM Cloud Service no admite ningún otro valor. Puede encontrar más información sobre los índices de búsqueda en [Búsqueda de contenido e indización](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en).
+
+### OakPAL: Los nodos descendentes de los nodos de definición de índice de búsqueda personalizada deben ser de tipo nt:unestructure {#oakpal-descendent-nodes}
+
+**Clave**: IndexDescendantNodeType
+
+**Tipo**: Huele de código
+
+**Gravedad**: Menor
+
+**Desde**: Versión 2021.2.0
+
+Es difícil solucionar problemas cuando se produce cuando un nodo de definición de índice de búsqueda personalizado tiene nodos secundarios sin orden. Para evitarlo, se recomienda que todos los nodos descendientes de un nodo `oak:QueryIndexDefinition` sean de tipo nt:unestructure.
+
+### OakPAL: Los nodos de definición de índice de búsqueda personalizados deben contener un nodo secundario denominado indexRules que tenga elementos secundarios {#oakpal-custom-search-index}
+
+**Clave**: IndexRulesNode
+
+**Tipo**: Huele de código
+
+**Gravedad**: Menor
+
+**Desde**: Versión 2021.2.0
+
+Un nodo de definición de índice de búsqueda personalizado correctamente definido debe contener un nodo secundario denominado indexRules que, a su vez, debe tener al menos un nodo secundario. Puede encontrar más información en [Documentación de Oak](https://jackrabbit.apache.org/oak/docs/query/lucene.html).
+
+### OakPAL: los nodos de definición de índice de búsqueda personalizados deben seguir las convenciones de nomenclatura {#oakpal-custom-search-definitions}
+
+**Clave**: IndexName
+
+**Tipo**: Huele de código
+
+**Gravedad**: Menor
+
+**Desde**: Versión 2021.2.0
+
+AEM Cloud Service requiere que las definiciones de índice de búsqueda personalizada (es decir, los nodos de tipo `oak:QueryIndexDefinition`) deben nombrarse siguiendo un patrón específico descrito en [Búsqueda e indexación de contenido](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#how-to-use).
+
+### OakPAL - Los nodos de definición de índice de búsqueda personalizados deben utilizar el índice de búsqueda de tipo de índice {#oakpal-index-type-lucene}
+
+**Clave**: IndexType
+
+**Tipo**: Huele de código
+
+**Gravedad**: Menor
+
+**Desde**: Versión 2021.2.0
+
+AEM Cloud Service requiere que las definiciones de índice de búsqueda personalizadas (es decir, los nodos de tipo oak:QueryIndexDefinition) tengan una propiedad type con el valor establecido en **lucene**. La indexación mediante tipos de índice heredados debe actualizarse antes de la migración a AEM Cloud Service. Consulte [Búsqueda e indexación de contenido](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#how-to-use) para obtener más información.
+
+### OakPAL: los nodos de definición de índice de búsqueda personalizada no deben contener una propiedad denominada &quot;inicialización&quot; {#oakpal-property-name-seed}
+
+**Clave**: IndexSeedProperty
+
+**Tipo**: Huele de código
+
+**Gravedad**: Menor
+
+**Desde**: Versión 2021.2.0
+
+AEM Cloud Service prohíbe que las definiciones de índice de búsqueda personalizadas (es decir, nodos de tipo `oak:QueryIndexDefinition`) contengan una propiedad denominada semilla. La indexación con esta propiedad debe actualizarse antes de la migración a AEM Cloud Service. Consulte [Búsqueda e indexación de contenido](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#how-to-use) para obtener más información.
+
+### OakPAL: los nodos de definición de índice de búsqueda personalizada no deben contener una propiedad denominada reindex {#oakpal-reindex-property}
+
+**Clave**: IndexReindexProperty
+
+**Tipo**: Huele de código
+
+**Gravedad**: Menor
+
+**Desde**: Versión 2021.2.0
+
+AEM Cloud Service prohíbe que las definiciones de índice de búsqueda personalizadas (es decir, nodos de tipo `oak:QueryIndexDefinition`) contengan una propiedad denominada reindex. La indexación con esta propiedad debe actualizarse antes de la migración a AEM Cloud Service. Consulte [Búsqueda e indexación de contenido](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#how-to-use) para obtener más información.
 
 
 
