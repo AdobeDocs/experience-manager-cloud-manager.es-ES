@@ -21,7 +21,7 @@ ht-degree: 73%
 
 Esta sección proporciona una vista de alto nivel de la lista de recursos que le permite empezar a utilizar [!UICONTROL Cloud Manager].
 
-Siga los recursos que se describen a continuación para comenzar su viaje por el uso de [!UICONTROL Cloud Manager], desde comprender los conceptos y terminologías clave hasta configurar configuraciones (requisitos previos), que finalmente le permite comenzar con [!UICONTROL Cloud Manager].
+Siga los recursos a continuación para comenzar el recorrido de uso de [!UICONTROL Cloud Manager], desde comprender los conceptos y terminologías clave hasta configurar configuraciones (requisitos previos), que finalmente le permite comenzar con [!UICONTROL Cloud Manager].
 
 La siguiente imagen ilustra el plan de desarrollo de su aprendizaje de [!UICONTROL Cloud Manager]:
 
