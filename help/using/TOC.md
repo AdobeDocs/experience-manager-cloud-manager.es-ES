@@ -6,9 +6,9 @@ user-guide-title: Guía del Experience Manager Cloud Manager
 breadcrumb-title: Guía de Cloud Manager
 user-guide-description: Aprenda a utilizar Adobe Managed Services para administrar Experience Manager en la nube.
 translation-type: tm+mt
-source-git-commit: f3e5e4be7ac4ba7eef158cea3c1c19ea83ec4d75
+source-git-commit: 88b17f05a577b5c46b5b352d7340228353b49a38
 workflow-type: tm+mt
-source-wordcount: '252'
+source-wordcount: '255'
 ht-degree: 85%
 
 ---
@@ -57,7 +57,8 @@ ht-degree: 85%
    + [Información general](overview-productupdate-wizard.md)
    + [Evaluación](evaluation.md)
 + Notas de la versión {#release-notes}
-   + [Notas de la versión actual (2020.12.0)](release-notes-current.md)
+   + [Notas de la versión actual (2021.2.0)](release-notes-current.md)
+   + [Notas de la versión 2020.12.0](release-notes-2020-12-0.md)
    + [Notas de la versión 2020.11.0](release-notes-2020-11-0.md)
    + [Notas de la versión 2020.10.0](release-notes-2020-10-0.md)
    + [Notas de la versión 2020.9.0](release-notes-2020-9-0.md)
