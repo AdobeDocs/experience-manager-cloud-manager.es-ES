@@ -44,7 +44,7 @@ Este tipo de pom raíz se inserta en una rama del repositorio Git del Administra
 
 Por ejemplo, una acción de GitHub se puede activar mediante una inserción en una rama del proyecto A. La acción retirará el proyecto A y el repositorio Git de Cloud Manager y copiará todo el contenido del proyecto A en el directorio `project-a` del repositorio Git de Cloud Manager y, a continuación, confirmará y insertará el cambio. Por ejemplo, un cambio en la rama principal del proyecto A se inserta automáticamente en la rama principal del repositorio git del Administrador de nube. Por supuesto, podría haber una asignación entre ramas, como una inserción en una rama denominada &quot;dev&quot; en el proyecto A se transfiere a una rama denominada &quot;desarrollo&quot; en el repositorio Git del Administrador de nubes. Se requieren pasos similares para el proyecto B.
 
-Según la estrategia de ramificación y los flujos de trabajo, la sincronización puede configurarse para distintas ramas. Si el repositorio Git usado no proporciona un concepto similar a las acciones de GitHub, también es posible una integración a través de Jenkins (o similar). En este caso, un enlace web desencadena un trabajo de Jenkins que realiza el trabajo.
+Según la estrategia de ramificación y los flujos de trabajo, la sincronización puede configurarse para distintas ramas. Si el repositorio Git usado no proporciona un concepto similar a las acciones de GitHub, también es posible una integración a través de Jenkins (o similar). En este caso, un enlace web déclencheur un trabajo de Jenkins que realiza el trabajo.
 
 Siga los pasos a continuación para agregar un nuevo (tercer) origen o repositorio:
 
@@ -119,7 +119,7 @@ Como se muestra arriba, el uso de una acción GitHub es muy flexible. Se puede r
 
 ## Ejemplo de trabajo de Jenkins {#sample-jenkins-job}
 
-Este es un script de ejemplo que se puede utilizar en un trabajo de Jenkins o similar. Se activa por un cambio en un repositorio Git. El trabajo de Jenkins comprueba el estado más reciente de ese proyecto o ramificación y luego activa este script.
+Este es un script de ejemplo que se puede utilizar en un trabajo de Jenkins o similar. Se activa por un cambio en un repositorio Git. El trabajo de Jenkins comprueba el estado más reciente de ese proyecto o ramificación y luego déclencheur este script.
 
 A su vez, este script extrae el repositorio Git del Administrador de nube y envía el código del proyecto a un subdirectorio.
 
