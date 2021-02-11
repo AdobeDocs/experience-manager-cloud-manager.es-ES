@@ -31,7 +31,7 @@ Para obtener más información sobre cómo utilizar el **Repositorio de Git** de
 
 ## Repositorio local {#on-premise-repository}
 
-En algunos casos, tendrá un repositorio Git existente y querrá seguir usándolo. En estos casos, puede utilizar la función admitida por Git para varios repositorios remotos. El desarrollo diario continuaría ocurriendo en su repositorio Git. Cuando una rama de lanzamiento esté lista para una implementación en producción, insertará su código más reciente en el repositorio Git del Administrador de nube y activará el flujo de CD/CI de Cloud Manager.
+En algunos casos, tendrá un repositorio Git existente y querrá seguir usándolo. En estos casos, puede utilizar la función admitida por Git para varios repositorios remotos. El desarrollo diario continuaría ocurriendo en su repositorio Git. Cuando una rama de lanzamiento esté lista para una implementación en producción, insertará su código más reciente en el repositorio Git del Administrador de nube y déclencheur el flujo de CD/CI de Cloud Manager.
 
 >[!NOTE]
 >
