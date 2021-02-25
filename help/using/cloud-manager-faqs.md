@@ -4,9 +4,9 @@ seo-title: Preguntas más frecuentes sobre Cloud Manager
 description: Consulte las Preguntas más frecuentes sobre Cloud Manager para obtener algunas sugerencias sobre la resolución de problemas
 seo-description: Siga esta página para obtener respuestas sobre las preguntas más frecuentes sobre Cloud Manager
 translation-type: tm+mt
-source-git-commit: cb63a8bbe30b28668313dc851f17aa34fc166474
+source-git-commit: 1d4f07ba0aa4630585ccbb35f2d48f0c7e1f3df2
 workflow-type: tm+mt
-source-wordcount: '873'
+source-wordcount: '881'
 ht-degree: 0%
 
 ---
@@ -14,11 +14,11 @@ ht-degree: 0%
 
 # Preguntas más frecuentes sobre Cloud Manager {#cloud-manager-faqs}
 
-La siguiente sección proporciona respuestas a algunas de las preguntas más frecuentes más frecuentes relacionadas con Cloud Manager.
+La siguiente sección ofrece respuestas a algunas preguntas más frecuentes relacionadas con Cloud Manager.
 
 ## 1. ¿Es posible utilizar Java 11 con las compilaciones de Cloud Manager? {#java-11-cloud-manager}
 
-La compilación de AEM Cloud Manager falla al intentar cambiar la compilación de Java 8 a Java 11. El problema puede tener muchas causas y las más comunes se documentan a continuación:
+La compilación de AEM Cloud Manager falla al intentar cambiar la compilación de Java 8 a 11. El problema puede tener muchas causas y las más comunes se documentan a continuación:
 
 * Añada el complemento maven-toolchain-plugin con la configuración correcta para Java 11 como se documenta [aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/getting-started/create-application-project/using-the-wizard.html?lang=en#getting-started).  Por ejemplo, consulte el [código de proyecto de muestra de wknd](https://github.com/adobe/aem-guides-wknd/commit/6cb5238cb6b932735dcf91b21b0d835ae3a7fe75).
 
@@ -43,7 +43,7 @@ Algunas notas sobre el paso de la prueba de rendimiento:
 * El *Paso de rendimiento* es un paso de rendimiento Web, lo que significa que es el momento de cargar la página mediante un explorador Web.
 * Las direcciones URL enumeradas en el archivo CSV resultante se cargan en un navegador Chrome en la infraestructura del Administrador de nube durante la prueba.
 * Una métrica común que falla es la *tasa de error*. Para que se pase una URL, la URL principal debe cargarse con el estado 200 y en menos de 20 segundos. Las cargas de página que superen los 20 segundos se marcan como errores 504.
-* Si el sitio requiere autenticación de usuarios, consulte esta documentación para configurar la prueba para autenticarse en el sitio.
+* Si su sitio requiere autenticación de usuario, consulte [Pruebas de rendimiento autenticadas](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html?lang=en#how-to-use) para configurar la prueba para autenticarse en su sitio.
 
 ## 4. ¿Se nos permite utilizar SNAPSHOT en la versión del proyecto de fabricación? ¿Cómo funciona el control de versiones de los paquetes y los archivos jares del paquete para las implementaciones de fase y producción? {#snapshot-version}
 
@@ -75,7 +75,7 @@ Consulte [Recurso de Git](https://github.com/cqsupport/cloud-manager/blob/main/c
 
 ## 6. No se puede establecer una variable mediante el administrador de nube de AIO establecer variables de canalización. ¿Cómo depurar estos problemas? {#set-variable}
 
-Si se produce un error 403 al intentar realizar la lista o establecer variables de canalización a través de comandos similares a los que se muestran a continuación, debe agregarse como una función de producto *Deployment Manager* Cloud Manager en la consola de administración.\
+Si se produce un error 403 al intentar realizar la lista o establecer variables de canalización a través de comandos similares a los que se muestran a continuación, debe agregarse como una función de producto *Deployment Manager* Cloud Manager en el Admin Console.\
 Consulte [Permisos de API](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html#!AdobeDocs/cloudmanager-api-docs/master/permissions.md) para obtener más información.
 
 Comandos y errores relacionados:
