@@ -4,9 +4,9 @@ seo-title: Preguntas más frecuentes sobre Cloud Manager
 description: Consulte las Preguntas más frecuentes sobre Cloud Manager para obtener algunas sugerencias sobre la resolución de problemas
 seo-description: Siga esta página para obtener respuestas sobre las preguntas más frecuentes sobre Cloud Manager
 translation-type: tm+mt
-source-git-commit: d901fd27626640e71d367d3f138d7ba2e907fa9a
+source-git-commit: 31627bf11a46b2e6f1d0aa196bc4a9cf9648e775
 workflow-type: tm+mt
-source-wordcount: '885'
+source-wordcount: '882'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Preguntas más frecuentes sobre Cloud Manager {#cloud-manager-faqs}
 
-La siguiente sección ofrece respuestas a algunas preguntas más frecuentes relacionadas con Cloud Manager.
+La siguiente sección proporciona respuestas a las preguntas más frecuentes relacionadas con Cloud Manager.
 
 ## ¿Es posible utilizar Java 11 con las compilaciones de Cloud Manager? {#java-11-cloud-manager}
 
@@ -22,7 +22,7 @@ La compilación de AEM Cloud Manager falla al intentar cambiar la compilación d
 
 * Añada el complemento maven-toolchain-plugin con la configuración correcta para Java 11 como se documenta [aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/getting-started/create-application-project/using-the-wizard.html?lang=en#getting-started).  Por ejemplo, consulte el [código de proyecto de muestra de wknd](https://github.com/adobe/aem-guides-wknd/commit/6cb5238cb6b932735dcf91b21b0d835ae3a7fe75).
 
-* Si encuentra el error siguiente, debe eliminar el uso de maven-scr-plugin y convertir todas las anotaciones OSGi en anotaciones OSGi R6. Para obtener instrucciones, consulte [aquí](https://cqdump.wordpress.com/2019/01/03/from-scr-annotations-to-osgi-annotations/).
+* Si encuentra el error siguiente, debe eliminar el uso de `maven-scr-plugin` y convertir todas las anotaciones OSGi en anotaciones OSGi R6. Para obtener instrucciones, consulte [aquí](https://cqdump.wordpress.com/2019/01/03/from-scr-annotations-to-osgi-annotations/).
 
    `[main] [ERROR] Failed to execute goal org.apache.felix:maven-scr-plugin:1.26.4:scr (generate-scr-scrdescriptor) on project helloworld.core: /build_root/build/testsite/src/main/java/com/adobe/HelloWorldServiceImpl.java : Unable to load compiled class: com.adobe.HelloWorldServiceImpl: com/adobe/HelloWorldServiceImpl has been compiled by a more recent version of the Java Runtime (class file version 55.0), this version of the Java Runtime only recognizes class file versions up to 52.0 -> [Help 1]`
 
@@ -47,11 +47,11 @@ Algunas notas sobre el paso Prueba de rendimiento:
 
 ## ¿Se nos permite utilizar SNAPSHOT en la versión del proyecto Maven? ¿Cómo funciona el control de versiones de los paquetes y los archivos jares del paquete para las implementaciones de fase y producción? {#snapshot-version}
 
-1. Para implementaciones dev, los archivos de rama Git `pom.xml` deben contener -SNAPSHOT al final del valor `<version>`. Esto permite la implementación posterior cuando la versión no cambia para instalarse. En implementaciones de desarrollo, no se agrega ni genera ninguna versión automática para la compilación de Microsoft.
+1. Para las implementaciones dev, los archivos de rama Git `pom.xml` deben contener `-SNAPSHOT` al final del valor `<version>`. Esto permite la implementación posterior cuando la versión no cambia para instalarse. En implementaciones de desarrollo, no se agrega ni se genera ninguna versión automática para la compilación personalizada.
 
 1. En la implementación de etapa y producción, se genera una versión automática como documentada [aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/activating-maven-project.html?lang=en#managing-code).
 
-1. Para las implementaciones de fase y producción de versiones personalizadas, establezca una versión Maven adecuada de 3 partes como `1.0.0`. Actualice la versión cada vez que tenga que realizar otra implementación en producción.
+1. Para las versiones personalizadas en las implementaciones de fase y producción, establezca una versión de 3 partes adecuada como `1.0.0`. Actualice la versión cada vez que tenga que realizar otra implementación en producción.
 
 1. Cloud Manager agrega automáticamente su versión a las compilaciones de Stage y Production, e incluso crea una rama Git. No se requiere una configuración especial. Si se omite el paso 3 anterior, la implementación seguiría funcionando correctamente y se establecería una versión automáticamente.
 
