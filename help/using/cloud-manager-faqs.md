@@ -4,9 +4,9 @@ seo-title: Preguntas más frecuentes sobre Cloud Manager
 description: Consulte las Preguntas más frecuentes sobre Cloud Manager para obtener algunas sugerencias sobre la resolución de problemas
 seo-description: Siga esta página para obtener respuestas sobre las preguntas más frecuentes sobre Cloud Manager
 translation-type: tm+mt
-source-git-commit: 0db6a6a4e430cd2619db1739fd322224e4e129e7
+source-git-commit: da3346852df4e421a69321830d7efee81d58e20c
 workflow-type: tm+mt
-source-wordcount: '881'
+source-wordcount: '880'
 ht-degree: 0%
 
 ---
@@ -55,7 +55,7 @@ Algunas notas sobre el paso Prueba de rendimiento:
 
 1. Cloud Manager agrega automáticamente su versión a las compilaciones de Stage y Production, e incluso crea una rama Git. No se requiere una configuración especial. Si se omite el paso 3 anterior, la implementación seguiría funcionando correctamente y se establecería una versión automáticamente.
 
-1. Si deja la versión con `-SNAPSHOT` para compilaciones o implementaciones de etapa y producción, entonces incluso eso está bien. Cloud Manager establece automáticamente un número de versión correcto y crea una etiqueta para usted en Git. Esta etiqueta se puede consultar más adelante, si es necesario.
+1. No hay problemas, si deja la versión con `-SNAPSHOT` para compilaciones o implementaciones de fase y producción. Cloud Manager establece automáticamente un número de versión correcto y crea una etiqueta para usted en Git. Esta etiqueta se puede consultar más adelante, si es necesario.
 
 1. Si desea probar algún código experimental en entorno de desarrollo, puede crear una nueva rama Git y configurar la canalización para utilizar esa rama diferente. Esto resulta útil cuando el inicio de implementaciones falla y le gustaría probarlo con versiones anteriores del código para ver cuándo se interrumpe.
 
