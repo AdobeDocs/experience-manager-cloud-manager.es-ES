@@ -4,9 +4,9 @@ seo-title: Preguntas más frecuentes sobre Cloud Manager
 description: Consulte las Preguntas más frecuentes sobre Cloud Manager para obtener algunas sugerencias sobre la resolución de problemas
 seo-description: Siga esta página para obtener respuestas sobre las preguntas más frecuentes sobre Cloud Manager
 translation-type: tm+mt
-source-git-commit: da3346852df4e421a69321830d7efee81d58e20c
+source-git-commit: cf5c02c8c594015b6baa00e1a8aaa2d898aa60a9
 workflow-type: tm+mt
-source-wordcount: '880'
+source-wordcount: '901'
 ht-degree: 0%
 
 ---
@@ -46,6 +46,8 @@ Algunas notas sobre el paso Prueba de rendimiento:
 * Si su sitio requiere autenticación de usuario, consulte [Pruebas de rendimiento autenticadas](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html?lang=en#how-to-use) para configurar la prueba para autenticarse en su sitio.
 
 ## ¿Se nos permite utilizar SNAPSHOT en la versión del proyecto Maven? ¿Cómo funciona el control de versiones de los paquetes y los archivos jares del paquete para las implementaciones de fase y producción? {#snapshot-version}
+
+Consulte los siguientes escenarios para obtener información sobre la versión de los paquetes y los archivos jar del paquete para implementaciones de fase y producción:
 
 1. Para implementaciones de desarrolladores, los archivos de rama de Git `pom.xml` deben contener `-SNAPSHOT` al final del valor `<version>`. Esto permite la implementación posterior cuando la versión no cambia para instalarse. En las implementaciones para desarrolladores, no se agrega ni se genera ninguna versión automática para la compilación mecanizada.
 
