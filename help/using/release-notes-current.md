@@ -1,44 +1,40 @@
 ---
-title: Notas de la versión 2021.2.0
-seo-title: Notas de la versión de AEM Cloud Manager para 2021.2.0
-description: Siga esta página para obtener información sobre la versión 2021.2.0 de Cloud Manager
-seo-description: Siga esta página para obtener información sobre la versión 2021.2.0 de AEM Cloud Manager
+title: Notas de la versión 2021.3.0
+seo-title: Notas de la versión de AEM Cloud Manager para 2021.3.0
+description: Siga esta página para obtener información sobre la versión 2021.3.0 de Cloud Manager
+seo-description: Siga esta página para obtener información sobre la versión 2021.3.0 de AEM Cloud Manager
 translation-type: tm+mt
-source-git-commit: d956c7a2d3833e357920a9602e4f5a5b37f2c98a
+source-git-commit: b5233e1932888b515d8dc26a6493cbd26686bc3c
 workflow-type: tm+mt
-source-wordcount: '244'
-ht-degree: 4%
+source-wordcount: '221'
+ht-degree: 5%
 
 ---
 
-# Notas de la versión 2021.2.0 {#release-notes-for}
+# Notas de la versión 2021.3.0 {#release-notes-for}
 
-La siguiente sección describe las Notas de revisión generales de la versión 2021.2.0 de [!UICONTROL Cloud Manager].
+En la siguiente sección se describen las notas de la versión generales de [!UICONTROL Cloud Manager] versión 2021.3.0.
 
 ## Fecha de la versión {#release-date}
 
-La fecha de versión de la [!UICONTROL Cloud Manager] versión 2021.2.0 es el 11 de febrero de 2021.
+La fecha de versión de la versión 2021.3.0 de [!UICONTROL Cloud Manager] es el 11 de marzo de 2021.
 
 ## Novedades {#whats-new}
 
-* El arquetipo del proyecto AEM utilizado en la creación de proyectos y Simuladores para pruebas se ha actualizado a la versión 25.
+* Se ha introducido una nueva herramienta de calidad de código para validar la configuración de Dispatcher del cliente (Herramienta de optimización de Dispatcher).
 
-* La lista de las API obsoletas identificadas durante el análisis de código se ha refinado para incluir clases y métodos adicionales que ya no se utilizan en las últimas versiones del SDK de Cloud Service.
+* Los usuarios ahora pueden ver sus funciones de Cloud Manager seleccionando la opción **View Cloud Manager Role(s)** después de navegar al icono User Profile (parte superior derecha) del shell unificado.
 
-* Las implementaciones de producción ahora se implementan en paralelo en las instancias de publicación y envío emparejadas.
+* La etiqueta **Application for Approval** se ha vuelto a etiquetar como **Production Approval** para una buena claridad.
 
-* SonarQube perfil para Cloud Manager actualizado para eliminar la regla Sonar `squid:S2142`. Esto ya no entrará en conflicto con las comprobaciones de interrupción de subprocesos.
+* La etiqueta **Version** se ha vuelto a etiquetar como **Git Tag** en la pantalla de ejecución de la canalización de producción.
 
-* Las propiedades configuradas en los archivos `pom.xml` del cliente con el prefijo sonar ahora se eliminarán dinámicamente para evitar errores de compilación y de análisis de calidad.
+* Las etiquetas que definen el comportamiento cuando métricas importantes no alcanzan el umbral definido se han vuelto a etiquetar para reflejar su verdadero comportamiento: Cancelar inmediatamente y Aprobar inmediatamente.
 
-* Se han agregado reglas de calidad de código adicionales para cubrir los problemas de compatibilidad con Cloud Service.
+* Las listas de deprecación de clases y métodos se han actualizado en función de la versión `2021.3.4997.20210303T022849Z-210225` del SDK del Cloud Service de AEM.
 
 ## Corrección de errores {#bug-fixes}
 
-* En ocasiones, la canalización CI/CD (implementación) falló durante un paso de prueba de rendimiento debido a un contenedor que ejecutaba la prueba de carga y que encontró un error.
+* Algunos problemas de calidad no se descubrieron correctamente cuando los paquetes estaban incrustados en otros paquetes.
 
-* En ocasiones, el contenedor de la prueba de carga puede informar de que la ejecución ha fallado aunque solo se produzca una excepción. El error solo se notificará si no se puede restaurar el proceso de prueba.
-
-* Determinadas discrepancias de mayúsculas y minúsculas entre la forma en que se almacenan los nombres de entornos podrían provocar errores de prueba de rendimiento.
-
-* Algunos errores de canalización se notificaron incorrectamente como errores de canalización.
+* En ocasiones, si el usuario sale de la página de ejecución de la canalización inmediatamente después de iniciar una canalización, aparece un mensaje de error que indica que la acción ha fallado, aunque la ejecución realmente se inicia.
