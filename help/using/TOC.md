@@ -6,10 +6,10 @@ user-guide-title: Guía del Experience Manager Cloud Manager
 breadcrumb-title: Guía de Cloud Manager
 user-guide-description: Aprenda a utilizar Adobe Managed Services para administrar Experience Manager en la nube.
 translation-type: tm+mt
-source-git-commit: 12898b57c3e7039da271481a6619d4ad0a0a90d1
+source-git-commit: b5233e1932888b515d8dc26a6493cbd26686bc3c
 workflow-type: tm+mt
-source-wordcount: '258'
-ht-degree: 84%
+source-wordcount: '261'
+ht-degree: 85%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 84%
    + [Canalización de CI/CD](ci-cd-pipeline.md)
    + [Seguridad y privacidad](security-and-privacy.md)
    + [Recursos de ayuda](help-resources.md)
-   + [Preguntas más frecuentes sobre Cloud Manager](cloud-manager-faqs.md)
+   + [Preguntas frecuentes sobre Cloud Manager](cloud-manager-faqs.md)
 + ¿Qué es necesario? {#requirements}
    + [Derechos de acceso concedidos](access-rights-granted.md)
    + [Repositorio de códigos de origen](source-code-repository.md)
@@ -34,9 +34,9 @@ ht-degree: 84%
    + [Primer inicio de sesión](first-time-login.md)
    + [Configurar el programa](setting-up-program.md)
    + Crear un proyecto de aplicación de AEM {#create-application-project}
-      + [Uso del Asistente](using-the-wizard.md)
+      + [Uso del asistente](using-the-wizard.md)
       + [Configuración del proyecto](setting-up-project.md)
-      + [Explicación del Entorno de compilación](build-environment-details.md)
+      + [Explicación del entorno de compilación](build-environment-details.md)
    + [Configurar las ramas de las versiones](configure-your-release-branches.md)
    + [Administrar las configuraciones de Dispatcher](dispatcher-configurations.md)
 + Usos {#how-to-use}
@@ -53,12 +53,13 @@ ht-degree: 84%
    + [Administrar versiones del proyecto de Maven](activating-maven-project.md)
    + [Acceder a Git](accessing-git.md)
    + [Integración con Git](setup-cloud-manager-git-integration.md)
-   + [Trabajar con varios repositorios Git de origen](/help/using/working-with-multiple-source-git-repos.md)
+   + [Uso de repositorios Git de varias fuentes](/help/using/working-with-multiple-source-git-repos.md)
 + Asistente para la actualización de productos {#product-update-wizard}
    + [Información general](overview-productupdate-wizard.md)
    + [Evaluación](evaluation.md)
 + Notas de la versión {#release-notes}
-   + [Notas de la versión actual (2021.2.0)](release-notes-current.md)
+   + [Notas de la versión actual (2021.3.0)](release-notes-current.md)
+   + [Notas de la versión 2021.2.0](release-notes-2021-2-0.md)
    + [Notas de la versión 2020.12.0](release-notes-2020-12-0.md)
    + [Notas de la versión 2020.11.0](release-notes-2020-11-0.md)
    + [Notas de la versión 2020.10.0](release-notes-2020-10-0.md)
