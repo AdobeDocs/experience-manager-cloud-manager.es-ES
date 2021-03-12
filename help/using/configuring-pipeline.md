@@ -1,8 +1,8 @@
 ---
 title: Configurar la canalización de CD/CI
 seo-title: Configurar la canalización de CD/CI
-description: Siga esta página para configurar la canalización desde el Administrador de nube.
-seo-description: 'Para poder implementar el código con inicio, debe configurar la configuración de la canalización desde el Administrador de nube de AEM. '
+description: Siga esta página para configurar las opciones de canalización desde Cloud Manager.
+seo-description: 'Antes de comenzar a implementar el código, debe configurar la canalización desde AEM Cloud Manager. '
 uuid: 35fd56ac-dc9c-4aca-8ad6-36c29c4ec497
 contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
@@ -10,7 +10,7 @@ topic-tags: using
 content-type: reference
 discoiquuid: ba6c763a-b78a-439e-8c40-367203a719b3
 translation-type: tm+mt
-source-git-commit: bbcd5e59a9f9e8cb83cefb8af79d3ce7987bf388
+source-git-commit: 5542942da33efc2926e62cce00ea39e3c65b3e16
 workflow-type: tm+mt
 source-wordcount: '1776'
 ht-degree: 2%
@@ -20,13 +20,13 @@ ht-degree: 2%
 
 # Configurar la canalización de CD/CI {#configure-your-ci-cd-pipeline}
 
-La siguiente página explica cómo configurar la **Canalización**. Para obtener más información conceptual sobre cómo funciona la canalización, consulte la [descripción general de la canalización de CD/CI](ci-cd-pipeline.md).
+La siguiente página explica cómo configurar la **Canalización**. Para obtener más información conceptual sobre el funcionamiento de la canalización, consulte [CI/CD pipeline overview](ci-cd-pipeline.md).
 
 ## Tutorial de vídeo {#video-tutorial-one}
 
-### Configuración de la canalización en el Administrador de nube {#config-pipeline-video}
+### Configuración de canalización en Cloud Manager {#config-pipeline-video}
 
-La configuración de la tubería de producción CI/CD define el déclencheur que iniciará la canalización, parámetros que controlan la implementación de producción y parámetros de prueba de rendimiento.
+La configuración de la canalización de producción CI/CD define el déclencheur que iniciará la canalización, parámetros que controlan la implementación de producción y parámetros de prueba de rendimiento.
 
 >[!VIDEO](https://video.tv.adobe.com/v/26314/)
 
@@ -35,19 +35,19 @@ La configuración de la tubería de producción CI/CD define el déclencheur que
 
 Puede configurar la canalización desde el mosaico **Configuración de canalización** en la interfaz de usuario de [!UICONTROL Cloud Manager].
 
-El Administrador de implementación es responsable de configurar la canalización. Al hacerlo, primero debe seleccionar una rama del **Repositorio de Git**. La configuración de canalización consiste en:
+El administrador de implementación es responsable de configurar la canalización. Al hacerlo, primero se selecciona una rama del **Repositorio Git**. La configuración de canalización consta de:
 
-* definir el déclencheur que va a inicio de la tubería.
-* definir los parámetros que controlan la implementación de producción.
+* definición del déclencheur que iniciará la canalización.
+* definición de los parámetros que controlan la implementación de producción.
 * configuración de los parámetros de prueba de rendimiento.
 
 ## Configuración de la canalización {#setting-up-the-pipeline}
 
 >[!CAUTION]
 >
->La canalización no se puede configurar hasta que el repositorio Git tenga al menos una rama y [Programa Setup](setting-up-program.md) esté completo.
+>La canalización no se puede configurar hasta que el repositorio de Git tenga al menos una rama y [Program Setup](setting-up-program.md) se haya completado.
 
-Para poder implementar el código con inicio, debe configurar la configuración de la canalización desde [!UICONTROL Cloud Manager].
+Antes de comenzar a implementar el código, debe configurar la configuración de la canalización desde [!UICONTROL Cloud Manager].
 
 >[!NOTE]
 >
@@ -55,43 +55,43 @@ Para poder implementar el código con inicio, debe configurar la configuración 
 
 ### Configuración de la canalización desde [!UICONTROL Cloud Manager] {#configuring-the-pipeline-settings-from-cloud-manager}
 
-Una vez que haya configurado el programa con la [!UICONTROL Cloud Manager] IU, estará listo para configurar la canalización.
+Una vez que haya configurado el programa utilizando la interfaz de usuario [!UICONTROL Cloud Manager], estará listo para configurar la canalización.
 
 Siga estos pasos para configurar el comportamiento y las preferencias de la canalización:
 
-1. Haga clic en **Configurar tubería** para configurar y configurar la canalización.
+1. Haga clic en **Configuración de canalización** para configurar la canalización.
 
    ![](assets/Setup-Pipeline.png)
 
-1. Aparece la pantalla **Configurar tubería**.
+1. Aparece la pantalla **Configuración de canalización**.
 
-   El asistente de tres pasos le permite configurar el entorno **Branch**, **Entornos** y **Pruebas**.
-Seleccione la rama Git y haga clic en **Siguiente**.
+   El asistente de tres pasos le permite configurar su entorno **Branch**, **Environments** y **Testing**.
+Seleccione la rama de Git y haga clic en **Siguiente**.
 
    >[!NOTE]
    >
    >Las ramas que se encuentran en el repositorio de Git están vinculadas a su programa.
 
 
-1. Acceda a la ficha **Entornos** para seleccionar las opciones **Escenario** y **Producción**.
+1. Acceda a la pestaña **Environments** para seleccionar las opciones **Stage** y **Production**.
 
-   Puede definir el déclencheur para el inicio de la canalización:
+   Puede definir el déclencheur para iniciar la canalización:
 
-   * **Al cambiar**  Git: inicio la canalización CI/CD cada vez que haya confirmaciones agregadas a la rama git configurada. Incluso si selecciona esta opción, siempre puede realizar el inicio de la canalización manualmente.
-   * **Manual** : el uso manual de la interfaz de usuario inicio la canalización.
+   * **Cambios en Git** : inicia la canalización CI/CD cada vez que se agregan confirmaciones a la rama git configurada. Incluso si selecciona esta opción, siempre puede iniciar la canalización manualmente.
+   * **Manual** : al utilizar la IU, se inicia manualmente la canalización.
 
-   Durante la configuración o edición de la canalización, el Administrador de implementación tiene la opción de definir el comportamiento de la canalización cuando se produce un error importante en cualquiera de las compuertas de calidad, como Calidad del código, Pruebas de seguridad y Pruebas de rendimiento.
+   Durante la configuración o edición de la canalización, el administrador de implementación tiene la opción de definir el comportamiento de la canalización cuando se encuentra un error importante en cualquiera de las puertas de calidad, como Calidad del código, Pruebas de seguridad y Pruebas de rendimiento.
 
    Esto resulta útil para los clientes que desean procesos más automatizados. Las opciones disponibles son:
 
-* **Preguntar cada vez** : Esta es la configuración predeterminada y requiere una intervención manual en caso de error importante.
-* **Error inmediato** : si se selecciona, la canalización se cancelará siempre que se produzca un error importante. Esto es, esencialmente, emular a un usuario rechazando manualmente cada error.
-* **Continuar inmediatamente** : si se selecciona, la canalización se realizará automáticamente siempre que se produzca un error importante. Esto es, esencialmente, emular a un usuario aprobando manualmente cada error.
+* **Pregunte cada vez** : esta es la configuración predeterminada y requiere una intervención manual en cualquier error importante.
+* **Cancelar inmediatamente** : si se selecciona, la canalización se cancelará siempre que se produzca un error importante. Básicamente, esto emula a un usuario rechazando manualmente cada error.
+* **Aprobar inmediatamente** : si se selecciona, la canalización se realizará automáticamente cada vez que se produzca un error importante. Básicamente, esto está emulando a un usuario que aprueba manualmente cada error.
 
    Ahora define los parámetros que controlan la implementación de producción. Las tres opciones disponibles son las siguientes:
 
-* **Usar aprobación**  de lanzamiento: una implementación debe ser aprobada manualmente por un propietario de empresa, un jefe de proyecto o un administrador de implementación a través de la  [!UICONTROL Cloud Manager] interfaz de usuario.
-* **Usar la supervisión**  de CSE: un CSE se compromete a realizar el inicio de la implementación. Durante la configuración o edición de la canalización cuando la supervisión de CSE está habilitada, el administrador de implementación tiene la opción de seleccionar:
+* **Usar Go Live Approval** : Una implementación debe ser aprobada manualmente por un propietario de empresa, un administrador de proyectos o un administrador de implementación a través de la  [!UICONTROL Cloud Manager] interfaz de usuario.
+* **Usar la supervisión de CSE** : un CSE se compromete a iniciar realmente la implementación. Durante la configuración o edición de la canalización cuando la supervisión de CSE está habilitada, el administrador de implementación tiene la opción de seleccionar:
 
    * **Cualquier CSE**: hace referencia a cualquier CSE disponible
    * **Mi CSE**: hace referencia a un CSE específico asignado al cliente o a su copia de seguridad, si el CSE está fuera de la oficina
@@ -100,20 +100,20 @@ Seleccione la rama Git y haga clic en **Siguiente**.
 
 >[!NOTE]
 >
->Si selecciona la opción **Programado**, puede programar la implementación de producción en la canalización **después de** la implementación de la etapa (y **Usar aprobación de GoLive**, si se ha habilitado) para esperar a que se establezca una programación. El usuario también puede elegir ejecutar la implementación de producción inmediatamente.
+>Si la opción **Programado** está seleccionada, puede programar la implementación de producción en la canalización **después** de la implementación de la fase (y **Utilizar aprobación de GoLive**, si se ha habilitado) para esperar a que se establezca una programación. El usuario también puede elegir ejecutar la implementación de producción inmediatamente.
 >
->Consulte [**Implementar el código**](deploying-code.md) para establecer la programación de implementación o ejecutar la producción inmediatamente.
+>Consulte [**Implementar el código**](deploying-code.md) para configurar la programación de implementación o ejecutar la producción inmediatamente.
 
-![](assets/configure-pipeline3.png)
+![](assets/configure-pipeline-new.png)
 
 >[!NOTE]
 >
 >La opción **Usar supervisión de CSE** no está disponible para todos los clientes.
 
-**Aprobar después de la implementación de la etapa**
+**Aprobar después de la implementación de la fase**
 
-Hay un paso opcional **Aprobar después de la implementación de la etapa** que se puede configurar en la canalización de producción.
-Esta opción está habilitada en una nueva opción de la pantalla **Editar tubería**:
+Hay un paso opcional **Aprobar después de la implementación de la fase** que se puede configurar en la canalización de producción.
+Esto se habilita en una nueva opción de la pantalla **Edición de canalización**:
 
 ![](assets/post_deployment1.png)
 
@@ -123,27 +123,27 @@ A continuación, se muestra como un paso independiente durante la ejecución de 
 
 >[!NOTE]
 >
->**Aprobar después de** implementar la fase funciona de manera similar a la aprobación antes de la implementación de producción, pero se produce inmediatamente después del paso de implementación de la fase, es decir, antes de que se realice la prueba, en comparación con la aprobación antes de la implementación de producción, que se realiza una vez finalizadas todas las pruebas.
+>**La aprobación después de la** implementación de la fase funciona de forma similar a la aprobación antes de la implementación de producción, pero se produce inmediatamente después del paso de implementación de la fase, es decir, antes de que se realice la prueba, en comparación con la aprobación antes de la implementación de producción, que se realiza después de completar todas las pruebas.
 
-**Invalidación del despachante**
+**Invalidación de Dispatcher**
 
-Como administrador de implementación, tiene la oportunidad de configurar un conjunto de rutas de contenido que serán **invalidadas** o **vaciadas** desde la caché de AEM Dispatcher para instancias de publicación, mientras se configura o se edita la canalización.
+Como administrador de implementación, tiene la oportunidad de configurar un conjunto de rutas de contenido que serán **invalidadas** o **vaciadas** desde la caché de Dispatcher AEM para instancias de publicación, mientras se configura o edita la canalización.
 
-Puede configurar un conjunto independiente de rutas para la implementación de fase y producción. Si se configuran, estas acciones de caché se realizarán como parte del paso de la canalización de implementación, justo después de implementar cualquier paquete de contenido. Esta configuración utiliza el comportamiento estándar AEM Dispatcher: invalidate realiza una invalidación de caché, similar a cuando el contenido se activa de la creación a la publicación; flush realiza una eliminación de caché.
+Puede configurar un conjunto independiente de rutas para la implementación de fase y producción. Si se configura, estas acciones de caché se realizarán como parte del paso de canalización de implementación, justo después de implementar cualquier paquete de contenido. Estas configuraciones utilizan AEM comportamiento estándar de Dispatcher: invalidate realiza una invalidación de caché, similar a cuando el contenido se activa de autor a publicación; flush realiza una eliminación de caché.
 
-En general, es preferible el uso de la acción de invalidación, pero puede haber casos en los que sea necesario vaciar, especialmente cuando se utilizan AEM bibliotecas cliente HTML.
+En general, es preferible el uso de la acción de invalidación, pero puede haber casos en los que sea necesario vaciar, especialmente cuando se utilizan AEM bibliotecas de cliente HTML.
 
 >[!NOTE]
 >
->Consulte [Información general del despachante](dispatcher-configurations.md) para obtener más información sobre el almacenamiento en caché de Dispatcher.
+>Consulte [Información general de Dispatcher](dispatcher-configurations.md) para obtener más información sobre el almacenamiento en caché de Dispatcher.
 
-Siga los pasos a continuación para configurar las validaciones de Dispatcher:
+Siga los pasos a continuación para configurar las invalidaciones de Dispatcher:
 
-1. Haga clic **Configurar** en el encabezado Configuración del despachante
+1. Haga clic **Configurar** en el encabezado Configuración de Dispatcher
 
    ![](assets/image2018-8-7_14-53-24.png)
 
-1. Introduzca la ruta, seleccione la acción en **Tipo** y haga clic en **Añadir**. Puede especificar hasta 100 rutas por entorno. Una vez agregadas las rutas, haga clic en **Aplicar**.
+1. Introduzca la ruta, seleccione la acción en **Type** y haga clic en **Add**. Puede especificar hasta 100 rutas por entorno. Una vez agregadas las rutas, haga clic en **Aplicar**.
 
    ![](assets/image2018-8-7_14-58-11.png)
 
@@ -154,100 +154,100 @@ Siga los pasos a continuación para configurar las validaciones de Dispatcher:
    ![](assets/image2018-8-7_15-4-30.png)
 
 
-1. Acceda a la ficha **Pruebas** para definir los criterios de prueba del programa.
+1. Acceda a la pestaña **Testing** para definir los criterios de prueba del programa.
 
-   Ahora puede configurar los parámetros de prueba de rendimiento.
+   Ahora, puede configurar los parámetros de prueba de rendimiento.
 
-   Puede configurar *Pruebas de rendimiento de AEM Sites* y *AEM Assets*, en función de los productos con licencia.
+   Puede configurar las *Pruebas de rendimiento de AEM Sites* y *AEM Assets* en función de los productos con licencia.
 
    **AEM Sites:**
 
-   Cloud Manager ejecuta pruebas de rendimiento para programas de AEM Sites solicitando páginas (como usuario no autenticado de forma predeterminada) en el servidor de publicación de la fase durante un período de prueba de 30 minutos y midiendo el tiempo de respuesta para cada página, así como varias métricas a nivel del sistema. Estas solicitudes se realizan a partir de un conjunto de direcciones conocidas y dedicadas. Los intervalos de direcciones pueden obtenerse de su ingeniero de éxito del cliente o de su representante de Adobe.
+   Cloud Manager ejecuta pruebas de rendimiento para programas de AEM Sites solicitando páginas (como usuario no autenticado de forma predeterminada) en el servidor de publicación de escenario durante un periodo de prueba de 30 minutos y midiendo el tiempo de respuesta de cada página, así como varias métricas a nivel de sistema. Estas solicitudes se realizan a partir de un conjunto de direcciones conocidas y dedicadas. Los intervalos de direcciones se pueden obtener de su ingeniero de éxito del cliente o representante de Adobe.
 
-   Antes del inicio del período de prueba de 30 minutos, Cloud Manager rastreará el entorno del escenario con un conjunto de una o más *URL de inicio* configuradas por el ingeniero de éxito del cliente. A partir de estas direcciones URL, se inspecciona el HTML de cada página y los vínculos se atraviesan de forma que tengan un ancho inicial. Este proceso de rastreo está limitado a un máximo de 5000 páginas. Las solicitudes del rastreador tienen un tiempo de espera fijo de 10 segundos.
+   Antes del inicio del periodo de prueba de 30 minutos, Cloud Manager rastreará el entorno de ensayo utilizando un conjunto de una o más *URL semilla* configuradas por el ingeniero de éxito del cliente. A partir de estas direcciones URL, se inspecciona el HTML de cada página y los vínculos se atraviesan de forma predeterminada. Este proceso de rastreo está limitado a un máximo de 5000 páginas. Las solicitudes del rastreador tienen un tiempo de espera fijo de 10 segundos.
 
-   Las páginas se seleccionan por tres **conjuntos de páginas**; puede elegir entre uno y los tres conjuntos. La distribución del tráfico se basa en el número de conjuntos seleccionados, es decir, si se seleccionan los tres, el 33 % del total de vistas de página se destinan a cada conjunto; si se seleccionan dos, el 50 % se dirige a cada conjunto; si se selecciona uno, el 100 % del tráfico se dirige a ese conjunto.
+   Las páginas se seleccionan mediante tres **conjuntos de páginas**; puede elegir entre uno y los tres conjuntos. La distribución del tráfico se basa en el número de conjuntos seleccionados, es decir, si se seleccionan los tres, el 33 % del total de vistas de página se asigna a cada conjunto; si se seleccionan dos, el 50 % se dirige a cada conjunto; si se selecciona uno, el 100 % del tráfico se destina a ese conjunto.
 
-   Por ejemplo: supongamos que hay una división del 50 %/50 % entre el conjunto Páginas en vivo populares y Páginas nuevas (en este ejemplo, no se utiliza Otras páginas en vivo) y que el conjunto Páginas nuevas contiene 3000 páginas. El KPI de vistas de página por minuto se establece en 200. Durante el período de prueba de 30 minutos:
+   Por ejemplo, supongamos que hay una división del 50 %/50 % entre el conjunto de páginas en directo populares y páginas nuevas (en este ejemplo, no se usa Otras páginas en directo) y que el conjunto de páginas nuevas contiene 3000 páginas. El KPI de vistas de página por minuto se establece en 200. Durante el periodo de prueba de 30 minutos:
 
-   * Cada una de las 25 páginas del conjunto de páginas en vivo populares se visita 120 veces - (200 * 0.5) / 25) * 30 = 120
+   * Cada una de las 25 páginas del conjunto de páginas en directo populares se visita 120 veces - (200 * 0,5) / 25) * 30 = 120
 
-   * Cada una de las 3000 páginas del conjunto Nuevas páginas se visita una vez - (200 * 0.5) / 3000) * 30 = 1
+   * Cada una de las 3000 páginas del conjunto Nuevas páginas se visita una vez - (200 * 0,5) / 3000) * 30 = 1
 
    ![](assets/Configuring_Pipeline_AEM-Sites.png)
 
-   Consulte [Prueba de rendimiento autenticada](#authenticated-performance-testing) para obtener más detalles.
+   Consulte [Pruebas de rendimiento autenticadas](#authenticated-performance-testing) para obtener más información.
 
    **AEM Assets:**
 
-   Cloud Manager ejecuta pruebas de rendimiento para programas de AEM Assets cargando los recursos repetidamente durante un período de prueba de 30 minutos y midiendo el tiempo de procesamiento de cada recurso, así como varias métricas a nivel de sistema. Esta función puede cargar imágenes y documentos PDF. La distribución de cuántos recursos de cada tipo se cargan por minuto se establece en la pantalla de configuración de tubería o de edición.
+   Cloud Manager ejecuta pruebas de rendimiento para programas de AEM Assets cargando recursos repetidamente durante un período de prueba de 30 minutos y midiendo el tiempo de procesamiento de cada recurso, así como varias métricas a nivel de sistema. Esta capacidad puede cargar imágenes y documentos PDF. La distribución de cuántos recursos de cada tipo se cargan por minuto se establece en la pantalla Configuración de canalización o Editar.
 
-   Por ejemplo, si se utiliza una división 70/30, como se muestra en la figura siguiente. Hay 10 recursos cargados por minuto, 7 imágenes cargadas por minuto y 3 documentos.
+   Por ejemplo, si se utiliza una división 70/30, como se ve en la figura siguiente. Hay 10 activos cargados por minuto, 7 imágenes se cargarán por minuto y 3 documentos.
 
    ![](assets/Configuring_Pipeline_AEM-Assets.png)
 
    >[!NOTE]
    >
-   >Hay una imagen y un documento PDF predeterminados, pero en la mayoría de los casos, los clientes querrán cargar sus propios recursos. Esto se puede realizar desde la pantalla Ajustes de tubería o Editar. Los formatos de imagen comunes como JPEG, PNG, GIF y BMP son compatibles con archivos Photoshop, Illustrator y Postscript.
+   >Hay una imagen predeterminada y un documento PDF, pero en la mayoría de los casos, los clientes querrán cargar sus propios recursos. Esto se puede hacer desde la pantalla Configuración o edición de canalización . Los formatos de imagen comunes, como JPEG, PNG, GIF y BMP, son compatibles con los archivos Photoshop, Illustrator y Postscript.
 
-1. Haga clic en **Guardar** para completar la configuración del proceso de canalización.
+1. Haga clic en **Save** para completar la configuración del proceso de canalización.
 
    >[!NOTE]
    >
-   >Además, una vez configurada la canalización, puede editar la configuración para la misma utilizando el mosaico **Ajustes de tubería de producción** de la interfaz de usuario [!UICONTROL Cloud Manager].
+   >Además, una vez configurada la canalización, puede seguir editando la configuración para la misma utilizando el mosaico **Configuración de canalización de producción** de la interfaz de usuario [!UICONTROL Cloud Manager].
 
    ![](assets/Production-Pipeline.png)
 
-### Prueba de rendimiento autenticada {#authenticated-performance-testing}
+### Pruebas de rendimiento autenticadas {#authenticated-performance-testing}
 
-Los clientes de AMS con sitios autenticados pueden especificar un nombre de usuario y una contraseña que Cloud Manager utilizará para acceder al sitio web durante la prueba de rendimiento del sitio.
+Los clientes de AMS con sitios autenticados pueden especificar un nombre de usuario y una contraseña que Cloud Manager utilizará para acceder al sitio web durante las pruebas de rendimiento del sitio.
 
 El nombre de usuario y la contraseña se especifican como [Variables de canalización](/help/using/build-environment-details.md#pipeline-variables) con los nombres `CM_PERF_TEST_BASIC_USERNAME` y `CM_PERF_TEST_BASIC_PASSWORD`.
 
-Aunque no es estrictamente necesario, se recomienda utilizar el tipo de variable de cadena para el nombre de usuario y el tipo de variable secretString para la contraseña. Si se especifican ambas, todas las solicitudes del rastreador de prueba de rendimiento y los usuarios virtuales de prueba contendrán estas credenciales como autenticación HTTP Basic.
+Aunque no es estrictamente necesario, se recomienda utilizar el tipo de variable de cadena para el nombre de usuario y el tipo de variable secretString para la contraseña. Si se especifican ambos, cada solicitud del rastreador de prueba de rendimiento y los usuarios virtuales de prueba contendrán estas credenciales como autenticación HTTP Basic.
 
-Para configurar estas variables mediante la [CLI del Administrador de nube](https://github.com/adobe/aio-cli-plugin-cloudmanager), ejecute:
+Para configurar estas variables utilizando [Cloud Manager CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager), ejecute:
 
 `$ aio cloudmanager:set-pipeline-variables <pipeline id> --variable CM_PERF_TEST_BASIC_USERNAME <username> --secret CM_PERF_TEST_BASIC_PASSWORD <password>`
 
-## Tuberías de calidad de código y de no producción
+## Canalizaciones de calidad de código y no producción
 
-Además de la tubería principal que se implementa en la etapa de producción y producción, los clientes pueden configurar oleoductos adicionales, denominados **Tuberías sin producción**. Estas tuberías siempre ejecutan los pasos de generación y calidad del código. Opcionalmente, también pueden implementarse en Adobe Managed Services entorno.
+Además de la canalización principal que se implementa en las fases y la producción, los clientes pueden configurar canalizaciones adicionales, denominadas **Canalizaciones que no son de producción**. Estas canalizaciones siempre ejecutan los pasos de compilación y calidad del código. Opcionalmente, también pueden implementarse en el entorno de Adobe Managed Services.
 
 ## Tutorial de vídeo {#video-tutorial-two}
 
-### Nube Manager: sólo tuberías de calidad de código y no producción {#non-prod-video}
+### Canalizaciones de calidad de código y no producción de Cloud Manager {#non-prod-video}
 
-Las tuberías de CI/CD que no son de producción se dividen en dos categorías: tuberías de calidad de código y tuberías de implementación. La calidad del código canaliza todo el código desde una rama Git para crear y evaluarse en función del análisis de calidad del código del Administrador de nube.
+Las canalizaciones no productivas de CI/CD se dividen en dos categorías, las canalizaciones de calidad del código y las canalizaciones de implementación. La calidad del código canaliza todo el código de una rama de Git para crearlo y evaluarlo en relación con el análisis de calidad del código de Cloud Manager.
 
 >[!VIDEO](https://video.tv.adobe.com/v/26316/)
 
-En la pantalla de inicio, estos oleoductos se muestran en una tarjeta nueva:
+En la pantalla de inicio, estas canalizaciones se enumeran en una tarjeta nueva:
 
-1. Acceda al mosaico **Tuberías que no son de producción** desde la pantalla de inicio del Administrador de nube.
+1. Acceda al mosaico **Canalizaciones que no son de producción** desde la pantalla de inicio de Cloud Manager.
 
    ![](assets/Non-Production-Pipeline.png)
 
-1. Haga clic en el botón Añadir para especificar el nombre de la canalización, el tipo de canalización y la rama de Git.
+1. Haga clic en el botón Add para especificar el nombre de la canalización, el tipo de canalización y la rama Git.
 
-   Además, también puede configurar el Déclencheur de implementación y el comportamiento de error importante desde Opciones de tubería.
+   Además, también puede configurar el Déclencheur de implementación y el Comportamiento de error importante desde Opciones de canalización.
 
    ![](assets/non-prod-pipe.png)
 
 1. Haga clic en **Guardar** y la canalización se mostrará en la tarjeta de la pantalla principal con tres acciones:
 
    * **Editar** : permite editar la configuración de la canalización
-   * **Detalle** : muestra la última ejecución de la canalización (si existe)
-   * **Generar** : se desplaza a la página de ejecución, desde la cual se puede ejecutar la canalización
+   * **Detail** : muestra la última ejecución de la canalización (si existe)
+   * **Generar** : navega a la página de ejecución desde la que se puede ejecutar la canalización
 
    ![](assets/Non-prod-2.png)
 
    >[!NOTE]
    >
-   >Mientras se está ejecutando la canalización, se muestra el paso actual y sólo está disponible la acción **Details**.
+   >Mientras se está ejecutando la canalización, se muestra el paso actual y solo está disponible la acción **Details**.
 
 ## Pasos siguientes {#the-next-steps}
 
 Una vez configurada la canalización, debe implementar el código.
 
-Consulte [Implementación del código](deploying-code.md) para obtener más detalles.
+Consulte [Implementar el código](deploying-code.md) para obtener más información.
