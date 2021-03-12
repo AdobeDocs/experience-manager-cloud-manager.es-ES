@@ -4,10 +4,10 @@ seo-title: Notas de la versión de AEM Cloud Manager para 2021.3.0
 description: Siga esta página para obtener información sobre la versión 2021.3.0 de Cloud Manager
 seo-description: Siga esta página para obtener información sobre la versión 2021.3.0 de AEM Cloud Manager
 translation-type: tm+mt
-source-git-commit: 5542942da33efc2926e62cce00ea39e3c65b3e16
+source-git-commit: 090505e737b8cb224d87f117a9b5e786a4f99851
 workflow-type: tm+mt
-source-wordcount: '289'
-ht-degree: 4%
+source-wordcount: '311'
+ht-degree: 3%
 
 ---
 
@@ -35,7 +35,7 @@ La fecha de versión de la versión 2021.3.0 de [!UICONTROL Cloud Manager] es el
 
 * La etiqueta **Version** se ha vuelto a etiquetar como **Git Tag** en la pantalla de ejecución de la canalización de producción.
 
-* Las etiquetas que definen el comportamiento cuando métricas importantes no alcanzan el umbral definido se han vuelto a etiquetar para reflejar su verdadero comportamiento: **Cancelar inmediatamente** y **Aprobar inmediatamente**.
+* Las etiquetas que definen el comportamiento cuando métricas importantes no alcanzan el umbral definido se han vuelto a etiquetar para reflejar su verdadero comportamiento: **Cancelar inmediatamente** y **Aprobar inmediatamente**. Consulte [Configuración de la canalización desde Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html?lang=en#configuring-the-pipeline-settings-from-cloud-manager) para obtener más información.
 
 * Las listas de deprecación de clases y métodos se han actualizado en función de la versión `2021.3.4997.20210303T022849Z-210225` del SDK del Cloud Service de AEM.
 
