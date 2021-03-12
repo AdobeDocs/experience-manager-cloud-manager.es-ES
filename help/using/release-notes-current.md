@@ -4,10 +4,10 @@ seo-title: Notas de la versión de AEM Cloud Manager para 2021.3.0
 description: Siga esta página para obtener información sobre la versión 2021.3.0 de Cloud Manager
 seo-description: Siga esta página para obtener información sobre la versión 2021.3.0 de AEM Cloud Manager
 translation-type: tm+mt
-source-git-commit: b5233e1932888b515d8dc26a6493cbd26686bc3c
+source-git-commit: b0c29ed6712abd556458aea6d49f6382f183cdae
 workflow-type: tm+mt
-source-wordcount: '221'
-ht-degree: 5%
+source-wordcount: '279'
+ht-degree: 4%
 
 ---
 
@@ -21,6 +21,12 @@ La fecha de versión de la versión 2021.3.0 de [!UICONTROL Cloud Manager] es el
 
 ## Novedades {#whats-new}
 
+* Los usuarios con los permisos necesarios ahora pueden editar el programa, lo que les permite hacer lo siguiente de forma autoservicio:
+
+   *Agregar la solución Sitios a un programa existente con Assets (o viceversa).
+   * Elimine Sitios (o Recursos) de un programa existente con Sitios y Recursos.
+   * Añadir (atrás) una solución se puede realizar en el programa existente o como un nuevo programa.
+
 * Se ha introducido una nueva herramienta de calidad de código para validar la configuración de Dispatcher del cliente (Herramienta de optimización de Dispatcher).
 
 * Los usuarios ahora pueden ver sus funciones de Cloud Manager seleccionando la opción **View Cloud Manager Role(s)** después de navegar al icono User Profile (parte superior derecha) del shell unificado.
@@ -29,7 +35,7 @@ La fecha de versión de la versión 2021.3.0 de [!UICONTROL Cloud Manager] es el
 
 * La etiqueta **Version** se ha vuelto a etiquetar como **Git Tag** en la pantalla de ejecución de la canalización de producción.
 
-* Las etiquetas que definen el comportamiento cuando métricas importantes no alcanzan el umbral definido se han vuelto a etiquetar para reflejar su verdadero comportamiento: Cancelar inmediatamente y Aprobar inmediatamente.
+* Las etiquetas que definen el comportamiento cuando métricas importantes no alcanzan el umbral definido se han vuelto a etiquetar para reflejar su verdadero comportamiento: *Cancelar inmediatamente* y Aprobar *Inmediatamente*.
 
 * Las listas de deprecación de clases y métodos se han actualizado en función de la versión `2021.3.4997.20210303T022849Z-210225` del SDK del Cloud Service de AEM.
 
