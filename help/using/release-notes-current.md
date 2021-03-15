@@ -4,9 +4,9 @@ seo-title: Notas de la versión de AEM Cloud Manager para 2021.3.0
 description: Siga esta página para obtener información sobre la versión 2021.3.0 de Cloud Manager
 seo-description: Siga esta página para obtener información sobre la versión 2021.3.0 de AEM Cloud Manager
 translation-type: tm+mt
-source-git-commit: 47424ea0e087f1f69db0aef8ca2122de2352a6e0
+source-git-commit: fde8cbd22ff36e0d30409f68e8a0523c814ccf90
 workflow-type: tm+mt
-source-wordcount: '308'
+source-wordcount: '315'
 ht-degree: 3%
 
 ---
@@ -18,6 +18,7 @@ En la siguiente sección se describen las notas de la versión generales de [!UI
 ## Fecha de la versión {#release-date}
 
 La fecha de versión de la versión 2021.3.0 de [!UICONTROL Cloud Manager] es el 11 de marzo de 2021.
+La próxima versión está planificada para el 08 de abril de 2021.
 
 ## Novedades {#whats-new}
 
