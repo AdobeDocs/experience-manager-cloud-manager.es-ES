@@ -1,23 +1,24 @@
 ---
 title: Notas de la versión 2020.3.0
 seo-title: Notas de la versión de AEM Cloud Manager para 2020.3.0
-description: Siga esta página para obtener información sobre la versión 2020.3.0 de Cloud Manager
+description: Siga esta página para obtener información sobre la versión 2020.3.0 de Cloud Manager.
 seo-description: Siga esta página para obtener información sobre la versión 2020.3.0 de AEM Cloud Manager
+feature: Información de la versión
 translation-type: tm+mt
-source-git-commit: e7da473a22bec1d3d9b3d39bf654af0c596fe86d
+source-git-commit: fb10d775c930b5bb475b497aac2fd59b053a9a00
 workflow-type: tm+mt
-source-wordcount: '162'
+source-wordcount: '164'
 ht-degree: 51%
 
 ---
 
 # Notas de la versión 2020.3.0 {#release-notes-for}
 
-La siguiente sección describe las Notas de revisión generales de la [!UICONTROL Cloud Manager] versión 2020.3.0.
+La siguiente sección describe las notas de la versión generales de la versión [!UICONTROL Cloud Manager] 2020.3.0.
 
 ## Fecha de la versión {#release-date}
 
-La fecha de versión de [!UICONTROL Cloud Manager] versión 2020.3.0 es el 05 de marzo de 2020.
+La fecha de versión de la versión 2020.3.0 de [!UICONTROL Cloud Manager] es el 5 de marzo de 2020.
 
 ## Novedades {#whats-new}
 
@@ -26,7 +27,7 @@ La fecha de versión de [!UICONTROL Cloud Manager] versión 2020.3.0 es el 05 de
 
 ## Corrección de errores {#bug-fixes}
 
-* Ciertas configuraciones de implementación podrían hacer que los registros de los pasos de implementación no estuvieran disponibles si la implementación fallaba.
-* Los errores específicos dentro de los pasos de implementación para programas de Managed Services podrían provocar que las ejecuciones subsiguientes no se inicio.
+* Ciertas configuraciones de implementación podrían hacer que los registros de los pasos de implementación no estén disponibles si la implementación falla.
+* Los errores específicos dentro de los pasos de implementación para programas de Managed Services podrían causar que las ejecuciones posteriores no se inicien.
 * La instancia efímera de SonarQube utilizada en el paso de compilación, en algunas ocasiones no se iniciaba dentro del tiempo de espera configurado.
 * En determinados proyectos, los objetos *ResourceResolver siempre se deben cerrar* produciría una Null Pointer Exception; sin embargo, esto no afectó a la ejecución de la canalización.
