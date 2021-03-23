@@ -8,10 +8,11 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: release-notes
 discoiquuid: 85a1dcf3-2eef-4ba8-b4d1-09e4a88c7bd0
+feature: Información de la versión
 translation-type: tm+mt
-source-git-commit: c35398110e9d8311bf58f217efdd082cf0cfd90a
+source-git-commit: c5d32d49782c899d013fcc60b9c4d2b67e9350ae
 workflow-type: tm+mt
-source-wordcount: '335'
+source-wordcount: '337'
 ht-degree: 4%
 
 ---
@@ -19,33 +20,33 @@ ht-degree: 4%
 
 # Notas de la versión 2019.1.0 {#release-notes-for}
 
-La [!UICONTROL Cloud Manager] versión 2018.9.0 incorpora compatibilidad con la prueba de programas de AEM Assets, así como tipos de canalización adicionales que ejecutan los pasos de generación y calidad del código, y se implementa de manera opcional en un entorno que no es de producción.
+La versión [!UICONTROL Cloud Manager] 2018.9.0 agrega compatibilidad con los programas de prueba de AEM Assets, así como tipos de canalización adicionales que ejecutan los pasos de compilación y calidad del código, y que opcionalmente se implementan en un entorno que no es de producción.
 
 ## Fecha de la versión {#release-date}
 
-La fecha de versión de [!UICONTROL Cloud Manager] versión 2019.1.0 es el 17 de enero de 2019.
+La fecha de versión de la versión 2019.1.0 de [!UICONTROL Cloud Manager] es el 17 de enero de 2019.
 
 ## Novedades {#whats-new}
 
-* Compatibilidad añadida para pruebas de rendimiento de AEM Assets. Consulte Configurar su [Canalización de CD/CI](configuring-pipeline.md)para obtener más detalles.
-* Compatibilidad añadida para tuberías que ejecutan solo pasos de creación y de calidad de código y tuberías que se implementan en entornos que no son de producción. Consulte la sección **Tuberías solo de calidad de código y sin producción** en [Configurar la canalización de CD/CI](configuring-pipeline.md) para obtener más detalles.
-* Se añadió la compatibilidad con variables de entorno personalizadas en el entorno de compilación.
-* Para los clientes con múltiples etapas o entornos de producción, la selección de a qué entorno se implementará como parte de la canalización de producción está disponible en la página [Configurar su canalización de CI/CD](configuring-pipeline.md).
-* httxt2dbm se ha agregado para generar contenedor.
+* Se ha agregado compatibilidad con las pruebas de rendimiento de AEM Assets. Consulte Configurar la [Canalización de CI/CD](configuring-pipeline.md)para obtener más información.
+* Se ha agregado compatibilidad con canalizaciones que ejecutan solo pasos de compilación y código de calidad y canalizaciones que se implementan en entornos que no son de producción. Consulte la sección **No producción y solo calidad de código** en [Configurar la canalización de CI/CD](configuring-pipeline.md) para obtener más información.
+* Se ha agregado compatibilidad con variables de entorno personalizadas en el entorno de compilación.
+* Para los clientes con varios entornos de producción o de fase, la selección de a qué entorno se implementará como parte de la canalización de producción está disponible en la página [Configure your CI/CD Pipeline](configuring-pipeline.md) .
+* se ha añadido httxt2dbm al contenedor de compilación.
 * Todos los elementos del menú de ayuda abren una nueva ficha.
 
 ## Corrección de errores {#bug-fixes}
 
 * Durante la edición de un programa, era posible anular la selección de todos los conjuntos de páginas.
 * El paso de aprobación tenía un título incorrecto.
-* En algunas situaciones, el logotipo de programa tenía un formato incorrecto.
-* Si solo se generara el paquete de configuración del despachante, el paso de implementación fallaría.
-* Los entornos que contenían instancias de espera en frío no se gestionaban correctamente.
-* Algunos programas terminados aparecieron en el mezclador de programas.
-* Si se agregó una nueva rama al repositorio de Git mientras se estaba editando la canalización, es posible que no se haya podido seleccionar inmediatamente.
-* En algunas pantallas, el icono de Developer Connection del menú Ayuda no estaba visible.
-* La tecla de tabulación no se gestionaba correctamente en el cuadro de diálogo de configuración de vaciado del despachante.
+* En algunas situaciones, el logotipo del programa estaba incorrectamente emparejado.
+* Si solo se creó el paquete de configuración de Dispatcher, el paso de implementación fallaría.
+* Los entornos que contenían instancias en espera en frío no se gestionaban correctamente.
+* Algunos programas terminados aparecieron en el conmutador de programas.
+* Si se agregó una nueva rama al repositorio de Git mientras se editaba la canalización, es posible que no se haya podido seleccionar inmediatamente.
+* En algunas pantallas, el icono Developer Connection del menú Ayuda no estaba visible.
+* La clave de tabulación no se gestionaba correctamente en el cuadro de diálogo de configuración de vaciado de Dispatcher.
 
 ## Problemas conocidos {#known-issues}
 
-* Al abrir un programa que tiene KPI de sitios pero no de recursos, todos los usuarios ven una tarjeta de llamada a acción con un botón **Configurar Programa**. Sin embargo, solo los usuarios en la función Propietario de la empresa pueden hacer clic en el botón **Configurar Programa**.
+* Al abrir un programa que tiene establecidos los KPI de Sites, pero no de Assets, todos los usuarios ven una tarjeta de llamada a la acción con un botón **Programa de instalación**. Sin embargo, solo los usuarios con la función Propietario empresarial pueden hacer clic en el botón **Programa de instalación**.
