@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: 83299ed8-4b7a-4b1c-bd56-1bfc7e7318d4
 translation-type: tm+mt
-source-git-commit: 7061910ae2cb0aae10876faf448838570f02d9be
+source-git-commit: f62c967feec3960499de93443548422167fedfa7
 workflow-type: tm+mt
-source-wordcount: '2593'
+source-wordcount: '2681'
 ht-degree: 4%
 
 ---
@@ -112,28 +112,30 @@ A continuación, la solución correcta es quitar la contraseña codificada.
 
 [!UICONTROL Cloud Manager] ejecuta el paso existente  ***AEM Security Heath*** Checkson después de la implementación e informa del estado a través de la interfaz de usuario. Los resultados se agregan de todas las instancias AEM del entorno.
 
+Estas mismas comprobaciones de estado se pueden ejecutar en cualquier momento a través de la consola web o el panel de operaciones.
+
 Si alguna de las **Instancias** informa de un error en una comprobación de estado determinada, toda la **Entorno** falla en esa comprobación de estado. Al igual que con las pruebas de calidad y rendimiento del código, estas comprobaciones de estado se organizan en categorías y se notifican utilizando el sistema de tres niveles. La única distinción es que no hay umbral en el caso de las pruebas de seguridad. Todos los controles de salud simplemente se aprueban o no.
 
 En la tabla siguiente se enumeran las comprobaciones actuales:
 
 | **Nombre** | **Implementación de comprobación de estado** | **Categoría** |
 |---|---|---|
-| Deserialización firewall Adjuntar preparación de API está en un estado aceptable | Disposición de la API de anexo de cortafuegos de deserialización | Importante |
-| El firewall de deserialización funciona | Cortafuegos de deserialización funcional | Importante |
-| Deserialización del firewall cargado | Cortafuegos de deserialización cargado | Importante |
-| La implementación de AuthorizableNodeName no expone el ID autorizado en el nombre/ruta del nodo. | Generación del nombre de nodo con autorización | Importante |
-| Se han cambiado las contraseñas predeterminadas | Cuentas de inicio de sesión predet. | Importante |
+| Deserialización firewall Adjuntar preparación de API está en un estado aceptable | [Disposición de la API de anexo de cortafuegos de deserialización](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/mitigating-serialization-issues.html?lang=en#security) | Importante |
+| El firewall de deserialización funciona | [Cortafuegos de deserialización funcional](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/mitigating-serialization-issues.html?lang=en#security) | Importante |
+| Deserialización del firewall cargado | [Cortafuegos de deserialización cargado](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/mitigating-serialization-issues.html?lang=en#security) | Importante |
+| La implementación de AuthorizableNodeName no expone el ID autorizado en el nombre/ruta del nodo. | [Generación del nombre de nodo con autorización](https://experienceleague.adobe.com/docs/experience-manager-64/administering/security/security-checklist.html?lang=en#security) | Importante |
+| Se han cambiado las contraseñas predeterminadas | [Cuentas de inicio de sesión predet.](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html?lang=en#users-and-groups-in-aem) | Importante |
 | El servlet de GET predeterminado de Sling está protegido de ataques DOS. | Sling Get Servlet | Importante |
 | El controlador de script Java de Sling está configurado correctamente | Sling Java Script Handler | Importante |
 | El controlador de script JSP de Sling está configurado correctamente | Controlador de script JSP de Sling | Importante |
 | SSL está configurado correctamente | Configuración SSL | Importante |
 | No se encontraron directivas de perfil de usuario obviamente inseguras | Acceso predet. del perfil de usuario | Importante |
-| El filtro de referente de Sling está configurado para evitar ataques de CSRF | Filtro de referente de Sling | Importante |
+| El filtro de referente de Sling está configurado para evitar ataques de CSRF | [Filtro de referente de Sling](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security-checklist.html?lang=en#security) | Importante |
 | El Administrador de bibliotecas HTML de Adobe Granite está configurado correctamente | Configuración del administrador de bibliotecas HTML de CQ | Importante |
 | El paquete de soporte CRXDE está deshabilitado | Compatibilidad con CRXDE | Importante |
 | El paquete y el servlet Sling DavEx están desactivados | Comprobación de estado de DavEx | Importante |
 | El contenido de muestra no está instalado | Paquetes de contenido de ejemplo | Importante |
-| Tanto el filtro de solicitud WCM como el filtro de depuración WCM están desactivados | Configuración de filtros WCM | Importante |
+| Tanto el filtro de solicitud WCM como el filtro de depuración WCM están desactivados | [Configuración de filtros WCM](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/osgi-configuration-settings.html?lang=en#configuring) | Importante |
 | El paquete y el servlet Sling WebDAV están correctamente configurados | Comprobación de estado de WebDAV | Importante |
 | El servidor web está configurado para evitar el secuestro de clics | Configuración de servidor web | Importante |
 | La replicación no utiliza el usuario &quot;admin&quot; | Replicación y usuarios de transporte | Información |
@@ -172,7 +174,7 @@ Cloud Manager ejecuta pruebas de rendimiento para programas de AEM Sites. La pru
 
       * Cada una de las 3000 páginas del conjunto Nuevas páginas se visita una vez - (200 * 0,5) / 3000) * 30 = 1
 
-### Pruebas y creación de informes {#testing-reporting}
+#### Pruebas y creación de informes {#testing-reporting}
 
 Cloud Manager ejecuta pruebas de rendimiento para programas de AEM Sites solicitando páginas (como usuario no autenticado de forma predeterminada) en el servidor de publicación de escenario durante un periodo de prueba de 30 minutos y midiendo las métricas (virtuales) generadas por el usuario (tiempo de respuesta, tasa de error, vistas por minuto, etc.) para cada página, así como varias métricas de nivel de sistema (CPU, memoria, datos de red) para todas las instancias.\
 En la tabla siguiente se resumen las métricas de prueba de rendimiento en relación con el uso del sistema de navegación de tres niveles:
@@ -230,10 +232,10 @@ Por ejemplo, si se utiliza una división 70/30, como se ve en la figura siguient
 
 1. **Pruebas e informes**
 
-   Cloud Manager creará una carpeta en la instancia de Autor, utilizando el nombre de usuario y la contraseña que configuró el CSE desde el paso 1 (Requisitos de integración), como se mencionó anteriormente, y cargará recursos en la carpeta utilizando una biblioteca de código abierto. Las pruebas ejecutadas por el paso de prueba de Assets se escriben con esta biblioteca de código abierto: https://github.com/adobe/toughday2. Tanto el tiempo de procesamiento de cada recurso como varias métricas a nivel de sistema se miden en la duración de las pruebas de 30 minutos. Esta capacidad puede cargar imágenes y documentos PDF.
+   Cloud Manager creará una carpeta en la instancia de Autor, utilizando el nombre de usuario y la contraseña configuradas por el CSE desde el paso 1 (Requisitos de integración), como se mencionó anteriormente, y cargará recursos en la carpeta utilizando una biblioteca de código abierto. Las pruebas ejecutadas por el paso de prueba de Assets se escriben utilizando esta [biblioteca de código abierto](https://github.com/adobe/toughday2). Tanto el tiempo de procesamiento de cada recurso como varias métricas a nivel de sistema se miden en la duración de las pruebas de 30 minutos. Esta capacidad puede cargar imágenes y documentos PDF.
 
    >[!NOTE]
-   >Puede obtener más información sobre la configuración de las pruebas de rendimiento en [Configuración de la canalización de CI/CD](configuring-pipeline.md). Consulte [Configuración del programa](setting-up-program.md) para obtener información sobre cómo configurar el programa y definir los KPI, consulte .
+   >Puede obtener más información sobre la configuración de las pruebas de rendimiento en [Configuración de la canalización de CI/CD](configuring-pipeline.md). Consulte [Configuración del programa](setting-up-program.md) para obtener información sobre cómo configurar el programa y definir los KPI.
 
 ### Gráficos de resultados de pruebas de rendimiento {#performance-testing-results-graphs}
 
