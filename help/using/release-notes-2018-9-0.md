@@ -8,42 +8,43 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: release-notes
 discoiquuid: 85a1dcf3-2eef-4ba8-b4d1-09e4a88c7bd0
+feature: Información de la versión
 translation-type: tm+mt
-source-git-commit: ace032fbb26235d87d61552a11996ec2bb42abce
+source-git-commit: c5d32d49782c899d013fcc60b9c4d2b67e9350ae
 workflow-type: tm+mt
-source-wordcount: '275'
-ht-degree: 5%
+source-wordcount: '277'
+ht-degree: 9%
 
 ---
 
 
 # Notas de la versión 2018.9.0 {#release-notes-for}
 
-La [!UICONTROL Cloud Manager] versión 2018.9.0 añade compatibilidad con una API basada en Adobe I/O, incluidos Eventos, para integrar el flujo de CD/CI de [!UICONTROL Cloud Manager] con otros sistemas. También comienza la reescritura de la capa UI en React.
+La versión [!UICONTROL Cloud Manager] 2018.9.0 añade compatibilidad con una API basada en Adobe I/O, incluidos los eventos, para integrar la canalización de CD/CI de [!UICONTROL Cloud Manager] con otros sistemas. También comienza la reescritura de la capa UI en React.
 
 ## Fecha de la versión {#release-date}
 
-La fecha de versión de [!UICONTROL Cloud Manager] versión 2018.9.0 es el 1 de noviembre de 2018.
+La fecha de versión de la versión 2018.9.0 de [!UICONTROL Cloud Manager] es el 1 de noviembre de 2018.
 
 ## Novedades {#whats-new}
 
-* **Canalización**  CI/CD: nueva API y sistema de Evento para integrar la canalización de CI/CD  [!UICONTROL Cloud Manager]de la empresa con otros sistemas. Consulte la [!UICONTROL Cloud Manager] Documentación de API (https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html) para obtener más información.
+* **Canalización de CI/CD** : nuevo sistema de API y evento para integrar la canalización de CI/CD de  [!UICONTROL Cloud Manager]la integración con otros sistemas. Consulte la documentación de la API [!UICONTROL Cloud Manager] (https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html) para obtener más información.
 
-* **UI** : introducción de una nueva capa de interfaz de usuario que ofrece una mayor capacidad de respuesta.
+* **IU** : Introducción a la nueva capa de IU que es más interactiva.
 
 ## Corrección de errores {#bug-fixes}
 
-* En [!UICONTROL Cloud Manager] 2018.8.0, las duraciones de las páginas de Actividad se enumeraban en minutos y horas, pero esa información no se reflejaba en el encabezado de la tabla.
-* En raras ocasiones, los clientes no podían realizar el inicio del nuevo asistente del proyecto de la aplicación.
-* La etiqueta del botón en el cuadro de diálogo del asistente del proyecto de la aplicación nuevo podía resultar confusa.
-* En algunas circunstancias, si se hace clic en el botón Detalles de la página Actividad, se redirige a la página Información general.
-* Algunas circunstancias excepcionales e inesperadas hicieron que faltara una tarjeta en la página Información general.
-* El icono Recursos se mostraba en la página de Lista de Programas para todos los clientes.
-* Cuando se producían errores en el back-end, a veces parecía que una ejecución de canalización permanecía en el paso *Validar*.
-* En determinadas circunstancias, la longitud de la descripción del programa se calculó erróneamente.
+* En [!UICONTROL Cloud Manager] 2018.8.0, las duraciones de la página Actividad se enumeraban en minutos y horas, pero esa información no se reflejaba en el encabezado de la tabla.
+* En raras ocasiones, los clientes no podían iniciar el nuevo asistente de proyecto de aplicación.
+* La etiqueta de botón del nuevo cuadro de diálogo del asistente del proyecto de la aplicación era engañosa.
+* En algunas circunstancias, si se hace clic en el botón Detalles de la página Actividad , se redirigirá a la página Información general .
+* Algunas circunstancias excepcionales e inesperadas provocaban que faltara una tarjeta en la página Información general .
+* El icono Recursos se muestra en la página Lista de programas para todos los clientes.
+* Cuando había errores en el back-end, a veces parecía que una ejecución de canalización permanecía en el paso *Validar*.
+* En determinadas circunstancias, se calculó incorrectamente la duración de la descripción del programa.
 
 ## Problemas conocidos {#known-issues}
 
-* Las ramas creadas con el Asistente para proyectos de aplicación no pueden contener guiones.
-* Es posible que la barra lateral de notificaciones de Adobe [!UICONTROL Experience Cloud] no cargue las notificaciones de forma coherente. Sin embargo, las notificaciones son visibles en el Adobe [!UICONTROL Experience Cloud] y, si están configuradas, se seguirán enviando por correo electrónico.
+* Las ramas creadas mediante el Asistente para proyectos de aplicación no pueden contener guiones.
+* Es posible que la barra lateral de notificaciones del Adobe [!UICONTROL Experience Cloud] no cargue las notificaciones de forma coherente. Sin embargo, las notificaciones son visibles en el Adobe [!UICONTROL Experience Cloud] y, si se configuran, se envían por correo electrónico.
 
