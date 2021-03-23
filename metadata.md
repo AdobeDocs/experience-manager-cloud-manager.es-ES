@@ -1,29 +1,27 @@
 ---
+solution: Experience Manager
+type: Documentación
 cloud: experience-cloud
-solution-title: Información y asistencia
-solution-hub-url: https://helpx.adobe.com/support/experience-manager/6-4.html
-solution-image: null
-getting-started-title: Introducción
-getting-started-url: https://helpx.adobe.com/experience-manager/get-started.html
-tutorials-title: Tutoriales
-tutorials-url: https://helpx.adobe.com/experience-manager/kt/index/aem-6-4-videos.html
-git-repo: https://github.com/AdobeDocs/experience-manager-cloud-manager.en
+git-repo: https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-manager.es-ES
 translation-type: tm+mt
-source-git-commit: 36ca23648c18762e7104b3b0470e99f6178a9294
+source-git-commit: c5d32d49782c899d013fcc60b9c4d2b67e9350ae
+workflow-type: tm+mt
+source-wordcount: '112'
+ht-degree: 96%
 
 ---
 
 
-# Metadata for internal use
+# Metadatos para uso interno
 
-The metadata.md file includes repo-level metadata that passes through to user guide TOC.md files in the repo. If you want to change metadata.md content for any user guide, do so in any TOC.md file.
+El archivo metadata.md incluye metadatos de repositorios que pasan a los archivos TOC.md de la guía del usuario en el repositorio. Si desea cambiar el contenido de metadata.md para cualquier guía de usuario, hágalo en cualquier archivo TOC.md.
 
-| metadata | what it does |
+| metadata | función |
 |--- |--- |
 | solution-title | Se utiliza en el encabezado del artículo como vínculo |
-| solution-hub-url | Opens helpx hub page |
-| solution-icon | Muestra el icono de solución junto al título de la solución. No implementado aún |
+| solution-hub-url | Abre la página central de ayuda |
+| solution-icon | Muestra el icono de la solución junto al título de la solución. No implementado aún |
 | getting-started-url | Vínculo a la página de introducción de ayuda |
-| tutorials-url | Vínculo a tutoriales de vídeo: tutoriales de ayuda o tutoriales de KT |
-| niveles de mini toc | Determina el número de niveles de encabezado que aparecen en el carril derecho. el valor predeterminado es 2 |
+| tutorials-url | Vínculo a videotutoriales, tutoriales de ayuda o tutoriales de KT |
+| mini-toc-levels | Determina el número de niveles de encabezado que aparecen en el carril derecho. El valor predeterminado es 2 |
 | git-repo | Especifica la ubicación de la repo principal para uso interno |
