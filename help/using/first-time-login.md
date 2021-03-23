@@ -8,18 +8,19 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: getting-started
 discoiquuid: 2221d1d5-dbc2-4175-8371-60344f932a82
+feature: Introducción
 translation-type: tm+mt
-source-git-commit: 2005b7e7689d3bc0656f92ecdbe368519f0d52a9
+source-git-commit: fb10d775c930b5bb475b497aac2fd59b053a9a00
 workflow-type: tm+mt
-source-wordcount: '247'
-ht-degree: 8%
+source-wordcount: '249'
+ht-degree: 9%
 
 ---
 
 
 # Primer inicio de sesión {#first-time-login}
 
-Una vez que haya configurado las configuraciones generales para [!UICONTROL Cloud Manager], estará listo para usar la interfaz de usuario (UI) para [!UICONTROL Cloud Manager].
+Una vez que haya configurado las configuraciones generales para [!UICONTROL Cloud Manager], ya estará listo para usar la interfaz de usuario (IU) para [!UICONTROL Cloud Manager].
 
 >[!NOTE]
 >Según las funciones asignadas en [!UICONTROL Cloud Manager] y el estado de la aplicación, verá diferentes pantallas mientras utiliza la [!UICONTROL Cloud Manager] IU.
@@ -28,7 +29,7 @@ Una vez que haya configurado las configuraciones generales para [!UICONTROL Clou
 
 ### Programas de Cloud Manager {#programs-video}
 
-El siguiente vídeo proporciona información general sobre los Programas de Cloud Manager que representan conjuntos de entornos de AEM que admiten conjuntos lógicos de iniciativas empresariales, que normalmente corresponden a un acuerdo de nivel de servicio (SLA) adquirido.
+El siguiente vídeo proporciona información general sobre los programas de Cloud Manager que representan conjuntos de entornos AEM que admiten conjuntos lógicos de iniciativas empresariales, que normalmente corresponden a un contrato de nivel de servicio (SLA) adquirido.
 
 >[!VIDEO](https://video.tv.adobe.com/v/26313/)
 
@@ -42,7 +43,7 @@ El siguiente vídeo proporciona información general sobre los Programas de Clou
 
    ![](assets/first-timea1.png)
 
-1. Se muestra el panel para [!UICONTROL Cloud Manager].
+1. Se muestra el tablero de [!UICONTROL Cloud Manager].
 
    ![](assets/FirstLogin1.png)
 
@@ -50,12 +51,12 @@ El siguiente vídeo proporciona información general sobre los Programas de Clou
 
    >[!NOTE]
    >
-   >Consulte [Configure el Programa](https://helpx.adobe.com/experience-manager/cloud-manager/using/setting-up-program.html) para completar los siguientes pasos.
+   >Consulte [Configuración del programa](https://helpx.adobe.com/experience-manager/cloud-manager/using/setting-up-program.html) para completar los pasos siguientes.
 
 ## Tutorial de vídeo {#video-tutorial-two}
 
-### Ficha Actividad del Administrador de nube {#activity-video}
+### Ficha Actividad de Cloud Manager {#activity-video}
 
-Cloud Manager ofrece una vista consolidada de la actividad de un Programa, enumerando todas las ejecuciones de la canalización de CD/CI, tanto de producción como de no producción, lo que permite la visibilidad de la actividad pasada y presente, y los detalles de cualquier actividad se pueden revisar.
+Cloud Manager proporciona una vista consolidada de la actividad de un programa, que enumera todas las ejecuciones de canalización de CI/CD, tanto de producción como de no producción, lo que permite ver la actividad actual y pasada, y puede revisar los Detalles de cualquier actividad.
 
 >[!VIDEO](https://video.tv.adobe.com/v/26313/)
