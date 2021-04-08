@@ -4,7 +4,7 @@ description: Siga esta página para obtener información sobre la versión 2021.
 feature: Información de la versión
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
 translation-type: tm+mt
-source-git-commit: 0c33fd9f1af4c98564c9fd14a468fc3bf27744ee
+source-git-commit: 1f7f87a4b944d1fadc708958a96a1bda7d41da5d
 workflow-type: tm+mt
 source-wordcount: '192'
 ht-degree: 7%
@@ -32,11 +32,11 @@ La próxima versión está planificada para el 06 de mayo de 2021.
 
 * Se ha aclarado el mensaje de error al iniciar una canalización cuando se eliminaba un entorno.
 
-* Los paquetes OSGi proporcionados por los proyectos de Eclipse ahora se excluyen de la regla.
+* Los paquetes OSGi proporcionados por los proyectos de Eclipse ahora se excluyen de la regla `CQBP-84--dependencies`.
 
 ## Corrección de errores {#bug-fixes}
 
-* Errores poco frecuentes y transitorios que pueden producirse en el paso Prueba de recursos de la canalización de producción.
+* Errores raros y transitorios que pueden producirse en el paso *Prueba de recursos* de la canalización de producción.
 
 * Una barra diagonal en la prueba de carga de la canalización de producción estaba causando un error 404.
 
