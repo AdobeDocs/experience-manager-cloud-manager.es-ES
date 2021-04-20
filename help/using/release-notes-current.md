@@ -1,7 +1,7 @@
 ---
 title: Notas de la versión 2021.4.0
 description: Siga esta página para obtener información sobre la versión 2021.4.0 de Cloud Manager
-feature: Información de la versión
+feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
 translation-type: tm+mt
 source-git-commit: 1f7f87a4b944d1fadc708958a96a1bda7d41da5d

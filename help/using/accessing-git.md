@@ -3,7 +3,7 @@ title: Acceder a Git
 seo-title: Acceder a Git
 description: Esta página describe cómo puede acceder y administrar el repositorio Git.
 seo-description: Siga esta página para aprender a acceder y administrar su repositorio de Git.
-feature: Repositorios de Git
+feature: Git Repositories
 translation-type: tm+mt
 source-git-commit: c5d32d49782c899d013fcc60b9c4d2b67e9350ae
 workflow-type: tm+mt

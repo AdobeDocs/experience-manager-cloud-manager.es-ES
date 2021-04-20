@@ -3,7 +3,7 @@ title: Administrar versiones del proyecto de Maven
 seo-title: Administrar versiones del proyecto de Maven
 description: Obtenga más información sobre Maven Project Version Handling.
 seo-description: Siga esta página para obtener más información sobre Maven Project Version Handling.
-feature: Introducción
+feature: Getting Started
 translation-type: tm+mt
 source-git-commit: fb10d775c930b5bb475b497aac2fd59b053a9a00
 workflow-type: tm+mt

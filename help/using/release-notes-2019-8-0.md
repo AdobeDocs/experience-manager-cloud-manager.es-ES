@@ -3,7 +3,7 @@ title: Notas de la versión 2019.8.0
 seo-title: Notas de la versión de AEM Cloud Manager para 2019.8.0
 description: Siga esta página para obtener información sobre la versión 2019.8.0 de Cloud Manager.
 seo-description: Siga esta página para obtener información sobre la versión 2019.8.0 de AEM Cloud Manager.
-feature: Información de la versión
+feature: Release Information
 translation-type: tm+mt
 source-git-commit: fb10d775c930b5bb475b497aac2fd59b053a9a00
 workflow-type: tm+mt

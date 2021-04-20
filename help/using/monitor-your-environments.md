@@ -3,7 +3,7 @@ title: Supervisar los entornos
 seo-title: Supervisar los entornos
 description: Obtenga información sobre cómo monitorizar los entornos en Cloud Manager
 seo-description: Siga esta página para obtener más información sobre la supervisión del sistema en Cloud Manager, que se realiza mediante la observación de las instancias individuales dentro de un entorno y el seguimiento de una variedad de métricas para cada instancia.
-feature: Entornos
+feature: Environments
 translation-type: tm+mt
 source-git-commit: fb10d775c930b5bb475b497aac2fd59b053a9a00
 workflow-type: tm+mt

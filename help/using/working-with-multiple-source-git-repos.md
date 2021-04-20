@@ -1,7 +1,7 @@
 ---
 title: Uso de repositorios Git de varias fuentes
 description: 'Uso de varios repositorios Git de origen: Cloud Manager'
-feature: Repositorios de Git
+feature: Git Repositories
 translation-type: tm+mt
 source-git-commit: fb10d775c930b5bb475b497aac2fd59b053a9a00
 workflow-type: tm+mt

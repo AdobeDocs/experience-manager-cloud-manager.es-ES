@@ -3,7 +3,7 @@ title: Integración de Git con Adobe Cloud Manager
 description: Serie de vídeos que describen la configuración e integración de un repositorio de Git administrado por el cliente (local) con Adobe Cloud Manager.
 seo-title: Integración de Git con Adobe Cloud Manager
 seo-description: Serie de vídeos que describen la configuración e integración de un repositorio de Git administrado por el cliente (local) con Adobe Cloud Manager.
-feature: Repositorios de Git
+feature: Git Repositories
 translation-type: tm+mt
 source-git-commit: fb10d775c930b5bb475b497aac2fd59b053a9a00
 workflow-type: tm+mt
