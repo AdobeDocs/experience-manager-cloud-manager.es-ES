@@ -8,15 +8,15 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: 83299ed8-4b7a-4b1c-bd56-1bfc7e7318d4
-feature: CI-CD Pipeline, Test Results
+feature: Canalización CI-CD, resultados de la prueba
+exl-id: 6a574858-a30e-4768-bafc-8fe79f928294
 translation-type: tm+mt
-source-git-commit: 12a7d6199983e2d19ef401051f60e3f24bb6d4f8
+source-git-commit: 9e7c6f7241900432155a1a32abfb440fb3f93172
 workflow-type: tm+mt
-source-wordcount: '2685'
+source-wordcount: '2694'
 ht-degree: 4%
 
 ---
-
 
 # Comprender los resultados de la prueba {#understand-your-test-results}
 
@@ -35,7 +35,7 @@ Hay tres puertas en la canalización:
 Para cada una de estas puertas, hay una estructura de tres niveles para los problemas identificados por la puerta.
 
 * **Crítico** : Son problemas identificados por la puerta que causan un fallo inmediato de la canalización.
-* **Importante** : Son problemas identificados por la puerta que hacen que la canalización introduzca un estado pausado. Un administrador de implementación, un administrador de proyectos o un propietario de empresa pueden anular los problemas, en cuyo caso la canalización continúa, o pueden aceptar los problemas, en cuyo caso la canalización se detiene con un error.
+* **Importante** : Son problemas identificados por la puerta que hacen que la canalización introduzca un estado pausado. Un administrador de implementación, un administrador de proyectos o un propietario de empresa pueden anular los problemas, en cuyo caso la canalización continúa, o pueden aceptar los problemas, en cuyo caso la canalización se detiene con un error. La anulación de errores importantes está sujeta a un [Timeout](deploying-code.md#timeouts).
 * **Información** : Son problemas identificados por la puerta que se proporcionan exclusivamente con fines informativos y no tienen impacto en la ejecución de la canalización.
 
 >[!NOTE]
@@ -274,4 +274,3 @@ Las imágenes siguientes muestran los gráficos de prueba de rendimiento:
 ![](assets/understand_test-results-screen1.png)
 
 ![](assets/screen_shot_2018-09-05at83933pm.png)
-
