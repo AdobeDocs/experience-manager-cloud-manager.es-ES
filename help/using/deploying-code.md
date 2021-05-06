@@ -8,15 +8,15 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: 832a4647-9b83-4a9d-b373-30fe16092b15
-feature: Code Deployment
+feature: Implementación de código
+exl-id: 3d6610e5-24c2-4431-ad54-903d37f4cdb6
 translation-type: tm+mt
-source-git-commit: c5d32d49782c899d013fcc60b9c4d2b67e9350ae
+source-git-commit: 9e7c6f7241900432155a1a32abfb440fb3f93172
 workflow-type: tm+mt
-source-wordcount: '959'
+source-wordcount: '994'
 ht-degree: 1%
 
 ---
-
 
 # Implementar el código {#deploy-your-code}
 
@@ -92,6 +92,19 @@ Una vez configurada la canalización de producción (repositorio, entorno y ento
 
    ![](assets/Production_Deployment2.png)
 
+## Tiempos de espera {#timeouts}
+
+Los siguientes pasos agotarán el tiempo de espera si se deja esperando los comentarios del usuario:
+
+| Etapa | Tiempo de espera |
+|--- |--- |
+| Prueba de calidad de código | 7 días |
+| Pruebas de seguridad | 7 días |
+| Pruebas de rendimiento | 7 días |
+| Solicitud de aprobación | 7 días |
+| Programar implementación de producción | 7 días |
+| Compatibilidad con CSE | 7 días |
+
 ## Proceso de implementación {#deployment-process}
 
 En la siguiente sección se describe cómo se implementan los paquetes AEM y Dispatcher en la fase de fase y en la fase de producción.
@@ -149,5 +162,3 @@ Las implementaciones de producción generalmente siguen los mismos pasos que se 
 1. Implemente AEM paquetes para publicar2 y el paquete de Dispatcher para dispatcher2 en paralelo y vacíe la caché de Dispatcher.
 1. Vuelva a colocar Dispatcher2 en el equilibrador de carga.
 Este proceso continúa hasta que la implementación haya llegado a todos los editores y distribuidores de la topología.
-
-
