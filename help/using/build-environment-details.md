@@ -1,15 +1,14 @@
 ---
 title: Explicación del entorno de compilación
 description: Siga esta página para obtener más información sobre los entornos
-feature: Environments
-translation-type: tm+mt
-source-git-commit: fb10d775c930b5bb475b497aac2fd59b053a9a00
+feature: Entornos
+exl-id: b3543320-66d4-4358-8aba-e9bdde00d976
+source-git-commit: 0a5556729e64c9e8736d13b357db001dd57bc03a
 workflow-type: tm+mt
-source-wordcount: '769'
+source-wordcount: '773'
 ht-degree: 0%
 
 ---
-
 
 # Explicación del entorno de compilación {#build-environment-details}
 
@@ -34,7 +33,7 @@ Cloud Manager crea y prueba su código mediante un entorno de compilación espec
    * `mvn --batch-mode org.apache.maven.plugins:maven-clean-plugin:3.1.0:clean -Dmaven.clean.failOnError=false`
    * `mvn --batch-mode org.jacoco:jacoco-maven-plugin:prepare-agent package`
 
-* Maven se configura a nivel de sistema con un archivo settings.xml que incluye automáticamente el repositorio de Adobe público **Artifact**.
+* Maven se configura a nivel de sistema con un archivo settings.xml que incluye automáticamente el repositorio de Adobe público **Artifact** mediante un perfil denominado `adobe-public`.
 Consulte [Repositorio de Maven Público de Adobe](https://repo.adobe.com/) para obtener más información.
 
 >[!NOTE]
