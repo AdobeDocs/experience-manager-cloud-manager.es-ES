@@ -10,10 +10,9 @@ topic-tags: using
 discoiquuid: 832a4647-9b83-4a9d-b373-30fe16092b15
 feature: Implementación de código
 exl-id: 3d6610e5-24c2-4431-ad54-903d37f4cdb6
-translation-type: tm+mt
-source-git-commit: 9e7c6f7241900432155a1a32abfb440fb3f93172
+source-git-commit: df2f598f91201d362f54b17e4092ff6bd6a72cec
 workflow-type: tm+mt
-source-wordcount: '994'
+source-wordcount: '1020'
 ht-degree: 1%
 
 ---
@@ -21,6 +20,9 @@ ht-degree: 1%
 # Implementar el código {#deploy-your-code}
 
 ## Implementación de código con Cloud Manager {#deploying-code-with-cloud-manager}
+
+>[!NOTE]
+>Para obtener más información sobre la implementación del código para Cloud Manager en AEM como Cloud Service, consulte [aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en#using-cloud-manager).
 
 Una vez configurada la canalización de producción (repositorio, entorno y entorno de prueba), estará listo para implementar el código.
 
