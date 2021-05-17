@@ -8,17 +8,19 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: d2338c74-3278-49e6-a186-6ef62362509f
-feature: Code Quality Rules
-translation-type: tm+mt
-source-git-commit: 12a7d6199983e2d19ef401051f60e3f24bb6d4f8
+feature: Reglas de calidad de código
+exl-id: 7d118225-5826-434e-8869-01ee186e0754
+source-git-commit: df2f598f91201d362f54b17e4092ff6bd6a72cec
 workflow-type: tm+mt
-source-wordcount: '3625'
+source-wordcount: '3654'
 ht-degree: 4%
 
 ---
 
-
 # Reglas de calidad de código personalizadas {#custom-code-quality-rules}
+
+>[!NOTE]
+>Para obtener más información sobre las reglas de calidad de código personalizadas para Cloud Manager en AEM como Cloud Service, consulte [aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/test-results/custom-code-quality-rules.html?lang=en#using-cloud-manager).
 
 En esta página se describen las reglas de calidad de código personalizadas ejecutadas por Cloud Manager, creadas sobre la base de las prácticas recomendadas de ingeniería de AEM.
 
@@ -961,4 +963,3 @@ La siguiente sección resalta las comprobaciones DOT ejecutadas por Cloud Manage
 * [DOT: los filtros de granja de publicación de Dispatcher deben especificar los patrones de sufijo de Sling permitidos de forma lista de permitidos](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-filters-should-specify-the-allowed-sling-suffix-patterns-in-an-allow-list-manner)
 
 * [DOT: la directiva &quot;Requerir todo concedido&quot; no debe usarse en una sección de Directorio de host virtual con una ruta de directorio raíz](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-require-all-granted-directive-should-not-be-used-in-a-virtualhost-directory-section-with-a-root-directory-path)
-
