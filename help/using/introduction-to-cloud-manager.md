@@ -8,16 +8,15 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: introduction
 discoiquuid: ebcc91a5-be9e-4684-8146-d88f4013d4d1
-feature: Getting Started
+feature: Introducción
 level: Beginner
-translation-type: tm+mt
-source-git-commit: fb10d775c930b5bb475b497aac2fd59b053a9a00
+exl-id: 58344d8a-b869-4177-a9cf-6a8b7dfe9588
+source-git-commit: 81c14382821de6b2d249000a79799747a6d9cb19
 workflow-type: tm+mt
-source-wordcount: '752'
-ht-degree: 85%
+source-wordcount: '805'
+ht-degree: 79%
 
 ---
-
 
 # Introducción a [!UICONTROL Cloud Manager]{#introduction-to-cloud-manager}
 
@@ -30,7 +29,9 @@ ht-degree: 85%
 
 ## Introducción {#introduction}
 
-[!UICONTROL Cloud Manager], parte de Adobe Experience Manager (AEM) en Cloud, permite a las organizaciones administrar su Experience Manager en la nube. Incluye un marco de integración y entrega continuas (CI/CD) que permite a los equipo de TI y a los asociados de la implementación acelerar la entrega de las personalizaciones o actualizaciones sin poner en riesgo el rendimiento o la seguridad.
+[!UICONTROL Cloud Manager], parte de Adobe Experience Manager (AEM) en Cloud, permite a las organizaciones administrar su Experience Manager en la nube. Incluye un marco de trabajo de integración y entrega continuas (CI/CD) que permite a los equipo de TI y a los asociados de la implementación acelerar la entrega de las personalizaciones o actualizaciones sin poner en riesgo el rendimiento o la seguridad.
+
+Este sitio de documentación describe específicamente las funciones y características de Cloud Manager disponibles para los clientes de Adobe Managed Services (AMS). La documentación sobre las funciones y características de Cloud Manager para AEM como clientes Cloud Service se encuentra en [Implementación de aplicaciones para AEM como Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/home.html?lang=en).
 
 Gracias al portal de autoservicio para clientes [!UICONTROL Cloud Manager], las **organizaciones** pueden realizar y aprovechar al máximo las siguientes opciones:
 
