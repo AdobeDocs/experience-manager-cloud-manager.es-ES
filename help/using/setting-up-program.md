@@ -5,7 +5,7 @@ description: Después de la incorporación, el propietario de la empresa tendrá
 seo-description: 'Después de la incorporación, el propietario de la empresa deberá realizar alguna configuración inicial de Adobe AEM Cloud Manager. Esto implica configurar la descripción del programa y definir los KPI que se utilizarán para las pruebas de rendimiento. '
 feature: Introducción
 exl-id: 795c7112-d564-4fbf-96a1-152a6c286bf2
-source-git-commit: f14725f87d5c4c3afe63d4bfc924962a92705c7c
+source-git-commit: c39390f34cf4ab6c9b2d5957b169c3c2cb43e6d3
 workflow-type: tm+mt
 source-wordcount: '729'
 ht-degree: 2%
@@ -78,7 +78,7 @@ Durante la configuración del programa, se especifican los KPI específicos de l
    >[!NOTE]
    >Siempre puede editar el programa una vez que el programa inicial ya esté configurado. Siga los pasos a continuación para obtener más información.
 
-## Edición de un programa
+## Edición de un programa {#editing-program}
 
 1. Vaya al programa desde la pantalla de inicio de **Cloud Manager**.
 
