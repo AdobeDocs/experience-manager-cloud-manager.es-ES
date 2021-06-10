@@ -10,7 +10,7 @@ topic-tags: using
 discoiquuid: 83299ed8-4b7a-4b1c-bd56-1bfc7e7318d4
 feature: Canalización CI-CD, resultados de la prueba
 exl-id: 6a574858-a30e-4768-bafc-8fe79f928294
-source-git-commit: df2f598f91201d362f54b17e4092ff6bd6a72cec
+source-git-commit: 5111a918b8063ab576ef587dc3c8d66ad976fc1a
 workflow-type: tm+mt
 source-wordcount: '2722'
 ht-degree: 4%
@@ -53,7 +53,7 @@ Este paso evalúa la calidad del código de la aplicación. Es el objetivo centr
 En la prueba de calidad del código, se analiza el código fuente para asegurarse de que cumple determinados criterios de calidad. Actualmente, esto se implementa mediante una combinación de SonarQube, un examen a nivel de paquete de contenido usando OakPAL y la validación de Dispatcher usando la Herramienta de Optimización de Dispatcher. Hay más de 100 reglas que combinan reglas genéricas de Java y reglas específicas de AEM. Algunas de las reglas específicas del AEM se crean en función de las prácticas recomendadas de AEM ingeniería y se denominan [Reglas de calidad de código personalizado](/help/using/custom-code-quality-rules.md).
 
 >[!NOTE]
->Puede descargar la lista completa de reglas [aquí](/help/using/assets/CodeQuality-rules-AMS.xlsx).
+>Puede descargar la lista completa de reglas [aquí](/help/using/assets/CodeQuality-rules-latest-AMS.xlsx).
 
 Los resultados de este paso se entregan como *Clasificación*. La tabla siguiente resume las clasificaciones de varios criterios de prueba:
 
