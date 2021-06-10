@@ -2,10 +2,10 @@
 title: Notas de la versión 2021.5.0
 description: Siga esta página para obtener información sobre la versión 2021.5.0 de Cloud Manager
 feature: Información de la versión
-source-git-commit: 5111a918b8063ab576ef587dc3c8d66ad976fc1a
+source-git-commit: 196e9947b732b8cd70a8a0f7fc72ef9900561125
 workflow-type: tm+mt
-source-wordcount: '235'
-ht-degree: 5%
+source-wordcount: '228'
+ht-degree: 6%
 
 ---
 
@@ -19,7 +19,6 @@ La siguiente sección describe las notas de la versión generales de la versión
 ## Fecha de la versión {#release-date}
 
 La fecha de versión de la versión 2021.5.0 de [!UICONTROL Cloud Manager] es el 6 de mayo de 2021.
-La próxima versión está planificada para el 10 de junio de 2021.
 
 ## Novedades {#whats-new}
 
