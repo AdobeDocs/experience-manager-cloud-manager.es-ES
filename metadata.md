@@ -1,12 +1,11 @@
 ---
-solution: Experience Manager
+solution: Experience Manager, Experience Manager Cloud Manager
 type: Documentation
 cloud: Experience Cloud
 git-repo: https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-manager.es-ES
-translation-type: tm+mt
-source-git-commit: 7477bfedd20c04c799530ee07496ab596bbd1eab
+source-git-commit: 1d94b19c5d2016bab678a0d03b14b9ddf74ff020
 workflow-type: tm+mt
-source-wordcount: '112'
+source-wordcount: '111'
 ht-degree: 96%
 
 ---
