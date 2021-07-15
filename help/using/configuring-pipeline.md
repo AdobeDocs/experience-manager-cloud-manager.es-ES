@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: ba6c763a-b78a-439e-8c40-367203a719b3
 feature: Canalización de CI-CD
 exl-id: d489fa3c-df1e-480b-82d0-ac8cce78a710
-source-git-commit: 83fcc49c7e3e3742930a7179b27f899bff3c4ae1
+source-git-commit: 1c103b1c43a1e5fe7a6fa27110fc692bba6fb8b2
 workflow-type: tm+mt
-source-wordcount: '1280'
+source-wordcount: '1308'
 ht-degree: 2%
 
 ---
@@ -183,22 +183,23 @@ En la pantalla de inicio, estas canalizaciones se enumeran en una tarjeta nueva:
 
 1. Acceda al mosaico **Canalizaciones que no son de producción** desde la pantalla de inicio de Cloud Manager.
 
-   ![](assets/Non-Production-Pipeline.png)
+   ![](/help/using/assets/non-prod-add.png)
 
-1. Haga clic en el botón Add para especificar el nombre de la canalización, el tipo de canalización y la rama Git.
+1. Haga clic en el botón **Add** para especificar el nombre de la canalización, el tipo de canalización y la rama de Git.
 
    Además, también puede configurar el Déclencheur de implementación y el Comportamiento de error importante desde Opciones de canalización.
 
    ![](assets/non-prod-pipe.png)
 
-1. Haga clic en **Guardar** y la canalización se mostrará en la tarjeta de la pantalla principal con tres acciones:
+1. Haga clic en **Guardar** y la canalización se mostrará en la tarjeta de la pantalla principal con cinco acciones:
 
    * **Editar** : permite editar la configuración de la canalización
-   * **Detail** : muestra la última ejecución de la canalización (si existe)
+   * **Detalles** : muestra la última ejecución de la canalización (si existe)
    * **Generar** : navega a la página de ejecución desde la que se puede ejecutar la canalización
+   * **Acceso a información de repositorios** : permite al usuario obtener la información necesaria para acceder al repositorio de Git de Cloud Manager.
+   * **Más información** : navega para comprender el recurso de documentación de canalización de CI/CD.
 
-   ![](assets/Non-prod-2.png)
-
+      ![](assets/prod-one.png)
    >[!NOTE]
    >
    >Mientras se está ejecutando la canalización, se muestra el paso actual y solo está disponible la acción **Details**.
