@@ -2,10 +2,10 @@
 title: Notas de la versión 2021.7.0
 description: Siga esta página para obtener información sobre la versión 2021.7.0 de Cloud Manager
 feature: Información de la versión
-source-git-commit: ee701dd2d0c3921455a0960cbb6ca9a3ec4793e7
+source-git-commit: 1da4ceef0d89223580800d9018c46aaec51f8927
 workflow-type: tm+mt
-source-wordcount: '243'
-ht-degree: 6%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -27,7 +27,9 @@ La próxima versión está planificada para el 12 de agosto de 2021.
 
 * La dirección IP de salida saliente ahora se registrará en el archivo de registro de paso de compilación.
 
-* Los botones Administrar Git se han cambiado a Acceso Información de Git y el cuadro de diálogo se ha actualizado visualmente.
+* Los botones **Administrar Git** se han cambiado a **Información de Git de acceso** y el cuadro de diálogo se ha actualizado visualmente.
+
+* La versión del tipo de archivo del proyecto AEM utilizado por Cloud Manager se ha actualizado a la versión 28.
 
 * Algunas reconfiguraciones de topología inesperadas podrían provocar que los informes de prueba detallados ya no estén disponibles en la página de detalles de ejecución de la canalización.
 
