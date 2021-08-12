@@ -2,10 +2,10 @@
 title: Notas de la versión 2021.8.0
 description: Siga esta página para obtener información sobre la versión 2021.8.0 de Cloud Manager
 feature: Información de la versión
-source-git-commit: 460964e8882a30d9289a25ec7c4162221031b0da
+source-git-commit: 510c523423a8d7cf9ad4c5ba2af11ff12df2b1cc
 workflow-type: tm+mt
-source-wordcount: '186'
-ht-degree: 7%
+source-wordcount: '169'
+ht-degree: 8%
 
 ---
 
@@ -32,7 +32,5 @@ La próxima versión está planificada para el 9 de septiembre de 2021.
 * La versión del tipo de archivo del proyecto AEM utilizado por Cloud Manager se ha actualizado a la versión 28.
 
 ## Corrección de errores {#bug-fixes}
-
-* *Actualizar estado* disponible no se debe mostrar cuando la última versión sea menor que la versión actual.
 
 * En ocasiones, cuando una canalización se activa dos veces por algún motivo, el resultado es que una de las ejecuciones falla con el error *no puede actualizar el estado de ejecución de la canalización*.
