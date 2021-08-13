@@ -1,0 +1,37 @@
+---
+title: Acceder a Git
+seo-title: Acceso a repositorios
+description: Esta página describe cómo puede acceder y administrar el repositorio Git.
+seo-description: Siga esta página para aprender a acceder y administrar su repositorio de Git.
+feature: Repositorios de Git
+exl-id: 403fc93d-60fc-4439-8c9d-0a512ca34458
+source-git-commit: c4deb06615652736ff7584566507a2b42a88bfb1
+workflow-type: tm+mt
+source-wordcount: '154'
+ht-degree: 1%
+
+---
+
+# Acceso a repositorios {#accessing-repos}
+
+Puede acceder a su repositorio Git y administrarlo mediante la administración de cuentas Git de autoservicio desde la interfaz de usuario de Cloud Manager.
+
+## Uso de la administración de cuentas de Git de autoservicio {#self-service-git}
+
+Utilice el botón **Administrar Git** disponible en la interfaz de usuario de Cloud Manager, especialmente en la tarjeta de canalización.
+
+1. Vaya a la página *Program&#39;s Overview* y a la tarjeta Canalizaciones .
+
+1. Verá la opción **Administrar Git** para acceder y administrar su repositorio Git.
+
+   ![](assets/manage-git1.png)
+
+   Además, si selecciona la pestaña **Non-Production** canalización, también verá la opción **Manage Git**.
+
+   ![](assets/manage-git-new2.png)
+
+>[!NOTE]
+>
+>La opción **Administrar Git** es visible para los usuarios en la función Desarrollador o Administrador de implementación. Al hacer clic en este botón, se abre un cuadro de diálogo que permite al usuario encontrar la URL de su repositorio Git de Cloud Manager junto con su nombre de usuario y contraseña.
+
+![](assets/manage-git3.png)
