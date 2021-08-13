@@ -5,10 +5,10 @@ description: Esta página describe cómo puede acceder y administrar el reposito
 seo-description: Siga esta página para aprender a acceder y administrar su repositorio de Git.
 feature: Repositorios de Git
 exl-id: 403fc93d-60fc-4439-8c9d-0a512ca34458
-source-git-commit: 1d278a47e74ddb50e70dc9d5d29e738a1616768b
+source-git-commit: 5bbe76a46b7a15ccbab85c4487d2a20aaf59a4e7
 workflow-type: tm+mt
-source-wordcount: '154'
-ht-degree: 0%
+source-wordcount: '223'
+ht-degree: 4%
 
 ---
 
@@ -18,20 +18,30 @@ Puede acceder a su repositorio Git y administrarlo mediante la administración d
 
 ## Uso de la administración de cuentas de Git de autoservicio {#self-service-git}
 
-Utilice el botón **Administrar Git** disponible en la interfaz de usuario de Cloud Manager, especialmente en la tarjeta de canalización.
+Utilice el botón **Access Repo Info** disponible en la interfaz de usuario de Cloud Manager, de forma más destacada en la tarjeta de canalización.
 
-1. Vaya a la página *Program&#39;s Overview* y a la tarjeta Canalizaciones .
+1. Vaya a la tarjeta **Canalizaciones** desde la página **Información general del programa**.
 
-1. Verá la opción **Administrar Git** para acceder y administrar su repositorio Git.
+1. Verá la opción **Access Repo Info** para acceder y administrar su repositorio Git.
 
-   ![](assets/manage-git1.png)
+   ![](assets/access-repo1.png)
 
-   Además, si selecciona la pestaña **Non-Production** canalización, también verá la opción **Manage Git**.
+   Además, si selecciona la pestaña **Non-Production** canalización, también verá la opción **Access Repo Info**.
 
-   ![](assets/manage-git-new2.png)
+   ![](assets/access-repo-nonprod.png)
 
->[!NOTE]
->
->La opción **Administrar Git** es visible para los usuarios en la función Desarrollador o Administrador de implementación. Al hacer clic en este botón, se abre un cuadro de diálogo que permite al usuario encontrar la URL de su repositorio Git de Cloud Manager junto con su nombre de usuario y contraseña.
 
-![](assets/manage-git3.png)
+   >[!NOTE]
+   >La opción **Access Repo Info** es visible para los usuarios con la función de Desarrollador o Administrador de implementación. Al hacer clic en este botón, se abre un cuadro de diálogo que permite al usuario encontrar la URL de su repositorio Git de Cloud Manager junto con su nombre de usuario y contraseña.
+
+   ![](assets/access-repo-create.png)
+
+   Las consideraciones importantes para administrar su Git en Cloud Manager son:
+
+   * **URL**: La URL del repositorio
+   * **Nombre de usuario**: El nombre de usuario
+   * **Contraseña**: Valor que se muestra cuando se hace clic en el botón **Generar contraseña**.
+
+
+      >[!NOTE]
+      >Un usuario puede extraer una copia de su código y realizar cambios en el repositorio de código local. Cuando esté listo, el usuario puede devolver los cambios de código al repositorio de código remoto en Cloud Manager.
