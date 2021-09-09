@@ -10,7 +10,7 @@ topic-tags: getting-started
 discoiquuid: 2221d1d5-dbc2-4175-8371-60344f932a82
 feature: Getting Started
 exl-id: eb043437-8566-4a8d-8c5c-c8cf1d33daeb
-source-git-commit: eea3d82a803e7dcd172ce4c0b3506f952f46ff51
+source-git-commit: d582f3681cc1b14fddee8decc9229adb5f75a6d7
 workflow-type: tm+mt
 source-wordcount: '201'
 ht-degree: 10%
@@ -27,8 +27,6 @@ Una vez que haya configurado las configuraciones generales para [!UICONTROL Clou
 ## Inicio de sesión por primera vez {#logging-in-for-the-first-time}
 
 1. Inicie sesión en el **Adobe[!UICONTROL Experience Cloud]** y verá la lista de **Programas**.
-
-   ![](assets/screen_shot_2018-06-04at120643pm.png)
 
 1. Seleccione el programa (por ejemplo, **We.Retail Global**). Una vez que vea la tarjeta del programa en la página de aterrizaje, seleccione **...** para ver las opciones de menú disponibles.   Seleccione **Cloud Manager** para navegar a la página **Información general** de Cloud Manager.
 
