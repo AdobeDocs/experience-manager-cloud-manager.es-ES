@@ -1,9 +1,10 @@
 ---
 title: Repositorios de Cloud Manager
 description: Repositorios de Cloud Manager
-source-git-commit: 7bda34be143d2d7587e61c09dab642f3419dfad9
+exl-id: 384b197d-f7a7-4022-9b16-9d83ab788966
+source-git-commit: 2a1f471f2e4148a424688ab9858c534935c3fe69
 workflow-type: tm+mt
-source-wordcount: '420'
+source-wordcount: '425'
 ht-degree: 0%
 
 ---
@@ -51,7 +52,7 @@ Los submódulos Git se pueden usar para combinar el contenido de varias ramas en
 $ git submodule update --init
 ```
 
-Esto comprobará cada submódulo en el directorio apropiado. Esta técnica es una alternativa potencial a https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/managing-code/working-with-multiple-source-git-repositories.html para organizaciones que se sienten cómodas con el uso de submódulos Git y no desean administrar un proceso de combinación externo.
+Esto comprobará cada submódulo en el directorio apropiado. Esta técnica es una alternativa potencial a [trabajar con varios repositorios Git de origen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/managing-code/working-with-multiple-source-git-repositories.html) para organizaciones que se sientan cómodos con el uso de submódulos Git y no desean administrar un proceso de combinación externo.
 
 Por ejemplo, supongamos que hay tres repositorios, cada uno de los cuales contiene una sola rama denominada main . En el repositorio &quot;principal&quot;, es decir, el configurado en las canalizaciones, la rama principal tiene un archivo pom.xml que declara los proyectos contenidos en los otros dos repositorios:
 
@@ -101,4 +102,3 @@ Cuando utilice submódulos Git, tenga en cuenta lo siguiente:
 * La URL de Git debe estar exactamente en la sintaxis descrita anteriormente. Por motivos de seguridad, no incruste credenciales en estas direcciones URL.
 * Solo se admiten submódulos en la raíz de la rama.
 * Las referencias de los submódulos Git se almacenan en confirmaciones de Git específicas. Como resultado, cuando se realizan cambios en el repositorio de submódulos, es necesario actualizar la confirmación a la que se hace referencia, por ejemplo, utilizando `git submodule update --remote` .
-
