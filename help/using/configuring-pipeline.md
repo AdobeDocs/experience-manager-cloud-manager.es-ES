@@ -1,27 +1,27 @@
 ---
 title: Configurar la canalización de CD/CI
-seo-title: Configurar la canalización de CD/CI
+seo-title: Configure your CI/CD Pipeline
 description: Siga esta página para configurar las opciones de canalización desde Cloud Manager.
-seo-description: 'Antes de comenzar a implementar el código, debe configurar la canalización desde AEM Cloud Manager. '
+seo-description: Before you start to deploy your code, you must configure your pipeline settings from the AEM Cloud Manager.
 uuid: 35fd56ac-dc9c-4aca-8ad6-36c29c4ec497
 contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 content-type: reference
 discoiquuid: ba6c763a-b78a-439e-8c40-367203a719b3
-feature: Canalización de CI-CD
+feature: CI-CD Pipeline
 exl-id: d489fa3c-df1e-480b-82d0-ac8cce78a710
-source-git-commit: 1c103b1c43a1e5fe7a6fa27110fc692bba6fb8b2
+source-git-commit: dde991d2dbd02f4b4145f79d67b6d2f1244e5648
 workflow-type: tm+mt
-source-wordcount: '1308'
-ht-degree: 2%
+source-wordcount: '1378'
+ht-degree: 1%
 
 ---
 
 # Configurar la canalización de CD/CI {#configure-your-ci-cd-pipeline}
 
 >[!NOTE]
->Para obtener información sobre cómo configurar la canalización de CI/CD para Cloud Manager en AEM como Cloud Service, consulte [aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=en#using-cloud-manager).
+>Para obtener información sobre cómo configurar la canalización de CI/CD para Cloud Manager en AEM as a Cloud Service, consulte [aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=en#using-cloud-manager).
 
 La siguiente página explica cómo configurar la **Canalización**. Para obtener más información conceptual sobre el funcionamiento de la canalización, consulte [CI/CD pipeline overview](ci-cd-pipeline.md).
 
@@ -133,7 +133,7 @@ Como administrador de implementación, tiene la oportunidad de configurar un con
 
 Puede configurar un conjunto independiente de rutas para la implementación de fase y producción. Si se configura, estas acciones de caché se realizarán como parte del paso de canalización de implementación, justo después de implementar cualquier paquete de contenido. Estas configuraciones utilizan AEM comportamiento estándar de Dispatcher: invalidate realiza una invalidación de caché, similar a cuando el contenido se activa de autor a publicación; flush realiza una eliminación de caché.
 
-En general, es preferible el uso de la acción de invalidación, pero puede haber casos en los que sea necesario vaciar, especialmente cuando se utilizan AEM bibliotecas de cliente HTML.
+En general, es preferible el uso de la acción de invalidación, pero puede haber casos en los que sea necesario vaciar, especialmente cuando se utilizan AEM bibliotecas de cliente de HTML.
 
 >[!NOTE]
 >
@@ -179,30 +179,53 @@ Las canalizaciones no productivas de CI/CD se dividen en dos categorías, las ca
 
 >[!VIDEO](https://video.tv.adobe.com/v/26316/)
 
+### Adición de una canalización que no sea de producción {#add-non-production-pipeline}
+
 En la pantalla de inicio, estas canalizaciones se enumeran en una tarjeta nueva:
 
-1. Acceda al mosaico **Canalizaciones que no son de producción** desde la pantalla de inicio de Cloud Manager.
+1. Acceda a la tarjeta **Canalizaciones** desde la pantalla de inicio de Cloud Manager. Haga clic en **+Add** y seleccione **Add Non-Production Pipeline**.
 
-   ![](/help/using/assets/non-prod-add.png)
+   ![](/help/using/assets/configure-pipelines/nonprod-pipeline-add1.png)
 
-1. Haga clic en el botón **Add** para especificar el nombre de la canalización, el tipo de canalización y la rama de Git.
+1. **Aparece el cuadro de diálogo Añadir**  canalización no de producción . Seleccione el tipo de canalización que desea crear, ya sea **Canalización de calidad de código** o **Canalización de implementación**.
 
-   Además, también puede configurar el Déclencheur de implementación y el Comportamiento de error importante desde Opciones de canalización.
+   Además, también puede configurar **Déclencheur de implementación** y **Comportamiento de error importante** desde **Opciones de implementación**. Haga clic en **Continue**.
 
-   ![](assets/non-prod-pipe.png)
+   ![](/help/using/assets/configure-pipelines/nonprod-pipeline-add2.png)
 
-1. Haga clic en **Guardar** y la canalización se mostrará en la tarjeta de la pantalla principal con cinco acciones:
 
-   * **Editar** : permite editar la configuración de la canalización
-   * **Detalles** : muestra la última ejecución de la canalización (si existe)
-   * **Generar** : navega a la página de ejecución desde la que se puede ejecutar la canalización
-   * **Acceso a información de repositorios** : permite al usuario obtener la información necesaria para acceder al repositorio de Git de Cloud Manager.
+1. La canalización que no es de producción recién creada ahora se muestra en la tarjeta **Canalizaciones**.
+
+   ![](/help/using/assets/configure-pipelines/nonprod-pipeline-add4.png)
+
+
+   La canalización se muestra en la tarjeta de la pantalla principal con tres acciones, como se muestra a continuación:
+
+   * **Añadir** : permite añadir una nueva canalización.
+   * **Acceso a información de repositorios** : permite al usuario obtener la información necesaria para acceder al repositorio Git de Cloud Manager.
    * **Más información** : navega para comprender el recurso de documentación de canalización de CI/CD.
 
-      ![](assets/prod-one.png)
-   >[!NOTE]
-   >
-   >Mientras se está ejecutando la canalización, se muestra el paso actual y solo está disponible la acción **Details**.
+### Edición de una canalización que no es de producción {#editing-nonprod-pipeline}
+
+Puede editar las configuraciones de canalización desde la **Tarjeta de canalización** de la página **Información general del programa**.
+
+Siga los pasos a continuación para editar la canalización configurada que no sea de producción:
+
+1. Vaya a la tarjeta **Canalizaciones** desde la página **Información general del programa**.
+
+1. Seleccione la canalización que no es de producción y haga clic en **...**. Haga clic en **Editar**, como se muestra en la figura siguiente.
+
+
+1. Aparece el cuadro de diálogo **Editar canalización de producción**.
+
+   1. La pestaña **Configuration** permite actualizar el **Pipeline Name**, el **Deployment Déclencheur** y el **Importante Metrics Failure Behavior**.
+
+      >[!NOTE]
+      >Consulte [Adición y administración de repositorios](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) para obtener información sobre cómo agregar y administrar repositorios en Cloud Manager.
+
+
+1. Haga clic en **Update** una vez que haya terminado de editar la canalización que no es de producción.
+
 
 ## Pasos siguientes {#the-next-steps}
 
