@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: ba6c763a-b78a-439e-8c40-367203a719b3
 feature: CI-CD Pipeline
 exl-id: d489fa3c-df1e-480b-82d0-ac8cce78a710
-source-git-commit: dde991d2dbd02f4b4145f79d67b6d2f1244e5648
+source-git-commit: e748383fb627ac6ecf69f1b6e313bb5710fbf444
 workflow-type: tm+mt
-source-wordcount: '1378'
+source-wordcount: '1379'
 ht-degree: 1%
 
 ---
@@ -215,13 +215,14 @@ Siga los pasos a continuación para editar la canalización configurada que no s
 
 1. Seleccione la canalización que no es de producción y haga clic en **...**. Haga clic en **Editar**, como se muestra en la figura siguiente.
 
+   ![](/help/using/assets/configure-pipelines/non-prod-pipeline-edit1.png)
 
-1. Aparece el cuadro de diálogo **Editar canalización de producción**.
+1. Aparece el cuadro de diálogo **Editar canalización de producción** que le permite actualizar el **Nombre de canalización**, **Repositorio**, **Git Branch**, **Déclencheur de implementación** y **Comportamiento de error de métricas importantes**.
 
-   1. La pestaña **Configuration** permite actualizar el **Pipeline Name**, el **Deployment Déclencheur** y el **Importante Metrics Failure Behavior**.
+   ![](/help/using/assets/configure-pipelines/non-prod-pipeline-edit2.png)
 
-      >[!NOTE]
-      >Consulte [Adición y administración de repositorios](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) para obtener información sobre cómo agregar y administrar repositorios en Cloud Manager.
+   >[!NOTE]
+   >Consulte [Adición y administración de repositorios](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) para obtener información sobre cómo agregar y administrar repositorios en Cloud Manager.
 
 
 1. Haga clic en **Update** una vez que haya terminado de editar la canalización que no es de producción.
