@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: ba6c763a-b78a-439e-8c40-367203a719b3
 feature: CI-CD Pipeline
 exl-id: d489fa3c-df1e-480b-82d0-ac8cce78a710
-source-git-commit: bdbee51ff0a61c2a72ff7ae3a742e2dd817c671a
+source-git-commit: fd172a7168074630e85f3b110e032f783d39ddca
 workflow-type: tm+mt
-source-wordcount: '1451'
+source-wordcount: '1491'
 ht-degree: 1%
 
 ---
@@ -98,7 +98,9 @@ Siga estos pasos para configurar el comportamiento y las preferencias de la cana
       * **La aprobación después de la** implementación de la fase funciona de forma similar a la aprobación antes de la implementación de producción, pero se produce inmediatamente después del paso de implementación de la fase, es decir, antes de que se realice la prueba, en comparación con la aprobación antes de la implementación de producción, que se realiza después de completar todas las pruebas.
 
       * **Saltar equilibrador de carga**
-   1. Seleccione **Dispatcher Configurations** para Stage.
+   1. Seleccione **Dispatcher Configurations** para Stage. Introduzca la ruta, seleccione la acción en **Type** y haga clic en **Add Path**. Puede especificar hasta 100 rutas por entorno.
+
+      ![](/help/using/assets/configure-pipelines/dispatcher-stage.png)
 
    1. Seleccione las **Opciones de implementación** para producción. Ahora define los parámetros que controlan la implementación de producción. Las tres opciones disponibles son las siguientes:
 
@@ -114,7 +116,9 @@ Siga estos pasos para configurar el comportamiento y las preferencias de la cana
          >Si la opción **Programado** está seleccionada, puede programar la implementación de producción en la canalización **después** de la implementación de la fase (y **Utilizar aprobación de GoLive**, si se ha habilitado) para esperar a que se establezca una programación. El usuario también puede elegir ejecutar la implementación de producción inmediatamente.
          >
          >Consulte [Implementar el código](deploying-code.md) para configurar la programación de implementación o ejecutar la producción inmediatamente.
-   1. Configure las **Configuraciones de Dispatcher** para producción.
+   1. Configure las **Configuraciones de Dispatcher** para producción. Introduzca la ruta, seleccione la acción en **Type** y haga clic en **Add Path**. Puede especificar hasta 100 rutas por entorno.
+
+      ![](/help/using/assets/configure-pipelines/dispatcher-prod.png)
 
       Como administrador de implementación, tiene la oportunidad de configurar un conjunto de rutas de contenido que serán **invalidadas** o **vaciadas** desde la caché de Dispatcher AEM para instancias de publicación, mientras se configura o edita la canalización.
 
