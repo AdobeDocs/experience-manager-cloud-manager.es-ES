@@ -1,39 +1,52 @@
 ---
-title: Notas de la versión 2021.9.0
-description: Siga esta página para obtener información sobre la versión 2021.9.0 de Cloud Manager
+title: Notas de la versión 2021.10.0
+description: Siga esta página para obtener información sobre la versión 2021.10.0 de Cloud Manager
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
-source-git-commit: 9e9836ad8793540a57048a6e43e4d158abf91579
+source-git-commit: b28f8f1bedb92428d332716510cbf0fd714fada6
 workflow-type: tm+mt
-source-wordcount: '179'
-ht-degree: 6%
+source-wordcount: '365'
+ht-degree: 3%
 
 ---
 
-# Notas de la versión 2021.9.0 {#release-notes-for}
+# Notas de la versión 2021.10.0 {#release-notes-for}
 
-La siguiente sección describe las notas de la versión generales de la versión [!UICONTROL Cloud Manager] 2021.9.0.
+En la siguiente sección se describen las notas de la versión generales de [!UICONTROL Cloud Manager] versión 2021.10.0.
 
 >[!NOTE]
 >Consulte las [Notas de la versión actuales](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/release-notes-cloud-manager/release-notes-cm-current.html?lang=en#getting-access) para ver las últimas notas de la versión de Cloud Manager en AEM as a Cloud Service.
 
 ## Fecha de la versión {#release-date}
 
-La fecha de versión de la versión 2021.9.0 de [!UICONTROL Cloud Manager] es el 9 de septiembre de 2021.
-La próxima versión está planificada para el 7 de octubre de 2021.
+La fecha de versión de la versión 2021.10.0 de [!UICONTROL Cloud Manager] es el 14 de octubre de 2021.
+La próxima versión está planificada para el 4 de noviembre de 2021.
 
 ## Novedades {#whats-new}
 
-* La versión del tipo de archivo del proyecto AEM utilizado por Cloud Manager se ha actualizado a la versión 30.
+* Las canalizaciones de producción ahora se pueden ejecutar en modo de &quot;emergencia&quot;, evitando pasos de prueba de seguridad y rendimiento para implementaciones de emergencia.
 
-* Se han actualizado las tarjetas de programa de la página de aterrizaje de Cloud Manager y la experiencia asociada.
+* Para mantener la coherencia con Cloud Service, ahora se hará referencia a las canalizaciones de implementación existentes y se etiquetarán en la interfaz de usuario como canalizaciones &quot;Apilamiento completo&quot;.
 
-* El registro de pasos de calidad del código ahora incluye información detallada sobre el registro en el proceso de digitalización de OakPal.
+* La tarjeta de canalización se ha actualizado para que ahora muestre una sola cara integrada que muestre tanto las canalizaciones de producción como las que no son de producción, y el usuario puede seleccionar Ejecutar/Pausar/Reanudar directamente en el menú de acción asociado con cada canalización.
 
-* Las opciones del menú de la página Actividad ahora incluirán la opción &quot;Descargar registro&quot; para las ejecuciones completadas del Generador de códigos. Si selecciona esta opción, se descargará el registro del paso de compilación.
+* Un usuario con la función de administrador de implementación ahora puede eliminar la canalización de producción de forma autoservicio mediante la interfaz de usuario.
 
-* Al hacer clic directamente en la tarjeta de programa, ahora accederá a la página **Información general** de Cloud Manager.
+* Se han actualizado las experiencias de adición y edición de canalización para que ahora utilicen modelos modernos y conocidos.
+
+* Los usuarios de Cloud Manager ahora pueden enviar comentarios directamente desde la interfaz de usuario mediante el botón **Comentarios** en la parte superior derecha de la página de aterrizaje.
+
+* Los gráficos SLA anuales ahora se pueden descargar desde la interfaz de usuario de Cloud Manager.
+
+* La calidad del código y las ejecuciones de canalizaciones que no sean de producción ahora utilizarán un proceso de clonación superficial más eficiente durante el paso de compilación, lo que conllevará un tiempo de compilación más rápido para los clientes con repositorios Git especialmente grandes.
+
+* La documentación de la API de Cloud Manager ahora incluye un área de reproducción interactiva que permite a los usuarios que iniciaron sesión experimentar con la API desde su explorador. Consulte [Cloud Manager API Playground](https://www.adobe.io/experience-cloud/cloud-manager/reference/playground/) para obtener más información.
+
+* La información del objeto de la tarjeta de programa será más descriptiva si se desactiva una opción de selección en &quot;Navegar a&quot;. Ahora dirá &quot;Un entorno de producción no existe&quot;.
+
 
 ## Corrección de errores {#bug-fixes}
 
-* Se copió una dirección URL incorrecta al seleccionar la opción de menú Copiar URL de la pantalla Repositorios.
+* Cuando los datos leídos desde sistemas internos no se introducían correctamente, podía hacer que los datos no relacionados proporcionados por los CSE no se reflejaran correctamente en Cloud Manager.
+
+* En situaciones específicas de los clientes, se ignoraban los artefactos no válidos descargados durante el paso de compilación que deberían haber causado un error de compilación.

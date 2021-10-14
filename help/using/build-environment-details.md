@@ -1,11 +1,11 @@
 ---
 title: Explicación del entorno de compilación
 description: Siga esta página para obtener más información sobre los entornos
-feature: Entornos
+feature: Environments
 exl-id: b3543320-66d4-4358-8aba-e9bdde00d976
-source-git-commit: ee701dd2d0c3921455a0960cbb6ca9a3ec4793e7
+source-git-commit: 17f79fdc7278cae532485570a6e2b8700683ef0d
 workflow-type: tm+mt
-source-wordcount: '999'
+source-wordcount: '996'
 ht-degree: 0%
 
 ---
@@ -17,6 +17,7 @@ Cloud Manager crea y prueba su código mediante un entorno de compilación espec
 * El entorno de compilación está basado en Linux, derivado de Ubuntu 18.04.
 * Apache Maven 3.6.0 está instalado.
 * Las versiones de Java instaladas son Oracle JDK 8u202, Azul Zulu 8u292, Oracle JDK 11.0.2 y Azul Zulu 11.0.11.
+* De forma predeterminada, la variable de entorno JAVA_HOME está configurada en `/usr/lib/jvm/jdk1.8.0_202` que contiene el Oracle JDK 8u202. Consulte la sección [Alternate Maven Execution JDK Version](#alternate-maven) para obtener más información.
 * Hay algunos paquetes de sistema adicionales instalados que son necesarios:
 
    * bzip2
@@ -80,7 +81,7 @@ El [Complemento Maven Toolchain](https://maven.apache.org/plugins/maven-toolchai
 
 Esto hará que todos los plugins Maven con conocimiento de herramientas utilicen el Oracle JDK, versión 11.
 
-Al utilizar este método, el propio Maven sigue ejecutándose utilizando el JDK predeterminado (Oracle 8). Por lo tanto, la comprobación o aplicación de la versión de Java a través de complementos como [Apache Maven Enforcer Plugin](https://maven.apache.org/enforcer/maven-enforcer-plugin/) no funciona y estos complementos no deben usarse.
+Al utilizar este método, el propio Maven sigue ejecutándose utilizando el JDK predeterminado (Oracle 8) y la variable de entorno `JAVA_HOME` no cambia. Por lo tanto, la comprobación o aplicación de la versión de Java a través de complementos como [Apache Maven Enforcer Plugin](https://maven.apache.org/enforcer/maven-enforcer-plugin/) no funciona y estos complementos no deben usarse.
 
 Las combinaciones de proveedor/versión disponibles actualmente son:
 
@@ -98,11 +99,7 @@ Las combinaciones de proveedor/versión disponibles actualmente son:
 
 También es posible seleccionar Azul 8 o Azul 11 como JDK para toda la ejecución de Maven. A diferencia de las opciones de toolchain, esto cambia el JDK utilizado para todos los plugins a menos que también se establezca la configuración de toolchain en cuyo caso la configuración de toolchain se sigue aplicando a los plugins Maven según las cadenas de herramientas. Como resultado, la comprobación y aplicación de la versión de Java mediante el [plugin Apache Maven Enforcer](https://maven.apache.org/enforcer/maven-enforcer-plugin/) funcionará.
 
-Para ello, cree un archivo denominado `.cloudmanager/java-version` en la rama del repositorio de Git utilizada por la canalización. Este archivo puede tener el contenido 11 u 8. Se ignora cualquier otro valor. Si se especifica 11, se usa Azul 11. Si se especifica 8, se usa Azul 8.
-
->[!NOTE]
->En una futura versión de Cloud Manager, que actualmente se estima estará en octubre de 2021, el JDK predeterminado cambiará y el predeterminado será Azul 11. Los proyectos que no sean compatibles con Java 11 deben crear este archivo con el contenido 8 lo antes posible para garantizar que no se vean afectados por este conmutador.
-
+Para ello, cree un archivo denominado `.cloudmanager/java-version` en la rama del repositorio de Git utilizada por la canalización. Este archivo puede tener el contenido 11 u 8. Se ignora cualquier otro valor. Si se especifica 11, se usa Azul 11 y la variable de entorno JAVA_HOME se establece en `/usr/lib/jvm/jdk-11.0.11`. Si se especifica 8, se usa Azul 8 y la variable de entorno JAVA_HOME se establece en `/usr/lib/jvm/jdk-8.0.292`.
 
 ## Variables de entorno {#environment-variables}
 
@@ -114,7 +111,7 @@ Por ejemplo, si se está realizando la minimización de JavaScript en tiempo de 
 
 Para admitir esto, Cloud Manager agrega estas variables de entorno estándar al contenedor de compilación para cada ejecución.
 
-| **Nombre de variable** | **Definición** |
+| **Nombre de la variable** | **Definición** |
 |---|---|
 | CM_BUILD | Siempre se configura como &quot;true&quot; |
 | RAMA | La rama configurada para la ejecución |

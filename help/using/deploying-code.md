@@ -1,18 +1,18 @@
 ---
 title: Implementar el código
-seo-title: Implementar el código
+seo-title: Deploy your Code
 description: Proporciona información general sobre el proceso de implementación en Cloud Manager
-seo-description: Aprenda a implementar el código una vez que haya configurado la canalización (repositorio, entorno y entorno de prueba)
+seo-description: Learn how to deploy your code once you have configured your pipeline (repository, environment, and testing environment)
 uuid: 4e3807e1-437e-4922-ba48-0bcadf293a99
 contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: 832a4647-9b83-4a9d-b373-30fe16092b15
-feature: Implementación de código
+feature: Code Deployment
 exl-id: 3d6610e5-24c2-4431-ad54-903d37f4cdb6
-source-git-commit: df2f598f91201d362f54b17e4092ff6bd6a72cec
+source-git-commit: 2fcefda1e30871d44e3a1353470a4728904d7598
 workflow-type: tm+mt
-source-wordcount: '1020'
+source-wordcount: '1220'
 ht-degree: 1%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 1%
 ## Implementación de código con Cloud Manager {#deploying-code-with-cloud-manager}
 
 >[!NOTE]
->Para obtener más información sobre la implementación del código para Cloud Manager en AEM como Cloud Service, consulte [aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en#using-cloud-manager).
+>Para obtener más información sobre la implementación de código para Cloud Manager en AEM as a Cloud Service, consulte [aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en#using-cloud-manager).
 
 Una vez configurada la canalización de producción (repositorio, entorno y entorno de prueba), estará listo para implementar el código.
 
@@ -164,3 +164,32 @@ Las implementaciones de producción generalmente siguen los mismos pasos que se 
 1. Implemente AEM paquetes para publicar2 y el paquete de Dispatcher para dispatcher2 en paralelo y vacíe la caché de Dispatcher.
 1. Vuelva a colocar Dispatcher2 en el equilibrador de carga.
 Este proceso continúa hasta que la implementación haya llegado a todos los editores y distribuidores de la topología.
+
+## Modo de ejecución de canalización de emergencia {#emergency-pipeline}
+
+En situaciones críticas, es posible que los clientes de Adobe Managed Services necesiten implementar cambios de código en sus entornos de ensayo y producción sin esperar a que se ejecute un ciclo de prueba completo de Cloud Manager.
+
+Para solucionar estas situaciones, la canalización de producción de Cloud Manager se puede ejecutar en modo *Emergency*. Cuando se utiliza este modo, no se ejecutan los pasos de prueba de seguridad y rendimiento; todos los demás pasos, incluidos los pasos de aprobación configurados, se ejecutan como en el modo de ejecución normal de la canalización.
+
+>[!NOTE]
+>Los ingenieros de éxito del cliente activan la capacidad Modo de ejecución de canalización de emergencia de forma programática.
+
+### Uso del modo de ejecución de canalización de emergencia {#using-emergency-pipeline}
+
+Al iniciar la ejecución de una canalización de producción, si esta función se ha activado, puede iniciar la ejecución en modo normal o de emergencia desde el cuadro de diálogo, como se muestra en la figura siguiente.
+
+![](assets/execution-emergency1.png)
+
+Además, al ver la página de detalles de ejecución de la canalización para una ejecución ejecutada en modo de emergencia, las rutas de exploración en la parte superior de la pantalla muestran un indicador de que el modo de emergencia se ha utilizado para esta ejecución en particular.
+
+![](assets/execution-emergency2.png)
+
+
+La creación de una ejecución de canalización en este modo de emergencia también se puede realizar mediante la API o CLI de Cloud Manager. Para iniciar una ejecución en modo de emergencia, envíe una solicitud de PUT al extremo de ejecución de la canalización con el parámetro de consulta `?pipelineExecutionMode=EMERGENCY` o, cuando utilice la CLI:
+
+```
+$ aio cloudmanager:pipeline:create-execution PIPELINE_ID --emergency
+```
+
+>[!IMPORTANT]
+>El uso del indicador `--emergency` puede requerir la actualización a la última versión `aio-cli-plugin-cloudmanager`.
