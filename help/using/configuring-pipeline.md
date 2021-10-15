@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: ba6c763a-b78a-439e-8c40-367203a719b3
 feature: CI-CD Pipeline
 exl-id: d489fa3c-df1e-480b-82d0-ac8cce78a710
-source-git-commit: 78a6c939cdb7c4335891e27209b221fc3e6efec2
+source-git-commit: 1e3dc17d28ab69dcd6b2337280bb38ba07352beb
 workflow-type: tm+mt
-source-wordcount: '1729'
+source-wordcount: '1834'
 ht-degree: 1%
 
 ---
@@ -199,6 +199,9 @@ Puede eliminar la canalización de producción de la tarjeta Canalizaciones:
 
    ![](/help/using/assets/configure-pipelines/prod-delete.png)
 
+   >[!NOTE]
+   >Un usuario con la función Gestor de implementación ahora puede eliminar la canalización de producción de forma autoservicio mediante la opción **Delete** de la tarjeta Canalización.
+
 ## Canalizaciones de calidad de código y no producción
 
 Además de la canalización principal que se implementa en las fases y la producción, los clientes pueden configurar canalizaciones adicionales, denominadas **Canalizaciones que no son de producción**. Estas canalizaciones siempre ejecutan los pasos de compilación y calidad del código. Opcionalmente, también pueden implementarse en el entorno de Adobe Managed Services.
@@ -269,6 +272,28 @@ Siga los pasos a continuación para editar la canalización configurada que no s
 
 
 1. Haga clic en **Update** una vez que haya terminado de editar la canalización que no es de producción.
+
+### Acciones adicionales de canalización que no son de producción {#additional-nonprod-actions}
+
+#### Ejecución de una canalización que no sea de producción {#run-nonprod}
+
+Puede ejecutar la canalización de producción desde la tarjeta Canalizaciones:
+
+1. Vaya a la tarjeta **Canalizaciones** desde la página **Información general del programa**.
+
+1. Haga clic en **...** desde la tarjeta **Canalizaciones** y haga clic en **Ejecutar**, como se muestra en la figura siguiente.
+
+   ![](/help/using/assets/configure-pipelines/nonprod-run1.png)
+
+#### Eliminación de una canalización que no es de producción {#delete-nonprod}
+
+Puede eliminar la canalización de producción de la tarjeta Canalizaciones:
+
+1. Vaya a la tarjeta **Canalizaciones** desde la página **Información general del programa**.
+
+1. Haga clic en **...** de la tarjeta **Canalizaciones** y haga clic en **Eliminar**, como se muestra en la figura siguiente.
+
+   ![](/help/using/assets/configure-pipelines/nonprod-delete.png)
 
 
 ## Pasos siguientes {#the-next-steps}
