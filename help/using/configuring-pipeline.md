@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: ba6c763a-b78a-439e-8c40-367203a719b3
 feature: CI-CD Pipeline
 exl-id: d489fa3c-df1e-480b-82d0-ac8cce78a710
-source-git-commit: fd172a7168074630e85f3b110e032f783d39ddca
+source-git-commit: 973fec504cd5f35435b10e3d1d28f3ba20ff4ab9
 workflow-type: tm+mt
-source-wordcount: '1491'
+source-wordcount: '1478'
 ht-degree: 1%
 
 ---
@@ -158,29 +158,19 @@ Siga los pasos a continuación para editar la canalización configurada:
 
 1. Haga clic en **...** desde la tarjeta **Canalizaciones** y haga clic en **Editar**, como se muestra en la figura siguiente.
 
+   ![](/help/using/assets/configure-pipelines/edit-prod1.png)
 
 1. Aparece el cuadro de diálogo **Editar canalización de producción**.
 
-   1. La pestaña **Configuration** permite actualizar el **Pipeline Name**, el **Deployment Déclencheur** y el **Importante Metrics Failure Behavior**.
+   1. La pestaña **Configuration** permite actualizar el **Pipeline Name**, el **Repository**, la **Git Branch**, el **Déclencheur de implementación**, **Comportamiento de error de métricas importantes**, **2/>Opciones de implementación** y **Configuraciones de Dispatcher**.
 
       >[!NOTE]
       >Consulte [Adición y administración de repositorios](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) para obtener información sobre cómo agregar y administrar repositorios en Cloud Manager.
 
 
-   1. La pestaña **Source** le ofrece la opción de comprobar o desmarcar **Pause antes de implementar las opciones Production** y **Scheduled** de **Production Deployment Options**.
-
-
-   1. La opción **Auditoría de experiencias** permite actualizar o agregar nuevas páginas.
-
+   1. La pestaña **Prueba de fase** proporciona una opción para volver a seleccionar las opciones **Entrega de contenido del sitio/Peso de carga distribuido** y **Distribución de prueba de rendimiento de los recursos**.
 
 1. Haga clic en **Update** una vez que haya terminado de editar la canalización.
-
-1. Haga clic en **Configuración de canalización** para configurar la canalización.
-
-   ![](assets/Setup-Pipeline.png)
-
-
-
 
 ## Canalizaciones de calidad de código y no producción
 
