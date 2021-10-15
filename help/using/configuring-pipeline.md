@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: ba6c763a-b78a-439e-8c40-367203a719b3
 feature: CI-CD Pipeline
 exl-id: d489fa3c-df1e-480b-82d0-ac8cce78a710
-source-git-commit: 973fec504cd5f35435b10e3d1d28f3ba20ff4ab9
+source-git-commit: 78a6c939cdb7c4335891e27209b221fc3e6efec2
 workflow-type: tm+mt
-source-wordcount: '1478'
+source-wordcount: '1729'
 ht-degree: 1%
 
 ---
@@ -70,45 +70,45 @@ Siga estos pasos para configurar el comportamiento y las preferencias de la cana
 
 1. **Aparece el cuadro de diálogo Añadir** canalización de producción .
 
-   1. Introduzca el nombre de la canalización. Puede elegir el **Repositorio** y la **Rama Git**.
+   1. Introduzca el **Nombre de la canalización**. Puede elegir el **Repositorio** y la **Rama Git**.
 
       ![](/help/using/assets/configure-pipelines/add-prod2.png)
 
-   1. Puede configurar **Déclencheur de implementación** y **Comportamiento de error importante** desde **Opciones de implementación**.
+   1. Puede configurar **Déclencheur de implementación** y **Comportamiento de errores de métricas importantes** desde **Opciones de implementación**.
 
       ![](/help/using/assets/configure-pipelines/add-prod3.png)
 
 
-      Puede definir el déclencheur para iniciar la canalización:
+      Puede asignar las siguientes déclencheur de implementación para iniciar la canalización:
 
       * **Manual** : al utilizar la IU, se inicia manualmente la canalización.
       * **Cambios en Git** : inicia la canalización CI/CD cada vez que se agregan confirmaciones a la rama git configurada. Incluso si selecciona esta opción, siempre puede iniciar la canalización manualmente.
 
-         >[!NOTE]
-         >Durante la configuración o edición de la canalización, el administrador de implementación tiene la opción de definir el comportamiento de la canalización cuando se encuentra un error importante en cualquiera de las puertas de calidad.
+      Durante la configuración o edición de la canalización, el administrador de implementación tiene la opción de definir el comportamiento de la canalización cuando se encuentra un error importante en cualquiera de las puertas de calidad.
+
       Esto resulta útil para los clientes que desean procesos más automatizados. Las opciones disponibles son:
 
       * **Pregunte cada vez** : esta es la configuración predeterminada y requiere una intervención manual en cualquier error importante.
-      * **Cancelar inmediatamente** : si se selecciona, la canalización se cancelará siempre que se produzca un error importante. Básicamente, esto emula a un usuario rechazando manualmente cada error.
-      * **Aprobar inmediatamente** : Si se selecciona, la canalización se realizará automáticamente cada vez que se produzca un error importante. Básicamente, esto está emulando a un usuario que aprueba manualmente cada error.
+      * **Fail Inmediatamente** : Si se selecciona, la canalización se cancelará siempre que se produzca un error importante. Básicamente, esto emula a un usuario rechazando manualmente cada error.
+      * **Continuar inmediatamente** : si se selecciona, la canalización se realizará automáticamente cada vez que se produzca un error importante. Básicamente, esto está emulando a un usuario que aprueba manualmente cada error.
    1. Seleccione las **Opciones de implementación**.
 
       ![](/help/using/assets/configure-pipelines/add-prod4.png)
 
       * **La aprobación después de la** implementación de la fase funciona de forma similar a la aprobación antes de la implementación de producción, pero se produce inmediatamente después del paso de implementación de la fase, es decir, antes de que se realice la prueba, en comparación con la aprobación antes de la implementación de producción, que se realiza después de completar todas las pruebas.
 
-      * **Saltar equilibrador de carga**
-   1. Seleccione **Dispatcher Configurations** para Stage. Introduzca la ruta, seleccione la acción en **Type** y haga clic en **Add Path**. Puede especificar hasta 100 rutas por entorno.
+      * **Omitir el equilibrador de carga** cambia los cambios.
+   1. Seleccione **Dispatcher Configuration** para Stage. Introduzca la ruta, seleccione la acción en **Type** y haga clic en **Add Path**. Puede especificar hasta 100 rutas por entorno.
 
       ![](/help/using/assets/configure-pipelines/dispatcher-stage.png)
 
-   1. Seleccione las **Opciones de implementación** para producción. Ahora define los parámetros que controlan la implementación de producción. Las tres opciones disponibles son las siguientes:
+   1. Seleccione las **Opciones de implementación** para producción. Ahora define los parámetros que controlan la implementación de producción.
+
+      ![](/help/using/assets/configure-pipelines/prod-deploymentoptions.png)
+
+      Las tres opciones disponibles son las siguientes:
 
       * **Usar Go Live Approval** : Una implementación debe ser aprobada manualmente por un propietario de empresa, un administrador de proyectos o un administrador de implementación a través de la  [!UICONTROL Cloud Manager] interfaz de usuario.
-      * **Usar la supervisión de CSE** : un CSE se compromete a iniciar realmente la implementación. Durante la configuración o edición de la canalización cuando la supervisión de CSE está habilitada, el administrador de implementación tiene la opción de seleccionar:
-
-      * **Cualquier CSE**: hace referencia a cualquier CSE disponible
-      * **Mi CSE**: hace referencia a un CSE específico asignado al cliente o a su copia de seguridad, si el CSE está fuera de la oficina
 
       * **Programado** : esta opción permite al usuario activar la implementación de producción programada.
 
@@ -116,6 +116,11 @@ Siga estos pasos para configurar el comportamiento y las preferencias de la cana
          >Si la opción **Programado** está seleccionada, puede programar la implementación de producción en la canalización **después** de la implementación de la fase (y **Utilizar aprobación de GoLive**, si se ha habilitado) para esperar a que se establezca una programación. El usuario también puede elegir ejecutar la implementación de producción inmediatamente.
          >
          >Consulte [Implementar el código](deploying-code.md) para configurar la programación de implementación o ejecutar la producción inmediatamente.
+
+         * **Usar la supervisión de CSE** : un CSE se compromete a iniciar realmente la implementación. Durante la configuración o edición de la canalización cuando la supervisión de CSE está habilitada, el administrador de implementación tiene la opción de seleccionar:
+
+            * **Cualquier CSE**: hace referencia a cualquier CSE disponible
+            * **Mi CSE**: hace referencia a un CSE específico asignado al cliente o a su copia de seguridad, si el CSE está fuera de la oficina
    1. Configure las **Configuraciones de Dispatcher** para producción. Introduzca la ruta, seleccione la acción en **Type** y haga clic en **Add Path**. Puede especificar hasta 100 rutas por entorno.
 
       ![](/help/using/assets/configure-pipelines/dispatcher-prod.png)
@@ -172,6 +177,28 @@ Siga los pasos a continuación para editar la canalización configurada:
 
 1. Haga clic en **Update** una vez que haya terminado de editar la canalización.
 
+### Acciones adicionales de canalización de producción {#additional-prod-actions}
+
+#### Ejecución de una canalización de producción {#run-prod}
+
+Puede ejecutar la canalización de producción desde la tarjeta Canalizaciones:
+
+1. Vaya a la tarjeta **Canalizaciones** desde la página **Información general del programa**.
+
+1. Haga clic en **...** desde la tarjeta **Canalizaciones** y haga clic en **Ejecutar**, como se muestra en la figura siguiente.
+
+   ![](/help/using/assets/configure-pipelines/prod-run.png)
+
+#### Eliminación de una canalización de producción {#delete-prod}
+
+Puede eliminar la canalización de producción de la tarjeta Canalizaciones:
+
+1. Vaya a la tarjeta **Canalizaciones** desde la página **Información general del programa**.
+
+1. Haga clic en **...** de la tarjeta **Canalizaciones** y haga clic en **Eliminar**, como se muestra en la figura siguiente.
+
+   ![](/help/using/assets/configure-pipelines/prod-delete.png)
+
 ## Canalizaciones de calidad de código y no producción
 
 Además de la canalización principal que se implementa en las fases y la producción, los clientes pueden configurar canalizaciones adicionales, denominadas **Canalizaciones que no son de producción**. Estas canalizaciones siempre ejecutan los pasos de compilación y calidad del código. Opcionalmente, también pueden implementarse en el entorno de Adobe Managed Services.
@@ -194,7 +221,7 @@ En la pantalla de inicio, estas canalizaciones se enumeran en una tarjeta nueva:
 
 1. **Aparece el cuadro de diálogo Añadir**  canalización no de producción . Seleccione el tipo de canalización que desea crear, ya sea **Canalización de calidad de código** o **Canalización de implementación**.
 
-   Además, también puede configurar **Déclencheur de implementación** y **Comportamiento de error importante** desde **Opciones de implementación**. Haga clic en **Continue**.
+   Además, también puede configurar **Déclencheur de implementación** y **Comportamiento de errores de métricas importantes** desde **Opciones de implementación**. Haga clic en **Continue**.
 
    ![](/help/using/assets/configure-pipelines/nonprod-pipeline-add2.png)
 
@@ -228,6 +255,17 @@ Siga los pasos a continuación para editar la canalización configurada que no s
 
    >[!NOTE]
    >Consulte [Adición y administración de repositorios](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) para obtener información sobre cómo agregar y administrar repositorios en Cloud Manager.
+
+   Puede asignar las siguientes déclencheur de implementación para iniciar la canalización:
+
+   * **Manual** : al utilizar la IU, se inicia manualmente la canalización.
+   * **Cambios en Git** : inicia la canalización CI/CD cada vez que se agregan confirmaciones a la rama git configurada. Incluso si selecciona esta opción, siempre puede iniciar la canalización manualmente.
+
+   Durante la configuración o edición de la canalización, el administrador de implementación tiene la opción de definir el comportamiento de la canalización cuando se encuentra un error importante en cualquiera de las puertas de calidad. Esto resulta útil para los clientes que desean procesos más automatizados. Las opciones disponibles son:
+
+   * **Pregunte cada vez** : esta es la configuración predeterminada y requiere una intervención manual en cualquier error importante.
+   * **Fail Inmediatamente** : Si se selecciona, la canalización se cancelará siempre que se produzca un error importante. Básicamente, esto emula a un usuario rechazando manualmente cada error.
+   * **Continuar inmediatamente** : si se selecciona, la canalización se realizará automáticamente cada vez que se produzca un error importante. Básicamente, esto está emulando a un usuario que aprueba manualmente cada error.
 
 
 1. Haga clic en **Update** una vez que haya terminado de editar la canalización que no es de producción.
