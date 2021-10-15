@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: ba6c763a-b78a-439e-8c40-367203a719b3
 feature: CI-CD Pipeline
 exl-id: d489fa3c-df1e-480b-82d0-ac8cce78a710
-source-git-commit: 1e3dc17d28ab69dcd6b2337280bb38ba07352beb
+source-git-commit: 9509f83f3cecbeaa81543e3c1f8ec33028009e6a
 workflow-type: tm+mt
 source-wordcount: '1834'
 ht-degree: 1%
@@ -25,14 +25,6 @@ ht-degree: 1%
 
 La siguiente página explica cómo configurar la **Canalización**. Para obtener más información conceptual sobre el funcionamiento de la canalización, consulte [CI/CD pipeline overview](ci-cd-pipeline.md).
 
-## Tutorial de vídeo {#video-tutorial-one}
-
-### Configuración de canalización en Cloud Manager {#config-pipeline-video}
-
-La configuración de la canalización de producción CI/CD define el déclencheur que iniciará la canalización, parámetros que controlan la implementación de producción y parámetros de prueba de rendimiento.
-
->[!VIDEO](https://video.tv.adobe.com/v/26314/)
-
 
 ## Explicación del flujo {#understanding-the-flow}
 
@@ -43,6 +35,14 @@ El administrador de implementación es responsable de configurar la canalizació
 * definición del déclencheur que iniciará la canalización.
 * definición de los parámetros que controlan la implementación de producción.
 * configuración de los parámetros de prueba de rendimiento.
+
+## Tutorial de vídeo {#video-tutorial-one}
+
+### Configuración de canalización en Cloud Manager {#config-pipeline-video}
+
+La configuración de la canalización de producción CI/CD define el déclencheur que iniciará la canalización, parámetros que controlan la implementación de producción y parámetros de prueba de rendimiento.
+
+>[!VIDEO](https://video.tv.adobe.com/v/26314/)
 
 ## Configuración de la canalización {#setting-up-the-pipeline}
 
@@ -56,7 +56,7 @@ Antes de comenzar a implementar el código, debe configurar la configuración de
 >
 >Puede cambiar la configuración de la canalización después de la configuración inicial.
 
-## Adición de una nueva canalización de producción desde la tarjeta de canalización {#adding-production-pipeline}
+### Adición de una nueva canalización de producción desde la tarjeta de canalización {#adding-production-pipeline}
 
 Una vez que haya configurado el programa y tenga al menos un entorno utilizando la interfaz de usuario [!UICONTROL Cloud Manager], estará listo para agregar una canalización de producción.
 
