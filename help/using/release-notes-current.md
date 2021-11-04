@@ -3,9 +3,9 @@ title: Notas de la versión 2021.11.0
 description: Siga esta página para obtener información sobre la versión 2021.11.0 de Cloud Manager
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
-source-git-commit: 0395fd4263ae37bce49c698e8e72ad7b08af046a
+source-git-commit: e6e5a17c16c42e0b0ed5aedd2f9a6360fd81d8cd
 workflow-type: tm+mt
-source-wordcount: '328'
+source-wordcount: '368'
 ht-degree: 3%
 
 ---
@@ -29,6 +29,8 @@ La próxima versión está planificada para el 9 de diciembre de 2021.
 * La variable `x-request-id` el encabezado de respuesta ahora está visible en API Playground en [www.adobe.io](https://www.adobe.io/). Este encabezado es útil cuando se envían problemas de atención al cliente para la resolución de problemas.
 
 * Como usuario, veo que la tarjeta de canalización con cero canalizaciones me proporciona la guía adecuada.
+
+* Ya está disponible una nueva página de actividad donde se pueden ver actividades como las ejecuciones de canalización y código junto con los detalles asociados. Con el tiempo, las actividades enumeradas en esta página se ampliarán en alcance junto con los detalles proporcionados.
 
 * Ya está disponible una nueva página de canalizaciones con una ventana emergente de estado al pasar el ratón por encima para facilitar la vista del resumen de detalles. Las ejecuciones de canalización se pueden ver junto con los detalles asociados.
 
