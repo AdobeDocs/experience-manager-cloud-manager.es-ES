@@ -1,0 +1,51 @@
+---
+title: Notas de la versión 2021.10.0
+description: Siga esta página para obtener información sobre la versión 2021.10.0 de Cloud Manager
+feature: Release Information
+exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
+source-git-commit: e89420ef9e5621cb10ef80715e96fd25e486c9bd
+workflow-type: tm+mt
+source-wordcount: '358'
+ht-degree: 3%
+
+---
+
+# Notas de la versión 2021.10.0 {#release-notes-for}
+
+En la siguiente sección se describen las notas de la versión generales de [!UICONTROL Cloud Manager] Versión 2021.10.0.
+
+>[!NOTE]
+>Consulte [Notas de la versión actual](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/release-notes-cloud-manager/release-notes-cm-current.html?lang=en#getting-access) para ver las notas de la última versión de Cloud Manager en AEM as a Cloud Service.
+
+## Fecha de la versión {#release-date}
+
+La fecha de lanzamiento de [!UICONTROL Cloud Manager] La versión 2021.10.0 es el 14 de octubre de 2021.
+
+## Novedades {#whats-new}
+
+* Las canalizaciones de producción ahora se pueden ejecutar en modo de &quot;emergencia&quot;, evitando pasos de prueba de seguridad y rendimiento para implementaciones de emergencia.
+
+* Para mantener la coherencia con Cloud Service, ahora se hará referencia a las canalizaciones de implementación existentes y se etiquetarán en la interfaz de usuario como canalizaciones &quot;Apilamiento completo&quot;.
+
+* La tarjeta de canalización se ha actualizado para que ahora muestre una sola cara integrada que muestre tanto las canalizaciones de producción como las que no son de producción, y el usuario puede seleccionar Ejecutar/Pausar/Reanudar directamente en el menú de acción asociado con cada canalización.
+
+* Un usuario con la función de administrador de implementación ahora puede eliminar la canalización de producción de forma autoservicio mediante la interfaz de usuario.
+
+* Se han actualizado las experiencias de adición y edición de canalización para que ahora utilicen modelos modernos y conocidos.
+
+* Los usuarios de Cloud Manager ahora pueden enviar comentarios directamente desde la interfaz de usuario a través del **Comentarios** en la parte superior derecha de la página de aterrizaje.
+
+* Los gráficos SLA anuales ahora se pueden descargar desde la interfaz de usuario de Cloud Manager.
+
+* La calidad del código y las ejecuciones de canalizaciones que no sean de producción ahora utilizarán un proceso de clonación superficial más eficiente durante el paso de compilación, lo que conllevará un tiempo de compilación más rápido para los clientes con repositorios Git especialmente grandes.
+
+* La documentación de la API de Cloud Manager ahora incluye un área de reproducción interactiva que permite a los usuarios que iniciaron sesión experimentar con la API desde su explorador. Consulte [Reproducción de la API de Cloud Manager](https://www.adobe.io/experience-cloud/cloud-manager/reference/playground/) para obtener más información.
+
+* La información del objeto de la tarjeta de programa será más descriptiva si se desactiva una opción de selección en &quot;Navegar a&quot;. Ahora dirá &quot;Un entorno de producción no existe&quot;.
+
+
+## Corrección de errores {#bug-fixes}
+
+* Cuando los datos leídos desde sistemas internos no se introducían correctamente, podía hacer que los datos no relacionados proporcionados por los CSE no se reflejaran correctamente en Cloud Manager.
+
+* En situaciones específicas de los clientes, se ignoraban los artefactos no válidos descargados durante el paso de compilación que deberían haber causado un error de compilación.
