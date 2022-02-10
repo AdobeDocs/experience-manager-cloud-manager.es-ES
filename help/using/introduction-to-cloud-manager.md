@@ -11,9 +11,9 @@ discoiquuid: ebcc91a5-be9e-4684-8146-d88f4013d4d1
 feature: Getting Started
 level: Beginner
 exl-id: 58344d8a-b869-4177-a9cf-6a8b7dfe9588
-source-git-commit: 08d831c560510d58062ed81fab809c12169810cb
+source-git-commit: 71d44c7e3673ca62fcd2203ecc0bc4ed9fa22002
 workflow-type: tm+mt
-source-wordcount: '814'
+source-wordcount: '812'
 ht-degree: 66%
 
 ---
@@ -65,7 +65,7 @@ Una de las funciones clave de [!UICONTROL Cloud Manager] es la capacidad de util
 
 A través de la interfaz de usuario de [!UICONTROL Cloud Manager], los clientes pueden configurar y poner en marcha su canalización de CD/CI. Durante esta canalización, se realiza un análisis exhaustivo del código para garantizar que solo las aplicaciones de alta calidad pasen al entorno de producción.
 
-Para obtener más información sobre la configuración de la canalización desde [!UICONTROL Cloud Manager]La interfaz de usuario de , consulte [Configurar la canalización de CI/CD](https://helpx.adobe.com/experience-manager/cloud-manager/using/configuring-pipeline.html).
+Para obtener más información sobre la configuración de la canalización desde [!UICONTROL Cloud Manager]La interfaz de usuario de , consulte los documentos [Configuración de canalizaciones de producción](configuring-production-pipelines.md) y [Configuración de canalizaciones que no sean de producción.](configuring-non-production-pipelines.md)
 
 ### Modos de implementación flexibles {#flexible-deployment-modes}
 

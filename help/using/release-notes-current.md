@@ -1,18 +1,18 @@
 ---
-title: Notas de la versión 2022.01.0
-description: Estas son las notas de la versión de Cloud Manager 2022.01.0.
+title: Notas de la versión 2022.2.0
+description: Estas son las notas de la versión de Cloud Manager 2022.2.0.
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
-source-git-commit: ebbbbdca2bfd834bc3dc0ff06ffb318df42713ee
+source-git-commit: ae4cc3e8056e6ac317628e997271b4b01c7251c3
 workflow-type: tm+mt
-source-wordcount: '145'
+source-wordcount: '131'
 ht-degree: 6%
 
 ---
 
-# Notas de la versión de Cloud Manager 2021.12.0 {#release-notes}
+# Notas de la versión para Cloud Manager versión 2022.2.0 {#release-notes}
 
-En la siguiente sección se describen las notas de la versión generales de [!UICONTROL Cloud Manager] versión 2022.01.0.
+En la siguiente sección se describen las notas de la versión generales de [!UICONTROL Cloud Manager] versión 2022.2.0.
 
 >[!NOTE]
 >
@@ -20,14 +20,13 @@ En la siguiente sección se describen las notas de la versión generales de [!UI
 
 ## Fecha de la versión {#release-date}
 
-La fecha de la versión de [!UICONTROL Cloud Manager] la versión 2022.01.0 es el 20 de enero de 2022. La próxima versión está prevista para el 10 de febrero de 2022.
+La fecha de la versión de [!UICONTROL Cloud Manager] la versión 2022.2.0 es 10 de febrero de 2022. La próxima versión está prevista para el 10 de marzo de 2022.
 
 ## Novedades {#whats-new}
 
-* Cloud Manager [evite la reconstrucción del código base cuando detecte que se utiliza la misma confirmación git](/help/using/setting-up-project.md#build-artifact-reuse) en varias ejecuciones de canalización de pila completa.
-* Al generar una contraseña de git, se muestra la fecha de caducidad.
+* Una experiencia de página de aterrizaje actualizada de Cloud Manager ofrece una navegación mejorada, un fácil cambio entre las vistas de cuadrícula/mosaico y ventanas emergentes para obtener un resumen rápido del programa.
 
 ## Corrección de errores {#bug-fixes}
 
-* Se han corregido casos poco frecuentes de errores de canalización de falsos positivos.
-* Para los programas con un solo repositorio, la pantalla de ejecución de la canalización ahora mostrará el nombre del repositorio.
+* Las ejecuciones de reversión ahora se diferencian correctamente de las ejecuciones de canalización de pila completa.
+* Las contraseñas antiguas del repositorio de Git ahora siempre se invalidan cuando se genera una nueva contraseña.

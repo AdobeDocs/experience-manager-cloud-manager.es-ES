@@ -1,37 +1,36 @@
 ---
 title: Notas de la versión 2019.1.0
-seo-title: Notas de la versión de AEM Cloud Manager para 2019.1.0
+seo-title: AEM Cloud Manager Release Notes for 2019.1.0
 description: Siga esta página para obtener información sobre la versión 2019.1.0 de Cloud Manager.
-seo-description: Siga esta página para obtener información sobre la versión 2019.1.0 de AEM Cloud Manager.
+seo-description: Follow this page to get information for AEM Cloud Manager Release 2019.1.0.
 uuid: 3af5808f-828f-4846-bee4-1e62194b48ad
 contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: release-notes
 discoiquuid: 85a1dcf3-2eef-4ba8-b4d1-09e4a88c7bd0
 feature: Release Information
-translation-type: tm+mt
-source-git-commit: c5d32d49782c899d013fcc60b9c4d2b67e9350ae
+exl-id: 383ca5a0-4b0b-48e9-aa48-1d1388875329
+source-git-commit: 4f0e1d163001fd18cfa838256c813152d65c3b4c
 workflow-type: tm+mt
-source-wordcount: '337'
+source-wordcount: '315'
 ht-degree: 4%
 
 ---
 
-
 # Notas de la versión 2019.1.0 {#release-notes-for}
 
-La versión [!UICONTROL Cloud Manager] 2018.9.0 agrega compatibilidad con los programas de prueba de AEM Assets, así como tipos de canalización adicionales que ejecutan los pasos de compilación y calidad del código, y que opcionalmente se implementan en un entorno que no es de producción.
+La variable [!UICONTROL Cloud Manager] La versión 2018.9.0 añade compatibilidad con programas de prueba de AEM Assets, así como tipos de canalización adicionales que ejecutan los pasos de compilación y calidad del código, y que opcionalmente se implementan en un entorno que no es de producción.
 
 ## Fecha de la versión {#release-date}
 
-La fecha de versión de la versión 2019.1.0 de [!UICONTROL Cloud Manager] es el 17 de enero de 2019.
+La fecha de lanzamiento de [!UICONTROL Cloud Manager] La versión 2019.1.0 es el 17 de enero de 2019.
 
 ## Novedades {#whats-new}
 
-* Se ha agregado compatibilidad con las pruebas de rendimiento de AEM Assets. Consulte Configurar la [Canalización de CI/CD](configuring-pipeline.md)para obtener más información.
-* Se ha agregado compatibilidad con canalizaciones que ejecutan solo pasos de compilación y código de calidad y canalizaciones que se implementan en entornos que no son de producción. Consulte la sección **No producción y solo calidad de código** en [Configurar la canalización de CI/CD](configuring-pipeline.md) para obtener más información.
+* Se ha agregado compatibilidad con las pruebas de rendimiento de AEM Assets. Consulte el documento [Configurar canalizaciones de producción](configuring-production-pipelines.md) para obtener más información.
+* Se ha agregado compatibilidad con canalizaciones que ejecutan solo pasos de compilación y código de calidad y canalizaciones que se implementan en entornos que no son de producción. Consulte el documento [Configurar canalizaciones que no sean de producción](configuring-non-production-pipelines.md) para obtener más información.
 * Se ha agregado compatibilidad con variables de entorno personalizadas en el entorno de compilación.
-* Para los clientes con varios entornos de producción o de fase, la selección de a qué entorno se implementará como parte de la canalización de producción está disponible en la página [Configure your CI/CD Pipeline](configuring-pipeline.md) .
+* Para los clientes con entornos de producción o fase múltiples, está disponible la selección de a qué entorno se implementará como parte de la canalización de producción. Consulte el documento [Configurar canalizaciones de producción](configuring-production-pipelines.md) para obtener más información.
 * se ha añadido httxt2dbm al contenedor de compilación.
 * Todos los elementos del menú de ayuda abren una nueva ficha.
 
@@ -45,8 +44,8 @@ La fecha de versión de la versión 2019.1.0 de [!UICONTROL Cloud Manager] es el
 * Algunos programas terminados aparecieron en el conmutador de programas.
 * Si se agregó una nueva rama al repositorio de Git mientras se editaba la canalización, es posible que no se haya podido seleccionar inmediatamente.
 * En algunas pantallas, el icono Developer Connection del menú Ayuda no estaba visible.
-* La clave de tabulación no se gestionaba correctamente en el cuadro de diálogo de configuración de vaciado de Dispatcher.
+* La tecla de tabulación no se gestionaba correctamente en el cuadro de diálogo de configuración de vaciado de Dispatcher.
 
 ## Problemas conocidos {#known-issues}
 
-* Al abrir un programa que tiene establecidos los KPI de Sites, pero no de Assets, todos los usuarios ven una tarjeta de llamada a la acción con un botón **Programa de instalación**. Sin embargo, solo los usuarios con la función Propietario empresarial pueden hacer clic en el botón **Programa de instalación**.
+* Al abrir un programa que tiene establecidos KPI de Sites, pero no de Assets, todos los usuarios ven una tarjeta de llamada a la acción con una **Programa de instalación** botón. Sin embargo, solo los usuarios con la función Propietario empresarial pueden hacer clic en la función **Programa de instalación** botón.

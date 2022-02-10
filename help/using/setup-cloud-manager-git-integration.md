@@ -5,9 +5,9 @@ seo-title: Git Integration with Adobe Cloud Manager
 seo-description: A video series that walks through the set up and integration of a customer-managed (on-premise) git repository with Adobe Cloud Manager.
 feature: Git Repositories
 exl-id: e517f8a4-23f0-4486-8278-91396dba76ec
-source-git-commit: 0bc3e775ef2432cdb8d3bd5470953c07c6628148
+source-git-commit: 71d44c7e3673ca62fcd2203ecc0bc4ed9fa22002
 workflow-type: tm+mt
-source-wordcount: '370'
+source-wordcount: '363'
 ht-degree: 4%
 
 ---
@@ -42,7 +42,7 @@ Primeros pasos para sincronizar un repositorio Git administrado por el cliente c
 
 ## Estrategia básica de ramas {#branching-strategy}
 
-Configure una estrategia básica de ramificación para aprovechar las ventajas de Cloud Manager [tuberías de producción y no producción.](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html)
+Configure una estrategia básica de ramificación para aprovechar las ventajas de Cloud Manager [producción](configuring-production-pipelines.md) y [canalizaciones que no sean de producción.](configuring-non-production-pipelines.md)
 
 >[!VIDEO](https://video.tv.adobe.com/v/28712/?quality=12)
 

@@ -1,34 +1,33 @@
 ---
 title: Repositorio de códigos de origen
-seo-title: Repositorio de códigos de origen para Adobe AEM Cloud Manager
+seo-title: Source Code Repository for Adobe AEM Cloud Manager
 description: Siga esta página para obtener más información sobre el repositorio de Git que se aprovisiona para cada programa que tenga en Cloud Manager.
-seo-description: Siga esta página para obtener más información sobre el repositorio de Git que se aprovisiona para cada programa que tenga en Adobe AEM Cloud Manager.
+seo-description: Follow this page to learn about the git repository that is provisioned for each program you have in Adobe AEM Cloud Manager.
 uuid: 2c42775f-8703-43f7-bad2-7dc086ea9dd7
 contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: requirements
 discoiquuid: f90f0f4c-c1ff-47f6-8d97-ff5018561bf2
 feature: Provisioning
-translation-type: tm+mt
-source-git-commit: fb10d775c930b5bb475b497aac2fd59b053a9a00
+exl-id: af551e33-3623-4fcd-8d25-4362d8871411
+source-git-commit: 4f0e1d163001fd18cfa838256c813152d65c3b4c
 workflow-type: tm+mt
-source-wordcount: '280'
+source-wordcount: '258'
 ht-degree: 2%
 
 ---
-
 
 # Repositorio de códigos de origen {#source-code-repository}
 
 ## Repositorio de Cloud Manager {#cloud-manager-repository}
 
-Su suscripción [!UICONTROL AEM Managed Services] incluirá un repositorio de código fuente aprovisionado y administrado por Adobe. Al programa de cada cliente se le asigna un único **Repositorio de Git**, donde el código asociado se almacenará y protegerá.
+Su [!UICONTROL AEM Managed Services] la suscripción incluirá un repositorio de código fuente aprovisionado y administrado por Adobe. A cada programa del cliente se le asigna un único **Repositorio de Git**, donde el código asociado se almacenará y protegerá.
 
 Como práctica recomendada, siempre debe utilizar el repositorio Git de Cloud Manager, que está vacío sin ramas configuradas o proyectos de muestra. Para utilizar el repositorio Git de Cloud Manager, se le proporcionará un **token de acceso privado** que le permitirá utilizar cualquier cliente compatible con Git para crear ramas, almacenar y recuperar su código, enumerar el historial de confirmaciones, etc.
 
 Para obtener más información sobre cómo configurar ramas en Git, consulte [Configuración de las ramas de las versiones](configure-your-release-branches.md).
 
-Para obtener más información sobre cómo utilizar el **Repositorio Git** de Cloud Manager con la canalización CI/CD, consulte [Configuración de la canalización CI/CD](configuring-pipeline.md).
+Para obtener más información sobre cómo usar la variable **Repositorio de Git** con la canalización CI/CD, consulte los documentos [Configurar canalizaciones de producción](configuring-production-pipelines.md) y [Configuración de canalizaciones que no sean de producción](configuring-non-production-pipelines.md) para obtener más información.
 
 ## Repositorio local {#on-premise-repository}
 
@@ -37,4 +36,3 @@ En algunos casos, tendrá un repositorio Git existente y desea seguir usándolo.
 >[!NOTE]
 >
 >Para ver los comandos Git comunes, consulte la [Hoja de referencia de Git](https://education.github.com/git-cheat-sheet-education.pdf).
-
