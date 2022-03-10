@@ -3,7 +3,7 @@ title: Notas de la versión 2022.3.0
 description: Estas son las notas de la versión de Cloud Manager 2022.3.0.
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
-source-git-commit: 6e98f9d2fcd69799bad86d1e247212b26273bd0b
+source-git-commit: 0d14adda454889eebbb0a875978ceeaa5ee4f7ea
 workflow-type: tm+mt
 source-wordcount: '197'
 ht-degree: 4%
@@ -25,8 +25,9 @@ La fecha de la versión de [!UICONTROL Cloud Manager] la versión 2022.3.0 es 10
 
 ## Novedades {#what-is-new}
 
-* [La variable `reliability_rating` métrica crítica](understand-your-test-results.md) se ha desactivado.
-* Ahora un usuario puede ordenar las columnas de la **Canalizaciones** en Cloud Manager.
+* (Solo Cloud Service) El acceso al registro de entorno de AEM se puede realizar con la función de desarrollador.
+* La variable [`reliability_rating` métrica crítica](understand-your-test-results.md) se ha desactivado.
+
 
 ## Corrección de errores {#bug-fixes}
 
