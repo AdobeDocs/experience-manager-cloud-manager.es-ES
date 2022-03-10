@@ -1,13 +1,13 @@
 ---
 title: Configuración de canalizaciones que no sean de producción
 description: Aprenda a utilizar Cloud Manager para crear y configurar canalizaciones que no sean de producción con el fin de implementar su código.
-source-git-commit: 205113735cc743e11e140b1161413002844f5b79
+exl-id: ccf4b4a2-6e29-4ede-821c-36318b568e5c
+source-git-commit: 154b95e1b43717097b9ae9076a15792517dd613d
 workflow-type: tm+mt
-source-wordcount: '624'
+source-wordcount: '627'
 ht-degree: 0%
 
 ---
-
 
 # Configuración de canalizaciones que no sean de producción {#configuring-non-production-pipelines}
 
@@ -71,7 +71,7 @@ Una vez que haya configurado el programa y tenga al menos un entorno utilizando 
 
       * **Manual** - Utilice esta opción para iniciar manualmente la canalización.
       * **Cambios en Git** - Esta opción inicia la canalización cada vez que se añaden confirmaciones a la rama git configurada. Con esta opción, aún puede iniciar la canalización manualmente según sea necesario.
-   1. En **Comportamiento de errores de métricas importantes**, defina el comportamiento de la canalización cuando se encuentre un error importante en cualquiera de las puertas de calidad.
+   1. Para canalizaciones de implementación, en **Comportamiento de errores de métricas importantes**, defina el comportamiento de la canalización cuando se encuentre un error importante en cualquiera de las puertas de calidad.
 
       * **Pregunte cada vez** - Esta es la configuración predeterminada y requiere intervención manual en caso de que se produzca algún error importante.
       * **Fallo Inmediatamente** - Si se selecciona, la canalización se cancelará siempre que se produzca un fallo importante. Básicamente, esto emula a un usuario rechazando manualmente cada error.
