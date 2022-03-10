@@ -3,10 +3,10 @@ title: Notas de la versión 2022.3.0
 description: Estas son las notas de la versión de Cloud Manager 2022.3.0.
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
-source-git-commit: 7611667d8c617d501f9b69cbc7c854c195a5ebbe
+source-git-commit: 4a5ddf3144ec50f1a7a4ac367b5c99bc9b486752
 workflow-type: tm+mt
-source-wordcount: '210'
-ht-degree: 4%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -31,7 +31,7 @@ La fecha de la versión de [!UICONTROL Cloud Manager] la versión 2022.3.0 es 10
 ## Corrección de errores {#bug-fixes}
 
 * La variable **Omitir cambios del equilibrador de carga** no se pudo desactivar.
-*El **Omitir cambios del equilibrador de carga** no se mostraba en la implementación de desarrolladores de AMS **Editar flujo de trabajo de canalización**.
+* La variable **Omitir cambios del equilibrador de carga** no se mostraba en la implementación de desarrolladores de AMS **Editar flujo de trabajo de canalización**.
 * Un subconjunto de repositorios Git creados manualmente tenía un valor de nombre incorrecto que impedía que la función de reutilización de artefactos de compilación fuera efectiva. Los nombres de esos repositorios se han cambiado y los usuarios verán el nombre corregido en la interfaz de usuario/API de Cloud Manager.
 * Los artefactos de compilación de las canalizaciones que no son de producción se reutilizaron incorrectamente en las canalizaciones de pila completas de producción.
 * Al añadir o editar una canalización de calidad de código, ya no se muestran las opciones para gestionar errores de métricas.
