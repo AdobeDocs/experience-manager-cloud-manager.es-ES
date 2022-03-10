@@ -1,38 +1,39 @@
 ---
 title: Notas de la versión 2022.3.0
-description: Estas son las notas de la versión de Cloud Manager 2022.3.0.
+description: These are the release notes for Cloud Manager release 2022.3.0.
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
-source-git-commit: 0d14adda454889eebbb0a875978ceeaa5ee4f7ea
+source-git-commit: 79b2729814af483844d095ed8d6db6cead2ceaf7
 workflow-type: tm+mt
-source-wordcount: '197'
-ht-degree: 4%
+source-wordcount: '229'
+ht-degree: 3%
 
 ---
 
 
 # Notas de la versión para Cloud Manager versión 2022.3.0 {#release-notes}
 
-Esta página documenta las notas de la versión de [!UICONTROL Cloud Manager] versión 2022.3.0.
+This page documents the release notes for [!UICONTROL Cloud Manager] release 2022.3.0.
 
 >[!NOTE]
 >
->Para las notas de la última versión de Cloud Manager en AEM as a Cloud Service, consulte [Cloud Manager en las notas de la versión actuales de AEM as a Cloud Service.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/release-notes-cloud-manager/release-notes-cm-current.html)
+>For the latest release notes for Cloud Manager in AEM as a Cloud Service, refer to [Cloud Manager in AEM as a Cloud Service&#39;s current release notes.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/release-notes-cloud-manager/release-notes-cm-current.html)
 
 ## Fecha de la versión {#release-date}
 
-La fecha de la versión de [!UICONTROL Cloud Manager] la versión 2022.3.0 es 10 de marzo de 2022. La próxima versión está prevista para el 7 de abril de 2022.
+La fecha de la versión de [!UICONTROL Cloud Manager] la versión 2022.3.0 es 10 de marzo de 2022. The next release is planned for 7 April 2022.
 
 ## Novedades {#what-is-new}
 
 * (Solo Cloud Service) El acceso al registro de entorno de AEM se puede realizar con la función de desarrollador.
-* La variable [`reliability_rating` métrica crítica](understand-your-test-results.md) se ha desactivado.
+* (AMS): Las solicitudes HTTP salientes de las pruebas de recursos ahora provienen de un intervalo IP fijo.
 
 
 ## Corrección de errores {#bug-fixes}
 
-* [La variable **Omitir cambios del equilibrador de carga** option](configuring-production-pipelines.md#adding-production-pipeline) ahora se puede deshabilitar correctamente.
-* [La variable **Omitir cambios del equilibrador de carga** option](configuring-production-pipelines.md#adding-production-pipeline) ahora se muestra para el flujo de trabajo de edición de la canalización de implementación.
-* Un subconjunto de repositorios git creados manualmente tenía valores de nombre incorrectos que afectaban a [la función de reutilización de artefactos de compilación.](setting-up-project.md#build-artifact-reuse) Los nombres de esos repositorios se han cambiado y los usuarios verán el nombre corregido en la interfaz de usuario/API de Cloud Manager.
-* [Al añadir o editar una canalización de calidad de código,](configuring-non-production-pipelines.md) ya no se muestran las opciones para gestionar errores de métricas.
-* Las configuraciones de variables de canalización inesperadas ya no causan errores en el paso de compilación.
+* (Solo AMS) La variable **Omitir cambios del equilibrador de carga** no se pudo desactivar.
+* (AMS) El **Omitir cambios del equilibrador de carga** no se mostraba en la implementación de desarrolladores de AMS **Editar flujo de trabajo de canalización**.
+* A subset of git repositories created manually had an incorrect name value which prevented the build artifact reuse feature from being effective. Los nombres de esos repositorios se han cambiado y los usuarios verán el nombre corregido en la interfaz de usuario/API de Cloud Manager.
+* Los artefactos de compilación de las canalizaciones que no son de producción se reutilizaron incorrectamente en las canalizaciones de pila completas de producción.
+* Al añadir o editar una canalización de calidad de código, ya no se muestran las opciones para gestionar errores de métricas.
+* Algunas configuraciones de variables de canalización inesperadas podrían causar en el paso de compilación.
