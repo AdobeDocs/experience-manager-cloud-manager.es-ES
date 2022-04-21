@@ -3,9 +3,9 @@ title: Configuración del proyecto
 description: Siga esta página para aprender a configurar un proyecto
 feature: Getting Started, Production Programs
 exl-id: ed994daf-0195-485a-a8b1-87796bc013fa
-source-git-commit: 8861b5e48b8e1d081b4c8653000a8f2cf16dd11f
+source-git-commit: fd1a72f2fd3b3e3789fcb38a8d4a9585293ced50
 workflow-type: tm+mt
-source-wordcount: '1289'
+source-wordcount: '1440'
 ht-degree: 5%
 
 ---
@@ -266,7 +266,11 @@ Con el content-package-maven-plugin es similar:
 
 En muchos casos, el mismo código se implementa en varios entornos de AEM. Siempre que sea posible, Cloud Manager evitará la reconstrucción del código base cuando detecte que se utiliza la misma confirmación de Git en varias ejecuciones de canalización de pila completa.
 
-Cuando se inicia una ejecución, se extrae la confirmación del HEAD actual para la canalización de ramas. El hash de confirmación se puede ver en la interfaz de usuario y a través de la API . Cuando el paso de compilación se completa correctamente, los artefactos resultantes se almacenan en función de ese hash de confirmación y se pueden reutilizar en ejecuciones de canalización posteriores. Cuando se produce una reutilización, los pasos de compilación y calidad del código se sustituyen eficazmente por los resultados de la ejecución original. El archivo de registro para el paso de compilación enumerará los artefactos y la información de ejecución que se utilizó para crearlos originalmente.
+Cuando se inicia una ejecución, se extrae la confirmación del HEAD actual para la canalización de ramas. El hash de confirmación se puede ver en la interfaz de usuario y a través de la API . Cuando el paso de compilación se completa correctamente, los artefactos resultantes se almacenan en función de ese hash de confirmación y se pueden reutilizar en ejecuciones de canalización posteriores.
+
+Los paquetes se reutilizan en todas las canalizaciones si están en el mismo programa. Al buscar paquetes que puedan reutilizarse, AEM ignora las ramas y vuelve a utilizar artefactos entre ramas.
+
+Cuando se produce una reutilización, los pasos de compilación y calidad del código se sustituyen eficazmente por los resultados de la ejecución original. El archivo de registro para el paso de compilación enumerará los artefactos y la información de ejecución que se utilizó para crearlos originalmente.
 
 El siguiente es un ejemplo de este resultado de registro.
 
@@ -277,6 +281,34 @@ build/aem-guides-wknd.dispatcher.cloud-2021.1216.1101633.0000884042.zip (dispatc
 ```
 
 El registro del paso de calidad del código contiene información similar.
+
+### Ejemplos {#example-reuse}
+
+#### Ejemplo 1 {#example-1}
+
+Considere que su programa tiene dos canalizaciones de desarrollo:
+
+* Canalización 1 en rama `foo`
+* Canalización 2 en rama `bar`
+
+Ambas ramas están en el mismo ID de confirmación.
+
+1. Al ejecutar la Canalización 1 primero, se crearán los paquetes normalmente.
+1. A continuación, al ejecutar la Canalización 2, se reutilizarán los paquetes creados por la Canalización 1.
+
+#### Ejemplo 2 {#example-2}
+
+Tenga en cuenta que el programa tiene dos ramas:
+
+* Rama `foo`
+* Rama `bar`
+
+Ambas ramas tienen el mismo ID de confirmación.
+
+1. Se genera y ejecuta una canalización de desarrollo `foo`.
+1. Posteriormente, se genera y ejecuta una canalización de producción `bar`.
+
+En este caso, el artefacto de `foo` se reutilizará para la canalización de producción ya que se identificó el mismo hash de confirmación.
 
 ### Exclusión {#opting-out}
 
@@ -292,6 +324,8 @@ Si lo desea, el comportamiento de reutilización se puede deshabilitar para cana
 
 ### Advertencias {#caveats}
 
+* Los artefactos de compilación no se reutilizan en diferentes programas, independientemente de si el hash de confirmación es idéntico.
+* Los artefactos de compilación se reutilizan dentro del mismo programa incluso si la rama o canalización son diferentes.
 * [Administración de versiones de Maven](/help/using/activating-maven-project.md) reemplace la versión del proyecto solo en las canalizaciones de producción. Por lo tanto, si se utiliza la misma confirmación tanto en la ejecución de una implementación de desarrollo como en la ejecución de una canalización de producción, y la canalización de implementación de desarrollo se ejecuta primero, las versiones se implementarán en fase y producción sin ser cambiadas. Sin embargo, se seguirá creando una etiqueta en este caso.
 * Si la recuperación de los artefactos almacenados no se realiza correctamente, el paso de compilación se ejecuta como si no se hubieran almacenado artefactos.
 * Variables de canalización distintas de `CM_DISABLE_BUILD_REUSE` no se tienen en cuenta cuando Cloud Manager decide reutilizar los artefactos de compilación creados anteriormente.
