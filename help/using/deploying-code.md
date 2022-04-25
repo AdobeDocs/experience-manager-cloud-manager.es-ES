@@ -10,7 +10,7 @@ topic-tags: using
 discoiquuid: 832a4647-9b83-4a9d-b373-30fe16092b15
 feature: Code Deployment
 exl-id: 3d6610e5-24c2-4431-ad54-903d37f4cdb6
-source-git-commit: 2fcefda1e30871d44e3a1353470a4728904d7598
+source-git-commit: 0ba7c49b3550666030249562219b2d0dc51f4ae1
 workflow-type: tm+mt
 source-wordcount: '1220'
 ht-degree: 1%
@@ -22,17 +22,17 @@ ht-degree: 1%
 ## Implementación de código con Cloud Manager {#deploying-code-with-cloud-manager}
 
 >[!NOTE]
->Para obtener más información sobre la implementación de código para Cloud Manager en AEM as a Cloud Service, consulte [aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en#using-cloud-manager).
+>Para obtener información sobre la implementación de código para Cloud Manager en AEM as a Cloud Service, consulte [here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en#using-cloud-manager).
 
 Una vez configurada la canalización de producción (repositorio, entorno y entorno de prueba), estará listo para implementar el código.
 
-1. Haga clic en **Implementar** desde Cloud Manager para iniciar el proceso de implementación.
+1. Haga clic en **Implementación** desde Cloud Manager para iniciar el proceso de implementación.
 
    ![](assets/Deploy1.png)
 
-1. Aparece la pantalla **Pipeline Execution**.
+1. La variable **Ejecución de canalización** se abre.
 
-   Haga clic en **Build** para iniciar el proceso.
+   Haga clic en **Generar** para iniciar el proceso.
 
    ![](assets/Deploy2.png)
 
@@ -57,40 +57,40 @@ Una vez configurada la canalización de producción (repositorio, entorno y ento
 
    ![](assets/Stage_Deployment1.png)
 
-   La **Prueba de fase** incluye los siguientes pasos:
+   La variable **Prueba de prueba**, incluye los siguientes pasos:
 
    * Pruebas de seguridad: Este paso evalúa el impacto de seguridad del código de la aplicación en el entorno AEM. Consulte [Comprender los resultados de la prueba](understand-your-test-results.md) para obtener más información sobre el proceso de prueba.
    * Pruebas de rendimiento: Este paso evalúa el rendimiento del código de la aplicación. Consulte [Comprender los resultados de la prueba](understand-your-test-results.md) para obtener más información sobre el proceso de prueba.
 
    ![](assets/Stage_Testing1.png)
 
-   La **implementación de producción** incluye los siguientes pasos:
+   La variable **Implementación de producción**, incluye los siguientes pasos:
 
-   * **Solicitud de aprobación**  (si está habilitada)
-   * **Programar implementación de producción**  (si está habilitada)
-   * **Compatibilidad con CSE**  (si está habilitada)
+   * **Solicitud de aprobación** (si está activado)
+   * **Programar implementación de producción** (si está activado)
+   * **Compatibilidad con CSE** (si está activado)
    * **Implementar en producción**
 
    ![](assets/Prod_Deployment1.png)
 
    >[!NOTE]
    >
-   >**Programar implementación de producción** está habilitado al configurar la canalización.
+   >La variable **Programar implementación de producción** se habilita al configurar la canalización.
    >
    >
-   >Con esta opción, puede programar la implementación de producción o hacer clic en **Now** para ejecutar la implementación de producción inmediatamente.
+   >Con esta opción, puede programar la implementación de producción o hacer clic en **Ahora** para ejecutar la implementación de producción inmediatamente.
    >
    >
    >La fecha y la hora programadas se especifican en términos de la zona horaria del usuario.
    >
    >
-   >Haga clic en **Confirm** para comprobar la configuración.
+   >Haga clic en **Confirmar** para comprobar la configuración.
 
    ![](assets/Production_Deployment1.png)
 
    Una vez que confirme la programación de implementación, se completará la implementación del código.
 
-   Se muestra la siguiente pantalla cuando se selecciona la opción **Now** en el paso anterior.
+   Se muestra la siguiente pantalla cuando **Ahora** está seleccionada en el paso anterior.
 
    ![](assets/Production_Deployment2.png)
 
@@ -100,12 +100,12 @@ Los siguientes pasos agotarán el tiempo de espera si se deja esperando los come
 
 | Etapa | Tiempo de espera |
 |--- |--- |
-| Prueba de calidad de código | 7 días |
-| Pruebas de seguridad | 7 días |
-| Pruebas de rendimiento | 7 días |
-| Solicitud de aprobación | 7 días |
-| Programar implementación de producción | 7 días |
-| Compatibilidad con CSE | 7 días |
+| Prueba de calidad del código | 14 días |
+| Pruebas de seguridad | 14 días |
+| Pruebas de rendimiento | 14 días |
+| Solicitud de aprobación | 14 días |
+| Programar implementación de producción | 14 días |
+| Compatibilidad con CSE | 14 días |
 
 ## Proceso de implementación {#deployment-process}
 
@@ -138,7 +138,7 @@ Cuando Cloud Manager se implementa en topologías que no son de producción, el 
 
    1. Las configuraciones actuales se respaldan y copian en una ubicación temporal
    1. Todas las configuraciones se eliminan excepto los archivos inmutables. Consulte Administrar las configuraciones de Dispatcher para obtener más información. Esto borra los directorios para garantizar que no queden archivos huérfanos.
-   1. El artefacto se extrae en el directorio `httpd`.  Los archivos inmutables no se sobrescriben. Los cambios que realice en los archivos inmutables del repositorio de Git se ignorarán en el momento de la implementación.  Estos archivos son fundamentales para el marco de Dispatcher de AMS y no se pueden cambiar.
+   1. El artefacto se extrae del `httpd` directorio.  Los archivos inmutables no se sobrescriben. Los cambios que realice en los archivos inmutables del repositorio de Git se ignorarán en el momento de la implementación.  Estos archivos son fundamentales para el marco de Dispatcher de AMS y no se pueden cambiar.
    1. Apache realiza una prueba de configuración. Si no se encuentran errores, el servicio se vuelve a cargar. Si se produce un error, las configuraciones se restauran desde la copia de seguridad, el servicio se vuelve a cargar y el error se devuelve a Cloud Manager.
    1. Cada ruta especificada en la configuración de la canalización se invalida o se vacía de la caché de Dispatcher.
 
@@ -169,7 +169,7 @@ Este proceso continúa hasta que la implementación haya llegado a todos los edi
 
 En situaciones críticas, es posible que los clientes de Adobe Managed Services necesiten implementar cambios de código en sus entornos de ensayo y producción sin esperar a que se ejecute un ciclo de prueba completo de Cloud Manager.
 
-Para solucionar estas situaciones, la canalización de producción de Cloud Manager se puede ejecutar en modo *Emergency*. Cuando se utiliza este modo, no se ejecutan los pasos de prueba de seguridad y rendimiento; todos los demás pasos, incluidos los pasos de aprobación configurados, se ejecutan como en el modo de ejecución normal de la canalización.
+Para solucionar estas situaciones, la canalización de producción de Cloud Manager se puede ejecutar en una *emergencia* en el menú contextual. Cuando se utiliza este modo, no se ejecutan los pasos de prueba de seguridad y rendimiento; todos los demás pasos, incluidos los pasos de aprobación configurados, se ejecutan como en el modo de ejecución normal de la canalización.
 
 >[!NOTE]
 >Los ingenieros de éxito del cliente activan la capacidad Modo de ejecución de canalización de emergencia de forma programática.
@@ -192,4 +192,4 @@ $ aio cloudmanager:pipeline:create-execution PIPELINE_ID --emergency
 ```
 
 >[!IMPORTANT]
->El uso del indicador `--emergency` puede requerir la actualización a la última versión `aio-cli-plugin-cloudmanager`.
+>Uso `--emergency` es posible que el indicador deba actualizarse a la última `aio-cli-plugin-cloudmanager` versión.
