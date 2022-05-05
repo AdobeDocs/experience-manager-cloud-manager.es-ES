@@ -3,10 +3,10 @@ title: Notas de la versión 2022.5.0
 description: Estas son las notas de la versión de Cloud Manager 2022.5.0.
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
-source-git-commit: 84cc4352488002ad40102ea2c507af652d9012a1
+source-git-commit: 59e57e33e52b2749865f8c92a8d947c9a04ffe79
 workflow-type: tm+mt
-source-wordcount: '210'
-ht-degree: 29%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -25,13 +25,11 @@ La fecha de la versión de [!UICONTROL Cloud Manager] la versión 2022.5.0 es el
 
 ## Novedades {#what-is-new}
 
-Las solicitudes HTTP salientes de las pruebas de recursos ahora provienen de un intervalo IP fijo.
+* La página Entornos tiene una columna para mostrar AEM Versión del entorno.
+* La ejecución de la canalización ahora mostrará los errores de nivel superior de la IU en la pantalla de ejecución.
+* La configuración predeterminada se ha actualizado para incluir la pausa en la configuración B/G.
 
 ## Correcciones de errores {#bug-fixes}
 
-* La opción de cambios &quot;Saltar equilibrador de carga&quot; no se ha podido desactivar.
-* La opción Omitir cambios del equilibrador de carga no se mostraba en el flujo de trabajo de la canalización de edición de Desplegar desarrollador de AMS.
-* Un subconjunto de repositorios GIT creados manualmente tenía un valor de nombre incorrecto que impedía que la función de reutilización de artefactos de compilación fuera efectiva. Los nombres de esos repositorios se han cambiado y los usuarios verán el nombre corregido en la IU/API de Cloud Manager.
-* Los artefactos de compilación de las canalizaciones que no son de producción se reutilizaron de forma incorrecta en las canalizaciones full stack de producción.
-* Al añadir o editar una canalización de calidad de código, ya no se muestran las opciones para gestionar errores de métricas.
-* Algunas configuraciones de variables de canalización inesperadas podrían causar errores en el paso de compilación.
+* Resultado de la prueba de rendimiento engañoso con error de tiempo de espera 504.
+* Algunas ejecuciones se quedaron atascadas en el contexto del déclencheur de confirmación y la cancelación del paso de aprobación.
