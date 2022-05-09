@@ -10,9 +10,9 @@ topic-tags: using
 discoiquuid: 832a4647-9b83-4a9d-b373-30fe16092b15
 feature: Code Deployment
 exl-id: 3d6610e5-24c2-4431-ad54-903d37f4cdb6
-source-git-commit: 0ba7c49b3550666030249562219b2d0dc51f4ae1
+source-git-commit: 9a9d7067a1369e80ccf9b2925369a466b3da2901
 workflow-type: tm+mt
-source-wordcount: '1220'
+source-wordcount: '1615'
 ht-degree: 1%
 
 ---
@@ -184,7 +184,6 @@ Además, al ver la página de detalles de ejecución de la canalización para un
 
 ![](assets/execution-emergency2.png)
 
-
 La creación de una ejecución de canalización en este modo de emergencia también se puede realizar mediante la API o CLI de Cloud Manager. Para iniciar una ejecución en modo de emergencia, envíe una solicitud de PUT al extremo de ejecución de la canalización con el parámetro de consulta `?pipelineExecutionMode=EMERGENCY` o, cuando utilice la CLI:
 
 ```
@@ -193,3 +192,73 @@ $ aio cloudmanager:pipeline:create-execution PIPELINE_ID --emergency
 
 >[!IMPORTANT]
 >Uso `--emergency` es posible que el indicador deba actualizarse a la última `aio-cli-plugin-cloudmanager` versión.
+
+## Volver a ejecutar una implementación de producción {#Reexecute-Deployment}
+
+La reejecución del paso de implementación de producción se admite en ejecuciones en las que se haya completado el paso de implementación de producción. El tipo de finalización no es importante: la implementación podría ser exitosa (solo para programas de AMS), cancelada o fallida. Dicho esto, se espera que el caso de uso principal sean los casos en los que el paso de implementación de producción haya fallado por motivos transitorios. La reejecución crea una nueva ejecución utilizando la misma canalización. Esta nueva ejecución consta de tres pasos:
+
+1. El paso validate : esto es esencialmente la misma validación que se produce durante la ejecución normal de una canalización.
+1. El paso de compilación : en el contexto de una nueva ejecución, el paso de compilación es copiar artefactos, no ejecutar realmente un nuevo proceso de compilación.
+1. El paso de implementación de producción : utiliza la misma configuración y opciones que el paso de implementación de producción en una ejecución de canalización normal.
+
+El paso de compilación puede tener una etiqueta ligeramente diferente en la interfaz de usuario para reflejar que está copiando artefactos, no reconstruyendo.
+
+![](assets/Re-deploy.png)
+
+Restricciones:
+
+* La ejecución del paso de implementación de producción solo estará disponible en la última ejecución.
+* La reejecución no está disponible para ejecuciones de reversión.
+* Si la última ejecución es una ejecución de reversión, no es posible la reejecución.
+* Si la última ejecución es una ejecución de actualización push, no es posible la reejecución.
+* Si la última ejecución ha fallado en cualquier momento antes del paso de implementación de producción, la reejecución no es posible.
+
+### Volver a ejecutar la API {#Reexecute-API}
+
+### Identificación de una ejecución de nueva ejecución
+
+Para identificar si una ejecución es una ejecución de nueva ejecución, se puede examinar el campo de déclencheur. Su valor será *RE_EXECUTE*.
+
+### Activación de una nueva ejecución
+
+Para déclencheur de una nueva ejecución, se debe realizar una solicitud de PUT al vínculo HAL &lt;(<http://ns.adobe.com/adobecloud/rel/pipeline/reExecute>)> en el estado del paso de implementación de producción. Si este vínculo está presente, la ejecución se puede reiniciar desde ese paso. Si está ausente, la ejecución no se puede reiniciar desde ese paso. En la versión inicial, este vínculo solo estará presente en el paso de implementación de producción, pero las versiones futuras pueden admitir el inicio de la canalización desde otros pasos. Ejemplo:
+
+```Javascript
+ {
+  "_links": {
+    "http://ns.adobe.com/adobecloud/rel/pipeline/logs": {
+      "href": "/api/program/4/pipeline/1/execution/953671/phase/1575676/step/2983530/logs",
+      "templated": false
+    },
+    "http://ns.adobe.com/adobecloud/rel/pipeline/reExecute": {
+      "href": "/api/program/4/pipeline/1/execution?stepId=2983530",
+      "templated": false
+    },
+    "http://ns.adobe.com/adobecloud/rel/pipeline/metrics": {
+      "href": "/api/program/4/pipeline/1/execution/953671/phase/1575676/step/2983530/metrics",
+      "templated": false
+    },
+    "self": {
+      "href": "/api/program/4/pipeline/1/execution/953671/phase/1575676/step/2983530",
+      "templated": false
+    }
+  },
+  "id": "6187842",
+  "stepId": "2983530",
+  "phaseId": "1575676",
+  "action": "deploy",
+  "environment": "weretail-global-b75-prod",
+  "environmentType": "prod",
+  "environmentId": "59254",
+  "startedAt": "2022-01-20T14:47:41.247+0000",
+  "finishedAt": "2022-01-20T15:06:19.885+0000",
+  "updatedAt": "2022-01-20T15:06:20.803+0000",
+  "details": {
+  },
+  "status": "FINISHED"
+```
+
+
+La sintaxis del vínculo HAL *href*  no está previsto que se utilice como punto de referencia. El valor real siempre debe leerse desde el vínculo HAL y no generarse.
+
+Envío de un *PUT* la solicitud a este extremo dará como resultado un *201* Si la respuesta es correcta, y el cuerpo de respuesta será la representación de la nueva ejecución. Esto es similar a iniciar una ejecución normal a través de la API.
