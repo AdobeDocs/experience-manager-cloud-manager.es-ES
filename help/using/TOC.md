@@ -8,9 +8,9 @@ user-guide-description: Aprenda a utilizar Adobe Managed Services para administr
 feature-set: Experience Manager Cloud Manager, Experience Manager
 role: Admin
 level: Intermediate
-source-git-commit: 5dd9471e1044ce0dcc6a03099256d182b1776f02
+source-git-commit: a0261c3bb9b931c743655d7d05138131a740db33
 workflow-type: tm+mt
-source-wordcount: '312'
+source-wordcount: '315'
 ht-degree: 91%
 
 ---
@@ -65,6 +65,7 @@ ht-degree: 91%
    + [Evaluación](evaluation.md)
 + Notas de la versión {#release-notes}
    + [Notas de la versión actual](release-notes-current.md)
+   + [Notas de la versión 2022.5.0](release-notes-2022-5-0.md)
    + [Notas de la versión 2022.4.0](release-notes-2022-4-0.md)
    + [Notas de la versión 2022.3.0](release-notes-2022-3-0.md)
    + [Notas de la versión 2022.2.0](release-notes-2022-2-0.md)
