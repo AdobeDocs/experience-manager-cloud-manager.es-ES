@@ -5,9 +5,9 @@ description: Consulte las preguntas frecuentes de Cloud Manager para obtener alg
 seo-description: Follow this page to get answers on Cloud Manager FAQs
 feature: Getting Started
 exl-id: 52c1ca23-5b42-4eae-b63a-4b22ef1a5aee
-source-git-commit: 71d44c7e3673ca62fcd2203ecc0bc4ed9fa22002
+source-git-commit: 6dce1f48b66c6970c3ba025031f0adcbd01195dd
 workflow-type: tm+mt
-source-wordcount: '881'
+source-wordcount: '874'
 ht-degree: 0%
 
 ---
@@ -30,9 +30,11 @@ AEM compilación de Cloud Manager falla al intentar cambiar la compilación de J
 
 ## Nuestra implementación está atascada porque la comprobación de calidad del código falló. ¿Hay alguna manera de evitar este cheque? {#deployment-stuck}
 
-Todos los errores de calidad de código excepto *Clasificación de seguridad* son métricas no críticas, por lo que se pueden evitar expandiendo los elementos en la interfaz de usuario de los resultados.
+Sí. Todos los errores de calidad de código excepto *Clasificación de seguridad* son métricas no críticas, por lo que se pueden evitar como parte de una canalización de implementación expandiendo los elementos en la interfaz de usuario de los resultados.
 
-Un usuario con [Administrador de implementación, Administrador de proyectos o Propietario empresarial](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html?lang=en#requirements) puede anular los problemas, en cuyo caso la canalización continúa o pueden aceptar los problemas, en cuyo caso la canalización se detiene con un error.  Consulte [Puerta de tres niveles mientras se ejecuta una canalización](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/understand-your-test-results.html?lang=en#how-to-use) para obtener más información.
+Un usuario con [Administrador de implementación, Administrador de proyectos o Propietario empresarial](/help/using/setting-up-users-and-roles.md#role-definitions) puede anular los problemas, en cuyo caso la canalización continúa o pueden aceptar los problemas, en cuyo caso la canalización se detiene con un error.
+
+Ver los documentos [Puerta de tres niveles mientras se ejecuta una canalización](/help/using/understand-your-test-results.md#three-tier-gates-while-running-a-pipeline) y [Configuración de canalizaciones que no sean de producción](/help/using/configuring-non-production-pipelines.md#understanding-the-flow) para obtener más información.
 
 ## Las implementaciones de Cloud Manager fallan en el paso de prueba de rendimiento en los entornos de Adobe Managed Services. ¿Cómo depuramos esto para pasar las métricas críticas? {#debug-critical-metrics}
 
