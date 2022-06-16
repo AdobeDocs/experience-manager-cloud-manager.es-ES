@@ -7,9 +7,9 @@ topic-tags: using
 discoiquuid: 83299ed8-4b7a-4b1c-bd56-1bfc7e7318d4
 feature: CI-CD Pipeline, Test Results
 exl-id: 6a574858-a30e-4768-bafc-8fe79f928294
-source-git-commit: 2179314120911cac8a0dd99a8b57974751959871
+source-git-commit: bfcb0fb5b9cf8317eb75e3b7b46455b14cd9d7b7
 workflow-type: tm+mt
-source-wordcount: '2897'
+source-wordcount: '2896'
 ht-degree: 3%
 
 ---
@@ -26,7 +26,7 @@ Estos se informan utilizando un sistema de clasificación de tres niveles como s
 
 >[!NOTE]
 >
->Para obtener más información sobre las pruebas admitidas por Cloud Manager para AEM as a Cloud Service, consulte la [AEM documentación as a Cloud Service.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/test-results/overview-test-results.html).
+>Para obtener más información sobre las pruebas admitidas por Cloud Manager para AEM as a Cloud Service, consulte la [AEM documentación as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/test-results/overview-test-results.html).
 
 
 ## Clasificaciones en tres niveles  {#three-tier-gates-while-running-a-pipeline}
@@ -76,7 +76,7 @@ Los resultados de las pruebas de calidad del código se entregan como **clasific
 
 >[!NOTE]
 >
->Consulte [Definiciones de métricas de SonarQube](https://docs.sonarqube.org/display/SONAR/Metric+Definitions) para obtener información más detallada.
+>Consulte [Definiciones de métricas de SonarQube](https://docs.sonarqube.org/latest/user-guide/metric-definitions/) para obtener información más detallada.
 
 >[!NOTE]
 >
@@ -179,7 +179,7 @@ Puede elegir entre uno y los tres conjuntos del **Pruebas** de su [configuració
 Consideremos este ejemplo.
 
 * Hay una división 50/50 entre las páginas en directo más populares y los conjuntos de páginas nuevas.
-* No se usan otras páginas activas.
+* No se utilizan otras páginas activas.
 * El nuevo conjunto de páginas contiene 3000 páginas.
 * El KPI de vistas de página por minuto se establece en 200.
 
@@ -309,3 +309,4 @@ Se puede producir un caso especial cuando el paquete de contenido &quot;todo&quo
 >
 >* Esta optimización no afecta a los paquetes que se implementan en AEM.
 >* Debido a que la coincidencia entre los paquetes de contenido incrustado y los paquetes de contenido omitido se basa en los nombres de archivo, esta optimización no se puede realizar si varios paquetes de contenido omitidos tienen exactamente el mismo nombre de archivo o si el nombre de archivo se cambia al incrustar.
+

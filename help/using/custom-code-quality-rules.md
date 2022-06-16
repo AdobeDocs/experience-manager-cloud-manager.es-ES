@@ -7,9 +7,9 @@ topic-tags: using
 discoiquuid: d2338c74-3278-49e6-a186-6ef62362509f
 feature: Code Quality Rules
 exl-id: 7d118225-5826-434e-8869-01ee186e0754
-source-git-commit: 834508109e34eb1e052abac482e981735c72d43d
+source-git-commit: d4c92a36ca3af123730d68fedf1dbf7ee819c66b
 workflow-type: tm+mt
-source-wordcount: '3611'
+source-wordcount: '3609'
 ht-degree: 3%
 
 ---
@@ -21,7 +21,7 @@ Esta página describe las reglas de calidad de código personalizadas ejecutadas
 
 >[!NOTE]
 >
->Para obtener más información sobre las reglas de calidad de código personalizadas para Cloud Manager en AEM as a Cloud Service, consulte [a esta documentación.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/test-results/custom-code-quality-rules.html#using-cloud-manager).
+>Para obtener más información sobre las reglas de calidad de código personalizadas para Cloud Manager en AEM as a Cloud Service, consulte [a esta documentación](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/test-results/custom-code-quality-rules.html#using-cloud-manager).
 
 >[!NOTE]
 >
@@ -651,7 +651,7 @@ AEM Los componentes que tienen un cuadro de diálogo de IU clásica siempre debe
 * Un componente con un cuadro de diálogo de diseño de IU clásica (es decir, un `design_dialog` debe tener un cuadro de diálogo de diseño de la interfaz de usuario táctil correspondiente (es decir, un `cq:design_dialog` nodo secundario).
 * Un componente con un cuadro de diálogo de IU clásica y un cuadro de diálogo de diseño de IU clásica debe tener un cuadro de diálogo de IU táctil correspondiente y un cuadro de diálogo de diseño de IU táctil correspondiente.
 
-La documentación de las herramientas de modernización de AEM proporciona detalles y herramientas para convertir componentes de la IU clásica a la IU táctil. Consulte [Documentación de las herramientas de modernización AEM ](https://opensource.adobe.com/aem-modernize-tools/pages/tools.html) para obtener más información.
+La documentación de las herramientas de modernización de AEM proporciona detalles y herramientas para convertir componentes de la IU clásica a la IU táctil. Consulte [Documentación de las herramientas de modernización AEM ](https://opensource.adobe.com/aem-modernize-tools/) para obtener más información.
 
 ### Los paquetes no deben mezclar contenido mutable e inmutable {#oakpal-packages-immutable}
 

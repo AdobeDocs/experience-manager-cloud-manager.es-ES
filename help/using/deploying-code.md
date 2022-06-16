@@ -10,7 +10,7 @@ topic-tags: using
 discoiquuid: 832a4647-9b83-4a9d-b373-30fe16092b15
 feature: Code Deployment
 exl-id: 3d6610e5-24c2-4431-ad54-903d37f4cdb6
-source-git-commit: 9a9d7067a1369e80ccf9b2925369a466b3da2901
+source-git-commit: 4c86446127c8cd66f964b192f3602f02fd2ddf8e
 workflow-type: tm+mt
 source-wordcount: '1615'
 ht-degree: 1%
@@ -221,7 +221,7 @@ Para identificar si una ejecución es una ejecución de nueva ejecución, se pue
 
 ### Activación de una nueva ejecución
 
-Para déclencheur de una nueva ejecución, se debe realizar una solicitud de PUT al vínculo HAL &lt;(<http://ns.adobe.com/adobecloud/rel/pipeline/reExecute>)> en el estado del paso de implementación de producción. Si este vínculo está presente, la ejecución se puede reiniciar desde ese paso. Si está ausente, la ejecución no se puede reiniciar desde ese paso. En la versión inicial, este vínculo solo estará presente en el paso de implementación de producción, pero las versiones futuras pueden admitir el inicio de la canalización desde otros pasos. Ejemplo:
+Para déclencheur de una nueva ejecución, se debe realizar una solicitud de PUT al vínculo HAL ```http://ns.adobe.com/adobecloud/rel/pipeline/reExecute``` en el estado del paso de implementación de producción. Si este vínculo está presente, la ejecución se puede reiniciar desde ese paso. Si está ausente, la ejecución no se puede reiniciar desde ese paso. En la versión inicial, este vínculo solo estará presente en el paso de implementación de producción, pero las versiones futuras pueden admitir el inicio de la canalización desde otros pasos. Ejemplo:
 
 ```Javascript
  {
