@@ -7,9 +7,9 @@ topic-tags: using
 discoiquuid: 83299ed8-4b7a-4b1c-bd56-1bfc7e7318d4
 feature: CI-CD Pipeline, Test Results
 exl-id: 6a574858-a30e-4768-bafc-8fe79f928294
-source-git-commit: bfcb0fb5b9cf8317eb75e3b7b46455b14cd9d7b7
+source-git-commit: fefb267793e5e1dc6f604a753e89cce2bf2620dd
 workflow-type: tm+mt
-source-wordcount: '2896'
+source-wordcount: '2917'
 ht-degree: 3%
 
 ---
@@ -160,7 +160,12 @@ El número de usuarios virtuales o contenedores que Cloud Manager genera depende
 
 #### Rastreador {#crawler}
 
-Antes del inicio del periodo de prueba de 30 minutos, Cloud Manager rastreará el entorno de ensayo utilizando un conjunto de una o más URL semilla configuradas por el ingeniero de éxito del cliente. A partir de estas direcciones URL, el HTML de cada página se inspecciona y los vínculos se atraviesan de forma predeterminada. Este proceso de rastreo está limitado a un máximo de 5000 páginas. Las solicitudes del rastreador tienen un tiempo de espera fijo de 10 segundos.
+Antes del inicio del periodo de prueba de 30 minutos, Cloud Manager rastreará el entorno de ensayo utilizando un conjunto de una o más URL semilla configuradas por el ingeniero de éxito del cliente. A partir de estas direcciones URL, el HTML de cada página se inspecciona y los vínculos se atraviesan de forma predeterminada.
+
+* De forma predeterminada, este proceso de rastreo está limitado a un máximo de 5000 páginas.
+* El número máximo de páginas que se van a probar se puede sobrescribir configurando la variable [variable de entorno](build-environment-details.md#environment-variables) `MAX_PAGES`.
+   * Los valores permitidos son `2000` - `7000`.
+* Las solicitudes del rastreador tienen un tiempo de espera fijo de 10 segundos.
 
 #### Conjuntos de páginas para pruebas {#page-sets}
 

@@ -1,19 +1,19 @@
 ---
-title: Notas de la versión 2022.6.0
-description: Estas son las notas de la versión de Cloud Manager 2022.6.0.
+title: Notas de la versión 2022.7.0
+description: Estas son las notas de la versión de Cloud Manager 2022.7.0.
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
-source-git-commit: dab08a2499b521b7026ab2bd17b82cb241f26fb6
+source-git-commit: 1b5510af0cdb0ccb3267723836910f6c5711122e
 workflow-type: tm+mt
-source-wordcount: '179'
-ht-degree: 3%
+source-wordcount: '140'
+ht-degree: 6%
 
 ---
 
 
-# Notas de la versión para Cloud Manager versión 2022.6.0 {#release-notes}
+# Notas de la versión de Cloud Manager versión 2022.7.0 {#release-notes}
 
-Esta página documenta las notas de la versión de [!UICONTROL Cloud Manager] versión 2022.6.0.
+Esta página documenta las notas de la versión de [!UICONTROL Cloud Manager] versión 2022.7.0.
 
 >[!NOTE]
 >
@@ -21,16 +21,13 @@ Esta página documenta las notas de la versión de [!UICONTROL Cloud Manager] ve
 
 ## Fecha de la versión {#release-date}
 
-La fecha de la versión de [!UICONTROL Cloud Manager] la versión 2022.6.0 es 9 de junio de 2022. La próxima versión está prevista para el 30 de junio de 2022.
+La fecha de la versión de [!UICONTROL Cloud Manager] la versión 2022.7.0 es 30 de junio de 2022. La próxima versión está prevista para el 11 de agosto de 2022.
 
 ## Novedades {#what-is-new}
 
-* Una nueva tarjeta de bienvenida en la página de aterrizaje de Cloud Manager permite a los usuarios acceder rápidamente a los tutoriales de incorporación y a las métricas de progreso relacionadas con el inquilino.
-   * Esta función se implementará por fases en la semana siguiente a la versión 2022.06.0.
-* [Ahora, los artefactos de compilación se pueden reutilizar](/help/using/setting-up-project.md#build-artifact-reuse) al usar la duplicación de Git.
+* Los usuarios de Cloud Manager ahora pueden acceder a tutoriales de vídeo útiles desde la página de aterrizaje **Bienvenido** en cualquier momento.
+* Número máximo de páginas que se van a probar [ahora se puede sobrescribir configurando la variable de entorno MAX_PAGES .](understand-your-test-results.md#crawler)
 
-## Cambios en la API {#api-changes}
+## Correcciones de errores {#bug-fixes}
 
-* La variable [`List Programs`](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getPrograms) La API de se ha desaprobado y [`List Programs for Tenant`](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getProgramsForTenant) en su lugar.
-   * `List Programs` sigue funcionando, pero su uso generará mensajes de advertencia en los registros.
-   * Dejará de ser compatible a los tres meses.
+* Se corrigió un problema en el cual después de la aprobación de una canalización de front-end no se realizó ninguna llamada para ejecutar el paso de implementación.
