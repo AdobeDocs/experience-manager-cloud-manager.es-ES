@@ -1,15 +1,10 @@
 ---
 title: Reglas de calidad de código personalizadas
-description: Esta página describe las reglas de calidad de código personalizadas ejecutadas por Cloud Manager como parte de las pruebas de calidad del código. Se basan en las prácticas recomendadas de Ingeniería AEM.
-uuid: a7feb465-1982-46be-9e57-e67b59849579
-products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
-topic-tags: using
-discoiquuid: d2338c74-3278-49e6-a186-6ef62362509f
-feature: Code Quality Rules
+description: Obtenga más información sobre las reglas de calidad de código personalizadas ejecutadas por Cloud Manager como parte de las pruebas de calidad de código, en función de las prácticas recomendadas de ingeniería de AEM.
 exl-id: 7d118225-5826-434e-8869-01ee186e0754
-source-git-commit: d4c92a36ca3af123730d68fedf1dbf7ee819c66b
+source-git-commit: 5fe0d20d9020e6b90353ef5a54e49c93be5c00be
 workflow-type: tm+mt
-source-wordcount: '3609'
+source-wordcount: '3575'
 ht-degree: 3%
 
 ---
@@ -17,11 +12,7 @@ ht-degree: 3%
 
 # Reglas de calidad de código personalizadas {#custom-code-quality-rules}
 
-Esta página describe las reglas de calidad de código personalizadas ejecutadas por Cloud Manager como parte de [prueba de calidad del código.](understand-your-test-results.md) Se basan en las prácticas recomendadas de Ingeniería AEM.
-
->[!NOTE]
->
->Para obtener más información sobre las reglas de calidad de código personalizadas para Cloud Manager en AEM as a Cloud Service, consulte [a esta documentación](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/test-results/custom-code-quality-rules.html#using-cloud-manager).
+Obtenga más información sobre las reglas de calidad de código personalizadas ejecutadas por Cloud Manager como parte de [pruebas de calidad del código,](/help/using/code-quality-testing.md) basado en las prácticas recomendadas de AEM Engineering.
 
 >[!NOTE]
 >

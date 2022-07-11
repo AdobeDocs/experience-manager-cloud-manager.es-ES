@@ -1,11 +1,11 @@
 ---
 title: Administración de canalizaciones
 description: Obtenga información sobre cómo administrar las canalizaciones existentes, como editarlas, ejecutarlas y eliminarlas.
-index: true
-source-git-commit: 099a4490e3a8578b9f3485fd1514d1e97db977ab
+exl-id: e36420d2-57c5-4375-99fb-dd47c1c8bffd
+source-git-commit: 99325c28c379103db2ba4c19bb6d206849c6e126
 workflow-type: tm+mt
-source-wordcount: '518'
-ht-degree: 0%
+source-wordcount: '517'
+ht-degree: 3%
 
 ---
 
@@ -18,7 +18,7 @@ Obtenga información sobre cómo administrar las canalizaciones existentes, como
 
 La variable **Canalizaciones** en el **Información general del programa** en Cloud Manager le ofrece una descripción general de todas sus canalizaciones y de su estado actual.
 
-![Tarjeta de canalización en Cloud Manager](/help/using/assets/configure-pipelines/pipelines-card.png)
+![Tarjeta de canalización en Cloud Manager](/help/assets/configure-pipelines/pipelines-card.png)
 
 Al hacer clic en el botón de elipsis situado junto a cada canalización, puede realizar las siguientes acciones.
 
@@ -29,8 +29,8 @@ Al hacer clic en el botón de elipsis situado junto a cada canalización, puede 
 
 En la parte inferior de la lista de canalizaciones, tiene opciones generales.
 
-* **Agregar** - A [añadir una nueva canalización de producción](configuring-production-pipelines.md) o [añadir nueva canalización que no sea de producción](configuring-non-production-pipelines.md)
-* **Mostrar todo** : lleva al usuario al **Canalizaciones** para ver todas las canalizaciones en una tabla más detallada.
+* **Agregar** - A [añadir una nueva canalización de producción](/help/using/production-pipelines.md) o [añadir nueva canalización que no sea de producción](/help/using/non-production-pipelines.md)
+* **Mostrar todo** : lleva al usuario al **Canalizaciones** pantalla para ver todas las canalizaciones en una tabla más detallada
 * **Acceder a información de repositorios** - Muestra la información necesaria para acceder al repositorio de Git de Cloud Manager
 * **Más información** - Navega a los recursos de documentación de canalización de CI/CD.
 
@@ -55,8 +55,8 @@ Según el tipo de canalización, puede cancelar la ejecución haciendo clic de n
 1. La variable **Editar canalización de producción** o **Editar canalización que no sea de producción** se muestra el cuadro de diálogo , que le permite editar los mismos detalles introducidos al crear la canalización.
 
    * Consulte las siguientes páginas para obtener más información sobre todos los campos y las opciones de configuración disponibles para las canalizaciones.
-      * [Configuración de canalizaciones de producción](configuring-production-pipelines.md)
-      * [Configuración de canalizaciones que no sean de producción](configuring-non-production-pipelines.md)
+      * [Configuración de canalizaciones de producción](/help/using/production-pipelines.md)
+      * [Configuración de canalizaciones que no sean de producción](/help/using/non-production-pipelines.md)
 
 1. Haga clic en **Actualizar** una vez que haya terminado de editar la canalización.
 
@@ -82,9 +82,9 @@ Según el tipo de canalización, puede cancelar la ejecución haciendo clic de n
 
 1. Se le redirige a la página de detalles de la canalización en ejecución.
 
-![Detalles de canalización](/help/using/assets/configure-pipelines/pipeline-running-details.png)
+![Detalles de canalización](/help/assets/configure-pipelines/pipeline-running-details.png)
 
-Desde aquí puede ver el estado de los distintos pasos de la canalización y recuperar los registros de compilación con fines diagnósticos. Consulte el documento [Implementación del código](deploying-code.md) para obtener más información.
+Desde aquí puede ver el estado de los distintos pasos de la canalización y recuperar los registros de compilación con fines diagnósticos. Consulte el documento [Implementación de código](/help/using/code-deployment.md) para obtener más información.
 
 >[!NOTE]
 >
