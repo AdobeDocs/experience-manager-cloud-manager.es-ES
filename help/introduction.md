@@ -2,9 +2,9 @@
 title: Introducción a Cloud Manager para AMS
 description: Empiece aquí para conocer Cloud Manager para Adobe Managed Services (AMS) y cómo permite a las organizaciones administrar Adobe Experience Manager en la nube.
 exl-id: 58344d8a-b869-4177-a9cf-6a8b7dfe9588
-source-git-commit: 22d40a1f07f56ee7a7dddb4897e4079f1e346674
+source-git-commit: 14e35882765783b234ca35da14257279af5130a0
 workflow-type: tm+mt
-source-wordcount: '1292'
+source-wordcount: '1287'
 ht-degree: 10%
 
 ---
@@ -100,7 +100,7 @@ En cualquier momento, solo uno de los entornos está activo, y el entorno en dir
 * La implementación azul/verde es un complemento de las canalizaciones de CD/CI de Cloud Manager en el que se crea un segundo conjunto de instancias de publicación y Dispatcher (verde) y se utiliza para implementaciones. A continuación, las instancias verdes se adjuntan al equilibrador de carga de producción y las instancias antiguas (azul) se eliminan y finalizan.
 * Esta implementación de azul/verde trata las instancias como transitorias y cada iteración de una canalización azul/verde creará un nuevo conjunto de servidores de publicación y Dispatcher.
 * Se creará un equilibrador de carga verde como parte de la configuración. Este equilibrador de carga nunca cambiará y es a lo que debería apuntar su URL verde o de &quot;prueba&quot;.
-* Durante una implementación azul/verde, se creará una réplica exacta de los niveles existentes de publicación/Dispatcher (tal y como se lee en la TDL).
+* Durante una implementación azul/verde, se creará una réplica exacta de los niveles de publicación/Dispatcher existentes.
 
 #### Flujo de implementación azul/verde {#flow}
 
