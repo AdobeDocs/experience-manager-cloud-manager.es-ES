@@ -1,19 +1,19 @@
 ---
-title: Notas de la versión 2022.7.0
-description: Estas son las notas de la versión de Cloud Manager 2022.7.0.
+title: Notas de la versión 2022.8.0
+description: Estas son las notas de la versión de Cloud Manager 2022.8.0.
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
-source-git-commit: 6572c16aea2c5d2d1032ca5b0f5d75ade65c3a19
+source-git-commit: 1c4fe7407dc059773cfd0c1779a11c1ba1acad22
 workflow-type: tm+mt
-source-wordcount: '138'
-ht-degree: 6%
+source-wordcount: '150'
+ht-degree: 11%
 
 ---
 
 
-# Notas de la versión de Cloud Manager versión 2022.7.0 {#release-notes}
+# Notas de la versión para Cloud Manager versión 2022.8.0 {#release-notes}
 
-Esta página documenta las notas de la versión de [!UICONTROL Cloud Manager] versión 2022.7.0.
+Esta página documenta las notas de la versión de [!UICONTROL Cloud Manager] versión 2022.8.0.
 
 >[!NOTE]
 >
@@ -21,13 +21,14 @@ Esta página documenta las notas de la versión de [!UICONTROL Cloud Manager] ve
 
 ## Fecha de la versión {#release-date}
 
-La fecha de la versión de [!UICONTROL Cloud Manager] la versión 2022.7.0 es 30 de junio de 2022. La próxima versión está prevista para el 11 de agosto de 2022.
+La fecha de la versión de [!UICONTROL Cloud Manager] la versión 2022.8.0 es el 11 de agosto de 2022. La próxima versión está prevista para el 9 de septiembre de 2022.
 
 ## Novedades {#what-is-new}
 
-* Los usuarios de Cloud Manager ahora pueden acceder a tutoriales de vídeo útiles desde la página de aterrizaje **Bienvenido** en cualquier momento.
-* Número máximo de páginas que se van a probar [ahora se puede anular configurando la variable `MAX_PAGES` variable de entorno.](/help/using/code-quality-testing.md#crawler)
+* En determinadas situaciones, un mecanismo de reintento silencioso ayudará a garantizar que la canalización de implementación no genere un estado de error.
+* [El Tipo De Archivo Del Proyecto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=es) incluido en Cloud Manager se ha actualizado a la versión 37.
 
 ## Correcciones de errores {#bug-fixes}
 
-* Se corrigió un problema en el cual después de la aprobación de una canalización de front-end no se realizó ninguna llamada para ejecutar el paso de implementación.
+* Algunos casos de errores poco frecuentes de creación de repositorios se han vuelto más resistentes.
+* Los errores poco frecuentes de configuración de la organización de VSTS ahora se reducen debido a los reintentos introducidos.
