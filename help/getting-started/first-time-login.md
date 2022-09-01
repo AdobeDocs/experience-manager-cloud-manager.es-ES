@@ -2,9 +2,9 @@
 title: Primer inicio de sesión
 description: Siga esta página si ha configurado las configuraciones generales y está listo para usar Cloud Manager por primera vez.
 exl-id: eb043437-8566-4a8d-8c5c-c8cf1d33daeb
-source-git-commit: d033b7cf53d4d9faf074f1dc09e2958eb91afe3b
+source-git-commit: 43d05eed9c2e7c4cf6c3becdbc3e4522428722b7
 workflow-type: tm+mt
-source-wordcount: '188'
+source-wordcount: '181'
 ht-degree: 3%
 
 ---
@@ -34,7 +34,7 @@ Una vez configurada la configuración general de [!UICONTROL Cloud Manager], est
 
 1. Haga clic en **Programa de instalación** para configurar la descripción del programa y definir los indicadores clave de rendimiento (KPI).
 
-Continúe con el documento [Configuración del programa](https://helpx.adobe.com/experience-manager/cloud-manager/using/program-setup.html) para ver los pasos siguientes en la configuración del programa.
+Continúe con el documento [Configuración del programa](/help/getting-started/program-setup.md) para ver los pasos siguientes en la configuración del programa.
 
 ## Actividad de Cloud Manager {#activity}
 
