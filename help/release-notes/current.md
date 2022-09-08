@@ -1,19 +1,19 @@
 ---
-title: Notas de la versión 2022.8.0
-description: Estas son las notas de la versión de Cloud Manager 2022.8.0.
+title: Notas de la versión 2022.9.0
+description: Estas son las notas de la versión de Cloud Manager 2022.9.0.
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
-source-git-commit: 1c4fe7407dc059773cfd0c1779a11c1ba1acad22
+source-git-commit: e74d386d0b2d50a7e276bb7ead7594ef448742ae
 workflow-type: tm+mt
-source-wordcount: '150'
-ht-degree: 11%
+source-wordcount: '196'
+ht-degree: 4%
 
 ---
 
 
-# Notas de la versión para Cloud Manager versión 2022.8.0 {#release-notes}
+# Notas de la versión de Cloud Manager 2022.9.0 {#release-notes}
 
-Esta página documenta las notas de la versión de [!UICONTROL Cloud Manager] versión 2022.8.0.
+Esta página documenta las notas de la versión de [!UICONTROL Cloud Manager] versión 2022.9.0.
 
 >[!NOTE]
 >
@@ -21,14 +21,16 @@ Esta página documenta las notas de la versión de [!UICONTROL Cloud Manager] ve
 
 ## Fecha de la versión {#release-date}
 
-La fecha de la versión de [!UICONTROL Cloud Manager] la versión 2022.8.0 es el 11 de agosto de 2022. La próxima versión está prevista para el 9 de septiembre de 2022.
+La fecha de la versión de [!UICONTROL Cloud Manager] la versión 2022.9.0 es 8 de septiembre de 2022. La próxima versión está prevista para el 6 de octubre de 2022.
 
 ## Novedades {#what-is-new}
 
-* En determinadas situaciones, un mecanismo de reintento silencioso ayudará a garantizar que la canalización de implementación no genere un estado de error.
-* [El Tipo De Archivo Del Proyecto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=es) incluido en Cloud Manager se ha actualizado a la versión 37.
+* Compatibilidad de Cloud Manager con el escalado automático horizontal de varias regiones.
+* Nueva tarjeta de la página de bienvenida personalizada para usuarios que solo tienen una función de usuario de Cloud Manager que les guía sobre cómo navegar a entornos AEM y acceso restringido al programa.
+* Los clientes que no tengan ninguna función de Cloud Manager no podrán acceder a los detalles del programa. Sin embargo, pueden navegar a los puntos finales de Autor desde la página de aterrizaje de CM.
+* Elimine los errores de canalización que se derivan de los errores de reintentos conseguidos al crear buena resistencia.
 
 ## Correcciones de errores {#bug-fixes}
 
-* Algunos casos de errores poco frecuentes de creación de repositorios se han vuelto más resistentes.
-* Los errores poco frecuentes de configuración de la organización de VSTS ahora se reducen debido a los reintentos introducidos.
+* Se han mejorado los comentarios de los clientes relacionados con la creación de aplicaciones AEM clientes cuando maven enfrenta problemas de conectividad con repos privados.
+* En raras ocasiones, cuando el sistema de comprobación de estado no puede recuperar una puntuación de estado válida, no se activa un evento de escalado automático.
