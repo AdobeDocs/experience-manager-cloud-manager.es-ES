@@ -2,9 +2,9 @@
 title: Notificaciones
 description: Descubra cómo Cloud Manager le notifica de eventos importantes.
 exl-id: cfd5655f-2d2c-4304-b25c-6cdffe7ff64c
-source-git-commit: 22efb00c7e3ffee8829073dbb498f05a9114807d
+source-git-commit: 804b537bbd61105a92b42960d44ecedabfb13099
 workflow-type: tm+mt
-source-wordcount: '247'
+source-wordcount: '563'
 ht-degree: 1%
 
 ---
@@ -26,26 +26,72 @@ Las notificaciones aparecen en una barra lateral dentro de [!UICONTROL Cloud Man
 
 El icono de campana del encabezado se marca cuando se tienen nuevas notificaciones.
 
-![Icono de notificaciones](/help/assets/image2018-7-12_11-52-40.png)
+![Icono de notificaciones](/help/assets/notifications-bell-badged.png)
 
-Haga clic en el icono de campana para abrir la barra lateral y ver las notificaciones. La barra lateral enumera las notificaciones más recientes.
+Haga clic en el icono de campana para abrir la barra lateral y ver las notificaciones. La variable **Notificaciones** en la barra lateral, se muestran las notificaciones más recientes, como las confirmaciones de implementación. Las notificaciones afectan a sus entornos.
 
-![Barra lateral de notificaciones](/help/assets/screen_shot_2018-07-20at91406pm.png)
+![Barra lateral de notificaciones](/help/assets/notifications-activities.png)
 
-Haga clic en una notificación y, a continuación, haga clic en **Ver detalles** para acceder a la página de detalles de ejecución de la canalización.
+La variable **Anuncios** incluye anuncios de productos de Adobe. Los anuncios hacen referencia al producto.
 
-![Ver detalles](/help/assets/screen_shot_2018-08-14at43503pm.png)
+![Barra lateral de notificaciones](/help/assets/notificaitons-announcements.png)
 
-## Notificaciones por correo electrónico {#email-notifications}
+Haga clic en una notificación o anuncio para ver sus detalles. Las notificaciones vinculadas a actividades como las implementaciones de canalización le llevan al detalle de esa actividad, como la ventana de ejecución de la canalización.
 
-De forma predeterminada, las notificaciones están disponibles en la interfaz de usuario web en todo el Adobe [!UICONTROL Experience Cloud] soluciones. Los usuarios individuales también pueden optar por que estas notificaciones se envíen por correo electrónico.
+Haga clic en el **Ver todo** en la parte inferior del panel para ver todos los anuncios de la bandeja de entrada.
 
-Haga clic en el icono de engranaje en la parte inferior de la barra lateral de notificaciones.
+Haga clic en el **Marcar todo como leído** en la parte inferior del panel para marcar todas las notificaciones no leídas como leídas y borrar el distintivo del icono de la campana.
 
-![Icono de configuración de notificación](/help/assets/image2018-7-12_12-8-19.png)
+## Configuración de notificaciones {#configuration}
 
-Esto llevará al usuario al **Preferencias de notificaciones** pantalla en Adobe [!UICONTROL Experience Cloud].
+Puede personalizar cómo recibe las notificaciones y qué notificaciones recibe.
 
-Los usuarios pueden activar las notificaciones por correo electrónico y (opcionalmente) seleccionar los tipos de notificaciones que desean recibir por correo electrónico. También puede especificar recibir las notificaciones como un compendio diario o semanal del Adobe [!UICONTROL Experience Cloud], como se muestra a continuación:
+Haga clic en el icono de engranaje en la parte superior de la barra lateral de notificaciones.
 
-![Configuración de notificaciones](/help/assets/image2018-7-12_12-10-51.png)
+![Icono de configuración de notificación](/help/assets/notifications-configuration.png)
+
+Esto abre el **preferencias del Experience Cloud** , donde puede definir las suscripciones de notificación y cómo recibe las notificaciones.
+
+### Suscripciones {#subscriptions}
+
+Las suscripciones definen para qué productos recibe notificaciones y qué notificaciones.
+
+![Suscripciones de notificaciones](/help/assets/notifications-subscriptions.png)
+
+De forma predeterminada, recibirá todas las notificaciones de todos los productos. Haga clic en **Personalizar** junto a un producto para definir los tipos de notificaciones que recibe para ese producto.
+
+![Personalización de la suscripción de notificaciones](/help/assets/notifications-subscriptions-customize.png)
+
+### Prioridad {#priority}
+
+Las alertas prioritarias se marcarán con un **ALTO** y se pueden configurar para que se reciban exclusivamente como alertas. En el **Prioridad** , puede definir qué categorías se clasifican como notificaciones de prioridad.
+
+![Prioridad de notificación](/help/assets/notifications-priority.png)
+
+Utilice la lista desplegable para añadir a la lista de categorías que cumplen los requisitos de prioridad. Haga clic en la X situada junto a los nombres de las categorías para eliminarlos.
+
+### Alertas {#alerts}
+
+Las alertas aparecen en la esquina superior derecha de la ventana durante unos segundos. Utilice la variable **Alertas** para definir para qué notificaciones recibe alertas.
+
+![Alertas de notificación](/help/assets/notifications-alerts.png)
+
+Puede definir el comportamiento de las alertas.
+
+* **Mostrar alertas para** - Define los tipos de notificaciones que déclencheur alertas
+* **Las alertas deben permanecer en la pantalla hasta que las descarte** - Controla si las alertas deben persistir a menos que las descarte activamente
+* **Duración** - Define cuánto tiempo debe permanecer la alerta en la pantalla si no ha elegido que permanezcan en ella.
+
+## Correo electrónico {#emails}
+
+Las notificaciones están disponibles en la interfaz de usuario web en todo el Adobe [!UICONTROL Experience Cloud] soluciones. También puede optar por que estas notificaciones se envíen por correo electrónico en la variable **Correos electrónicos** para obtener más información.
+
+![Correos electrónicos de notificación](/help/assets/notifications-emails.png)
+
+De forma predeterminada, no se envían correos electrónicos. Puede optar por recibir correos electrónicos como:
+
+* Instantáneamente
+* Cada día
+* Cada semana
+
+When **Notificaciones instantáneas** se selecciona, los correos electrónicos se envían inmediatamente para cada notificación. Para **Resumen diario** y **Resumen semanal** puede elegir cuándo se envía el compendio diario y en qué día y cuándo se envía el compendio semanal.
