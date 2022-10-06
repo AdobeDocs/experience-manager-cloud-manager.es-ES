@@ -1,19 +1,19 @@
 ---
-title: Notas de la versión 2022.9.0
-description: Estas son las notas de la versión de Cloud Manager 2022.9.0.
+title: Notas de la versión 2022.10.0
+description: Estas son las notas de la versión de Cloud Manager 2022.10.0.
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
-source-git-commit: e74d386d0b2d50a7e276bb7ead7594ef448742ae
+source-git-commit: 69c1c8a1136c037a5eea635a75f2d4d187f2ac4d
 workflow-type: tm+mt
-source-wordcount: '196'
-ht-degree: 4%
+source-wordcount: '120'
+ht-degree: 14%
 
 ---
 
 
-# Notas de la versión de Cloud Manager 2022.9.0 {#release-notes}
+# Notas de la versión de Cloud Manager 2022.10.0 {#release-notes}
 
-Esta página documenta las notas de la versión de [!UICONTROL Cloud Manager] versión 2022.9.0.
+Esta página documenta las notas de la versión de [!UICONTROL Cloud Manager] versión 2022.10.0.
 
 >[!NOTE]
 >
@@ -21,16 +21,12 @@ Esta página documenta las notas de la versión de [!UICONTROL Cloud Manager] ve
 
 ## Fecha de la versión {#release-date}
 
-La fecha de la versión de [!UICONTROL Cloud Manager] la versión 2022.9.0 es 8 de septiembre de 2022. La próxima versión está prevista para el 6 de octubre de 2022.
+La fecha de la versión de [!UICONTROL Cloud Manager] la versión 2022.10.0 es 6 de octubre de 2022. La próxima versión está prevista para el 3 de noviembre de 2022.
 
 ## Novedades {#what-is-new}
 
-* Compatibilidad de Cloud Manager con el escalado automático horizontal de varias regiones.
-* Nueva tarjeta de la página de bienvenida personalizada para usuarios que solo tienen una función de usuario de Cloud Manager que les guía sobre cómo navegar a entornos AEM y acceso restringido al programa.
-* Los clientes que no tengan ninguna función de Cloud Manager no podrán acceder a los detalles del programa. Sin embargo, pueden navegar a los puntos finales de Autor desde la página de aterrizaje de CM.
-* Elimine los errores de canalización que se derivan de los errores de reintentos conseguidos al crear buena resistencia.
+* La versión de [AEM tipo de archivo del proyecto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=es) utilizado por Cloud Manager se ha actualizado a la versión 39.
 
 ## Correcciones de errores {#bug-fixes}
 
-* Se han mejorado los comentarios de los clientes relacionados con la creación de aplicaciones AEM clientes cuando maven enfrenta problemas de conectividad con repos privados.
-* En raras ocasiones, cuando el sistema de comprobación de estado no puede recuperar una puntuación de estado válida, no se activa un evento de escalado automático.
+* La fiabilidad de las pruebas de rendimiento de Assets se mejoró añadiendo reintentos en ciertas condiciones.
