@@ -1,11 +1,11 @@
 ---
 title: Integración de Git con Adobe Cloud Manager
-description: Esta serie de vídeos analiza la configuración e integración de un repositorio de Git administrado por el cliente (local) con Adobe Cloud Manager.
+description: Esta serie de vídeos analiza la configuración e integración de un repositorio de Git administrado por el cliente (On-Premise) con Adobe Cloud Manager.
 exl-id: e517f8a4-23f0-4486-8278-91396dba76ec
 source-git-commit: 91e909273bf2b21d7f6413731923011915079e45
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '347'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ Esta serie de vídeos explora varios casos de uso relacionados con la integraci�
 * [Implementación de producción](#production-deployment)
 * [Sincronización de etiquetas de versión](#sync-tags)
 
-Esta serie de vídeos supone un conocimiento básico de la gestión de Git y control de fuentes. Consulte la [recursos adicionales a continuación](#additional-resources) para obtener más información sobre git.
+Esta serie de vídeos supone un conocimiento básico de la gestión de Git y control de fuentes. Consulte los [recursos adicionales a continuación](#additional-resources) para obtener más información sobre Git.
 
 Los pasos y las convenciones de nomenclatura descritos en esta serie de vídeos representan algunas prácticas recomendadas para trabajar con un repositorio de Git administrado por el cliente y Cloud Manager. Se espera que los convenios y flujos de trabajo descritos se adapten a los equipos de desarrollo individuales.
 
@@ -40,7 +40,7 @@ Primeros pasos para sincronizar un repositorio de Git administrado por el client
 
 ## Estrategia básica de ramas {#branching-strategy}
 
-Configure una estrategia básica de ramificación para aprovechar las ventajas de Cloud Manager [producción](/help/using/production-pipelines.md) y [canalizaciones que no sean de producción.](/help/using/non-production-pipelines.md)
+Configure una estrategia básica de ramificación para aprovechar las ventajas de las [canalizaciones de producción](/help/using/production-pipelines.md) y [que no sean de producción](/help/using/non-production-pipelines.md) de Cloud Manager.
 
 >[!VIDEO](https://video.tv.adobe.com/v/28712/?quality=12)
 
@@ -66,5 +66,5 @@ Sincronice las etiquetas de versión de un repositorio de Git de Cloud Manager e
 
 * [Introducción a Cloud Manager](/help/introduction.md)
 * [Recursos de GitHub](https://try.github.io)
-* [Tutorials de Git asiáticos](https://www.atlassian.com/git/tutorials/what-is-version-control)
-* [Hoja de referencia de Git](https://education.github.com/git-cheat-sheet-education.pdf)
+* [Tutoriales de Git de Atlassian](https://www.atlassian.com/git/tutorials/what-is-version-control)
+* [Hoja de características clave de Git](https://education.github.com/git-cheat-sheet-education.pdf)
