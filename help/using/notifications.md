@@ -1,30 +1,30 @@
 ---
 title: Notificaciones
-description: Descubra cómo Cloud Manager le notifica de eventos importantes.
+description: Descubra cómo Cloud Manager le notifica de los eventos importantes.
 exl-id: cfd5655f-2d2c-4304-b25c-6cdffe7ff64c
 source-git-commit: e767d9ff5e3df0047d2cf47d7b0842854101a01a
 workflow-type: tm+mt
 source-wordcount: '563'
-ht-degree: 1%
+ht-degree: 23%
 
 ---
 
 
 # Notificaciones {#notifications}
 
-Descubra cómo Cloud Manager le notifica de eventos importantes.
+Descubra cómo Cloud Manager le notifica de los eventos importantes.
 
 ## Notificaciones en Cloud Manager {#cloud-manager-notifications}
 
-[!UICONTROL Cloud Manager] envía notificaciones cuando se inicia y finaliza una canalización de producción (con éxito o sin éxito), al comienzo de una implementación de producción, así como cuando la variable **Aprobación Go-Live** y **Programado** se llega a los pasos. Estas notificaciones se envían a través de la variable [!UICONTROL Experience Cloud] sistema de notificaciones.
+[!UICONTROL Cloud Manager] le envía notificaciones cuando se inicia y finaliza una canalización de producción (correctamente o no) y al comienzo de una implementación de producción, así como cuando se llega a los pasos **Aprobación de lanzamiento** y **Programado**. Estas se envían a través del sistema de notificaciones de [!UICONTROL Experience Cloud].
 
 >[!NOTE]
 >
->Las notificaciones programadas y de aprobación solo se envían a los usuarios del **Propietario empresarial**, **Administrador de programas** y **Administrador de implementación** funciones.
+>Las notificaciones programadas y de aprobación solo se envían a los usuarios con las funciones **Propietario empresarial**, **Administrador de programas** y **Administrador de implementación**.
 
-Las notificaciones aparecen en una barra lateral dentro de [!UICONTROL Cloud Manager] y en todo el Adobe [!UICONTROL Experience Cloud].
+Las notificaciones aparecen en una barra lateral dentro de [!UICONTROL Cloud Manager] y en [!UICONTROL Experience Cloud] de Adobe.
 
-El icono de campana del encabezado se marca cuando se tienen nuevas notificaciones.
+El icono de campana del encabezado se señala cuando tiene nuevas notificaciones.
 
 ![Icono de notificaciones](/help/assets/notifications-bell-badged.png)
 
@@ -48,7 +48,7 @@ Puede personalizar cómo recibe las notificaciones y qué notificaciones recibe.
 
 Haga clic en el icono de engranaje en la parte superior de la barra lateral de notificaciones.
 
-![Icono de configuración de notificación](/help/assets/notifications-configuration.png)
+![Icono de configuración de notificaciones](/help/assets/notifications-configuration.png)
 
 Esto abre el **preferencias del Experience Cloud** , donde puede definir las suscripciones de notificación y cómo recibe las notificaciones.
 

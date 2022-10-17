@@ -9,7 +9,7 @@ role: Admin
 source-git-commit: 101177e49ec276b8203a32767392538dc257394a
 workflow-type: tm+mt
 source-wordcount: '309'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 78%
 + Información general {#overview}
    + [Conceptos clave](overview/key-concepts.md)
    + [Recorrido del usuario](overview/user-journey.md)
-   + [Canalizaciones CI/CD](overview/ci-cd-pipelines.md)
+   + [Canalizaciones de CI/CD](overview/ci-cd-pipelines.md)
    + [Seguridad y privacidad](overview/security-and-privacy.md)
    + [Recursos de ayuda](overview/help-resources.md)
    + [Preguntas frecuentes sobre Cloud Manager](overview/faqs.md)
@@ -29,20 +29,20 @@ ht-degree: 78%
    + [Repositorio de códigos de origen](requirements/source-code-repository.md)
    + [Permisos basados en funciones](requirements/role-based-permissions.md)
    + [Configuración de usuarios y funciones](requirements/users-and-roles.md)
-   + [Aprovisionamiento de entorno](requirements/environment-provisioning.md)
+   + [Aprovisionamiento del entorno](requirements/environment-provisioning.md)
 + Introducción {#getting-started}
    + [Primer inicio de sesión](getting-started/first-time-login.md)
    + [Configuración del programa](getting-started/program-setup.md)
-   + Creación AEM proyecto {#project-creation}
+   + Creación de un proyecto de AEM {#project-creation}
       + [Uso del asistente](getting-started/using-the-wizard.md)
       + [Configuración del proyecto](getting-started/project-setup.md)
       + [El entorno de compilación](getting-started/build-environment.md)
    + [Configuración de ramas](getting-started/configuring-branches.md)
    + [Configuraciones de Dispatcher](getting-started/dispatcher-configurations.md)
-+ Utilización {#using}
-   + Canalizaciones CI/CD {#pipelines}
++ Uso de {#using}
+   + Canalizaciones de CI/CD {#pipelines}
       + [Configuración de canalizaciones de producción](using/production-pipelines.md)
-      + [Configuración de canalizaciones que no sean de producción](using/non-production-pipelines.md)
+      + [Configuración de canalizaciones que no son de producción](using/non-production-pipelines.md)
       + [Administración de canalizaciones](using/managing-pipelines.md)
    + [Implementación de código](using/code-deployment.md)
    + [Prueba de calidad del código](using/code-quality-testing.md)
@@ -52,11 +52,11 @@ ht-degree: 78%
    + [CLI de Cloud Manager](https://github.com/adobe/aio-cli-plugin-cloudmanager/blob/main/README.md)
    + [Notificaciones](using/notifications.md)
    + [Reglas de calidad de código personalizadas](using/custom-code-quality-rules.md)
-+ Administrar código {#managing-code}
++ Administración del código {#managing-code}
    + [Administrar versiones del proyecto de Maven](managing-code/maven-project-version.md)
    + [Repositorios](managing-code/repositories.md)
-   + [Integración con git](managing-code/git-integration.md)
-   + [Uso de varios repositorios Git](managing-code/multiple-git-repos.md)
+   + [Integración con Git](managing-code/git-integration.md)
+   + [Uso de varios repositorios de Git](managing-code/multiple-git-repos.md)
 + Asistente para la actualización de productos {#product-update-wizard}
    + [Información general](product-update-wizard/overview.md)
    + [Evaluación](product-update-wizard/evaluation.md)
