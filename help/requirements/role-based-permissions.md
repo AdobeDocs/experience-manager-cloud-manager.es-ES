@@ -3,32 +3,32 @@ title: Permisos basados en funciones
 description: Obtenga información sobre los permisos preconfigurados basados en funciones de Cloud Manager para administrar el acceso a los recursos de la nube.
 exl-id: b66533fb-db93-40e8-919d-581261fdbf24
 source-git-commit: 522e5fbc650a8159602eb1aeaf42d64f4e23e8b4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '539'
-ht-degree: 16%
+ht-degree: 100%
 
 ---
 
 
 # Permisos basados en roles {#role-based-permissions}
 
-[!UICONTROL Cloud Manager] tiene funciones preconfiguradas con los permisos adecuados. Por ejemplo, un desarrollador desarrolla código y tiene permiso para insertar el código en el repositorio de Git. Un propietario de una empresa tiene diferentes permisos que les permiten definir los indicadores de rendimiento clave (KPI) y aprobar implementaciones.
+[!UICONTROL Cloud Manager] tiene funciones preconfiguradas con los permisos adecuados. Por ejemplo, un desarrollador elabora códigos y tiene permiso para insertarlos en el repositorio de Git. Un propietario de una empresa tiene diferentes permisos que les permiten definir los indicadores clave de rendimiento (KPI) y aprobar implementaciones.
 
 ## Roles del usuario {#user-roles}
 
-Administración de funciones para [!UICONTROL Cloud Manager] se realiza utilizando la variable [Admin Console.](https://helpx.adobe.com/es/enterprise/using/admin-console.html) Cualquier usuario de [!UICONTROL Cloud Manager] debe ser miembro de la organización IMS del cliente y tener el contexto del producto de Adobe Managed Services. Las suscripciones a funciones específicas se proporcionan añadiendo el usuario a un [!UICONTROL Cloud Manager] perfil de producto en el Admin Console.
+La administración de funciones para [!UICONTROL Cloud Manager] se realiza utilizando la variable [Admin Console.](https://helpx.adobe.com/es/enterprise/using/admin-console.html) Cualquier usuario de [!UICONTROL Cloud Manager] debe ser miembro de la organización IMS del cliente y tener el contexto del producto de Adobe Managed Services. Las suscripciones a funciones específicas se proporcionan añadiendo el usuario a un [!UICONTROL Cloud Manager] perfil de producto en Admin Console.
 
 Para obtener más información sobre cómo configurar las funciones, consulte el documento [Configuración de usuarios y funciones.](/help/requirements/users-and-roles.md)
 
-Esta tabla enumera las funciones que puede asignar en el Admin Console.
+Esta tabla enumera las funciones que puede asignar en Admin Console.
 
-| [!UICONTROL Cloud Manager] Función | Descripción |
+| Función [!UICONTROL Cloud Manager] | Descripción |
 |---|---|
-| Propietario del negocio | Este es el usuario principal que completa la [!UICONTROL Cloud Manager] configure y es responsable de definir los KPI, aprobar implementaciones de producción y anular errores importantes de 3 niveles cuando sea necesario. |
-| Administrador de programa | Este usuario utiliza [!UICONTROL Cloud Manager] para realizar la configuración del equipo, revise el estado, vea los KPI y apruebe errores importantes de 3 niveles cuando sea necesario. |
-| Administrador de implementación | Este usuario gestiona las operaciones de implementación mediante [!UICONTROL Cloud Manager] para ejecutar implementaciones de fase y producción, puede aprobar errores importantes de 3 niveles cuando sea necesario y tiene acceso al repositorio de Git. |
+| Propietario del negocio | Este es el usuario principal que completa la [!UICONTROL Cloud Manager] configuración inicial y es responsable de definir los indicadores clave de rendimiento (KPI), aprobar implementaciones de producción y anular errores importantes de tres niveles cuando sea necesario. |
+| Administrador de programa | Este usuario utiliza [!UICONTROL Cloud Manager] para realizar la configuración del equipo, revisar el estado, ver los indicadores clave de rendimiento (KPI) y aprobar errores importantes de tres niveles cuando sea necesario. |
+| Administrador de implementación | Este usuario gestiona las operaciones de implementación mediante [!UICONTROL Cloud Manager] para ejecutar implementaciones de fase y producción, puede aprobar errores importantes de tres niveles cuando sea necesario y tiene acceso al repositorio de Git. |
 | Desarrollador | Este usuario desarrolla y prueba el código de aplicación personalizado, que utiliza principalmente [!UICONTROL Cloud Manager] para ver el estado de implementación y tiene acceso de confirmación al repositorio de Git. |
-| Ingeniero de éxito del cliente | Este usuario suele admitir el éxito de los clientes para los clientes de AMS e interactúa con [!UICONTROL Cloud Manager] con el fin de ejecutar implementaciones que requieren la supervisión del ingeniero de éxito del cliente (CSE). |
+| Ingeniero de éxito del cliente (Customer Success Engineer) | Este usuario suele admitir el éxito de los clientes para los clientes de AMS e interactúa con [!UICONTROL Cloud Manager] con el fin de ejecutar implementaciones que requieren la supervisión del ingeniero de éxito del cliente (Customer Success Engineer, CSE). |
 | Autor de contenido | Este usuario generalmente no interactúa con [!UICONTROL Cloud Manager], pero puede usar la variable [!UICONTROL Cloud Manager] programa wwitcher (con navegación desde [!UICONTROL Experience Cloud]) para acceder a Adobe Experience Manager (AEM). |
 
 ## Permisos de usuario {#user-permissions}
@@ -38,14 +38,14 @@ Cada una de las funciones tiene permisos preconfigurados específicos asociados.
 
 | Permiso | Descripción | Propietario del negocio | Administrador de implementación | Administrador de programa | Desarrollador | CSE |
 |--- |--- |--- |--- |--- |--- |--- |
-| Leer aplicación | Leer KPI de programa | x | x | x | x | x |
+| Leer aplicación | Leer indicadores clave de rendimiento (KPI) de programa | x | x | x | x | x |
 | Escribir aplicación | Configuración o edición del programa | x |  |  |  |  |
-| Agregar programa | Agregar nuevo programa | x |  |  |  |  |
+| Agregar programa | Agregar programa nuevo | x |  |  |  |  |
 | Entorno de lectura | Consulte los detalles del entorno | x | x | x | x | x |
 | Crear ejecución | Iniciar canalización | x | x | x |  |  |
 | Leer ejecución | Consulte Estado de ejecución | x | x | x | x | x |
 | Reanudar ejecución | Puede reanudar la ejecución cuando esté en pausa | x | x | x |  | x |
-| Ejecución Aprobar implementación en producción | Proporcionar aprobación de lanzamiento | x | x | x |  |  |
+| Implementación de ejecución aprobada en producción | Proporcionar aprobación de lanzamiento | x | x | x |  |  |
 | Implementación de programación de ejecución en producción | Programar implementación de producción | x | x | x |  | x |
 | Implementación de ejecución en producción | Implementar la aplicación en producción cuando está en pausa para la supervisión de CSE |  |  |  |  | x |
 | Cancelación de ejecución | Cancelar ejecución actual |  |  | x |  |  |
