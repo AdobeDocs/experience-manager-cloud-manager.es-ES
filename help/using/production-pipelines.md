@@ -77,7 +77,7 @@ Una vez que haya utilizado la IU de [!UICONTROL Cloud Manager] para configurar e
 
             * **Preguntar cada vez**: esta es la configuración predeterminada y requiere una intervención manual en caso de que se produzca algún error importante.
             * **Produjo un error inmediatamente**: si se selecciona, la canalización se cancelará siempre que se produzca un fallo importante. Básicamente, esto emula a un usuario que rechace errores manualmente.
-            * **Continuar inmediatamente**: si se selecciona, la canalización se realizará automáticamente cada vez que se produzca un error importante. Básicamente, esto emula al usuario que aprueba manualmente cada error.
+            * **Continuar inmediatamente**: si se selecciona, la canalización se ejecutará automáticamente cada vez que se produzca un error importante. Básicamente, esto emula al usuario que aprueba manualmente cada error.
 
          ![Activador de implementación](/help/assets/configure-pipelines/add-prod3.png)
 
