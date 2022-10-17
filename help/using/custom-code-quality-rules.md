@@ -615,7 +615,7 @@ Un problema frecuente es el uso de nodos denominados `config` en cuadros de diá
 
 * **Clave**: PackageOverlaps
 * **Tipo**: error
-* **Gravedad**: mayor
+* **Gravedad**: principal
 * **Desde**: versión 2019.6.0
 
 Similar a la regla [Los paquetes no deben contener configuraciones OSGi duplicadas,](#oakpal-package-osgi) este es un problema frecuente en proyectos complejos en los que varios paquetes de contenido independientes escriben la misma ruta de acceso de nodo. Aunque las dependencias de paquetes de contenido se pueden utilizar para garantizar un resultado coherente, es mejor evitar superposiciones por completo.
