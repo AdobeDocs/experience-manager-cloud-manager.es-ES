@@ -1,19 +1,19 @@
 ---
-title: Notas de la versión 2022.10.0
-description: Estas son las notas de la versión 2022.10.0 de Cloud Manager.
+title: Notas de la versión 2022.11.0
+description: Estas son las notas de la versión 2022.11.0 de Cloud Manager.
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
-source-git-commit: 69c1c8a1136c037a5eea635a75f2d4d187f2ac4d
+source-git-commit: 2defbdbee0221540f66f7d824ccf1bd33179c9d9
 workflow-type: tm+mt
-source-wordcount: '120'
-ht-degree: 63%
+source-wordcount: '132'
+ht-degree: 45%
 
 ---
 
 
-# Notas de la versión 2022.10.0 de Cloud Manager. {#release-notes}
+# Notas de la versión 2022.11.0 de Cloud Manager. {#release-notes}
 
-Esta página documenta las notas de la versión 2022.10.0 de [!UICONTROL Cloud Manager].
+Esta página documenta las notas de la versión de [!UICONTROL Cloud Manager] versión 2022.11.0.
 
 >[!NOTE]
 >
@@ -21,12 +21,12 @@ Esta página documenta las notas de la versión 2022.10.0 de [!UICONTROL Cloud M
 
 ## Fecha de la versión {#release-date}
 
-La fecha de la versión de [!UICONTROL Cloud Manager] la versión 2022.10.0 es 6 de octubre de 2022. La próxima versión está prevista para el 3 de noviembre de 2022.
+La fecha de la versión de [!UICONTROL Cloud Manager] la versión 2022.11.0 es 3 de noviembre de 2022. La próxima versión está prevista para el 29 de noviembre de 2022.
 
 ## Novedades {#what-is-new}
 
-* La versión de [AEM tipo de archivo del proyecto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=es) utilizado por Cloud Manager se ha actualizado a la versión 39.
+* Cuando un entorno asociado a una canalización tiene un estado que no permite que se ejecute la canalización, la acción de ejecución se desactiva con una información de objeto explicativa.
 
 ## Correcciones de errores {#bug-fixes}
 
-* La fiabilidad de las pruebas de rendimiento de Assets se mejoró añadiendo reintentos en ciertas condiciones.
+* Los comentarios durante la canalización de producción de edición se mejoraron para captar ocurrencias poco frecuentes de uno o más entornos faltantes.
