@@ -87,7 +87,7 @@ Siga estos pasos para editar y ver repositorios en Cloud Manager:
 
 ## Compatibilidad con el submódulo Git {#git-submodule-support}
 
-Los submódulos Git se pueden usar para combinar el contenido de varias ramas en repositorios Git en el momento de la compilación.
+Los submódulos Git se pueden usar para combinar el contenido de varias ramas en repositorios de Git en el momento de la compilación.
 
 Cuando se ejecuta el proceso de creación de Cloud Manager, después de clonar el repositorio configurado para la canalización y de verificar la rama configurada, si la rama contiene un archivo `.gitmodules` en el directorio raíz, se ejecuta el comando.
 
