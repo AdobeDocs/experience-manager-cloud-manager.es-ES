@@ -20,7 +20,7 @@ Para implementaciones de ensayo y producción, Cloud Manager genera una versión
 
 Esta versión se ve en la página de detalles de ejecución de la canalización, así como en la página de actividad. Cuando se ejecuta una compilación, el proyecto de Maven se actualiza para utilizar esta versión y se crea una etiqueta en el repositorio de Git con dicha versión como nombre.
 
-Si la versión original del proyecto cumple ciertos criterios, la versión actualizada del proyecto de Maven combinará la versión original del proyecto y la generada por Cloud Manager. Sin embargo, la etiqueta siempre emplea la versión generada. Para que se produzca esta combinación, la versión original del proyecto debe estar formada con exactamente tres segmentos de versión, por ejemplo, `1.0.0` o `1.2.3`, pero no `1.0` o `1`, y la versión original no debe finalizar con `-SNAPSHOT`.
+Si la versión original del proyecto cumple ciertos criterios, la versión actualizada del proyecto de Maven combinará la versión original y la generada por Cloud Manager. Sin embargo, la etiqueta siempre utiliza la versión generada. Para que se produzca esta combinación, la versión original del proyecto debe estar formada con exactamente tres segmentos de versión, por ejemplo, `1.0.0` o `1.2.3`, pero no `1.0` o `1`, y la versión original no debe terminar en `-SNAPSHOT`.
 
 >[!NOTE]
 >
@@ -36,4 +36,4 @@ Si la versión original cumple estos criterios, la versión generada se añadir�
 
 >[!NOTE]
 >
->Independientemente de si la versión original se incorporó o no a la versión inicializada por Cloud Manager, la original está disponible como propiedad de Maven con el nombre `cloudManagerOriginalVersion`.
+>Independientemente de si la versión original se incorporó o no a la versión inicializada por Cloud Manager, la versión original está disponible como propiedad de Maven con el nombre `cloudManagerOriginalVersion`.
