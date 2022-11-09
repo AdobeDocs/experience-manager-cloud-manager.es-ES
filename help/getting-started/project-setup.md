@@ -275,13 +275,13 @@ Con `content-package-maven-plugin` es similar:
 
 ## Generar reutilización de artefactos {#build-artifact-reuse}
 
-En muchos casos, el mismo código se implementa en varios entornos de AEM. Cuando sea posible, Cloud Manager evitará la reconstrucción del código base cuando detecte que se utiliza la misma confirmación de Git en varias ejecuciones de canalización full-stack.
+En muchos casos, el mismo código se implementa en varios entornos de AEM. Cuando sea posible, Cloud Manager evitará la regeneración del código base cuando detecte que se utiliza el mismo compromiso de Git en varias ejecuciones de canalización full-stack.
 
-Cuando se inicia una ejecución, se extrae la confirmación HEAD actual para la canalización de ramas. El hash de confirmación se puede ver en la interfaz de usuario y a través de la API. Cuando el paso de generación se completa correctamente, los artefactos resultantes se almacenan en función de ese hash de confirmación y se pueden reutilizar en ejecuciones de canalización posteriores.
+Cuando se inicia una ejecución, se extrae el compromiso de HEAD actual para la canalización de ramas. El hash de compromiso se puede ver en la interfaz de usuario y a través de la API. Cuando el paso de generación se completa correctamente, los artefactos resultantes se almacenan en base a ese hash de compromiso y se pueden reutilizar en ejecuciones de canalización posteriores.
 
-Los paquetes se reutilizan en todas las canalizaciones si están en el mismo programa. Al buscar paquetes que puedan reutilizarse, AEM ignora las ramas y vuelve a utilizar artefactos entre ramas.
+Los paquetes se reutilizan en todas las canalizaciones si están en el mismo programa. Al buscar paquetes que puedan reutilizarse, AEM ignora las ramas y vuelve a utilizar artefactos a través de las ramas.
 
-Cuando se produce una reutilización, los pasos de compilación y calidad del código se sustituyen eficazmente por los resultados de la ejecución original. El archivo de registro para el paso de compilación enumerará los artefactos y la información de ejecución que se utilizó para compilarlos originalmente.
+Cuando se produce una reutilización, los pasos de generación y calidad del código se sustituyen eficazmente por los resultados de la ejecución original. El archivo de registro para el paso de generación enumerará los artefactos y la información de ejecución que se utilizó para crearlos originalmente.
 
 El siguiente es un ejemplo de este resultado de registro.
 
@@ -297,10 +297,10 @@ El registro del paso de calidad del código contiene información similar.
 
 #### Ejemplo 1 {#example-1}
 
-Considere que su programa tiene dos canalizaciones de desarrollo:
+Imagine que su programa tiene dos canalizaciones de desarrollo:
 
-* Canalización 1 en la rama `foo`
-* Canalización 2 en la rama `bar`
+* Canalización 1 en rama `foo`
+* Canalización 2 en rama `bar`
 
 Ambas ramas están en el mismo ID de confirmación.
 
@@ -309,36 +309,36 @@ Ambas ramas están en el mismo ID de confirmación.
 
 #### Ejemplo 2 {#example-2}
 
-Tenga en cuenta que el programa tiene dos ramas:
+Imagine que el programa tiene dos ramas:
 
 * Rama `foo`
 * Rama `bar`
 
-Ambas ramas tienen el mismo ID de confirmación.
+Ambas ramas tienen el mismo Id. de compromiso.
 
 1. Se genera y ejecuta una canalización de desarrollo `foo`.
 1. Posteriormente, se genera y ejecuta una canalización de producción `bar`.
 
-En este caso, el artefacto de `foo` se reutilizará para la canalización de producción, ya que se identificó el mismo hash de confirmación.
+En este caso, el artefacto de `foo` se reutilizará para la canalización de producción ya que se identificó el mismo hash de compromiso.
 
 ### Exclusión {#opting-out}
 
-Si se desea, el comportamiento de reutilización se puede desactivar para tuberías específicas definiendo la variable de la canalización `CM_DISABLE_BUILD_REUSE` en `true`. Si se establece esta variable, el hash de confirmación se extrae y los artefactos resultantes se almacenarán para su uso posterior, pero no se reutilizarán los artefactos almacenados anteriormente. Para comprender este comportamiento, considere el siguiente escenario.
+Si lo desea, el comportamiento de reutilización se puede deshabilitar para canalizaciones específicas si configura la variable de canalización `CM_DISABLE_BUILD_REUSE` a `true`. Si se establece esta variable, el hash de compromiso se extraerá y los artefactos resultantes se almacenarán para su uso posterior, pero los artefactos almacenados anteriormente no se reutilizarán. Para comprender este comportamiento, imagine el siguiente escenario.
 
-1. Se creará una nueva canalización.
-1. La canalización se ejecuta (ejecución n.º 1) y la confirmación de HEAD actual es `becdddb`. La ejecución es correcta y se almacenan los artefactos resultantes.
-1. La variable `CM_DISABLE_BUILD_REUSE` está establecida.
-1. La canalización se vuelve a ejecutar sin cambiar el código. Aunque hay artefactos almacenados asociados a `becdddb`, no se reutilizan debido a la variable `CM_DISABLE_BUILD_REUSE`.
-1. Se cambia el código y se ejecuta la canalización. La confirmación de HEAD ahora es `f6ac5e6`. La ejecución es correcta y se almacenan los artefactos resultantes.
-1. Se elimina la variable `CM_DISABLE_BUILD_REUSE`.
-1. La canalización se vuelve a ejecutar sin cambiar el código. Dado que hay artefactos almacenados asociados a `f6ac5e6`, esos artefactos se reutilizan.
+1. Se crea una nueva canalización.
+1. La canalización se ejecuta (ejecución #1) y el compromiso de HEAD actual es `becdddb`. La ejecución se realiza correctamente y se almacenan los artefactos resultantes.
+1. La variable `CM_DISABLE_BUILD_REUSE` está configurada.
+1. La canalización se vuelve a ejecutar sin cambiar el código. Aunque hay artefactos almacenados asociados con `becdddb`, no se vuelven a utilizar debido a la variable `CM_DISABLE_BUILD_REUSE`.
+1. El código se cambia y se ejecuta la canalización. El compromiso de HEAD es ahora `f6ac5e6`. La ejecución se realiza correctamente y se almacenan los artefactos resultantes.
+1. La variable `CM_DISABLE_BUILD_REUSE` se elimina.
+1. La canalización se vuelve a ejecutar sin cambiar el código. Como hay artefactos almacenados asociados con `f6ac5e6`, esos artefactos se reutilizan.
 
 ### Advertencias {#caveats}
 
-* Los artefactos de compilación no se reutilizan en programas diferentes, independientemente de si el hash de confirmación es idéntico.
+* Los artefactos de generación no se reutilizan en programas diferentes, independientemente de si el hash de compromiso es idéntico.
 * Los artefactos de compilación se reutilizan dentro del mismo programa, aunque sean diferentes la rama o la canalización.
-* La [Administración de versiones de Maven](/help/managing-code/maven-project-version.md) reemplaza la versión del proyecto solo en las canalizaciones de producción. Por lo tanto, si se utiliza la misma confirmación tanto en la ejecución de una implementación de desarrollo como en la ejecución de una canalización de producción, y la canalización de implementación de desarrollo se ejecuta primero, las versiones se implementarán en fase y producción sin ser cambiadas. Sin embargo, en este caso, se seguirá creando una etiqueta.
-* Si la recuperación de los artefactos almacenados no se realiza correctamente, el paso de compilación se ejecuta como si no se hubieran almacenado los artefactos.
+* La [Administración de versiones de Maven](/help/managing-code/maven-project-version.md) reemplaza la versión del proyecto solo en las canalizaciones de producción. Por lo tanto, si se utiliza la misma confirmación tanto en la ejecución de una implementación de desarrollo como en la ejecución de una canalización de producción, y la canalización de implementación de desarrollo se ejecuta primero, las versiones se implementarán en fase y producción sin ser cambiadas. Sin embargo, se seguirá creando una etiqueta en este caso.
+* Si la recuperación de los artefactos almacenados no se realiza correctamente, el paso de generación se ejecuta como si no se hubieran almacenado artefactos.
 * Las variables de canalización distintas a `CM_DISABLE_BUILD_REUSE` no se tienen en cuenta si Cloud Manager decide reutilizar los artefactos de compilación creados anteriormente.
 
 ## Desarrollo de código en función de las prácticas recomendadas {#develop-your-code-based-on-best-practices}
