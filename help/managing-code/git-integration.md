@@ -22,7 +22,7 @@ Esta serie de vídeos explora varios casos de uso relacionados con la integraci�
 
 * [Sincronización inicial](#initial-sync)
 * [Estrategia básica de ramas](#branching-strategy)
-* [Desarrollo de ramas de funciones](#feature-development)
+* [Desarrollo de ramas de características](#feature-development)
 * [Implementación de producción](#production-deployment)
 * [Sincronización de etiquetas de versión](#sync-tags)
 
@@ -46,7 +46,7 @@ Configure una estrategia básica de ramificación para aprovechar las ventajas d
 
 ## Desarrollo de ramas de funciones {#feature-development}
 
-Utilice una rama de funciones para aislar los cambios de código en un repositorio de Git administrado por el cliente y sincronizar con el repositorio de Git de Cloud Manager para utilizar una canalización que no sea de producción para las pruebas de calidad y validación del código.
+Utilice una rama de características para aislar los cambios de código en un repositorio de Git administrado por el cliente y sincronizarlo con el repositorio de Git de Cloud Manager para utilizar una canalización que no sea de producción para las pruebas de calidad y validación del código.
 
 >[!VIDEO](https://video.tv.adobe.com/v/28723/?quality=12)
 
@@ -66,5 +66,5 @@ Sincronice las etiquetas de versión de un repositorio de Git de Cloud Manager e
 
 * [Introducción a Cloud Manager](/help/introduction.md)
 * [Recursos de GitHub](https://try.github.io)
-* [Tutoriales de Git de Atlassian](https://www.atlassian.com/git/tutorials/what-is-version-control)
-* [Hoja de características clave de Git](https://education.github.com/git-cheat-sheet-education.pdf)
+* [Tutoriales de Atlassian Git](https://www.atlassian.com/git/tutorials/what-is-version-control)
+* [Hoja de Git Cheat](https://education.github.com/git-cheat-sheet-education.pdf)
