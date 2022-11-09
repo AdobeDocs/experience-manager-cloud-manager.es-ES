@@ -80,9 +80,9 @@ Una vez completada la implementación, el código se encuentra en su entorno de 
 
 ## Tiempos de espera {#timeouts}
 
-Los siguientes pasos agotarán el tiempo de espera si se deja esperando los comentarios del usuario:
+Los siguientes pasos agotarán el tiempo de espera si se deja a la espera de los comentarios del usuario:
 
-| Etapa | Tiempo de espera |
+| Paso | Tiempo de espera |
 |--- |--- |
 | Prueba de calidad del código | 14 días |
 | Pruebas de seguridad | 14 días |
