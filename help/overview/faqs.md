@@ -23,7 +23,7 @@ Sí. Deberá añadir la variable `maven-toolchains-plugin` con la configuración
 
 ## Mi compilación falla con un error acerca de maven-scr-plugin después de cambiar de Java 8 a Java 11. ¿Qué puedo hacer? {#maven-src-plugin}
 
-Es posible que la compilación de AEM Cloud Manager falle al intentar cambiar la compilación de Java 8 a 11. Si encuentra el siguiente error, debe quitar `maven-scr-plugin` y convertir todas las anotaciones OSGi en anotaciones OSGi R6.
+Es posible que la generación de AEM Cloud Manager falle al intentar cambiar la generación de Java 8 a 11. Si encuentra el siguiente error, debe quitar `maven-scr-plugin` y convertir todas las anotaciones OSGi en anotaciones OSGi R6.
 
 ```text
 [main] [ERROR] Failed to execute goal org.apache.felix:maven-scr-plugin:1.26.4:scr (generate-scr-scrdescriptor) on project helloworld.core: /build_root/build/testsite/src/main/java/com/adobe/HelloWorldServiceImpl.java : Unable to load compiled class: com.adobe.HelloWorldServiceImpl: com/adobe/HelloWorldServiceImpl has been compiled by a more recent version of the Java Runtime (class file version 55.0), this version of the Java Runtime only recognizes class file versions up to 52.0 -> [Help 1]
@@ -39,9 +39,9 @@ Para las compilaciones de Cloud Manager, el `maven-enforcer-plugin` puede fallar
 [main] [WARNING] Rule 1: org.apache.maven.plugins.enforcer.RequireJavaVersion
 ```
 
-Este es un problema conocido debido a que Cloud Manager utiliza una versión diferente de Java para ejecutar el comando de Maven, en comparación con el código de compilación. Simplemente, omita `requireJavaVersion` de sus configuraciones de `maven-enforcer-plugin`.
+Este es un problema conocido debido a que Cloud Manager utiliza una versión diferente de Java para ejecutar el comando de Maven, en comparación con el código de compilación. Simplemente omita `requireJavaVersion` de su configuraciones de `maven-enforcer-plugin` 
 
-## La comprobación de calidad del código ha fallado y nuestra implementación está atascada. ¿Hay alguna manera de evitar esta comprobación? {#deployment-stuck}
+## La comprobación de la calidad del código falló y la implementación se atascó. ¿Hay alguna manera de saltarse esta comprobación? {#deployment-stuck}
 
 Sí. Todos los errores de calidad del código, excepto las clasificaciones de seguridad, son métricas no esenciales, por lo que se pueden saltar como parte de una canalización de implementación. Para ello, amplíe los elementos en la IU de los resultados.
 
@@ -66,9 +66,9 @@ Consulte el documento [Comprensión de los resultados de la prueba](/help/using/
 
 Sí. Para implementaciones de desarrolladores, los archivos de la rama de Git `pom.xml` deben contener `-SNAPSHOT` al final del valor `<version>`.
 
-Esto permite que la implementación posterior se siga instalando si la versión no ha cambiado. En implementaciones de desarrolladores, no se agrega ni genera ninguna versión automática para la compilación de Maven.
+Esto permite que la implementación posterior se siga instalando cuando la versión no ha cambiado. En implementaciones de desarrolladores, no se agrega ni se genera ninguna versión automática para la generación de Maven.
 
-También puede establecer la versión en `-SNAPSHOT` para compilaciones o implementaciones de ensayo y producción. Cloud Manager establece automáticamente un número de versión adecuado y crea una etiqueta para usted en Git. Se puede hacer referencia a esta etiqueta más adelante, si es necesario.
+También puede establecer la versión a `-SNAPSHOT` para generaciones o implementaciones de fase y producción. Cloud Manager establece automáticamente un número de versión adecuado y crea una etiqueta en Git. Se puede hacer referencia a esta etiqueta más adelante, si es necesario.
 
 Para obtener más información acerca de la gestión de versiones, [consulte esto.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/project-version-handling.html?lang=es)
 
@@ -76,11 +76,11 @@ Para obtener más información acerca de la gestión de versiones, [consulte est
 
 En las implementaciones de ensayo y producción se genera una versión automática [como se documenta aquí.](/help/managing-code/maven-project-version.md)
 
-Para las versiones personalizadas en las implementaciones de ensayo y producción, establezca una versión de Maven adecuada en tres partes, como `1.0.0`. Aumente la versión cada vez que implemente en producción.
+Para las versiones personalizadas en las implementaciones de ensayo y producción, establezca una versión de Maven adecuada en tres partes, como `1.0.0`. Actualice la versión cada vez que implemente en la producción.
 
-Cloud Manager añade automáticamente su versión a las compilaciones de ensayo y producción y crea una rama de Git. No se requiere ninguna configuración especial. Si no establece una versión de Maven como se describió antes, la implementación se ejecutará correctamente y se establecerá una versión de forma automática.
+Cloud Manager agrega automáticamente su versión a las generaciones de fase y producción y crea una rama de Git. No se requiere ninguna configuración especial. Si no establece una versión de Maven como se describió anteriormente, la implementación se realizará correctamente y se establecerá una versión automáticamente.
 
-## Mi compilación de Maven falla en las implementaciones de Cloud Manager, pero se genera localmente sin errores. ¿Cuál es el problema? {#maven-build-fail}
+## Mi generación de Maven falla en las implementaciones de Cloud Manager, pero se genera localmente sin errores. ¿Cuál es el problema? {#maven-build-fail}
 
 Consulte este [recurso de Git](https://github.com/cqsupport/cloud-manager/blob/main/cm-build-step-fails.md) para obtener más información.
 
@@ -106,4 +106,4 @@ Cannot set variables: https://cloudmanager.adobe.io/api/program/111/environment/
 
 En este caso, el usuario que ejecuta estos comandos debe añadirse a la función **Administrador de implementación** en Admin Console.
 
-Consulte los [Permisos de API](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/permissions/) para obtener más información.
+Consulte [Permisos de la API](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/permissions/) para obtener más información.
