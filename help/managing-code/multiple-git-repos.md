@@ -53,8 +53,8 @@ Según la estrategia de ramificación y los flujos de trabajo, la sincronizació
 Siga los pasos a continuación para añadir un nuevo (tercer) origen o repositorio:
 
 1. Agregue una nueva acción de GitHub al nuevo repositorio que inserta cambios de ese repositorio en el repositorio de Git de Cloud Manager.
-1. Realice esa acción al menos una vez para asegurarse de que el código del proyecto esté en el repositorio de Git de Cloud Manager.
-1. Agregue una referencia al nuevo directorio en el `pom.xml` de Maven raíz en el repositorio de Git de Cloud Manager.
+1. Realice esa acción al menos una vez para asegurarse de que el código del proyecto está en el repositorio de Git de Cloud Manager.
+1. Agregue una referencia al nuevo directorio en la raíz de Maven `pom.xml` en el repositorio de Git de Cloud Manager.
 
 ## Muestra de acción de GitHub {#sample-github-action}
 
