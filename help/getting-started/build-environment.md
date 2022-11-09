@@ -104,7 +104,7 @@ Las combinaciones de proveedor/versión disponibles actualmente son las siguient
 
 ### Versión alternativa del JDK de ejecución de Maven {#alternate-maven}
 
-También es posible seleccionar Oracle 8 u Oracle 11 como JDK para toda la ejecución de Maven. A diferencia de las opciones de cadenas de herramientas, esto cambia el JDK utilizado para todos los complementos, a menos que también se establezca la configuración de cadenas de herramientas, en cuyo caso esta se sigue aplicando a los complementos de Maven compatibles con ella. Como resultado, funcionará el comprobar y aplicar la versión de Java mediante el [Complemento Apache Maven Enforcer](https://maven.apache.org/enforcer/maven-enforcer-plugin/).
+También es posible seleccionar Oracle 8 u Oracle 11 como JDK para toda la ejecución de Maven. A diferencia de las opciones de cadenas de herramientas, esto cambia el JDK utilizado para todos los complementos, a menos que también se establezca la configuración de cadenas de herramientas, en cuyo caso esta se sigue aplicando a los complementos de Maven compatibles con ella. Como resultado, comprobar y aplicar la versión de Java utilizando el [complemento Apache Maven Enforcer](https://maven.apache.org/enforcer/maven-enforcer-plugin/) funcionará.
 
 Para ello, cree un archivo denominado `.cloudmanager/java-version` en la rama del repositorio de Git empleada por la canalización. Este archivo puede tener el contenido `11` o `8`. Se omite cualquier otro valor. Si se especifica `11`, se usa Oracle 11 y la variable de entorno `JAVA_HOME` se establece en `/usr/lib/jvm/jdk-11.0.2`. Si se especifica `8`, se utiliza Oracle 8 y la variable de entorno `JAVA_HOME` se establece en `/usr/lib/jvm/jdk1.8.0_202`.
 
@@ -124,7 +124,7 @@ Para ello, Cloud Manager añade variables de entorno estándar al contenedor de 
 | `BRANCH` | La rama configurada para la ejecución |
 | `CM_PIPELINE_ID` | El identificador numérico de la canalización |
 | `CM_PIPELINE_NAME` | El nombre de la canalización |
-| `CM_PROGRAM_ID` | El identificador numérico del programa |
+| `CM_PROGRAM_ID` | Identificador numérico del programa |
 | `CM_PROGRAM_NAME` | El nombre del programa |
 | `ARTIFACTS_VERSION` | En el caso de una canalización de ensayo o de producción, la versión sintética generada por Cloud Manager |
 
