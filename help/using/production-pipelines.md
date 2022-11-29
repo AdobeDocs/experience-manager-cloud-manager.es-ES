@@ -2,10 +2,10 @@
 title: Configuración de canalizaciones de producción
 description: Aprenda a utilizar Cloud Manager para crear y configurar canalizaciones de producción para implementar su código.
 exl-id: d489fa3c-df1e-480b-82d0-ac8cce78a710
-source-git-commit: 99325c28c379103db2ba4c19bb6d206849c6e126
-workflow-type: ht
-source-wordcount: '1296'
-ht-degree: 100%
+source-git-commit: 39b38da17ed1cadf4f2e9633a9e76b537325316f
+workflow-type: tm+mt
+source-wordcount: '1302'
+ht-degree: 92%
 
 ---
 
@@ -16,7 +16,7 @@ Aprenda a utilizar Cloud Manager para crear y configurar canalizaciones de produ
 
 ## Información general {#overview}
 
-Al usar el mosaico **Configuración de canalización** en [!UICONTROL Cloud Manager], puede crear dos tipos diferentes de canalizaciones.
+Al usar la variable **Configuración de canalización** mosaico en [!UICONTROL Cloud Manager] puede crear dos tipos diferentes de canalizaciones.
 
 * **Canalizaciones de producción**: una canalización de producción está estructurada y formada específicamente por una serie de pasos organizados para tomar el código fuente de su repositorio de Git y llevarlo a la producción.
 * **Canalizaciones que no son de producción**: una canalización que no es de producción sirve principalmente para ejecutar el análisis de calidad del código o para implementar el código fuente en un entorno de desarrollo.
@@ -41,7 +41,7 @@ Este vídeo ofrece información general sobre el proceso de creación de canaliz
 
 ## Adición de una nueva canalización de producción {#adding-production-pipeline}
 
-Una vez que haya utilizado la IU de [!UICONTROL Cloud Manager] para configurar el programa y tener al menos un entorno, ya puede añadir una canalización de producción.
+Una vez que haya utilizado la variable [!UICONTROL Cloud Manager] Para configurar el programa y tener al menos un entorno, está listo para agregar una canalización de producción.
 
 1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización y el programa adecuados.
 
@@ -75,9 +75,9 @@ Una vez que haya utilizado la IU de [!UICONTROL Cloud Manager] para configurar e
             * **Cambios en Git**: esta opción inicia la canalización CI/CD cada vez que se añaden confirmaciones a la rama de Git configurada. Con esta opción, sigue pudiendo iniciar la canalización de forma manual según sea necesario.
          * **Comportamiento de los errores de las métricas importantes**: durante la configuración o edición de la canalización, el administrador de implementación tiene la opción de definir el comportamiento de la canalización cuando se encuentra un error importante en cualquiera de las puertas de calidad. Las opciones disponibles son las siguientes:
 
-            * **Preguntar cada vez**: esta es la configuración predeterminada y requiere una intervención manual en caso de que se produzca algún error importante.
-            * **Produjo un error inmediatamente**: si se selecciona, la canalización se cancelará siempre que se produzca un fallo importante. Básicamente, esto emula a un usuario que rechace errores manualmente.
-            * **Continuar inmediatamente**: si se selecciona, la canalización se ejecutará automáticamente cada vez que se produzca un error importante. Básicamente, esto emula al usuario que aprueba manualmente cada error.
+            * **Preguntar cada vez**: esta es la configuración predeterminada y requiere intervención manual en caso de que se produzca algún error importante.
+            * **Fallo inmediatamente**: si se selecciona, la canalización se cancelará siempre que se produzca un fallo importante. Básicamente, esto emula a un usuario rechazando manualmente cada error.
+            * **Continuar inmediatamente**: si se selecciona, la canalización se realizará automáticamente cada vez que se produzca un error importante. Básicamente, esto emula al usuario que aprueba manualmente cada error.
 
          ![Activador de implementación](/help/assets/configure-pipelines/add-prod3.png)
 
@@ -93,8 +93,9 @@ Una vez que haya utilizado la IU de [!UICONTROL Cloud Manager] para configurar e
 
             1. En **RUTA**, proporcione una ruta de contenido.
             1. En **TIPO**, seleccione la acción que se realizará en esa ruta.
-            * **Vaciado**: efectúe una invalidación de caché, similar a cuando el contenido se activa desde una instancia de creación a una instancia de publicación.
-            * **Invalidar**: realiza una eliminación de caché.
+
+               * **Vaciado** : realice una eliminación de caché.
+               * **Invalidar** : realice una invalidación de caché, similar a cuando el contenido se activa desde una instancia de creación a una instancia de publicación.
             1. Haga clic en **Agregar ruta** para añadir la ruta especificada. Puede agregar hasta 100 rutas por entorno.
 
          ![Configuración de Dispatcher](/help/assets/configure-pipelines/dispatcher-stage.png)
@@ -107,7 +108,7 @@ Una vez que haya utilizado la IU de [!UICONTROL Cloud Manager] para configurar e
 
          * **Opciones de implementación**: puede definir los parámetros que controlan la implementación de producción.
 
-            * **Utilizar la aprobación de GoLive**: un usuario con la función **Propietario empresarial**, **Administrador de proyectos** o **Administrador de implementación** debe aprobar manualmente una implementación a través de la IU de [!UICONTROL Cloud Manager].
+            * **Usar la aprobación de lanzamiento** : un usuario debe aprobar manualmente una implementación con la variable **Propietario empresarial**, **Administrador de proyectos** o **Administrador de implementación** a través de la función [!UICONTROL Cloud Manager] IU.
             * **Programado**: esta opción detiene la canalización antes de la implementación de producción para permitir que se programe. Si se selecciona esta opción, la canalización se detendrá después de la implementación en el entorno de ensayo y se preguntará al usuario qué acción debe hacerse.
                * **Ahora**: esta opción se implementa en producción de inmediato y completa efectivamente la canalización.
                * **Fecha**: esta opción permite al usuario programar en qué momento se debe completar la implementación.
@@ -125,7 +126,6 @@ Una vez que haya utilizado la IU de [!UICONTROL Cloud Manager] para configurar e
             ![Opciones de implementación de producción](/help/assets/configure-pipelines/prod-deploymentoptions.png)
 
          * **Configuración de Dispatcher**: defina la configuración de Dispatcher para su entorno de producción. Las opciones son las mismas que para el entorno de ensayo.
-
 
 
 
