@@ -4,7 +4,7 @@ description: Descubra cómo se aprovisionan los entornos como parte del proceso 
 exl-id: eade4255-89b5-4c65-a498-1c6d4e8c73ff
 source-git-commit: d033b7cf53d4d9faf074f1dc09e2958eb91afe3b
 workflow-type: ht
-source-wordcount: '293'
+source-wordcount: '314'
 ht-degree: 100%
 
 ---
@@ -20,10 +20,10 @@ Durante el proceso de incorporación, todos los entornos de la nube de AEM que h
 
 ## Correo electrónico de bienvenida {#welcome-email}
 
-Una vez completado el proceso de aprovisionamiento del entorno, el administrador de clientes designado recibe un correo electrónico de bienvenida con la confirmación de que se les ha concedido acceso a Adobe [!UICONTROL Experience Cloud]. El correo electrónico de bienvenida contiene información detallada sobre cómo empezar a usar los servicios de [!UICONTROL Experience Cloud], los entornos de nube de [!UICONTROL AEM Managed Services], así como portal de autoservicio de [!UICONTROL Cloud Manager]. Además, el correo electrónico contiene información importante, como la información de contacto del ingeniero de éxito del cliente (CSE), dónde buscar recursos de soporte, foros, preguntas frecuentes y mucho más. En la lista de recursos que se proporciona en el correo electrónico, también encontrará detalles sobre cómo acceder a [!UICONTROL Cloud Manager] para los entornos de nube de AEM.
+Una vez completado el proceso de aprovisionamiento del entorno, el administrador del cliente designado recibe un correo electrónico de bienvenida con la confirmación de que se les ha concedido acceso a Adobe [!UICONTROL Experience Cloud]. El correo electrónico de bienvenida contiene información detallada sobre cómo empezar a usar los servicios de [!UICONTROL Experience Cloud], los entornos de nube de [!UICONTROL AEM Managed Services], así como el portal de autoservicio [!UICONTROL Cloud Manager]. Además, el correo electrónico contiene información importante, como la información de contacto del ingeniero de éxito del cliente (CSE), dónde buscar recursos de soporte, foros, preguntas frecuentes y mucho más. En la lista de recursos que se proporciona en el correo electrónico, también encontrará detalles sobre cómo acceder a [!UICONTROL Cloud Manager] para los entornos de nube de AEM.
 
 ## Pasos siguientes {#next-steps}
 
 Después de recibir el correo electrónico de bienvenida, está listo para iniciar sesión en [!UICONTROL Cloud Manager] como administrador del sistema con sus credenciales de Adobe IMS. Una vez que haya iniciado sesión, podrá comprobar que los entornos de producción y no producción de la nube de AEM están disponibles y se ejecutan correctamente.
 
-Estos entornos de nube de AEM los usará [!UICONTROL Cloud Manager] para ejecutar la canalización de CI/CD al implementar el código, empezando por repositorio de Git de [!UICONTROL Cloud Manager], a través del entorno de ensayo y hasta su entorno de producción de AEM. También podrá acceder a los entornos de nube de AEM directamente desde [!UICONTROL Cloud Manager] cuando esté listo para empezar a crear experiencias digitales para sus propiedades web.
+Estos entornos de nube de AEM los usará [!UICONTROL Cloud Manager] para ejecutar la canalización de CI/CD al implementar el código, empezando por repositorio de Git de [!UICONTROL Cloud Manager], a través del entorno de ensayo y hasta el entorno de producción de AEM. También podrá acceder a los entornos de nube de AEM directamente desde [!UICONTROL Cloud Manager] cuando esté listo para empezar a crear experiencias digitales para sus propiedades web.
