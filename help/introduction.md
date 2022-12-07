@@ -4,7 +4,7 @@ description: Empiece aquí para conocer Cloud Manager para Adobe Managed Service
 exl-id: 58344d8a-b869-4177-a9cf-6a8b7dfe9588
 source-git-commit: 14e35882765783b234ca35da14257279af5130a0
 workflow-type: ht
-source-wordcount: '1287'
+source-wordcount: '1311'
 ht-degree: 100%
 
 ---
@@ -33,13 +33,13 @@ Empiece aquí para conocer Cloud Manager para Adobe Manage Services (AMS) y cóm
 
 Con Cloud Manager, su equipo de desarrollo se beneficia de las siguientes funciones:
 
-* Integración y entrega continuas (CI/CD) del código para reducir el tiempo de salida al mercado de meses o semanas a días u horas
+* Integración y entrega continuas (CI/CD) del código para reducir el tiempo de salida al mercado de meses o semanas a días u horas.
 
 * Inspección del código, pruebas de rendimiento y validación de seguridad basadas en prácticas recomendadas antes de pasar a producción, para minimizar las interrupciones en esta última.
 
-* Conectividad de API para complementar los procesos de DevOps existentes
+* Conectividad de API para complementar los procesos de DevOps existentes.
 
-* Escalado automático que detecta de forma inteligente la necesidad de aumentar la capacidad y pone en línea automáticamente segmentos adicionales de Dispatcher/publicación
+* Escalado automático que detecta de forma inteligente la necesidad de aumentar la capacidad y pone en línea automáticamente segmentos adicionales de Dispatcher/publicación.
 
 En la siguiente imagen, se ilustra el flujo del proceso de CI/CD que se usa en [!UICONTROL Cloud Manager]:
 
@@ -55,15 +55,15 @@ La interfaz de usuario (IU) para [!UICONTROL Cloud Manager] permite a los client
 
 Usted define los indicadores clave de rendimiento (KPI) específicos a la aplicación, como las visitas de páginas máximas por minuto y el tiempo de respuesta al cargar una página, que constituyen la base para medir una implementación exitosa. Las funciones y los permisos de los distintos integrantes del equipo se pueden definir fácilmente. La nueva interfaz de autoservicio le permite controlarlo todo, y también le ofrece vínculos a prácticas recomendadas y le da la oportunidad de contactar con expertos de Adobe que pueden proporcionarle la orientación necesaria.
 
-Para explorar y empezar con la IU de [!UICONTROL Cloud Manager], consulte el documento [Primer inicio de sesión](/help/getting-started/first-time-login.md).
+Para explorar y empezar con la IU de [!UICONTROL Cloud Manager], consulte el documento [Primer inicio de sesión.](/help/getting-started/first-time-login.md)
 
 ### Canalización de CI/CD {#ci-cd-pipeline}
 
-Una de las funciones clave de [!UICONTROL Cloud Manager] es la capacidad de utilizar una canalización de CD/CI optimizada para acelerar la entrega de código personalizado o las actualizaciones, como la adición de nuevos componentes en el sitio web.
+Una de las funcionalidades clave de [!UICONTROL Cloud Manager] es la capacidad de utilizar una canalización de CD/CI optimizada para acelerar el envío de código personalizado o las actualizaciones, como la adición de nuevos componentes en el sitio web.
 
 A través de la IU de [!UICONTROL Cloud Manager], los clientes pueden configurar y poner en marcha su canalización de CD/CI. Como parte de esta canalización, se realiza un análisis exhaustivo del código para garantizar que solo las aplicaciones de alta calidad pasen al entorno de producción.
 
-Para obtener más información acerca de la configuración de la canalización desde la IU de [!UICONTROL Cloud Manager], consulte los documentos [Configuración de canalizaciones de producción](/help/using/production-pipelines.md) y [Configuración de canalizaciones que no son de producción](/help/using/non-production-pipelines.md).
+Para obtener más información acerca de la configuración de la canalización desde la IU de [!UICONTROL Cloud Manager], consulte los documentos [Configuración de canalizaciones de producción](/help/using/production-pipelines.md) y [Configuración de canalizaciones que no son de producción.](/help/using/non-production-pipelines.md)
 
 ### Modos de implementación flexibles {#flexible-deployment-modes}
 
@@ -81,7 +81,7 @@ Cloud Manager ofrece funciones avanzadas adicionales que pueden ser beneficiosas
 
 ### Escalado automático {#autoscaling}
 
-Cuando el entorno de producción está sujeto a una carga inusualmente alta, [!UICONTROL Cloud Manager] detecta la necesidad de capacidad adicional y la pone en línea automáticamente mediante su función de escalado automático.
+Cuando el entorno de producción está sujeto a una carga inusualmente alta, [!UICONTROL Cloud Manager] detecta la necesidad de capacidad adicional y la pone en línea automáticamente mediante su funcionalidad de escalado automático.
 
 Ante un evento de esta naturaleza, [!UICONTROL Cloud Manager] activa inmediatamente el proceso de aprovisionamiento de escalado automático, envía una notificación del evento de escalado automático y, en pocos minutos, lleva las capacidades adicionales en línea. Las capacidades adicionales se aprovisionan en el entorno de producción, en las mismas zonas y con las mismas especificaciones del sistema que los nodos de Dispatcher/publicación en ejecución.
 
