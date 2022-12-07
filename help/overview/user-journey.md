@@ -4,7 +4,7 @@ description: En este documento se exponen los diferentes escenarios de incorpora
 exl-id: deb3429c-dfcf-4e52-9aba-d9368aa240e6
 source-git-commit: b0dbb602253939464ff034941ffbad84b7df77df
 workflow-type: ht
-source-wordcount: '504'
+source-wordcount: '546'
 ht-degree: 100%
 
 ---
@@ -16,9 +16,9 @@ Como usuario de Adobe Experience Manager, puede estar en una de estas situacione
 
 * Es su primera vez en AEM.
 * Está usando actualmente AEM 6.x.
-* Necesita actualizar a la versión AEM 6.5 para poder usar [!UICONTROL Cloud Manager].
+* Necesita actualizar a la versión de AEM 6.5 para poder usar [!UICONTROL Cloud Manager].
 
-Este documento presenta estos escenarios y le explica el recorrido para comenzar con [!UICONTROL Cloud Manager].
+Este documento presenta estos escenarios y le explica el recorrido para empezar con [!UICONTROL Cloud Manager].
 
 >[!NOTE]
 >
