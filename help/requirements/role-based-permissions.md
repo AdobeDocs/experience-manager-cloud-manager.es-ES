@@ -4,7 +4,7 @@ description: Obtenga información sobre los permisos preconfigurados basados en 
 exl-id: b66533fb-db93-40e8-919d-581261fdbf24
 source-git-commit: 522e5fbc650a8159602eb1aeaf42d64f4e23e8b4
 workflow-type: ht
-source-wordcount: '539'
+source-wordcount: '565'
 ht-degree: 100%
 
 ---
@@ -16,20 +16,20 @@ ht-degree: 100%
 
 ## Roles del usuario {#user-roles}
 
-La administración de funciones para [!UICONTROL Cloud Manager] se realiza utilizando la variable [Admin Console.](https://helpx.adobe.com/es/enterprise/using/admin-console.html) Cualquier usuario de [!UICONTROL Cloud Manager] debe ser miembro de la organización IMS del cliente y tener el contexto del producto de Adobe Managed Services. Las suscripciones a funciones específicas se proporcionan añadiendo el usuario a un [!UICONTROL Cloud Manager] perfil de producto en Admin Console.
+La administración de funciones para [!UICONTROL Cloud Manager] se realiza utilizando la [Admin Console.](https://helpx.adobe.com/es/enterprise/using/admin-console.html) Cualquier usuario de [!UICONTROL Cloud Manager] debe ser miembro de la organización IMS del cliente y tener el contexto del producto de Adobe Managed Services. Las suscripciones a funciones específicas se proporcionan añadiendo el usuario a un perfil de producto de [!UICONTROL Cloud Manager] en Admin Console.
 
 Para obtener más información sobre cómo configurar las funciones, consulte el documento [Configuración de usuarios y funciones.](/help/requirements/users-and-roles.md)
 
 Esta tabla enumera las funciones que puede asignar en Admin Console.
 
-| Función [!UICONTROL Cloud Manager] | Descripción |
+| Función de [!UICONTROL Cloud Manager] | Descripción |
 |---|---|
-| Propietario del negocio | Este es el usuario principal que completa la [!UICONTROL Cloud Manager] configuración inicial y es responsable de definir los indicadores clave de rendimiento (KPI), aprobar implementaciones de producción y anular errores importantes de tres niveles cuando sea necesario. |
+| Propietario del negocio | Este es el usuario principal que completa la configuración inicial de [!UICONTROL Cloud Manager] y es responsable de definir los indicadores clave de rendimiento (KPI), aprobar implementaciones de producción y anular errores importantes de tres niveles cuando sea necesario. |
 | Administrador de programa | Este usuario utiliza [!UICONTROL Cloud Manager] para realizar la configuración del equipo, revisar el estado, ver los indicadores clave de rendimiento (KPI) y aprobar errores importantes de tres niveles cuando sea necesario. |
 | Administrador de implementación | Este usuario gestiona las operaciones de implementación mediante [!UICONTROL Cloud Manager] para ejecutar implementaciones de fase y producción, puede aprobar errores importantes de tres niveles cuando sea necesario y tiene acceso al repositorio de Git. |
 | Desarrollador | Este usuario desarrolla y prueba el código de aplicación personalizado, que utiliza principalmente [!UICONTROL Cloud Manager] para ver el estado de implementación y tiene acceso de confirmación al repositorio de Git. |
 | Ingeniero de éxito del cliente (Customer Success Engineer) | Este usuario suele admitir el éxito de los clientes para los clientes de AMS e interactúa con [!UICONTROL Cloud Manager] con el fin de ejecutar implementaciones que requieren la supervisión del ingeniero de éxito del cliente (Customer Success Engineer, CSE). |
-| Autor de contenido | Este usuario generalmente no interactúa con [!UICONTROL Cloud Manager], pero puede usar la variable [!UICONTROL Cloud Manager] programa wwitcher (con navegación desde [!UICONTROL Experience Cloud]) para acceder a Adobe Experience Manager (AEM). |
+| Autor de contenido | Este usuario generalmente no interactúa con [!UICONTROL Cloud Manager], pero puede usar el programa wwitcher de [!UICONTROL Cloud Manager] (con navegación desde [!UICONTROL Experience Cloud]) para acceder a Adobe Experience Manager (AEM). |
 
 ## Permisos de usuario {#user-permissions}
 
