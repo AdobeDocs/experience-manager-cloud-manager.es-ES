@@ -4,7 +4,7 @@ description: Obtenga información acerca de las canalizaciones de CI/CD y cómo 
 exl-id: 7130e5b7-6986-48c8-900c-90f3e4187f91
 source-git-commit: 6572c16aea2c5d2d1032ca5b0f5d75ade65c3a19
 workflow-type: ht
-source-wordcount: '534'
+source-wordcount: '552'
 ht-degree: 100%
 
 ---
@@ -16,7 +16,7 @@ Obtenga información acerca de las canalizaciones de CI/CD y cómo administran l
 
 ## Información general {#overview}
 
-[!UICONTROL Cloud Manager] incluye un marco de trabajo de integración continua/entrega continua (CI/CD), que permite a los equipos de implementación probar y entregar rápidamente código nuevo o actualizado. Por ejemplo, los equipos de implementación pueden definir, configurar e iniciar una canalización automatizada de CD/CI que aproveche las prácticas recomendadas de programación de Adobe para efectuar un análisis exhaustivo del código y garantizar la máxima calidad.
+[!UICONTROL Cloud Manager] incluye un marco de trabajo de integración continua/envío continuo (CI/CD), que permite a los equipos de implementación probar y entregar rápidamente código nuevo o actualizado. Por ejemplo, los equipos de implementación pueden definir, configurar e iniciar una canalización automatizada de CD/CI que aproveche las prácticas recomendadas de programación de Adobe para efectuar un análisis exhaustivo del código y garantizar la máxima calidad.
 
 La canalización de CI/CD también automatiza los procesos de prueba de unidades y de rendimiento para aumentar la eficiencia e identificar proactivamente los problemas críticos que son costosos de solucionar tras la implementación. Los equipos de implementación pueden acceder a un informe completo de rendimiento del código para obtener visibilidad sobre el impacto potencial en los indicadores clave de rendimiento (KPI) y las validaciones de seguridad críticas si el código se implementa en producción.
 
