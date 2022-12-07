@@ -4,7 +4,7 @@ description: Obtenga información sobre cómo monitorizar los entornos en Cloud 
 exl-id: 32886133-d6c0-4aed-8bb0-81b84f63e825
 source-git-commit: 5907ca6337d33c26ff19a14bfeb358cd9f7b935d
 workflow-type: ht
-source-wordcount: '933'
+source-wordcount: '939'
 ht-degree: 100%
 
 ---
@@ -16,7 +16,7 @@ Obtenga información sobre cómo monitorizar los entornos en Cloud Manager.
 
 ## Umbrales de métrica {#thresholds}
 
-La Monitorización del sistema, en [!UICONTROL Cloud Manager], se lleva a cabo observando las instancias individuales dentro de un entorno y rastreando una variedad de métricas para cada una. Cada métrica tiene dos umbrales definidos: un umbral de advertencia y un umbral esencial.
+La Monitorización del sistema, en [!UICONTROL Cloud Manager], se lleva a cabo observando las instancias individuales dentro de un entorno y con el seguimiento de una variedad de métricas para cada una. Cada métrica tiene dos umbrales definidos: un umbral de advertencia y un umbral esencial.
 
 Si una métrica supera su umbral esencial, se considera que está en estado crítico. Si una métrica supera su umbral de advertencia (pero está por debajo del esencial), se considera que está en estado de advertencia. Los umbrales los establece Adobe Managed Services y se pueden visualizar en [!UICONTROL Cloud Manager]. En la mayoría de los casos, los umbrales son coherentes entre los clientes, pero, en algunos casos, Adobe Managed Services los modificará para adaptarlos a los requisitos específicos del cliente. Las preguntas acerca de los umbrales deben dirigirse a su ingeniero de éxito del cliente (Customer Success Engineer, CSE).
 
