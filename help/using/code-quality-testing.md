@@ -4,7 +4,7 @@ description: Descubra cómo funcionan las pruebas de calidad del código de las 
 exl-id: 6a574858-a30e-4768-bafc-8fe79f928294
 source-git-commit: 6572c16aea2c5d2d1032ca5b0f5d75ade65c3a19
 workflow-type: ht
-source-wordcount: '2863'
+source-wordcount: '2867'
 ht-degree: 100%
 
 ---
@@ -56,11 +56,11 @@ Los resultados de las pruebas de calidad del código se muestran como una clasif
 |--- |--- |--- |--- |
 | Clasificación de seguridad | A = Sin vulnerabilidades<br/>B = Al menos una vulnerabilidad menor<br/>C = Al menos una vulnerabilidad importante<br/>D = Al menos una vulnerabilidad esencial<br/>E = Al menos una vulnerabilidad de bloqueo | Esencial | &lt; B |
 | Clasificación de fiabilidad | A = No hay errores<br/>B = Al menos un error menor <br/>C = Al menos un error importante<br/>D = Al menos un error esencial<br/>E = Al menos un error de bloqueo | Importante | &lt; C |
-| Clasificación de mantenimiento | Definido por el coste de corrección pendiente de los huecos de códigos como un porcentaje del tiempo que ya ha pasado a la aplicación<br/><ul><li>A = &lt;= 5 %</li><li>B = 6-10 %</li><li>C = 11-20 %</li><li>D = 21-50 %</li><li>E = > 50 %</li></ul> | Importante | &lt; A |
-| Cobertura | Definido por una combinación de cobertura de línea de prueba unitaria y cobertura de condición mediante la fórmula: <br/>`Coverage = (CT + CF + LC) / (2 * B + EL)`  <ul><li>`CT` = Condiciones que se han evaluado como `true` al menos una vez al ejecutar las pruebas unitarias</li><li>`CF` = Condiciones que se han evaluado como `false` al menos una vez al ejecutar las pruebas unitarias</li><li>`LC` = Líneas cubiertas = lines_to_cover - uncovered_lines</li><li>`B` = número total de condiciones</li><li>`EL` = número total de líneas ejecutables (lines_to_cover)</li></ul> | Importante | &lt; 50% |
+| Clasificación de mantenimiento | Definido por el coste de corrección pendiente de los olores de código como un porcentaje del tiempo que ya ha pasado a la aplicación<br/><ul><li>A = &lt;=5 %</li><li>B = 6-10 %</li><li>C = 11-20 %</li><li>D = 21-50 %</li><li>E = >50 %</li></ul> | Importante | &lt; A |
+| Cobertura | Definido por una combinación de cobertura de línea de prueba unitaria y cobertura de condición mediante la fórmula: <br/>`Coverage = (CT + CF + LC) / (2 * B + EL)`  <ul><li>`CT` = Condiciones que se han evaluado como `true` al menos una vez al ejecutar las pruebas unitarias</li><li>`CF` = Condiciones que se han evaluado como `false` al menos una vez al ejecutar las pruebas unitarias</li><li>`LC` = Líneas cubiertas = líneas_por_cubrir - líneas_descubiertas</li><li>`B` = número total de condiciones</li><li>`EL` = número total de líneas ejecutables (líneas_por_cubrir)</li></ul> | Importante | &lt; 50% |
 | Pruebas unitarias omitidas | Número de pruebas unitarias omitidas | Información | > 1 |
-| Problemas abiertos | Tipos de problemas generales: vulnerabilidades, errores y huecos de código | Información | > 0 |
-| Líneas duplicadas | Se definen como el número de líneas involucradas en bloques duplicados. Un bloque de código se considera duplicado en las siguientes condiciones.<br>Proyectos que no son de Java:<ul><li>Debe haber al menos 100 tokens sucesivos y duplicados.</li><li>Estos tokens deben distribuirse al menos de la siguiente manera: </li><li>30 líneas de código para COBOL </li><li>20 líneas de código para ABAP </li><li>10 líneas de código para otros idiomas</li></ul>Proyectos Java:<ul></li><li> Debe haber al menos 10 instrucciones sucesivas y duplicadas, independientemente del número de tokens y líneas.</li></ul>Las diferencias en la sangría, así como en los literales de cadena, se omiten al detectar duplicados. | Información | > 1% |
+| Problemas abiertos | Tipos de problemas generales: Vulnerabilidades, errores y huecos de código | Información | > 0 |
+| Líneas duplicadas | Se define como el número de líneas involucradas en bloques duplicados. Un bloque de código se considera duplicado en las siguientes condiciones.<br>Proyectos que no son de Java:<ul><li>Debe haber al menos 100 tokens sucesivos y duplicados.</li><li>Estos tokens deben propagarse por lo menos: </li><li>30 líneas de código para COBOL </li><li>20 líneas de código para ABAP </li><li>10 líneas de código para otros idiomas</li></ul>Proyectos Java:<ul></li><li> Debe haber al menos 10 instrucciones sucesivas y duplicadas, independientemente del número de tokens y líneas.</li></ul>Las diferencias en la sangría y en los literales de cadena se ignoran al detectar duplicados. | Información | > 1 % |
 | Compatibilidad de Cloud Service | Número de problemas de compatibilidad de Cloud Service identificados | Información | > 0 |
 
 >[!NOTE]
@@ -71,20 +71,20 @@ Los resultados de las pruebas de calidad del código se muestran como una clasif
 >
 >Para obtener más información sobre las reglas de calidad de código personalizadas ejecutadas por [!UICONTROL Cloud Manager], consulte el documento [Reglas de calidad de código personalizadas.](custom-code-quality-rules.md)
 
-### Tratamiento de falsos positivos {#dealing-with-false-positives}
+### Tratar con falsos positivos {#dealing-with-false-positives}
 
 El proceso de escaneo de calidad no es perfecto y a veces identifica incorrectamente las cuestiones que no son realmente problemáticas. Esto se denomina falso positivo.
 
 En estos casos, el código fuente se puede anotar con la anotación estándar de Java `@SuppressWarnings` que especifica el ID de regla como atributo de anotación. Por ejemplo, un falso positivo común es que la regla SonarQube para detectar contraseñas codificadas puede ser agresiva sobre cómo se identifica una contraseña codificada.
 
-El código siguiente es bastante común en un proyecto AEM, y tiene un código para conectarse a algún servicio externo.
+El siguiente código es bastante común en un proyecto de AEM, que tiene código para conectarse a algún servicio externo.
 
 ```java
 @Property(label = "Service Password")
 private static final String PROP_SERVICE_PASSWORD = "password";
 ```
 
-SonarQube aumentará la vulnerabilidad del bloqueador. Pero después de revisar el código, reconoce que no se trata de una vulnerabilidad y puede anotarlo con el ID de regla adecuado.
+SonarQube generará una vulnerabilidad de bloqueo. Pero después de revisar el código, reconoce que no se trata de una vulnerabilidad y puede anotar el código con el ID de regla adecuado.
 
 ```java
 @SuppressWarnings("squid:S2068")
@@ -92,7 +92,7 @@ SonarQube aumentará la vulnerabilidad del bloqueador. Pero después de revisar 
 private static final String PROP_SERVICE_PASSWORD = "password";
 ```
 
-Sin embargo, si el código fuera realmente de la siguiente manera:
+Sin embargo, si el código era realmente así:
 
 ```java
 @Property(label = "Service Password", value = "mysecretpassword")
@@ -282,15 +282,15 @@ Esta funcionalidad está disponible para las siguientes métricas.
 
 Como parte del proceso de análisis de calidad, Cloud Manager realiza un análisis de los paquetes de contenido producidos por la compilación de Maven. Cloud Manager ofrece optimizaciones para acelerar este proceso, que son efectivas cuando se observan ciertas restricciones de empaquetado. Lo más significativo es la optimización realizada para proyectos que generan un paquete de contenido único, generalmente denominado paquete “todo”, que contiene otros paquetes de contenido producidos por la compilación, que se marcan como omitidos. Cuando Cloud Manager detecta este escenario, en lugar de desempaquetar el paquete “todo”, los paquetes de contenido individuales se analizan directamente y se ordenan según las dependencias. Por ejemplo, considere la siguiente salida de compilación.
 
-* `all/myco-all-1.0.0-SNAPSHOT.zip` (paquete de contenido)
-* `ui.apps/myco-ui.apps-1.0.0-SNAPSHOT.zip` (paquete de contenido omitidos)
-* `ui.content/myco-ui.content-1.0.0-SNAPSHOT.zip` (paquete de contenido omitidos)
+* `all/myco-all-1.0.0-SNAPSHOT.zip` (content-package)
+* `ui.apps/myco-ui.apps-1.0.0-SNAPSHOT.zip` (skipped-content-package)
+* `ui.content/myco-ui.content-1.0.0-SNAPSHOT.zip` (skipped-content-package)
 
 Si los únicos elementos dentro de `myco-all-1.0.0-SNAPSHOT.zip` son los dos paquetes de contenido omitidos, entonces los dos paquetes incrustados se analizarán en lugar del paquete de contenido “todo”.
 
 Para los proyectos que producen decenas de paquetes incrustados, se ha demostrado que esta optimización ahorra más de 10 minutos por ejecución de canalización.
 
-Se puede producir un caso especial cuando el paquete de contenido “todo” contiene una combinación de paquetes de contenido omitidos y paquetes OSGi. Por ejemplo, si `myco-all-1.0.0-SNAPSHOT.zip` contenía los dos paquetes incrustados mencionados anteriormente, así como uno o más paquetes OSGi, entonces se construye un nuevo paquete de contenido mínimo con solo los paquetes OSGi. Este paquete siempre tiene el nombre `cloudmanager-synthetic-jar-package` y los paquetes contenidos se colocan en `/apps/cloudmanager-synthetic-installer/install`.
+Se puede producir un caso especial cuando el paquete de contenido “todo” contiene una combinación de paquetes de contenido omitidos y paquetes OSGi. Por ejemplo, si `myco-all-1.0.0-SNAPSHOT.zip` contenía los dos paquetes incrustados mencionados anteriormente, así como uno o más paquetes OSGi, luego se construye un nuevo paquete de contenido mínimo con solo los paquetes OSGi. Este paquete siempre tiene el nombre `cloudmanager-synthetic-jar-package` y los paquetes contenidos se colocan en `/apps/cloudmanager-synthetic-installer/install`.
 
 >[!NOTE]
 >
