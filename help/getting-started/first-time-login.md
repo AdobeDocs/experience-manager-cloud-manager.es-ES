@@ -3,9 +3,9 @@ title: Primer inicio de sesión
 description: Vaya esta página si ha definido las configuraciones generales y está listo para usar Cloud Manager por primera vez.
 exl-id: eb043437-8566-4a8d-8c5c-c8cf1d33daeb
 source-git-commit: d8f16deacfe52c76ff6b0aee0344d50bfe2b9c74
-workflow-type: tm+mt
-source-wordcount: '255'
-ht-degree: 70%
+workflow-type: ht
+source-wordcount: '261'
+ht-degree: 100%
 
 ---
 
@@ -42,4 +42,4 @@ Cloud Manager proporciona una vista consolidada de la actividad de un programa, 
 
 >[!NOTE]
 >
->De forma predeterminada, un usuario con acceso a un entorno AEM también tendrá la función de usuario de Cloud Manager. Esta función por sí sola no es suficiente para dar al usuario acceso a la vista de detalles del programa. Un usuario de este tipo que solo tenga la función de usuario de Cloud Manager puede navegar mediante las opciones del menú de programa a la URL de creación del entorno de AEM (si existen entornos). Estos usuarios deben ponerse en contacto con su administrador si desean obtener acceso a nivel de programa.
+>De forma predeterminada, un usuario con acceso a un entorno de AEM también tendrá la función de usuario de Cloud Manager. Esta función por sí sola no es suficiente para dar al usuario acceso a la vista de detalles del programa. Un usuario de este tipo que solo tenga la función de usuario de Cloud Manager puede navegar mediante las opciones del menú de programa a la URL de creación del entorno de AEM (si existen entornos). Estos usuarios deben ponerse en contacto con su administrador si desean obtener acceso de nivel de programa.
