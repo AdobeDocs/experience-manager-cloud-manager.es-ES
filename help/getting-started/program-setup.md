@@ -4,7 +4,7 @@ description: Después de la incorporación, el propietario de la empresa tendrá
 exl-id: 795c7112-d564-4fbf-96a1-152a6c286bf2
 source-git-commit: 6572c16aea2c5d2d1032ca5b0f5d75ade65c3a19
 workflow-type: ht
-source-wordcount: '581'
+source-wordcount: '585'
 ht-degree: 100%
 
 ---
@@ -66,7 +66,7 @@ Los programas se pueden editar una vez configurados. Siga estos pasos para edita
 
    ![Cuadro de diálogo Editar programa](/help/assets/set-up-program/edit-program-general.png)
 
-1. Haga clic en **Actualización del estado** para guardar los cambios.
+1. Haga clic en **Actualizar** para guardar los cambios.
 
 Tenga en cuenta que los cambios se guardan inmediatamente en Cloud Manager, pero no se reflejarán en los entornos hasta que se ejecute la próxima canalización.
 
