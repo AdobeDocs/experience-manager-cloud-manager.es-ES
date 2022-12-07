@@ -4,7 +4,7 @@ description: Aprenda a utilizar Cloud Manager para crear y configurar canalizaci
 exl-id: ccf4b4a2-6e29-4ede-821c-36318b568e5c
 source-git-commit: 567a16a032bf80451b5e8ba4e3d842cb617a615f
 workflow-type: ht
-source-wordcount: '598'
+source-wordcount: '600'
 ht-degree: 100%
 
 ---
@@ -24,7 +24,7 @@ Este documento se centra en las canalizaciones que no son de producción. Para o
 
 Existen dos tipos de canalizaciones que no son de producción:
 
-* **Código de calidad de la canalizaciones**: ejecutan análisis de calidad del código de una rama de Git y ejecutan los pasos de compilación y calidad del código.
+* **Canalizaciones de calidad de código**: ejecutan análisis de calidad del código en el código de una rama de Git y ejecutan los pasos de compilación y calidad del código.
 * **Canalizaciones de implementación**: además de ejecutar los pasos de compilación y calidad del código como las canalizaciones de calidad del código, estas lo implementan en un entorno que no es de producción.
 
 >[!NOTE]
@@ -58,7 +58,7 @@ Una vez que haya configurado el programa y tenga al menos un entorno utilizando 
 1. Proporcione el repositorio donde la canalización debe obtener el código.
 
    * **Repositorio**: esta opción define desde qué repositorio de Git debe obtener el código la canalización.
-   * **Rama de Git**: esta opción define desde qué rama de la canalización seleccionada debe recuperar el código.
+   * **Rama Git**: esta opción define desde qué rama de la canalización seleccionada debe recuperar el código.
 
 1. Defina las opciones de implementación.
 
@@ -69,8 +69,8 @@ Una vez que haya configurado el programa y tenga al menos un entorno utilizando 
    1. Para canalizaciones de implementación, en **Comportamiento de los errores de las métricas importantes**, defina el comportamiento de la canalización cuando se encuentre un error importante en cualquiera de las puertas de acceso de calidad.
 
       * **Preguntar cada vez**: esta es la configuración predeterminada y requiere intervención manual en caso de que se produzca algún error importante.
-      * **Produjo un error inmediatamente**: si se selecciona, la canalización se cancelará siempre que se produzca un fallo importante. Básicamente, esto emula a un usuario que rechace errores manualmente.
-      * **Continuar inmediatamente**: si se selecciona, la canalización se ejecutará automáticamente cada vez que se produzca un error importante. Básicamente, esto emula al usuario que aprueba manualmente cada error.
+      * **Produjo un error inmediatamente**: si se selecciona, la canalización se cancelará siempre que se produzca un fallo importante. Básicamente, esto emula a un usuario rechazando manualmente cada error.
+      * **Continuar inmediatamente**: si se selecciona, la canalización se realizará automáticamente cada vez que se produzca un error importante. Básicamente, esto emula al usuario que aprueba manualmente cada error.
 
 
 1. Haga clic en **Guardar** para guardar la canalización.
