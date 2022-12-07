@@ -4,7 +4,7 @@ description: Obtenga información sobre cómo el Asistente para la actualizació
 exl-id: 8134e956-bfcf-41b8-a408-fa4375058c6a
 source-git-commit: bbee49987e2f80825f5f7f5caf29c841e2b00dfb
 workflow-type: ht
-source-wordcount: '197'
+source-wordcount: '205'
 ht-degree: 100%
 
 ---
@@ -28,12 +28,12 @@ Los clientes incorporados a Cloud Manager y aptos para actualizar a AEM 6.5 pued
 
 1. Recibirá una notificación push a través de Cloud Manager que le informará de que AEM 6.5 está disponible para su programa.
 
-1. La tarjeta **[!UICONTROL AEM 6.5 Update]** se muestra en la pantalla de información general de [!UICONTROL Cloud Manager]. Esta tarjeta le ayudará a seguir la fase del proceso de actualización en la que se encuentra actualmente y le informará sobre cuál es el siguiente paso.
+1. Una tarjeta de **[!UICONTROL Actualización de AEM 6.5]** se muestra en la pantalla de información general de [!UICONTROL Cloud Manager]. Esta tarjeta le ayudará a seguir la fase del proceso de actualización en la que se encuentra actualmente y le informará sobre cuál es el siguiente paso.
 
    ![Actualización de la tarjeta del asistente](/help/assets/Start-Update.png)
 
-1. Seleccione **[!UICONTROL Start Update]** para lanzar el asistente.
+1. Seleccione **[!UICONTROL Iniciar actualización]** para lanzar el asistente.
 
-1. El asistente muestra la primera fase del proceso **[!UICONTROL AEM 6.5 Update]**.
+1. El asistente muestra la primera fase del proceso de **[!UICONTROL Actualización de AEM 6.5]**.
 
 Para obtener más información acerca de la primera fase del asistente, consulte el documento [Fase de evaluación.](/help/product-update-wizard/evaluation.md)
