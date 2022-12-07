@@ -5,7 +5,7 @@ description: Descubra cómo la fase de evaluación del Asistente para actualizac
 exl-id: 1ffcbc21-dc36-435d-b83b-0209f81a15e7
 source-git-commit: ce2145da3b9e605e8a41bac28df520f14e255557
 workflow-type: ht
-source-wordcount: '291'
+source-wordcount: '296'
 ht-degree: 100%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 100%
 
 # Fase de evaluación {#evaluation}
 
-La primera fase del asistente de actualización de productos es **[!UICONTROL Evaluation]**, que evalúa la complejidad de la actualización con el detector de patrones directamente dentro del asistente. Al final de este paso, tendrá acceso a un informe de evaluación.
+La primera fase del asistente de actualización de productos es la de **[!UICONTROL Evaluación]**, que mide la complejidad de la actualización con el detector de patrones directamente dentro del asistente. Al final de este paso, tendrá acceso a un informe de evaluación.
 
 El informe generado permite comprobar la idoneidad de la instancia de autor para la actualización mediante la detección de patrones que realizan lo siguiente:
 
@@ -35,13 +35,13 @@ Siga estos pasos para generar el informe de evaluación.
 
 1. Inicie el asistente como se describe en el documento [Asistente para la actualización de productos.](/help/product-update-wizard/overview.md)
 
-1. Haga clic en **[!UICONTROL Run Evaluation]**.
+1. Haga clic en **[!UICONTROL Ejecutar evaluación]**.
 
    ![Ejecutar evaluación](/help/assets/Run-Evaluation.png)
 
 1. El asistente informa el estado de la acción. Cuando se genere el informe de evaluación, verá **En curso** o **completado** según corresponda.
 
-1. Una vez generado el informe, puede hacer clic en **[!UICONTROL Download report]** para guardar una copia.
+1. Una vez generado el informe, puede hacer clic en **[!UICONTROL Descargar informe]** para guardar una copia.
 
    ![Informe creado](/help/assets/Evaluation-1.png)
 
