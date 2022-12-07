@@ -5,7 +5,7 @@ exl-id: d489fa3c-df1e-480b-82d0-ac8cce78a710
 source-git-commit: 39b38da17ed1cadf4f2e9633a9e76b537325316f
 workflow-type: tm+mt
 source-wordcount: '1302'
-ht-degree: 92%
+ht-degree: 98%
 
 ---
 
@@ -16,7 +16,7 @@ Aprenda a utilizar Cloud Manager para crear y configurar canalizaciones de produ
 
 ## Información general {#overview}
 
-Al usar la variable **Configuración de canalización** mosaico en [!UICONTROL Cloud Manager] puede crear dos tipos diferentes de canalizaciones.
+Al usar el mosaico **Configuración de canalización** en [!UICONTROL Cloud Manager], puede crear dos tipos diferentes de canalizaciones.
 
 * **Canalizaciones de producción**: una canalización de producción está estructurada y formada específicamente por una serie de pasos organizados para tomar el código fuente de su repositorio de Git y llevarlo a la producción.
 * **Canalizaciones que no son de producción**: una canalización que no es de producción sirve principalmente para ejecutar el análisis de calidad del código o para implementar el código fuente en un entorno de desarrollo.
@@ -41,7 +41,7 @@ Este vídeo ofrece información general sobre el proceso de creación de canaliz
 
 ## Adición de una nueva canalización de producción {#adding-production-pipeline}
 
-Una vez que haya utilizado la variable [!UICONTROL Cloud Manager] Para configurar el programa y tener al menos un entorno, está listo para agregar una canalización de producción.
+Una vez que haya utilizado la IU de [!UICONTROL Cloud Manager] para configurar el programa y tener al menos un entorno, ya puede añadir una canalización de producción.
 
 1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización y el programa adecuados.
 
@@ -51,7 +51,7 @@ Una vez que haya utilizado la variable [!UICONTROL Cloud Manager] Para configura
 
 1. El cuadro de diálogo **Agregar canalización de producción** se abre a la pestaña **Configuración**, en la que se deben definir varias opciones para la canalización. Estas opciones se agrupan en secciones contraíbles y se describen en los pasos siguientes.
 
-   1. Proporcione un nombre descriptivo para la canalización en el campo **Nombre de canalización**.
+   1. Proporcione un nombre descriptivo para la canalización en el campo **Nombre de la canalización**.
 
    1. En la sección **Código fuente** defina dónde la canalización recupera el código que procesará.
 
@@ -60,7 +60,7 @@ Una vez que haya utilizado la variable [!UICONTROL Cloud Manager] Para configura
       >
       >Consulte el documento [Configuración del programa](/help/getting-started/program-setup.md) para aprender a añadir y administrar repositorios en Cloud Manager.
 
-      * **Rama de Git**: esta opción define desde qué rama de la canalización seleccionada debe recuperar el código.
+      * **Rama Git**: esta opción define desde qué rama de la canalización seleccionada debe recuperar el código.
       * **Ubicación del código**: esta opción define la ruta en la rama del repositorio seleccionado desde la que la canalización debe recuperar el código.
 
       ![Definir repositorios para la canalización](/help/assets/configure-pipelines/add-prod2.png)
@@ -76,7 +76,7 @@ Una vez que haya utilizado la variable [!UICONTROL Cloud Manager] Para configura
          * **Comportamiento de los errores de las métricas importantes**: durante la configuración o edición de la canalización, el administrador de implementación tiene la opción de definir el comportamiento de la canalización cuando se encuentra un error importante en cualquiera de las puertas de calidad. Las opciones disponibles son las siguientes:
 
             * **Preguntar cada vez**: esta es la configuración predeterminada y requiere intervención manual en caso de que se produzca algún error importante.
-            * **Fallo inmediatamente**: si se selecciona, la canalización se cancelará siempre que se produzca un fallo importante. Básicamente, esto emula a un usuario rechazando manualmente cada error.
+            * **Produjo un error inmediatamente**: si se selecciona, la canalización se cancelará siempre que se produzca un fallo importante. Básicamente, esto emula a un usuario rechazando manualmente cada error.
             * **Continuar inmediatamente**: si se selecciona, la canalización se realizará automáticamente cada vez que se produzca un error importante. Básicamente, esto emula al usuario que aprueba manualmente cada error.
 
          ![Activador de implementación](/help/assets/configure-pipelines/add-prod3.png)
@@ -85,7 +85,7 @@ Una vez que haya utilizado la variable [!UICONTROL Cloud Manager] Para configura
 
             * **Aprobar después de la implementación de la fase**: esta aprobación se produce después de la implementación en el entorno de ensayo antes de realizar cualquier prueba. De lo contrario, la aprobación se produce antes de la implementación de producción, que se realiza después de completar todas las pruebas.
 
-            * **Omitir cambios del equilibrador de carga**: no se realizan cambios en el equilibrador de carga.
+            * **Omitir los cambios del equilibrador de carga**: no se realizan cambios en el equilibrador de carga.
 
          ![Opciones de implementación de ensayo](/help/assets/configure-pipelines/add-prod4.png)
 
@@ -108,7 +108,7 @@ Una vez que haya utilizado la variable [!UICONTROL Cloud Manager] Para configura
 
          * **Opciones de implementación**: puede definir los parámetros que controlan la implementación de producción.
 
-            * **Usar la aprobación de lanzamiento** : un usuario debe aprobar manualmente una implementación con la variable **Propietario empresarial**, **Administrador de proyectos** o **Administrador de implementación** a través de la función [!UICONTROL Cloud Manager] IU.
+            * **Utilizar la aprobación de GoLive**: un usuario con la función **Propietario empresarial**, **Administrador de proyectos** o **Administrador de implementación** debe aprobar manualmente una implementación a través de la IU de [!UICONTROL Cloud Manager].
             * **Programado**: esta opción detiene la canalización antes de la implementación de producción para permitir que se programe. Si se selecciona esta opción, la canalización se detendrá después de la implementación en el entorno de ensayo y se preguntará al usuario qué acción debe hacerse.
                * **Ahora**: esta opción se implementa en producción de inmediato y completa efectivamente la canalización.
                * **Fecha**: esta opción permite al usuario programar en qué momento se debe completar la implementación.
@@ -118,7 +118,7 @@ Una vez que haya utilizado la variable [!UICONTROL Cloud Manager] Para configura
             >
             >Consulte el documento [Implementación de código](/help/using/code-deployment.md) para obtener información sobre cómo configurar la programación de implementación o ejecutar la canalización inmediatamente.
 
-            * **Usar la supervisión de CSE**: si se selecciona esta opción, se involucra un ingeniero de éxito del cliente para que inicie la implementación. Al crear o editar una canalización cuando esta opción está habilitada, la función **Administrador de implementación** tiene las siguientes opciones.
+            * **Utilizar la supervisión del CSE**: si se selecciona esta opción, se involucra un ingeniero de éxito del cliente para que inicie la implementación. Al crear o editar una canalización cuando esta opción está habilitada, la función **Administrador de implementación** tiene las siguientes opciones.
 
                * **Cualquier CSE**: esta opción permite que cualquier CSE disponible inicie la implementación.
                * **Mi CSE**: esta opción solo permite que el CSE específico asignado al cliente inicie la implementación. Esto también se aplica al CSE sustituto, si el asignado no está disponible.
@@ -158,7 +158,7 @@ Una vez que haya utilizado la variable [!UICONTROL Cloud Manager] Para configura
       * Defina sus propios activos personalizados cargándolos.
 
          1. **FORMATO**: elija si el activo personalizado es un PDF de una imagen.
-         1. **NOMBRE DE ARCHIVO**: utilice el botón del explorador de archivos para seleccionar una imagen del equipo local.
+         1. **NOMBRE DEL ARCHIVO**: utilice el botón del explorador de archivos para seleccionar una imagen del equipo local.
          1. **Agregar archivo de prueba**: haga clic en para cargar el activo seleccionado.
 
       ![Distribución de pruebas de activos](/help/assets/configure-pipelines/add-prod6.png)
