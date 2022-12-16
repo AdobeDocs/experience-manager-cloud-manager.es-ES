@@ -3,9 +3,9 @@ title: Configuración de canalizaciones de producción
 description: Aprenda a utilizar Cloud Manager para crear y configurar canalizaciones de producción para implementar su código.
 exl-id: d489fa3c-df1e-480b-82d0-ac8cce78a710
 source-git-commit: 39b38da17ed1cadf4f2e9633a9e76b537325316f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1302'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -94,8 +94,8 @@ Una vez que haya utilizado la IU de [!UICONTROL Cloud Manager] para configurar e
             1. En **RUTA**, proporcione una ruta de contenido.
             1. En **TIPO**, seleccione la acción que se realizará en esa ruta.
 
-               * **Vaciado** : realice una eliminación de caché.
-               * **Invalidar** : realice una invalidación de caché, similar a cuando el contenido se activa desde una instancia de creación a una instancia de publicación.
+               * **Vaciado**: realice una eliminación de caché.
+               * **Invalidar**: efectúe una invalidación de caché, similar a cuando el contenido se activa desde una instancia de creación a una instancia de publicación.
             1. Haga clic en **Agregar ruta** para añadir la ruta especificada. Puede agregar hasta 100 rutas por entorno.
 
          ![Configuración de Dispatcher](/help/assets/configure-pipelines/dispatcher-stage.png)
