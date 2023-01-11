@@ -2,10 +2,10 @@
 title: El entorno de compilación
 description: Obtenga información sobre el entorno de compilación especializado en el que los usuarios de Cloud Manager generan y prueban su código.
 exl-id: b3543320-66d4-4358-8aba-e9bdde00d976
-source-git-commit: 4c051cd1696f8a00d0278131c9521ad4dcb956a3
-workflow-type: ht
-source-wordcount: '1044'
-ht-degree: 100%
+source-git-commit: 60a6fd062a3878230dafdc34d9ce289ade361120
+workflow-type: tm+mt
+source-wordcount: '1139'
+ht-degree: 91%
 
 ---
 
@@ -127,6 +127,28 @@ Para ello, Cloud Manager añade variables de entorno estándar al contenedor de 
 | `CM_PROGRAM_ID` | Identificador numérico del programa |
 | `CM_PROGRAM_NAME` | El nombre del programa |
 | `ARTIFACTS_VERSION` | En el caso de una canalización de ensayo o de producción, la versión sintética generada por Cloud Manager |
+
+### Disponibilidad de variables de entorno estándar {#availability}
+
+Las variables de entorno estándar se pueden usar en varios lugares.
+
+#### Autor, vista previa y publicación {#author-preview-publish}
+
+Tanto las variables de entorno normales como los secretos se pueden usar en los entornos de creación, previsualización y publicación.
+
+#### Dispatcher {#dispatcher}
+
+En Dispatcher solo se pueden usar variables de entorno normales. Los secretos no se pueden usar.
+
+Sin embargo, las variables de entorno no se pueden usar en `IfDefine` directivas.
+
+>[!TIP]
+>
+>Debe validar el uso de variables de entorno con la variable [dispatcher localmente](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools.html) antes de la implementación.
+
+#### Configuraciones de OSGi {#osgi}
+
+Tanto las variables de entorno normales como los secretos se pueden utilizar en configuraciones OSGi.
 
 ### Variables de canalización {#pipeline-variables}
 
