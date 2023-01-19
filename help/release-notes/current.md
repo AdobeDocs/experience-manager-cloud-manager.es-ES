@@ -1,19 +1,19 @@
 ---
-title: Notas de la versión 2022.12.0
-description: Estas son las notas de la versión 2022.12.0 de Cloud Manager.
+title: Notas de la versión 2023.1.0
+description: Estas son las notas de la versión 2023.1.0 de Cloud Manager.
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
-source-git-commit: 1fe5fb860da07105ac7e8ce21fce683b238637c1
-workflow-type: ht
-source-wordcount: '124'
-ht-degree: 100%
+source-git-commit: 3e4937fc262016cef5c5c692c06244f411b28c0f
+workflow-type: tm+mt
+source-wordcount: '125'
+ht-degree: 61%
 
 ---
 
 
-# Notas de la versión 2022.12.0 de Cloud Manager. {#release-notes}
+# Notas de la versión 2023.1.0 de Cloud Manager. {#release-notes}
 
-Esta página documenta las notas de la versión 2022.12.0 de [!UICONTROL Cloud Manager].
+Esta página documenta las notas de la versión 2023.1.0 de [!UICONTROL Cloud Manager].
 
 >[!NOTE]
 >
@@ -21,10 +21,12 @@ Esta página documenta las notas de la versión 2022.12.0 de [!UICONTROL Cloud M
 
 ## Fecha de la versión {#release-date}
 
-La fecha de lanzamiento de la versión 2022.12.0 de [!UICONTROL Cloud Manager] es el 29 de noviembre de 2022. La próxima versión está planificada para el 19 de enero de 2023.
+La fecha de la versión de [!UICONTROL Cloud Manager] la versión 2023.1.0 es el 19 de enero de 2023. La próxima versión está planificada para el 16 de febrero de 2023.
 
 ## Novedades {#what-is-new}
 
-* Ya está disponible el escalado automático de varias regiones. Pueden aplicarse ciertas restricciones.
-   * Este cambio se implementará de manera gradual en las cuatro a seis semanas siguientes a la versión de 2022.12.0.
-* Se llevaron a cabo mejoras en la disponibilidad y fiabilidad de las [canalizaciones de Cloud Manager](/help/overview/ci-cd-pipelines.md).
+* Las mejoras de uso se realizaron actualizando estilos de cursor que distinguen entre dónde los usuarios pueden realizar acciones y el puntero predeterminado.
+
+## Correcciones de errores {#bug-fixes}
+
+* Cloud Manager impedirá que dos ejecuciones de canalización comiencen (o casi al mismo tiempo), evitando así errores de canalización.
