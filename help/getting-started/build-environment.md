@@ -5,7 +5,7 @@ exl-id: b3543320-66d4-4358-8aba-e9bdde00d976
 source-git-commit: 42cafc03a607ace183d58adbe1c397c1a6c5c22f
 workflow-type: tm+mt
 source-wordcount: '1152'
-ht-degree: 91%
+ht-degree: 98%
 
 ---
 
@@ -132,7 +132,7 @@ Para ello, Cloud Manager añade variables de entorno estándar al contenedor de 
 
 Las variables de entorno estándar se pueden usar en varios lugares.
 
-#### Autor, vista previa y publicación {#author-preview-publish}
+#### Creación, previsualización y publicación {#author-preview-publish}
 
 Tanto las variables de entorno normales como los secretos se pueden usar en los entornos de creación, previsualización y publicación.
 
@@ -140,11 +140,11 @@ Tanto las variables de entorno normales como los secretos se pueden usar en los 
 
 Solo se pueden usar variables de entorno normales con [Dispatcher.](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=es) Los secretos no se pueden usar.
 
-Sin embargo, las variables de entorno no se pueden usar en `IfDefine` directivas.
+Sin embargo, las variables de entorno no se pueden usar en directivas `IfDefine`.
 
 >[!TIP]
 >
->Debe validar el uso de variables de entorno con la variable [dispatcher localmente](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools.html) antes de la implementación.
+>Debe validar el uso de variables de entorno con [Dispatcher localmente](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools.html?lang=es) antes de la implementación.
 
 #### Configuraciones de OSGi {#osgi}
 
