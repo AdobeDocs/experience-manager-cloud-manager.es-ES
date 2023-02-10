@@ -3,9 +3,9 @@ title: El entorno de compilación
 description: Obtenga información sobre el entorno de compilación especializado en el que los usuarios de Cloud Manager generan y prueban su código.
 exl-id: b3543320-66d4-4358-8aba-e9bdde00d976
 source-git-commit: 42cafc03a607ace183d58adbe1c397c1a6c5c22f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1152'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -148,7 +148,7 @@ Sin embargo, las variables de entorno no se pueden usar en directivas `IfDefine`
 
 #### Configuraciones de OSGi {#osgi}
 
-Tanto las variables de entorno normales como los secretos se pueden usar en [Configuraciones de OSGi.](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-osgi.html?lang=es)
+En [Configuraciones de OSGi](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-osgi.html?lang=es), se pueden usar tanto las variables de entorno normales, como los secretos.
 
 ### Variables de canalización {#pipeline-variables}
 
