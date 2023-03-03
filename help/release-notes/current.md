@@ -4,14 +4,14 @@ description: Estas son las notas de la versión 2023.2.0 de Cloud Manager.
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
 source-git-commit: ab1747e14be783004544681f9aefefaa0587302e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '82'
 ht-degree: 100%
 
 ---
 
 
-# Notas de la versión 2023.2.0 de Cloud Manager. {#release-notes}
+# Notas de la versión 2023.2.0 de Cloud Manager {#release-notes}
 
 Esta página documenta las notas de la versión 2023.2.0 de [!UICONTROL Cloud Manager].
 
