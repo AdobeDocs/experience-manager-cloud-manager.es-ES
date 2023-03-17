@@ -1,10 +1,10 @@
 ---
 title: La herramienta Copia de contenido
 description: La herramienta de copia de contenido de Cloud Manager permite a los usuarios copiar contenido mutable bajo demanda desde sus entornos de producción de AEM a entornos inferiores para realizar pruebas.
-source-git-commit: 360cbf7e3a21e530a4e43f13f6d414dae4afa104
-workflow-type: ht
-source-wordcount: '1017'
-ht-degree: 100%
+source-git-commit: 7ab5bdea2b388f3e9e199a6d32a1a80977eba35b
+workflow-type: tm+mt
+source-wordcount: '1074'
+ht-degree: 93%
 
 ---
 
@@ -81,6 +81,11 @@ Para poder copiar cualquier contenido, se debe definir un conjunto de contenido.
 
 A partir de ahora, se puede utilizar el conjunto de contenido para copiar contenido entre entornos.
 
+>[!NOTE]
+>
+>Puede agregar hasta 50 rutas en un conjunto de contenido.
+>No hay limitación en las rutas excluidas.
+
 ## Edición de un conjunto de contenido {#edit-content-set}
 
 Siga los mismos pasos que para la creación de un paso de contenido. En lugar de pulsar o hacer clic en **Añadir conjunto de contenido**, seleccione un conjunto existente de la consola y seleccione **Editar** en el menú de puntos suspensivos.
@@ -97,9 +102,9 @@ Una vez creado un conjunto de contenido, puede utilizarlo para copiar contenido.
 
 1. Vaya a la pantalla **Entornos** de la página **Información general**.
 
-1. Vaya a la página **Conjuntos de contenidos** en la pantalla **Entornos**.
+1. Vaya a la página **Conjuntos de contenido** en la pantalla **Entornos**.
 
-1. Seleccione un conjunto de contenido de la consola y seleccione **Copiar contenido** en el menú de puntos suspensivos.
+1. Seleccione un conjunto de contenido de la consola y seleccione **Copiar contenido** en el menú elipsis.
 
    ![Copia de contenido](/help/assets/copy-content.png)
 
@@ -112,6 +117,8 @@ Una vez creado un conjunto de contenido, puede utilizarlo para copiar contenido.
 
 
 1. En el diálogo **Copiar contenido**, especifique el origen y el destino de la acción de copia de contenido.
+
+1. Puede optar por eliminar o conservar las rutas de exclusión en el entorno de destino. Seleccionar casilla de verificación `Do not delete exclude paths from destination` si desea conservar las rutas de exclusión especificadas en el conjunto de contenido. Si la casilla de verificación se deja sin marcar, las rutas de exclusión se eliminan en el entorno de destino.
 
    ![Copia de contenido](/help/assets/copying-content.png)
 
@@ -150,7 +157,7 @@ La herramienta de copia de contenido tiene las siguientes limitaciones.
 * No es posible copiar contenido entre programas.
 * No es posible ejecutar operaciones de copia de contenido simultáneas en el mismo entorno.
 * La copia de contenido no se puede realizar si hay alguna operación activa ejecutándose en el entorno de destino o de origen, como, por ejemplo, una canalización de CI/CD.
-* Se pueden especificar hasta diez rutas por cada conjunto de contenido. No hay limitación en las rutas excluidas.
+* Se pueden especificar hasta cincuenta rutas por conjunto de contenido. No hay limitación en las rutas excluidas.
 * La herramienta de copia de contenido no debe utilizarse como una herramienta de clonación o reflejo, ya que no puede rastrear el contenido movido o eliminado del origen.
 * La herramienta de copia de contenido no tiene capacidad de creación de versiones y no puede detectar automáticamente contenido modificado o recién creado en el entorno de origen en un conjunto de contenido desde la última operación de copia de contenido.
    * Si desea actualizar el entorno de destino con cambios de contenido solo desde la última operación de copia de contenido, debe crear un conjunto de contenido. En ese conjunto, especifique las rutas en la instancia de origen en la que se realizaron cambios desde la última operación de copia de contenido.
