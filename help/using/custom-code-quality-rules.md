@@ -2,9 +2,9 @@
 title: Reglas de calidad de código personalizadas
 description: Obtenga más información acerca de las reglas de calidad del código personalizadas ejecutadas por Cloud Manager como parte de las pruebas de calidad del código, en función de las prácticas recomendadas de ingeniería de AEM.
 exl-id: 7d118225-5826-434e-8869-01ee186e0754
-source-git-commit: 611cd8f874e8e0d21a475365f4aceb6ae2565644
+source-git-commit: ef87e13eb81faf5605cdd16c6fd46d5f7b3233a9
 workflow-type: tm+mt
-source-wordcount: '3537'
+source-wordcount: '3531'
 ht-degree: 86%
 
 ---
@@ -104,7 +104,7 @@ protected void doPost(SlingHttpServletRequest request, SlingHttpServletResponse 
 * **Gravedad**: Crítico
 * **Desde**: Versión 2018.6.0
 
-Al ejecutar solicitudes HTTP desde una aplicación de AEM, es fundamental asegurarse de que se han configurado los tiempos de espera adecuados para evitar un consumo innecesario de procesos secundarios. Desafortunadamente, el comportamiento predeterminado de ambos clientes HTTP predeterminados de Java™, `java.net.HttpUrlConnection`, y el cliente de componentes HTTP Apache que se utiliza con frecuencia nunca agotará el tiempo de espera, por lo que se deben establecer explícitamente los tiempos de espera. Como práctica recomendada, estos tiempos de espera no deben superar los 60 segundos.
+Al ejecutar solicitudes HTTP desde una aplicación de AEM, es fundamental asegurarse de que se han configurado los tiempos de espera adecuados para evitar un consumo innecesario de procesos secundarios. Desafortunadamente, el comportamiento predeterminado de ambos clientes HTTP predeterminados de Java™, `java.net.HttpUrlConnection`, y el cliente de componentes HTTP de Apache que se utiliza con frecuencia nunca agotará el tiempo de espera, por lo que se deben establecer explícitamente los tiempos de espera. Como práctica recomendada, estos tiempos de espera no deben superar los 60 segundos.
 
 #### Código no conforme {#non-compliant-code-2}
 
@@ -181,7 +181,7 @@ public void orDoThis() {
 
 Objetos `ResourceResolver` obtenidos de recursos del sistema de consumo `ResourceResolverFactory`. Aunque existen medidas para recuperar estos recursos cuando `ResourceResolver` ya no está en uso, es más eficiente cerrar explícitamente cualquier objeto `ResourceResolver` llamando al método `close()`.
 
-Una idea errónea común es que `ResourceResolver` Los objetos creados con una sesión JCR existente no deben cerrarse explícitamente o que, al hacerlo, cierren la sesión JCR subyacente. No suele ser el caso. Independientemente de cómo se abra `ResourceResolver`, debe cerrarse cuando ya no se utiliza. Dado que `ResourceResolver` implementa la interfaz `Closeable`, también es posible utilizar la sintaxis `try-with-resources` en lugar de invocar explícitamente `close()`.
+Una idea errónea común es que `ResourceResolver` Los objetos creados con una sesión de JCR existente no deben cerrarse explícitamente o que, al hacerlo, hayan cerrado la sesión de JCR subyacente. No suele ser el caso. Independientemente de cómo se abra `ResourceResolver`, debe cerrarse cuando ya no se utiliza. Dado que `ResourceResolver` implementa la interfaz `Closeable`, también es posible utilizar la sintaxis `try-with-resources` en lugar de invocar explícitamente `close()`.
 
 #### Código no compatible {#non-compliant-code-4}
 
@@ -436,7 +436,7 @@ public void doThis() {
 * **Gravedad**: Menor
 * **Desde**: versión 2018.4.0
 
-El registro en AEM siempre se debe realizar a través del marco de trabajo de registro, SLF4J. La salida directa a los flujos de error estándar o de salida estándar pierde la información estructural y contextual proporcionada por el marco de trabajo de registro y, a veces, puede causar problemas de rendimiento.
+El registro en AEM siempre se debe realizar a través del marco de trabajo de registro, SLF4J. La salida directa a los flujos de error estándar o de salida estándar pierde la información estructural y contextual proporcionada por el marco de registro y, a veces, puede causar problemas de rendimiento.
 
 #### Código no compatible {#non-compliant-code-12}
 
@@ -496,7 +496,7 @@ public void doThis(Resource resource) {
 
 El planificador de Sling no debe utilizarse para tareas que requieren una ejecución garantizada. Los trabajos programados de Sling garantizan la ejecución y son más adecuados para los entornos agrupados y no agrupados.
 
-Consulte [Documentación de eventos y administración de trabajos de Apache Sling](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html) para obtener más información sobre cómo se gestionan los trabajos de Sling en entornos agrupados.
+Consulte [Documentación sobre eventos de Apache Sling y gestión de trabajos](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html) para obtener más información sobre cómo se gestionan los trabajos de Sling en entornos agrupados.
 
 ### Las API en desuso de AEM no deben usarse {#sonarqube-aem-deprecated}
 
@@ -507,9 +507,9 @@ Consulte [Documentación de eventos y administración de trabajos de Apache Slin
 
 La superficie de la API de AEM está en constante revisión para identificar las API para las que se desaconseja el uso y que, por lo tanto, se consideran obsoletas.
 
-A menudo, estas API están en desuso al utilizar el Java estándar™ *@Deprecated* anotación y, como tal, identificada por `squid:CallToDeprecatedMethod`.
+A menudo, estas API están en desuso al usar el Java™ estándar *@Deprecated* anotación y, como tal, identificada por `squid:CallToDeprecatedMethod`.
 
-AEM Sin embargo, hay casos en los que una API está en desuso en el contexto de la, pero puede que no esté en desuso en otros contextos. Esta regla identifica esta segunda clase.
+Sin embargo, hay casos en los que una API está en desuso en el contexto de AEM, pero puede que no esté en desuso en otros contextos. Esta regla identifica esta segunda clase.
 
 ## Reglas de contenido OakPAL {#oakpal-rules}
 
@@ -526,11 +526,11 @@ La siguiente sección detalla las comprobaciones OakPAL ejecutadas por Cloud Man
 * **Gravedad**: Crítico
 * **Desde**: Versión 2018.7.0
 
-AEM La API de ™ contiene interfaces y clases de Java que solo están pensadas para utilizarse, pero no para implementarse, mediante código personalizado. Por ejemplo, la interfaz de `com.day.cq.wcm.api.Page` AEM se implementa solo por parte de los.
+La API AEM contiene interfaces y clases de Java™ que solo están pensadas para utilizarse, pero no para implementarse, mediante código personalizado. Por ejemplo, la interfaz de `com.day.cq.wcm.api.Page` solo lo implementa AEM.
 
 Cuando se agregan nuevos métodos a estas interfaces, esos métodos adicionales no afectan al código existente que utiliza estas interfaces y, como resultado, la adición de nuevos métodos a estas interfaces se considera compatible con versiones anteriores. Sin embargo, si el código personalizado implementa una de estas interfaces, dicho código personalizado ha introducido un riesgo de compatibilidad con versiones anteriores para el cliente.
 
-AEM Las interfaces y las clases que solo están pensadas para ser implementadas por los se anotan con `org.osgi.annotation.versioning.ProviderType` o, a veces, una anotación heredada similar `aQute.bnd.annotation.ProviderType`. Esta regla identifica los casos en los que se implementa una interfaz de este tipo o en los que una clase se amplía mediante código personalizado.
+Las interfaces y clases que solo se pretende implementar mediante AEM se anotan con `org.osgi.annotation.versioning.ProviderType` o, a veces, una anotación heredada similar `aQute.bnd.annotation.ProviderType`. Esta regla identifica los casos en los que se implementa una interfaz de este tipo o en los que una clase se amplía mediante código personalizado.
 
 #### Código no conforme {#non-compliant-code-3}
 
@@ -549,7 +549,7 @@ public class DontDoThis implements Page {
 * **Gravedad**: bloqueador
 * **Desde**: versión 2019.6.0
 
-Una práctica recomendada clásica es que el árbol de contenido `/libs` en el repositorio de contenido de AEM debe ser considerado de solo lectura por los clientes. Modificar nodos y propiedades en `/libs` crea un riesgo significativo para las actualizaciones principales y secundarias. Modificaciones en `/libs` solo se realiza por Adobe a través de canales oficiales.
+Una práctica recomendada clásica es que el árbol de contenido `/libs` en el repositorio de contenido de AEM debe ser considerado de solo lectura por los clientes. Modificar nodos y propiedades en `/libs` crea un riesgo significativo para las actualizaciones principales y secundarias. Modificaciones a `/libs` sólo se realiza por Adobe a través de canales oficiales.
 
 ### Los paquetes no deben contener configuraciones OSGi duplicadas {#oakpal-package-osgi}
 
@@ -558,7 +558,7 @@ Una práctica recomendada clásica es que el árbol de contenido `/libs` en el r
 * **Gravedad**: Principal
 * **Desde**: Versión 2019.6.0
 
-Un problema común que ocurre en proyectos complejos es que el mismo componente OSGi se configura varias veces. Esto crea una ambigüedad sobre la configuración que se puede utilizar. Esta regla es &quot;según el modo de ejecución&quot; ya que solo identificará problemas en los que el mismo componente se haya configurado varias veces en el mismo modo de ejecución o combinación de modos de ejecución.
+Un problema común que ocurre en proyectos complejos es que el mismo componente OSGi se configura varias veces. Esto crea una ambigüedad sobre qué configuración es operable. Esta regla es &quot;según el modo de ejecución&quot; ya que solo identificará problemas en los que el mismo componente se haya configurado varias veces en el mismo modo de ejecución o combinación de modos de ejecución.
 
 #### Código no compatible {#non-compliant-code-osgi}
 
@@ -627,7 +627,7 @@ Similar a la regla [Los paquetes no deben contener configuraciones OSGi duplicad
 * **Gravedad**: Menor
 * **Desde**: Versión 2020.5.0
 
-La configuración OSGi `com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl` define el modo de creación predeterminado en AEM. Porque [AEM la IU clásica lleva en desuso desde la versión 6.4 de,](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/deprecated-removed-features.html?lang=es) ahora se genera un problema cuando el modo de creación predeterminado está configurado en la IU clásica.
+La configuración OSGi `com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl` define el modo de creación predeterminado en AEM. Dado que la IU clásica ha quedado obsoleta desde AEM 6.4, ahora se plantea un problema cuando el modo de creación predeterminado se configura en la IU clásica.
 
 ### Los componentes con cuadros de diálogo deben tener cuadros de diálogo de IU táctil {#oakpal-components-dialogs}
 
@@ -719,7 +719,7 @@ La herramienta de migración en el [Repositorio de GitHub de AEM Assets as a Clo
 * **Gravedad**: Menor
 * **Desde**: Versión 2021.2.0
 
-AEM Aunque históricamente el uso de plantillas estáticas ha sido común en Proyectos, se recomienda encarecidamente el uso de plantillas editables, ya que proporcionan la mayor flexibilidad y admiten funciones adicionales que no están presentes en las plantillas estáticas. Encontrará más información en el documento [Plantillas de página: editables.](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/templates/page-templates-editable.html?lang=es)
+Aunque históricamente el uso de plantillas estáticas ha sido común en AEM proyectos, se recomiendan las plantillas editables, ya que proporcionan la mayor flexibilidad y admiten funciones adicionales que no están presentes en plantillas estáticas. Encontrará más información en el documento [Plantillas de página: editables.](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/templates/page-templates-editable.html?lang=es)
 
 La migración de plantillas estáticas a editables se puede automatizar en gran medida mediante las [Herramientas de modernización de AEM.](https://opensource.adobe.com/aem-modernize-tools/)
 
@@ -734,14 +734,14 @@ Los componentes básicos heredados (es decir, los componentes en `/libs/foundati
 
 Esta conversión puede facilitarse mediante las [Herramientas de modernización de AEM.](https://opensource.adobe.com/aem-modernize-tools/)
 
-### Solo se deben utilizar los nombres y pedidos en modo de ejecución admitidos {#oakpal-supported-runmodes}
+### Solo se deben utilizar los nombres y el orden de los modos de ejecución admitidos {#oakpal-supported-runmodes}
 
 * **Clave**: SupportedRunmode
 * **Tipo**: Code Smell
 * **Gravedad**: Menor
 * **Desde**: Versión 2021.2.0
 
-AEM Cloud Service aplica una directiva de nombres estricta para los nombres de modo de ejecución y un orden estricto para esos modos de ejecución. La lista de modos de ejecución admitidos se encuentra en [AEM Implementación en documentación as a Cloud Service de la](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html?lang=es#runmodes) y cualquier desviación de esto se identifica como un problema.
+AEM Cloud Service aplica una política de nomenclatura estricta para los nombres de modo de ejecución y un orden estricto para dichos modos de ejecución. La lista de modos de ejecución admitidos se encuentra en la [Implementación en AEM documentación as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html?lang=es#runmodes) y cualquier desviación de esto se identifica como un problema.
 
 ### Los nodos de definición del índice de búsqueda personalizada deben ser secundarios directos de /oak:index {#oakpal-custom-search}
 
@@ -768,7 +768,7 @@ AEM Cloud Service requiere que las definiciones de índice de búsqueda personal
 * **Gravedad**: Menor
 * **Desde**: Versión 2021.2.0
 
-Pueden producirse problemas difíciles de solucionar cuando un nodo de definición de índice de búsqueda personalizada tiene nodos secundarios sin ordenar. Para evitarlos, se recomienda que todos los nodos descendientes de un nodo `oak:QueryIndexDefinition` sean de tipo `nt:unstructured`.
+Se pueden producir problemas difíciles de solucionar cuando un nodo de definición de índice de búsqueda personalizado tiene nodos secundarios sin ordenar. Para evitarlos, se recomienda que todos los nodos descendientes de un nodo `oak:QueryIndexDefinition` sean de tipo `nt:unstructured`.
 
 ### Los nodos de definición de índice de búsqueda personalizada deben contener un nodo secundario denominado indexRules que tenga nodos secundarios. {#oakpal-custom-search-index}
 
@@ -847,10 +847,10 @@ En la sección siguiente se enumeran las comprobaciones de la Herramienta de opt
 
 * [Cada conjunto de servidores de Dispatcher debe tener un nombre único](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---each-dispatcher-farm-should-have-a-unique-name)
 
-* [La caché del conjunto de servidores de publicación de Dispatcher debe tener sus reglas ignoreUrlParams configuradas de forma de lista de permitidos](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-cache-should-have-its-ignoreurlparams-rules-configured-in-an-allow-list-manner)
+* [La caché de la granja de servidores de publicación de Dispatcher debe tener las reglas ignoreUrlParams configuradas de forma lista de permitidos](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-cache-should-have-its-ignoreurlparams-rules-configured-in-an-allow-list-manner)
 
-* [Los filtros del conjunto de servidores de publicación de Dispatcher deben especificar los selectores de Sling permitidos de forma de lista de permitidos](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-filters-should-specify-the-allowed-sling-selectors-in-an-allow-list-manner)
+* [Los filtros de granja de publicación de Dispatcher deben especificar los selectores de Sling permitidos de forma lista de permitidos](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-filters-should-specify-the-allowed-sling-selectors-in-an-allow-list-manner)
 
-* [Los filtros del conjunto de servidores de publicación de Dispatcher deben especificar los patrones de sufijos de Sling permitidos de forma de lista de permitidos](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-filters-should-specify-the-allowed-sling-suffix-patterns-in-an-allow-list-manner)
+* [Los filtros de granja de publicación de Dispatcher deben especificar los patrones de sufijo de Sling permitidos de forma lista de permitidos](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-filters-should-specify-the-allowed-sling-suffix-patterns-in-an-allow-list-manner)
 
-* [No utilice la directiva &quot;Requerir todo concedido&quot; en una sección del Directorio VirtualHost con una ruta de acceso de directorio raíz](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-require-all-granted-directive-should-not-be-used-in-a-virtualhost-directory-section-with-a-root-directory-path)
+* [No utilice la directiva &quot;Requerir todo concedido&quot; en una sección de Directorio VirtualHost con una ruta de directorio raíz](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-require-all-granted-directive-should-not-be-used-in-a-virtualhost-directory-section-with-a-root-directory-path)
