@@ -3,9 +3,9 @@ title: Repositorios de Cloud Manager
 description: Obtenga información sobre cómo acceder, crear y editar repositorios para sus programas de Cloud Manager.
 exl-id: 384b197d-f7a7-4022-9b16-9d83ab788966
 source-git-commit: 63cbcf8724a840efa67b8fafc4c321e04a5d70d9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '796'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
@@ -81,19 +81,19 @@ Siga estos pasos para editar y ver repositorios en Cloud Manager:
 
 1. En la página **Resumen del programa**, haga clic en la pestaña **Repositorios** y vaya a la página **Repositorios**. Aquí puede ver los detalles de sus repositorios existentes.
 
-1. Seleccione el repositorio y haga clic en el botón de elipsis en la parte más a la derecha de la tabla para **Copiar URL del repositorio** o **Ver y actualizar** su repositorio.
+1. Seleccione el repositorio y haga clic en el botón de puntos suspensivos en el extremo derecho de la tabla para **Copiar URL del repositorio** o **Ver y actualizar** el repositorio.
 
 ![Editar repositorio](/help/assets/create-repo3.png)
 
 ## Eliminación de repositorios {#delete-repos}
 
-Para eliminar un repositorio, siga los mismos pasos [para ver y editar repositorios](#edit-repos) pero en el **Repositorios** selección de página **Eliminar** del botón elipsis del repositorio que se va a eliminar.
+Para eliminar un repositorio, siga los mismos pasos que [para ver y editar repositorios](#edit-repos), pero en la página **Repositorios**, seleccione **Eliminar** en el botón de puntos suspensivos del repositorio que se va a eliminar.
 
-Tenga en cuenta que cuando se elimina un repositorio en Cloud Manager, se marca como eliminado y ya no es accesible para el usuario, pero se mantiene en el sistema para fines de recuperación.
+Tenga en cuenta que cuando se elimina un repositorio en Cloud Manager, se marca como eliminado y ya no es accesible para el usuario, pero se mantiene en el sistema a efectos de recuperación.
 
-Si intenta crear un nuevo repositorio después de eliminar un repositorio con el mismo nombre, recibirá el mensaje de error &quot;Se ha producido un error al intentar crear el repositorio. Póngase en contacto con su CSE o soporte técnico de Adobe&quot;.
+Si intenta crear un nuevo repositorio después de eliminar un repositorio con el mismo nombre, recibirá el mensaje de error &quot;Se ha producido un error al intentar crear el repositorio. Póngase en contacto con su CSE o con el soporte de Adobe&quot;.
 
-Si recibe este mensaje de error, póngase en contacto con el servicio de asistencia al Adobe para que le ayuden a cambiar el nombre del repositorio eliminado o a elegir un nombre diferente para el nuevo repositorio.
+Si recibe este mensaje de error, póngase en contacto con el soporte de Adobe para que le ayuden a cambiar el nombre del repositorio eliminado o elija un nombre diferente para el nuevo repositorio.
 
 ## Compatibilidad con el submódulo Git {#git-submodule-support}
 
