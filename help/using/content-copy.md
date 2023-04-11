@@ -1,10 +1,10 @@
 ---
 title: La herramienta Copia de contenido
 description: La herramienta de copia de contenido de Cloud Manager permite a los usuarios copiar contenido mutable bajo demanda desde sus entornos de producción de AEM a entornos inferiores para realizar pruebas.
-source-git-commit: 7ab5bdea2b388f3e9e199a6d32a1a80977eba35b
-workflow-type: ht
-source-wordcount: '1074'
-ht-degree: 100%
+source-git-commit: 5b10ac5e47052cabd7478050651a4ca04287a8f0
+workflow-type: tm+mt
+source-wordcount: '1082'
+ht-degree: 99%
 
 ---
 
@@ -30,6 +30,10 @@ Al copiar contenido, el entorno de origen es la fuente de información.
 
 * Si el contenido se ha modificado en el entorno de destino, se sobrescribirá con el contenido en el origen, si las rutas son las mismas.
 * Si las rutas son diferentes, el contenido del origen se combinará con el contenido del destino.
+
+   >[!NOTE]
+   >
+   >Solo se admiten topologías basadas en el almacén de datos de archivos.
 
 ## Permisos {#permissions}
 
