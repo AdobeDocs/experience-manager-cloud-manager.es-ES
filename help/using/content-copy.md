@@ -1,13 +1,13 @@
 ---
 title: La herramienta Copia de contenido
 description: La herramienta de copia de contenido de Cloud Manager permite a los usuarios copiar contenido mutable bajo demanda desde sus entornos de producción de AEM a entornos inferiores para realizar pruebas.
-source-git-commit: 5b10ac5e47052cabd7478050651a4ca04287a8f0
+exl-id: 97915e58-a1d3-453f-b5ce-cad55ed73262
+source-git-commit: 7ef29a244688de82537da0b879fbf397900427c0
 workflow-type: tm+mt
-source-wordcount: '1082'
-ht-degree: 99%
+source-wordcount: '1083'
+ht-degree: 98%
 
 ---
-
 
 # La herramienta Copia de contenido {#content-copy}
 
@@ -87,7 +87,7 @@ A partir de ahora, se puede utilizar el conjunto de contenido para copiar conten
 
 >[!NOTE]
 >
->Puede añadir hasta 50 rutas en un conjunto de contenido.
+>Puede agregar hasta 50 rutas en un conjunto de contenido.
 >No hay limitación en las rutas excluidas.
 
 ## Edición de un conjunto de contenido {#edit-content-set}
