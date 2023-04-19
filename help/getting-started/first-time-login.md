@@ -2,10 +2,10 @@
 title: Primer inicio de sesión
 description: Vaya esta página si ha definido las configuraciones generales y está listo para usar Cloud Manager por primera vez.
 exl-id: eb043437-8566-4a8d-8c5c-c8cf1d33daeb
-source-git-commit: d8f16deacfe52c76ff6b0aee0344d50bfe2b9c74
-workflow-type: ht
-source-wordcount: '261'
-ht-degree: 100%
+source-git-commit: 413edd167b5eda51c207113aaa00a92c808fb09f
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -20,13 +20,13 @@ Una vez establecida la configuración general de [!UICONTROL Cloud Manager], ya 
 
 ## Inicio de sesión por primera vez {#logging-in-for-the-first-time}
 
-1. Inicie sesión en Adobe [!UICONTROL Experience Cloud] y verá la lista de programas.
+1. Inicie sesión en Cloud Manager en [`my.cloudmanager.adobe.com`](https://my.cloudmanager.adobe.com/) y verá su lista de programas.
 
-1. Seleccione el programa.
+   ![Consola de Cloud Manager](/help/assets/cloud-manager-console.png)
 
-1. En la tarjeta del programa, seleccione el botón de puntos suspensivos y **Cloud Manager** para navegar a la página de **Información general** de Cloud Manager.
+1. En la tarjeta del programa, seleccione el botón de elipsis y luego **Información general del programa** para navegar a la página de Cloud Manager **Información general** página.
 
-   ![Opción Cloud Manager](/help/assets/navigate-cm1.png)
+   ![Opción Cloud Manager](/help/assets/program-overview-option.png)
 
 1. Cloud Manager abre la página de **Información general**.
 
