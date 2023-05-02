@@ -4,9 +4,9 @@ description: Estas son las notas de la versión 2023.4.0 de Cloud Manager.
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
 source-git-commit: 0ea63c0c8a4fa216ac3d70db1fb12add7f036495
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '118'
+ht-degree: 100%
 
 ---
 
@@ -25,8 +25,8 @@ La fecha de lanzamiento de la versión 2023.4.0 de [!UICONTROL Cloud Manager] es
 
 ## Novedades {#what-is-new}
 
-* [El Tipo De Archivo Del Proyecto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=es) se ha actualizado a la versión 41.
+* [El arquetipo de proyecto de AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=es) se ha actualizado a la versión 41.
 
 ## Correcciones de errores {#bug-fixes}
 
-* Los distribuidores azules ya no están conectados al ELB verde si el [implementación en azul/verde](/help/introduction.md#blue-green) falla.
+* Los dispatchers azules ya no se adjuntan en el ELB verde si la [implementación en azul/verde](/help/introduction.md#blue-green) falla.
