@@ -3,8 +3,8 @@ title: Prueba de calidad del código
 description: Descubra cómo funcionan las pruebas de calidad del código de las canalizaciones y cómo pueden mejorar la calidad de las implementaciones.
 exl-id: 6a574858-a30e-4768-bafc-8fe79f928294
 source-git-commit: 8c3b59ab9e00d6ee3b90b9255d025d9e19b3b89a
-workflow-type: ht
-source-wordcount: '0'
+workflow-type: tm+mt
+source-wordcount: '2867'
 ht-degree: 100%
 
 ---
