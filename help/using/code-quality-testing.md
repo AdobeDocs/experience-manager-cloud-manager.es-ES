@@ -2,9 +2,9 @@
 title: Prueba de calidad del código
 description: Descubra cómo funcionan las pruebas de calidad del código de las canalizaciones y cómo pueden mejorar la calidad de las implementaciones.
 exl-id: 6a574858-a30e-4768-bafc-8fe79f928294
-source-git-commit: 6572c16aea2c5d2d1032ca5b0f5d75ade65c3a19
+source-git-commit: 8c3b59ab9e00d6ee3b90b9255d025d9e19b3b89a
 workflow-type: ht
-source-wordcount: '2867'
+source-wordcount: '0'
 ht-degree: 100%
 
 ---
@@ -152,7 +152,7 @@ El número de usuarios virtuales o contenedores que Cloud Manager mueve depende 
 Antes del inicio del período de prueba de 30 minutos, Cloud Manager rastreará el entorno de ensayo utilizando un conjunto de una o más URL semilla configuradas por el ingeniero de éxito del cliente. Empezando por estas URL, el HTML de cada página se inspecciona y los vínculos se atraviesan siguiendo un equilibrio de carga en amplitud.
 
 * De forma predeterminada, este proceso de rastreo está limitado a un máximo de 5000 páginas.
-* El número máximo de páginas que se van a probar se puede sobrescribir configurando la [variable de entorno](/help/getting-started/build-environment.md#environment-variables) `MAX_PAGES`.
+* El número máximo de páginas que se van a probar se puede sobrescribir configurando la [variable de entorno](/help/getting-started/build-environment.md#environment-variables) `CM_PERF_TEST_CRAWLER_MAX_PAGES`.
    * Los valores permitidos son `2000`-`7000`.
 * Las solicitudes del rastreador tienen un tiempo de espera fijo de 10 segundos.
 
