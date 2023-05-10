@@ -2,10 +2,10 @@
 title: Reglas de calidad de código personalizadas
 description: Obtenga más información acerca de las reglas de calidad del código personalizadas ejecutadas por Cloud Manager como parte de las pruebas de calidad del código, en función de las prácticas recomendadas de ingeniería de AEM.
 exl-id: 7d118225-5826-434e-8869-01ee186e0754
-source-git-commit: ef87e13eb81faf5605cdd16c6fd46d5f7b3233a9
-workflow-type: ht
-source-wordcount: '3531'
-ht-degree: 100%
+source-git-commit: 1ba4ed6c311eeaff9c71313d265531f427ef2736
+workflow-type: tm+mt
+source-wordcount: '3566'
+ht-degree: 99%
 
 ---
 
@@ -17,6 +17,10 @@ Obtenga más información acerca de las reglas de calidad del código personaliz
 >[!NOTE]
 >
 >Los ejemplos de código que se proporcionan aquí son solo ilustrativos. Consulte la [documentación de conceptos de SonarQube](https://docs.sonarqube.org/latest/) para obtener información sobre los conceptos y las reglas de calidad.
+
+>[!NOTE]
+>
+>Las reglas completas de SonarQube no están disponibles para su descarga debido a la información de Adobe registrada. Puede descargar la lista completa de reglas [mediante este vínculo.](/help/assets/CodeQuality-rules-latest-AMS.xlsx) Continúe leyendo este documento para obtener descripciones y ejemplos de las reglas.
 
 ## Reglas de SonarQube {#sonarqube-rules}
 
