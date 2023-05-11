@@ -1,19 +1,19 @@
 ---
-title: Notas de la versión 2023.4.0
-description: Estas son las notas de la versión 2023.4.0 de Cloud Manager.
+title: Notas de la versión 2023.5.0
+description: Estas son las notas de la versión 2023.5.0 de Cloud Manager.
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
-source-git-commit: 0ea63c0c8a4fa216ac3d70db1fb12add7f036495
-workflow-type: ht
-source-wordcount: '118'
-ht-degree: 100%
+source-git-commit: 5a92ceb98de68025ca917c9b9cb358d54282b235
+workflow-type: tm+mt
+source-wordcount: '111'
+ht-degree: 67%
 
 ---
 
 
-# Notas de la versión 2023.4.0 de Cloud Manager {#release-notes}
+# Notas de la versión 2023.5.0 de Cloud Manager {#release-notes}
 
-Esta página documenta las notas de la versión 2023.4.0 de [!UICONTROL Cloud Manager].
+Esta página documenta las notas de la versión 2023.5.0 de [!UICONTROL Cloud Manager].
 
 >[!NOTE]
 >
@@ -21,12 +21,8 @@ Esta página documenta las notas de la versión 2023.4.0 de [!UICONTROL Cloud Ma
 
 ## Fecha de la versión {#release-date}
 
-La fecha de lanzamiento de la versión 2023.4.0 de [!UICONTROL Cloud Manager] es el 13 de abril de 2023. La próxima versión está planificada para el 11 de mayo de 2023.
+La fecha de la versión de [!UICONTROL Cloud Manager] la versión 2023.5.0 es el 11 de mayo de 2023. La próxima versión está planificada para el 8 de junio de 2023.
 
 ## Novedades {#what-is-new}
 
-* [El arquetipo de proyecto de AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=es) se ha actualizado a la versión 41.
-
-## Correcciones de errores {#bug-fixes}
-
-* Los dispatchers azules ya no se adjuntan en el ELB verde si la [implementación en azul/verde](/help/introduction.md#blue-green) falla.
+* [Copia de contenido de autoservicio](/help/using/content-copy.md) ya está disponible desde un entorno superior a un entorno inferior mediante la interfaz de usuario de Cloud Manager. Póngase en contacto con su ingeniero de éxito del cliente para obtener más información.

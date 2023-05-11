@@ -2,10 +2,10 @@
 title: La herramienta Copia de contenido
 description: La herramienta de copia de contenido de Cloud Manager permite a los usuarios copiar contenido mutable bajo demanda desde sus entornos de producción de AEM a entornos inferiores para realizar pruebas.
 exl-id: 97915e58-a1d3-453f-b5ce-cad55ed73262
-source-git-commit: 7ef29a244688de82537da0b879fbf397900427c0
-workflow-type: ht
-source-wordcount: '1083'
-ht-degree: 100%
+source-git-commit: 65cca64cb230686617af7f797fa86b754658e46d
+workflow-type: tm+mt
+source-wordcount: '1123'
+ht-degree: 95%
 
 ---
 
@@ -31,9 +31,9 @@ Al copiar contenido, el entorno de origen es la fuente de información.
 * Si el contenido se ha modificado en el entorno de destino, se sobrescribirá con el contenido en el origen, si las rutas son las mismas.
 * Si las rutas son diferentes, el contenido del origen se combinará con el contenido del destino.
 
-   >[!NOTE]
-   >
-   >Solo se admiten topologías basadas en el almacén de datos de archivos.
+>[!NOTE]
+>
+>Póngase en contacto con el ingeniero de éxito del cliente (CSE) para habilitar esta función.
 
 ## Permisos {#permissions}
 
@@ -158,7 +158,8 @@ La herramienta de copia de contenido tiene las siguientes limitaciones.
 
 * No se puede realizar una copia de contenido de un entorno inferior a un entorno superior.
 * La copia de contenido solo se puede realizar en el mismo nivel (es decir, autor-autor o publicación-publicación).
-* No es posible copiar contenido entre programas.
+* No es posible copiar contenido entre programas y regiones.
+* La copia de contenido para la topología basada en el almacén de datos en la nube solo se puede realizar cuando el entorno de origen y de destino están en el mismo proveedor de nube.
 * No es posible ejecutar operaciones de copia de contenido simultáneas en el mismo entorno.
 * La copia de contenido no se puede realizar si hay alguna operación activa ejecutándose en el entorno de destino o de origen, como, por ejemplo, una canalización de CI/CD.
 * Se pueden especificar hasta cincuenta rutas por cada conjunto de contenido. No hay limitación en las rutas excluidas.
@@ -166,3 +167,4 @@ La herramienta de copia de contenido tiene las siguientes limitaciones.
 * La herramienta de copia de contenido no tiene capacidad de creación de versiones y no puede detectar automáticamente contenido modificado o recién creado en el entorno de origen en un conjunto de contenido desde la última operación de copia de contenido.
    * Si desea actualizar el entorno de destino con cambios de contenido solo desde la última operación de copia de contenido, debe crear un conjunto de contenido. En ese conjunto, especifique las rutas en la instancia de origen en la que se realizaron cambios desde la última operación de copia de contenido.
 * La información de la versión no se incluye en una copia de contenido.
+* Una copia de contenido no se puede pausar ni cancelar una vez que se inicia.
