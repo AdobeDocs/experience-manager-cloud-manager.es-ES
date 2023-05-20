@@ -3,7 +3,7 @@ title: El entorno de compilación
 description: Obtenga información sobre el entorno de compilación especializado en el que los usuarios de Cloud Manager generan y prueban su código.
 exl-id: b3543320-66d4-4358-8aba-e9bdde00d976
 source-git-commit: 42cafc03a607ace183d58adbe1c397c1a6c5c22f
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1152'
 ht-degree: 100%
 
@@ -138,9 +138,9 @@ Tanto las variables de entorno normales como los secretos se pueden usar en los 
 
 #### Dispatcher {#dispatcher}
 
-Solo se pueden usar variables de entorno normales con [Dispatcher.](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=es) Los secretos no se pueden usar.
+Con [Dispatcher solo se pueden usar variables de entorno normales.](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=es) Los secretos no se pueden usar.
 
-Sin embargo, las variables de entorno no se pueden usar en directivas `IfDefine`.
+Sin embargo, las variables de entorno no se pueden usar en las directivas `IfDefine`.
 
 >[!TIP]
 >
@@ -148,7 +148,7 @@ Sin embargo, las variables de entorno no se pueden usar en directivas `IfDefine`
 
 #### Configuraciones de OSGi {#osgi}
 
-En [Configuraciones de OSGi](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-osgi.html?lang=es), se pueden usar tanto las variables de entorno normales, como los secretos.
+Tanto las variables de entorno normales como los secretos se pueden utilizar en las [configuraciones OSGi.](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-osgi.html?lang=es)
 
 ### Variables de canalización {#pipeline-variables}
 

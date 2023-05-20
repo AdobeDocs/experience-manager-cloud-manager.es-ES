@@ -3,7 +3,7 @@ title: Primer inicio de sesión
 description: Vaya esta página si ha definido las configuraciones generales y está listo para usar Cloud Manager por primera vez.
 exl-id: eb043437-8566-4a8d-8c5c-c8cf1d33daeb
 source-git-commit: 413edd167b5eda51c207113aaa00a92c808fb09f
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '261'
 ht-degree: 100%
 

@@ -3,7 +3,7 @@ title: Derechos de acceso
 description: Obtenga información acerca de su Adobe ID y cómo lo utiliza para acceder a los recursos de Experience Cloud.
 exl-id: 9e51936c-9727-4b9c-a86a-2ea3aabd42cf
 source-git-commit: 522e5fbc650a8159602eb1aeaf42d64f4e23e8b4
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '250'
 ht-degree: 100%
 

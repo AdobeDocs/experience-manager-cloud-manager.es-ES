@@ -4,7 +4,7 @@ seo-title: Evaluation Phase
 description: Descubra cómo la fase de evaluación del Asistente para actualización de productos evalúa la complejidad de la actualización con el detector de patrones.
 exl-id: 1ffcbc21-dc36-435d-b83b-0209f81a15e7
 source-git-commit: ce2145da3b9e605e8a41bac28df520f14e255557
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '296'
 ht-degree: 100%
 

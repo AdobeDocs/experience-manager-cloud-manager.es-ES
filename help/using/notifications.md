@@ -3,7 +3,7 @@ title: Notificaciones
 description: Descubra cómo Cloud Manager le notifica de los eventos importantes.
 exl-id: cfd5655f-2d2c-4304-b25c-6cdffe7ff64c
 source-git-commit: e767d9ff5e3df0047d2cf47d7b0842854101a01a
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '573'
 ht-degree: 100%
 
@@ -28,15 +28,15 @@ El icono de campana del encabezado se señala cuando tiene nuevas notificaciones
 
 ![Icono de notificaciones](/help/assets/notifications-bell-badged.png)
 
-Haga clic en el icono de campana para abrir la barra lateral y ver las notificaciones. En la pestaña **Notificaciones** de la barra lateral, se muestran las notificaciones más recientes, como las confirmaciones de implementación. Las notificaciones corresponden a sus entornos.
+Haga clic en el icono de campana para abrir la barra lateral y ver las notificaciones. La pestaña **Notificaciones** en la barra lateral muestran las notificaciones más recientes, como las confirmaciones de implementación. Las notificaciones corresponden a sus entornos.
 
 ![Barra lateral de notificaciones](/help/assets/notifications-activities.png)
 
-La pestaña **Anuncios** incluye anuncios de producto de Adobe. Los anuncios hacen referencia al producto.
+La pestaña **Anuncios** incluye anuncios de productos de Adobe. Los anuncios hacen referencia al producto.
 
 ![Barra lateral de notificaciones](/help/assets/notificaitons-announcements.png)
 
-Haga clic en una notificación o anuncio para ver sus detalles. Las notificaciones vinculadas a actividades como las implementaciones de canalización le llevan al detalle de esa actividad, como la ventana de ejecución de la canalización.
+Haga clic en una notificación o un anuncio para ver los detalles. Las notificaciones vinculadas a actividades como las implementaciones de canalización le llevan a los detalles de esa actividad, como la ventana de ejecución de la canalización.
 
 Haga clic en la opción **Ver todo** en la parte inferior del panel para ver todos los anuncios de la bandeja de entrada.
 
@@ -50,7 +50,7 @@ Haga clic en el icono de engranaje en la parte superior de la barra lateral de n
 
 ![Icono de configuración de notificaciones](/help/assets/notifications-configuration.png)
 
-Esto abre la ventana **Preferencias de Experience Cloud**, donde puede definir las suscripciones de notificación y cómo recibe las notificaciones.
+Esto abre la ventana de **preferencias de Experience Cloud**, donde puede definir las suscripciones de notificación y cómo recibe las notificaciones.
 
 ### Suscripciones {#subscriptions}
 
@@ -64,7 +64,7 @@ De forma predeterminada, recibirá todas las notificaciones de todos los product
 
 ### Prioridad {#priority}
 
-Las alertas de prioridad se marcarán con una etiqueta **ALTA** y se pueden configurar para que se reciban exclusivamente como alertas. En la sección **Prioridad**, puede definir qué categorías se clasifican como notificaciones prioritarias.
+Las alertas de prioridad se marcarán con la etiqueta **ALTA** y se pueden configurar para que se reciban exclusivamente como alertas. En la sección **Prioridad**, puede definir qué categorías se clasifican como notificaciones prioritarias.
 
 ![Prioridad de notificaciones](/help/assets/notifications-priority.png)
 
@@ -79,12 +79,12 @@ Las alertas aparecen en la esquina superior derecha de la ventana durante unos s
 Puede definir el comportamiento de las alertas.
 
 * **Mostrar alertas para**: define los tipos de notificaciones que activan alertas
-* **Las alertas deben permanecer en pantalla hasta que las descarte**: controla si las alertas deben persistir a menos que las descarte activamente
-* **Duración**: define cuánto tiempo debe permanecer la alerta en la pantalla si no ha elegido que permanezca en ella.
+* **Las alertas deben permanecer en la pantalla hasta que las descarte**: controla si las alertas deben persistir a menos que las descarte activamente
+* **Duración**: define cuánto tiempo debe permanecer la alerta en la pantalla si no ha elegido que permanezcan en ella.
 
 ### Correo electrónico {#emails}
 
-Las notificaciones están disponibles en la interfaz de usuario en todas las soluciones de Adobe [!UICONTROL Experience Cloud]. También puede optar por que estas notificaciones se envíen por correo electrónico en la sección **Correos electrónicos**.
+Las notificaciones están disponibles en la interfaz de usuario web en todas las soluciones de Adobe [!UICONTROL Experience Cloud]. También puede optar por que estas notificaciones se envíen por correo electrónico en la sección **Correos electrónicos**.
 
 ![Correos electrónicos de notificación](/help/assets/notifications-emails.png)
 
@@ -94,4 +94,4 @@ De forma predeterminada, no se envían correos electrónicos. Puede optar por re
 * Cada día
 * Cada semana
 
-Cuando se selecciona **Notificaciones inmediatas**, los correos electrónicos se envían inmediatamente para cada notificación. Para **Resumen diario** y **Resumen semanal**, puede elegir cuándo se envía el diario y en qué día y cuándo se envía el semanal.
+Cuando se selecciona **Notificaciones instantáneas**, los correos electrónicos se envían inmediatamente para cada notificación. Para **Resumen diario** y **Resumen semanal**, puede elegir cuándo se envía el compendio diario y en qué día y cuándo se envía el compendio semanal.

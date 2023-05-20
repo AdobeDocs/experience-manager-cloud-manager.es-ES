@@ -3,7 +3,7 @@ title: Configuración de ramas
 description: Obtenga información sobre cómo configurar su primera rama en Git y cómo la canalización CI/CD la usa para implementar el código de la aplicación.
 exl-id: ff2ae28f-902e-4fb2-aeb1-3636cb5cd9bb
 source-git-commit: 4c051cd1696f8a00d0278131c9521ad4dcb956a3
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '329'
 ht-degree: 100%
 

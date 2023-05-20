@@ -3,7 +3,7 @@ title: Configuración de canalizaciones de producción
 description: Aprenda a utilizar Cloud Manager para crear y configurar canalizaciones de producción para implementar su código.
 exl-id: d489fa3c-df1e-480b-82d0-ac8cce78a710
 source-git-commit: 39b38da17ed1cadf4f2e9633a9e76b537325316f
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1302'
 ht-degree: 100%
 

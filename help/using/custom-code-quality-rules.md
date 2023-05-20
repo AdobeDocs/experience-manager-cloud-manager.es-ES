@@ -20,7 +20,7 @@ Obtenga más información acerca de las reglas de calidad del código personaliz
 
 >[!NOTE]
 >
->Las reglas completas de SonarQube no están disponibles para su descarga debido a la información de Adobe registrada. Puede descargar la lista completa de reglas [mediante este vínculo.](/help/assets/CodeQuality-rules-latest-AMS.xlsx) Continúe leyendo este documento para obtener descripciones y ejemplos de las reglas.
+>Las reglas completas de SonarQube no están disponibles para su descarga debido a la información de propiedad del Adobe. Puede descargar la lista completa de reglas [mediante este vínculo.](/help/assets/CodeQuality-rules-latest-AMS.xlsx) Continúe leyendo este documento para ver descripciones y ejemplos de las reglas.
 
 ## Reglas de SonarQube {#sonarqube-rules}
 

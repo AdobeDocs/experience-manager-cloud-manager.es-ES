@@ -3,7 +3,7 @@ title: Preguntas frecuentes sobre Cloud Manager
 description: Este documento proporciona respuestas a las preguntas más frecuentes acerca de Cloud Manager para clientes de AMS.
 exl-id: 52c1ca23-5b42-4eae-b63a-4b22ef1a5aee
 source-git-commit: 6be659e02df0657ec7d3dbce8c18c44a327a36f4
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '776'
 ht-degree: 100%
 
@@ -39,7 +39,7 @@ Para las compilaciones de Cloud Manager, el `maven-enforcer-plugin` puede fallar
 [main] [WARNING] Rule 1: org.apache.maven.plugins.enforcer.RequireJavaVersion
 ```
 
-Este es un problema conocido debido a que Cloud Manager utiliza una versión diferente de Java para ejecutar el comando de Maven, en comparación con el código de compilación. Simplemente omita `requireJavaVersion` de su configuraciones de `maven-enforcer-plugin` 
+Este es un problema conocido debido a que Cloud Manager utiliza una versión diferente de Java para ejecutar el comando de Maven, en comparación con el código de compilación. Simplemente omita `requireJavaVersion` de su configuraciones de `maven-enforcer-plugin`. 
 
 ## La comprobación de la calidad del código falló y la implementación se atascó. ¿Hay alguna manera de saltarse esta comprobación? {#deployment-stuck}
 

@@ -3,7 +3,7 @@ title: Monitorización de entornos
 description: Obtenga información sobre cómo monitorizar los entornos en Cloud Manager.
 exl-id: 32886133-d6c0-4aed-8bb0-81b84f63e825
 source-git-commit: 5907ca6337d33c26ff19a14bfeb358cd9f7b935d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '939'
 ht-degree: 100%
 

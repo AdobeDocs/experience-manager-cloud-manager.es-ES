@@ -3,7 +3,7 @@ title: Repositorios de Cloud Manager
 description: Obtenga información sobre cómo acceder, crear y editar repositorios para sus programas de Cloud Manager.
 exl-id: 384b197d-f7a7-4022-9b16-9d83ab788966
 source-git-commit: 63cbcf8724a840efa67b8fafc4c321e04a5d70d9
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '796'
 ht-degree: 100%
 

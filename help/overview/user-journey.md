@@ -3,7 +3,7 @@ title: Recorrido del usuario
 description: En este documento se exponen los diferentes escenarios de incorporación y se explica el recorrido de introducción a Cloud Manager.
 exl-id: deb3429c-dfcf-4e52-9aba-d9368aa240e6
 source-git-commit: b0dbb602253939464ff034941ffbad84b7df77df
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '546'
 ht-degree: 100%
 

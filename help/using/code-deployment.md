@@ -3,7 +3,7 @@ title: Implementación de código
 description: Obtenga información sobre cómo implementar su código y qué sucede en Cloud Manager cuando lo hace.
 exl-id: 3d6610e5-24c2-4431-ad54-903d37f4cdb6
 source-git-commit: 6572c16aea2c5d2d1032ca5b0f5d75ade65c3a19
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1609'
 ht-degree: 100%
 

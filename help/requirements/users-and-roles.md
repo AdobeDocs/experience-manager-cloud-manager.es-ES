@@ -3,7 +3,7 @@ title: Agregar usuarios y funciones
 description: Aprenda a utilizar Admin Console para agregar usuarios y funciones y crear perfiles.
 exl-id: 40086cf0-a1c4-4dde-9dbf-84ea5fa53b84
 source-git-commit: dd96d773ea3e6b9c45886fe41b28d3dd70cb8a61
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '780'
 ht-degree: 100%
 
