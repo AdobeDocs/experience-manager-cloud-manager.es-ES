@@ -2,10 +2,10 @@
 title: La herramienta Copia de contenido
 description: La herramienta de copia de contenido de Cloud Manager permite a los usuarios copiar contenido mutable bajo demanda desde sus entornos de producción de AEM a entornos inferiores para realizar pruebas.
 exl-id: 97915e58-a1d3-453f-b5ce-cad55ed73262
-source-git-commit: 65cca64cb230686617af7f797fa86b754658e46d
+source-git-commit: 435efe2e6cecae738a62869c55034113c09f70e7
 workflow-type: tm+mt
-source-wordcount: '1123'
-ht-degree: 100%
+source-wordcount: '1090'
+ht-degree: 95%
 
 ---
 
@@ -119,7 +119,6 @@ Una vez creado un conjunto de contenido, puede utilizarlo para copiar contenido.
    >* El usuario no tiene los permisos adecuados.
    >* El entorno tiene una canalización en ejecución o una operación de copia de contenido en curso.
 
-
 1. En el diálogo **Copiar contenido**, especifique el origen y el destino de la acción de copia de contenido.
 
 1. Puede optar por eliminar o conservar las rutas de exclusión en el entorno destinatario. Seleccione la casilla de verificación `Do not delete exclude paths from destination` si desea conservar las rutas de exclusión especificadas en el conjunto de contenido. Si la casilla de verificación se deja sin marcar, las rutas de exclusión se eliminarán del entorno destinatario.
@@ -164,7 +163,6 @@ La herramienta de copia de contenido tiene las siguientes limitaciones.
 * La copia de contenido no se puede realizar si hay alguna operación activa ejecutándose en el entorno de destino o de origen, como, por ejemplo, una canalización de CI/CD.
 * Se pueden especificar hasta cincuenta rutas por cada conjunto de contenido. No hay limitación en las rutas excluidas.
 * La herramienta de copia de contenido no debe utilizarse como una herramienta de clonación o reflejo, ya que no puede rastrear el contenido movido o eliminado del origen.
-* La herramienta de copia de contenido no tiene capacidad de creación de versiones y no puede detectar automáticamente contenido modificado o recién creado en el entorno de origen en un conjunto de contenido desde la última operación de copia de contenido.
-   * Si desea actualizar el entorno de destino con cambios de contenido solo desde la última operación de copia de contenido, debe crear un conjunto de contenido. En ese conjunto, especifique las rutas en la instancia de origen en la que se realizaron cambios desde la última operación de copia de contenido.
-* La información de la versión no se incluye en una copia de contenido.
 * Una copia de contenido no se puede pausar ni cancelar una vez que se inicia.
+* La herramienta de copia de contenido copia recursos junto con metadatos relacionados con medios dinámicos desde el entorno superior al entorno inferior seleccionado.
+   * A continuación, los recursos copiados deben volver a procesarse mediante la variable [Flujo de trabajo de recursos de proceso DAM](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-workflow.html) en el entorno inferior para utilizar la configuración de dynamic media correspondiente.
