@@ -5,7 +5,7 @@ exl-id: 97915e58-a1d3-453f-b5ce-cad55ed73262
 source-git-commit: 223b547d6bc94137dfbb7d92862a508fa67799d2
 workflow-type: tm+mt
 source-wordcount: '1096'
-ht-degree: 88%
+ht-degree: 92%
 
 ---
 
@@ -166,4 +166,4 @@ La herramienta de copia de contenido tiene las siguientes limitaciones.
 * La herramienta de copia de contenido no debe utilizarse como una herramienta de clonación o reflejo, ya que no puede rastrear el contenido movido o eliminado del origen.
 * Una copia de contenido no se puede pausar ni cancelar una vez que se inicia.
 * La herramienta de copia de contenido copia recursos junto con metadatos relacionados con medios dinámicos desde el entorno superior al entorno inferior seleccionado.
-   * A continuación, los recursos copiados deben volver a procesarse mediante la variable [Flujo de trabajo de recursos de proceso DAM](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-workflow.html) en el entorno inferior para utilizar la configuración de dynamic media correspondiente.
+   * A continuación, los recursos copiados deben volver a procesarse mediante la variable [Flujo de trabajo de recursos de proceso DAM](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-workflow.html?lang=es) en el entorno inferior para utilizar la configuración de Dynamic Media correspondiente.
