@@ -1,22 +1,22 @@
 ---
 title: La herramienta Copia de contenido
-description: AEM La herramienta de copia de contenido de Cloud Manager permite a los usuarios copiar contenido mutable bajo demanda desde sus entornos de producción de AMS alojados en.x a entornos más bajos para realizar pruebas.
+description: La herramienta de copia de contenido de Cloud Manager permite a los usuarios copiar contenido mutable bajo demanda desde sus entornos de producción de AEM 6.x alojados en AMS a entornos inferiores para realizar pruebas.
 exl-id: 97915e58-a1d3-453f-b5ce-cad55ed73262
 source-git-commit: 223b547d6bc94137dfbb7d92862a508fa67799d2
 workflow-type: tm+mt
 source-wordcount: '1096'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
 
 # La herramienta Copia de contenido {#content-copy}
 
-AEM La herramienta de copia de contenido de Cloud Manager permite a los usuarios copiar contenido mutable bajo demanda desde sus entornos de producción de AMS alojados en.x a entornos más bajos para realizar pruebas.
+La herramienta de copia de contenido de Cloud Manager permite a los usuarios copiar contenido mutable bajo demanda desde sus entornos de producción de AEM 6.x alojados en AMS a entornos inferiores para realizar pruebas.
 
 ## Introducción {#introduction}
 
-Los datos actuales y reales son valiosos para las pruebas, la validación y la aceptación de usuarios. AEM La herramienta de copia de contenido le permite copiar contenido del entorno de producción AMS-alojado en la versión 6.x a un entorno de ensayo o desarrollo para realizar dichas pruebas.
+Los datos actuales y reales son valiosos para las pruebas, la validación y la aceptación de usuarios. La herramienta de copia de contenido permite copiar contenido del entorno de AEM 6.x de producción alojado en AMS a un entorno de ensayo o desarrollo para realizar dichas pruebas.
 
 El contenido que se va a copiar se define mediante un conjunto de contenido. Un conjunto de contenido consta de una lista de rutas JCR que contienen el contenido mutable que se copiará de un entorno de origen a un entorno de destino dentro del mismo programa de Cloud Manager. Se permiten las siguientes rutas en un conjunto de contenido.
 

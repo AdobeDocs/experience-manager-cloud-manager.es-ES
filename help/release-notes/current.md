@@ -6,7 +6,7 @@ exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
 source-git-commit: 9ecefd72cb9701026798ba47a743d99375f657c1
 workflow-type: tm+mt
 source-wordcount: '106'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
@@ -25,4 +25,4 @@ La fecha de lanzamiento de la versión 2023.7.0 de [!UICONTROL Cloud Manager] es
 
 ## Correcciones de errores {#bug-fixes}
 
-* Cuándo [editar una canalización de producción,](/help/using/managing-pipelines.md#editing-pipelines) si el usuario intenta eliminar un recurso de **Fase de prueba** pestaña, se muestra un error.
+* Al [editar una canalización de producción,](/help/using/managing-pipelines.md#editing-pipelines) si el usuario intenta quitar un recurso de la pestaña de **Fase de prueba**, se muestra un error.
