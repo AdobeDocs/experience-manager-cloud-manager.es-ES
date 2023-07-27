@@ -2,10 +2,10 @@
 title: Introducción a Cloud Manager para AMS
 description: Empiece aquí para conocer Cloud Manager para Adobe Managed Services (AMS) y cómo permite a las organizaciones autoadministrar Adobe Experience Manager en la nube.
 exl-id: 58344d8a-b869-4177-a9cf-6a8b7dfe9588
-source-git-commit: 14e35882765783b234ca35da14257279af5130a0
+source-git-commit: a2cea28061304d109a3c9a48650d01255579443c
 workflow-type: tm+mt
-source-wordcount: '1311'
-ht-degree: 100%
+source-wordcount: '1322'
+ht-degree: 99%
 
 ---
 
@@ -115,7 +115,9 @@ Cuando la implementación azul/verde está habilitada, el flujo de implementaci�
 | 5 | Pausa para pruebas (hasta 24 horas) | - |
 | 6 | Adición de la infraestructura verde al equilibrador de carga de producción | - |
 | 7 | Eliminación de la infraestructura azul del equilibrador de carga de producción |
-| 8 | La infraestructura azul se cierra automáticamente | - |
+| 8 | Pausa para la firma final (hasta 24 horas) | - |
+| 9 | La infraestructura azul se cierra automáticamente | - |
+| 10 | La canalización finaliza | - |
 
 #### Implementación de azul/verde {#implementing}
 
