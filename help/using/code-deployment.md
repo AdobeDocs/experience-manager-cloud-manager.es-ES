@@ -2,10 +2,10 @@
 title: Implementación de código
 description: Obtenga información sobre cómo implementar su código y qué sucede en Cloud Manager cuando lo hace.
 exl-id: 3d6610e5-24c2-4431-ad54-903d37f4cdb6
-source-git-commit: 6572c16aea2c5d2d1032ca5b0f5d75ade65c3a19
+source-git-commit: b85bd1bdf38360885bf2777d75bf7aa97c6da7ee
 workflow-type: tm+mt
-source-wordcount: '1609'
-ht-degree: 100%
+source-wordcount: '1655'
+ht-degree: 84%
 
 ---
 
@@ -56,7 +56,7 @@ El paso **Prueba de fase** incluye las siguientes acciones:
 * **Pruebas de seguridad**: este paso evalúa el impacto del código en la seguridad en el entorno AEM. Consulte el documento [Comprender los resultados de la prueba](/help/using/code-quality-testing.md) para obtener más información sobre el proceso de prueba.
    * **Pruebas de rendimiento**: este paso evalúa el rendimiento del código. Consulte [Comprender los resultados de la prueba](/help/using/code-quality-testing.md) para obtener más información sobre el proceso de prueba.
 
-   ![Prueba de fase](/help/assets/Stage_Testing1.png)
+  ![Prueba de fase](/help/assets/Stage_Testing1.png)
 
 ### Paso de implementación de producción {#production-deployment}
 
@@ -68,7 +68,7 @@ El paso **Implementación de producción** incluye las siguientes acciones:
 * **Programar implementación de producción**
    * Esta opción está habilitada al configurar la canalización.
    * La fecha y la hora programadas se especifican en términos de la zona horaria del usuario.
-      ![Programar implementación](/help/assets/Production_Deployment1.png)
+     ![Programar implementación](/help/assets/Production_Deployment1.png)
 * **Compatibilidad con CSE** (si está activado)
 * **Implementar en producción**
 
@@ -111,6 +111,7 @@ Cuando Cloud Manager se implementa en topologías que no son de producción, la 
 1. Cada artefacto de AEM se implementa en cada instancia de AEM a través de las API del Administrador de paquetes, con dependencias de paquete que determinan el orden de implementación.
 
    * Para obtener más información sobre cómo puede utilizar paquetes para instalar nuevas funcionalidades, transferir contenido entre instancias y realizar copias de seguridad del contenido del repositorio, consulte el documento [Administrador de paquetes.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager.html?lang=es)
+
    >[!NOTE]
    >
    >Todos los artefactos AEM se implementan tanto en los autores como en los editores. Los modos de ejecución deben aprovecharse cuando se requieran las configuraciones específicas de los nodos. Para obtener más información sobre cómo los modos de ejecución le permiten ajustar la instancia de AEM para un fin específico, consulte la [sección Ejecutar Modos del documento Implementar en AEM as a Cloud Service.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html?lang=es#runmodes)
@@ -175,33 +176,43 @@ La ejecución de una canalización en modo de emergencia también se puede reali
 $ aio cloudmanager:pipeline:create-execution PIPELINE_ID --emergency
 ```
 
-## Volver a ejecutar una implementación de producción {#re-execute-deployment}
+## Volver a ejecutar una implementación de producción {#reexecute-deployment}
 
-Volver a ejecutar el paso de implementación de producción está disponible para las ejecuciones en las que se ha completado el paso de implementación de producción. El tipo de finalización no es importante. La implementación podría ser exitosa (solo para programas de AMS), cancelada o fallida. En el caso de uso principal, el paso de implementación de producción falló por motivos transitorios. El volver a ejecutar crea una nueva ejecución que utiliza la misma canalización. Esta nueva ejecución consta de tres pasos:
+En casos excepcionales, los pasos de implementación de producción pueden fallar por motivos transitorios. En estos casos, se admite la nueva ejecución del paso de implementación de producción siempre y cuando el paso de implementación de producción se haya completado, independientemente del tipo de finalización (por ejemplo, correcta, cancelada o fallida). Volver a ejecutar crea una nueva ejecución que utiliza la misma canalización que consta de tres pasos.
 
-1. **El paso de validación**: se trata esencialmente de la misma validación que se produce durante la ejecución normal de una canalización.
-1. **El paso de compilación**: en el contexto de una nueva ejecución, el paso de compilación copia artefactos y no ejecuta realmente un nuevo proceso de compilación.
-1. **El paso de implementación de producción**: utiliza la misma configuración y opciones que el paso de implementación de producción en una ejecución de canalización normal.
+1. **El paso de validación** - Básicamente, se trata de la misma validación que se produce durante la ejecución normal de una canalización.
+1. **El paso de compilación** : En el contexto de una nueva ejecución, el paso de compilación copia artefactos y no ejecuta realmente un nuevo proceso de compilación.
+1. **El paso de implementación de producción** : Utiliza la misma configuración y opciones que el paso de implementación de producción en una ejecución de canalización normal.
 
-El paso de compilación puede etiquetarse de forma diferente en la IU para reflejar que está copiando artefactos, no reconstruyendo.
+En estas circunstancias, cuando se puede volver a ejecutar, la página de estado de la canalización de producción proporciona el **Volver a ejecutar** junto a la opción habitual **Descargar registro de compilación** opción.
 
-![Volver a ejecutar](/help/assets/Re-deploy.png)
+![La opción Volver a ejecutar en la ventana de información general de la canalización](/help/assets/re-execute.png)
+
+>[!NOTE]
+>
+>En una nueva ejecución, el paso de generación se etiqueta en la interfaz de usuario para reflejar que está copiando artefactos, no reconstruyéndolos.
 
 ### Restricciones     {#limitations}
 
 * Volver a ejecutar el paso de implementación de producción solo está disponible para la última ejecución.
 * Volver a ejecutar no está disponible para ejecuciones de reversión o de actualización del estado.
-* Si la última ejecución falló en cualquier momento antes del paso de implementación de producción, no es posible volver a ejecutarla.
+* Si la última ejecución ha fallado en cualquier momento antes del paso de implementación de producción, no será posible volver a ejecutarla.
 
-### Identificación de una ejecución que se vuelve a ejecutar {#identifying}
 
-Para identificar si se debe volver a ejecutar una ejecución, se puede examinar el campo `trigger`. Su valor será `RE_EXECUTE`.
+### Volver a ejecutar la API {#reexecute-api}
 
-### Activación de una nueva ejecución {#triggering}
+Además de estar disponible en la interfaz de usuario de, puede utilizar [la API de Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Pipeline-Execution) para almacenar en déclencheur las reejecuciones, así como identificar las que se activaron como reejecuciones.
 
-Para activar una nueva ejecución, se debe realizar la solicitud `PUT` al vínculo HAL `http://ns.adobe.com/adobecloud/rel/pipeline/reExecute` en el estado del paso de implementación de producción. Si este vínculo está presente, la ejecución se puede reiniciar desde ese paso. Si está ausente, la ejecución no se puede reiniciar desde ese paso. Este vínculo solo estará presente en el paso de implementación de producción
+#### Activación de una nueva ejecución {#triggering}
 
-```Javascript
+Para activar una nueva ejecución, se debe realizar la solicitud `PUT` al vínculo HAL `http://ns.adobe.com/adobecloud/rel/pipeline/reExecute` en el estado del paso de implementación de producción.
+
+* Si este vínculo está presente, la ejecución se puede reiniciar desde ese paso.
+* Si está ausente, la ejecución no se puede reiniciar desde ese paso.
+
+Este vínculo solo está disponible para el paso de implementación de producción.
+
+```javascript
  {
   "_links": {
     "http://ns.adobe.com/adobecloud/rel/pipeline/logs": {
@@ -236,6 +247,10 @@ Para activar una nueva ejecución, se debe realizar la solicitud `PUT` al víncu
   "status": "FINISHED"
 ```
 
-La sintaxis del valor `href` del vínculo HAL no está destinado a utilizarse como punto de referencia. El valor real debe leerse siempre desde el vínculo HAL y no se puede generar.
+La sintaxis del vínculo HAL `href` El valor solo es un ejemplo y el valor real siempre debe leerse desde el vínculo HAL y no generarse.
 
 Enviar una solicitud `PUT` a este extremo dará como resultado una respuesta `201` si esta es satisfactoria; el cuerpo de la respuesta será la representación de la nueva ejecución. Esto es similar a iniciar una ejecución normal a través de la API.
+
+#### Identificación de una ejecución que se vuelve a ejecutar {#identifying}
+
+Las ejecuciones reejecutadas se pueden identificar mediante el valor `RE_EXECUTE` en el `trigger` field.
