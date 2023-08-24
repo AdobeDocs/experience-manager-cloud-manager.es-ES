@@ -3,9 +3,9 @@ title: Implementación de código
 description: Obtenga información sobre cómo implementar su código y qué sucede en Cloud Manager cuando lo hace.
 exl-id: 3d6610e5-24c2-4431-ad54-903d37f4cdb6
 source-git-commit: b85bd1bdf38360885bf2777d75bf7aa97c6da7ee
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1655'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -178,19 +178,19 @@ $ aio cloudmanager:pipeline:create-execution PIPELINE_ID --emergency
 
 ## Volver a ejecutar una implementación de producción {#reexecute-deployment}
 
-En casos excepcionales, los pasos de implementación de producción pueden fallar por motivos transitorios. En estos casos, se admite la nueva ejecución del paso de implementación de producción siempre y cuando el paso de implementación de producción se haya completado, independientemente del tipo de finalización (por ejemplo, correcta, cancelada o fallida). Volver a ejecutar crea una nueva ejecución que utiliza la misma canalización que consta de tres pasos.
+En raras ocasiones, los pasos de implementación de producción pueden fallar por motivos transitorios. En estos casos, se admite la nueva ejecución del paso de implementación de producción siempre y cuando el paso de implementación de producción se haya completado, independientemente del tipo de finalización (por ejemplo, correcta, cancelada o fallida). Volver a ejecutar crea una nueva ejecución que utiliza la misma canalización que consta de tres pasos.
 
-1. **El paso de validación** - Básicamente, se trata de la misma validación que se produce durante la ejecución normal de una canalización.
-1. **El paso de compilación** : En el contexto de una nueva ejecución, el paso de compilación copia artefactos y no ejecuta realmente un nuevo proceso de compilación.
-1. **El paso de implementación de producción** : Utiliza la misma configuración y opciones que el paso de implementación de producción en una ejecución de canalización normal.
+1. **El paso de validación**: se trata esencialmente de la misma validación que se produce durante la ejecución normal de una canalización.
+1. **El paso de compilación**: en el contexto de una nueva ejecución, el paso de compilación copia artefactos y no ejecuta realmente un nuevo proceso de compilación.
+1. **El paso de implementación de producción**: utiliza la misma configuración y opciones que el paso de implementación de producción en una ejecución de canalización normal.
 
-En estas circunstancias, cuando se puede volver a ejecutar, la página de estado de la canalización de producción proporciona el **Volver a ejecutar** junto a la opción habitual **Descargar registro de compilación** opción.
+En estas circunstancias, cuando se puede volver a ejecutar, la página de estado de la canalización de producción contiene la opción **Volver a ejecutar** junto a la opción habitual **Descargar registro de compilación**.
 
 ![La opción Volver a ejecutar en la ventana de información general de la canalización](/help/assets/re-execute.png)
 
 >[!NOTE]
 >
->En una nueva ejecución, el paso de generación se etiqueta en la interfaz de usuario para reflejar que está copiando artefactos, no reconstruyéndolos.
+>En una nueva ejecución, el paso de compilación se etiqueta en la IU para reflejar que está copiando artefactos y no reconstruyendo.
 
 ### Restricciones     {#limitations}
 
@@ -201,7 +201,7 @@ En estas circunstancias, cuando se puede volver a ejecutar, la página de estado
 
 ### Volver a ejecutar la API {#reexecute-api}
 
-Además de estar disponible en la interfaz de usuario de, puede utilizar [la API de Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Pipeline-Execution) para almacenar en déclencheur las reejecuciones, así como identificar las que se activaron como reejecuciones.
+Además de estar disponible en IU, puede utilizar [la API de Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Pipeline-Execution) para activar las nuevas ejecuciones, así como identificar las que se activaron como ejecuciones nuevas.
 
 #### Activación de una nueva ejecución {#triggering}
 
@@ -247,10 +247,10 @@ Este vínculo solo está disponible para el paso de implementación de producci�
   "status": "FINISHED"
 ```
 
-La sintaxis del vínculo HAL `href` El valor solo es un ejemplo y el valor real siempre debe leerse desde el vínculo HAL y no generarse.
+El valor de la sintaxis del vínculo HAL `href` solo es un ejemplo y el valor real siempre debe leerse desde el vínculo HAL y no generarse.
 
 Enviar una solicitud `PUT` a este extremo dará como resultado una respuesta `201` si esta es satisfactoria; el cuerpo de la respuesta será la representación de la nueva ejecución. Esto es similar a iniciar una ejecución normal a través de la API.
 
 #### Identificación de una ejecución que se vuelve a ejecutar {#identifying}
 
-Las ejecuciones reejecutadas se pueden identificar mediante el valor `RE_EXECUTE` en el `trigger` field.
+Las ejecuciones que se han vuelto a ejecutar se pueden identificar mediante el valor `RE_EXECUTE` en el campo `trigger`.
