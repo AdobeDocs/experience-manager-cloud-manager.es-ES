@@ -4,9 +4,9 @@ description: Estas son las notas de la versión 2023.8.0 de Cloud Manager.
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
 source-git-commit: f930f12b5f50dd96a1677ff7a56cf0e92a400556
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '216'
-ht-degree: 39%
+ht-degree: 100%
 
 ---
 
@@ -25,14 +25,14 @@ La fecha de lanzamiento de la versión 2023.8.0 de [!UICONTROL Cloud Manager] es
 
 ## Novedades {#what-is-new}
 
-* Se han realizado mejoras para mejorar la comprensión y la aparición de mensajes de error en la IU de Cloud Manager.
+* Se han realizado mejoras para la comprensión y la aparición de mensajes de error en la IU de Cloud Manager.
 
 ## Correcciones de errores {#bug-fixes}
 
-* Casos poco frecuentes de [copia de contenido](/help/using/content-copy.md) se ha abordado el estancamiento de los procesos.
+* Se han solucionado los casos poco frecuentes de atasco de los procesos de [copia de contenido](/help/using/content-copy.md).
 * Se ha resuelto un problema temporal de prueba para los clientes que no utilizan New Relic One.
-* [Las reglas de calidad de código personalizadas](/help/using/custom-code-quality-rules.md) `SupportedRunmode` y `ImmutableMutableMixedPackage` AEM se han eliminado de SonarQube, ya que solo son aplicables a las as a Cloud Service.
+* [Las reglas de calidad de código personalizadas](/help/using/custom-code-quality-rules.md) `SupportedRunmode` y `ImmutableMutableMixedPackage` se han eliminado de SonarQube, ya que solo son aplicables a AEM as a Cloud Service.
 * Los usuarios ya no se encontrarán con canalizaciones atascadas que parecen estar en estado de ejecución.
-* El **Entornos** El menú ahora se cierra después de activar el **[Copiar contenido](/help/using/content-copy.md)** modal.
-* [Nueva ejecución de una canalización](/help/using/code-deployment.md#reexecute-deployment) ya no se permite si la ejecución anterior no tiene un `commitId` se establece en el estado de fase de compilación.
-* Ahora se muestra un mensaje más comprensible para los errores poco frecuentes cuando un usuario hace clic en una canalización en el **Actividad** o **Canalización** pantallas.
+* El menú **Entornos** ahora se cierra después de activar **[Copiar contenido](/help/using/content-copy.md)** modal.
+* [La nueva ejecución de una canalización](/help/using/code-deployment.md#reexecute-deployment) ya no se permite si la ejecución anterior no tiene un `commitId` establecido en el estado de fase de compilación.
+* Ahora se muestra un mensaje más comprensible para los errores poco frecuentes cuando un usuario hace clic en una canalización en las pantallas **Actividad** o **Canalización**.
