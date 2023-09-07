@@ -3,10 +3,10 @@ title: Notas de la versión 2023.9.0
 description: Estas son las notas de la versión 2023.9.0 de Cloud Manager.
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
-source-git-commit: 326e47e769c4f183fa3ee7d26952cb0f58e5067a
+source-git-commit: 74381d5d154f7c61135a990d2806fa9e39be7690
 workflow-type: tm+mt
-source-wordcount: '86'
-ht-degree: 100%
+source-wordcount: '159'
+ht-degree: 54%
 
 ---
 
@@ -25,4 +25,10 @@ La fecha de lanzamiento de la versión 2023.9.0 de [!UICONTROL Cloud Manager] es
 
 ## Novedades {#what-is-new}
 
+Esta versión incluye correcciones de errores.
+
 ## Correcciones de errores {#bug-fixes}
+
+* Cuando se elimina un programa, también se elimina cualquier canalización asociada en ejecución, lo que garantiza que la canalización no se designe incorrectamente como estado de error.
+* En ocasiones, cuando se &#39;completan&#39; todos los pasos de la ejecución de una canalización, el estado de la canalización se ve como &quot;en ejecución&quot;, lo que hace que parezca que está en un estado atascado. Ahora se ve como &#39;Completo&#39;.
+* Para las ramas de repositorio generadas mediante el tipo de archivo del generador de código, la canalización CI/CD falla.
