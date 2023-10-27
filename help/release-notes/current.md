@@ -4,9 +4,9 @@ description: Estas son las notas de la versión 2023.10.0 de Cloud Manager.
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
 source-git-commit: 851364e74864c28b3bcd9285dfbe06ddb530eb10
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '226'
-ht-degree: 49%
+ht-degree: 100%
 
 ---
 
@@ -25,12 +25,12 @@ La fecha de lanzamiento de la versión 2023.10.0 de [!UICONTROL Cloud Manager] e
 
 ## Novedades {#what-is-new}
 
-* El **Administrador de implementación** la función puede [AEM configure un conjunto de rutas de contenido que se invalidarán o vaciarán de la caché de Dispatcher de la red de distribución de contenido cuando se ejecute una canalización que no sea de producción.](/help/using/non-production-pipelines.md)
+* La función **Administrador de implementación** puede [configurar un conjunto de rutas de contenido que se invalidarán o vaciarán de la caché de AEM Dispatcher cuando se ejecute una canalización que no sea de producción.](/help/using/non-production-pipelines.md)
    * Estas acciones de caché se ejecutarán como parte del paso de canalización de implementación, justo después de implementar cualquier paquete de contenido.
    * Esta configuración utiliza el comportamiento estándar de AEM Dispatcher.
 * Con la versión de octubre de 2023 de Cloud Manager, las versiones de Java se actualizan mediante una implementación gradual.
-   * Se han actualizado las versiones menores de Java 8 y 11 y Maven, que se implementarán por fases en los próximos 2 meses. La nueva versión tiene varias correcciones de seguridad y de errores. Las nuevas versiones son:
+   * Se han actualizado las versiones menores de Java 8 y 11 y Maven, que se implementarán por fases en los próximos 2 meses. La nueva versión tiene varias correcciones de seguridad y de errores. Las nuevas API son:
    * *Maven: 3.8.8*
-   * *Versión de Java 8: /usr/lib/jvm/jdk1.8.0_371*
-   * *Versión de Java 11: /usr/lib/jvm/jdk-11.0.20*
+   * *Versión 8 de Java: /usr/lib/jvm/jdk1.8.0_371*
+   * *Versión 11 de Java: /usr/lib/jvm/jdk-11.0.20*
    * [Consulte el aviso de OpenJDK](https://openjdk.org/groups/vulnerability/advisories/) para obtener más información sobre la seguridad y las correcciones de errores en estas actualizaciones de JDK.
