@@ -3,9 +3,9 @@ title: La herramienta Copia de contenido
 description: La herramienta de copia de contenido de Cloud Manager permite a los usuarios copiar contenido mutable bajo demanda desde sus entornos de producción de AEM 6.x alojados en AMS a entornos inferiores para realizar pruebas.
 exl-id: 97915e58-a1d3-453f-b5ce-cad55ed73262
 source-git-commit: fe5de4e1ab5cd0d0e317cd399b8e44758a6312c4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1139'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -122,9 +122,9 @@ Una vez creado un conjunto de contenido, puede utilizarlo para copiar contenido.
 
 1. En el diálogo **Copiar contenido**, especifique el origen y el destino de la acción de copia de contenido.
 
-1. Puede elegir eliminar o conservar las rutas de exclusión en el entorno de destino. Seleccione la casilla de verificación `Do not delete exclude paths from destination` si desea conservar las rutas de exclusión especificadas en el conjunto de contenido. Si la casilla de verificación se deja sin marcar, las rutas de exclusión se eliminarán del entorno destinatario.
+1. Puedes optar por eliminar o conservar las rutas de exclusión en el entorno de destino. Seleccione la casilla de verificación `Do not delete exclude paths from destination` si desea conservar las rutas de exclusión especificadas en el conjunto de contenido. Si la casilla de verificación se deja sin marcar, las rutas de exclusión se eliminarán del entorno destinatario.
 
-1. Puede elegir copiar el historial de versiones de las rutas que se copian del entorno de origen al de destino. Seleccionar casilla `Copy Versions` si desea copiar todos los historiales de versiones.
+1. Puedes elegir copiar el historial de versiones de las rutas que se copian del entorno de origen al de destino. Selecciona la casilla `Copy Versions` si deseas copiar todos los historiales de versiones.
 
    ![Copia de contenido](/help/assets/copying-content.png)
 
@@ -161,7 +161,7 @@ La herramienta de copia de contenido tiene las siguientes limitaciones.
 * No se puede realizar una copia de contenido de un entorno inferior a un entorno superior.
 * La copia de contenido solo se puede realizar en el mismo nivel (es decir, autor-autor o publicación-publicación).
 * No es posible copiar contenido entre programas o entre regiones.
-* La copia de contenido para la topología basada en el almacén de datos de la nube solo se puede realizar cuando los entornos de origen y destino están en el mismo proveedor de la nube y en la misma región.
+* La copia de contenido para la topología basada en el almacén de datos en la nube solo se puede realizar cuando el entorno de origen y de destino están en el mismo proveedor de nube y en la misma región.
 * No es posible ejecutar operaciones de copia de contenido simultáneas en el mismo entorno.
 * La copia de contenido no se puede realizar si hay alguna operación activa ejecutándose en el entorno de destino o de origen, como, por ejemplo, una canalización de CI/CD.
 * Se pueden especificar hasta cincuenta rutas por cada conjunto de contenido. No hay limitación en las rutas excluidas.
