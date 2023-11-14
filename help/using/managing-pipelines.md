@@ -2,10 +2,10 @@
 title: Administración de canalizaciones
 description: Obtenga información sobre cómo administrar las canalizaciones existentes, como editarlas, ejecutarlas y eliminarlas.
 exl-id: e36420d2-57c5-4375-99fb-dd47c1c8bffd
-source-git-commit: 99325c28c379103db2ba4c19bb6d206849c6e126
+source-git-commit: 28ab641ec85335d8330aeb465c07bf0264218fe4
 workflow-type: tm+mt
-source-wordcount: '517'
-ht-degree: 100%
+source-wordcount: '807'
+ht-degree: 67%
 
 ---
 
@@ -33,6 +33,38 @@ En la parte inferior de la lista de canalizaciones, tiene opciones generales.
 * **Mostrar todos**: lleva al usuario a la pantalla **Canalizaciones** para ver todas las canalizaciones en una tabla más detallada
 * **Acceder a la info del repositorio**: muestra la información necesaria para acceder al repositorio de Git de Cloud Manager
 * **Más información**: Navega hasta los recursos de documentación de canalización de CI/CD.
+
+## Ventana Canalizaciones {#pipelines}
+
+El **Canalizaciones** La ventana muestra una lista completa de todas las canalizaciones para el programa seleccionado. Esto resulta útil, ya que presenta información más completa que la disponible en el [Tarjeta de canalización.](#pipeline-card)
+
+1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización y programa adecuados.
+
+1. Desde el **Resumen del programa** página, toque o haga clic en **Canalizaciones** para cambiar a la pestaña **Canalizaciones** ventana.
+
+1. Aquí puede ver una lista de todas las canalizaciones para el programa, así como iniciar y detener la ejecución de la canalización como lo haría en el **Tarjeta de canalizaciones**.
+
+Si se está ejecutando una canalización, pase el ratón sobre su **Estado** La columna revelará detalles sobre la ejecución.
+
+![Detalles de ejecución de canalización](/help/assets/configure-pipelines/pipeline-status.png)
+
+Toque o haga clic **Ver detalles** le llevará a la [detalles de la ejecución de la canalización.](#view-details)
+
+## Ventana de actividad {#activity}
+
+El **Actividades** La ventana muestra una lista completa de todas las ejecuciones de canalizaciones para el programa seleccionado.
+
+1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización y programa adecuados.
+
+1. Desde el **Resumen del programa** página, toque o haga clic en **Actividad** para cambiar a la pestaña **Actividad** ventana.
+
+1. Aquí puede ver una lista de todas las ejecuciones de canalización del programa, incluidas las ejecuciones actuales e históricas.
+
+Si se está ejecutando una canalización, pase el ratón sobre su **Estado** La columna revelará detalles sobre la ejecución.
+
+![Detalles de ejecución de canalización](/help/assets/configure-pipelines/pipeline-activity.png)
+
+Toque o haga clic **Ver detalles** le llevará a la [detalles de la ejecución de la canalización.](#view-details)
 
 ## Ejecutar canalizaciones {#running-pipelines}
 
@@ -86,6 +118,16 @@ Según el tipo de canalización, puede cancelar la ejecución si hace clic de nu
 
 Desde esta, puede ver el estado de los distintos pasos de la canalización y recuperar los registros de compilación para fines diagnósticos. Consulte el documento [Implementación de código](/help/using/code-deployment.md) para obtener más información.
 
+Todos los pasos de la ejecución de una canalización se muestran con los que aún no se han iniciado atenuados. Los pasos finalizados muestran su duración.
+
+Una vez completado el paso de una canalización, se presenta un resumen.
+
+![Resumen del paso](/help/assets/configure-pipelines/pipeline-step.png)
+
+Haga clic o pulse en **Ver detalles** vínculo para mostrar el **Duración** sección. Esto incluye la duración promedio de la canalización en función de la tendencia histórica para ese programa.
+
+![Duración](/help/assets/configure-pipelines/duration.png)
+
 >[!NOTE]
 >
->Solo puede ver los detalles de una canalización que se está ejecutando o que se ha ejecutado al menos una vez.
+>Solo puede ver los detalles de una canalización que se esté ejecutando o que se haya ejecutado al menos una vez.
