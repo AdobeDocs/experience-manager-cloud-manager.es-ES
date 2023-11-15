@@ -3,10 +3,10 @@ title: Notas de la versión 2023.11.0
 description: Estas son las notas de la versión 2023.11.0 de Cloud Manager.
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
-source-git-commit: c7803c75bcfcc967877808214704c5746015481d
+source-git-commit: 264c7ffcbc9e10903880a511a4ca605be666f7e8
 workflow-type: tm+mt
-source-wordcount: '351'
-ht-degree: 21%
+source-wordcount: '386'
+ht-degree: 19%
 
 ---
 
@@ -28,8 +28,10 @@ La fecha de lanzamiento de la versión 2023.11.0 de [!UICONTROL Cloud Manager] e
 * [La página de detalles de ejecución de la canalización](/help/using/managing-pipelines.md#view-details) ahora mostrará todos los pasos de una ejecución de canalización con los que aún no se han iniciado atenuados.
 * En ambos **[Actividad](/help/using/managing-pipelines.md#activity)** y **[Canalizaciones](/help/using/managing-pipelines.md#pipelines)** En algunas páginas, ahora está disponible un resumen de la ejecución de la canalización al hacer clic en una canalización con un estado en ejecución.
 * Un nuevo **Duración** se ha añadido a la sección [página de detalles de canalización](/help/using/managing-pipelines.md#view-details) que incluye la duración promedio del paso de canalización en función de la tendencia histórica para ese programa.
-* En la página Ejecución de canalización, los pasos finalizados ahora muestran la duración
+* En el [página ejecución de canalización,](/help/using/managing-pipelines.md#activity-window) los pasos finalizados ahora muestran la duración
 * Cloud Manager [herramienta de copia de contenido](/help/using/content-copy.md) AEM permite a los usuarios copiar contenido mutable bajo demanda desde sus entornos de producción de AMS-alojados en la versión 6.x a entornos más bajos para realizar pruebas.
+* Ejecuciones que [reutilizar artefactos de generación](/help/getting-started/project-setup.md#build-artifact-reuse) ahora mostrará el vínculo a la ejecución que creó inicialmente esos artefactos.
+* La opción para seleccionar **Errores importantes en las métricas** ahora se puede configurar para [canalizaciones de calidad de código](/help/using/non-production-pipelines.md) y también.
 
 ## Programa de adopción temprana {#early-adoption}
 
