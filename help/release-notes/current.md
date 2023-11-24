@@ -6,7 +6,7 @@ exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
 source-git-commit: 264c7ffcbc9e10903880a511a4ca605be666f7e8
 workflow-type: tm+mt
 source-wordcount: '386'
-ht-degree: 19%
+ht-degree: 88%
 
 ---
 
@@ -25,26 +25,26 @@ La fecha de lanzamiento de la versión 2023.11.0 de [!UICONTROL Cloud Manager] e
 
 ## Novedades {#what-is-new}
 
-* [La página de detalles de ejecución de la canalización](/help/using/managing-pipelines.md#view-details) ahora mostrará todos los pasos de una ejecución de canalización con los que aún no se han iniciado atenuados.
-* En ambos **[Actividad](/help/using/managing-pipelines.md#activity)** y **[Canalizaciones](/help/using/managing-pipelines.md#pipelines)** En algunas páginas, ahora está disponible un resumen de la ejecución de la canalización al hacer clic en una canalización con un estado en ejecución.
-* Un nuevo **Duración** se ha añadido a la sección [página de detalles de canalización](/help/using/managing-pipelines.md#view-details) que incluye la duración promedio del paso de canalización en función de la tendencia histórica para ese programa.
+* [La página de detalles de ejecución de la canalización](/help/using/managing-pipelines.md#view-details) mostrará ahora todos los pasos de una ejecución de canalización con los que todavía no se han iniciado en gris.
+* En ambas páginas **[Actividad](/help/using/managing-pipelines.md#activity)** y **[Canalizaciones](/help/using/managing-pipelines.md#pipelines)**, está disponible ahora un resumen de la ejecución de la canalización al hacer clic en una canalización con un estado en ejecución.
+* Se ha añadido una nueva sección **Duración** a la [página de detalles de canalización](/help/using/managing-pipelines.md#view-details) que incluye la duración promedio del paso de canalización en función de la tendencia histórica para ese programa.
 * En el [página ejecución de canalización,](/help/using/managing-pipelines.md#activity-window) los pasos finalizados ahora muestran la duración
-* Cloud Manager [herramienta de copia de contenido](/help/using/content-copy.md) AEM permite a los usuarios copiar contenido mutable bajo demanda desde sus entornos de producción de AMS-alojados en la versión 6.x a entornos más bajos para realizar pruebas.
+* La [herramienta de copia de contenido de Cloud Manager](/help/using/content-copy.md) permite a los usuarios copiar contenido mutable On-demand desde sus entornos de producción de AEM 6.x alojados en AMS a entornos inferiores para realizar pruebas.
 * Ejecuciones que [reutilizar artefactos de generación](/help/getting-started/project-setup.md#build-artifact-reuse) ahora mostrará el vínculo a la ejecución que creó inicialmente esos artefactos.
 * La opción para seleccionar **Errores importantes en las métricas** ahora se puede configurar para [canalizaciones de calidad de código](/help/using/non-production-pipelines.md) y también.
 
-## Programa de adopción temprana {#early-adoption}
+## Programa para primeros usuarios {#early-adoption}
 
-Forme parte de nuestro programa de adopción anticipada y tenga la oportunidad de probar algunas de las próximas funciones
+Participe en nuestro programa para clientes pioneros y tenga la oportunidad de probar algunas de las próximas funciones
 
 ### Traer su propio GitHub {#byo-github}
 
-Si usa GitHub para administrar sus repositorios, [Ahora puede validar código directamente dentro de sus repositorios de GitHub a través de Cloud Manager.](/help/managing-code/byo-github.md) Esta integración elimina la necesidad de sincronizar el código de forma coherente con el repositorio de Adobe y le permite comprobar las solicitudes de extracción antes de combinarlas en las ramas principales.
+Si utiliza GitHub para administrar sus repositorios, [ahora puede validar códigos directamente dentro de sus repositorios de GitHub a través de Cloud Manager.](/help/managing-code/byo-github.md)Esta integración elimina la necesidad de sincronizar el código de forma coherente con el repositorio de Adobe y le permite comprobar las solicitudes de extracción antes de combinarlas en las ramas principales.
 
-Si está interesado en probar esta nueva función y compartir sus comentarios, envíe un correo electrónico a `Grp-CloudManager_BYOG@adobe.com` de su dirección de correo electrónico asociada a su Adobe ID.
+Si está interesado en probar esta nueva funcionalidad y en compartir sus comentarios, envíe un correo electrónico a `Grp-CloudManager_BYOG@adobe.com` desde su dirección de correo electrónico asociada a su Adobe ID.
 
 ### Permisos personalizados {#custom-permissions}
 
 [Permisos personalizados de Cloud Manager](/help/using/custom-permissions.md) le permite crear nuevos perfiles de permisos personalizados con permisos configurables para restringir el acceso a programas, canalizaciones y entornos para los usuarios de Cloud Manager.
 
-Si está interesado en probar esta nueva función y compartir sus comentarios, envíe un mensaje de correo electrónico a `Grp-CloudManager_ams_custompermissions@adobe.com` de su dirección de correo electrónico asociada a su Adobe ID.
+Si está interesado en probar esta nueva funcionalidad y compartir sus comentarios, envíe un correo electrónico a `Grp-CloudManager_ams_custompermissions@adobe.com` desde su dirección de correo electrónico asociada a su Adobe ID.
