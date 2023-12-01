@@ -3,9 +3,9 @@ title: Permisos personalizados
 description: Descubra cómo puede utilizar los permisos personalizados para crear nuevos perfiles de estos con permisos configurables para restringir el acceso a programas, canalizaciones y entornos para usuarios de Cloud Manager.
 exl-id: a81eda9f-aa89-40ea-8e4c-52367a0a6aba
 source-git-commit: 4ff8d66356b510600019daad78470ca5dd1c57d4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1489'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -129,11 +129,11 @@ Los siguientes permisos están disponibles para crear perfiles personalizados.
 | Anular/Rechazar errores de métricas importantes | Permitir que los usuarios anulen o rechacen errores importantes de métricas |
 | Programar implementaciones de producción | Permitir a los usuarios programar un paso de implementación de producción |
 | Acceso a información de repositorios | Permitir a los usuarios acceder a la información del repositorio y generar una contraseña de acceso |
-| Creación de repositorio | Permitir a los usuarios crear nuevos repositorios de Git |
-| Eliminación del repositorio | Permitir que los usuarios eliminen repositorios de Git |
-| Edición de repositorio | Permitir que los usuarios editen repositorios de Git |
-| Generación de código de repositorio | Permitir que los usuarios generen proyectos a partir de tipos de archivo |
-| Gestor de copia de contenido | Permitir a los usuarios administrar las operaciones de copia de contenido |
+| Creación de repositorios | Permitir que los usuarios creen nuevos repositorios de Git |
+| Eliminación de repositorios | Permitir que los usuarios eliminen repositorios de Git |
+| Edición de repositorios | Permitir que los usuarios editen repositorios de Git |
+| Generación de código de repositorios | Permitir que los usuarios generen proyectos a partir de arquetipos |
+| Administración de copia de contenido | Permitir que los usuarios administren las operaciones de copia de contenido |
 
 ### Permisos de nivel de organización {#organization-level}
 
