@@ -4,9 +4,9 @@ description: Estas son las notas de la versión 2023.11.0 de Cloud Manager.
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
 source-git-commit: 264c7ffcbc9e10903880a511a4ca605be666f7e8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '386'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -28,10 +28,10 @@ La fecha de lanzamiento de la versión 2023.11.0 de [!UICONTROL Cloud Manager] e
 * [La página de detalles de ejecución de la canalización](/help/using/managing-pipelines.md#view-details) mostrará ahora todos los pasos de una ejecución de canalización con los que todavía no se han iniciado en gris.
 * En ambas páginas **[Actividad](/help/using/managing-pipelines.md#activity)** y **[Canalizaciones](/help/using/managing-pipelines.md#pipelines)**, está disponible ahora un resumen de la ejecución de la canalización al hacer clic en una canalización con un estado en ejecución.
 * Se ha añadido una nueva sección **Duración** a la [página de detalles de canalización](/help/using/managing-pipelines.md#view-details) que incluye la duración promedio del paso de canalización en función de la tendencia histórica para ese programa.
-* En el [página ejecución de canalización,](/help/using/managing-pipelines.md#activity-window) los pasos finalizados ahora muestran la duración
+* En la página [Ejecución de canalización,](/help/using/managing-pipelines.md#activity-window) los pasos finalizados ahora muestran la duración
 * La [herramienta de copia de contenido de Cloud Manager](/help/using/content-copy.md) permite a los usuarios copiar contenido mutable On-demand desde sus entornos de producción de AEM 6.x alojados en AMS a entornos inferiores para realizar pruebas.
-* Ejecuciones que [reutilizar artefactos de generación](/help/getting-started/project-setup.md#build-artifact-reuse) ahora mostrará el vínculo a la ejecución que creó inicialmente esos artefactos.
-* La opción para seleccionar **Errores importantes en las métricas** ahora se puede configurar para [canalizaciones de calidad de código](/help/using/non-production-pipelines.md) y también.
+* Las ejecuciones que [reutilizan artefactos de compilación](/help/getting-started/project-setup.md#build-artifact-reuse) ahora mostrarán el vínculo a la ejecución que compiló inicialmente esos artefactos.
+* La opción para seleccionar **Errores importantes en las métricas** ahora se puede configurar también para [canalizaciones de calidad de código](/help/using/non-production-pipelines.md).
 
 ## Programa para primeros usuarios {#early-adoption}
 
