@@ -3,9 +3,9 @@ title: El entorno de compilación
 description: Obtenga información sobre el entorno de compilación especializado en el que los usuarios de Cloud Manager generan y prueban su código.
 exl-id: b3543320-66d4-4358-8aba-e9bdde00d976
 source-git-commit: 2ac254508e4015fea21c4fcd087703ac5fbeeec6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1283'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ Los entornos de compilación de Cloud Manager tienen los atributos siguientes.
 
 * El entorno de compilación está basado en Linux, derivado de Ubuntu 22.04.
 * Apache Maven 3.8.8 está instalado.
-   * Adobe recomienda usuarios [Actualice sus repositorios de Maven para que utilicen HTTPS en lugar de HTTP.](#https-maven)
+   * Adobe recomienda [actualizar los repositorios de Maven para que utilicen HTTPS en lugar de HTTP.](#https-maven)
 * Las versiones de Java instaladas son JDK 8u371 y JDK 11.0.20 y Oracle.
    * `/usr/lib/jvm/jdk1.8.0_371`
    * `/usr/lib/jvm/jdk-11.0.20`
@@ -39,7 +39,7 @@ Los entornos de compilación de Cloud Manager tienen los atributos siguientes.
    * `mvn --batch-mode org.jacoco:jacoco-maven-plugin:prepare-agent package`
 * Maven se configura en el sistema con un archivo `settings.xml` que incluye automáticamente el repositorio de artefactos público de Adobe con un perfil denominado `adobe-public`.
    * Consulte el [Repositorio de Maven público de Adobe](https://repo1.maven.org/) para obtener más información.
-* Node.js 18 está disponible para [canalizaciones front-end y full stack.](/help/overview/ci-cd-pipelines.md)
+* Node.js 18 está disponible para [canalizaciones front-end y de pila completa.](/help/overview/ci-cd-pipelines.md)
 
 >[!NOTE]
 >
@@ -54,11 +54,11 @@ Los entornos de compilación de Cloud Manager tienen los atributos siguientes.
 
 ## Repositorios de Maven HTTPS {#https-maven}
 
-Cloud Manager [versión 2023.10.0](/help/release-notes/2023/2023-10-0.md) ha iniciado una actualización móvil del entorno de compilación (que finaliza con la versión 2023.12.0), que incluye una actualización de Maven 3.8.8. Un cambio significativo introducido en Maven 3.8.1 fue una mejora de la seguridad destinada a mitigar posibles vulnerabilidades. Específicamente, Maven ahora deshabilita todas las cookies inseguras `http://*` duplicaciones de forma predeterminada, tal como se describe en la [Notas de la versión de Maven.](http://maven.apache.org/docs/3.8.1/release-notes.html#cve-2021-26291)
+Cloud Manager [versión 2023.10.0](/help/release-notes/2023/2023-10-0.md) inició una actualización móvil del entorno de compilación (que finalizó con la versión 2023.12.0), que incluía una actualización a Maven 3.8.8. Un cambio significativo introducido en Maven 3.8.1 ha sido una mejora de la seguridad destinada a mitigar posibles vulnerabilidades. En concreto, Maven ahora deshabilita de forma predeterminada todas las duplicaciones de `http://*` inseguras, tal como se describe en las [Notas de la versión de Maven.](http://maven.apache.org/docs/3.8.1/release-notes.html#cve-2021-26291)
 
-Como resultado de esta mejora de seguridad, algunos usuarios pueden tener problemas durante el paso de generación, especialmente al descargar artefactos de repositorios Maven que utilizan conexiones HTTP no seguras.
+Como resultado de esta mejora de seguridad, algunas personas pueden tener problemas durante el paso de compilación, especialmente al descargar artefactos de repositorios Maven que utilizan conexiones HTTP no seguras.
 
-Para garantizar una experiencia sin problemas con la versión actualizada, Adobe recomienda que los usuarios actualicen sus repositorios de Maven para que utilicen HTTPS en lugar de HTTP. Este ajuste se ajusta al cambio creciente de la industria hacia protocolos de comunicación seguros y ayuda a mantener un proceso de construcción seguro y fiable.
+Para garantizar una experiencia sin problemas con la versión actualizada, Adobe recomienda actualizar los repositorios de Maven para que utilicen HTTPS en lugar de HTTP. Este ajuste se ha llevado a cabo para adaptarse a la adopción creciente de la industria de protocolos de comunicación seguros y ayuda a mantener un proceso de compilación seguro y fiable.
 
 ## Uso de una versión de Java específica {#using-java-version}
 
