@@ -2,10 +2,10 @@
 title: Implementación de código
 description: Obtenga información sobre cómo implementar su código y qué sucede en Cloud Manager cuando lo hace.
 exl-id: 3d6610e5-24c2-4431-ad54-903d37f4cdb6
-source-git-commit: b85bd1bdf38360885bf2777d75bf7aa97c6da7ee
-workflow-type: ht
-source-wordcount: '1655'
-ht-degree: 100%
+source-git-commit: 70e68f8af17b0acf644176c2ed3afaf8fc219063
+workflow-type: tm+mt
+source-wordcount: '1650'
+ht-degree: 99%
 
 ---
 
@@ -84,12 +84,13 @@ Los siguientes pasos agotarán el tiempo de espera si se deja a la espera de los
 
 | Paso | Tiempo de espera |
 |--- |--- |
-| Prueba de calidad del código | 14 días |
-| Pruebas de seguridad | 14 días |
-| Pruebas de rendimiento | 14 días |
-| Solicitud de aprobación | 14 días |
+| Prueba de calidad del código | 7 días |
+| Pruebas de seguridad | 7 días |
+| Pruebas de rendimiento | 7 días |
+| Solicitud de aprobación (fase) | 7 días |
+| Solicitud de aprobación (producción) | 14 días |
 | Programar implementación de producción | 14 días |
-| Compatibilidad con CSE | 14 días |
+| Implementación de producción administrada | 14 días |
 
 ## Detalles del proceso de implementación {#deployment-process}
 
