@@ -4,9 +4,9 @@ description: Estas son las notas de la versión 2024.1.0 de Cloud Manager.
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
 source-git-commit: b235e398b42e9da3dd2efacdc0ef38b6803bd213
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '243'
-ht-degree: 68%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ Esta página documenta las notas de la versión 2024.1.0 de [!UICONTROL Cloud Ma
 
 ## Fecha de la versión {#release-date}
 
-La fecha de lanzamiento de [!UICONTROL Cloud Manager] La versión 2024.1.0 de es el 17 de enero de 2024. La próxima versión está planificada para el 16 de febrero de 2024.
+La fecha de lanzamiento de la versión 2024.1.0 de [!UICONTROL Cloud Manager] es el 17 de enero de 2024. La próxima versión está planificada para el 16 de febrero de 2024.
 
 ## Programa para primeros usuarios {#early-adoption}
 
@@ -35,5 +35,5 @@ Si está interesado en probar esta nueva funcionalidad y en compartir sus coment
 
 ## Correcciones de errores {#bug-fixes}
 
-* Se corrigió un error en algunos casos extremos en los que las descargas fallaban debido a la forma en que la aplicación de prueba interpreta los datos, lo que provocaba que el porcentaje de error total fallara en la prueba.
-* Cuando un paso de generación termina con el estado `FAILED` debido a un `BUILD_MAVEN_TRANSFER_ARTIFACT_ERROR`Sin embargo, ahora se describe correctamente como un error debido a conflictos de combinación con la rama de destino.
+* Se corrigió un error en algunos casos extremos en los que las descargas fallaban debido a la forma en que la aplicación de prueba interpreta los datos, lo que provocaba que el porcentaje de error total suspendiera la prueba.
+* Cuando un paso de compilación termina con el estado `FAILED` debido a un `BUILD_MAVEN_TRANSFER_ARTIFACT_ERROR`, ahora se describe correctamente como un error debido a conflictos de combinación con la rama de destino.
