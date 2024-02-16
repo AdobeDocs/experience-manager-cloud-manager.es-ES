@@ -2,10 +2,10 @@
 title: El entorno de compilación
 description: Obtenga información sobre el entorno de compilación especializado en el que los usuarios de Cloud Manager generan y prueban su código.
 exl-id: b3543320-66d4-4358-8aba-e9bdde00d976
-source-git-commit: 2ac254508e4015fea21c4fcd087703ac5fbeeec6
-workflow-type: ht
-source-wordcount: '1283'
-ht-degree: 100%
+source-git-commit: dc0b83fa045208fcd333af10f90f9590c2aa96b8
+workflow-type: tm+mt
+source-wordcount: '1280'
+ht-degree: 97%
 
 ---
 
@@ -19,12 +19,12 @@ Obtenga información sobre el entorno de compilación especializado en el que lo
 Los entornos de compilación de Cloud Manager tienen los atributos siguientes.
 
 * El entorno de compilación está basado en Linux, derivado de Ubuntu 22.04.
-* Apache Maven 3.8.8 está instalado.
+* Apache Maven 3.9.4 está instalado.
    * Adobe recomienda [actualizar los repositorios de Maven para que utilicen HTTPS en lugar de HTTP.](#https-maven)
-* Las versiones de Java instaladas son JDK 8u371 y JDK 11.0.20 y Oracle.
-   * `/usr/lib/jvm/jdk1.8.0_371`
-   * `/usr/lib/jvm/jdk-11.0.20`
-* De forma predeterminada, la variable de entorno `JAVA_HOME` está configurada en `/usr/lib/jvm/jdk1.8.0_371`, que contiene JDK 8u371 de Oracle. Consulte la sección [Versión JDK de ejecución de Maven alternativa](#alternate-maven) para obtener más información.
+* Las versiones de Java instaladas son Oracle JDK 8u401 y Oracle JDK 11.0.22.
+   * `/usr/lib/jvm/jdk1.8.0_401`
+   * `/usr/lib/jvm/jdk-11.0.22`
+* De forma predeterminada, la variable `JAVA_HOME`  la variable de entorno está configurada como `/usr/lib/jvm/jdk1.8.0_401` que contiene el Oracle JDK 8u401. Consulte la sección [Versión JDK de ejecución de Maven alternativa](#alternate-maven) para obtener más información.
 * Hay algunos paquetes de sistema adicionales instalados que son necesarios.
    * `bzip2`
    * `unzip`
@@ -39,7 +39,7 @@ Los entornos de compilación de Cloud Manager tienen los atributos siguientes.
    * `mvn --batch-mode org.jacoco:jacoco-maven-plugin:prepare-agent package`
 * Maven se configura en el sistema con un archivo `settings.xml` que incluye automáticamente el repositorio de artefactos público de Adobe con un perfil denominado `adobe-public`.
    * Consulte el [Repositorio de Maven público de Adobe](https://repo1.maven.org/) para obtener más información.
-* Node.js 18 está disponible para [canalizaciones front-end y de pila completa.](/help/overview/ci-cd-pipelines.md)
+* Node.js 18 está disponible para [canalizaciones front-end.](/help/overview/ci-cd-pipelines.md)
 
 >[!NOTE]
 >
@@ -117,7 +117,7 @@ Las combinaciones de proveedor/versión disponibles actualmente son las siguient
 
 También es posible seleccionar Oracle 8 u Oracle 11 como JDK para toda la ejecución de Maven. A diferencia de las opciones de cadenas de herramientas, esto cambia el JDK utilizado para todos los complementos, a menos que también se establezca la configuración de cadenas de herramientas, en cuyo caso esta se sigue aplicando a los complementos de Maven compatibles con ella. Como resultado, comprobar y aplicar la versión de Java utilizando el [complemento Apache Maven Enforcer](https://maven.apache.org/enforcer/maven-enforcer-plugin/) funcionará.
 
-Para ello, cree un archivo denominado `.cloudmanager/java-version` en la rama del repositorio de Git empleada por la canalización. Este archivo puede tener el contenido `11` o `8`. Se omite cualquier otro valor. Si se especifica `11`, se usa Oracle 11 y la variable de entorno `JAVA_HOME` se establece en `/usr/lib/jvm/jdk-11.0.2`. Si se especifica `8`, se utiliza Oracle 8 y la variable de entorno `JAVA_HOME` se establece en `/usr/lib/jvm/jdk1.8.0_202`.
+Para ello, cree un archivo denominado `.cloudmanager/java-version` en la rama del repositorio de Git empleada por la canalización. Este archivo puede tener el contenido `11` o `8`. Se omite cualquier otro valor. Si se especifica `11`, se usa Oracle 11 y la variable de entorno `JAVA_HOME` se establece en `/usr/lib/jvm/jdk-11.0.22`. Si se especifica `8`, se utiliza Oracle 8 y la variable de entorno `JAVA_HOME` se establece en `/usr/lib/jvm/jdk1.8.0_401`.
 
 ## Variables del entorno {#environment-variables}
 

@@ -1,19 +1,19 @@
 ---
-title: Notas de la versión 2024.1.0
-description: Estas son las notas de la versión 2024.1.0 de Cloud Manager.
+title: Notas de la versión 2024.2.0
+description: Estas son las notas de la versión 2024.2.0 de Cloud Manager.
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
-source-git-commit: b5907179d3de329e8b86546bb8aa99608a5b351a
-workflow-type: ht
-source-wordcount: '257'
-ht-degree: 100%
+source-git-commit: 524471a87217c15dae96c3e6aee57426b43dcccb
+workflow-type: tm+mt
+source-wordcount: '299'
+ht-degree: 61%
 
 ---
 
 
-# Notas de la versión 2024.1.0 de Cloud Manager {#release-notes}
+# Notas de la versión 2024.2.0 de Cloud Manager {#release-notes}
 
-Esta página documenta las notas de la versión 2024.1.0 de [!UICONTROL Cloud Manager].
+Esta página documenta las notas de la versión 2024.2.0 de [!UICONTROL Cloud Manager].
 
 >[!NOTE]
 >
@@ -21,7 +21,12 @@ Esta página documenta las notas de la versión 2024.1.0 de [!UICONTROL Cloud Ma
 
 ## Fecha de la versión {#release-date}
 
-La fecha de lanzamiento de la versión 2024.1.0 de [!UICONTROL Cloud Manager] es el 17 de enero de 2024. La próxima versión está planificada para el 16 de febrero de 2024.
+La fecha de lanzamiento de [!UICONTROL Cloud Manager] La versión 2024.2.0 de es el 16 de febrero de 2024. La próxima versión está planificada para el 16 de marzo de 2024.
+
+## Novedades {#what-is-new}
+
+* Como parte de [implementación,](/help/using/code-deployment.md) la caché de Dispatcher se vació en **Adjuntar Dispatcher** paso. Para poder probar los cambios en cada nodo antes de adjuntarlo al equilibrador de carga de la aplicación, después de implementar el código en un editor concreto, ahora puede probar los cambios directamente desde el Dispatcher asociado antes de adjuntar ese Dispatcher al equilibrador de carga.
+* [El entorno de compilación](/help/getting-started/build-environment.md) se ha actualizado a la versión 3.9.4 de Maven y a las versiones jdk-11.0.22 y jdk1.8.0_401 de JDK.
 
 ## Programa para primeros usuarios {#early-adoption}
 
@@ -35,5 +40,4 @@ Si está interesado en probar esta nueva funcionalidad y en compartir sus coment
 
 ## Correcciones de errores {#bug-fixes}
 
-* Se corrigió un error en algunos casos extremos en los que las descargas fallaban debido a la forma en que la aplicación de prueba interpreta los datos, lo que provocaba que el porcentaje de error total suspendiera la prueba.
-* Cuando un paso de compilación termina con el estado `FAILED` debido a un `BUILD_MAVEN_TRANSFER_ARTIFACT_ERROR`, ahora se describe correctamente como un error debido a conflictos de combinación con la rama de destino.
+* El JDK de los contenedores de compilación se ha actualizado a una versión que resuelve [JDK-8313765.](https://bugs.openjdk.org/browse/JDK-8313765)
