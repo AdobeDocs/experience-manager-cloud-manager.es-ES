@@ -3,9 +3,9 @@ title: El entorno de compilación
 description: Obtenga información sobre el entorno de compilación especializado en el que los usuarios de Cloud Manager generan y prueban su código.
 exl-id: b3543320-66d4-4358-8aba-e9bdde00d976
 source-git-commit: dc0b83fa045208fcd333af10f90f9590c2aa96b8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1280'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ Los entornos de compilación de Cloud Manager tienen los atributos siguientes.
 * Las versiones de Java instaladas son Oracle JDK 8u401 y Oracle JDK 11.0.22.
    * `/usr/lib/jvm/jdk1.8.0_401`
    * `/usr/lib/jvm/jdk-11.0.22`
-* De forma predeterminada, la variable `JAVA_HOME`  la variable de entorno está configurada como `/usr/lib/jvm/jdk1.8.0_401` que contiene el Oracle JDK 8u401. Consulte la sección [Versión JDK de ejecución de Maven alternativa](#alternate-maven) para obtener más información.
+* De forma predeterminada, la variable de entorno `JAVA_HOME` está configurada en `/usr/lib/jvm/jdk1.8.0_401`, que contiene JDK 8u401 de Oracle. Consulte la sección [Versión JDK de ejecución de Maven alternativa](#alternate-maven) para obtener más información.
 * Hay algunos paquetes de sistema adicionales instalados que son necesarios.
    * `bzip2`
    * `unzip`
