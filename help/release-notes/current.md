@@ -4,9 +4,9 @@ description: Estas son las notas de la versión 2024.2.0 de Cloud Manager.
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
 source-git-commit: cc87246503ab63d6dd60c691f15fc4759fcf6939
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '299'
-ht-degree: 61%
+ht-degree: 100%
 
 ---
 
@@ -21,12 +21,12 @@ Esta página documenta las notas de la versión 2024.2.0 de [!UICONTROL Cloud Ma
 
 ## Fecha de la versión {#release-date}
 
-La fecha de lanzamiento de [!UICONTROL Cloud Manager] La versión 2024.2.0 de es el 15 de febrero de 2024. La próxima versión está planificada para el 16 de marzo de 2024.
+La fecha de lanzamiento de la versión 2024.2.0 de [!UICONTROL Cloud Manager] es el 15 de febrero de 2024. La próxima versión está planificada para el 16 de marzo de 2024.
 
 ## Novedades {#what-is-new}
 
-* Como parte de [implementación,](/help/using/code-deployment.md) la caché de Dispatcher se vació en **Adjuntar Dispatcher** paso. Para poder probar los cambios en cada nodo antes de adjuntarlo al equilibrador de carga de la aplicación, después de implementar el código en un editor concreto, ahora puede probar los cambios directamente desde el Dispatcher asociado antes de adjuntar ese Dispatcher al equilibrador de carga.
-* [El entorno de compilación](/help/getting-started/build-environment.md) se ha actualizado a la versión 3.9.4 de Maven y a las versiones jdk-11.0.22 y jdk1.8.0_401 de JDK.
+* Como parte de la [implementación,](/help/using/code-deployment.md) la caché de Dispatcher se vació en el paso **Adjuntar Dispatcher**. Para que pueda probar los cambios en cada nodo antes de adjuntarlo al equilibrador de carga de la aplicación, después de implementar el código en un editor en particular, ahora puede probar los cambios directamente desde el Dispatcher asociado antes de adjuntar dicho Dispatcher al equilibrador de carga.
+* [El entorno de compilación](/help/getting-started/build-environment.md) se ha actualizado a la versión 3.9.4 de Maven y a las versiones de JDK jdk-11.0.22 y jdk1.8.0_401.
 
 ## Programa para primeros usuarios {#early-adoption}
 
@@ -40,5 +40,5 @@ Si está interesado en probar esta nueva funcionalidad y en compartir sus coment
 
 ## Correcciones de errores {#bug-fixes}
 
-* El JDK de los contenedores de compilación se ha actualizado a una versión que resuelve [JDK-8313765.](https://bugs.openjdk.org/browse/JDK-8313765)
+* El JDK de los contenedores de la versión se ha actualizado a una versión que soluciona [JDK-8313765.](https://bugs.openjdk.org/browse/JDK-8313765)
 §
