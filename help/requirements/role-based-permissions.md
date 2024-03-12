@@ -3,9 +3,9 @@ title: Permisos basados en funciones
 description: Obtenga información sobre los permisos preconfigurados basados en funciones de Cloud Manager para administrar el acceso a los recursos de la nube.
 exl-id: b66533fb-db93-40e8-919d-581261fdbf24
 source-git-commit: 10297789ac8f905f242ac52bdc6fc4812b989e8a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '602'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 93%
 >
 >En esta documentación se describen los permisos basados en funciones para Cloud Manager para Adobe Managed Services (AMS).
 >
->AEM El documento contiene documentación equivalente para los as a Cloud Service [Introducción a Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/concepts/cloud-manager-introduction.html#role-based-permissions) AEM en la documentación as a Cloud Service de la.
+>La documentación equivalente para AEM as a Cloud Service se puede encontrar en el documento [Introducción a Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/concepts/cloud-manager-introduction.html#role-based-permissions) en la documentación de AEM as a Cloud Service.
 
 ## Roles del usuario {#user-roles}
 
