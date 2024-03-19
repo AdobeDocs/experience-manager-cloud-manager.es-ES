@@ -6,7 +6,7 @@ exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
 source-git-commit: 22730ba281f7c1c4720158a3a813c56b815a0af1
 workflow-type: tm+mt
 source-wordcount: '268'
-ht-degree: 68%
+ht-degree: 93%
 
 ---
 
@@ -21,7 +21,7 @@ Esta página documenta las notas de la versión 2024.3.0 de [!UICONTROL Cloud Ma
 
 ## Fecha de la versión {#release-date}
 
-La fecha de lanzamiento de [!UICONTROL Cloud Manager] La versión 2024.3.0 de es el 14 de marzo de 2024. La próxima versión está planificada para el 11 de abril de 2024.
+La fecha de lanzamiento de la versión 2024.3.0 de [!UICONTROL Cloud Manager] es el 14 de marzo de 2024. La próxima versión está planificada para el 11 de abril de 2024.
 
 ## Novedades {#what-is-new}
 
@@ -39,5 +39,5 @@ Si está interesado en probar esta nueva funcionalidad y en compartir sus coment
 
 ## Correcciones de errores {#bug-fixes}
 
-* Se corrigió un error cuando no se generaban los registros adecuados durante el paso de prueba de rendimiento cuando fallaba la métrica de tasa de error.
-* La lógica mejorada dentro del servicio de prueba de rendimiento encargado de detectar la ausencia de una página en el sitio (404) ahora garantiza una implementación más fluida e ininterrumpida.
+* Se ha corregido un error cuando no se generaban los registros adecuados durante el paso de prueba de rendimiento cuando fallaba la métrica de tasa de error.
+* La lógica mejorada dentro del servicio de prueba de rendimiento encargada de detectar la ausencia de una página en el sitio (404) garantiza ahora una implementación más fluida y sin interrupciones.
