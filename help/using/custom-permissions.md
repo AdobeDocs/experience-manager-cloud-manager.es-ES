@@ -3,9 +3,9 @@ title: Permisos personalizados
 description: Descubra cómo puede utilizar los permisos personalizados para crear nuevos perfiles de estos con permisos configurables para restringir el acceso a programas, canalizaciones y entornos para usuarios de Cloud Manager.
 exl-id: a81eda9f-aa89-40ea-8e4c-52367a0a6aba
 source-git-commit: 4a784f1594be4831be1c1c4aecb41b4f1b3b8be2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1474'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ Descubra cómo puede utilizar los permisos personalizados para crear nuevos perf
 
 ## Introducción {#introduction}
 
-Cloud Manager tiene un conjunto de funciones predefinidas que rigen el acceso a varias funciones de Cloud Manager:
+Cloud Manager tiene un conjunto de funciones predefinidas que regulan el acceso a las diversas funciones de Cloud Manager:
 
 * Propietario del negocio
 * Administrador de programa
@@ -79,10 +79,10 @@ Ahora que tiene un nuevo perfil de producto, puede asignarle permisos personaliz
 
 1. Pulse o haga clic en el vínculo **Editar** de un permiso para editarlo.
 
-1. El **Editar permisos** se abre.
+1. Se abre la ventana **Editar permisos**.
    * El permiso seleccionado en el paso anterior se selecciona en la columna izquierda.
    * Los elementos de permiso disponibles para la asignación del permiso se encuentran en la columna central denominada Elementos de **permisos disponibles**.
-   * Los elementos de permiso asignados se encuentran en la columna derecha con la etiqueta **Elementos de permisos incluidos**.
+   * Los elementos de permisos asignados se encuentran en la columna derecha con la etiqueta **Elementos de permisos incluidos**.
 
    ![Editar elementos de permiso](/help/assets/edit-permission-items.png)
 
@@ -90,7 +90,7 @@ Ahora que tiene un nuevo perfil de producto, puede asignarle permisos personaliz
 
    * Haga clic o pulse en el icono `i` situado junto a un elemento de permiso para obtener más información al respecto.
 
-1. Haga clic o pulse en **Añadir todo** en la parte superior de la columna **Permisos disponibles** para añadir todos los permisos. Del mismo modo, toque o haga clic **Eliminar todo** para quitar todos los permisos seleccionados anteriormente.
+1. Haga clic o pulse en **Añadir todo** en la parte superior de la columna **Permisos disponibles** para añadir todos los permisos. Del mismo modo, pulse o haga clic en **Quitar todo** para quitar todos los permisos seleccionados previamente.
 
 1. Haga clic o pulse **Guardar** cuando haya terminado de definir los elementos de permiso para el nuevo perfil de producto.
 
@@ -121,14 +121,14 @@ Los siguientes permisos están disponibles para crear perfiles personalizados.
 | Edición de canalizaciones | Permitir que los usuarios editen canalizaciones |
 | Aprobar/Rechazar implementaciones de producción | Permitir que los usuarios aprueben o rechacen un paso de implementación de producción |
 | Cancelar ejecuciones de canalización | Permitir a los usuarios cancelar las ejecuciones de canalización |
-| Iniciar ejecuciones de canalizaciones | Permitir que los usuarios inicien nuevas ejecuciones de canalización |
+| Iniciar ejecuciones de canalizaciones | Permitir que los usuarios inicien nuevas ejecuciones de canalizaciones |
 | Anular/Rechazar errores de métricas importantes | Permitir que los usuarios anulen o rechacen errores importantes de métricas |
 | Programar implementaciones de producción | Permitir a los usuarios programar un paso de implementación de producción |
 | Acceso a información de repositorios | Permitir a los usuarios acceder a la información del repositorio y generar una contraseña de acceso |
 | Creación de repositorios | Permitir que los usuarios creen nuevos repositorios de Git |
 | Eliminación de repositorios | Permitir que los usuarios eliminen repositorios de Git |
 | Edición de repositorios | Permitir que los usuarios editen repositorios de Git |
-| Generación de código de repositorios | Permitir que los usuarios generen proyectos a partir del tipo de archivo |
+| Generación de código de repositorios | Permitir que los usuarios generen proyectos a partir de arquetipos |
 | Administración de copia de contenido | Permitir que los usuarios administren las operaciones de copia de contenido |
 
 ### Permisos de nivel de organización {#organization-level}
@@ -148,7 +148,7 @@ Los siguientes términos se utilizan para crear y administrar permisos personali
 | Término | Descripción |
 |---|---|
 | Permisos predefinidos | Funciones predefinidas como **Propietario del negocio**, **Administrador de implementación**, etc. para regular varias funciones de Cloud Manager. Para obtener más información sobre las funciones predefinidas, consulte el documento [Permisos basados en funciones.](/help/requirements/role-based-permissions.md) |
-| Permisos personalizados | Funciones de Cloud Manager que permiten a los usuarios crear perfiles de permiso para definir funciones que rigen las funciones compatibles con Cloud Manager |
+| Permisos personalizados | Características de Cloud Manager que permiten a los usuarios crear perfiles de permiso para definir funciones que regulen las funciones compatibles con Cloud Manager |
 | Perfil de permisos | Se crea en Admin Console para administrar permisos configurables que se aplicarán a los usuarios que forman parte del perfil de permisos |
 | Permiso configurable | Permisos de Cloud Manager que se pueden configurar en el perfil de permisos |
 | Elemento de permiso | Un programa, entorno o recurso de canalización sobre el que se puede aplicar un permiso |
@@ -187,7 +187,7 @@ Los perfiles de producto predeterminados y las funciones de Cloud Manager siguen
 
 ### ¿Puedo editar perfiles de permisos predefinidos?
 
-No, los perfiles predeterminados no se pueden editar. No puede agregar ni quitar permisos al perfil de permisos predeterminado. Solo puede añadir o quitar usuarios de perfiles predefinidos.
+No, los perfiles predeterminados no se pueden editar. No puede añadir ni quitar permisos al perfil de permisos predeterminado. Solo puede añadir o quitar usuarios de perfiles predefinidos.
 
 ### ¿Debería eliminar los perfiles de permiso predefinidos, ya que los perfiles personalizados ya están disponibles?
 
