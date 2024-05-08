@@ -2,10 +2,10 @@
 title: Repositorios de Cloud Manager
 description: Obtenga información sobre cómo acceder, crear y editar repositorios para sus programas de Cloud Manager.
 exl-id: 384b197d-f7a7-4022-9b16-9d83ab788966
-source-git-commit: 63cbcf8724a840efa67b8fafc4c321e04a5d70d9
+source-git-commit: 1d4ab9704fdb743b097e24be335fbf069d1e78bd
 workflow-type: tm+mt
-source-wordcount: '796'
-ht-degree: 100%
+source-wordcount: '762'
+ht-degree: 98%
 
 ---
 
@@ -26,11 +26,7 @@ Para acceder al repositorio, utilice el botón **Acceder a la info del repositor
 
    ![Botón Acceder a la info del repositorio](/help/assets/access-repo1.png)
 
-1. Si cambia a la pestaña de canalización **No son de producción**, la opción **Acceder a la info del repositorio** también está disponible como [configurada para la canalización.](/help/using/non-production-pipelines.md)
-
-   ![Canalizaciones que no son de producción](/help/assets/access-repo-nonprod.png)
-
-1. Haga clic en el botón **Acceder a la info del repositorio** para abrir un cuadro de diálogo que contenga lo siguiente:
+1. Haga clic o pulse en **Acceder a info del repositorio** para abrir un cuadro de diálogo que contenga:
 
    * La URL del repositorio de Git
    * Nombre de usuario
@@ -68,8 +64,6 @@ Siga estos pasos para agregar repositorios en Cloud Manager:
 1. Seleccione **Guardar**.
 
 Se mostrará el repositorio recién creado.
-
-![Nuevo repositorio creado](/help/assets/create-repo3.png)
 
 Los repositorios creados en Cloud Manager están disponibles para que usted los seleccione al [crear sus canalizaciones.](/help/overview/ci-cd-pipelines.md)
 

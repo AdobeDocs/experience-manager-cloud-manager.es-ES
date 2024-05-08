@@ -2,10 +2,10 @@
 title: Monitorización de entornos
 description: Obtenga información sobre cómo monitorizar los entornos en Cloud Manager.
 exl-id: 32886133-d6c0-4aed-8bb0-81b84f63e825
-source-git-commit: 5907ca6337d33c26ff19a14bfeb358cd9f7b935d
+source-git-commit: ab527beb706ab73a14cc933a3414873dee6b7a9e
 workflow-type: tm+mt
-source-wordcount: '939'
-ht-degree: 100%
+source-wordcount: '928'
+ht-degree: 89%
 
 ---
 
@@ -24,20 +24,17 @@ Si una métrica supera su umbral esencial, se considera que está en estado crí
 
 Siga estos pasos para acceder a la Monitorización del sistema.
 
-1. Inicie sesión en la página de aterrizaje de **Managed Services: programas**.
+1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com) y seleccione la organización y programa adecuados.
 
-   ![Programas de Managed Services](/help/assets/ProgramLanding.png)
-
-1. Haga clic en el cuarto icono de la tarjeta del programa.
+1. Pulse o haga clic en el botón de los tres puntos del programa que desea monitorizar y seleccione el **Mostrar monitorización** opción.
 
    ![Configuración](/help/assets/first-timea1.png)
 
-
-También puede navegar hasta la página de aterrizaje de **Monitorización del sistema** a través del elemento de menú de navegación global **Informes** dentro de [!UICONTROL Cloud Manager].
+El **Informes** se abre la página para mostrar la información de monitorización del sistema.
 
 ## Información general de monitorización del sistema {#system-monitoring-overview}
 
-La página de información general de Monitorización del sistema enumera los entornos supervisados del programa e informa sobre su estado de salud de alto nivel con cuatro categorías diferentes:
+El **Monitorización del sistema** de la sección **Informes** Esta página enumera los entornos supervisados del programa e informa sobre su estado de salud de alto nivel en cuatro categorías independientes:
 
 * Host
 * Almacenamiento
@@ -54,13 +51,11 @@ El estado de cada categoría es un resumen de las métricas individuales. Si alg
 
 ## Detalles de Monitorización del sistema {#system-monitoring-detail}
 
-Para ver los detalles de métricas específicas, puede hacer clic en una de las categorías en la navegación izquierda o en uno de los indicadores de categoría de una instancia específica. Cada página de detalles muestra una serie de gráficos para las métricas dentro de esa categoría. Puede ver las métricas de todas las instancias de un entorno o de una específica. Puede cambiar entre el entorno y las instancias mediante los cuadros desplegables de la esquina superior derecha.
+Para ver los detalles de métricas específicas, toque o haga clic en una de las columnas de categoría de una instancia específica o en el título de categoría en la navegación izquierda. Cada página de detalles muestra una serie de gráficos para las métricas dentro de esa categoría. Puede ver las métricas de todas las instancias de un entorno o de una específica. Puede cambiar entre el entorno y las instancias mediante los cuadros desplegables de la esquina superior derecha.
 
 ![Selección del entorno](/help/assets/System_Monitoring1.png)
 
 La navegación de la izquierda mostrará las métricas disponibles dentro de la categoría seleccionada actualmente para la que hay datos para el entorno y las instancias que se hayan seleccionado.
-
-![Monitorización de métricas](/help/assets/System_Monitoring2.png)
 
 El gráfico individual muestra el estado y un gráfico de los datos en el tiempo junto con los umbrales. Si se muestran varias instancias, los datos de cada una estarán en una serie independiente.
 
@@ -103,9 +98,9 @@ Por ejemplo, si hace clic en la serie de umbrales de advertencia, solo verá el 
 
 ## Creación de informes de SLA {#sla-reporting}
 
-Los clientes pueden ver el rendimiento de su entorno de producción de AEM en relación con su contrato de nivel de servicio (SLA). Esto está disponible a través de un submenú en la pantalla **Informes**.
+AEM Puede ver el rendimiento de su entorno de producción en relación con su contrato de nivel de servicio (SLA).
 
-El gráfico siguiente muestra los logros mensuales de SLA para 2018.
+El gráfico siguiente muestra los logros mensuales de SLA para 2019.
 
 ![Gráfico de SLA de 2018](/help/assets/SLA-Reports-one.png)
 

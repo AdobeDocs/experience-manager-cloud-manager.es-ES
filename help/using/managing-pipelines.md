@@ -2,10 +2,10 @@
 title: Administración de canalizaciones
 description: Obtenga información sobre cómo administrar las canalizaciones existentes, como editarlas, ejecutarlas y eliminarlas.
 exl-id: e36420d2-57c5-4375-99fb-dd47c1c8bffd
-source-git-commit: 28ab641ec85335d8330aeb465c07bf0264218fe4
-workflow-type: ht
-source-wordcount: '807'
-ht-degree: 100%
+source-git-commit: ab527beb706ab73a14cc933a3414873dee6b7a9e
+workflow-type: tm+mt
+source-wordcount: '800'
+ht-degree: 96%
 
 ---
 
@@ -44,7 +44,7 @@ La ventana **Canalizaciones** muestra una lista completa de todas las canalizaci
 
 1. Aquí puede ver una lista de todas las canalizaciones para el programa, así como iniciar y detener la ejecución de la canalización como lo haría en la **Tarjeta de canalizaciones**.
 
-Si se está ejecutando una canalización, pasar el ratón sobre su columna **Estado** revela los detalles sobre la ejecución.
+Toque o haga clic en `i` El icono muestra detalles sobre la última o la ejecución actual de la canalización.
 
 ![Detalles de ejecución de canalización](/help/assets/configure-pipelines/pipeline-status.png)
 
@@ -60,7 +60,7 @@ La ventana **Actividades** muestra una lista completa de todas las ejecuciones d
 
 1. Aquí puede ver una lista de todas las ejecuciones de canalización del programa, incluidas las ejecuciones actuales e históricas.
 
-Si se está ejecutando una canalización, pasar el ratón sobre su columna **Estado** revela los detalles sobre la ejecución.
+Toque o haga clic en `i` El icono muestra detalles sobre la ejecución de la ejecución de canalización seleccionada.
 
 ![Detalles de ejecución de canalización](/help/assets/configure-pipelines/pipeline-activity.png)
 
