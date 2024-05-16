@@ -1,13 +1,13 @@
 ---
 title: Navegación por la IU de Cloud Manager
 description: Descubra cómo está organizada la interfaz de usuario de Cloud Manager y cómo navegar para administrar sus programas y entornos.
-source-git-commit: 95736be8c38488c3f16164784247e160a967ecb7
+exl-id: 9c1545ce-1c6d-417f-a6f4-fe53caef3433
+source-git-commit: 9d0f4dd29e2d05ab3f6900ee23c536b91c849e65
 workflow-type: tm+mt
-source-wordcount: '1297'
+source-wordcount: '1292'
 ht-degree: 5%
 
 ---
-
 
 # Navegación por la IU de Cloud Manager {#navigation}
 
@@ -101,7 +101,6 @@ Cada programa está representado por una tarjeta (o fila en una tabla), que prop
 * Imagen del programa (si está configurado)
 * Nombre del programa
 * Tipo de servicio: **Experience Manager Cloud** para [AEM programas as a Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/home) o **Experience Manager** para programas de AMS
-* [Tipo de programa](/help/getting-started/program-setup.md): zona protegida para producción
 * Estado
 * Soluciones configuradas
 * Fecha de creación

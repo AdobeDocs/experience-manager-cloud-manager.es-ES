@@ -7,10 +7,10 @@ user-guide-description: Aprenda a utilizar Cloud Manager para autoadministrar Ad
 feature-set: Experience Manager Cloud Manager, Experience Manager
 feature: Cloud Manager
 role: Admin
-source-git-commit: fbbc8b7aee04d1c153aeac87cc086883c0c6b980
+source-git-commit: 9d0f4dd29e2d05ab3f6900ee23c536b91c849e65
 workflow-type: tm+mt
-source-wordcount: '499'
-ht-degree: 100%
+source-wordcount: '509'
+ht-degree: 99%
 
 ---
 
@@ -45,7 +45,8 @@ ht-degree: 100%
 + Uso de {#using}
    + Canalizaciones de CI/CD {#pipelines}
       + [Configuración de canalizaciones de producción](/help/using/production-pipelines.md)
-      + [Configuración de canalizaciones que no son de producción](/help/using/non-production-pipelines.md)
+      + [Configurar canalizaciones que no sean de producción](/help/using/non-production-pipelines.md)
+      + [Canalizaciones Solo de fase y producción](/help/using/stage-prod-only.md)
       + [Administración de canalizaciones](/help/using/managing-pipelines.md)
    + [Implementación de código](/help/using/code-deployment.md)
    + [Prueba de calidad del código](/help/using/code-quality-testing.md)
@@ -68,6 +69,7 @@ ht-degree: 100%
 + Notas de la versión {#release-notes}
    + [Notas de la versión actual](/help/release-notes/current.md)
    + 2024 {#2024}
+      + [Notas de la versión 2024.4.0](/help/release-notes/2024/2024-4-0.md)
       + [Notas de la versión 2024.3.0](/help/release-notes/2024/2024-3-0.md)
       + [Notas de la versión 2024.2.0](/help/release-notes/2024/2024-2-0.md)
       + [Notas de la versión 2024.1.0](/help/release-notes/2024/2024-1-0.md)
