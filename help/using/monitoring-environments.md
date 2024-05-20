@@ -3,9 +3,9 @@ title: Monitorización de entornos
 description: Obtenga información sobre cómo monitorizar los entornos en Cloud Manager.
 exl-id: 32886133-d6c0-4aed-8bb0-81b84f63e825
 source-git-commit: ab527beb706ab73a14cc933a3414873dee6b7a9e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '928'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -26,15 +26,15 @@ Siga estos pasos para acceder a la Monitorización del sistema.
 
 1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com) y seleccione la organización y programa adecuados.
 
-1. Pulse o haga clic en el botón de los tres puntos del programa que desea monitorizar y seleccione el **Mostrar monitorización** opción.
+1. Pulse o haga clic en el botón de los tres puntos del programa que desea monitorizar y seleccione la opción **Mostrar monitorización**.
 
    ![Configuración](/help/assets/first-timea1.png)
 
-El **Informes** se abre la página para mostrar la información de monitorización del sistema.
+Se abre la página **Informes** para mostrar la información de monitorización del sistema.
 
 ## Información general de monitorización del sistema {#system-monitoring-overview}
 
-El **Monitorización del sistema** de la sección **Informes** Esta página enumera los entornos supervisados del programa e informa sobre su estado de salud de alto nivel en cuatro categorías independientes:
+La sección **Monitorización del sistema** de la página **Informes** enumera los entornos monitoreados del programa e informa sobre su estado de salud de alto nivel con cuatro categorías diferentes:
 
 * Host
 * Almacenamiento
@@ -51,7 +51,7 @@ El estado de cada categoría es un resumen de las métricas individuales. Si alg
 
 ## Detalles de Monitorización del sistema {#system-monitoring-detail}
 
-Para ver los detalles de métricas específicas, toque o haga clic en una de las columnas de categoría de una instancia específica o en el título de categoría en la navegación izquierda. Cada página de detalles muestra una serie de gráficos para las métricas dentro de esa categoría. Puede ver las métricas de todas las instancias de un entorno o de una específica. Puede cambiar entre el entorno y las instancias mediante los cuadros desplegables de la esquina superior derecha.
+Para ver los detalles de las métricas específicas, toque o haga clic en una de las columnas de categoría de una instancia específica o en el título de categoría en la navegación izquierda. Cada página de detalles muestra una serie de gráficos para las métricas dentro de esa categoría. Puede ver las métricas de todas las instancias de un entorno o de una específica. Puede cambiar entre el entorno y las instancias mediante los cuadros desplegables de la esquina superior derecha.
 
 ![Selección del entorno](/help/assets/System_Monitoring1.png)
 
@@ -98,7 +98,7 @@ Por ejemplo, si hace clic en la serie de umbrales de advertencia, solo verá el 
 
 ## Creación de informes de SLA {#sla-reporting}
 
-AEM Puede ver el rendimiento de su entorno de producción en relación con su contrato de nivel de servicio (SLA).
+Puede ver el rendimiento de su entorno de AEM de producción en relación con el contrato de nivel de servicio (SLA).
 
 El gráfico siguiente muestra los logros mensuales de SLA para 2019.
 

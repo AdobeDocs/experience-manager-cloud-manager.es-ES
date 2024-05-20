@@ -3,9 +3,9 @@ title: Primer inicio de sesión
 description: Vaya esta página si ha definido las configuraciones generales y está listo para usar Cloud Manager por primera vez.
 exl-id: eb043437-8566-4a8d-8c5c-c8cf1d33daeb
 source-git-commit: 1417d3bfa5a844641e0942d1fe1bd7bf84e41997
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '297'
-ht-degree: 75%
+ht-degree: 100%
 
 ---
 
@@ -24,13 +24,13 @@ Una vez establecida la configuración general de [!UICONTROL Cloud Manager], ya 
 
    ![Consola de Cloud Manager](/help/assets/cloud-manager-console.png)
 
-1. Toque o haga clic en la tarjeta del programa para navegar a la de Cloud Manager **Información general** página.
+1. Pulse o haga clic en la tarjeta del programa para navegar a la página de **Información general** de Cloud Manager.
 
 1. Cloud Manager abre la página de **Información general**.
 
    ![Página de información general de Cloud Manager](/help/assets/program-overview-page.png)
 
-1. Si el programa aún no está configurado, toque o haga clic en **Programa de configuración** en el [llamada a acción](/help/getting-started/navigation.md#cta) para configurar la descripción del programa y definir los indicadores clave de rendimiento (KPI). Si el programa ya está configurado, la CTA puede ofrecer pasos siguientes adicionales.
+1. Si el programa aún no está configurado, toque o haga clic en **Programa de configuración** en la [llamada a la acción](/help/getting-started/navigation.md#cta) para configurar la descripción del programa y definir los indicadores clave de rendimiento (KPI). Si el programa ya está configurado, la CTA puede ofrecer pasos siguientes adicionales.
 
 Continúe con el documento [Configuración del programa](/help/getting-started/program-setup.md) para ver los pasos siguientes en dicho proceso.
 
@@ -40,7 +40,7 @@ Cloud Manager proporciona una vista consolidada de la actividad de un programa, 
 
 >[!TIP]
 >
->Para obtener más información sobre cómo utilizar la interfaz de usuario de Cloud Manager, consulte el documento [Navegación por la IU de Cloud Manager.](/help/getting-started/navigation.md)
+>Para obtener más información sobre cómo utilizar la IU de Cloud Manager, consulte el documento [Navegación por la IU de Cloud Manager.](/help/getting-started/navigation.md)
 
 >[!NOTE]
 >
