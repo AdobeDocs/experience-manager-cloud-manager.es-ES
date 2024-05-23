@@ -8,9 +8,9 @@ feature-set: Experience Manager Cloud Manager, Experience Manager
 feature: Cloud Manager
 role: Admin
 source-git-commit: 9d0f4dd29e2d05ab3f6900ee23c536b91c849e65
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '509'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -46,7 +46,7 @@ ht-degree: 99%
    + Canalizaciones de CI/CD {#pipelines}
       + [Configuración de canalizaciones de producción](/help/using/production-pipelines.md)
       + [Configurar canalizaciones que no sean de producción](/help/using/non-production-pipelines.md)
-      + [Canalizaciones Solo de fase y producción](/help/using/stage-prod-only.md)
+      + [Canalizaciones solo de fase y producción](/help/using/stage-prod-only.md)
       + [Administración de canalizaciones](/help/using/managing-pipelines.md)
    + [Implementación de código](/help/using/code-deployment.md)
    + [Prueba de calidad del código](/help/using/code-quality-testing.md)
