@@ -2,10 +2,10 @@
 title: Permisos basados en funciones
 description: Obtenga información sobre los permisos preconfigurados basados en funciones de Cloud Manager para administrar el acceso a los recursos de la nube.
 exl-id: b66533fb-db93-40e8-919d-581261fdbf24
-source-git-commit: 1c0c3a751ba2023fc2c2dd5d0d54f914373ad95b
-workflow-type: ht
+source-git-commit: fc1bc626dc18d25ce8c5bbae71396b234b5676db
+workflow-type: tm+mt
 source-wordcount: '620'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -35,7 +35,7 @@ Esta tabla enumera las funciones que puede asignar en Admin Console.
 | Administrador de implementación | Este usuario gestiona las operaciones de implementación mediante [!UICONTROL Cloud Manager] para ejecutar implementaciones de fase y producción, puede aprobar errores importantes de tres niveles cuando sea necesario y tiene acceso al repositorio de Git. |
 | Desarrollador | Este usuario desarrolla y prueba el código de aplicación personalizado, que utiliza principalmente [!UICONTROL Cloud Manager] para ver el estado de implementación y tiene acceso de confirmación al repositorio de Git. |
 | Ingeniero de éxito del cliente (Customer Success Engineer) | Este usuario suele admitir el éxito de los clientes para los clientes de AMS e interactúa con [!UICONTROL Cloud Manager] con el fin de ejecutar implementaciones que requieren la supervisión del ingeniero de éxito del cliente (Customer Success Engineer, CSE). |
-| Autor de contenido | Este usuario generalmente no interactúa con [!UICONTROL Cloud Manager], pero puede usar el programa wwitcher de [!UICONTROL Cloud Manager] (con navegación desde [!UICONTROL Experience Cloud]) para acceder a Adobe Experience Manager (AEM). |
+| Autor de contenido | Este usuario generalmente no interactúa con Cloud Manager, pero puede utilizar el conmutador de programas de Cloud Manager (con navegación desde Experience Cloud) para acceder a Adobe Experience Manager AEM (). |
 
 ## Permisos de usuario {#user-permissions}
 
