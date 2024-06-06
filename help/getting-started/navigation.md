@@ -2,8 +2,8 @@
 title: Navegación por la IU de Cloud Manager
 description: Descubra cómo está organizada la IU de Cloud Manager y cómo navegar para administrar sus programas y entornos.
 exl-id: 9c1545ce-1c6d-417f-a6f4-fe53caef3433
-source-git-commit: 9d0f4dd29e2d05ab3f6900ee23c536b91c849e65
-workflow-type: ht
+source-git-commit: 85c1e22609dc5646d3de0ccc71e9423d4243e13a
+workflow-type: tm+mt
 source-wordcount: '1292'
 ht-degree: 100%
 
@@ -168,7 +168,7 @@ Cada programa tiene muchas opciones y datos asociados. Estos datos se recopilan 
 * Información general: la descripción general del programa tal como se describe en el documento actual
 * [Actividad](/help/using/managing-pipelines.md#activity): el historial de ejecuciones de canalización del programa
 * [Canalizaciones](/help/using/managing-pipelines.md#pipelines): todas las canalizaciones configuradas para el programa
-* [Repositorios](/help/managing-code/repositories.md): todos los repositorios configurados para el programa
+* [Repositorios](/help/managing-code/managing-repositories.md): todos los repositorios configurados para el programa
 * [Informes](/help/using/monitoring-environments.md#system-monitoring-overview): métricas como datos de SLA
 * [Entornos](/help/using/managing-environments.md): todos los entornos configurados para el programa
 * [Conjuntos de contenido](/help/using/content-copy.md): conjuntos de contenido creados con fines de copia

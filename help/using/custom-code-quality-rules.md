@@ -2,10 +2,10 @@
 title: Reglas de calidad de código personalizadas
 description: Obtenga más información acerca de las reglas de calidad del código personalizadas ejecutadas por Cloud Manager como parte de las pruebas de calidad del código, en función de las prácticas recomendadas de ingeniería de AEM.
 exl-id: 7d118225-5826-434e-8869-01ee186e0754
-source-git-commit: f930f12b5f50dd96a1677ff7a56cf0e92a400556
-workflow-type: ht
-source-wordcount: '3377'
-ht-degree: 100%
+source-git-commit: 48ae41cb23f6a94fbaf31423f9c5cea3bfd45020
+workflow-type: tm+mt
+source-wordcount: '3513'
+ht-degree: 92%
 
 ---
 
@@ -794,6 +794,74 @@ AEM Cloud Service prohíbe que las definiciones de índice de búsqueda personal
 * **Desde**: Versión 2021.2.0
 
 AEM Cloud Service prohíbe que las definiciones de índice de búsqueda personalizadas (es decir, los nodos de tipo `oak:QueryIndexDefinition`) contengan una propiedad denominada `reindex`. La indexación que utiliza esta propiedad debe actualizarse antes de la migración a AEM Cloud Service. Consulte la [Documentación de búsqueda de contenido e indexación](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html?lang=es#how-to-use) para obtener más información.
+
+### Los nodos de definición de índice no deben implementarse en el paquete de contenido de la IU {#oakpal-ui-content-package}
+
+* **Clave**: IndexNotUnderUIContent
+* **Tipo**: mejora
+* **Gravedad**: Menor
+* **Desde**: Versión 2024.6.0
+
+AEM Cloud Service prohíbe las definiciones de índice de búsqueda personalizadas (nodos de tipo `oak:QueryIndexDefinition`) se implementen en el paquete de contenido de la interfaz de usuario.
+
+>[!WARNING]
+>
+>Se le insta a abordar esto lo antes posible, ya que provocará que las canalizaciones fallen a partir de [Versión de agosto de 2024 de Cloud Manager.](/help/release-notes/current.md)
+
+### La definición de índice de texto completo personalizada del tipo damAssetLucene debe tener el prefijo &quot;damAssetLucene&quot; correctamente {#oakpal-dam-asset-lucene}
+
+* **Clave**: CustomFulltextIndexesOfTheDamAssetCheck
+* **Tipo**: mejora
+* **Gravedad**: Menor
+* **Desde**: Versión 2024.6.0
+
+AEM Cloud Service prohíbe las definiciones de índice de texto completo personalizadas de tipo `damAssetLucene` de tener un prefijo distinto de `damAssetLucene`.
+
+>[!WARNING]
+>
+>Se le insta a abordar esto lo antes posible, ya que provocará que las canalizaciones fallen a partir de [Versión de agosto de 2024 de Cloud Manager.](/help/release-notes/current.md)
+
+### Los Nodos De Definición De Índice No Deben Contener Propiedades Con El Mismo Nombre {#oakpal-index-property-name}
+
+* **Clave**: DuplicateNameProperty
+* **Tipo**: mejora
+* **Gravedad**: Menor
+* **Desde**: Versión 2024.6.0
+
+AEM Cloud Service prohíbe las definiciones de índice de búsqueda personalizadas (es decir, los nodos de tipo `oak:QueryIndexDefinition`) de contener propiedades con el mismo nombre
+
+>[!WARNING]
+>
+>Se le insta a abordar esto lo antes posible, ya que provocará que las canalizaciones fallen a partir de [Versión de agosto de 2024 de Cloud Manager.](/help/release-notes/current.md)
+
+### Está prohibido personalizar ciertas definiciones de índice OOTB {#oakpal-customizing-ootb-index}
+
+* **Clave**: RestrictIndexCustomization
+* **Tipo**: mejora
+* **Gravedad**: Menor
+* **Desde**: Versión 2024.6.0
+
+AEM Cloud Service prohíbe las modificaciones no autorizadas de los siguientes índices OOTB:
+
+* `nodetypeLucene`
+* `slingResourceResolver`
+* `socialLucene`
+* `appsLibsLucene`
+* `authorizables`
+* `pathReference`
+
+>[!WARNING]
+>
+>Se le insta a abordar esto lo antes posible, ya que provocará que las canalizaciones fallen a partir de [Versión de agosto de 2024 de Cloud Manager.](/help/release-notes/current.md)
+
+### La Configuración De Los Tokenizers En Los Analizadores Debe Crearse Con El Nombre &quot;tokenizer&quot; {#oakpal-tokenizer}
+
+* **Clave**: AnalyzerTokenizerConfigCheck
+* **Tipo**: mejora
+* **Gravedad**: Menor
+* **Desde**: Versión 2024.6.0
+
+AEM Cloud Service prohíbe la creación de tokenizers con nombres incorrectos en los analizadores. Los tokenizers siempre se deben definir como `tokenizer`.
 
 ## Herramienta de optimización de Dispatcher {#dispatcher-optimization-tool-rules}
 

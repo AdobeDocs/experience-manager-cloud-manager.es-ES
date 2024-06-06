@@ -2,10 +2,10 @@
 title: Administración de canalizaciones
 description: Obtenga información sobre cómo administrar las canalizaciones existentes, como editarlas, ejecutarlas y eliminarlas.
 exl-id: e36420d2-57c5-4375-99fb-dd47c1c8bffd
-source-git-commit: ab527beb706ab73a14cc933a3414873dee6b7a9e
-workflow-type: ht
-source-wordcount: '800'
-ht-degree: 100%
+source-git-commit: 4ab4bd416658c55d72228b701c57a1845d2d0f41
+workflow-type: tm+mt
+source-wordcount: '901'
+ht-degree: 88%
 
 ---
 
@@ -96,6 +96,10 @@ Según el tipo de canalización, puede cancelar la ejecución si hace clic de nu
 >
 >No se puede editar una canalización en ejecución.
 
+>[!NOTE]
+>
+>Las canalizaciones de nivel web y configuración no son compatibles con los repositorios privados. Consulte el documento [Adición de repositorios privados en Cloud Manager](/help/managing-code/private-repositories.md) para obtener más información y la lista completa de limitaciones.
+
 ## Eliminar canalizaciones {#deleting-pipelines}
 
 1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización y programa adecuados.
@@ -127,6 +131,15 @@ Una vez completado el paso de una canalización, se presenta un resumen.
 Haga clic o pulse en el vínculo **Ver detalles** para mostrar la sección **Duración**. Esto incluye la duración promedio de la canalización en función de la tendencia histórica para ese programa.
 
 ![Duración](/help/assets/configure-pipelines/duration.png)
+
+Si la canalización contenía un **Escaneado de códigos** , que ha planteado problemas, puede tocar o hacer clic en el **Descargar detalles** para ver una lista de [pruebas de calidad del código](/help/using/code-quality-testing.md) que no pasó.
+
+![Problemas de calidad del código](assets/managing-pipelines-code-quality-issues.png)
+
+A **Ubicación del archivo del proyecto** está disponible en el archivo CSV para indicar la ubicación del código infractor. Esta columna es la ruta relativa al proyecto, mientras que la variable **Ubicación del archivo** es generada por Maven.
+
+![Detalles del problema de análisis de código de proyecto](assets/managing-pipelines-code-quality-details.png)
+
 
 >[!NOTE]
 >

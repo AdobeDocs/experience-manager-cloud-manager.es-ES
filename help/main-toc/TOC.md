@@ -7,10 +7,10 @@ user-guide-description: Aprenda a utilizar Cloud Manager para autoadministrar Ad
 feature-set: Experience Manager Cloud Manager, Experience Manager
 feature: Cloud Manager
 role: Admin
-source-git-commit: 9d0f4dd29e2d05ab3f6900ee23c536b91c849e65
-workflow-type: ht
-source-wordcount: '509'
-ht-degree: 100%
+source-git-commit: 3beee350dda077c16975ea628bd4c7b80d7d9160
+workflow-type: tm+mt
+source-wordcount: '530'
+ht-degree: 96%
 
 ---
 
@@ -58,19 +58,25 @@ ht-degree: 100%
    + [Reglas de calidad de código personalizadas](/help/using/custom-code-quality-rules.md)
    + [Copia de contenido](/help/using/content-copy.md)
 + Administración del código {#managing-code}
+   + [Administración de repositorios en Cloud Manager](/help/managing-code/managing-repositories.md)
+   + [Información de acceso al repositorio](/help/managing-code/accessing-repositories.md)
+   + [Adición de repositorios de Adobe](/help/managing-code/adobe-repositories.md)
+   + [Adición de repositorios privados](/help/managing-code/private-repositories.md)
+   + [Compatibilidad con el submódulo Git](/help/managing-code/git-submodules.md)
+   + [Configuración de comprobación de GitHub](/help/managing-code/github-check-config.md)
+   + [Anotaciones de comprobación de GitHub](/help/managing-code/github-annotations.md)
    + [Administrar versiones del proyecto de Maven](/help/managing-code/maven-project-version.md)
-   + [Repositorios](/help/managing-code/repositories.md)
    + [Integración con Git](/help/managing-code/git-integration.md)
    + [Uso de varios repositorios de Git](/help/managing-code/multiple-git-repos.md)
-   + [Trabajar con sus propios repositorios de GitHub](/help/managing-code/byo-github.md)
 + Asistente para la actualización de productos {#product-update-wizard}
    + [Información general](/help/product-update-wizard/overview.md)
    + [Evaluación](/help/product-update-wizard/evaluation.md)
 + Notas de la versión {#release-notes}
    + [Notas de la versión actual](/help/release-notes/current.md)
    + 2024 {#2024}
+      + [Notas de la versión 2024.5.0](/help/release-notes/2024/2024-5-0.md)
       + [Notas de la versión 2024.4.0](/help/release-notes/2024/2024-4-0.md)
-      + [Notas de la versión 2024.3.0](/help/release-notes/2024/2024-3-0.md)
+      + [Notas de la versión para 2024.3.0](/help/release-notes/2024/2024-3-0.md)
       + [Notas de la versión 2024.2.0](/help/release-notes/2024/2024-2-0.md)
       + [Notas de la versión 2024.1.0](/help/release-notes/2024/2024-1-0.md)
    + 2023 {#2023}
