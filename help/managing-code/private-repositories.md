@@ -3,10 +3,10 @@ title: Adición de repositorios privados en Cloud Manager
 description: Obtenga información sobre cómo configurar Cloud Manager para que funcione con sus propios repositorios privados de GitHub.
 feature: Release Information
 exl-id: e0d103c9-c147-4040-bf53-835e93d78a0b
-source-git-commit: dcb48f6914ff48c6905da40609ca99fe529d9fe3
+source-git-commit: 84a6d8b7a44af124eb227999ad1cbd1fe14ab7ee
 workflow-type: tm+mt
-source-wordcount: '845'
-ht-degree: 80%
+source-wordcount: '884'
+ht-degree: 68%
 
 ---
 
@@ -122,10 +122,12 @@ Los repositorios privados validados se pueden asociar con [canalizaciones full-s
 
 ## Restricciones {#limitations}
 
-Tenga en cuenta las siguientes limitaciones al utilizar sus propios repositorios de GitHub con Cloud Manager.
+Se aplican ciertas limitaciones al usar repositorios privados con Cloud Manager.
 
-* No puede utilizar los repositorios de GitHub como origen de repositorio directo para las canalizaciones que administra.
-   * Esta funcionalidad está planificada.
-* No se puede pausar la validación de la solicitud de extracción mediante la comprobación de GitHub desde Cloud Manager.
+* No puede utilizar repositorios privados como origen de repositorio directo para las canalizaciones que administra.
+* No puede pausar la validación de la solicitud de extracción mediante la comprobación de GitHub desde Cloud Manager.
    * Si el repositorio de GitHub se valida en Cloud Manager, Cloud Manager siempre intentará validar las solicitudes de extracción creadas para ese repositorio.
-Si la aplicación de GitHub de Adobe se quita de su organización de GitHub, se eliminará la función de validación de solicitudes de extracción de todos los repositorios.
+* Si la aplicación de GitHub de Adobe se quita de su organización de GitHub, se eliminará la función de validación de solicitudes de extracción de todos los repositorios.
+* No se creará ni insertará ninguna etiqueta de Git al utilizar repositorios privados en canalizaciones de pila completa de producción.
+* Las canalizaciones que utilizan repositorios privados y el déclencheur de compilación en la confirmación no se inician automáticamente cuando se inserta una nueva confirmación en la rama seleccionada.
+* [Funcionalidad de reutilización de artefactos](/help/getting-started/project-setup.md#build-artifact-reuse) no se aplica a repositorios privados.
