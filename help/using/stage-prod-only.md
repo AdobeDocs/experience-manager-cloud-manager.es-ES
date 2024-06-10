@@ -2,10 +2,10 @@
 title: Canalizaciones de solo fase y de producción
 description: Descubra cómo puede dividir las implementaciones de fase y producción mediante canalizaciones dedicadas.
 exl-id: b7dd0021-d346-464a-a49e-72864b01cce3
-source-git-commit: 54da5fd599eced473141ae67242841a8dd833f36
-workflow-type: ht
-source-wordcount: '842'
-ht-degree: 100%
+source-git-commit: c238caa22fdd71ae6aefd098331b626b9b951a0f
+workflow-type: tm+mt
+source-wordcount: '891'
+ht-degree: 92%
 
 ---
 
@@ -32,7 +32,7 @@ Las canalizaciones de solo fase y producción ofrecen soluciones para estos caso
 * Las **canalizaciones de implementación de solo producción** se implementan únicamente en un entorno de producción con la opción de seleccionar una ejecución finalizada y validada correctamente en el escenario e implementar sus artefactos en la producción.
    * Las canalizaciones de solo producción reutilizarán los artefactos de las implementaciones de fase, lo que omitirá la fase de generación.
 
-Ni las canalizaciones de solo fase ni las de solo producción se ejecutarán mientras se esté ejecutando una canalización de producción de pila completa y viceversa.
+Ni las canalizaciones solo de fase ni las de solo producción se ejecutarán mientras se ejecuta una canalización de producción de pila completa y viceversa. Si tanto la canalización de producción de solo ensayo como la de pila completa tienen el **Cambios en Git** déclencheur configurado y que apuntan a la misma rama y repositorio, solo se inicia automáticamente la canalización de solo fase. No se han iniciado las canalizaciones de solo producción **Cambios en Git** ya que no están directamente vinculados a un repositorio.
 
 Estas canalizaciones dedicadas ofrecen más flexibilidad, pero tenga en cuenta los siguientes detalles de funcionamiento y recomendaciones.
 
