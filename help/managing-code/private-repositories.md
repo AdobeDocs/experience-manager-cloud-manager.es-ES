@@ -6,7 +6,7 @@ exl-id: e0d103c9-c147-4040-bf53-835e93d78a0b
 source-git-commit: 6f14a8e9ff8e56f9f7b84799733e26b4c0ff8dcb
 workflow-type: tm+mt
 source-wordcount: '868'
-ht-degree: 70%
+ht-degree: 88%
 
 ---
 
@@ -17,7 +17,7 @@ Obtenga información sobre cómo configurar Cloud Manager para que funcione con 
 
 ## Información general {#overview}
 
-Al configurar Cloud Manager para que funcione con sus propios repositorios privados de GitHub, puede validar su código directamente en el repositorio de GitHub a través de Cloud Manager, lo que elimina la necesidad de sincronizar su código de forma coherente con el repositorio de Adobe.
+Al configurar Cloud Manager para que funcione con sus propios repositorios privados de GitHub, puede validar el código directamente en su repositorio de GitHub a través de Cloud Manager, lo que elimina la necesidad de sincronizar de forma sistemática el código con el repositorio de Adobe.
 
 >[!NOTE]
 >
@@ -106,7 +106,7 @@ Cuando se cierra o se combina la solicitud de extracción, la canalización de c
 
 >[!TIP]
 >
->Ver el documento [Anotaciones de comprobación de GitHub](github-annotations.md) para obtener más información sobre la información proporcionada a través de GitHub cuando se ejecutan las comprobaciones de solicitudes de extracción.
+>Consulte el documento [Anotaciones de comprobación de GitHub](github-annotations.md) para obtener más información sobre la información proporcionada a través de GitHub cuando se ejecutan comprobaciones de solicitudes de extracción.
 
 >[!TIP]
 >
@@ -114,11 +114,11 @@ Cuando se cierra o se combina la solicitud de extracción, la canalización de c
 
 ## Asociación de repositorios privados con canalizaciones {#pipelines}
 
-Los repositorios privados validados se pueden asociar con [canalizaciones full-stack y frontend.](/help/overview/ci-cd-pipelines.md)
+Los repositorios privados validados se pueden asociar con [canalizaciones de pila completa y front-end.](/help/overview/ci-cd-pipelines.md)
 
 >[!NOTE]
 >
->Las canalizaciones de nivel web y configuración no son compatibles con los repositorios privados.
+>Las canalizaciones de configuración de nivel web no son compatibles con los repositorios privados.
 
 ## Restricciones {#limitations}
 
