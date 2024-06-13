@@ -1,15 +1,15 @@
 ---
-title: Compatibilidad con el submódulo Git
-description: Descubra cómo puede utilizar submódulos Git para combinar el contenido de varias ramas en repositorios Git en el momento de la compilación.
+title: Compatibilidad con los submódulos de Git
+description: Obtenga información sobre cómo usar los submódulos de Git para combinar el contenido de varias ramas en los distintos repositorios de Git en el momento de la compilación.
 source-git-commit: aa30c0024e422c96f0dfbaa2804e75143faf14dc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '417'
-ht-degree: 62%
+ht-degree: 100%
 
 ---
 
 
-# Compatibilidad con el submódulo Git para repositorios de Adobe {#git-submodule-support}
+# Compatibilidad con los submódulos de Git para repositorios de Adobe {#git-submodule-support}
 
 Los submódulos Git se pueden usar para combinar el contenido de varias ramas en repositorios de Git en el momento de la compilación.
 
@@ -77,21 +77,21 @@ Cuando utilice submódulos Git, tenga en cuenta lo siguiente:
    * Para ello, ejecute `git config -f .gitmodules submodule.<submodule path>.shallow true` para cada submódulo.
 
 
-## Compatibilidad con el submódulo Git para repositorios privados {#private-repositories}
+## Compatibilidad con los submódulos de Git para repositorios privados {#private-repositories}
 
-Compatibilidad con submódulos Git al utilizar [repositorios privados](private-repositories.md) es casi igual que cuando se usan repositorios de Adobe.
+La compatibilidad con los submódulos de Git al utilizar [repositorios privados](private-repositories.md) es prácticamente la misma que cuando se usan repositorios de Adobe.
 
-Sin embargo, después de configurar su `pom.xml` y ejecutar el `git submodule` comandos, debe agregar un `.gitmodules` archivo al directorio raíz del repositorio del agregador para que Cloud Manager detecte la configuración del submódulo.
+Sin embargo, después de configurar su archivo `pom.xml` y ejecutar los comandos `git submodule`, debe añadir un archivo `.gitmodules` al directorio raíz del repositorio de agregación para que Cloud Manager detecte la configuración del submódulo.
 
-![archivo .gitmodules](assets/gitmodules.png)
+![Archivo .gitmodules](assets/gitmodules.png)
 
 ![Agregador](assets/aggregator.png)
 
 ### Limitaciones y recomendaciones {#limitations-recommendations-private-repos}
 
-Cuando utilice submódulos Git con repositorios privados, tenga en cuenta las siguientes limitaciones.
+Cuando utilice submódulos de Git con repositorios privados, tenga en cuenta las siguientes limitaciones.
 
-* Las direcciones URL de Git para los submódulos pueden estar en formato HTTPS o SSH, pero deben vincularse a un repositorio github.com
-   * Añadir un submódulo de repositorio de Adobe a un repositorio de agregador de GitHub o viceversa no funcionará.
-* Los submódulos de GitHub deben ser accesibles para la aplicación de Adobe de GitHub.
-* [Limitaciones del uso de submódulos Git con repositorios administrados por Adobe](#limitations-recommendations) también se aplican.
+* Las direcciones URL de Git para los submódulos pueden estar en formato HTTPS o SSH, pero deben vincularse a un repositorio de github.com
+   * Añadir un submódulo de repositorio de Adobe a un repositorio de agregación de GitHub, o viceversa, no funcionará.
+* Los submódulos de GitHub deben ser accesibles para la aplicación de Adobe GitHub.
+* [Las limitaciones de uso de submódulos de Git con repositorios administrados por Adobe](#limitations-recommendations) también se aplican.

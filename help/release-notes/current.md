@@ -4,9 +4,9 @@ description: Estas son las notas de la versión 2024.6.0 de Cloud Manager.
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
 source-git-commit: a41ea35cb685d4e88e016bc887eb2465963747e1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '291'
-ht-degree: 48%
+ht-degree: 100%
 
 ---
 
@@ -21,16 +21,16 @@ Esta página documenta las notas de la versión 2024.6.0 de [!UICONTROL Cloud Ma
 
 ## Fecha de la versión {#release-date}
 
-La fecha de lanzamiento de [!UICONTROL Cloud Manager] La versión 2024.6.0 de es el 6 de junio de 2024. La próxima versión está planificada para el 11 de julio de 2024.
+La fecha de publicación de la versión 2024.6.0 de [!UICONTROL Cloud Manager] es el 6 de junio de 2024. La próxima versión está planificada para el 11 de julio de 2024.
 
 ## Novedades {#what-is-new}
 
 * Ahora puede [usar sus propios repositorios de GitHub](/help/managing-code/private-repositories.md) como fuentes para canalizaciones de pila completa y de front-end.
-   * Además, puede aprovechar los repositorios de GitHub con [submódulos git,](/help/managing-code/git-submodules.md) proporciona un control mejorado sobre las canalizaciones generadas automáticamente que se utilizan para validar las solicitudes de extracción y permite definir comportamientos para métricas cruciales durante la fase de análisis de código.
-   * [También tiene la opción](/help/managing-code/github-check-config.md) para conservar el historial de informes en GitHub, asigne un nombre a la canalización y establezca las variables de canalización que se adapten a sus necesidades.
-* Se han añadido nuevas reglas de OakPal a [Análisis de calidad del código de Cloud Manager.](/help/using/custom-code-quality-rules.md#oakpal-ui-content-package)
-   * Cada nueva regla añadida a partir de junio de 2024 es un cambio permanente.
-   * Se le insta a abordar estos problemas lo antes posible, ya que estas nuevas reglas provocarán que las canalizaciones fallen a partir de la versión de agosto de 2024 de Cloud Manager.
+   * Además, puede aprovechar los repositorios de GitHub con [submódulos de Git](/help/managing-code/git-submodules.md), lo que le proporciona un control mejorado sobre las canalizaciones generadas automáticamente que se utilizan para validar las solicitudes de extracción y le permite definir los comportamientos para las métricas cruciales durante la fase de análisis de código.
+   * [También tiene la opción](/help/managing-code/github-check-config.md) de conservar el historial de informes en GitHub, asignar un nombre a la canalización y establecer las variables de canalización que se adapten a sus necesidades.
+* Se han añadido nuevas reglas de OakPal al [análisis de calidad de código de Cloud Manager.](/help/using/custom-code-quality-rules.md#oakpal-ui-content-package)
+   * Cada nueva regla añadida a partir de junio de 2024 es un cambio no disruptivo.
+   * Se le insta a abordar estos cambios lo antes posible, ya que las nuevas reglas harán que las canalizaciones fallen a partir de la versión de agosto de 2024 de Cloud Manager.
 
 ## Programa para primeros usuarios {#early-adoption}
 

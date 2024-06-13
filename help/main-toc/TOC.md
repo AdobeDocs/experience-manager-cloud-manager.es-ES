@@ -8,9 +8,9 @@ feature-set: Experience Manager Cloud Manager, Experience Manager
 feature: Cloud Manager
 role: Admin
 source-git-commit: 3beee350dda077c16975ea628bd4c7b80d7d9160
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '530'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -62,7 +62,7 @@ ht-degree: 96%
    + [Información de acceso al repositorio](/help/managing-code/accessing-repositories.md)
    + [Adición de repositorios de Adobe](/help/managing-code/adobe-repositories.md)
    + [Adición de repositorios privados](/help/managing-code/private-repositories.md)
-   + [Compatibilidad con el submódulo Git](/help/managing-code/git-submodules.md)
+   + [Compatibilidad con los submódulos de Git](/help/managing-code/git-submodules.md)
    + [Configuración de comprobación de GitHub](/help/managing-code/github-check-config.md)
    + [Anotaciones de comprobación de GitHub](/help/managing-code/github-annotations.md)
    + [Administrar versiones del proyecto de Maven](/help/managing-code/maven-project-version.md)
