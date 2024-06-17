@@ -4,9 +4,9 @@ description: Obtenga información sobre cómo configurar Cloud Manager para que 
 feature: Release Information
 exl-id: e0d103c9-c147-4040-bf53-835e93d78a0b
 source-git-commit: 6f14a8e9ff8e56f9f7b84799733e26b4c0ff8dcb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '868'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -122,11 +122,11 @@ Los repositorios privados validados se pueden asociar con [canalizaciones de pil
 
 ## Restricciones {#limitations}
 
-Se aplican ciertas limitaciones al usar repositorios privados con Cloud Manager.
+Se aplican ciertas restricciones al usar repositorios privados con Cloud Manager.
 
-* No puede pausar la validación de la solicitud de extracción mediante la comprobación de GitHub desde Cloud Manager.
+* No se puede pausar la validación de la solicitud de extracción mediante la comprobación de GitHub desde Cloud Manager.
    * Si el repositorio de GitHub se valida en Cloud Manager, Cloud Manager siempre intentará validar las solicitudes de extracción creadas para ese repositorio.
-* Si la aplicación de GitHub de Adobe se quita de su organización de GitHub, se eliminará la función de validación de solicitudes de extracción de todos los repositorios.
-* No se creará ni insertará ninguna etiqueta de Git al utilizar repositorios privados en canalizaciones de pila completa de producción.
-* Las canalizaciones que utilizan repositorios privados y el déclencheur de compilación en la confirmación no se inician automáticamente cuando se inserta una nueva confirmación en la rama seleccionada.
-* [Funcionalidad de reutilización de artefactos](/help/getting-started/project-setup.md#build-artifact-reuse) no se aplica a repositorios privados.
+* Si la aplicación de GitHub de Adobe se quita de su organización de GitHub, se quitará la función de validación de solicitudes de extracción de todos los repositorios.
+* No se creará ni insertará ninguna etiqueta de Git al utilizar repositorios privados en canalizaciones de producción de pila completa.
+* Las canalizaciones que utilizan repositorios privados y el activador de compilación de compromiso no se inician automáticamente cuando se inserta un nuevo compromiso en la rama seleccionada.
+* La [funcionalidad de reutilización de artefactos](/help/getting-started/project-setup.md#build-artifact-reuse) no se aplica a repositorios privados.
