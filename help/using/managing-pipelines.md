@@ -2,9 +2,9 @@
 title: Administración de canalizaciones
 description: Obtenga información sobre cómo administrar las canalizaciones existentes, como editarlas, ejecutarlas y eliminarlas.
 exl-id: e36420d2-57c5-4375-99fb-dd47c1c8bffd
-source-git-commit: 4ab4bd416658c55d72228b701c57a1845d2d0f41
-workflow-type: ht
-source-wordcount: '901'
+source-git-commit: 15e733117b4458cc53dec309dad5bde8cb17029f
+workflow-type: tm+mt
+source-wordcount: '872'
 ht-degree: 100%
 
 ---
@@ -95,10 +95,6 @@ Según el tipo de canalización, puede cancelar la ejecución si hace clic de nu
 >[!NOTE]
 >
 >No se puede editar una canalización en ejecución.
-
->[!NOTE]
->
->Las canalizaciones de configuración de nivel web no son compatibles con los repositorios privados. Consulte el documento [Adición de repositorios privados en Cloud Manager](/help/managing-code/private-repositories.md) para obtener más información y la lista completa de limitaciones.
 
 ## Eliminar canalizaciones {#deleting-pipelines}
 
