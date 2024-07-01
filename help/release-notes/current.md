@@ -4,9 +4,9 @@ description: Estas son las notas de la versión 2024.6.0 de Cloud Manager.
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
 source-git-commit: 15e733117b4458cc53dec309dad5bde8cb17029f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '288'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ La fecha de publicación de la versión 2024.6.0 de [!UICONTROL Cloud Manager] e
 
 ## Novedades {#what-is-new}
 
-* Ahora puede [usar sus propios repositorios de GitHub](/help/managing-code/private-repositories.md) como fuentes para canalizaciones de pila completa.
+* Ahora puede [utilizar sus propios repositorios de GitHub](/help/managing-code/private-repositories.md) como fuentes para canalizaciones de pila completa.
    * Además, puede aprovechar los repositorios de GitHub con [submódulos de Git](/help/managing-code/git-submodules.md), lo que le proporciona un control mejorado sobre las canalizaciones generadas automáticamente que se utilizan para validar las solicitudes de extracción y le permite definir los comportamientos para las métricas cruciales durante la fase de análisis de código.
    * [También tiene la opción](/help/managing-code/github-check-config.md) de conservar el historial de informes en GitHub, asignar un nombre a la canalización y establecer las variables de canalización que se adapten a sus necesidades.
 * Se han añadido nuevas reglas de OakPal al [análisis de calidad de código de Cloud Manager.](/help/using/custom-code-quality-rules.md#oakpal-ui-content-package)
