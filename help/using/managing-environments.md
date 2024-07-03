@@ -2,10 +2,10 @@
 title: Administración de entornos
 description: Aprenda a utilizar Cloud Manager para administrar sus entornos.
 exl-id: 700b0b4c-1e1a-4993-b366-426b14a98f8e
-source-git-commit: ab527beb706ab73a14cc933a3414873dee6b7a9e
-workflow-type: ht
-source-wordcount: '264'
-ht-degree: 100%
+source-git-commit: 116a930eea08b2bb9d288ec153519699754e0374
+workflow-type: tm+mt
+source-wordcount: '277'
+ht-degree: 95%
 
 ---
 
@@ -51,6 +51,10 @@ La pantalla **Entornos** muestra una tarjeta para los entornos de producción y 
 * Amarillo: no disponible
 
 ![Pestaña Entornos](/help/assets/Environments-tab.png)
+
+>[!NOTE]
+>
+>Los detalles del entorno, como el nombre, no se pueden cambiar una vez aprovisionados.
 
 >[!NOTE]
 >
