@@ -3,7 +3,7 @@ title: Permisos basados en funciones
 description: Obtenga información sobre los permisos preconfigurados basados en funciones de Cloud Manager para administrar el acceso a los recursos de la nube.
 exl-id: b66533fb-db93-40e8-919d-581261fdbf24
 source-git-commit: fc1bc626dc18d25ce8c5bbae71396b234b5676db
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '620'
 ht-degree: 100%
 

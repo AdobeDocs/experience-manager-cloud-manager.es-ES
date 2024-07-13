@@ -3,7 +3,7 @@ title: Navegación por la IU de Cloud Manager
 description: Descubra cómo está organizada la IU de Cloud Manager y cómo navegar para administrar sus programas y entornos.
 exl-id: 9c1545ce-1c6d-417f-a6f4-fe53caef3433
 source-git-commit: 85c1e22609dc5646d3de0ccc71e9423d4243e13a
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1292'
 ht-degree: 100%
 

@@ -4,8 +4,8 @@ description: En este documento se exponen los diferentes escenarios de incorpora
 exl-id: deb3429c-dfcf-4e52-9aba-d9368aa240e6
 source-git-commit: b0dbb602253939464ff034941ffbad84b7df77df
 workflow-type: tm+mt
-source-wordcount: '546'
-ht-degree: 100%
+source-wordcount: '539'
+ht-degree: 97%
 
 ---
 
@@ -34,7 +34,7 @@ Como cliente nuevo, se le incorporará a [!UICONTROL Cloud Manager] como parte d
 
 Como parte del proceso de incorporación, recibirá un correo electrónico de bienvenida que incluye lo siguiente:
 
-* La dirección URL para acceder a [!UICONTROL Cloud Manager]
+* La URL para acceder a [!UICONTROL Cloud Manager]
 * Instrucciones para iniciar sesión en [!UICONTROL Experience Cloud]
 * Instrucciones para utilizar Admin Console para administrar los usuarios y sus respectivos permisos de modo que puedan acceder a [!UICONTROL Cloud Manager] si es necesario.
 
@@ -48,7 +48,7 @@ El proyecto de AEM existente también tendrá que ajustarse a las prácticas rec
 
 Para obtener información adicional sobre las ventajas de actualizar a AEM 6.5, consulte el documento [Actualización a AEM 6.5.](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/upgrade.html?lang=es)
 
-## Acceso a [!UICONTROL Cloud Manager] {#accessing-cloud-manager}
+## Acceder a [!UICONTROL Cloud Manager] {#accessing-cloud-manager}
 
 Tendrá acceso a [!UICONTROL Cloud Manager] y a sus entornos de AEM simplemente iniciando sesión en la página de aterrizaje de [!UICONTROL Experience Cloud] con las credenciales de Identity Management de Adobe y seleccionando AEM en la interfaz del conmutador de soluciones.
 

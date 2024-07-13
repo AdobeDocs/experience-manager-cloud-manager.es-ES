@@ -3,7 +3,7 @@ title: Administración de entornos
 description: Aprenda a utilizar Cloud Manager para administrar sus entornos.
 exl-id: 700b0b4c-1e1a-4993-b366-426b14a98f8e
 source-git-commit: 116a930eea08b2bb9d288ec153519699754e0374
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '277'
 ht-degree: 100%
 

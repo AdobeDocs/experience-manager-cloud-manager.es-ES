@@ -3,7 +3,7 @@ title: Administración de repositorios en Cloud Manager
 description: Obtenga información sobre cómo crear, ver y editar repositorios de Git en Cloud Manager.
 exl-id: 384b197d-f7a7-4022-9b16-9d83ab788966
 source-git-commit: 73add7bee892769d1b3864e3238aff26bf96162d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '660'
 ht-degree: 100%
 

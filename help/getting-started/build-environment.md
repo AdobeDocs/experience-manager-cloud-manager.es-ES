@@ -3,7 +3,7 @@ title: El entorno de compilación
 description: Obtenga información sobre el entorno de compilación especializado en el que los usuarios de Cloud Manager generan y prueban su código.
 exl-id: b3543320-66d4-4358-8aba-e9bdde00d976
 source-git-commit: dc0b83fa045208fcd333af10f90f9590c2aa96b8
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1280'
 ht-degree: 100%
 

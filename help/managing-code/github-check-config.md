@@ -1,13 +1,13 @@
 ---
 title: Configuración de comprobación de GitHub para repositorios privados
 description: Obtenga información sobre cómo controlar las canalizaciones que se crean automáticamente para validar cada solicitud de extracción en un repositorio privado.
-source-git-commit: 85c1e22609dc5646d3de0ccc71e9423d4243e13a
-workflow-type: ht
+exl-id: 29c9e487-e196-411a-8cda-6751b0a56066
+source-git-commit: e93285f7c7495ec9d2f11d289adaf6aaba7e58ea
+workflow-type: tm+mt
 source-wordcount: '255'
 ht-degree: 100%
 
 ---
-
 
 # Configuración de comprobación de GitHub para repositorios privados {#github-check-config}
 

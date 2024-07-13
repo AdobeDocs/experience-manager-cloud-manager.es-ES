@@ -4,7 +4,7 @@ description: Obtenga información sobre cómo el Asistente para la actualizació
 exl-id: 8134e956-bfcf-41b8-a408-fa4375058c6a
 source-git-commit: bbee49987e2f80825f5f7f5caf29c841e2b00dfb
 workflow-type: tm+mt
-source-wordcount: '205'
+source-wordcount: '210'
 ht-degree: 100%
 
 ---

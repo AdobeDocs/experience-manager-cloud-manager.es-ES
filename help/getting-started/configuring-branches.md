@@ -4,7 +4,7 @@ description: Obtenga información sobre cómo configurar su primera rama en Git 
 exl-id: ff2ae28f-902e-4fb2-aeb1-3636cb5cd9bb
 source-git-commit: 4c051cd1696f8a00d0278131c9521ad4dcb956a3
 workflow-type: tm+mt
-source-wordcount: '329'
+source-wordcount: '325'
 ht-degree: 100%
 
 ---

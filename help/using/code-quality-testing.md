@@ -4,7 +4,7 @@ description: Descubra cómo funcionan las pruebas de calidad del código de las 
 exl-id: 6a574858-a30e-4768-bafc-8fe79f928294
 source-git-commit: 38cf86a5effa201afdc8e00d8f33582fc06214d7
 workflow-type: tm+mt
-source-wordcount: '2867'
+source-wordcount: '2848'
 ht-degree: 100%
 
 ---
@@ -296,4 +296,3 @@ Se puede producir un caso especial cuando el paquete de contenido “todo” con
 >
 >* Esta optimización no afecta a los paquetes que se implementan en AEM.
 >* Debido a que la coincidencia entre los paquetes de contenido incrustado y los paquetes de contenido omitido se basa en los nombres de archivo, esta optimización no se puede realizar si varios paquetes de contenido omitidos tienen exactamente el mismo nombre de archivo o si el nombre de archivo se cambia al incrustar.
-
