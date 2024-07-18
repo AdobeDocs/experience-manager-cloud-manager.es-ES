@@ -1,19 +1,19 @@
 ---
-title: Notas de la versión para 2024.6.0
-description: Estas son las notas de la versión 2024.6.0 de Cloud Manager.
+title: Notas de la versión 2024.7.0
+description: Estas son las notas de la versión 2024.7.0 de Cloud Manager.
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
-source-git-commit: 851b556c0917d9f6d97d958a0c8e8aeff4141079
+source-git-commit: d536cd96d135e48039f94fd01142a63305b6eeae
 workflow-type: tm+mt
-source-wordcount: '288'
-ht-degree: 100%
+source-wordcount: '226'
+ht-degree: 61%
 
 ---
 
 
-# Notas de la versión 2024.6.0 de Cloud Manager {#release-notes}
+# Notas de la versión 2024.7.0 de Cloud Manager {#release-notes}
 
-Esta página documenta las notas de la versión 2024.6.0 de [!UICONTROL Cloud Manager].
+Esta página documenta las notas de la versión 2024.7.0 de [!UICONTROL Cloud Manager].
 
 >[!NOTE]
 >
@@ -21,16 +21,13 @@ Esta página documenta las notas de la versión 2024.6.0 de [!UICONTROL Cloud Ma
 
 ## Fecha de la versión {#release-date}
 
-La fecha de publicación de la versión 2024.6.0 de [!UICONTROL Cloud Manager] es el 6 de junio de 2024. La próxima versión está planificada para el 18 de julio de 2024.
+La fecha de la versión 2024.7.0 de [!UICONTROL Cloud Manager] es el 18 de julio de 2024. La próxima versión está planificada para el 8 de agosto de 2024.
 
 ## Novedades {#what-is-new}
 
-* Ahora puede [utilizar sus propios repositorios de GitHub](/help/managing-code/private-repositories.md) como fuentes para canalizaciones de pila completa.
-   * Además, puede aprovechar los repositorios de GitHub con [submódulos de Git](/help/managing-code/git-submodules.md), lo que le proporciona un control mejorado sobre las canalizaciones generadas automáticamente que se utilizan para validar las solicitudes de extracción y le permite definir los comportamientos para las métricas cruciales durante la fase de análisis de código.
-   * [También tiene la opción](/help/managing-code/github-check-config.md) de conservar el historial de informes en GitHub, asignar un nombre a la canalización y establecer las variables de canalización que se adapten a sus necesidades.
-* Se han añadido nuevas reglas de OakPal al [análisis de calidad de código de Cloud Manager.](/help/using/custom-code-quality-rules.md#oakpal-ui-content-package)
-   * Cada nueva regla añadida a partir de junio de 2024 es un cambio no disruptivo.
-   * Se le insta a abordar estos cambios lo antes posible, ya que las nuevas reglas harán que las canalizaciones fallen a partir de la versión de agosto de 2024 de Cloud Manager.
+* La [canalización de producción](/help/using/production-pipelines.md#adding-production-pipeline) y la [canalización que no es de producción](/help/using/non-production-pipelines.md#adding-non-production-pipeline) tienen el déclencheur **Cambios en Git** para iniciar la canalización en una confirmación y ya están disponibles para [repositorios privados.](/help/managing-code/private-repositories.md)
+* Una canalización de preproducción solo se puede activar manualmente y no se puede configurar como **Cambios en Git**.
+* En el caso de las canalizaciones solo de producción, la lista de ejecuciones promovibles incluye aquellas que tienen una versión del artefacto mayor que la versión del artefacto implementada en el entorno de producción.
 
 ## Programa para primeros usuarios {#early-adoption}
 
