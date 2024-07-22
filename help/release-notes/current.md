@@ -1,12 +1,12 @@
 ---
-title: Notas de la versión 2024.7.0
+title: Notas de la versión para 2024.7.0
 description: Estas son las notas de la versión 2024.7.0 de Cloud Manager.
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
-source-git-commit: d536cd96d135e48039f94fd01142a63305b6eeae
+source-git-commit: 87c603a89b99f6984828280cba2041da8c72e839
 workflow-type: tm+mt
-source-wordcount: '226'
-ht-degree: 61%
+source-wordcount: '238'
+ht-degree: 59%
 
 ---
 
@@ -28,6 +28,8 @@ La fecha de la versión 2024.7.0 de [!UICONTROL Cloud Manager] es el 18 de julio
 * La [canalización de producción](/help/using/production-pipelines.md#adding-production-pipeline) y la [canalización que no es de producción](/help/using/non-production-pipelines.md#adding-non-production-pipeline) tienen el déclencheur **Cambios en Git** para iniciar la canalización en una confirmación y ya están disponibles para [repositorios privados.](/help/managing-code/private-repositories.md)
 * Una canalización de preproducción solo se puede activar manualmente y no se puede configurar como **Cambios en Git**.
 * En el caso de las canalizaciones solo de producción, la lista de ejecuciones promovibles incluye aquellas que tienen una versión del artefacto mayor que la versión del artefacto implementada en el entorno de producción.
+* AEM [El tipo de archivo del proyecto de](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=es) se ha actualizado a [versión 49.](https://github.com/adobe/aem-project-archetype/tree/aem-project-archetype-49)
+
 
 ## Programa para primeros usuarios {#early-adoption}
 
