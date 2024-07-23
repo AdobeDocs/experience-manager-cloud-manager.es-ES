@@ -3,9 +3,9 @@ title: Reglas de calidad de código personalizadas
 description: Obtenga más información acerca de las reglas de calidad del código personalizadas ejecutadas por Cloud Manager como parte de las pruebas de calidad del código, en función de las prácticas recomendadas de ingeniería de AEM.
 exl-id: 7d118225-5826-434e-8869-01ee186e0754
 source-git-commit: 8f0f5e819cf312ef25beac815beca92d4e3ac255
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3544'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -863,7 +863,7 @@ AEM Cloud Service prohíbe las modificaciones no autorizadas de los siguientes �
 
 AEM Cloud Service prohíbe la creación de tokenizadores con nombres incorrectos en los analizadores. Los tokenizadores siempre se deben definir como `tokenizer`.
 
-### La Configuración De Las Definiciones De Indexación No Debe Contener Espacios {#oakpal-indexing-definitions-spaces}
+### La configuración de las definiciones de indexación no debe contener espacios {#oakpal-indexing-definitions-spaces}
 
 * **Clave**: PathSpacesCheck
 * **Tipo**: mejora
