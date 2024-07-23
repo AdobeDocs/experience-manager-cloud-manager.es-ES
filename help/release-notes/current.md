@@ -1,12 +1,12 @@
 ---
-title: Notas de la versión para 2024.7.0
+title: Notas de la versión 2024.7.0
 description: Estas son las notas de la versión 2024.7.0 de Cloud Manager.
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
 source-git-commit: 87c603a89b99f6984828280cba2041da8c72e839
 workflow-type: tm+mt
 source-wordcount: '238'
-ht-degree: 59%
+ht-degree: 95%
 
 ---
 
@@ -19,13 +19,13 @@ Esta página documenta las notas de la versión 2024.7.0 de [!UICONTROL Cloud Ma
 >
 >Para las notas de la última versión de Cloud Manager en AEM as a Cloud Service, consulte [Cloud Manager en las notas de la versión actuales de AEM as a Cloud Service.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/release-notes-cloud-manager/release-notes-cm-current.html?lang=es)
 
-## Fecha de la versión {#release-date}
+## Fecha de lanzamiento {#release-date}
 
-La fecha de la versión 2024.7.0 de [!UICONTROL Cloud Manager] es el 18 de julio de 2024. La próxima versión está planificada para el 8 de agosto de 2024.
+La fecha de lanzamiento de la versión 2024.7.0 de [!UICONTROL Cloud Manager] es el 18 de julio de 2024. La próxima versión está planificada para el 8 de agosto de 2024.
 
 ## Novedades {#what-is-new}
 
-* La [canalización de producción](/help/using/production-pipelines.md#adding-production-pipeline) y la [canalización que no es de producción](/help/using/non-production-pipelines.md#adding-non-production-pipeline) tienen el déclencheur **Cambios en Git** para iniciar la canalización en una confirmación y ya están disponibles para [repositorios privados.](/help/managing-code/private-repositories.md)
+* La [canalización de producción](/help/using/production-pipelines.md#adding-production-pipeline) y la [canalización que no es de producción](/help/using/non-production-pipelines.md#adding-non-production-pipeline) activan **Cambios en Git** para iniciar la canalización en una confirmación y están disponibles para [repositorios privados.](/help/managing-code/private-repositories.md)
 * Una canalización de preproducción solo se puede activar manualmente y no se puede configurar como **Cambios en Git**.
 * En el caso de las canalizaciones solo de producción, la lista de ejecuciones promovibles incluye aquellas que tienen una versión del artefacto mayor que la versión del artefacto implementada en el entorno de producción.
 * AEM [El tipo de archivo del proyecto de](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=es) se ha actualizado a [versión 49.](https://github.com/adobe/aem-project-archetype/tree/aem-project-archetype-49)
