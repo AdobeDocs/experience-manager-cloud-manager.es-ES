@@ -2,12 +2,13 @@
 title: Navegación por la IU de Cloud Manager
 description: Descubra cómo está organizada la IU de Cloud Manager y cómo navegar para administrar sus programas y entornos.
 exl-id: 9c1545ce-1c6d-417f-a6f4-fe53caef3433
-source-git-commit: 85c1e22609dc5646d3de0ccc71e9423d4243e13a
+source-git-commit: d4d9a9f38c5a969f276140dca98731c670547a3d
 workflow-type: tm+mt
-source-wordcount: '1292'
-ht-degree: 100%
+source-wordcount: '1439'
+ht-degree: 80%
 
 ---
+
 
 # Navegación por la IU de Cloud Manager {#navigation}
 
@@ -15,10 +16,10 @@ Descubra cómo está organizada la IU de Cloud Manager y cómo navegar para admi
 
 La IU de Cloud Manager está compuesta principalmente por dos interfaces gráficas:
 
-* [La consola Mis programas](#my-programs) donde puede ver y administrar todos los programas.
+* [La consola Mis programas](#my-programs-console) donde puede ver y administrar todos los programas.
 * [La ventana Información general del programa](#program-overview) donde puede ver los detalles de un programa individual y administrarlo.
 
-## Consola Mis programas {#my-programs}
+## Consola Mis programas {#my-programs-console}
 
 Al iniciar sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccionar la organización adecuada, se llega a la consola **Mis programas**.
 
@@ -27,8 +28,13 @@ Al iniciar sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cl
 La consola Mis programas proporciona información general de todos los programas a los que tiene acceso en la organización seleccionada. Se compone de partes.
 
 1. [Barras de herramientas](#toolbars-my-programs-toolbars) para la selección de organizaciones, alertas y configuración de la cuenta.
-1. [Estadísticas y llamada a la acción](#statistics) para obtener una descripción general de su actividad reciente
-1. [Programas y licencias](#programs-license) para conocer el estado actual de la licencia y administrar los programas
+1. Fichas que permiten alternar la vista actual de los programas.
+   * Vista **Inicio** (predeterminada) que selecciona la vista **Mis programas** con una descripción general de todos los programas
+   * **Licencia** que accede al Tablero de licencias. El panel de licencias solo se aplica a programas de AEM as a Cloud Service, no a programas de AMS.
+      * Para determinar el tipo de servicio que tiene su programa (AMS o AEMaaCS), consulte la [sección Tarjetas de programa](#program-cards) de este documento.
+   * Tenga en cuenta que las pestañas se cierran de forma predeterminada y se pueden mostrar mediante el menú de hamburguesa del [encabezado de Cloud Manager.](#cloud-manager-header)
+1. [Estadísticas y llamadas a la acción](#cta-statistics) para obtener una descripción general de su actividad reciente
+1. [**Mis programas** sección](#my-programs-section) con una descripción general de todos sus programas
 1. [Vínculos rápidos](#quick-links) para acceder fácilmente a los recursos relacionados
 
 >[!TIP]
@@ -45,6 +51,9 @@ El primero es el encabezado de Cloud Manager, que es persistente mientras navega
 
 ![El encabezado de Experience Cloud](assets/experience-cloud-header.png)
 
+1. El menú de hamburguesa que da acceso a las pestañas que pueden llevarte a partes específicas de un programa individual o cambiar entre el Tablero de licencias y la consola **[Mis programas](#my-programs-console)** según el contexto.
+   * El panel de licencias solo se aplica a programas de AEM as a Cloud Service, no a programas de AMS.
+   * Para determinar el tipo de servicio que tiene su programa (AMS o AEMaaCS), consulte la [sección Tarjetas de programa](#program-cards) de este documento.
 1. El botón Cloud Manager le devolverá a la consola Mis programas de Cloud Manager independientemente de dónde se encuentre en Cloud Manager.
 1. Toque o haga clic en el botón Comentarios para proporcionar comentarios a Adobe sobre Cloud Manager.
 1. El selector de organización muestra la organización en la que está conectado actualmente (en este ejemplo, Foundation Internal). Toque o haga clic para cambiar a otra organización si su Adobe ID está asociado a varias.
@@ -64,9 +73,9 @@ La barra de herramientas del programa proporciona vínculos para cambiar entre l
    * Tenga en cuenta que el recorrido de incorporación está diseñado para AEM as a Cloud Service y no para Cloud Service de AMS, aunque muchos conceptos son los mismos.
 1. El botón de acción ofrece acciones adecuadas al contexto, como crear un nuevo programa.
 
-### Estadísticas {#statistics}
+### Llamadas a la acción y estadísticas {#cta-statistics}
 
-La sección de estadísticas proporciona datos acumulados para su organización. Por ejemplo, si ha configurado correctamente sus programas, pueden mostrarse estadísticas de las actividades de los últimos 90 días, como las siguientes:
+La sección de estadísticas y llamada a la acción proporciona datos acumulados para su organización. Por ejemplo, si ha configurado correctamente sus programas, pueden mostrarse estadísticas de las actividades de los últimos 90 días, incluidas las siguientes:
 
 * Número de [implementaciones](/help/using/code-deployment.md)
 * Número de [problemas de calidad del código](/help/using/code-quality-testing.md) identificados
@@ -74,13 +83,13 @@ La sección de estadísticas proporciona datos acumulados para su organización.
 
 O si acaba de comenzar la configuración de su organización, puede haber sugerencias sobre los pasos siguientes o los recursos de documentación.
 
-### Programas y licencias {#programs-license}
+### Sección Mis programas {#my-programs-section}
 
-El contenido principal de la consola Mis programas es la lista de programas y el estado de la licencia.
+El contenido principal de la consola Mis programas es la sección **Mis programas** que enumera sus programas como tarjetas individuales. Toque o haga clic en una tarjeta para acceder a la página **información general del programa** para obtener más información sobre el programa.
 
-#### Pestaña Programas {#programs}
-
-La pestaña **Programas** enumera las tarjetas que representan cada programa al que tiene acceso. Toque o haga clic en una tarjeta para acceder a la página **información general del programa** para obtener más información sobre el programa.
+>[!NOTE]
+>
+>Según sus privilegios, es posible que no pueda seleccionar determinados programas.
 
 Utilice las opciones de ordenación para encontrar el programa que necesita.
 
@@ -94,13 +103,17 @@ Utilice las opciones de ordenación para encontrar el programa que necesita.
 * Vista de cuadrícula (predeterminado)
 * Vista de lista   
 
+#### Tarjetas de programa {#program-cards}
+
 Cada programa está representado por una tarjeta (o fila en una tabla), que proporciona información general del programa y vínculos rápidos para realizar acciones.
 
 ![Tarjeta de programa](assets/program-card.png)
 
 * Imagen del programa (si está configurada)
 * Nombre del programa
-* Tipo de servicio: **Experience Manager Cloud** para [programas de AEM as a Cloud Service](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/home) o **Experience Manager** para programas de AMS
+* Tipo de servicio:
+   * **Experience Manager** para programas de AMS
+   * **Nube de Experience Manager** para [programas de AEM as a Cloud Service](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/home)
 * Estado
 * Soluciones configuradas
 * Fecha de creación
@@ -118,17 +131,13 @@ El icono de puntos suspensivos le permite acceder a acciones adicionales a reali
 * [Edite el programa](/help/getting-started/program-setup.md)
 * Mostrar monitorización
 
-#### Pestaña Licencia {#license-tab}
-
-La pestaña **Licencia** le permite acceder rápidamente al panel de licencias.
-
 ### Vínculos rápidos {#quick-links}
 
 La sección de vínculos rápidos le permite acceder a los recursos relacionados de uso común.
 
 ## Ventana Información del programa {#program-overview}
 
-Una vez que seleccione un programa en la consola Mis programas, accede a la Información general del programa.
+Una vez que seleccione un programa en la consola [**Mis programas**,](#my-programs-console) se le redirigirá a la Información general del programa.
 
 ![Información general del programa](assets/program-overview.png)
 
