@@ -3,9 +3,9 @@ title: Navegación por la IU de Cloud Manager
 description: Descubra cómo está organizada la IU de Cloud Manager y cómo navegar para administrar sus programas y entornos.
 exl-id: 9c1545ce-1c6d-417f-a6f4-fe53caef3433
 source-git-commit: d4d9a9f38c5a969f276140dca98731c670547a3d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1439'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
@@ -28,13 +28,13 @@ Al iniciar sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cl
 La consola Mis programas proporciona información general de todos los programas a los que tiene acceso en la organización seleccionada. Se compone de partes.
 
 1. [Barras de herramientas](#toolbars-my-programs-toolbars) para la selección de organizaciones, alertas y configuración de la cuenta.
-1. Fichas que permiten alternar la vista actual de los programas.
-   * Vista **Inicio** (predeterminada) que selecciona la vista **Mis programas** con una descripción general de todos los programas
-   * **Licencia** que accede al Tablero de licencias. El panel de licencias solo se aplica a programas de AEM as a Cloud Service, no a programas de AMS.
+1. Pestañas que permiten alternar la vista actual de los programas.
+   * Vista **Inicio** (predeterminada) que selecciona la vista **Mis programas** con información general de todos los programas
+   * **Licencia** que accede al Tablero de licencias. El tablero de licencias solo se aplica a programas de AEM as a Cloud Service, no a programas de AMS.
       * Para determinar el tipo de servicio que tiene su programa (AMS o AEMaaCS), consulte la [sección Tarjetas de programa](#program-cards) de este documento.
    * Tenga en cuenta que las pestañas se cierran de forma predeterminada y se pueden mostrar mediante el menú de hamburguesa del [encabezado de Cloud Manager.](#cloud-manager-header)
-1. [Estadísticas y llamadas a la acción](#cta-statistics) para obtener una descripción general de su actividad reciente
-1. [**Mis programas** sección](#my-programs-section) con una descripción general de todos sus programas
+1. [Llamadas a la acción y Estadísticas](#cta-statistics) para obtener información general de su actividad reciente
+1. [**Sección Mis programas**](#my-programs-section) con información general de todos sus programas
 1. [Vínculos rápidos](#quick-links) para acceder fácilmente a los recursos relacionados
 
 >[!TIP]
@@ -51,8 +51,8 @@ El primero es el encabezado de Cloud Manager, que es persistente mientras navega
 
 ![El encabezado de Experience Cloud](assets/experience-cloud-header.png)
 
-1. El menú de hamburguesa que da acceso a las pestañas que pueden llevarte a partes específicas de un programa individual o cambiar entre el Tablero de licencias y la consola **[Mis programas](#my-programs-console)** según el contexto.
-   * El panel de licencias solo se aplica a programas de AEM as a Cloud Service, no a programas de AMS.
+1. El menú de hamburguesa que da acceso a las pestañas que pueden llevarle a partes específicas de un programa individual o cambiar entre el Tablero de licencias y la consola **[Mis programas](#my-programs-console)** según el contexto.
+   * El tablero de licencias solo se aplica a programas de AEM as a Cloud Service, no a programas de AMS.
    * Para determinar el tipo de servicio que tiene su programa (AMS o AEMaaCS), consulte la [sección Tarjetas de programa](#program-cards) de este documento.
 1. El botón Cloud Manager le devolverá a la consola Mis programas de Cloud Manager independientemente de dónde se encuentre en Cloud Manager.
 1. Toque o haga clic en el botón Comentarios para proporcionar comentarios a Adobe sobre Cloud Manager.
@@ -73,9 +73,9 @@ La barra de herramientas del programa proporciona vínculos para cambiar entre l
    * Tenga en cuenta que el recorrido de incorporación está diseñado para AEM as a Cloud Service y no para Cloud Service de AMS, aunque muchos conceptos son los mismos.
 1. El botón de acción ofrece acciones adecuadas al contexto, como crear un nuevo programa.
 
-### Llamadas a la acción y estadísticas {#cta-statistics}
+### Llamadas a la acción y Estadísticas {#cta-statistics}
 
-La sección de estadísticas y llamada a la acción proporciona datos acumulados para su organización. Por ejemplo, si ha configurado correctamente sus programas, pueden mostrarse estadísticas de las actividades de los últimos 90 días, incluidas las siguientes:
+La sección de llamadas a la acción y estadísticas proporciona datos acumulados para su organización. Por ejemplo, si ha configurado correctamente sus programas, pueden mostrarse las estadísticas de sus actividades de los últimos 90 días, entre ellas:
 
 * Número de [implementaciones](/help/using/code-deployment.md)
 * Número de [problemas de calidad del código](/help/using/code-quality-testing.md) identificados
@@ -113,7 +113,7 @@ Cada programa está representado por una tarjeta (o fila en una tabla), que prop
 * Nombre del programa
 * Tipo de servicio:
    * **Experience Manager** para programas de AMS
-   * **Nube de Experience Manager** para [programas de AEM as a Cloud Service](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/home)
+   * **Experience Manager Cloud** para [programas de AEM as a Cloud Service](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/home)
 * Estado
 * Soluciones configuradas
 * Fecha de creación
@@ -137,7 +137,7 @@ La sección de vínculos rápidos le permite acceder a los recursos relacionados
 
 ## Ventana Información del programa {#program-overview}
 
-Una vez que seleccione un programa en la consola [**Mis programas**,](#my-programs-console) se le redirigirá a la Información general del programa.
+Una vez que seleccione un programa en la consola [**Mis programas**,](#my-programs-console) se le redirige a la Información general del programa.
 
 ![Información general del programa](assets/program-overview.png)
 
