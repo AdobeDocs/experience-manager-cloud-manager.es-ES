@@ -3,10 +3,10 @@ title: Notas de la versión 2024.7.0
 description: Estas son las notas de la versión 2024.7.0 de Cloud Manager.
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
-source-git-commit: 87c603a89b99f6984828280cba2041da8c72e839
-workflow-type: ht
+source-git-commit: d7c4c87bbc3c66ca9517c4d0c97e25a2302e1e8a
+workflow-type: tm+mt
 source-wordcount: '238'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -21,7 +21,7 @@ Esta página documenta las notas de la versión 2024.7.0 de [!UICONTROL Cloud Ma
 
 ## Fecha de lanzamiento {#release-date}
 
-La fecha de lanzamiento de la versión 2024.7.0 de [!UICONTROL Cloud Manager] es el 18 de julio de 2024. La próxima versión está planificada para el 8 de agosto de 2024.
+La fecha de lanzamiento de la versión 2024.7.0 de [!UICONTROL Cloud Manager] es el 18 de julio de 2024. La próxima versión está planificada para el 12 de agosto de 2024.
 
 ## Novedades {#what-is-new}
 
