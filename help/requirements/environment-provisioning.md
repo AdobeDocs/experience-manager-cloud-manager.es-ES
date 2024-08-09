@@ -2,10 +2,10 @@
 title: Aprovisionamiento del entorno
 description: Descubra cómo se aprovisionan los entornos como parte del proceso de incorporación de Cloud Manager.
 exl-id: eade4255-89b5-4c65-a498-1c6d4e8c73ff
-source-git-commit: d033b7cf53d4d9faf074f1dc09e2958eb91afe3b
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
-source-wordcount: '314'
-ht-degree: 100%
+source-wordcount: '312'
+ht-degree: 91%
 
 ---
 
@@ -20,7 +20,7 @@ Durante el proceso de incorporación, todos los entornos de la nube de AEM que h
 
 ## Correo electrónico de bienvenida {#welcome-email}
 
-Una vez completado el proceso de aprovisionamiento del entorno, el administrador del cliente designado recibe un correo electrónico de bienvenida con la confirmación de que se les ha concedido acceso a Adobe [!UICONTROL Experience Cloud]. El correo electrónico de bienvenida contiene información detallada sobre cómo empezar a usar los servicios de [!UICONTROL Experience Cloud], los entornos de nube de [!UICONTROL AEM Managed Services], así como el portal de autoservicio [!UICONTROL Cloud Manager]. Además, el correo electrónico contiene información importante, como la información de contacto del ingeniero de éxito del cliente (CSE), dónde buscar recursos de soporte, foros, preguntas frecuentes y mucho más. En la lista de recursos que se proporciona en el correo electrónico, también encontrará detalles sobre cómo acceder a [!UICONTROL Cloud Manager] para los entornos de nube de AEM.
+Una vez completado el proceso de aprovisionamiento del entorno, el administrador del cliente designado recibe un correo electrónico de bienvenida con la confirmación de que se les ha concedido acceso a Adobe [!UICONTROL Experience Cloud]. El correo electrónico de bienvenida contiene información detallada sobre cómo empezar a usar los servicios de [!UICONTROL Experience Cloud AEM], los entornos de nube de [!UICONTROL Managed Services] y el portal de autoservicio [!UICONTROL Cloud Manager]. Además, el correo electrónico contiene información importante, como la información de contacto del ingeniero de éxito del cliente (CSE), dónde buscar recursos de soporte, foros, preguntas frecuentes y mucho más. En la lista de recursos que se proporciona en el correo electrónico, también encontrará detalles sobre cómo acceder a [!UICONTROL Cloud Manager] para los entornos de nube de AEM.
 
 ## Pasos siguientes {#next-steps}
 

@@ -2,9 +2,9 @@
 title: Uso de varios repositorios de Git
 description: En lugar de trabajar directamente con el repositorio de Git de Cloud Manager, aprenda cómo puede trabajar con su propio repositorio de Git o con varios.
 exl-id: 53bf78bb-489a-4a83-8459-c361f532d54a
-source-git-commit: da9dff997a277c207e2c48207217cb30325f3c0d
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
-source-wordcount: '756'
+source-wordcount: '752'
 ht-degree: 100%
 
 ---
@@ -115,7 +115,7 @@ jobs:
           git -C main push
 ```
 
-Como se muestra arriba, el uso de una acción de GitHub es muy flexible. Se puede ejecutar cualquier asignación entre ramas de los repositorios de Git, así como cualquier asignación de los proyectos de Git independientes al diseño de directorios del proyecto principal.
+Como se muestra arriba, el uso de una acción de GitHub es muy flexible. Se puede realizar cualquier asignación entre ramas de los repositorios de Git y cualquier asignación de los proyectos de Git independientes al diseño de directorio del proyecto principal.
 
 >[!NOTE]
 >
@@ -181,7 +181,7 @@ git commit -F ../commit.txt
 git push
 ```
 
-Como se ha mostrado anteriormente, el uso de un trabajo de Jenkins es muy flexible. Se puede ejecutar cualquier asignación entre ramas de los repositorios de Git, así como cualquier asignación de los proyectos de Git independientes al diseño de directorios del proyecto principal.
+Como se ha mostrado anteriormente, el uso de un trabajo de Jenkins es muy flexible. Se puede realizar cualquier asignación entre ramas de los repositorios de Git y cualquier asignación de los proyectos de Git independientes al diseño de directorio del proyecto principal.
 
 >[!NOTE]
 >

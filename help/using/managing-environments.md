@@ -2,10 +2,10 @@
 title: Administración de entornos
 description: Aprenda a utilizar Cloud Manager para administrar sus entornos.
 exl-id: 700b0b4c-1e1a-4993-b366-426b14a98f8e
-source-git-commit: 116a930eea08b2bb9d288ec153519699754e0374
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
-source-wordcount: '277'
-ht-degree: 100%
+source-wordcount: '275'
+ht-degree: 94%
 
 ---
 
@@ -37,7 +37,7 @@ El estado es el resultado de la energía resumido en los nodos del entorno en el
 
 ## Administración de entornos {#managing-environments-with-cloud-manager}
 
-En el mosaico **Entornos**, pulse o haga clic en la fila de cualquier entorno para mostrar la pantalla **Entornos**.
+En el mosaico **Entornos**, haga clic en la fila de cualquier entorno para mostrar la pantalla **Entornos**.
 
 La pantalla **Entornos** muestra una tarjeta para los entornos de producción y ensayo de su programa. El nombre del entorno se muestra encima de cada tarjeta. La tarjeta incluye una tabla de nodos en el entorno junto con el tamaño de la CPU, el almacenamiento, la región y el estado.
 

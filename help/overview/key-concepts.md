@@ -2,10 +2,10 @@
 title: Conceptos clave
 description: Al igual que todas las herramientas potentes, Cloud Manager engloba muchos conceptos y términos. Este documento resume algunos de los más importantes para usted a medida que comienza a utilizarlo.
 exl-id: 86dfc976-f3da-479a-9faa-08f40ca909e0
-source-git-commit: 67621fb2dbb0c32371b2ffc16ec45f47daf04e05
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
 source-wordcount: '413'
-ht-degree: 100%
+ht-degree: 70%
 
 ---
 
@@ -16,9 +16,9 @@ Al igual que todas las herramientas potentes, Cloud Manager engloba muchos conce
 
 ## Aplicación {#application}
 
-Una aplicación es el conjunto de personalizaciones y configuraciones creadas por un cliente para adaptar la [solución](#solution) subyacente (como AEM Sites o AEM Assets) para sus casos de uso y necesidades específicos. Una aplicación es una unidad lógica que puede estar compuesta por varios [artefactos.](#artifact)
+Una aplicación es el conjunto de personalizaciones y configuraciones creadas por un cliente para adaptar la [solución](#solution) subyacente (como AEM Sites o AEM Assets) para sus casos de uso y necesidades específicos. Una aplicación es una unidad lógica que puede estar compuesta por varios [artefactos](#artifact).
 
-Una aplicación de ejemplo es la [aplicación de estilo de vida ficticia WKND.](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=es)
+Una aplicación de ejemplo es la aplicación de estilo de vida [WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=es) ficticia.
 
 ## Artefacto {#artifact}
 
@@ -30,15 +30,15 @@ Un repositorio de artefactos es un lugar de almacenamiento en el que se guardan 
 
 ## Entorno {#environment}
 
-Un entorno es un único clúster de máquinas virtuales dentro de un [programa.](#program) Para AEM, se compone de una instancia de creación (opcionalmente con una instancia de creación de espera pasiva adicional), cero o más instancias de publicación, una o más instancias de Dispatcher y un equilibrador de carga.
+Un entorno es un único clúster de máquinas virtuales dentro de un [programa](#program). AEM Por ejemplo, se compone de una instancia de creación (opcionalmente con una instancia de creación de espera pasiva adicional), cero o más instancias de publicación, una o más instancias de Dispatcher y un equilibrador de carga.
 
 ## Repositorio de Git {#git-repository}
 
-Un repositorio de Git es una ubicación donde el código fuente específico del cliente se almacena y es accesible [usando Git.](https://git-scm.com)
+Un repositorio de Git es una ubicación donde se almacena código fuente específico del cliente y se puede acceder a [usando Git](https://git-scm.com).
 
 ## Instancia {#instance}
 
-Una instancia es un servidor virtual específico que ejecuta la [solución de AEM.](#solution) Las instancias representan una sola unidad lógica desde la perspectiva de la implementación.
+AEM Una instancia es un servidor virtual específico que ejecuta la [solución](#solution) de la. Las instancias representan una sola unidad lógica desde la perspectiva de la implementación.
 
 ## Organización {#organization}
 
@@ -62,4 +62,4 @@ Una solución es la que ofrece Adobe [!UICONTROL Experience Cloud]. Por ejemplo,
 
 ## Etapa {#step}
 
-Un paso es un conjunto de instrucciones configurado que logra alguna unidad de trabajo como componente básico de una [canalización.](#pipeline)
+Un paso es un conjunto de instrucciones configurado que logra alguna unidad de trabajo como componente básico de una [canalización](#pipeline).

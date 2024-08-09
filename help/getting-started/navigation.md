@@ -2,10 +2,10 @@
 title: Navegación por la IU de Cloud Manager
 description: Descubra cómo está organizada la IU de Cloud Manager y cómo navegar para administrar sus programas y entornos.
 exl-id: 9c1545ce-1c6d-417f-a6f4-fe53caef3433
-source-git-commit: d4d9a9f38c5a969f276140dca98731c670547a3d
-workflow-type: ht
-source-wordcount: '1439'
-ht-degree: 100%
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
+workflow-type: tm+mt
+source-wordcount: '1410'
+ht-degree: 80%
 
 ---
 
@@ -32,14 +32,14 @@ La consola Mis programas proporciona información general de todos los programas
    * Vista **Inicio** (predeterminada) que selecciona la vista **Mis programas** con información general de todos los programas
    * **Licencia** que accede al Tablero de licencias. El tablero de licencias solo se aplica a programas de AEM as a Cloud Service, no a programas de AMS.
       * Para determinar el tipo de servicio que tiene su programa (AMS o AEMaaCS), consulte la [sección Tarjetas de programa](#program-cards) de este documento.
-   * Tenga en cuenta que las pestañas se cierran de forma predeterminada y se pueden mostrar mediante el menú de hamburguesa del [encabezado de Cloud Manager.](#cloud-manager-header)
+   * Tenga en cuenta que las pestañas se cierran de forma predeterminada y se pueden mostrar mediante el menú de hamburguesa del [encabezado de Cloud Manager](#cloud-manager-header).
 1. [Llamadas a la acción y Estadísticas](#cta-statistics) para obtener información general de su actividad reciente
 1. [**Sección Mis programas**](#my-programs-section) con información general de todos sus programas
 1. [Vínculos rápidos](#quick-links) para acceder fácilmente a los recursos relacionados
 
 >[!TIP]
 >
->Consulte el documento [Programas y tipos de programas](/help/getting-started/program-setup.md) para obtener más información sobre los programas.
+>Consulte [Programas y tipos de programas](/help/getting-started/program-setup.md) para obtener más información sobre los programas.
 
 ### Barras de herramientas {#my-programs-toolbars}
 
@@ -55,11 +55,11 @@ El primero es el encabezado de Cloud Manager, que es persistente mientras navega
    * El tablero de licencias solo se aplica a programas de AEM as a Cloud Service, no a programas de AMS.
    * Para determinar el tipo de servicio que tiene su programa (AMS o AEMaaCS), consulte la [sección Tarjetas de programa](#program-cards) de este documento.
 1. El botón Cloud Manager le devolverá a la consola Mis programas de Cloud Manager independientemente de dónde se encuentre en Cloud Manager.
-1. Toque o haga clic en el botón Comentarios para proporcionar comentarios a Adobe sobre Cloud Manager.
-1. El selector de organización muestra la organización en la que está conectado actualmente (en este ejemplo, Foundation Internal). Toque o haga clic para cambiar a otra organización si su Adobe ID está asociado a varias.
-1. Al tocar o hacer clic en el conmutador de soluciones, puede ir rápidamente a otras soluciones de Experience Cloud.
+1. Haga clic en el botón Comentarios para proporcionar comentarios al Adobe sobre Cloud Manager.
+1. El selector de organización muestra la organización en la que está conectado actualmente (en este ejemplo, Foundation Internal). Haga clic en para cambiar a otra organización si Adobe ID está asociado a varias.
+1. Al hacer clic en el conmutador de soluciones, puede ir rápidamente a otras soluciones de Experience Cloud.
 1. El icono de ayuda proporciona acceso rápido a los recursos de aprendizaje y asistencia.
-1. El icono de notificaciones se muestra con la cantidad de [notificaciones](/help/using/notifications.md) incompletas asignadas actualmente.
+1. El icono de notificaciones está marcado con el número de [notificaciones](/help/using/notifications.md) incompletas asignadas actualmente
 1. Seleccione el icono que representa a su usuario para acceder a la configuración. Si no tiene una imagen de usuario configurada, se le asigna un icono de forma aleatoria.
 
 #### Barra de herramientas del programa {#program-toolbar}
@@ -85,7 +85,7 @@ O si acaba de comenzar la configuración de su organización, puede haber sugere
 
 ### Sección Mis programas {#my-programs-section}
 
-El contenido principal de la consola Mis programas es la sección **Mis programas** que enumera sus programas como tarjetas individuales. Toque o haga clic en una tarjeta para acceder a la página **información general del programa** para obtener más información sobre el programa.
+El contenido principal de la consola Mis programas es la sección **Mis programas** que enumera sus programas como tarjetas individuales. Haz clic en una tarjeta para acceder a la página **Resumen del programa** para obtener detalles sobre el programa.
 
 >[!NOTE]
 >
@@ -137,7 +137,7 @@ La sección de vínculos rápidos le permite acceder a los recursos relacionados
 
 ## Ventana Información del programa {#program-overview}
 
-Una vez que seleccione un programa en la consola [**Mis programas**,](#my-programs-console) se le redirige a la Información general del programa.
+Una vez que haya seleccionado un programa en la consola [**Mis programas**](#my-programs-console), accederá a Información general del programa.
 
 ![Información general del programa](assets/program-overview.png)
 
@@ -152,7 +152,7 @@ La descripción general del programa le permite acceder a todos los detalles de 
 
 ### Barras de herramientas {#program-overview-toolbar}
 
-Las barras de herramientas para la información general del programa son muy similares a las de la [consola Mis programas.](#my-programs-toolbars) Aquí solo se ilustran las diferencias.
+Las barras de herramientas de la descripción general del programa son muy similares a las de la consola [Mis programas](#my-programs-toolbars). Aquí solo se ilustran las diferencias.
 
 #### Encabezado de Cloud Manager {#cloud-manager-header-2}
 
@@ -160,7 +160,7 @@ El encabezado de Cloud Manager tiene un menú de hamburguesa que se abre automá
 
 ![Menú de hamburguesa de Cloud Manager](assets/cloud-manager-hamburger.png)
 
-Toque o haga clic en el icono de menú de hamburguesa para ocultar las pestañas.
+Haga clic en el icono de menú de hamburguesa para ocultar las pestañas.
 
 #### Barra de herramientas del programa {#program-toolbar-2}
 
@@ -190,7 +190,7 @@ Utilice el menú de hamburguesa de la [Encabezado de Cloud Manager](#cloud-manag
 
 ### Llamada a la acción {#cta}
 
-La sección de llamada a la acción le proporcionará información útil según el estado del programa. Para un programa nuevo, puede ver los pasos siguientes ofrecidos, así como un recordatorio de una fecha de lanzamiento, [se configura durante la creación del programa.](/help/getting-started/program-setup.md)
+La sección de llamada a la acción le proporcionará información útil según el estado del programa. Para un programa nuevo, es posible que vea los pasos siguientes ofrecidos y un recordatorio de una fecha de lanzamiento, [establecida durante la creación del programa](/help/getting-started/program-setup.md).
 
 Para un programa activo, el estado de la última implementación con vínculos para obtener más información e iniciar una nueva implementación.
 
@@ -198,19 +198,19 @@ Para un programa activo, el estado de la última implementación con vínculos p
 
 ### Tarjeta Entornos {#environments}
 
-La tarjeta **Entornos** le ofrece una descripción general de sus entornos, así como vínculos para acciones rápidas.
+La tarjeta **Entornos** le ofrece una descripción general de sus entornos y vínculos para realizar acciones rápidas.
 
 La tarjeta **Entornos** solo enumera tres entornos. Haga clic en **Mostrar todo** para ver todos los entornos del programa.
 
-Consulte el documento [Administración de entornos](/help/using/managing-environments.md) para obtener más información sobre cómo administrar los entornos.
+Consulte [Administración de entornos](/help/using/managing-environments.md) para obtener detalles sobre cómo administrar sus entornos.
 
 ### Tarjeta de canalizaciones {#pipelines}
 
-La tarjeta de **Canalizaciones** le ofrece una descripción general de sus canalizaciones, así como vínculos para acciones rápidas.
+La tarjeta **Canalizaciones** le ofrece una descripción general de sus canalizaciones y vínculos para realizar acciones rápidas.
 
 La tarjeta **Canalizaciones** solo enumera tres canalizaciones. Haga clic en **Mostrar todo** para ver todas las canalizaciones del programa.
 
-Consulte el documento [Administración de canalizaciones](/help/using/managing-pipelines.md) para obtener más información sobre cómo administrar las canalizaciones.
+Consulte [Administración de canalizaciones](/help/using/managing-pipelines.md) para obtener detalles sobre cómo administrar sus canalizaciones.
 
 ### Recursos útiles {#useful-resources}
 

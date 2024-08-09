@@ -2,10 +2,10 @@
 title: La herramienta Copia de contenido
 description: La herramienta de copia de contenido de Cloud Manager permite a los usuarios copiar contenido mutable bajo demanda desde sus entornos de producción de AEM 6.x alojados en AMS a entornos inferiores para realizar pruebas.
 exl-id: 97915e58-a1d3-453f-b5ce-cad55ed73262
-source-git-commit: 655111cdf7327e92e03ac7eedd9eedd87cd4b2f1
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
-source-wordcount: '1120'
-ht-degree: 100%
+source-wordcount: '1096'
+ht-degree: 87%
 
 ---
 
@@ -47,39 +47,39 @@ Para poder copiar cualquier contenido, se debe definir un conjunto de contenido.
 
 1. Vaya a la página **Conjuntos de contenido** en la pantalla **Entornos**.
 
-1. Pulse o haga clic en el botón **Añadir conjunto de contenido** en la parte superior derecha de la pantalla.
+1. Haga clic en el botón **Agregar conjunto de contenido** en la parte superior derecha de la pantalla.
 
    ![Conjuntos de contenido](/help/assets/content-sets.png)
 
-1. En la pestaña **Detalles** del asistente, proporcione un nombre y una descripción para el conjunto de contenido y pulse o haga clic en **Continuar**.
+1. En la ficha **Detalles** del asistente, proporcione un nombre y una descripción para el conjunto de contenido y haga clic en **Continuar**.
 
    ![Detalles del conjunto de contenido](/help/assets/add-content-set-details.png)
 
 1. En la pestaña **Rutas de contenido** del asistente, especifique las rutas del contenido mutable que se incluirán en el conjunto de contenido.
 
    1. Introduzca la ruta en el campo **Añadir ruta de inclusión**.
-   1. Pulse o haga clic en el botón **Añadir ruta** para agregar la ruta al conjunto de contenido.
-   1. Pulse o haga clic de nuevo en el botón **Añadir ruta** cuando sea necesario.
+   1. Haga clic en el botón **Agregar ruta** para agregar la ruta al conjunto de contenido.
+   1. Vuelva a hacer clic en el botón **Agregar ruta** según sea necesario.
 
    ![Añadir rutas al conjunto de contenido](/help/assets/add-content-set-paths.png)
 
 1. Si es necesario precisar o restringir el conjunto de contenido, se pueden excluir las subrutas.
 
-   1. En la lista de rutas incluidas, pulse o haga clic en el botón **Añadir subrutas de exclusión** junto a la ruta que debe restringir.
+   1. En la lista de rutas incluidas, haga clic en el icono **Agregar subrutas de exclusión** situado junto a la ruta que debe restringir.
    1. Introduzca la subruta que se excluirá debajo de la ruta seleccionada.
-   1. Pulse o haga clic en **Excluir ruta**.
-   1. Pulse o haga clic en **Añadir subrutas de exclusión** para agregar rutas adicionales para excluir según sea necesario.
+   1. Haga clic en **Excluir ruta**.
+   1. Vuelva a hacer clic en **Agregar subrutas de exclusión** para agregar rutas adicionales que se excluirán según sea necesario.
 
    ![Exclusión de rutas](/help/assets/add-content-set-paths-excluded.png)
 
 1. Si es necesario, puede modificar las rutas especificadas.
 
-   1. Pulse o haga clic en la X situada junto a las subrutas excluidas para eliminarlas.
-   1. Pulse o haga clic en el botón de puntos suspensivos situado junto a las rutas para mostrar las opciones **Editar** y **Eliminar**.
+   1. Haga clic en la X situada junto a las subrutas excluidas para eliminarlas.
+   1. Haga clic en el botón de los tres puntos situado junto a las rutas para mostrar las opciones **Editar** y **Eliminar**.
 
    ![Edición de la lista de rutas](/help/assets/add-content-set-excluded-paths.png)
 
-1. Pulse o haga clic en **Crear** para crear el conjunto de contenido.
+1. Haga clic en **Crear** para crear el conjunto de contenido.
 
 A partir de ahora, se puede utilizar el conjunto de contenido para copiar contenido entre entornos.
 
@@ -90,7 +90,7 @@ A partir de ahora, se puede utilizar el conjunto de contenido para copiar conten
 
 ## Edición de un conjunto de contenido {#edit-content-set}
 
-Siga los mismos pasos que para la creación de un paso de contenido. En lugar de pulsar o hacer clic en **Añadir conjunto de contenido**, seleccione un conjunto existente de la consola y seleccione **Editar** en el menú de puntos suspensivos.
+Siga los mismos pasos que para la creación de un paso de contenido. En lugar de hacer clic en **Agregar conjunto de contenido**, seleccione un conjunto existente de la consola y seleccione **Editar** del menú de los tres puntos.
 
 ![Editar conjunto de contenido](/help/assets/edit-content-set.png)
 
@@ -125,7 +125,7 @@ Una vez creado un conjunto de contenido, puede utilizarlo para copiar contenido.
 
    ![Copia de contenido](/help/assets/copying-content.png)
 
-1. Pulse o haga clic en **Copiar**.
+1. Haga clic en **Copiar**.
 
 Se inicia el proceso de copia. El estado del proceso de copia se refleja en la consola del conjunto de contenido seleccionado.
 

@@ -2,10 +2,10 @@
 title: Configuración del programa
 description: Después de la incorporación, el propietario de la empresa tendrá que llevar a cabo alguna configuración inicial del programa.
 exl-id: 795c7112-d564-4fbf-96a1-152a6c286bf2
-source-git-commit: 6572c16aea2c5d2d1032ca5b0f5d75ade65c3a19
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
-source-wordcount: '586'
-ht-degree: 99%
+source-wordcount: '584'
+ht-degree: 91%
 
 ---
 
@@ -70,7 +70,7 @@ Los programas se pueden editar una vez configurados. Siga estos pasos para edita
 
 Tenga en cuenta que los cambios se guardan inmediatamente en Cloud Manager, pero no se reflejarán en los entornos hasta que se ejecute la próxima canalización.
 
-Si aún no ha creado una canalización, consulte los documentos [Configuración de canalizaciones de producción](/help/using/production-pipelines.md) y [Configuración de canalizaciones que no son de producción.](/help/using/non-production-pipelines.md)
+Si todavía no ha creado una canalización, consulte los documentos [Configuración de canalizaciones de producción](/help/using/production-pipelines.md) y [Configuración de canalizaciones que no son de producción](/help/using/non-production-pipelines.md).
 
 ## Cambio entre programas {#swithing-programs}
 
@@ -86,7 +86,7 @@ Los indicadores clave de rendimiento (KPI) de sitios se miden en pruebas ejecuta
 
 Por ejemplo, si un usuario espera un promedio de 1000 vistas de página por minuto en su entorno de producción y tiene cuatro servidores de Dispatcher/Publicación en producción, debe escalarlo a 250 vistas de página por minuto. Esto supone que su entorno de ensayo consiste únicamente en un único par de servidor de Dispatcher/Publicación.
 
-La prueba de rendimiento de los activos se realiza cargándolos repetidamente durante un período de 30 minutos y midiendo el tiempo de procesamiento de cada uno, así como varias métricas de nivel del sistema.
+Las pruebas de rendimiento de Assets se realizan cargando recursos repetidamente durante un período de 30 minutos y midiendo el tiempo de procesamiento de cada recurso y de varias métricas de nivel del sistema.
 
 Puede tener una red de distribución de contenido (CDN) como Akamai o CloudFront delante del entorno de producción. Como [!UICONTROL Cloud Manager] prueba directamente en el entorno de ensayo, los KPI deben reflejar únicamente el tráfico que se espera que pase a través de la red de distribución de contenido (CDN), es decir, los fallos de la caché. Esto suele ser un subconjunto relativamente pequeño del tráfico total de producción.
 

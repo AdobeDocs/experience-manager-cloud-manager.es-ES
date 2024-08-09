@@ -2,10 +2,10 @@
 title: Anotaciones de comprobación de GitHub
 description: Descubra cómo GitHub comprueba las PR de anotación de sus repositorios privados para proporcionarle comentarios útiles.
 exl-id: 15178de8-8a8a-4300-8510-88875ad0fc8c
-source-git-commit: 210d40a5e12b40fd84efc461c6a1c48559120837
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
-source-wordcount: '252'
-ht-degree: 100%
+source-wordcount: '251'
+ht-degree: 86%
 
 ---
 
@@ -24,7 +24,7 @@ Los problemas de [calidad de código](/help/using/code-quality-testing.md) detec
 
 ![Ejemplo de anotación de problema de código](assets/github-check-annotations-example.png)
 
-Se proporciona la línea exacta de código donde está el problema para que pueda hacer clic en ella y ver el código afectado. Estas anotaciones se proporcionan para todos los problemas de código, no solo los modificados en la solicitud de extracción.
+Se proporciona la línea de código exacta con el problema y puede hacer clic en él para mostrar el código correspondiente. Estas anotaciones se proporcionan para todos los problemas de código, no solo los modificados en la solicitud de extracción.
 
 ![Ejemplo de anotación de problema de código](assets/github-check-annotations-example-code.png)
 
@@ -40,4 +40,4 @@ Los resultados de [calidad de código](/help/using/code-quality-testing.md) tamb
 
 ![Ejemplo de anotaciones](assets/github-check-annotations-code-quality-2.png)
 
-También puede visualizar los problemas en formato CSV. Esto se puede recuperar [viendo los detalles de la ejecución de canalización en Cloud Manager.](/help/using/managing-pipelines.md)
+También puede visualizar los problemas en formato CSV. Esto se puede recuperar [viendo los detalles de la ejecución de la canalización en Cloud Manager](/help/using/managing-pipelines.md).

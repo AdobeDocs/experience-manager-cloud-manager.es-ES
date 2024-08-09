@@ -2,10 +2,10 @@
 title: Prueba de calidad del código
 description: Descubra cómo funcionan las pruebas de calidad del código de las canalizaciones y cómo pueden mejorar la calidad de las implementaciones.
 exl-id: 6a574858-a30e-4768-bafc-8fe79f928294
-source-git-commit: fadcf560f08bf16d0d18172c620a450d0cb06225
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
-source-wordcount: '2778'
-ht-degree: 61%
+source-wordcount: '2763'
+ht-degree: 57%
 
 ---
 
@@ -46,11 +46,11 @@ Las pruebas de calidad del código analizan el código fuente para asegurarse de
 
 El software lo implementa mediante una combinación de análisis SonarQube, examen de nivel de paquete de contenido con OakPAL y validación de Dispatcher con la herramienta de optimización de Dispatcher.
 
-AEM Hay más de 100 reglas que combinan reglas genéricas de Java y reglas específicas de la. Algunas de las reglas específicas de AEM se crean en función de las prácticas recomendadas de AEM Engineering y se denominan [Reglas de calidad de código personalizadas.](/help/using/custom-code-quality-rules.md)
+AEM Hay más de 100 reglas que combinan reglas genéricas de Java y reglas específicas de la. AEM AEM Algunas de las reglas específicas de la se crean en función de las prácticas recomendadas de ingeniería de códigos de la aplicación y se denominan [Reglas de calidad de código personalizadas](/help/using/custom-code-quality-rules.md).
 
 >[!TIP]
 >
->Puede descargar la lista completa de reglas [mediante este vínculo.](/help/assets/CodeQuality-rules-latest-AMS.xlsx)
+>Puede descargar la lista completa de reglas [mediante este vínculo](/help/assets/CodeQuality-rules-latest-AMS.xlsx).
 
 Los resultados de las pruebas de calidad del código se muestran como una clasificación resumida en esta tabla.
 
@@ -62,7 +62,7 @@ Los resultados de las pruebas de calidad del código se muestran como una clasif
 | Cobertura | Definido por una combinación de cobertura de línea de prueba unitaria y cobertura de condición mediante la fórmula: <br/>`Coverage = (CT + CF + LC) / (2 * B + EL)`  <ul><li>`CT` = Condiciones que se han evaluado como `true` al menos una vez al ejecutar las pruebas unitarias</li><li>`CF` = Condiciones que se han evaluado como `false` al menos una vez al ejecutar las pruebas unitarias</li><li>`LC` = Líneas cubiertas = líneas_por_cubrir - líneas_descubiertas</li><li>`B` = número total de condiciones</li><li>`EL` = número total de líneas ejecutables (líneas_por_cubrir)</li></ul> | Importante | &lt; 50% |
 | Pruebas unitarias omitidas | Número de pruebas unitarias omitidas | Información | > 1 |
 | Problemas abiertos | Tipos de problemas generales: Vulnerabilidades, errores y huecos de código | Información | > 0 |
-| Líneas duplicadas | Se define como el número de líneas involucradas en bloques duplicados. Un bloque de código se considera duplicado en las siguientes condiciones.<br>Proyectos que no son de Java:<ul><li>Debe haber al menos 100 tokens sucesivos y duplicados.</li><li>Estos tokens deben propagarse por lo menos: </li><li>30 líneas de código para COBOL </li><li>20 líneas de código para ABAP </li><li>10 líneas de código para otros idiomas</li></ul>Proyectos Java:<ul></li><li> Debe haber al menos 10 instrucciones sucesivas y duplicadas, independientemente del número de tokens y líneas.</li></ul>Las diferencias en la sangría y en los literales de cadena se ignoran al detectar duplicados. | Información | > 1 % |
+| Líneas duplicadas | Se define como el número de líneas involucradas en bloques duplicados. Un bloque de código se considera duplicado en las siguientes condiciones.<br>Proyectos que no son de Java:<ul><li>Debe haber al menos 100 tokens sucesivos y duplicados.</li><li>Estos tokens deben propagarse por lo menos: </li><li>30 líneas de código para COBOL </li><li>20 líneas de código para ABAP </li><li>10 líneas de código para otros idiomas</li></ul>Proyectos Java:<ul></li><li> Debe haber al menos 10 instrucciones sucesivas y duplicadas, independientemente del número de tokens y líneas.</li></ul>Las diferencias en la sangría, así como en los literales de cadena, se omiten al detectar duplicados. | Información | > 1 % |
 | Compatibilidad de Cloud Service | Número de problemas de compatibilidad de Cloud Service identificados | Información | > 0 |
 
 >[!NOTE]
@@ -71,7 +71,7 @@ Los resultados de las pruebas de calidad del código se muestran como una clasif
 
 >[!NOTE]
 >
->Para obtener más información sobre las reglas de calidad de código personalizadas ejecutadas por [!UICONTROL Cloud Manager], consulte el documento [Reglas de calidad de código personalizadas.](custom-code-quality-rules.md)
+>Para obtener más información acerca de las reglas de calidad de código personalizadas ejecutadas por [!UICONTROL Cloud Manager], vea [Reglas de calidad de código personalizadas](custom-code-quality-rules.md).
 
 ### Tratar con falsos positivos {#dealing-with-false-positives}
 
@@ -172,7 +172,7 @@ Tres conjuntos de páginas seleccionan las páginas. Cloud Manager utiliza los r
 
 ##### Distribución del tráfico entre conjuntos de páginas seleccionados {#distribution-of-traffic}
 
-Puede elegir entre uno y los tres conjuntos de la pestaña **Pruebas** de su [configuración de canalización.](/help/using/production-pipelines.md) La distribución del tráfico se basa en el número de conjuntos seleccionados. Es decir, si se seleccionan los tres, se coloca el 33 % del total de vistas de página en cada conjunto. Si se seleccionan dos, va el 50 % a cada conjunto. Si se selecciona uno, el 100 % del tráfico se destina a ese conjunto.
+Puede elegir entre uno y los tres conjuntos de la ficha **Pruebas** de su [configuración de canalización](/help/using/production-pipelines.md). La distribución del tráfico se basa en el número de conjuntos seleccionados. Es decir, si se seleccionan los tres, se coloca el 33 % del total de vistas de página en cada conjunto. Si se seleccionan dos, va el 50 % a cada conjunto. Si se selecciona uno, el 100 % del tráfico se destina a ese conjunto.
 
 Consideremos este ejemplo.
 
@@ -188,7 +188,7 @@ Durante el período de prueba de 30 minutos, sucede lo siguiente:
 
 #### Pruebas y creación de informes {#testing-reporting}
 
-Cloud Manager ejecuta pruebas de rendimiento para programas de AEM Sites solicitando páginas como un usuario no autenticado de forma predeterminada en el servidor de publicación de ensayo durante un período de prueba de 30 minutos. Mide las métricas generadas por el usuario virtual (tiempo de respuesta, tasa de error, vistas por minuto, etc.) para cada página, así como varias métricas de nivel de sistema (CPU, memoria, datos de red) para todas las instancias.
+Cloud Manager ejecuta pruebas de rendimiento para programas de AEM Sites solicitando páginas como un usuario no autenticado de forma predeterminada en el servidor de publicación de ensayo durante un período de prueba de 30 minutos. Mide las métricas generadas por el usuario virtual (tiempo de respuesta, tasa de error, vistas por minuto, etc.) para cada página y varias métricas de nivel de sistema (CPU, memoria, datos de red) para todas las instancias.
 
 En la tabla siguiente se resume la matriz de prueba de rendimiento utilizando el sistema de acceso de tres niveles.
 
@@ -204,7 +204,7 @@ En la tabla siguiente se resume la matriz de prueba de rendimiento utilizando el
 | Utilización del ancho de banda de red | Importante | >= 90% |
 | Solicitudes por minuto | Información | >= 6000 |
 
-Consulte la sección [Pruebas de rendimiento autenticadas](#authenticated-performance-testing) para obtener más información sobre el uso de la autenticación básica para las pruebas de rendimiento de Sites y Assets.
+Consulte [Pruebas de rendimiento autenticadas](#authenticated-performance-testing) para obtener más información sobre el uso de la autenticación básica para las pruebas de rendimiento de Sites y Assets.
 
 >[!NOTE]
 >
@@ -250,7 +250,7 @@ Por ejemplo, si se utiliza una división 70/30 y hay 10 recursos cargados por mi
 
 #### Pruebas y creación de informes {#testing-and-reporting}
 
-Cloud Manager crea una carpeta en la instancia de autor utilizando el nombre de usuario y la contraseña que configuró el CSE. A continuación, los recursos se cargan en la carpeta mediante una biblioteca de código abierto. Las pruebas ejecutadas por el paso de prueba de Assets se escriben mediante una [biblioteca de código abierto.](https://github.com/adobe/toughday2) Tanto el tiempo de procesamiento de cada recurso como diversas métricas de nivel de sistema se miden en la duración de las pruebas de 30 minutos. Esta función puede cargar imágenes y documentos de PDF.
+Cloud Manager crea una carpeta en la instancia de autor utilizando el nombre de usuario y la contraseña que configuró el CSE. A continuación, los recursos se cargan en la carpeta mediante una biblioteca de código abierto. Las pruebas ejecutadas por el paso de prueba de Assets se escriben mediante una [biblioteca de código abierto](https://github.com/adobe/toughday2). Tanto el tiempo de procesamiento de cada recurso como diversas métricas de nivel de sistema se miden en la duración de las pruebas de 30 minutos. Esta función puede cargar imágenes y documentos de PDF.
 
 >[!TIP]
 >
@@ -298,7 +298,7 @@ Si los únicos elementos dentro de `myco-all-1.0.0-SNAPSHOT.zip` son los dos paq
 
 Para los proyectos que producen decenas de paquetes incrustados, se ha demostrado que esta optimización ahorra más de 10 minutos por ejecución de canalización.
 
-Se puede producir un caso especial cuando el paquete de contenido “todo” contiene una combinación de paquetes de contenido omitidos y paquetes OSGi. Por ejemplo, si `myco-all-1.0.0-SNAPSHOT.zip` contenía los dos paquetes incrustados mencionados anteriormente, así como uno o más paquetes OSGi, luego se construye un nuevo paquete de contenido mínimo con solo los paquetes OSGi. Este paquete siempre tiene el nombre `cloudmanager-synthetic-jar-package` y los paquetes contenidos se colocan en `/apps/cloudmanager-synthetic-installer/install`.
+Se puede producir un caso especial cuando el paquete de contenido “todo” contiene una combinación de paquetes de contenido omitidos y paquetes OSGi. Por ejemplo, si `myco-all-1.0.0-SNAPSHOT.zip` contenía los dos paquetes incrustados mencionados anteriormente, así como uno o más paquetes OSGi, entonces se construye un nuevo paquete de contenido mínimo con solo los paquetes OSGi. Este paquete siempre tiene el nombre `cloudmanager-synthetic-jar-package` y los paquetes contenidos se colocan en `/apps/cloudmanager-synthetic-installer/install`.
 
 >[!NOTE]
 >

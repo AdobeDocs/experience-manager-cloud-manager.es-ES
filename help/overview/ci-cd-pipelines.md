@@ -2,10 +2,10 @@
 title: Canalizaciones de CI/CD
 description: Obtenga información acerca de las canalizaciones de CI/CD y cómo administran las implementaciones en entornos de ensayo y producción en Cloud Manager.
 exl-id: 7130e5b7-6986-48c8-900c-90f3e4187f91
-source-git-commit: 6572c16aea2c5d2d1032ca5b0f5d75ade65c3a19
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
 source-wordcount: '562'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -41,7 +41,7 @@ Este diagrama ilustra lo que sucede una vez que se activa una versión en [!UICO
 
 ### Configuración de una canalización de CI/CD {#how-to-setup-a-ci-cd-pipeline}
 
-Para obtener más información acerca de la configuración de la canalización, consulte los documentos [Configuración de canalizaciones de producción](/help/using/production-pipelines.md) y [Configuración de canalizaciones que no son de producción.](/help/using/non-production-pipelines.md)
+Para obtener más información acerca de la configuración de la canalización, consulte los documentos [Configuración de canalizaciones de producción](/help/using/production-pipelines.md) y [Configuración de canalizaciones que no son de producción](/help/using/non-production-pipelines.md).
 
 ## Puertas de calidad {#quality-gates}
 

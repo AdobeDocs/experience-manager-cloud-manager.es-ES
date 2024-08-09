@@ -2,10 +2,10 @@
 title: Información de acceso al repositorio
 description: Obtenga información sobre cómo acceder y gestionar sus repositorios de Git administrados por Adobe mediante la administración de cuentas de Git de autoservicio desde Cloud Manager.
 exl-id: 1cc88c82-67c7-4553-a1b8-d2ab22be466c
-source-git-commit: e93285f7c7495ec9d2f11d289adaf6aaba7e58ea
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
-source-wordcount: '400'
-ht-degree: 100%
+source-wordcount: '394'
+ht-degree: 82%
 
 ---
 
@@ -23,7 +23,7 @@ Cloud Manager facilita la recuperación de la información de acceso al reposito
 
    ![Botón Información de acceso al repositorio en la tarjeta Entornos](assets/pipelines-card.png)
 
-1. Pulse o haga clic en el botón **Información de acceso al repositorio** para abrir el cuadro de diálogo **Información del repositorio** y ver lo siguiente:
+1. Haga clic en el botón **Acceder a la info del repositorio** para abrir el cuadro de diálogo **Información del repositorio** y ver:
 
    * El nombre de usuario de Git.
    * La contraseña de Git.
@@ -32,9 +32,9 @@ Cloud Manager facilita la recuperación de la información de acceso al reposito
 
    ![Ventana Información del repositorio](assets/access-repo-info.png)
 
-1. Para acceder a la contraseña, debe generar una nueva. Para ello, pulse o haga clic en el botón **Generar contraseña**.
+1. Para acceder a la contraseña, debe generar una nueva. Para ello, haga clic en el botón **Generar contraseña**.
 
-1. Confirme la generación de la contraseña en el cuadro de diálogo **¿Seguro?** pulsando o haciendo clic en **Generar contraseña**.
+1. Confirme la generación de contraseñas en el cuadro de diálogo **¿Está seguro?**. Para ello, haga clic en **Generar contraseña**.
 
    ![Confirmar generación de contraseña](assets/confirm-password-generation.png)
 
@@ -55,10 +55,10 @@ Con estas credenciales, puede clonar una copia local del repositorio, realizar c
 
 ## Información de acceso al repositorio desde la ventana Repositorios {#repositories-window}
 
-El botón **Información de acceso al repositorio** también está disponible en la barra de herramientas de la ventana [**Repositorios**.](managing-repositories.md) muestra la misma información sobre el acceso a los repositorios administrados por Adobe.
+También hay disponible un botón **Acceder a la info del repositorio** en la barra de herramientas de la ventana [**Repositorios**](managing-repositories.md), que muestra la misma información sobre el acceso a los repositorios administrados por el Adobe.
 
 ## Revocar una contraseña de acceso {#revoke-password}
 
-Puede revocar una contraseña de acceso en cualquier momento. Para ello, [cree un ticket de asistencia para esta solicitud.](https://experienceleague.adobe.com/es?support-solution=Experience+Manager&amp;support-tab=home&amp;lang=es#support)
+Puede revocar una contraseña de acceso en cualquier momento. Para ello, [cree un vale de soporte técnico para esta solicitud](https://experienceleague.adobe.com/es?support-solution=Experience+Manager&amp;support-tab=home&amp;lang=es#support).
 
 El ticket tiene prioridad y debería revocarse en un día.

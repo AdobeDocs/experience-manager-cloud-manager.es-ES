@@ -2,16 +2,16 @@
 title: Configuración de canalizaciones que no son de producción
 description: Aprenda a utilizar Cloud Manager para crear y configurar canalizaciones que no son de producción e implementar su código.
 exl-id: ccf4b4a2-6e29-4ede-821c-36318b568e5c
-source-git-commit: 85c1e22609dc5646d3de0ccc71e9423d4243e13a
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
-source-wordcount: '716'
-ht-degree: 100%
+source-wordcount: '710'
+ht-degree: 94%
 
 ---
 
 # Configuración de canalizaciones que no son de producción {#configuring-non-production-pipelines}
 
-Aprenda a utilizar Cloud Manager para crear y configurar canalizaciones que no son de producción e implementar su código. Si desea conocer primero una descripción general más conceptual del funcionamiento de las canalizaciones en Cloud Manager, consulte el documento [Canalizaciones de CI/CD.](/help/overview/ci-cd-pipelines.md)
+Aprenda a utilizar Cloud Manager para crear y configurar canalizaciones que no son de producción e implementar su código. Si desea conocer primero una descripción general más conceptual del funcionamiento de las canalizaciones en Cloud Manager, consulte [Canalizaciones de CI/CD](/help/overview/ci-cd-pipelines.md).
 
 ## Información general {#overview}
 
@@ -20,7 +20,7 @@ Con el mosaico **Canalizaciones** en [!UICONTROL Cloud Manager], el **Administra
 * **Canalizaciones de producción**: una canalización de producción está estructurada y formada específicamente por una serie de pasos organizados para llevar el código fuente hasta la producción.
 * **Canalizaciones que no son de producción**: una canalización que no es de producción sirve principalmente para ejecutar un análisis de calidad del código o para implementar código fuente en un entorno de desarrollo.
 
-Este documento se centra en las canalizaciones que no son de producción. Para obtener más información sobre cómo configurar canalizaciones de producción, consulte el documento [Configuración de canalizaciones de producción.](/help/using/production-pipelines.md)
+Este documento se centra en las canalizaciones que no son de producción. Para obtener más información sobre cómo configurar canalizaciones de producción, consulte el documento [Configuración de canalizaciones de producción](/help/using/production-pipelines.md).
 
 Existen dos tipos de canalizaciones que no son de producción:
 
@@ -80,7 +80,7 @@ Una vez que haya configurado el programa y tenga al menos un entorno utilizando 
 
 ## Pasos siguientes {#the-next-steps}
 
-Una vez configurada la canalización, debe implementar el código. Consulte el documento [Implementación de código](/help/using/code-deployment.md) para obtener más información.
+Una vez configurada la canalización, debe implementar el código. Consulte [Implementación de código](/help/using/code-deployment.md) para obtener más información.
 
 ## Tutorial de vídeo {#video-tutorial}
 

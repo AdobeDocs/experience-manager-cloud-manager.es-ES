@@ -2,10 +2,10 @@
 title: Monitorización de entornos
 description: Obtenga información sobre cómo monitorizar los entornos en Cloud Manager.
 exl-id: 32886133-d6c0-4aed-8bb0-81b84f63e825
-source-git-commit: ab527beb706ab73a14cc933a3414873dee6b7a9e
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
-source-wordcount: '928'
-ht-degree: 100%
+source-wordcount: '922'
+ht-degree: 93%
 
 ---
 
@@ -26,7 +26,7 @@ Siga estos pasos para acceder a la Monitorización del sistema.
 
 1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com) y seleccione la organización y programa adecuados.
 
-1. Pulse o haga clic en el botón de los tres puntos del programa que desea monitorizar y seleccione la opción **Mostrar monitorización**.
+1. Haga clic en el botón de los tres puntos del programa que desee supervisar y seleccione la opción **Mostrar supervisión**.
 
    ![Configuración](/help/assets/first-timea1.png)
 
@@ -51,7 +51,7 @@ El estado de cada categoría es un resumen de las métricas individuales. Si alg
 
 ## Detalles de Monitorización del sistema {#system-monitoring-detail}
 
-Para ver los detalles de las métricas específicas, toque o haga clic en una de las columnas de categoría de una instancia específica o en el título de categoría en la navegación izquierda. Cada página de detalles muestra una serie de gráficos para las métricas dentro de esa categoría. Puede ver las métricas de todas las instancias de un entorno o de una específica. Puede cambiar entre el entorno y las instancias mediante los cuadros desplegables de la esquina superior derecha.
+Para ver los detalles de métricas específicas, haga clic en una de las columnas de categoría de una instancia específica o en el título de categoría en el panel de navegación izquierdo. Cada página de detalles muestra una serie de gráficos para las métricas dentro de esa categoría. Puede ver las métricas de todas las instancias de un entorno o de una específica. Puede cambiar entre el entorno y las instancias mediante los cuadros desplegables de la esquina superior derecha.
 
 ![Selección del entorno](/help/assets/System_Monitoring1.png)
 

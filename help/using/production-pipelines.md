@@ -2,17 +2,17 @@
 title: Configuración de canalizaciones de producción
 description: Aprenda a utilizar Cloud Manager para crear y configurar canalizaciones de producción para implementar su código.
 exl-id: d489fa3c-df1e-480b-82d0-ac8cce78a710
-source-git-commit: 33ccb0f2139162845cc1b72505b6a5bfc7cf43e7
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
-source-wordcount: '1302'
-ht-degree: 100%
+source-wordcount: '1286'
+ht-degree: 91%
 
 ---
 
 
 # Configuración de canalizaciones de producción {#configuring-production-pipelines}
 
-Aprenda a utilizar Cloud Manager para crear y configurar canalizaciones de producción para implementar su código. Si desea conocer primero una descripción general más conceptual del funcionamiento de las canalizaciones en Cloud Manager, consulte el documento [Canalizaciones de CI/CD.](/help/overview/ci-cd-pipelines.md)
+Aprenda a utilizar Cloud Manager para crear y configurar canalizaciones de producción para implementar su código. si desea conocer primero una descripción general más conceptual del funcionamiento de las canalizaciones en Cloud Manager, consulte [Canalizaciones de CI/CD](/help/overview/ci-cd-pipelines.md).
 
 ## Información general {#overview}
 
@@ -21,7 +21,7 @@ Al usar el mosaico **Configuración de canalización** en [!UICONTROL Cloud Mana
 * **Canalizaciones de producción**: una canalización de producción está estructurada y formada específicamente por una serie de pasos organizados para tomar el código fuente de su repositorio de Git y llevarlo a la producción.
 * **Canalizaciones que no son de producción**: una canalización que no es de producción sirve principalmente para ejecutar el análisis de calidad del código o para implementar el código fuente en un entorno de desarrollo.
 
-Este documento se centra en las canalizaciones de producción. Para obtener más información sobre cómo configurar canalizaciones que no son de producción, consulte [Configuración de canalizaciones que no son de producción.](/help/using/non-production-pipelines.md)
+Este documento se centra en las canalizaciones de producción. Para obtener más información sobre cómo configurar canalizaciones que no son de producción, consulte el documento [Configuración de canalizaciones que no son de producción](/help/using/non-production-pipelines.md).
 
 La función **Administrador de implementación** es responsable de configurar la canalización. La configuración de canalización consta de lo siguiente:
 
@@ -37,9 +37,9 @@ La función **Administrador de implementación** es responsable de configurar la
 
 Una vez que haya utilizado la IU de [!UICONTROL Cloud Manager] para configurar el programa y tener al menos un entorno, ya puede añadir una canalización de producción.
 
-1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización y el programa adecuados.
+1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización y programa adecuados.
 
-1. Vaya a la tarjeta **Canalizaciones** de la página **Resumen del programa** y haga clic en **+Agregar** y seleccione **Agregar canalización de producción**.
+1. Vaya a la tarjeta **Canalizaciones** de la página **Resumen del programa**, haga clic en **+Agregar** y seleccione **Agregar canalización de producción**.
 
    ![Agregar una canalización de producción](/help/assets/configure-pipelines/add-prod1.png)
 
@@ -113,7 +113,7 @@ Una vez que haya utilizado la IU de [!UICONTROL Cloud Manager] para configurar e
 
            >[!TIP]
            >
-           >Consulte el documento [Implementación de código](/help/using/code-deployment.md) para obtener información sobre cómo configurar la programación de implementación o ejecutar la canalización inmediatamente.
+           >Consulte [Implementación de código](/help/using/code-deployment.md) para obtener información sobre cómo establecer la programación de implementación o ejecutar la canalización inmediatamente.
 
             * **Utilizar la supervisión del CSE**: si se selecciona esta opción, se involucra un ingeniero de éxito del cliente para que inicie la implementación. Al crear o editar una canalización cuando esta opción está habilitada, la función **Administrador de implementación** tiene las siguientes opciones.
 
@@ -128,7 +128,7 @@ Una vez que haya utilizado la IU de [!UICONTROL Cloud Manager] para configurar e
 
    >[!TIP]
    >
-   >Consulte el documento [Prueba de calidad del código](/help/using/code-quality-testing.md#performance-testing) para obtener más información sobre las opciones disponibles en la pestaña **Prueba de ensayo**.
+   >Consulte [Prueba de calidad de código](/help/using/code-quality-testing.md#performance-testing) para obtener más información sobre las opciones disponibles en la ficha **Prueba de ensayo**.
 
    1. En la sección **Entrega de contenido de sitios/Peso de carga distribuido**, define cómo se configuran las pruebas de rendimiento de los sitios en función de la ponderación de las solicitudes de página entre los tres conjuntos de páginas, que se pueden habilitar o deshabilitar.
 
@@ -138,7 +138,7 @@ Una vez que haya utilizado la IU de [!UICONTROL Cloud Manager] para configurar e
 
       ![Peso de carga de los sitios](/help/assets/configure-pipelines/add-prod5.png)
 
-   1. En la sección **Distribución de las pruebas de rendimiento de los recursos**, puede definir la distribución de prueba de imágenes y PDF, así como sus propios activos de prueba.
+   1. En la sección **Distribución de las pruebas de rendimiento de Assets** , defina la distribución de prueba de imágenes y PDF, y defina sus propios recursos de prueba.
 
       * **Imágenes**: ajuste el regulador para ajustar la división de prueba entre imágenes y PDF.
       * **PDF**: ajuste el regulador para ajustar la división de prueba entre imágenes y PDF.
@@ -155,7 +155,7 @@ Una vez que haya utilizado la IU de [!UICONTROL Cloud Manager] para configurar e
 
 ## Pasos siguientes {#the-next-steps}
 
-Una vez configurada la canalización, debe implementar el código. Consulte el documento [Implementación de código](/help/using/code-deployment.md) para obtener más información.
+Una vez configurada la canalización, debe implementar el código. Consulte [Implementación de código](/help/using/code-deployment.md) para obtener más información.
 
 ## Tutorial de vídeo {#video-tutorial-one}
 

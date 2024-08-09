@@ -2,10 +2,10 @@
 title: Recorrido del usuario
 description: En este documento se exponen los diferentes escenarios de incorporación y se explica el recorrido de introducción a Cloud Manager.
 exl-id: deb3429c-dfcf-4e52-9aba-d9368aa240e6
-source-git-commit: b0dbb602253939464ff034941ffbad84b7df77df
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
 source-wordcount: '539'
-ht-degree: 97%
+ht-degree: 91%
 
 ---
 
@@ -46,7 +46,7 @@ A medida que lleve a cabo la actualización, se incorporará a Cloud Manager y s
 
 El proyecto de AEM existente también tendrá que ajustarse a las prácticas recomendadas, ya que empezará a usar [!UICONTROL Cloud Manager] para implementar cambios en el código en los entornos de AEM.
 
-Para obtener información adicional sobre las ventajas de actualizar a AEM 6.5, consulte el documento [Actualización a AEM 6.5.](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/upgrade.html?lang=es)
+AEM AEM Para obtener información adicional sobre las ventajas de actualizar a la versión 6.5 de la versión, consulte el documento [Actualización a la versión 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/upgrade.html?lang=es) de la versión de la versión de.5.
 
 ## Acceder a [!UICONTROL Cloud Manager] {#accessing-cloud-manager}
 
@@ -56,7 +56,7 @@ Tras iniciar sesión en [!UICONTROL Cloud Manager] por primera vez, tendrá acce
 
 Para empezar con [!UICONTROL Cloud Manager], consulte el documento [Primer inicio de sesión](/help/getting-started/first-time-login.md).
 
-Para obtener información adicional acerca de AEM, consulte el documento [Implementación y mantenimiento.](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html?lang=es)
+AEM Para obtener información adicional acerca de la implementación, vea el documento [Implementación y mantenimiento](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html?lang=es).
 
 ## Introducción a [!UICONTROL Cloud Manager] {#getting-started-with-cloud-manager}
 

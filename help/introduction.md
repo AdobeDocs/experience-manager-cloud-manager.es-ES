@@ -2,10 +2,10 @@
 title: Introducción a Cloud Manager para AMS
 description: Empiece aquí para conocer Cloud Manager para Adobe Managed Services (AMS) y cómo permite a las organizaciones autoadministrar Adobe Experience Manager en la nube.
 exl-id: 58344d8a-b869-4177-a9cf-6a8b7dfe9588
-source-git-commit: a2cea28061304d109a3c9a48650d01255579443c
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
-source-wordcount: '1300'
-ht-degree: 99%
+source-wordcount: '1295'
+ht-degree: 88%
 
 ---
 
@@ -29,7 +29,7 @@ Empiece aquí para conocer Cloud Manager para Adobe Manage Services (AMS) y cóm
 >
 >Esta documentación describe específicamente las funciones y características de Cloud Manager para Adobe Managed Services (AMS).
 >
->El equivalente para AEM as a Cloud Service se encuentra en la [Documentación de AEM as a Cloud Service.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/home.html?lang=es)
+>El equivalente para AEM as a Cloud Service se encuentra en [AEM as a Cloud Service documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/home.html?lang=es).
 
 Con Cloud Manager, su equipo de desarrollo se beneficia de las siguientes funciones:
 
@@ -55,7 +55,7 @@ La interfaz de usuario (IU) para [!UICONTROL Cloud Manager] permite a los client
 
 Usted define los indicadores clave de rendimiento (KPI) específicos a la aplicación, como las visitas de páginas máximas por minuto y el tiempo de respuesta al cargar una página, que constituyen la base para medir una implementación exitosa. Las funciones y los permisos de los distintos integrantes del equipo se pueden definir fácilmente. La nueva interfaz de autoservicio le permite controlarlo todo, y también le ofrece vínculos a prácticas recomendadas y le da la oportunidad de contactar con expertos de Adobe que pueden proporcionarle la orientación necesaria.
 
-Para explorar y empezar con la IU de [!UICONTROL Cloud Manager], consulte el documento [Primer inicio de sesión.](/help/getting-started/first-time-login.md)
+Para explorar y empezar a usar la interfaz de usuario de [!UICONTROL Cloud Manager], consulte el documento [Primer inicio de sesión](/help/getting-started/first-time-login.md).
 
 ### Canalización de CI/CD {#ci-cd-pipeline}
 
@@ -63,7 +63,7 @@ Una de las funcionalidades clave de [!UICONTROL Cloud Manager] es la capacidad d
 
 A través de la IU de [!UICONTROL Cloud Manager], los clientes pueden configurar y poner en marcha su canalización de CD/CI. Como parte de esta canalización, se realiza un análisis exhaustivo del código para garantizar que solo las aplicaciones de alta calidad pasen al entorno de producción.
 
-Para obtener más información acerca de la configuración de la canalización desde la IU de [!UICONTROL Cloud Manager], consulte los documentos [Configuración de canalizaciones de producción](/help/using/production-pipelines.md) y [Configuración de canalizaciones que no son de producción.](/help/using/non-production-pipelines.md)
+Para obtener más información sobre la configuración de la canalización desde la interfaz de usuario de [!UICONTROL Cloud Manager], consulte los documentos [Configuración de canalizaciones de producción](/help/using/production-pipelines.md) y [Configuración de canalizaciones que no son de producción](/help/using/non-production-pipelines.md).
 
 ### Modos de implementación flexibles {#flexible-deployment-modes}
 
@@ -73,11 +73,11 @@ Gracias a su modo de activación automático, el código se implementa automáti
 
 Independientemente del activador de la implementación, siempre se efectúan comprobaciones de calidad como parte de la ejecución de la canalización de CI/CD, cada vez que se activa una implementación. Las comprobaciones de calidad incluyen la inspección del código, las pruebas de seguridad y las pruebas de rendimiento ofrecidas de forma predeterminada, sin que usted o sus socios deban realizar ningún esfuerzo.
 
-Para obtener más información acerca de la implementación del código y las pruebas de calidad, consulte el documento [Implementación del código.](/help/using/code-deployment.md)
+Para obtener más información acerca de la implementación del código y las comprobaciones de calidad, consulte el documento [Implementación del código](/help/using/code-deployment.md).
 
 ## Funciones opcionales en Cloud Manager {#optional-features-in-cloud-manager}
 
-Cloud Manager ofrece funciones avanzadas adicionales que pueden ser beneficiosas para su proyecto según la configuración y las necesidades de su entorno en particular. Si estas funciones le interesan, póngase en contacto con su ingeniero de éxito del cliente (Customer Success Engineer, CSE) o su representante de Adobe para hablarlo con más detalle.
+Cloud Manager ofrece funciones avanzadas adicionales que pueden ser beneficiosas para su proyecto según la configuración y las necesidades de su entorno en particular. Si estas funciones le interesan, póngase en contacto con su ingeniero de éxito del cliente (Customer Success Engineer, CSE) o su representante del Adobe de para hablarlo con más detalle.
 
 ### Escalado automático {#autoscaling}
 
@@ -131,5 +131,5 @@ Si le interesa la implementación azul/verde, tenga en cuenta los siguientes req
 * Los pares de previsualización de Dispatcher/publicación no forman parte de las implementaciones azules/verdes.
 * Cada par de Dispatcher/publicación es idéntico a los otros pares de Dispatcher/publicación.
 * Azul/verde solo está disponible en el entorno de producción.
-* Azul/verde está disponible en AWS y en Azure.
+* Azul/verde está disponible en AWS y Azure.
 * Azul/verde no está disponible para los clientes solo de Assets.

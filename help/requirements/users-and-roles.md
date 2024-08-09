@@ -2,10 +2,10 @@
 title: Agregar usuarios y funciones
 description: Aprenda a utilizar Admin Console para agregar usuarios y funciones y crear perfiles.
 exl-id: 40086cf0-a1c4-4dde-9dbf-84ea5fa53b84
-source-git-commit: dd96d773ea3e6b9c45886fe41b28d3dd70cb8a61
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
-source-wordcount: '774'
-ht-degree: 100%
+source-wordcount: '769'
+ht-degree: 84%
 
 ---
 
@@ -46,7 +46,7 @@ Esta tabla resume las funciones.
 
 Las funciones de [!UICONTROL Cloud Manager] se administran desde Admin Console. Las suscripciones a funciones específicas se proporcionan añadiendo el usuario a un perfil de producto de [!UICONTROL Cloud Manager].
 
-Admin Console es una ubicación central para administrar los derechos de Adobe en toda la organización. Para obtener más información sobre Adobe Admin Console, consulte la documentación de [Admin Console.](https://helpx.adobe.com/es/enterprise/using/admin-console.html)
+Admin Console es una ubicación central para administrar los derechos de Adobe en toda la organización. Para obtener más información sobre Adobe Admin Console, consulte la documentación de [Admin Console](https://helpx.adobe.com/es/enterprise/using/admin-console.html).
 
 Para proporcionar los permisos adecuados basados en funciones a los usuarios de [!UICONTROL Cloud Manager], un administrador de la organización del cliente debe crear perfiles de producto nuevos en el contexto de producto de [!UICONTROL AEM Managed Services] correspondiente a cada una de las cuatro funciones de [!UICONTROL Cloud Manager]:
 
@@ -57,9 +57,9 @@ Para proporcionar los permisos adecuados basados en funciones a los usuarios de 
 
 Puede crear o agregar usuarios/grupos a estos perfiles de producto con Admin Console.
 
-1. Inicie sesión en Admin Console en [`https://adminconsole.adobe.com`.](https://adminconsole.adobe.com)
+1. Inicie sesión en el Admin Console en [`https://adminconsole.adobe.com`](https://adminconsole.adobe.com).
 
-1. Haga clic en la pestaña **Información general** y en el producto que desee modificar en la tarjeta **Productos y servicios**. Si no aparece en la lista, use la pestaña **Productos** para localizar el producto y hacer clic en él.
+1. Haga clic en la ficha **Información general** y luego en el producto que desee modificar en la tarjeta **Productos y servicios**. Si no aparece en la lista, use la pestaña **Productos** para localizar el producto y hacer clic en él.
 
    ![Pestaña Información general de Admin Console](/help/assets/admin-console-overview.png)
 
@@ -93,7 +93,7 @@ Puede crear o agregar usuarios/grupos a estos perfiles de producto con Admin Con
 
 Una vez creados los perfiles de producto, puede asignarles usuarios o grupos de usuarios.
 
-1. Inicie sesión en Admin Console en [`https://adminconsole.adobe.com`.](https://adminconsole.adobe.com)
+1. Inicie sesión en el Admin Console en [`https://adminconsole.adobe.com`](https://adminconsole.adobe.com).
 
 1. En Admin Console, elija la pestaña **Usuarios**.
 
@@ -101,18 +101,18 @@ Una vez creados los perfiles de producto, puede asignarles usuarios o grupos de 
 
 1. Haga clic en **Usuarios** en el panel de navegación izquierdo y, a continuación, haga clic en un usuario para modificarlo.
 
-1. Haga clic en el botón de puntos suspensivos de la sección **Productos** y seleccione **Editar**.
+1. Haga clic en el botón de los tres puntos de la sección **Productos** y seleccione **Editar**.
 
    ![Editar usuario](/help/assets/admin-console-edit-user.png)
 
-1. En el diálogo **Editar productos y grupos de usuarios**, haga clic en el botón más y seleccione los perfiles que desea asignar al usuario.
+1. En el cuadro de diálogo **Editar productos y grupos de usuarios**, haga clic en el botón más y seleccione los perfiles que desea asignar al usuario.
 
-   * Si el usuario ya está asignado a las funciones, el botón más será un botón de edición (un lápiz), pero funciona del mismo modo.
+   * Si el usuario ya está asignado a las funciones, el botón más es un botón de edición (un lápiz), pero funciona del mismo modo.
 
    ![Editar productos y grupos de usuarios](/help/assets/admin-console-edit-products-and-user-groups.png)
 
 1. Haga clic en **Guardar** para guardar los perfiles en el usuario.
 
-Repita los mismos pasos para asignar perfiles a grupos de usuarios, pero seleccione **Grupos de usuarios** del panel de navegación izquierdo de la pestaña **Usuarios**. Haga clic en un grupo de usuarios y seleccione la pestaña **Perfiles de producto asignados** y haga clic en **Asignar perfil de productos** para asignar perfiles.
+Repita los mismos pasos para asignar perfiles a grupos de usuarios, pero seleccione **Grupos de usuarios** del panel de navegación izquierdo de la pestaña **Usuarios**. Haga clic en un grupo de usuarios y seleccione la ficha **Perfiles de productos asignados** y haga clic en **Asignar perfil de productos** para asignar perfiles.
 
 ![Asignar perfiles al grupo](/help/assets/admin-console-edit-user-groups.png)

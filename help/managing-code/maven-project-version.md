@@ -2,10 +2,10 @@
 title: Administrar versiones del proyecto de Maven
 description: Descubra cómo Maven gestiona las versiones de proyectos en Cloud Manager.
 exl-id: a1d676e0-27cc-4b0d-8799-527c0520946a
-source-git-commit: 9312999660b324f0f9d2b44dfbf49c4813a3a6e9
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
-source-wordcount: '260'
-ht-degree: 100%
+source-wordcount: '258'
+ht-degree: 94%
 
 ---
 
@@ -18,7 +18,7 @@ Descubra cómo Maven gestiona las versiones de proyectos en Cloud Manager.
 
 Para implementaciones de ensayo y producción, Cloud Manager genera una versión única e incremental.
 
-Esta versión se ve en la página de detalles de ejecución de la canalización, así como en la página de actividad. Cuando se ejecuta una compilación, el proyecto de Maven se actualiza para utilizar esta versión y se crea una etiqueta en el repositorio de Git con dicha versión como nombre.
+Esta versión se ve en la página de detalles de ejecución de la canalización y en la página de actividad. Cuando se ejecuta una generación, el proyecto de Maven se actualiza para utilizar esta versión y se crea una etiqueta en el repositorio de Git con esa versión como su nombre.
 
 Si la versión original del proyecto cumple ciertos criterios, la versión actualizada del proyecto de Maven combinará la versión original y la generada por Cloud Manager. Sin embargo, la etiqueta siempre utiliza la versión generada. Para que se produzca esta combinación, la versión original del proyecto debe estar formada con exactamente tres segmentos de versión, por ejemplo, `1.0.0` o `1.2.3`, pero no `1.0` o `1`, y la versión original no debe terminar en `-SNAPSHOT`.
 

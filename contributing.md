@@ -1,15 +1,15 @@
 ---
-source-git-commit: 2a25b0482800d4c5428a5595c9699dceed327043
-workflow-type: ht
-source-wordcount: '500'
-ht-degree: 100%
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
+workflow-type: tm+mt
+source-wordcount: '498'
+ht-degree: 93%
 
 ---
 # Contribución a la documentación de Adobe Experience Manager Screens
 
 Gracias por su contribución a la documentación de Adobe Experience Manager Screens. Adobe agradece las contribuciones de contenido de toda la comunidad de lectores, así como de otros empleados de Adobe.
 
-Este archivo describe cómo puede contribuir, así como las directrices que debe seguir al realizar sus contribuciones.
+Este archivo describe cómo puede contribuir y señala las directrices que debe seguir al realizar sus contribuciones.
 
 ## Código de conducta de código abierto de Adobe
 
@@ -30,7 +30,7 @@ El método que elija dependerá de la comodidad con la que edite la documentaci�
 
 >[!NOTE]
 >
->Las contribuciones que envíe estarán cubiertas por las [condiciones de uso de Adobe.](https://www.adobe.com/es/legal/terms.html)
+>Las contribuciones que envíe estarán cubiertas por las [condiciones de uso del Adobe](https://www.adobe.com/es/legal/terms.html).
 
 ### Crear una incidencia {#create-an-issue}
 

@@ -2,10 +2,10 @@
 title: Permisos personalizados
 description: Descubra cómo puede utilizar los permisos personalizados para crear nuevos perfiles de estos con permisos configurables para restringir el acceso a programas, canalizaciones y entornos para usuarios de Cloud Manager.
 exl-id: a81eda9f-aa89-40ea-8e4c-52367a0a6aba
-source-git-commit: 4a784f1594be4831be1c1c4aecb41b4f1b3b8be2
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
-source-wordcount: '1474'
-ht-degree: 100%
+source-wordcount: '1435'
+ht-degree: 80%
 
 ---
 
@@ -26,17 +26,17 @@ Los permisos personalizados permiten a los usuarios crear nuevos perfiles de per
 
 >[!TIP]
 >
->Para obtener más información sobre las funciones predefinidas, consulte el documento [Permisos basados en funciones.](/help/requirements/role-based-permissions.md)
+>Para obtener más información sobre las funciones predefinidas, consulte [Permisos basados en funciones](/help/requirements/role-based-permissions.md).
 
 ## Cómo utilizar los permisos personalizados {#using}
 
 Para crear y utilizar sus propios permisos personalizados se requieren tres pasos:
 
-1. [Cree un nuevo perfil de producto.](#create)
-1. [Asigne permisos personalizados al nuevo perfil de producto.](#assign-permissions)
-1. [Asigne usuarios al nuevo perfil de producto.](#assign-users)
+1. [Crear un nuevo perfil de producto](#create).
+1. [Asignar permisos personalizados al nuevo perfil de producto](#assign-permissions).
+1. [Asignar usuarios al nuevo perfil de producto](#assign-users).
 
-En esta sección se detallan estos pasos. Puede que le resulte útil consultar las secciones [Términos](#terms) y [Permisos configurables](#configurable-permissions) a medida que crea sus propios permisos personalizados.
+En esta sección se detallan estos pasos. Puede que le resulte útil ver las secciones [Términos](#terms) y [Permisos configurables](#configurable-permissions) a medida que crea sus propios permisos personalizados.
 
 >[!NOTE]
 >
@@ -50,9 +50,9 @@ Primero debe crear un nuevo perfil de producto para poder asignar permisos perso
 
 1. Seleccione el producto **AEM Managed Services**.
 
-1. Busque una instancia con un nombre que coincida con el patrón `*-cloud-manager` y pulse o haga clic para administrar usuarios y permisos.
+1. Busque una instancia con el nombre que coincida con el patrón `*-cloud-manager` y haga clic en para administrar usuarios y permisos.
 
-1. Se le redirigirá a la pestaña **Productos** de Admin Console, donde puede administrar usuarios y permisos para Cloud Manager. En Admin Console, pulse o haga clic en el botón **Nuevo perfil**.
+1. Se le redirigirá a la pestaña **Productos** de Admin Console, donde puede administrar usuarios y permisos para Cloud Manager. En el Admin Console, haga clic en el botón **Nuevo perfil**.
 
 ![Botón Nuevo perfil](/help/assets/admin-console-new-profile.png)
 
@@ -63,7 +63,7 @@ Primero debe crear un nuevo perfil de producto para poder asignar permisos perso
    * **Descripción**: una descripción informativa del perfil en la que se explique su finalidad (opcional)
    * **Notificar a los usuarios por correo electrónico**: cuando se selecciona, se notifica a los usuarios por correo electrónico cuando se añaden o quiten de este perfil.
 
-1. Haga clic o pulse **Guardar** cuando se complete.
+1. Haga clic en **Guardar** cuando haya terminado.
 
 El nuevo perfil de producto se guarda y es visible en la lista de perfiles de producto de Admin Console.
 
@@ -71,13 +71,13 @@ El nuevo perfil de producto se guarda y es visible en la lista de perfiles de pr
 
 Ahora que tiene un nuevo perfil de producto, puede asignarle permisos personalizados.
 
-1. En Admin Console, pulse o haga clic en el nombre del [nuevo perfil de producto que acaba de crear.](#create)
+1. En el Admin Console, haga clic en el nombre del [nuevo perfil de producto que acaba de crear](#create).
 
 1. En la ventana que se abre, seleccione la pestaña **Permisos** para ver una lista de permisos editables.
 
    ![Permisos editables](/help/assets/permissions-tab.png)
 
-1. Pulse o haga clic en el vínculo **Editar** de un permiso para editarlo.
+1. Haga clic en el vínculo **Editar** de un permiso para editarlo.
 
 1. Se abre la ventana **Editar permisos**.
    * El permiso seleccionado en el paso anterior se selecciona en la columna izquierda.
@@ -86,13 +86,13 @@ Ahora que tiene un nuevo perfil de producto, puede asignarle permisos personaliz
 
    ![Editar elementos de permiso](/help/assets/edit-permission-items.png)
 
-1. Pulse o haga clic en el signo más (`+`) junto al elemento de permiso para añadirlo a la columna **Elementos de permisos incluidos**.
+1. Haga clic en el icono de signo más (`+`) junto al elemento de permiso para agregarlo a la columna **Elementos de permisos incluidos**.
 
-   * Haga clic o pulse en el icono `i` situado junto a un elemento de permiso para obtener más información al respecto.
+   * Haga clic en el icono `i` junto a un elemento de permiso para obtener más información al respecto.
 
-1. Haga clic o pulse en **Añadir todo** en la parte superior de la columna **Permisos disponibles** para añadir todos los permisos. Del mismo modo, pulse o haga clic en **Quitar todo** para quitar todos los permisos seleccionados previamente.
+1. Haga clic en el botón **Agregar todos** en la parte superior de la columna **Permisos disponibles** para agregar todos los permisos. Del mismo modo, haga clic en **Quitar todos** para quitar todos los permisos seleccionados anteriormente.
 
-1. Haga clic o pulse **Guardar** cuando haya terminado de definir los elementos de permiso para el nuevo perfil de producto.
+1. Haga clic en **Guardar** cuando termine de definir los elementos de permiso para el nuevo perfil de producto.
 
 El nuevo perfil de producto se guarda ahora con sus permisos personalizados.
 
@@ -100,13 +100,13 @@ El nuevo perfil de producto se guarda ahora con sus permisos personalizados.
 
 Ahora puede asignar usuarios al nuevo perfil de producto que ha creado con permisos personalizados.
 
-1. En Admin Console, pulse o haga clic en el nombre del [nuevo perfil de producto al que acaba de asignar permisos personalizados.](#assign-permissions)
+1. En el Admin Console, haga clic en el nombre del [nuevo perfil de producto al que acaba de asignar permisos personalizados](#assign-permissions).
 
 1. En la ventana que se abre, seleccione la pestaña **Usuarios**.
 
-1. Haga clic o pulse en el botón **Añadir usuarios** y asigne usuarios a su nuevo perfil de productos con permisos personalizados.
+1. Haga clic en el botón **Agregar usuarios** y asigne usuarios a su nuevo perfil de productos con permisos personalizados.
 
-Consulte la sección **Adición de usuarios y grupos de usuarios a un perfil de producto** del documento [Administración de perfiles de producto para usuarios empresariales](https://helpx.adobe.com/es/enterprise/using/support-for-experience-cloud.html?lang=es) para obtener más información sobre cómo utilizar Admin Console.
+Consulte la sección **Agregar usuarios y grupos de usuarios a un perfil de producto** del documento [Administrar perfiles de producto para usuarios empresariales](https://helpx.adobe.com/es/enterprise/using/support-for-experience-cloud.html?lang=es) para obtener más información sobre cómo usar el Admin Console.
 
 ## Permisos configurables {#configurable-permissions}
 
@@ -139,7 +139,7 @@ Los siguientes permisos son permisos de nivel de organización:
 
 * **Acceso a información de repositorios**: este permiso de nivel de inquilino/organización permite a los usuarios generar un nombre de usuario, una contraseña y una URL de repositorio para acceder y contribuir al proyecto del cliente.
    * El nombre de usuario y la contraseña para acceder al repositorio serán comunes en todos los repositorios de la organización, pero la URL del repositorio será única para cada programa.
-   * Consulte el documento [Repositorio de códigos de origen](/help/requirements/source-code-repository.md) para obtener más información.
+   * Consulte [Repositorio de código Source](/help/requirements/source-code-repository.md) para obtener más información.
 
 ## Términos {#terms}
 
@@ -147,7 +147,7 @@ Los siguientes términos se utilizan para crear y administrar permisos personali
 
 | Término | Descripción |
 |---|---|
-| Permisos predefinidos | Funciones predefinidas como **Propietario del negocio**, **Administrador de implementación**, etc. para regular varias funciones de Cloud Manager. Para obtener más información sobre las funciones predefinidas, consulte el documento [Permisos basados en funciones.](/help/requirements/role-based-permissions.md) |
+| Permisos predefinidos | Funciones predefinidas como **Propietario del negocio**, **Administrador de implementación**, etc. para regular varias funciones de Cloud Manager. Para obtener más información sobre las funciones predefinidas, consulte [Permisos basados en funciones](/help/requirements/role-based-permissions.md). |
 | Permisos personalizados | Características de Cloud Manager que permiten a los usuarios crear perfiles de permiso para definir funciones que regulen las funciones compatibles con Cloud Manager |
 | Perfil de permisos | Se crea en Admin Console para administrar permisos configurables que se aplicarán a los usuarios que forman parte del perfil de permisos |
 | Permiso configurable | Permisos de Cloud Manager que se pueden configurar en el perfil de permisos |
@@ -164,7 +164,7 @@ Los elementos de permisos hacen referencia al ámbito en el que se aplicará el 
 
 ## Restricciones {#limitations}
 
-Tenga en cuenta las siguientes limitaciones al utilizar los permisos personalizados.
+Tenga en cuenta las siguientes limitaciones al utilizar permisos personalizados:
 
 * Un [conjunto limitado de permisos está disponible](#configurable-permissions) para crear perfiles personalizados.
 * Recursos como programa, entorno, canalización, etc. Los permisos creados en Cloud Manager pueden tardar dos minutos en mostrarse en Admin Console para la configuración de permisos.
@@ -179,7 +179,7 @@ Tenga en cuenta las siguientes limitaciones al utilizar los permisos personaliza
 * Administrador de implementación
 * Desarrollador
 
-Para obtener más información sobre las funciones predefinidas, consulte el documento [Permisos basados en funciones.](/help/requirements/role-based-permissions.md)
+Para obtener más información sobre las funciones predefinidas, consulte [Permisos basados en funciones](/help/requirements/role-based-permissions.md).
 
 ### ¿Qué les sucede a los perfiles de permiso predefinidos con introducción a los perfiles personalizados?
 

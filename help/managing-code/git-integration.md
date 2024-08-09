@@ -2,10 +2,10 @@
 title: Integración de Git con Adobe Cloud Manager
 description: Esta serie de vídeos analiza la configuración e integración de un repositorio de Git administrado por el cliente (On-Premise) con Adobe Cloud Manager.
 exl-id: e517f8a4-23f0-4486-8278-91396dba76ec
-source-git-commit: 91e909273bf2b21d7f6413731923011915079e45
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
-source-wordcount: '340'
-ht-degree: 100%
+source-wordcount: '337'
+ht-degree: 91%
 
 ---
 
@@ -30,7 +30,7 @@ Esta serie de vídeos supone un conocimiento básico de la gestión de Git y con
 
 Los pasos y las convenciones de nomenclatura descritos en esta serie de vídeos representan algunas prácticas recomendadas para trabajar con un repositorio de Git administrado por el cliente y Cloud Manager. Se espera que los convenios y flujos de trabajo descritos se adapten a los equipos de desarrollo individuales.
 
-Para obtener una descripción general completa de Cloud Manager, consulte el documento [Introducción a Cloud Manager.](/help/introduction.md)
+Para obtener una descripción general completa de Cloud Manager, consulte [Introducción a Cloud Manager](/help/introduction.md).
 
 ## Sincronización inicial {#initial-sync}
 
@@ -40,11 +40,11 @@ Primeros pasos para sincronizar un repositorio de Git administrado por el client
 
 ## Estrategia básica de ramas {#branching-strategy}
 
-Configure una estrategia básica de ramificación para aprovechar las ventajas de las [canalizaciones de producción](/help/using/production-pipelines.md) y [que no sean de producción](/help/using/non-production-pipelines.md) de Cloud Manager.
+Configure una estrategia básica de ramificación para aprovechar [producción](/help/using/production-pipelines.md) y [canalizaciones que no sean de producción](/help/using/non-production-pipelines.md) de Cloud Manager.
 
 >[!VIDEO](https://video.tv.adobe.com/v/28712/?quality=12)
 
-## Desarrollo de ramas de funciones {#feature-development}
+## Desarrollo de ramas de características {#feature-development}
 
 Utilice una rama de características para aislar los cambios de código en un repositorio de Git administrado por el cliente y sincronizarlo con el repositorio de Git de Cloud Manager para utilizar una canalización que no sea de producción para las pruebas de calidad y validación del código.
 

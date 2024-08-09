@@ -2,10 +2,10 @@
 title: Notificaciones
 description: Descubra cómo Cloud Manager le notifica de los eventos importantes.
 exl-id: cfd5655f-2d2c-4304-b25c-6cdffe7ff64c
-source-git-commit: e767d9ff5e3df0047d2cf47d7b0842854101a01a
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
-source-wordcount: '573'
-ht-degree: 100%
+source-wordcount: '571'
+ht-degree: 94%
 
 ---
 
@@ -16,7 +16,7 @@ Descubra cómo Cloud Manager le notifica de los eventos importantes.
 
 ## Notificaciones en Cloud Manager {#cloud-manager-notifications}
 
-[!UICONTROL Cloud Manager] le envía notificaciones cuando se inicia y finaliza una canalización de producción (correctamente o no) y al comienzo de una implementación de producción, así como cuando se llega a los pasos **Aprobación de lanzamiento** y **Programado**. Estas se envían a través del sistema de notificaciones de [!UICONTROL Experience Cloud].
+[!UICONTROL Cloud Manager] le envía notificaciones cuando se inicia y finaliza una canalización de producción (con o sin éxito), al comienzo de una implementación de producción y cuando se alcanzan los pasos **Aprobación de lanzamiento** y **Programado**. Estas se envían a través del sistema de notificaciones de [!UICONTROL Experience Cloud].
 
 >[!NOTE]
 >

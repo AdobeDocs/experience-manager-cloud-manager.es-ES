@@ -2,10 +2,10 @@
 title: Preguntas frecuentes sobre Cloud Manager
 description: Este documento proporciona respuestas a las preguntas más frecuentes acerca de Cloud Manager para clientes de AMS.
 exl-id: 52c1ca23-5b42-4eae-b63a-4b22ef1a5aee
-source-git-commit: 6be659e02df0657ec7d3dbce8c18c44a327a36f4
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
-source-wordcount: '749'
-ht-degree: 100%
+source-wordcount: '746'
+ht-degree: 93%
 
 ---
 
@@ -18,20 +18,20 @@ Este documento proporciona respuestas a las preguntas más frecuentes acerca de 
 
 Sí. Deberá añadir la variable `maven-toolchains-plugin` con la configuración correcta para Java 11.
 
-* Este proceso está documentado [aquí.](/help/getting-started/using-the-wizard.md)
-* Para ver un ejemplo, consulte el [código del proyecto de ejemplo WKND.](https://github.com/adobe/aem-guides-wknd/commit/6cb5238cb6b932735dcf91b21b0d835ae3a7fe75)
+* Este proceso está documentado [aquí](/help/getting-started/using-the-wizard.md).
+* Para ver un ejemplo, vea el [código de ejemplo del proyecto wknd](https://github.com/adobe/aem-guides-wknd/commit/6cb5238cb6b932735dcf91b21b0d835ae3a7fe75).
 
-## Mi compilación falla con un error acerca de maven-scr-plugin después de cambiar de Java 8 a Java 11. ¿Qué puedo hacer? {#maven-src-plugin}
+## Mi generación falla con un error sobre maven-scr-plugin después de cambiar de Java 8 a Java 11. ¿Qué puedo hacer? {#maven-src-plugin}
 
-Es posible que la generación de AEM Cloud Manager falle al intentar cambiar la generación de Java 8 a 11. Si encuentra el siguiente error, debe quitar `maven-scr-plugin` y convertir todas las anotaciones OSGi en anotaciones OSGi R6.
+Es posible que la generación de AEM Cloud Manager falle al intentar cambiar la generación de Java 8 a 11. Si encuentra el siguiente error, debe eliminar `maven-scr-plugin` y convertir todas las anotaciones OSGi a anotaciones OSGi R6.
 
 ```text
 [main] [ERROR] Failed to execute goal org.apache.felix:maven-scr-plugin:1.26.4:scr (generate-scr-scrdescriptor) on project helloworld.core: /build_root/build/testsite/src/main/java/com/adobe/HelloWorldServiceImpl.java : Unable to load compiled class: com.adobe.HelloWorldServiceImpl: com/adobe/HelloWorldServiceImpl has been compiled by a more recent version of the Java Runtime (class file version 55.0), this version of the Java Runtime only recognizes class file versions up to 52.0 -> [Help 1]
 ```
 
-Para obtener instrucciones sobre cómo eliminar este complemento, [consulte esto.](https://cqdump.wordpress.com/2019/01/03/from-scr-annotations-to-osgi-annotations/)
+Para obtener instrucciones sobre cómo quitar este complemento, [consulte esto](https://cqdump.wordpress.com/2019/01/03/from-scr-annotations-to-osgi-annotations/).
 
-## Mi compilación falla con un error acerca de RequireJavaVersion después de cambiar de Java 8 a Java 11. ¿Qué puedo hacer? {#requirejavaversion}
+## Mi generación falla con un error sobre RequireJavaVersion después de cambiar de Java 8 a Java 11. ¿Qué puedo hacer? {#requirejavaversion}
 
 Para las compilaciones de Cloud Manager, el `maven-enforcer-plugin` puede fallar con este error
 
@@ -60,9 +60,9 @@ No hay una respuesta única a esta pregunta. Sin embargo, estos son algunos punt
    * Las cargas de página superiores a `20` segundos se marcan como errores `504`.
 * Si el sitio requiere autenticación de usuarios, consulte el documento [Comprensión de los resultados de la prueba](/help/using/code-quality-testing.md#authenticated-performance-testing) para configurar la prueba para autenticarse en el sitio.
 
-Consulte el documento [Comprensión de los resultados de la prueba](/help/using/code-quality-testing.md) para obtener más información sobre los controles de calidad.
+Consulte [Comprender los resultados de la prueba](/help/using/code-quality-testing.md) para obtener más información sobre las comprobaciones de calidad.
 
-## ¿Puedo utilizar SNAPSHOT para la versión del proyecto Maven? {#snapshot}
+## ¿Puedo utilizar SNAPSHOT para la versión del proyecto de Maven? {#snapshot}
 
 Sí. Para implementaciones de desarrolladores, los archivos de la rama de Git `pom.xml` deben contener `-SNAPSHOT` al final del valor `<version>`.
 
@@ -70,13 +70,13 @@ Esto permite que la implementación posterior se siga instalando cuando la versi
 
 También puede establecer la versión a `-SNAPSHOT` para generaciones o implementaciones de fase y producción. Cloud Manager establece automáticamente un número de versión adecuado y crea una etiqueta en Git. Se puede hacer referencia a esta etiqueta más adelante, si es necesario.
 
-Para obtener más información acerca de la gestión de versiones, [consulte esto.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/project-version-handling.html?lang=es)
+Para obtener más información sobre la administración de versiones, consulte [estos documentos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/project-version-handling.html?lang=es).
 
 ## ¿Cómo funcionan las versiones de paquetes y los paquetes para las implementaciones de ensayo y producción? {#staging-production}
 
-En las implementaciones de ensayo y producción se genera una versión automática [como se documenta aquí.](/help/managing-code/maven-project-version.md)
+En las implementaciones de ensayo y producción, se genera una versión automática [tal como se documenta aquí](/help/managing-code/maven-project-version.md).
 
-Para las versiones personalizadas en las implementaciones de ensayo y producción, establezca una versión de Maven adecuada en tres partes, como `1.0.0`. Actualice la versión cada vez que implemente en la producción.
+Para las versiones personalizadas en las implementaciones de fase y producción, establezca una versión de Maven adecuada como `1.0.0`. Actualice la versión cada vez que implemente en la producción.
 
 Cloud Manager agrega automáticamente su versión a las generaciones de fase y producción y crea una rama de Git. No se requiere ninguna configuración especial. Si no establece una versión de Maven como se describió anteriormente, la implementación se realizará correctamente y se establecerá una versión automáticamente.
 

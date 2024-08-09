@@ -3,10 +3,10 @@ title: Fase de evaluación
 seo-title: Evaluation Phase
 description: Descubra cómo la fase de evaluación del Asistente para actualización de productos evalúa la complejidad de la actualización con el detector de patrones.
 exl-id: 1ffcbc21-dc36-435d-b83b-0209f81a15e7
-source-git-commit: ce2145da3b9e605e8a41bac28df520f14e255557
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
-source-wordcount: '289'
-ht-degree: 100%
+source-wordcount: '285'
+ht-degree: 85%
 
 ---
 
@@ -25,7 +25,7 @@ El informe sirve para evaluar las actividades de desarrollo que se realizan para
 
 >[!NOTE]
 >
->Para obtener más información sobre el detector de patrones, consulte el documento [Evaluación de la complejidad de la actualización con Pattern Detector.](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/pattern-detector.html?lang=es)
+>Para obtener más información sobre el detector de patrones, consulte [Evaluación de la complejidad de la actualización con Pattern Detector](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/pattern-detector.html?lang=es).
 
 ## Ejecución de la evaluación {#running}
 
@@ -33,7 +33,7 @@ El detector de patrones se puede ejecutar en cualquier entorno. Sin embargo, par
 
 Siga estos pasos para generar el informe de evaluación.
 
-1. Inicie el asistente como se describe en el documento [Asistente para la actualización de productos.](/help/product-update-wizard/overview.md)
+1. Inicie el asistente como se describe en el documento [Asistente para la actualización de productos](/help/product-update-wizard/overview.md).
 
 1. Haga clic en **[!UICONTROL Ejecutar evaluación]**.
 
