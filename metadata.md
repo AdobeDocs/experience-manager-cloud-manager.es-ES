@@ -5,7 +5,7 @@ cloud: Experience Cloud
 git-repo: https://github.com/AdobeDocs/experience-manager-cloud-manager.es-ES
 recommendations: noDisplay
 source-git-commit: 2a25b0482800d4c5428a5595c9699dceed327043
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '112'
 ht-degree: 100%
 
