@@ -2,10 +2,10 @@
 title: Implementación de código
 description: Obtenga información sobre cómo implementar su código y qué sucede en Cloud Manager cuando lo hace.
 exl-id: 3d6610e5-24c2-4431-ad54-903d37f4cdb6
-source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
+source-git-commit: a7dc30ed31e87ab486f0b279b70c850a33a903eb
 workflow-type: tm+mt
 source-wordcount: '1637'
-ht-degree: 94%
+ht-degree: 54%
 
 ---
 
@@ -16,7 +16,7 @@ Obtenga información sobre cómo implementar su código y qué sucede en Cloud M
 
 ## Implementación de código con Cloud Manager {#deploying-code-with-cloud-manager}
 
-Una vez que haya configurado la canalización de producción, incluidos el repositorio y los entornos necesarios, estará listo para implementar el código.
+Una vez configurada la canalización de producción, incluidos el repositorio y los entornos necesarios, estará listo para implementar el código.
 
 1. Haga clic en **Implementación** desde Cloud Manager para iniciar el proceso de implementación.
 
@@ -36,15 +36,15 @@ Puede revisar los pasos de varios procesos de implementación consultando los re
 
 ## Pasos de implementación {#deployment-steps}
 
-Durante cada paso de la implementación se producen varias acciones que se describen en esta sección. Consulte la sección [Detalles del proceso de implementación](#deployment-process) para obtener detalles técnicos sobre cómo se implementa el código en sí mismo entre bastidores.
+Durante cada paso de la implementación se producen varias acciones que se describen en esta sección. Consulte [Detalles del proceso de implementación](#deployment-process) para obtener detalles técnicos sobre cómo se implementa el código en sí mismo entre bastidores.
 
 ### Paso de implementación de fase {#stage-deployment}
 
 El paso **Implementación de fase** incluye las siguientes acciones:
 
-* **Validación**: este paso garantiza que la canalización esté configurada para utilizar los recursos disponibles actualmente, por ejemplo, que la rama configurada exista y que los entornos estén disponibles.
-* **Prueba de compilación y unidad**: este paso ejecuta un proceso de compilación en contenedores. Consulte el documento [El entorno de compilación](/help/getting-started/build-environment.md) para obtener más información.
-* **Escaneo de código**: este paso evalúa la calidad del código de la aplicación. Consulte el documento [Comprender los resultados de la prueba](/help/using/code-quality-testing.md) para obtener más información sobre el proceso de prueba.
+* **Validación**: Este paso garantiza que la canalización esté configurada para utilizar los recursos disponibles actualmente. Por ejemplo, que la rama configurada existe y que los entornos están disponibles.
+* **Prueba de compilación y unidad**: este paso ejecuta un proceso de compilación en contenedores. Consulte [El entorno de compilación](/help/getting-started/build-environment.md) para obtener más información.
+* **Escaneo de código**: este paso evalúa la calidad del código de la aplicación. Consulte [Comprender los resultados de la prueba](/help/using/code-quality-testing.md) para obtener detalles sobre el proceso de prueba.
 * **Implementar en fase**
 
 ![Implementación de fase](/help/assets/Stage_Deployment1.png)
@@ -54,7 +54,7 @@ El paso **Implementación de fase** incluye las siguientes acciones:
 El paso **Prueba de fase** incluye las siguientes acciones:
 
 * **Pruebas de seguridad**: este paso evalúa el impacto del código en la seguridad en el entorno AEM. Consulte el documento [Comprender los resultados de la prueba](/help/using/code-quality-testing.md) para obtener más información sobre el proceso de prueba.
-   * **Pruebas de rendimiento**: este paso evalúa el rendimiento del código. Consulte [Comprender los resultados de la prueba](/help/using/code-quality-testing.md) para obtener más información sobre el proceso de prueba.
+   * **Pruebas de rendimiento**: este paso evalúa el rendimiento del código. Consulte [Comprender los resultados de la prueba](/help/using/code-quality-testing.md) para obtener detalles sobre el proceso de prueba.
 
 ### Paso de implementación de producción {#production-deployment}
 
@@ -78,7 +78,7 @@ Una vez completada la implementación, el código se encuentra en su entorno de 
 
 ## Tiempos de espera {#timeouts}
 
-Los siguientes pasos agotarán el tiempo de espera si se deja a la espera de los comentarios del usuario:
+Los siguientes pasos agotan el tiempo de espera si se deja a la espera de los comentarios del usuario:
 
 | Paso | Tiempo de espera |
 |--- |--- |
@@ -96,30 +96,30 @@ Cloud Manager carga todos los archivos target/*.zip producidos por el proceso de
 
 Cuando Cloud Manager se implementa en topologías que no son de producción, la meta es completar la implementación lo antes posible y, por lo tanto, los artefactos se implementan en todos los nodos de forma simultánea de la siguiente manera:
 
-1. Cloud Manager determina si cada artefacto es un paquete de AEM o Dispatcher.
+1. Cloud Manager AEM determina si cada artefacto es un paquete de Dispatcher o un paquete de la.
 1. Cloud Manager elimina todos los distribuidores del equilibrador de carga para aislar el entorno durante la implementación.
 
-   * A menos que se configure lo contrario, puede omitir los cambios del equilibrador de carga en las implementaciones de desarrollo y ensayo, es decir, para el entorno de desarrollo, desasociar y adjuntar pasos en ambas canalizaciones que no sean de producción y, para el entorno de ensayo, en la canalización de producción.
+   * A menos que se configure lo contrario, puede omitir los cambios del equilibrador de carga en las implementaciones de desarrollo y ensayo. Es decir, para el entorno de desarrollo, desasocie y adjunte pasos tanto en las canalizaciones que no sean de producción, como para el entorno de ensayo en la canalización de producción.
 
    ![Omisión del equilibrador de carga](/help/assets/load_balancer.png)
 
    >[!NOTE]
    >
-   >Se espera que esta función la usen principalmente los clientes 1-1-1.
+   >Se espera que los clientes 1-1-1 utilicen esta función.
 
 1. Cada artefacto de AEM se implementa en cada instancia de AEM a través de las API del Administrador de paquetes, con dependencias de paquete que determinan el orden de implementación.
 
-   * Para obtener más información sobre cómo usar paquetes para instalar nuevas funcionalidades, transferir contenido entre instancias y realizar copias de seguridad del contenido del repositorio, consulte [Administrador de paquetes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager.html?lang=es).
+   * Para obtener más información sobre cómo puede utilizar paquetes para instalar nuevas funcionalidades, transferir contenido entre instancias y realizar copias de seguridad del contenido del repositorio. Consulte [Administrador de paquetes](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager).
 
    >[!NOTE]
    >
-   >Todos los artefactos AEM se implementan tanto en los autores como en los editores. Los modos de ejecución deben aprovecharse cuando se requieran las configuraciones específicas de los nodos. AEM Para obtener más información sobre cómo los modos de ejecución le permiten ajustar la instancia de la instancia de la para un propósito específico, consulte la sección [Modos de ejecución del documento Implementar en AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html?lang=es#runmodes).
+   >Todos los artefactos AEM se implementan tanto en los autores como en los editores. Los modos de ejecución deben aprovecharse cuando se requieran las configuraciones específicas de los nodos. AEM Para obtener más información sobre cómo los modos de ejecución le permiten ajustar la instancia de la instancia de la para un propósito específico, consulte la sección [Modos de ejecución del documento Implementar en AEM as a Cloud Service](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/deploying/overview#runmodes).
 
-1. El artefacto de Dispatcher se implementa en cada distribuidor de la siguiente manera:
+1. El artefacto de Dispatcher se implementa en cada Dispatcher de la siguiente manera:
 
    1. Se realiza una copia de seguridad de las configuraciones actuales y se copian en una ubicación temporal.
-   1. Todas las configuraciones se eliminan, excepto los archivos inmutables. Consulte [Configuraciones de Dispatcher](/help/getting-started/dispatcher-configurations.md) para obtener más información. Esto borra los directorios para garantizar que no queden archivos huérfanos.
-   1. El artefacto se extrae al directorio `httpd`. Los archivos inmutables no se sobrescriben. Los cambios que realice en los archivos inmutables del repositorio de Git se ignorarán en el momento de la implementación. Estos archivos son fundamentales para el marco de trabajo de Dispatcher de AMS y no se pueden cambiar.
+   1. Todas las configuraciones se eliminan, excepto los archivos inmutables. Consulte [Configuraciones de Dispatcher](/help/getting-started/dispatcher-configurations.md) para obtener más información. Este método borra los directorios para garantizar que no queden archivos huérfanos.
+   1. El artefacto se extrae al directorio `httpd`. Los archivos inmutables no se sobrescriben. Los cambios que realice en los archivos inmutables del repositorio de Git se omiten en el momento de la implementación. Estos archivos son fundamentales para el marco de trabajo de Dispatcher de AMS y no se pueden cambiar.
    1. Apache realiza una prueba de configuración. Si no se encuentran errores, el servicio se vuelve a cargar. Si se produce un error, las configuraciones se restauran desde la copia de seguridad, el servicio se vuelve a cargar y el error se devuelve a Cloud Manager.
    1. Cada ruta especificada en la configuración de la canalización se invalida o se vacía de la caché de Dispatcher.
 
@@ -127,41 +127,41 @@ Cuando Cloud Manager se implementa en topologías que no son de producción, la 
    >
    >Cloud Manager espera que el artefacto de Dispatcher contenga el conjunto completo de archivos. Todos los archivos de configuración de Dispatcher deben estar presentes en el repositorio de Git. Si faltan archivos o carpetas, se produce un error de implementación.
 
-1. Después de la implementación correcta de todos los paquetes de AEM y Dispatcher en todos los nodos, los distribuidores se vuelven a añadir al equilibrador de carga y se completa la implementación.
+1. AEM Después de la implementación correcta de todos los paquetes de Dispatcher y de la implementación de la aplicación en todos los nodos, los distribuidores se vuelven a añadir al equilibrador de carga y se completa la implementación.
 
    >[!NOTE]
    >
-   >Puede omitir los cambios del equilibrador de carga en las implementaciones de desarrollo y ensayo, es decir, para el entorno de desarrollo, desasociar y adjuntar pasos tanto en las canalizaciones que no sean de producción, como para el entorno de ensayo en la canalización de producción.
+   >Puede omitir los cambios del equilibrador de carga en las implementaciones de desarrollo y ensayo. Es decir, para el entorno de desarrollo, desasocie y adjunte pasos tanto en las canalizaciones que no sean de producción, como para el entorno de ensayo en la canalización de producción.
 
 ### Implementación en la fase de producción {#deployment-production-phase}
 
-El proceso de implementación en topologías de producción difiere ligeramente para minimizar el impacto de los visitantes del sitio de AEM.
+AEM El proceso de implementación en topologías de producción difiere ligeramente para minimizar el impacto de los visitantes del sitio de la.
 
 Las implementaciones de producción generalmente siguen los mismos pasos que se describen arriba, pero en secuencia:
 
 1. Implemente paquetes de AEM para crear.
 1. Desasocie dispatcher1 del equilibrador de carga.
-1. Implemente los paquetes AEM para publish1 y el paquete de Dispatcher para dispatcher1 en paralelo y vacíe la caché de Dispatcher.
+1. AEM Implemente paquetes para publish1 y el paquete de Dispatcher para dispatcher1 en paralelo y vacíe la caché de Dispatcher.
 1. Vuelva a colocar dispatcher1 en el equilibrador de carga.
-1. Una vez que dispatcher1 vuelva a estar en servicio, separe dispatcher2 del equilibrador de carga.
-1. Implemente los paquetes AEM para publish2 y el paquete del distribuidor para dispatcher2 en paralelo y vacíe la caché de Dispatcher.
+1. Una vez que dispatcher1 vuelva a estar en servicio, desasocie dispatcher2 del equilibrador de carga.
+1. AEM Implemente paquetes para publish2 y el paquete de Dispatcher para dispatcher2 en paralelo y vacíe la caché de Dispatcher.
 1. Vuelva a colocar dispatcher2 en el equilibrador de carga.
 
 Este proceso continúa hasta que la implementación haya llegado a todos los editores y distribuidores de la topología.
 
 ## Modo de ejecución de canalización de emergencia {#emergency-pipeline}
 
-En situaciones esenciales, es posible que los clientes de Adobe Managed Services necesiten implementar cambios de código en sus entornos de fase y producción sin esperar a que se ejecute un ciclo de prueba completo de Cloud Manager.
+En situaciones críticas, es posible que los clientes de Managed Services de Adobe necesiten implementar cambios de código en sus entornos de ensayo y producción inmediatamente. Esta capacidad les permite evitar el ciclo de prueba completo de Cloud Manager.
 
 Para resolver estas situaciones, la canalización de producción de Cloud Manager se puede ejecutar en modo de emergencia. Cuando se utiliza este modo, no se ejecutan los pasos de prueba de seguridad y rendimiento. Todos los demás pasos, incluidos los pasos de aprobación configurados, se ejecutan como en el modo de ejecución normal de la canalización.
 
 >[!NOTE]
 >
->Los ingenieros de éxito del cliente activan la función de modo de ejecución de canalización de emergencia en función de cada programa.
+>La función de modo de ejecución de canalización de emergencia se activa programa por programa. La activación la realizan los ingenieros de éxito del cliente.
 
 ### Uso del modo de ejecución de canalización de emergencia {#using-emergency-pipeline}
 
-Al iniciar la ejecución de una canalización de producción, si la función de modo de ejecución de canalización de emergencia se ha activado para el programa, puede comenzar la ejecución en modo normal o de emergencia desde un cuadro de diálogo.
+Al iniciar la ejecución de una canalización de producción, puede elegir entre el modo normal o de emergencia en un cuadro de diálogo. Esta opción está disponible si la función de modo de ejecución de canalización de emergencia está activada para el programa. Esta opción está disponible una vez habilitada la función.
 
 ![Ejecutar opciones de canalización](/help/assets/execution-emergency1.png)
 
@@ -177,11 +177,11 @@ $ aio cloudmanager:pipeline:create-execution PIPELINE_ID --emergency
 
 ## Volver a ejecutar una implementación de producción {#reexecute-deployment}
 
-En raras ocasiones, los pasos de implementación de producción pueden fallar por motivos transitorios. En estos casos, se admite la nueva ejecución del paso de implementación de producción siempre y cuando el paso de implementación de producción se haya completado, independientemente del tipo de finalización (por ejemplo, correcta, cancelada o fallida). Volver a ejecutar crea una nueva ejecución que utiliza la misma canalización que consta de tres pasos.
+En raras ocasiones, los pasos de implementación de producción pueden fallar por motivos transitorios. En estos casos, puede volver a ejecutar el paso de implementación de producción siempre y cuando se haya completado, independientemente de si se ha realizado correctamente, se ha cancelado o no. Se puede volver a ejecutar utilizando la misma canalización que consta de los tres pasos siguientes:
 
-1. **El paso de validación**: se trata esencialmente de la misma validación que se produce durante la ejecución normal de una canalización.
+1. **El paso de validación**: la misma validación que se produce durante la ejecución normal de una canalización.
 1. **El paso de compilación**: en el contexto de una nueva ejecución, el paso de compilación copia artefactos y no ejecuta realmente un nuevo proceso de compilación.
-1. **El paso de implementación de producción**: utiliza la misma configuración y opciones que el paso de implementación de producción en una ejecución de canalización normal.
+1. **Paso de implementación de producción**: utiliza la misma configuración y opciones que el paso de implementación de producción en una ejecución de canalización normal.
 
 En estas circunstancias, cuando se puede volver a ejecutar, la página de estado de la canalización de producción contiene la opción **Volver a ejecutar** junto a la opción habitual **Descargar registro de compilación**.
 
@@ -194,7 +194,7 @@ En estas circunstancias, cuando se puede volver a ejecutar, la página de estado
 ### Restricciones     {#limitations}
 
 * Volver a ejecutar el paso de implementación de producción solo está disponible para la última ejecución.
-* Volver a ejecutar no está disponible para ejecuciones de reversión o de actualización del estado.
+* Volver a ejecutar no está disponible para ejecuciones de reversión o de &quot;actualización push&quot;.
 * Si la última ejecución ha fallado en cualquier momento antes del paso de implementación de producción, no será posible volver a ejecutarla.
 
 
@@ -248,8 +248,8 @@ Este vínculo solo está disponible para el paso de implementación de producci�
 
 El valor de la sintaxis del vínculo HAL `href` solo es un ejemplo y el valor real siempre debe leerse desde el vínculo HAL y no generarse.
 
-Enviar una solicitud `PUT` a este extremo dará como resultado una respuesta `201` si esta es satisfactoria; el cuerpo de la respuesta será la representación de la nueva ejecución. Esto es similar a iniciar una ejecución normal a través de la API.
+Enviar una solicitud `PUT` a este extremo genera una respuesta `201` si es correcta. El cuerpo de respuesta es la representación de la nueva ejecución. Esta funcionalidad es similar a iniciar una ejecución normal a través de la API.
 
 #### Identificación de una ejecución que se vuelve a ejecutar {#identifying}
 
-Las ejecuciones que se han vuelto a ejecutar se pueden identificar mediante el valor `RE_EXECUTE` en el campo `trigger`.
+El sistema identifica las ejecuciones que se vuelven a ejecutar por el valor `RE_EXECUTE` en el campo de déclencheur.
