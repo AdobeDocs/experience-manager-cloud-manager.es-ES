@@ -2,10 +2,10 @@
 title: La herramienta Copia de contenido
 description: La herramienta de copia de contenido de Cloud Manager AEM permite a los usuarios copiar contenido mutable bajo demanda desde entornos de producción de la versión 6.x de la alojada en AMS a entornos más bajos para realizar pruebas.
 exl-id: 97915e58-a1d3-453f-b5ce-cad55ed73262
-source-git-commit: f855fa91656e4b3806a617d61ea313a51fae13b4
+source-git-commit: 2563c58431e58d2fc5917a2ad88835bbdd4224f2
 workflow-type: tm+mt
-source-wordcount: '1076'
-ht-degree: 36%
+source-wordcount: '1150'
+ht-degree: 42%
 
 ---
 
@@ -119,7 +119,8 @@ Una vez creado un conjunto de contenido, puede utilizarlo para copiar contenido.
    >* El usuario no tiene los permisos adecuados.
    >* El entorno tiene una canalización en ejecución o una operación de copia de contenido en curso.
 
-1. En el cuadro de diálogo **Copiar contenido**, especifique el origen y el destino de la acción de copia de contenido.
+1. En el cuadro de diálogo **Copiar contenido**, especifique los entornos de origen y destino para la acción de copia de contenido.
+   * Las regiones del entorno de destino deben ser las mismas o un subconjunto de las regiones del entorno de origen.
 
 1. Puede elegir eliminar o conservar las rutas de exclusión en el entorno de destino. Seleccione la casilla de verificación `Do not delete exclude paths from destination` para conservar `exclude paths` que se han especificado en el conjunto de contenido. Si la casilla de verificación no está marcada, las rutas de exclusión se eliminan en el entorno de destino.
 
@@ -164,8 +165,15 @@ La herramienta de copia de contenido tiene las siguientes limitaciones.
 * No es posible ejecutar operaciones de copia de contenido simultáneas en el mismo entorno.
 * No se puede realizar la copia de contenido si hay alguna operación activa ejecutándose en el entorno de destino o de origen, como una canalización CI/CD.
 * Se pueden especificar hasta cincuenta rutas por cada conjunto de contenido. No hay limitación en las rutas excluidas.
-* La herramienta de copia de contenido no debe utilizarse como herramienta de clonación o creación de reflejo porque no puede realizar el seguimiento del contenido movido o eliminado en el origen.
-* No puede pausar ni cancelar una copia de contenido después de iniciarla.
-* La herramienta de copia de contenido transfiere recursos y metadatos de Dynamic Media del entorno superior al entorno inferior seleccionado. A continuación, es necesario volver a procesar los recursos copiados mediante el [flujo de trabajo de recursos de proceso DAM](https://experienceleague.adobe.com/es/docs/experience-manager-65/content/assets/using/assets-workflow) en el entorno inferior para utilizar la configuración de Dynamic Media correspondiente.
-
+* La herramienta de copia de contenido no debe utilizarse como una herramienta de clonación o reflejo, ya que no puede rastrear el contenido movido o eliminado del origen.
+* Una copia de contenido no se puede pausar ni cancelar una vez que se inicia.
+* La herramienta de copia de contenido copia recursos junto con metadatos relacionados con medios dinámicos desde el entorno superior al entorno inferior seleccionado.
+   * A continuación, los recursos copiados deben volver a procesarse mediante la variable [Flujo de trabajo de recursos de proceso DAM](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-workflow.html?lang=es) en el entorno inferior para utilizar la configuración de Dynamic Media correspondiente.
+* El proceso de copia de contenido será considerablemente más rápido cuando no se copie el historial de versiones.
+* No se admiten [configuraciones de Dynamic Media con tamaños de recursos superiores a 2 GB habilitados](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/dynamic/config-dms7#optional-config-dms7-assets-larger-than-2gb).
 * Cuando no se copia el historial de versiones, el proceso de copia de contenido es considerablemente más rápido.
+* Las regiones del entorno de destino deben ser las mismas o un subconjunto de las regiones del entorno de origen.
+
+## Problemas conocidos {#known-issues}
+
+{{content-copy-known-issues}}

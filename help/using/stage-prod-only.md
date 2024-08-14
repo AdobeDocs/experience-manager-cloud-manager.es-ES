@@ -2,10 +2,10 @@
 title: Canalizaciones de solo fase y de producción
 description: Descubra cómo puede dividir las implementaciones de fase y producción mediante canalizaciones dedicadas.
 exl-id: b7dd0021-d346-464a-a49e-72864b01cce3
-source-git-commit: 70b7994435f7f0f587c134fab1fb66c6576386d9
+source-git-commit: 77eb1c824ba766e43dfd8e2b0f6f6edc71f043e5
 workflow-type: tm+mt
-source-wordcount: '887'
-ht-degree: 37%
+source-wordcount: '943'
+ht-degree: 31%
 
 ---
 
@@ -83,9 +83,19 @@ Las canalizaciones solo de producción y solo de fase se crean de manera similar
 
 ## Ejecutar canalizaciones solo de producción y solo de fase {#running}
 
-Las canalizaciones solo de producción y solo de fase se ejecutan de la misma manera que [todas las demás canalizaciones se ejecutan](/help/using/managing-pipelines.md#running-pipelines). Consulte esa documentación para obtener más detalles.
+Las canalizaciones de solo producción y de solo fase se ejecutan en gran medida de la misma manera que [ todas las demás canalizaciones.](/help/using/managing-pipelines.md#running-pipelines) Consulte esa documentación para obtener detalles. Sin embargo, hay dos nuevas características de estas canalizaciones.
 
-Además, la ejecución de una canalización de solo producción se puede activar directamente desde los detalles de ejecución de una canalización de solo fase.
+* Las canalizaciones solo de fase y de solo producción ofrecen un nuevo [modo de emergencia](#emergency-mode) para permitir omitir las pruebas.
+* La ejecución de canalizaciones solo de producción se puede activar directamente a partir de los detalles de ejecución de una canalización [solo de etapa.](#stage-only-run)
+
+### Modo de emergencia {#emergency-mode}
+
+Siempre que inicie canalizaciones solo de producción y en línea de ensayo, se le pedirá que confirme el inicio y cómo se iniciará.
+
+* **Modo normal** es una ejecución estándar e incluye pasos de prueba de etapa.
+* **Modo de emergencia** omite los pasos de la prueba de fase.
+
+![Modo de emergencia](/help/assets/configure-pipelines/emergency-mode.png)
 
 ### Canalizaciones solo de fase {#stage-only-run}
 
@@ -93,7 +103,9 @@ Una canalización de solo fase se ejecuta casi del mismo modo que las canalizaci
 
 ![Ejecución de canalización de solo fase](/help/assets/configure-pipelines/stage-only-pipeline-run.png)
 
-El botón **Promocionar versión** solo aparece si se encuentra en la última ejecución correcta de canalización de solo fase. Una vez que se ha hecho clic en, se le pide que confirme la ejecución de la canalización de solo producción o que cree una canalización de solo producción si aún no existe.
+Al hacer clic en **Promocionar compilación**, se le solicitará que confirme la ejecución de la canalización de solo fase relacionada, ya sea de forma normal o en [modo de emergencia.](#emergency-mode)
+
+Si no existe ninguna canalización de solo producción, se le solicitará que cree una.
 
 ### Canalizaciones de solo producción {#prod-only-run}
 
