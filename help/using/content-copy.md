@@ -2,10 +2,10 @@
 title: La herramienta Copia de contenido
 description: La herramienta de copia de contenido de Cloud Manager AEM permite a los usuarios copiar contenido mutable bajo demanda desde entornos de producción de la versión 6.x de la alojada en AMS a entornos más bajos para realizar pruebas.
 exl-id: 97915e58-a1d3-453f-b5ce-cad55ed73262
-source-git-commit: 2563c58431e58d2fc5917a2ad88835bbdd4224f2
+source-git-commit: 8e2c57d2594691e7fb18d8a538caa9b54a26b6bb
 workflow-type: tm+mt
-source-wordcount: '1150'
-ht-degree: 42%
+source-wordcount: '1144'
+ht-degree: 34%
 
 ---
 
@@ -165,11 +165,10 @@ La herramienta de copia de contenido tiene las siguientes limitaciones.
 * No es posible ejecutar operaciones de copia de contenido simultáneas en el mismo entorno.
 * No se puede realizar la copia de contenido si hay alguna operación activa ejecutándose en el entorno de destino o de origen, como una canalización CI/CD.
 * Se pueden especificar hasta cincuenta rutas por cada conjunto de contenido. No hay limitación en las rutas excluidas.
-* La herramienta de copia de contenido no debe utilizarse como una herramienta de clonación o reflejo, ya que no puede rastrear el contenido movido o eliminado del origen.
-* Una copia de contenido no se puede pausar ni cancelar una vez que se inicia.
-* La herramienta de copia de contenido copia recursos junto con metadatos relacionados con medios dinámicos desde el entorno superior al entorno inferior seleccionado.
-   * A continuación, los recursos copiados deben volver a procesarse mediante la variable [Flujo de trabajo de recursos de proceso DAM](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-workflow.html?lang=es) en el entorno inferior para utilizar la configuración de Dynamic Media correspondiente.
-* El proceso de copia de contenido será considerablemente más rápido cuando no se copie el historial de versiones.
+* La herramienta de copia de contenido no debe utilizarse como herramienta de clonación o creación de reflejo porque no puede realizar el seguimiento del contenido movido o eliminado en el origen.
+* Una copia de contenido no se puede pausar ni cancelar una vez iniciada.
+* La herramienta de copia de contenido copia recursos y metadatos de Dynamic Media del entorno superior al entorno inferior seleccionado. A continuación, es necesario volver a procesar los recursos copiados mediante el [flujo de trabajo de recursos de proceso DAM](https://experienceleague.adobe.com/es/docs/experience-manager-65/content/assets/using/assets-workflow) en el entorno inferior para utilizar la configuración de Dynamic Media correspondiente.
+* El proceso de copia de contenido es considerablemente más rápido cuando no se copia el historial de versiones.
 * No se admiten [configuraciones de Dynamic Media con tamaños de recursos superiores a 2 GB habilitados](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/dynamic/config-dms7#optional-config-dms7-assets-larger-than-2gb).
 * Cuando no se copia el historial de versiones, el proceso de copia de contenido es considerablemente más rápido.
 * Las regiones del entorno de destino deben ser las mismas o un subconjunto de las regiones del entorno de origen.

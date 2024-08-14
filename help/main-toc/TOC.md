@@ -7,10 +7,10 @@ user-guide-description: Aprenda a utilizar Cloud Manager para autoadministrar Ad
 feature-set: Experience Manager Cloud Manager, Experience Manager
 feature: Cloud Manager
 role: Admin
-source-git-commit: 9315a8ff96e450a1b15da583106eb5c086d80842
+source-git-commit: 8e2c57d2594691e7fb18d8a538caa9b54a26b6bb
 workflow-type: tm+mt
 source-wordcount: '540'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -73,7 +73,7 @@ ht-degree: 100%
    + [Evaluación](/help/product-update-wizard/evaluation.md)
 + Notas de la versión {#release-notes}
    + [Notas de la versión actual](/help/release-notes/current.md)
-   + 2024 {#2024}
+   + 2024 {#rn-2024}
       + [Notas de la versión 2024.7.0](/help/release-notes/2024/2024-7-0.md)
       + [Notas de la versión para 2024.6.0](/help/release-notes/2024/2024-6-0.md)
       + [Notas de la versión 2024.5.0](/help/release-notes/2024/2024-5-0.md)
@@ -81,7 +81,7 @@ ht-degree: 100%
       + [Notas de la versión para 2024.3.0](/help/release-notes/2024/2024-3-0.md)
       + [Notas de la versión 2024.2.0](/help/release-notes/2024/2024-2-0.md)
       + [Notas de la versión 2024.1.0](/help/release-notes/2024/2024-1-0.md)
-   + 2023 {#2023}
+   + 2023 {#rn-2023}
       + [Notas de la versión 2023.12.0](/help/release-notes/2023/2023-12-0.md)
       + [Notas de la versión 2023.11.0](/help/release-notes/2023/2023-11-0.md)
       + [Notas de la versión 2023.10.0](/help/release-notes/2023/2023-10-0.md)
@@ -94,7 +94,7 @@ ht-degree: 100%
       + [Notas de la versión 2023.3.0](/help/release-notes/2023/2023-3-0.md)
       + [Notas de la versión 2023.2.0](/help/release-notes/2023/2023-2-0.md)
       + [Notas de la versión 2023.1.0](/help/release-notes/2023/2023-1-0.md)
-   + 2022 {#2022}
+   + 2022 {#rn-2022}
       + [Notas de la versión 2022.12.0](/help/release-notes/2022/2022-12-0.md)
       + [Notas de la versión 2022.11.0](/help/release-notes/2022/2022-11-0.md)
       + [Notas de la versión 2022.10.0](/help/release-notes/2022/2022-10-0.md)
@@ -107,7 +107,7 @@ ht-degree: 100%
       + [Notas de la versión 2022.3.0](/help/release-notes/2022/2022-3-0.md)
       + [Notas de la versión 2022.2.0](/help/release-notes/2022/2022-2-0.md)
       + [Notas de la versión 2022.1.0](/help/release-notes/2022/2022-1-0.md)
-   + 2021 {#2021}
+   + 2021 {#rn-2021}
       + [Notas de la versión 2021.12.0](/help/release-notes/2021/2021-12-0.md)
       + [Notas de la versión 2021.11.0](/help/release-notes/2021/2021-11-0.md)
       + [Notas de la versión 2021.10.0](/help/release-notes/2021/2021-10-0.md)
@@ -119,7 +119,7 @@ ht-degree: 100%
       + [Notas de la versión 2021.4.0](/help/release-notes/2021/2021-4-0.md)
       + [Notas de la versión 2021.3.0](/help/release-notes/2021/2021-3-0.md)
       + [Notas de la versión 2021.2.0](/help/release-notes/2021/2021-2-0.md)
-   + 2020 {#2020}
+   + 2020 {#rn-2020}
       + [Notas de la versión 2020.12.0](/help/release-notes/2020/2020-12-0.md)
       + [Notas de la versión 2020.11.0](/help/release-notes/2020/2020-11-0.md)
       + [Notas de la versión 2020.10.0](/help/release-notes/2020/2020-10-0.md)
@@ -132,7 +132,7 @@ ht-degree: 100%
       + [Notas de la versión 2020.3.0](/help/release-notes/2020/2020-3-0.md)
       + [Notas de la versión 2020.2.0](/help/release-notes/2020/2020-2-0.md)
       + [Notas de la versión 2020.1.0](/help/release-notes/2020/2020-1-0.md)
-   + 2019 {#2019}
+   + 2019 {#rn-2019}
       + [Notas de la versión 2019.12.0](/help/release-notes/2019/2019-12-0.md)
       + [Notas de la versión 2019.11.0](/help/release-notes/2019/2019-11-0.md)
       + [Notas de la versión 2019.10.0](/help/release-notes/2019/2019-10-0.md)
@@ -145,7 +145,7 @@ ht-degree: 100%
       + [Notas de la versión 2019.3.0](/help/release-notes/2019/2019-3-0.md)
       + [Notas de la versión 2019.2.0](/help/release-notes/2019/2019-2-0.md)
       + [Notas de la versión 2019.1.0](/help/release-notes/2019/2019-1-0.md)
-   + 2018 {#2018}
+   + 2018 {#rn-2018}
       + [Notas de la versión 2018.9.0](/help/release-notes/2018/2018-9-0.md)
       + [Notas de la versión 2018.8.0](/help/release-notes/2018/2018-8-0.md)
       + [Notas de la versión 2018.7.0](/help/release-notes/2018/2018-7-0.md)
