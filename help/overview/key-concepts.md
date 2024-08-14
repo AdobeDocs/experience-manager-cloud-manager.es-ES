@@ -2,10 +2,10 @@
 title: Conceptos clave
 description: Al igual que todas las herramientas potentes, Cloud Manager engloba muchos conceptos y términos. Este documento resume algunos de los más importantes para usted a medida que comienza a utilizarlo.
 exl-id: 86dfc976-f3da-479a-9faa-08f40ca909e0
-source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
+source-git-commit: f855fa91656e4b3806a617d61ea313a51fae13b4
 workflow-type: tm+mt
-source-wordcount: '413'
-ht-degree: 70%
+source-wordcount: '414'
+ht-degree: 49%
 
 ---
 
@@ -18,7 +18,7 @@ Al igual que todas las herramientas potentes, Cloud Manager engloba muchos conce
 
 Una aplicación es el conjunto de personalizaciones y configuraciones creadas por un cliente para adaptar la [solución](#solution) subyacente (como AEM Sites o AEM Assets) para sus casos de uso y necesidades específicos. Una aplicación es una unidad lógica que puede estar compuesta por varios [artefactos](#artifact).
 
-Una aplicación de ejemplo es la aplicación de estilo de vida [WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=es) ficticia.
+Una aplicación de ejemplo es la aplicación de estilo de vida [WKND](https://experienceleague.adobe.com/es/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview) ficticia.
 
 ## Artefacto {#artifact}
 
@@ -30,11 +30,11 @@ Un repositorio de artefactos es un lugar de almacenamiento en el que se guardan 
 
 ## Entorno {#environment}
 
-Un entorno es un único clúster de máquinas virtuales dentro de un [programa](#program). AEM Por ejemplo, se compone de una instancia de creación (opcionalmente con una instancia de creación de espera pasiva adicional), cero o más instancias de publicación, una o más instancias de Dispatcher y un equilibrador de carga.
+Un entorno es un único clúster de máquinas virtuales dentro de un [programa](#program). AEM Por ejemplo, este entorno está compuesto por una instancia de creación (opcionalmente con una instancia de creación de espera pasiva adicional), cero o más instancias de publicación, una o más instancias de Dispatcher y un equilibrador de carga.
 
 ## Repositorio de Git {#git-repository}
 
-Un repositorio de Git es una ubicación donde se almacena código fuente específico del cliente y se puede acceder a [usando Git](https://git-scm.com).
+Un repositorio Git es una ubicación donde el código fuente específico del cliente se almacena y es accesible [usando Git](https://git-scm.com).
 
 ## Instancia {#instance}
 
@@ -46,7 +46,7 @@ Una organización es un constructo de Adobe que representa a un cliente empresar
 
 ## Canalización {#pipeline}
 
-Una canalización es un conjunto de pasos de implementación que se ejecutan de forma secuencial.
+Una canalización es un conjunto de pasos de implementación que se ejecutan o &quot;ejecutan&quot; en secuencia.
 
 ## Producto {#product}
 

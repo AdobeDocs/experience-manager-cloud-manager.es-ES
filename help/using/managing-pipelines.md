@@ -1,16 +1,16 @@
 ---
-title: Administración de canalizaciones
+title: Administrar canalizaciones
 description: Obtenga información sobre cómo administrar las canalizaciones existentes, como editarlas, ejecutarlas y eliminarlas.
 exl-id: e36420d2-57c5-4375-99fb-dd47c1c8bffd
-source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
+source-git-commit: f855fa91656e4b3806a617d61ea313a51fae13b4
 workflow-type: tm+mt
-source-wordcount: '848'
-ht-degree: 67%
+source-wordcount: '847'
+ht-degree: 63%
 
 ---
 
 
-# Administración de canalizaciones {#managing-pipelines}
+# Administrar canalizaciones {#managing-pipelines}
 
 Obtenga información sobre cómo administrar las canalizaciones existentes, como editarlas, ejecutarlas y eliminarlas.
 
@@ -34,7 +34,7 @@ En la parte inferior de la lista de canalizaciones, tiene opciones generales.
 * **Acceder a la info del repositorio**: muestra la información necesaria para acceder al repositorio de Git de Cloud Manager
 * **Más información**: Navega hasta los recursos de documentación de canalización de CI/CD.
 
-## Ventana de canalizaciones {#pipelines}
+## Ventana Canalizaciones {#pipelines}
 
 La ventana **Canalizaciones** muestra una lista completa de todas las canalizaciones para el programa seleccionado. Esto es útil porque presenta información más completa que la disponible en la [tarjeta de canalización](#pipeline-card).
 
@@ -66,7 +66,7 @@ Al hacer clic en el icono `i`, se muestran detalles sobre la ejecución de la ca
 
 Al hacer clic en **Ver detalles**, accederá a [los detalles de la ejecución de la canalización](#view-details).
 
-## Ejecutar canalizaciones {#running-pipelines}
+## Canalizaciones de ejecución {#running-pipelines}
 
 1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización y programa adecuados.
 
@@ -120,7 +120,7 @@ Desde esta, puede ver el estado de los distintos pasos de la canalización y rec
 
 Todos los pasos de la ejecución de una canalización se muestran con los que aún no se han iniciado en gris. Los pasos finalizados muestran su duración.
 
-Una vez completado el paso de una canalización, se presenta un resumen.
+Cuando se completa un paso de una canalización, se presenta un resumen.
 
 ![Resumen del paso](/help/assets/configure-pipelines/pipeline-step.png)
 

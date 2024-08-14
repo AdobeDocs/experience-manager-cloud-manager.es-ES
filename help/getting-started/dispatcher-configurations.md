@@ -2,10 +2,10 @@
 title: Configuraciones de Dispatcher
 description: Obtenga información sobre cómo implementar archivos de configuración de Dispatcher mediante Cloud Manager.
 exl-id: ffc2b60e-bde7-48ca-b268-dea0f8fd4e30
-source-git-commit: 6572c16aea2c5d2d1032ca5b0f5d75ade65c3a19
+source-git-commit: f855fa91656e4b3806a617d61ea313a51fae13b4
 workflow-type: tm+mt
 source-wordcount: '586'
-ht-degree: 100%
+ht-degree: 91%
 
 ---
 
@@ -24,7 +24,7 @@ Proyectos generados por Cloud Manager mediante el uso del [asistente de creació
 
 Tras la implementación en una instancia de Dispatcher, los contenidos de estos directorios en la instancia de Dispatcher son sobrescritos por los que se encuentran en el repositorio de Git. Dado que los archivos de configuración de Dispatcher y del servidor web suelen requerir información específica del entorno para que esta capacidad se utilice correctamente, primero deberá trabajar con los ingenieros de éxito del cliente (CSE) para establecer estas variables de entorno en `/etc/sysconfig/httpd`.
 
-## Configuración de Dispatcher para clientes de Managed Serviced existentes {#steps-for-configuring-dispatcher}
+## Configuración de Dispatcher para clientes de servicios administrados existentes {#steps-for-configuring-dispatcher}
 
 Siga estos pasos a continuación para completar la configuración inicial de Dispatcher.
 
@@ -48,7 +48,7 @@ La estructura específica de archivos y directorios puede variar en función de 
 
    Puede utilizar cualquier nombre aquí, pero el nombre de directorio creado en este paso debe ser el mismo que el nombre utilizado en el paso 6.
 
-1. Este subdirectorio contendrá un módulo Maven que crea el archivo .zip de Dispatcher utilizando el complemento Maven Assembly. Para comenzar, en el directorio `dispatcher`, cree un archivo `pom.xml` con este contenido, cambiando la referencia `parent`, `artifactId` y `name` según sea necesario.
+1. Este subdirectorio contendrá un módulo Maven que crea el archivo .zip de Dispatcher mediante el complemento Maven Assembly. Para comenzar, en el directorio `dispatcher`, cree un archivo `pom.xml` con este contenido, cambiando la referencia `parent`, `artifactId` y `name` según sea necesario.
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>

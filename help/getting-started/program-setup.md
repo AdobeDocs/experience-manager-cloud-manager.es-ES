@@ -2,10 +2,10 @@
 title: Configuración del programa
 description: Después de la incorporación, el propietario de la empresa tendrá que llevar a cabo alguna configuración inicial del programa.
 exl-id: 795c7112-d564-4fbf-96a1-152a6c286bf2
-source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
+source-git-commit: f855fa91656e4b3806a617d61ea313a51fae13b4
 workflow-type: tm+mt
-source-wordcount: '584'
-ht-degree: 91%
+source-wordcount: '582'
+ht-degree: 86%
 
 ---
 
@@ -58,7 +58,7 @@ Los programas se pueden editar una vez configurados. Siga estos pasos para edita
 
 1. Vaya al programa desde la pantalla de inicio de Cloud Manager.
 
-1. Haga clic en **Editar programa** para actualizar o modificar el programa desde la página **Información general**.
+1. Haga clic en **Editar programa** para actualizar o modificar su programa desde la página **Información general**.
 
    ![Opción Editar programa](/help/assets/set-up-program/edit-program1.png)
 
@@ -72,7 +72,7 @@ Tenga en cuenta que los cambios se guardan inmediatamente en Cloud Manager, pero
 
 Si todavía no ha creado una canalización, consulte los documentos [Configuración de canalizaciones de producción](/help/using/production-pipelines.md) y [Configuración de canalizaciones que no son de producción](/help/using/non-production-pipelines.md).
 
-## Cambio entre programas {#swithing-programs}
+## Cambiar entre programas {#swithing-programs}
 
 Al trabajar en un programa, puede cambiar rápidamente a otro sin volver a la página de información general de Cloud Manager.
 
@@ -90,6 +90,6 @@ Las pruebas de rendimiento de Assets se realizan cargando recursos repetidamente
 
 Puede tener una red de distribución de contenido (CDN) como Akamai o CloudFront delante del entorno de producción. Como [!UICONTROL Cloud Manager] prueba directamente en el entorno de ensayo, los KPI deben reflejar únicamente el tráfico que se espera que pase a través de la red de distribución de contenido (CDN), es decir, los fallos de la caché. Esto suele ser un subconjunto relativamente pequeño del tráfico total de producción.
 
-## Información general en vídeo {#video}
+## Vídeo introductorio {#video}
 
 >[!VIDEO](https://video.tv.adobe.com/v/26313/)

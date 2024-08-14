@@ -2,10 +2,10 @@
 title: Configuración de canalizaciones de producción
 description: Aprenda a utilizar Cloud Manager para crear y configurar canalizaciones de producción para implementar su código.
 exl-id: d489fa3c-df1e-480b-82d0-ac8cce78a710
-source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
+source-git-commit: f855fa91656e4b3806a617d61ea313a51fae13b4
 workflow-type: tm+mt
-source-wordcount: '1286'
-ht-degree: 91%
+source-wordcount: '1285'
+ht-degree: 87%
 
 ---
 
@@ -33,7 +33,7 @@ La función **Administrador de implementación** es responsable de configurar la
 >
 >No se puede configurar una canalización hasta que su repositorio de Git asociado tenga al menos una rama y la [configuración del programa](/help/getting-started/program-setup.md) haya finalizado.
 
-## Adición de una nueva canalización de producción {#adding-production-pipeline}
+## Agregar una nueva canalización de producción {#adding-production-pipeline}
 
 Una vez que haya utilizado la IU de [!UICONTROL Cloud Manager] para configurar el programa y tener al menos un entorno, ya puede añadir una canalización de producción.
 
@@ -124,7 +124,7 @@ Una vez que haya utilizado la IU de [!UICONTROL Cloud Manager] para configurar e
 
          * **Configuración de Dispatcher**: defina la configuración de Dispatcher para su entorno de producción. Las opciones son las mismas que para el entorno de ensayo.
 
-1. Haga clic en **Continuar** para avanzar a la pestaña **Prueba de ensayo**, donde puede configurar las pruebas de rendimiento de AEM Sites y AEM Assets, en función de los productos para los que disponga de licencia.
+1. Haga clic en **Continuar** para avanzar a la pestaña **Prueba de ensayo**, donde puede configurar las pruebas de rendimiento de AEM Sites y AEM Assets, según los productos para los que tenga licencia.
 
    >[!TIP]
    >
@@ -153,7 +153,7 @@ Una vez que haya utilizado la IU de [!UICONTROL Cloud Manager] para configurar e
 
 1. Haga clic en **Guardar** para completar la adición de la canalización de producción.
 
-## Pasos siguientes {#the-next-steps}
+## Los siguientes pasos {#the-next-steps}
 
 Una vez configurada la canalización, debe implementar el código. Consulte [Implementación de código](/help/using/code-deployment.md) para obtener más información.
 

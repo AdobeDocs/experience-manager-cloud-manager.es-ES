@@ -1,11 +1,11 @@
 ---
-title: Monitorización de entornos
+title: Supervisar entornos
 description: Obtenga información sobre cómo monitorizar los entornos en Cloud Manager.
 exl-id: 32886133-d6c0-4aed-8bb0-81b84f63e825
-source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
+source-git-commit: f855fa91656e4b3806a617d61ea313a51fae13b4
 workflow-type: tm+mt
-source-wordcount: '922'
-ht-degree: 93%
+source-wordcount: '903'
+ht-degree: 79%
 
 ---
 
@@ -20,9 +20,7 @@ La Monitorización del sistema, en [!UICONTROL Cloud Manager], se lleva a cabo o
 
 Si una métrica supera su umbral esencial, se considera que está en estado crítico. Si una métrica supera su umbral de advertencia (pero está por debajo del esencial), se considera que está en estado de advertencia. Los umbrales los establece Adobe Managed Services y se pueden visualizar en [!UICONTROL Cloud Manager]. En la mayoría de los casos, los umbrales son coherentes entre los clientes, pero, en algunos casos, Adobe Managed Services los modificará para adaptarlos a los requisitos específicos del cliente. Las preguntas acerca de los umbrales deben dirigirse a su ingeniero de éxito del cliente (Customer Success Engineer, CSE).
 
-## Acceso a la Monitorización del sistema {#accessing-system-monitoring}
-
-Siga estos pasos para acceder a la Monitorización del sistema.
+## Monitorización del sistema de acceso {#accessing-system-monitoring}
 
 1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com) y seleccione la organización y programa adecuados.
 
@@ -49,7 +47,7 @@ El estado de cada categoría es un resumen de las métricas individuales. Si alg
 >
 >De forma predeterminada, al navegar a esta página, las instancias del entorno de producción están visibles, pero también se pueden ver otros entornos.
 
-## Detalles de Monitorización del sistema {#system-monitoring-detail}
+## Detalles de monitorización del sistema {#system-monitoring-detail}
 
 Para ver los detalles de métricas específicas, haga clic en una de las columnas de categoría de una instancia específica o en el título de categoría en el panel de navegación izquierdo. Cada página de detalles muestra una serie de gráficos para las métricas dentro de esa categoría. Puede ver las métricas de todas las instancias de un entorno o de una específica. Puede cambiar entre el entorno y las instancias mediante los cuadros desplegables de la esquina superior derecha.
 
@@ -96,7 +94,7 @@ Por ejemplo, si hace clic en la serie de umbrales de advertencia, solo verá el 
    * Hay métricas independientes para cada agente de replicación.
 * **Vaciado de Dispatcher**: número de elementos que hay actualmente en la cola de vaciado de Dispatcher
 
-## Creación de informes de SLA {#sla-reporting}
+## Informes de SLA {#sla-reporting}
 
 Puede ver el rendimiento de su entorno de AEM de producción en relación con el contrato de nivel de servicio (SLA).
 
@@ -114,12 +112,12 @@ La sección **Análisis de eventos** bajo este gráfico muestra el conjunto de i
 
 ## Métricas de SLA {#sla-metrics}
 
-* **Contrato de creación**: este es el SLA definido en su contrato con Adobe Managed Services para el nivel de creación.
-* **SLA de creación de AMS**: este es el tiempo de actividad medido de los incidentes de factorización de nivel de creación de producción causados por Adobe o nuestros proveedores.
-* **SLA de creación**: este es el tiempo de actividad medido del nivel de creación que ignora el tiempo de inactividad programado, como los períodos de mantenimiento.
-* **Contrato de usuario final**: este es el SLA definido en su contrato con Adobe Managed Services para el nivel de publicación.
-* **SLA de usuario final de AMS**: este es el tiempo de actividad medido de los incidentes de factorización del nivel de publicación de producción causados por Adobe o nuestros proveedores.
-* **SLA de usuario final**: este es el tiempo de actividad medido del nivel de publicación que ignora el tiempo de inactividad programado, como los períodos de mantenimiento.
+* **Contrato de autor**: el SLA definido en su contrato con Adobe Managed Services para el nivel de autor.
+* **SLA de autor de AMS**: tiempo de actividad medido de los incidentes de factorización del nivel de autor de producción causados por Adobes o nuestros proveedores.
+* **SLA de autor**: tiempo de actividad medido del nivel de creación que ignora el tiempo de inactividad programado, como los períodos de mantenimiento.
+* **Contrato de usuario final**: SLA definido en su contrato con Adobe Managed Services para el nivel de publicación.
+* **SLA de usuario final de AMS**: tiempo de actividad medido de los incidentes de factorización del nivel de publicación de producción causados por Adobes o nuestros proveedores.
+* **SLA de usuario final**: el tiempo de actividad medido del nivel de publicación que ignora el tiempo de inactividad programado, como los períodos de mantenimiento.
 
 ## Tutorial de vídeo {#video-tutorial}
 

@@ -3,10 +3,10 @@ title: Fase de evaluación
 seo-title: Evaluation Phase
 description: Descubra cómo la fase de evaluación del Asistente para actualización de productos evalúa la complejidad de la actualización con el detector de patrones.
 exl-id: 1ffcbc21-dc36-435d-b83b-0209f81a15e7
-source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
+source-git-commit: f855fa91656e4b3806a617d61ea313a51fae13b4
 workflow-type: tm+mt
-source-wordcount: '285'
-ht-degree: 85%
+source-wordcount: '280'
+ht-degree: 75%
 
 ---
 
@@ -27,11 +27,11 @@ El informe sirve para evaluar las actividades de desarrollo que se realizan para
 >
 >Para obtener más información sobre el detector de patrones, consulte [Evaluación de la complejidad de la actualización con Pattern Detector](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/pattern-detector.html?lang=es).
 
-## Ejecución de la evaluación {#running}
+## Ejecutar el informe de evaluación {#running}
 
 El detector de patrones se puede ejecutar en cualquier entorno. Sin embargo, para aumentar la tasa de detección y evitar cualquier ralentización en las instancias esenciales para el negocio, Cloud Manager la ejecutará en el entorno de ensayo de la instancia de autor.
 
-Siga estos pasos para generar el informe de evaluación.
+**Para ejecutar el informe de evaluación:**
 
 1. Inicie el asistente como se describe en el documento [Asistente para la actualización de productos](/help/product-update-wizard/overview.md).
 
@@ -39,7 +39,7 @@ Siga estos pasos para generar el informe de evaluación.
 
    ![Ejecutar evaluación](/help/assets/Run-Evaluation.png)
 
-1. El asistente informa el estado de la acción. Cuando se genere el informe de evaluación, verá **En curso** o **completado** según corresponda.
+1. El asistente informa el estado de la acción. Aviso **En curso** o **completado** según corresponda cuando se genere el informe de evaluación.
 
 1. Una vez generado el informe, puede hacer clic en **[!UICONTROL Descargar informe]** para guardar una copia.
 
