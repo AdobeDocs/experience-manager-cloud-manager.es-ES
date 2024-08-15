@@ -2,10 +2,10 @@
 title: Introducción a Cloud Manager para AMS
 description: Empiece aquí para conocer Cloud Manager para Adobe Managed Services (AMS) y cómo permite a las organizaciones autoadministrar Adobe Experience Manager en la nube.
 exl-id: 58344d8a-b869-4177-a9cf-6a8b7dfe9588
-source-git-commit: 8e2c57d2594691e7fb18d8a538caa9b54a26b6bb
+source-git-commit: 4c4a2688cab8e5c81efa4b7b5e26f3c7b5dc30d6
 workflow-type: tm+mt
-source-wordcount: '1259'
-ht-degree: 56%
+source-wordcount: '1256'
+ht-degree: 48%
 
 ---
 
@@ -35,15 +35,13 @@ Con Cloud Manager, su equipo de desarrollo se beneficia de las siguientes funcio
 
 * Integración y entrega continuas (CI/CD) del código para reducir el tiempo de salida al mercado de meses o semanas a días u horas.
 
-* Inspección del código, pruebas de rendimiento y validación de seguridad basadas en prácticas recomendadas antes de pasar a producción, para minimizar las interrupciones en esta última.
+* Inspección del código, pruebas de rendimiento y validación de seguridad basadas en prácticas recomendadas antes de pasar a producción, para minimizar las interrupciones en esta.
 
 * Conectividad de API para complementar los procesos de DevOps existentes.
 
 * Escalado automático que detecta de forma inteligente la necesidad de aumentar la capacidad y pone en línea automáticamente segmentos adicionales de Dispatcher/publicación.
 
-En la siguiente imagen, se ilustra el flujo del proceso de CI/CD que se usa en [!UICONTROL Cloud Manager]:
-
-![Flujo de CI/CD](/help/assets/screen_shot_2018-05-12at73843pm.png)
+![Flujo de CI/CD](/help/assets/screen_shot_2018-05-12at73843pm.png)Flujo de proceso de CI/CD usado en [!UICONTROL Cloud Manager].
 
 ## Características principales de [!UICONTROL Cloud Manager] {#key-features-in-cloud-manager}
 
@@ -119,7 +117,7 @@ Cuando la implementación azul/verde está habilitada, el flujo de implementaci�
 | 9 | La infraestructura azul se cierra automáticamente | - |
 | 10 | La canalización finaliza | - |
 
-#### Implementación de azul/verde {#implementing}
+#### Implementación del azul/verde {#implementing}
 
 Todos los usuarios de AMS que utilicen Cloud Manager para implementaciones de producción pueden utilizar la implementación azul/verde. Sin embargo, el uso de la implementación azul/verde requiere una validación adicional de los entornos y la configuración por parte de un CSE de Adobe.
 

@@ -2,10 +2,10 @@
 title: Supervisar entornos
 description: Obtenga información sobre cómo monitorizar los entornos en Cloud Manager.
 exl-id: 32886133-d6c0-4aed-8bb0-81b84f63e825
-source-git-commit: f855fa91656e4b3806a617d61ea313a51fae13b4
+source-git-commit: 4c4a2688cab8e5c81efa4b7b5e26f3c7b5dc30d6
 workflow-type: tm+mt
-source-wordcount: '903'
-ht-degree: 79%
+source-wordcount: '911'
+ht-degree: 34%
 
 ---
 
@@ -16,23 +16,28 @@ Obtenga información sobre cómo monitorizar los entornos en Cloud Manager.
 
 ## Umbrales de métrica {#thresholds}
 
-La Monitorización del sistema, en [!UICONTROL Cloud Manager], se lleva a cabo observando las instancias individuales dentro de un entorno y con el seguimiento de una variedad de métricas para cada una. Cada métrica tiene dos umbrales definidos: un umbral de advertencia y un umbral esencial.
+La Monitorización del sistema, en [!UICONTROL Cloud Manager], se lleva a cabo observando las instancias individuales dentro de un entorno y con el seguimiento de una variedad de métricas para cada una. Cada métrica tiene dos umbrales definidos: un umbral *advertencia* y un umbral *crítico*.
 
-Si una métrica supera su umbral esencial, se considera que está en estado crítico. Si una métrica supera su umbral de advertencia (pero está por debajo del esencial), se considera que está en estado de advertencia. Los umbrales los establece Adobe Managed Services y se pueden visualizar en [!UICONTROL Cloud Manager]. En la mayoría de los casos, los umbrales son coherentes entre los clientes, pero, en algunos casos, Adobe Managed Services los modificará para adaptarlos a los requisitos específicos del cliente. Las preguntas acerca de los umbrales deben dirigirse a su ingeniero de éxito del cliente (Customer Success Engineer, CSE).
+Si una métrica supera su umbral de advertencia (pero está por debajo del esencial), se considera que está en estado de advertencia.
+
+Si una métrica supera su umbral esencial, se considera que está en estado crítico.
+
+Adobe Managed Services establece los umbrales, que puede ver en [!UICONTROL Cloud Manager]. En la mayoría de los casos, los umbrales son coherentes entre los clientes, pero, en algunos casos, Adobe Managed Services los edita para adaptarlos a los requisitos específicos del cliente. Dirija cualquier pregunta que tenga acerca de los umbrales a su ingeniero de éxito del cliente (Customer Success Engineer, CSE).
 
 ## Monitorización del sistema de acceso {#accessing-system-monitoring}
 
 1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com) y seleccione la organización y programa adecuados.
 
-1. Haga clic en el botón de los tres puntos del programa que desee supervisar y seleccione la opción **Mostrar supervisión**.
+1. Haga clic en el botón de los tres puntos del programa que desea supervisar.
+1. En el menú, bajo el encabezado **Administrar**, haga clic en **Mostrar supervisión** para abrir la página **Informes** que muestra información de supervisión del sistema.
 
    ![Configuración](/help/assets/first-timea1.png)
 
-Se abre la página **Informes** para mostrar la información de monitorización del sistema.
+.
 
 ## Información general de monitorización del sistema {#system-monitoring-overview}
 
-La sección **Monitorización del sistema** de la página **Informes** enumera los entornos monitoreados del programa e informa sobre su estado de salud de alto nivel con cuatro categorías diferentes:
+La sección **Monitorización del sistema** de la página **Informes** enumera los entornos supervisados en el programa. Informa sobre su estado de salud de alto nivel en las cuatro categorías siguientes:
 
 * Host
 * Almacenamiento
@@ -53,9 +58,9 @@ Para ver los detalles de métricas específicas, haga clic en una de las columna
 
 ![Selección del entorno](/help/assets/System_Monitoring1.png)
 
-La navegación de la izquierda mostrará las métricas disponibles dentro de la categoría seleccionada actualmente para la que hay datos para el entorno y las instancias que se hayan seleccionado.
+La navegación de la izquierda muestra las métricas disponibles dentro de la categoría seleccionada actualmente para la que hay datos para el entorno y las instancias seleccionados actualmente.
 
-El gráfico individual muestra el estado y un gráfico de los datos en el tiempo junto con los umbrales. Si se muestran varias instancias, los datos de cada una estarán en una serie independiente.
+El gráfico individual muestra el estado y un gráfico de los datos en el tiempo junto con los umbrales. Si se muestran varias instancias, los datos de cada una se muestran en una serie independiente.
 
 ![Gráfico de métricas](/help/assets/Monitoring_Graphs1.png)
 
@@ -68,31 +73,28 @@ Por ejemplo, si hace clic en la serie de umbrales de advertencia, solo verá el 
 
 #### Host {#host}
 
-* **Carga por núcleo**: número de procesos que está ejecutando la CPU o que están en estado de espera promediado en un período de uno (load1), cinco (load5) y quince (load15) minutos.
-* **Recuento de procesos**: número de procesos abiertos actualmente
-* **Recuento de usuarios**: número de usuarios con una sesión de contenedor activa.
+* **Carga por núcleo**: El número de procesos que está ejecutando la CPU. O bien, el número de procesos en cola que están en estado de espera promediado en un período de uno (load1), cinco (load5) y quince (load15) minutos.
+* **Recuento de procesos**: El número de procesos abiertos actualmente.
+* **Recuento de usuarios**: El número de usuarios con una sesión de shell activa.
 * **Uso de memoria**: porcentaje de memoria del sistema asignado actualmente.
-* **Memoria JVM**: tamaño (en megabytes) del montón de Java asignado
-* **Espacio de generación antigua**: porcentaje de memoria de generación antigua de JVM asignado actualmente
+* **Memoria JVM**: El tamaño (en megabytes) del montón de Java asignado.
+* **Espacio de generación antigua**: Porcentaje de memoria de generación antigua de JVM asignado actualmente.
 
 #### Red {#network}
 
-* **Comprobación de puerto CQ**: tiempo de respuesta en segundos para acceder al puerto de AEM o Dispatcher
-   * Existen diferentes métricas para creación, publicación y Dispatcher.
+* AEM **Comprobación de puerto CQ**: Tiempo de respuesta en segundos para acceder al puerto de Dispatcher o de la interfaz de usuario de la interfaz de usuario de la aplicación de acceso a la interfaz de usuario de. Existen diferentes métricas para creación, publicación y Dispatcher.
 
 #### Almacenamiento {#storage}
 
-* **Espacio en el disco**: espacio en disco usado (en megabytes) para cada punto de montaje en el host
-   * Hay diferentes métricas para cada punto de montaje.
-   * Como mínimo, existen métricas para `/` y `/mnt`, pero es posible que haya métricas de punto de montaje adicionales disponibles en función de la configuración de instancia específica.
+* **Espacio en disco**: Espacio en disco usado (en megabytes) para cada punto de montaje en el host. Hay diferentes métricas para cada punto de montaje. Como mínimo, hay métricas para `/` y `/mnt`, pero es posible que haya métricas de punto de montaje adicionales disponibles en función de la configuración de instancia específica.
 * **Tamaño de carpeta**
-* **Almacenamiento de segmentos de AEM**: espacio en disco utilizado (en gigabytes) para el almacenamiento de segmentos de AEM
+* AEM AEM **Almacén de segmentos de**: El espacio en disco utilizado (en gigabytes) para el Almacén de segmentos de la lista de segmentos de la lista de distribución.
 
 #### Aplicación {#application}
 
 * **Agente de replicación**: tiempo (en segundos) para un evento de replicación de prueba
    * Hay métricas independientes para cada agente de replicación.
-* **Vaciado de Dispatcher**: número de elementos que hay actualmente en la cola de vaciado de Dispatcher
+* **Vaciado de Dispatcher**: El número de elementos que hay actualmente en la cola de vaciado de Dispatcher
 
 ## Informes de SLA {#sla-reporting}
 
@@ -106,17 +108,17 @@ Al igual que con los gráficos de monitorización del sistema, si se desplaza po
 
 ![Sustitución de puntos de datos](/help/assets/SLA-Reports-two.png)
 
-La sección **Análisis de eventos** bajo este gráfico muestra el conjunto de incidentes que ocurrieron para el programa durante el año seleccionado. Cada incidente tiene un intervalo de tiempo, una causa y un conjunto de comentarios.
+La sección **Análisis de eventos** de este gráfico muestra el conjunto de incidentes que ocurrieron para el programa durante el año seleccionado. Cada incidente tiene un intervalo de tiempo, una causa y un conjunto de comentarios.
 
 ![Análisis de eventos](/help/assets/sla-reporting3.png)
 
 ## Métricas de SLA {#sla-metrics}
 
 * **Contrato de autor**: el SLA definido en su contrato con Adobe Managed Services para el nivel de autor.
-* **SLA de autor de AMS**: tiempo de actividad medido de los incidentes de factorización del nivel de autor de producción causados por Adobes o nuestros proveedores.
+* **SLA de creación de AMS**: tiempo de actividad medido del nivel de creación de producción, incidentes de factorización causados por proveedores o por Adobe.
 * **SLA de autor**: tiempo de actividad medido del nivel de creación que ignora el tiempo de inactividad programado, como los períodos de mantenimiento.
 * **Contrato de usuario final**: SLA definido en su contrato con Adobe Managed Services para el nivel de publicación.
-* **SLA de usuario final de AMS**: tiempo de actividad medido de los incidentes de factorización del nivel de publicación de producción causados por Adobes o nuestros proveedores.
+* **SLA de usuario final de AMS**: los tiempos de actividad medidos del nivel de publicación de producción, los incidentes de factorización causados por proveedores o por Adobe.
 * **SLA de usuario final**: el tiempo de actividad medido del nivel de publicación que ignora el tiempo de inactividad programado, como los períodos de mantenimiento.
 
 ## Tutorial de vídeo {#video-tutorial}

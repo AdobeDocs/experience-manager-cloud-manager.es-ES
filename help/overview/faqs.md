@@ -1,11 +1,11 @@
 ---
 title: Preguntas frecuentes sobre Cloud Manager
-description: Este documento proporciona respuestas a las preguntas más frecuentes acerca de Cloud Manager para clientes de AMS.
+description: Obtenga información sobre las respuestas a las preguntas más frecuentes acerca de Cloud Manager para clientes de AMS.
 exl-id: 52c1ca23-5b42-4eae-b63a-4b22ef1a5aee
-source-git-commit: f855fa91656e4b3806a617d61ea313a51fae13b4
+source-git-commit: 4c4a2688cab8e5c81efa4b7b5e26f3c7b5dc30d6
 workflow-type: tm+mt
-source-wordcount: '746'
-ht-degree: 93%
+source-wordcount: '748'
+ht-degree: 57%
 
 ---
 
@@ -14,12 +14,12 @@ ht-degree: 93%
 
 Este documento proporciona respuestas a las preguntas más frecuentes acerca de Cloud Manager para clientes de AMS.
 
-## ¿Es posible utilizar Java 11 con compilaciones de Cloud Manager? {#java-11}
+## ¿Es posible utilizar Java 11 con generaciones de Cloud Manager? {#java-11}
 
-Sí. Deberá añadir la variable `maven-toolchains-plugin` con la configuración correcta para Java 11.
+Sí. Debe agregar `maven-toolchains-plugin` con la configuración correcta para Java 11.
 
 * Este proceso está documentado [aquí](/help/getting-started/using-the-wizard.md).
-* Para ver un ejemplo, vea el [código de ejemplo del proyecto wknd](https://github.com/adobe/aem-guides-wknd/commit/6cb5238cb6b932735dcf91b21b0d835ae3a7fe75).
+* Para ver un ejemplo, vea el [código de ejemplo del proyecto WKND](https://github.com/adobe/aem-guides-wknd/commit/6cb5238cb6b932735dcf91b21b0d835ae3a7fe75).
 
 ## Mi generación falla con un error sobre maven-scr-plugin después de cambiar de Java 8 a Java 11. ¿Qué puedo hacer? {#maven-src-plugin}
 
@@ -29,7 +29,7 @@ Es posible que la generación de AEM Cloud Manager falle al intentar cambiar la 
 [main] [ERROR] Failed to execute goal org.apache.felix:maven-scr-plugin:1.26.4:scr (generate-scr-scrdescriptor) on project helloworld.core: /build_root/build/testsite/src/main/java/com/adobe/HelloWorldServiceImpl.java : Unable to load compiled class: com.adobe.HelloWorldServiceImpl: com/adobe/HelloWorldServiceImpl has been compiled by a more recent version of the Java Runtime (class file version 55.0), this version of the Java Runtime only recognizes class file versions up to 52.0 -> [Help 1]
 ```
 
-Para obtener instrucciones sobre cómo quitar este complemento, [consulte esto](https://cqdump.wordpress.com/2019/01/03/from-scr-annotations-to-osgi-annotations/).
+Para obtener instrucciones sobre cómo quitar este complemento, [consulte esto](https://cqdump.joerghoh.de/2019/01/03/from-scr-annotations-to-osgi-annotations/).
 
 ## Mi generación falla con un error sobre RequireJavaVersion después de cambiar de Java 8 a Java 11. ¿Qué puedo hacer? {#requirejavaversion}
 
@@ -39,38 +39,36 @@ Para las compilaciones de Cloud Manager, el `maven-enforcer-plugin` puede fallar
 [main] [WARNING] Rule 1: org.apache.maven.plugins.enforcer.RequireJavaVersion
 ```
 
-Este es un problema conocido debido a que Cloud Manager utiliza una versión diferente de Java para ejecutar el comando de Maven, en comparación con el código de compilación. Simplemente omita `requireJavaVersion` de su configuraciones de `maven-enforcer-plugin`. 
+Este problema conocido se debe a que Cloud Manager utiliza una versión diferente de Java para ejecutar el comando Maven, en comparación con el código de compilación. Omita `requireJavaVersion` de sus configuraciones de `maven-enforcer-plugin`.
 
-## La comprobación de la calidad del código falló y la implementación se atascó. ¿Hay alguna manera de saltarse esta comprobación? {#deployment-stuck}
+## Error en la comprobación de calidad del código y ahora la implementación está atascada. ¿Hay alguna manera de saltarse esta comprobación? {#deployment-stuck}
 
-Sí. Todos los errores de calidad del código, excepto las clasificaciones de seguridad, son métricas no esenciales, por lo que se pueden saltar como parte de una canalización de implementación. Para ello, amplíe los elementos en la IU de los resultados.
+Sí. Todos los errores de calidad del código, excepto las clasificaciones de seguridad, son métricas no críticas. Como tal, se pueden evitar como parte de una canalización de implementación expandiendo los elementos en la interfaz de usuario de los resultados.
 
-Un usuario con la función [Administrador de implementación, Gestor de proyectos o Propietario empresarial](/help/requirements/users-and-roles.md#role-definitions) puede anular los problemas, en cuyo caso, la canalización continúa. También puede aceptarlos para que se detenga la canalización con un error.
+Un usuario con el rol [Administrador de implementación, Administrador de proyectos o Propietario empresarial](/help/requirements/users-and-roles.md#role-definitions) puede anular los problemas. En tal caso, la canalización continúa. O bien, pueden aceptar los problemas, en cuyo caso la canalización se detiene con un error.
 
 Vea los documentos [Puertas de tres niveles al ejecutar una canalización](/help/using/code-quality-testing.md#three-tier-gates-while-running-a-pipeline) y [Configuración de canalizaciones que no son de producción](/help/using/non-production-pipelines.md#understanding-the-flow) para obtener más información.
 
-## Las implementaciones de Cloud Manager fallan en el paso de prueba de rendimiento en los entornos de Adobe Managed Services. ¿Cómo depuramos esto para pasar las métricas esenciales? {#debug-critical-metrics}
+## Las implementaciones de Cloud Manager fallan en el paso de prueba de rendimiento en los entornos de Adobe Managed Services. ¿Cómo se puede depurar este problema para pasar las métricas esenciales? {#debug-critical-metrics}
 
-No hay una respuesta única a esta pregunta. Sin embargo, estos son algunos puntos importantes acerca del paso de la prueba de rendimiento que debe tener en cuenta:
+No hay una respuesta única a esta pregunta. Sin embargo, puede encontrar útiles los siguientes puntos sobre el paso de la prueba de rendimiento:
 
-* Este paso es de rendimiento web, es decir, el tiempo para cargar la página mediante un explorador web.
+* Este paso es de rendimiento web. Es decir, es aproximadamente el momento de cargar la página mediante un explorador web.
 * Las direcciones URL enumeradas en el archivo .csv resultante se cargan en un explorador Chrome en la infraestructura de Cloud Manager durante la prueba.
-* Una métrica común que falla es la tasa de error.
-   * Para que una URL apruebe, la URL principal debe cargarse con el estado `200` y en menos de `20` segundos.
-   * Las cargas de página superiores a `20` segundos se marcan como errores `504`.
-* Si el sitio requiere autenticación de usuarios, consulte el documento [Comprensión de los resultados de la prueba](/help/using/code-quality-testing.md#authenticated-performance-testing) para configurar la prueba para autenticarse en el sitio.
+* Una métrica común que falla es la tasa de error. Por lo tanto, para que una URL apruebe, la URL principal debe cargarse con el estado `200` y en menos de `20` segundos. Si la carga de una página supera los `20` segundos, se marca como un error `504`.
+* Si el sitio requiere autenticación de usuarios, consulte [Comprender los resultados de la prueba](/help/using/code-quality-testing.md#authenticated-performance-testing) para configurar la prueba y poder autenticarse en el sitio.
 
-Consulte [Comprender los resultados de la prueba](/help/using/code-quality-testing.md) para obtener más información sobre las comprobaciones de calidad.
+Vea [Comprender los resultados de la prueba](/help/using/code-quality-testing.md) para obtener más información acerca de las comprobaciones de calidad.
 
 ## ¿Puedo utilizar SNAPSHOT para la versión del proyecto de Maven? {#snapshot}
 
 Sí. Para implementaciones de desarrolladores, los archivos de la rama de Git `pom.xml` deben contener `-SNAPSHOT` al final del valor `<version>`.
 
-Esto permite que la implementación posterior se siga instalando cuando la versión no ha cambiado. En implementaciones de desarrolladores, no se agrega ni se genera ninguna versión automática para la generación de Maven.
+Al hacerlo, las implementaciones posteriores se pueden seguir instalando cuando la versión no ha cambiado. En implementaciones de desarrolladores, no se agrega ni se genera ninguna versión automática para la generación de Maven.
 
 También puede establecer la versión a `-SNAPSHOT` para generaciones o implementaciones de fase y producción. Cloud Manager establece automáticamente un número de versión adecuado y crea una etiqueta en Git. Se puede hacer referencia a esta etiqueta más adelante, si es necesario.
 
-Para obtener más información sobre la administración de versiones, consulte [estos documentos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/project-version-handling.html?lang=es).
+Para obtener más información sobre la administración de versiones, consulte [estos documentos](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/project-version-handling).
 
 ## ¿Cómo funcionan las versiones de paquetes y los paquetes para las implementaciones de ensayo y producción? {#staging-production}
 
@@ -78,7 +76,7 @@ En las implementaciones de ensayo y producción, se genera una versión automát
 
 Para las versiones personalizadas en las implementaciones de fase y producción, establezca una versión de Maven adecuada como `1.0.0`. Actualice la versión cada vez que implemente en la producción.
 
-Cloud Manager agrega automáticamente su versión a las generaciones de fase y producción y crea una rama de Git. No se requiere ninguna configuración especial. Si no establece una versión de Maven como se describió anteriormente, la implementación se realizará correctamente y se establecerá una versión automáticamente.
+Cloud Manager agrega automáticamente su versión a las generaciones de fase y producción y crea una rama de Git. No se requiere ninguna configuración especial. Si no establece una versión de Maven como se describió anteriormente, la implementación se realiza correctamente y se establece una versión automáticamente.
 
 ## Mi generación de Maven falla en las implementaciones de Cloud Manager, pero se genera localmente sin errores. ¿Cuál es el problema? {#maven-build-fail}
 
