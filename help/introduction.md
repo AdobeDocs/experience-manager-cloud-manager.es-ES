@@ -4,8 +4,8 @@ description: Empiece aquí para conocer Cloud Manager para Adobe Managed Service
 exl-id: 58344d8a-b869-4177-a9cf-6a8b7dfe9588
 source-git-commit: 4c4a2688cab8e5c81efa4b7b5e26f3c7b5dc30d6
 workflow-type: tm+mt
-source-wordcount: '1256'
-ht-degree: 48%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -18,8 +18,8 @@ Empiece aquí para conocer Cloud Manager for AMS (Adobe Managed Services) y cóm
 >id="aemcloud_cloudmanager_introduction"
 >title="Introducción a Cloud Manager para AMS"
 >abstract="Permite a las organizaciones autoadministrar Adobe Experience Manager en la nube. Incluye un marco de trabajo de integración y entrega continuas (CI/CD) que permite a los equipos de TI y a los asociados de la implementación acelerar la entrega de las personalizaciones o actualizaciones sin poner en riesgo el rendimiento o la seguridad."
->additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/cloud-manager/programs#cloud-manager" text="Creación de programas"
->additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/cloud-manager/environments#cloud-manager" text="Creación de entornos"
+>additional-url="https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/cloud-manager/programs#cloud-manager" text="Creación de programas"
+>additional-url="https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/cloud-manager/environments#cloud-manager" text="Creación de entornos"
 
 ## Introducción {#introduction}
 
