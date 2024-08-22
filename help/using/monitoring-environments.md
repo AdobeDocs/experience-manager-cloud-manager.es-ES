@@ -2,10 +2,10 @@
 title: Supervisar entornos
 description: Obtenga información sobre cómo monitorizar los entornos en Cloud Manager.
 exl-id: 32886133-d6c0-4aed-8bb0-81b84f63e825
-source-git-commit: 4c4a2688cab8e5c81efa4b7b5e26f3c7b5dc30d6
+source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
 workflow-type: tm+mt
-source-wordcount: '911'
-ht-degree: 34%
+source-wordcount: '910'
+ht-degree: 32%
 
 ---
 
@@ -60,7 +60,7 @@ Para ver los detalles de métricas específicas, haga clic en una de las columna
 
 La navegación de la izquierda muestra las métricas disponibles dentro de la categoría seleccionada actualmente para la que hay datos para el entorno y las instancias seleccionados actualmente.
 
-El gráfico individual muestra el estado y un gráfico de los datos en el tiempo junto con los umbrales. Si se muestran varias instancias, los datos de cada una se muestran en una serie independiente.
+Un gráfico individual muestra el estado y un gráfico de los datos a lo largo del tiempo junto con los umbrales. Si se muestran varias instancias, los datos de cada una se muestran en una serie independiente.
 
 ![Gráfico de métricas](/help/assets/Monitoring_Graphs1.png)
 

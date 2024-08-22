@@ -2,10 +2,10 @@
 title: Seguridad y privacidad
 description: Obtenga información acerca de la seguridad y privacidad de los activos de código y artefactos en Cloud Manager.
 exl-id: 67df1987-8db7-40bd-9717-1bf194e957f7
-source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
+source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
 workflow-type: tm+mt
 source-wordcount: '202'
-ht-degree: 90%
+ht-degree: 60%
 
 ---
 
@@ -28,10 +28,10 @@ Los clientes de [!UICONTROL Cloud Manager] necesitan sus credenciales de IMS par
 
 El código de [!UICONTROL Cloud Manager] está cifrado en tránsito. Los binarios que crea Cloud Manager también se cifran en tránsito y cuando se almacenan.
 
-Cada cliente obtiene su propio repositorio de Git y el código es seguro y no se comparte con ninguna otra organización.
+Cada cliente obtiene su propio repositorio de Git y el código está protegido y no se comparte con ninguna otra organización.
 
 ## Privacidad de datos {#data-privacy}
 
-[!UICONTROL Cloud Manager] se adhiere a los principios de privacidad definidos por Adobe. Los desarrolladores insertan código de forma segura en los repositorios de Git a través de HTTPS.
+[!UICONTROL Cloud Manager] se adhiere a los principios de privacidad definidos por Adobe. Los desarrolladores insertan el código de forma segura en repositorios Git a través de HTTPS.
 
 La interfaz de usuario de [!UICONTROL Cloud Manager] se basa en los servicios que cumplen con un marco de control común de Adobe. La interfaz de usuario de [!UICONTROL Cloud Manager] utiliza servicios seguros de varios proveedores de la nube.

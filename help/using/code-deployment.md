@@ -2,10 +2,10 @@
 title: Implementación de código
 description: Obtenga información sobre cómo implementar su código y qué sucede en Cloud Manager cuando lo hace.
 exl-id: 3d6610e5-24c2-4431-ad54-903d37f4cdb6
-source-git-commit: a7dc30ed31e87ab486f0b279b70c850a33a903eb
+source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
 workflow-type: tm+mt
 source-wordcount: '1637'
-ht-degree: 54%
+ht-degree: 51%
 
 ---
 
@@ -159,7 +159,7 @@ Para resolver estas situaciones, la canalización de producción de Cloud Manage
 >
 >La función de modo de ejecución de canalización de emergencia se activa programa por programa. La activación la realizan los ingenieros de éxito del cliente.
 
-### Uso del modo de ejecución de canalización de emergencia {#using-emergency-pipeline}
+### Usar modo de ejecución de canalización de emergencia {#using-emergency-pipeline}
 
 Al iniciar la ejecución de una canalización de producción, puede elegir entre el modo normal o de emergencia en un cuadro de diálogo. Esta opción está disponible si la función de modo de ejecución de canalización de emergencia está activada para el programa. Esta opción está disponible una vez habilitada la función.
 
@@ -202,7 +202,7 @@ En estas circunstancias, cuando se puede volver a ejecutar, la página de estado
 
 Además de estar disponible en la interfaz de usuario, puede usar [la API de Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Pipeline-Execution) para almacenar en déclencheur las nuevas ejecuciones e identificar las que se activaron como reejecuciones.
 
-#### Activación de una nueva ejecución {#triggering}
+#### Déclencheur de una nueva ejecución {#triggering}
 
 Para activar una nueva ejecución, se debe realizar la solicitud `PUT` al vínculo HAL `http://ns.adobe.com/adobecloud/rel/pipeline/reExecute` en el estado del paso de implementación de producción.
 
@@ -250,6 +250,6 @@ El valor de la sintaxis del vínculo HAL `href` solo es un ejemplo y el valor re
 
 Enviar una solicitud `PUT` a este extremo genera una respuesta `201` si es correcta. El cuerpo de respuesta es la representación de la nueva ejecución. Esta funcionalidad es similar a iniciar una ejecución normal a través de la API.
 
-#### Identificación de una ejecución que se vuelve a ejecutar {#identifying}
+#### Identificación de una ejecución que se ha vuelto a ejecutar {#identifying}
 
 El sistema identifica las ejecuciones que se vuelven a ejecutar por el valor `RE_EXECUTE` en el campo de déclencheur.

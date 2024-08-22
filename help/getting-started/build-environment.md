@@ -2,7 +2,7 @@
 title: El entorno de compilación
 description: Obtenga información sobre el entorno de compilación especializado en el que los usuarios de Cloud Manager generan y prueban su código.
 exl-id: b3543320-66d4-4358-8aba-e9bdde00d976
-source-git-commit: f855fa91656e4b3806a617d61ea313a51fae13b4
+source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
 workflow-type: tm+mt
 source-wordcount: '1263'
 ht-degree: 54%
@@ -105,9 +105,9 @@ Las combinaciones de proveedor/versión disponibles actualmente son:
 | Oracle | 1.8 |
 | Oracle | 1.11 |
 | Oracle | 11 |
-| dom | 1.8 |
-| dom | 1.11 |
-| dom | 11 |
+| dom. | 1.8 |
+| dom. | 1.11 |
+| dom. | 11 |
 
 >[!NOTE]
 >
@@ -117,7 +117,7 @@ Las combinaciones de proveedor/versión disponibles actualmente son:
 
 También es posible seleccionar Oracle 8 u Oracle 11 como JDK para toda la ejecución de Maven. A diferencia de las opciones de cadenas de herramientas, esto cambia el JDK utilizado para todos los complementos, a menos que también se establezca la configuración de cadenas de herramientas, en cuyo caso esta se sigue aplicando a los complementos Maven compatibles con ella. Como resultado, funciona la comprobación y aplicación de la versión de Java mediante el [complemento Apache Maven Enforcer](https://maven.apache.org/enforcer/maven-enforcer-plugin/).
 
-Para realizar este proceso, cree un archivo con el nombre `.cloudmanager/java-version` en la rama del repositorio de Git utilizada por la canalización. Este archivo puede tener el contenido `11` o `8`. Se omite cualquier otro valor. Si se especifica `11`, se usa Oracle 11 y la variable de entorno `JAVA_HOME` se establece en `/usr/lib/jvm/jdk-11.0.22`. Si se especifica `8`, se utiliza Oracle 8 y la variable de entorno `JAVA_HOME` se establece en `/usr/lib/jvm/jdk1.8.0_401`.
+Para realizar este proceso, cree un archivo con el nombre `.cloudmanager/java-version` en la rama del repositorio Git utilizada por la canalización. Este archivo puede tener el contenido `11` o `8`. Se omite cualquier otro valor. Si se especifica `11`, se usa Oracle 11 y la variable de entorno `JAVA_HOME` se establece en `/usr/lib/jvm/jdk-11.0.22`. Si se especifica `8`, se utiliza Oracle 8 y la variable de entorno `JAVA_HOME` se establece en `/usr/lib/jvm/jdk1.8.0_401`.
 
 ## Variables de entorno {#environment-variables}
 

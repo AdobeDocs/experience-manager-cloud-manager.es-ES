@@ -2,10 +2,10 @@
 title: Repositorio de códigos de origen
 description: Obtenga información acerca del repositorio de Git que se aprovisiona para cada programa que tiene en Cloud Manager.
 exl-id: af551e33-3623-4fcd-8d25-4362d8871411
-source-git-commit: 4c977cdfbef438fdabd90ee104d98887f2467b49
+source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
 workflow-type: tm+mt
 source-wordcount: '245'
-ht-degree: 20%
+ht-degree: 7%
 
 ---
 
@@ -22,7 +22,7 @@ Como práctica recomendada, siempre debe utilizar el repositorio Git de Cloud Ma
 
 Para obtener más información sobre cómo configurar ramas en Git, consulte [Configuración de ramas de versiones](/help/getting-started/configuring-branches.md).
 
-Para obtener más información sobre cómo usar el repositorio de Git de Cloud Manager con la canalización de CI/CD, consulte [Configuración de canalizaciones de producción](/help/using/production-pipelines.md) y [Configuración de canalizaciones que no son de producción](/help/using/non-production-pipelines.md) para obtener más información.
+Para obtener más información sobre cómo usar el repositorio Git de Cloud Manager con la canalización de CI/CD, consulte [Configuración de canalizaciones de producción](/help/using/production-pipelines.md) y [Configuración de canalizaciones que no son de producción](/help/using/non-production-pipelines.md) para obtener más información.
 
 ## Repositorio On-Premise {#on-premise-repository}
 

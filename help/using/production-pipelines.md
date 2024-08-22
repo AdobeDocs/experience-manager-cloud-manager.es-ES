@@ -2,10 +2,10 @@
 title: Configuración de canalizaciones de producción
 description: Aprenda a utilizar Cloud Manager para crear y configurar canalizaciones de producción para implementar su código.
 exl-id: d489fa3c-df1e-480b-82d0-ac8cce78a710
-source-git-commit: 8e2c57d2594691e7fb18d8a538caa9b54a26b6bb
+source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
 workflow-type: tm+mt
-source-wordcount: '1248'
-ht-degree: 48%
+source-wordcount: '1247'
+ht-degree: 46%
 
 ---
 
@@ -108,7 +108,7 @@ Después de usar la interfaz de usuario de [!UICONTROL Cloud Manager] para confi
          * **Opciones de implementación**: puede definir los parámetros que controlan la implementación de producción.
 
             * **Usar la aprobación de GoLive**: un usuario con el rol de **Propietario del negocio**, **Administrador de proyectos** o **Administrador de implementación** a través de la interfaz de usuario de [!UICONTROL Cloud Manager] debe aprobar manualmente una implementación.
-            * **Programado**: detiene la canalización antes de la implementación de producción para permitir que se programe. Si se selecciona esta opción, la canalización se detendrá después de la implementación en el entorno de ensayo y se preguntará al usuario qué acción debe hacerse.
+            * **Programado**: detiene la canalización antes de la implementación de producción para permitir que se programe. Si se selecciona esta opción, la canalización se detiene después de la implementación en el entorno de ensayo y se solicita al usuario que realice la acción.
                * **`Now`**: se implementa en producción de inmediato y completa efectivamente la canalización.
                * **Fecha** - Permite al usuario programar en qué momento se debe completar la implementación.
                * **Detener ejecución**: anula la implementación en producción.

@@ -2,10 +2,10 @@
 title: Compatibilidad con los submódulos de Git
 description: Descubra cómo puede utilizar submódulos Git para combinar el contenido de varias ramas en repositorios Git en el momento de la compilación.
 exl-id: f946d7e7-114a-4e33-bb82-2625d37bba2f
-source-git-commit: 11a6a53d8cbfb689810a9a8e7d82293a49863084
+source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
 workflow-type: tm+mt
 source-wordcount: '412'
-ht-degree: 28%
+ht-degree: 20%
 
 ---
 
@@ -87,8 +87,8 @@ Sin embargo, después de configurar su archivo `pom.xml` y ejecutar los comandos
 
 ### Limitaciones y recomendaciones {#limitations-recommendations-private-repos}
 
-Cuando utilice submódulos de Git con repositorios privados, tenga en cuenta las siguientes limitaciones.
+Cuando utilice submódulos Git con repositorios privados, tenga en cuenta las siguientes limitaciones.
 
 * Las direcciones URL de Git para los submódulos pueden estar en formato HTTPS o SSH, pero deben vincularse a un repositorio Github.com. No funciona la adición de un submódulo de repositorio de Adobe a un repositorio de agregador de GitHub o viceversa.
 * Los submódulos de GitHub deben ser accesibles para la aplicación de Adobe GitHub.
-* [Las limitaciones de uso de submódulos de Git con repositorios administrados por Adobe](#limitations-recommendations) también se aplican.
+* [Las limitaciones de usar submódulos Git con repositorios administrados por Adobe](#limitations-recommendations) también se aplican.

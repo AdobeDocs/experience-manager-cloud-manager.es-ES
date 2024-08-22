@@ -1,11 +1,11 @@
 ---
 title: Agregar usuarios y funciones
-description: Aprenda a utilizar Admin Console para agregar usuarios y funciones y crear perfiles.
+description: Aprenda a utilizar el Admin Console para agregar usuarios y funciones, y crear perfiles.
 exl-id: 40086cf0-a1c4-4dde-9dbf-84ea5fa53b84
-source-git-commit: f855fa91656e4b3806a617d61ea313a51fae13b4
+source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
 workflow-type: tm+mt
-source-wordcount: '768'
-ht-degree: 81%
+source-wordcount: '758'
+ht-degree: 50%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 81%
 
 Muchas funciones de [!UICONTROL Cloud Manager] requieren permisos específicos para su uso. Por ejemplo, solo se permite a determinados usuarios establecer los indicadores clave de rendimiento (KPI) de un programa. Estos permisos se agrupan lógicamente en funciones.
 
-[!UICONTROL Cloud Manager] actualmente define cuatro funciones de los usuarios que rigen la disponibilidad de las siguientes funciones específicas:
+[!UICONTROL Cloud Manager] define actualmente cuatro funciones de los usuarios, que rigen la disponibilidad de características específicas:
 
 * Propietario del negocio
 * Administrador de programa
@@ -27,39 +27,39 @@ Muchas funciones de [!UICONTROL Cloud Manager] requieren permisos específicos p
 
 ## Definiciones de funciones {#role-definitions}
 
-Esta tabla resume las funciones.
+La siguiente tabla resume las funciones en Cloud Manager.
 
 | Función [!UICONTROL Cloud Manager] | Descripción |
-|--- |--- |
-| Propietario del negocio | Este usuario es responsable de definir los indicadores clave de rendimiento (KPI), aprobar implementaciones de producción y anular errores importantes de tres niveles cuando sea necesario. |
-| Administrador de programa | Este usuario emplea [!UICONTROL Cloud Manager] para realizar la configuración del equipo, revisar el estado y ver los indicadores clave de rendimiento (KPI) y puede aprobar errores importantes de tres niveles cuando sea necesario. |
-| Administrador de implementación | Este usuario gestiona las operaciones de implementación y utiliza [!UICONTROL Cloud Manager] para ejecutar implementaciones de ensayo/producción, editar las canalizaciones CI/CD, aprobar errores importantes de tres niveles cuando sea necesario y puede acceder al repositorio de Git. |
-| Desarrollador | Este usuario desarrolla y prueba el código de aplicación personalizado y emplea principalmente [!UICONTROL Cloud Manager] para ver el estado de implementación y puede acceder al repositorio de Git para confirmaciones de código. |
-| Ingeniero de éxito del cliente (Customer Success Engineer) | Este usuario suele admitir el éxito de los clientes para los clientes de AMS e interactúa con [!UICONTROL Cloud Manager] para ejecutar implementaciones que requieran supervisión del ingeniero de éxito del cliente (CSE). |
-| Autor de contenido | Este usuario generalmente no interactúa con [!UICONTROL Cloud Manager], pero puede utilizar el conmutador de programas de [!UICONTROL Cloud Manager] para acceder a AEM. |
+| --- | --- |
+| Propietario del negocio | Responsable de definir los indicadores clave de rendimiento (KPI), aprobar implementaciones de producción y anular errores importantes de tres niveles cuando sea necesario. |
+| Administrador de programa | Utilizan [!UICONTROL Cloud Manager] para configurar el equipo, revisar el estado y ver los indicadores clave de rendimiento (KPI) y pueden aprobar errores importantes de tres niveles cuando sea necesario. |
+| Administrador de implementación | Administra operaciones de implementación y usa [!UICONTROL Cloud Manager] para ejecutar implementaciones de ensayo y producción, editar canalizaciones CI/CD y aprobar errores críticos de tres niveles cuando sea necesario. También tienen acceso al repositorio de Git. |
+| Desarrollador | Desarrolla y prueba el código de aplicación personalizado y usa principalmente [!UICONTROL Cloud Manager] para ver el estado de implementación y puede acceder al repositorio de Git para confirmaciones de código. |
+| Ingeniero de éxito del cliente (Customer Success Engineer) | El CSE suele admitir el éxito de los clientes para los clientes de AMS. Interactúan con [!UICONTROL Cloud Manager] con el fin de ejecutar implementaciones que requieren supervisión del ingeniero de éxito del cliente (CSE). |
+| Autor de contenido | Por lo general, no interactúan con [!UICONTROL Cloud Manager], pero pueden usar el conmutador de programa [!UICONTROL Cloud Manager AEM] para obtener acceso a la. |
 
 >[!NOTE]
 >
 >El personaje ficticio del desarrollador en Admin Console no está relacionado con la función de desarrollador en [!UICONTROL Cloud Manager].
 
-## Uso de Admin Console para crear un perfil {#using-admin-console-to-create-a-profile}
+## Creación de un perfil con el Admin Console {#using-admin-console-to-create-a-profile}
 
 Las funciones de [!UICONTROL Cloud Manager] se administran desde Admin Console. Las suscripciones a funciones específicas se proporcionan añadiendo el usuario a un perfil de producto de [!UICONTROL Cloud Manager].
 
-Admin Console es una ubicación central para administrar los derechos de Adobe en toda la organización. Para obtener más información sobre Adobe Admin Console, consulte la documentación de [Admin Console](https://helpx.adobe.com/es/enterprise/using/admin-console.html).
+Admin Console es una ubicación central para administrar los derechos de Adobe en toda la organización. Para obtener más información acerca de Adobe Admin Console, consulte [Admin Console](https://helpx.adobe.com/es/enterprise/using/admin-console.html).
 
-Para proporcionar los permisos adecuados basados en funciones a los usuarios de [!UICONTROL Cloud Manager], un administrador de la organización del cliente debe crear perfiles de producto nuevos en el contexto de producto de [!UICONTROL AEM Managed Services] correspondiente a cada una de las cuatro funciones de [!UICONTROL Cloud Manager]:
+AEM Un administrador debe crear nuevos perfiles de producto en el contexto de producto de [!UICONTROL Managed Services] para asignar permisos basados en roles a los usuarios de [!UICONTROL Cloud Manager], correspondientes a cada uno de los cuatro roles de [!UICONTROL Cloud Manager].
 
 * Propietario del negocio
 * Administrador de implementación
 * Desarrollador
 * Administrador de programa
 
-Puede crear o agregar usuarios/grupos a estos perfiles de producto con Admin Console.
+Puede crear o agregar usuarios o grupos a estos perfiles de producto con el Admin Console.
 
 1. Inicie sesión en el Admin Console en [`https://adminconsole.adobe.com`](https://adminconsole.adobe.com).
 
-1. Haga clic en la ficha **Información general**, haga clic en el producto que desee modificar en la tarjeta **Productos y servicios**. Si no aparece en la lista, use la pestaña **Productos** para localizar el producto y hacer clic en él.
+1. Haga clic en la ficha **Información general** y, a continuación, haga clic en el producto que desee editar en la tarjeta **Productos y servicios**. Si no aparece en la lista, use la pestaña **Productos** para localizar el producto y hacer clic en él.
 
    ![Pestaña Información general de Admin Console](/help/assets/admin-console-overview.png)
 

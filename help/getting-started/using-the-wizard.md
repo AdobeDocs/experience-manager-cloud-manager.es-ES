@@ -2,10 +2,10 @@
 title: Uso del Asistente para nuevo proyecto
 description: Siga esta página para aprender a utilizar el asistente con el fin de crear un proyecto de aplicación de AEM
 exl-id: 9d7c6f4c-9379-471c-8dad-772a7099da54
-source-git-commit: 11a6a53d8cbfb689810a9a8e7d82293a49863084
+source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
 workflow-type: tm+mt
 source-wordcount: '321'
-ht-degree: 33%
+ht-degree: 28%
 
 ---
 
@@ -33,7 +33,7 @@ Siga estos pasos para crear un proyecto de AEM con el asistente.
 
    ![Parámetros detallados del arquetipo](/help/assets/screen_shot_2018-10-08at60032am.png)
 
-1. Haga clic en **Crear** para crear el proyecto de inicio utilizando el arquetipo y confirmar en la rama de Git con nombre.
+1. Haga clic en **Crear** para crear el proyecto de inicio utilizando el tipo de archivo y confirmar en la rama Git con nombre.
 
 Ahora tiene un proyecto base. Es hora de configurar sus canalizaciones.
 

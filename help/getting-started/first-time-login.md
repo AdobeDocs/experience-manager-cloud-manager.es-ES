@@ -2,23 +2,23 @@
 title: Primer inicio de sesión
 description: Vaya esta página si ha definido las configuraciones generales y está listo para usar Cloud Manager por primera vez.
 exl-id: eb043437-8566-4a8d-8c5c-c8cf1d33daeb
-source-git-commit: f855fa91656e4b3806a617d61ea313a51fae13b4
+source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
 workflow-type: tm+mt
 source-wordcount: '293'
-ht-degree: 66%
+ht-degree: 30%
 
 ---
 
 
 # Primer inicio de sesión {#first-time-login}
 
-Una vez establecida la configuración general de [!UICONTROL Cloud Manager], ya puede usarlo.
+Una vez que haya establecido la configuración general de [!UICONTROL Cloud Manager], estará listo para usarlo.
 
 >[!NOTE]
 >
 >Según las funciones asignadas en [!UICONTROL Cloud Manager] y el estado de la aplicación, las pantallas que vea pueden diferir de las ilustraciones.
 
-## Inicio de sesión por primera vez {#logging-in-for-the-first-time}
+## Inicie sesión por primera vez {#logging-in-for-the-first-time}
 
 1. Inicie sesión en Cloud Manager en [`my.cloudmanager.adobe.com`](https://my.cloudmanager.adobe.com/) y verá su lista de programas.
 
@@ -36,12 +36,12 @@ Puede continuar con el documento [Configuración del programa](/help/getting-sta
 
 ## Actividad de Cloud Manager {#activity}
 
-Cloud Manager proporciona una vista consolidada de la actividad de un programa, que enumera todas las ejecuciones de canalización de CI/CD, tanto de producción como de no producción, lo que ofrece visibilidad de la actividad actual y pasada.
+Cloud Manager proporciona una vista consolidada de la actividad de un programa. Enumera todas las ejecuciones de canalización de CI/CD, tanto de producción como de no producción. Esta funcionalidad le da visibilidad de la actividad pasada y presente.
 
 >[!TIP]
 >
->Para obtener más información sobre cómo usar la interfaz de usuario de Cloud Manager, consulte el documento [Navegación por la interfaz de usuario de Cloud Manager](/help/getting-started/navigation.md).
+>Para obtener más información sobre cómo usar la interfaz de usuario de Cloud Manager, consulte [Navegación por la interfaz de usuario de Cloud Manager](/help/getting-started/navigation.md).
 
 >[!NOTE]
 >
->De forma predeterminada, un usuario con acceso a un entorno de AEM también tendrá la función de usuario de Cloud Manager. Esta función por sí sola no es suficiente para dar al usuario acceso a la vista de detalles del programa. Un usuario de este tipo que solo tenga la función de usuario de Cloud Manager puede navegar mediante las opciones del menú de programa a la URL de creación del entorno de AEM (si existen entornos). Estos usuarios deben ponerse en contacto con su administrador si desean obtener acceso de nivel de programa.
+>AEM De forma predeterminada, un usuario con acceso a un entorno de también tiene la función Usuario de Cloud Manager. Esta función no es suficiente para dar al usuario acceso a la vista de detalles del programa. Un usuario de este tipo que solo tenga la función Usuario de Cloud Manager AEM puede navegar mediante las opciones del menú de programa a la URL de creación del entorno (si existen entornos). Estos usuarios deben ponerse en contacto con su administrador si desean obtener acceso de nivel de programa.

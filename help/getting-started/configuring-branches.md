@@ -2,10 +2,10 @@
 title: Configuración de ramas
 description: Obtenga información sobre cómo configurar su primera rama en Git y cómo la canalización CI/CD la utiliza para implementar el código de la aplicación.
 exl-id: ff2ae28f-902e-4fb2-aeb1-3636cb5cd9bb
-source-git-commit: 11a6a53d8cbfb689810a9a8e7d82293a49863084
+source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
 workflow-type: tm+mt
 source-wordcount: '324'
-ht-degree: 14%
+ht-degree: 4%
 
 ---
 
@@ -16,7 +16,7 @@ Obtenga información sobre cómo configurar su primera rama en Git y cómo la ca
 
 ## Configure su primera rama en Git {#setting-up-your-first-branch-in-git}
 
-Un único repositorio de Git, inicialmente vacío, [se aprovisiona](/help/requirements/environment-provisioning.md) para cada programa incorporado en Cloud Manager. Este repositorio puede contener tantas ramas como requiera el proceso de desarrollo, pero debe haber al menos una que utilice la canalización CI/CD para implementar el código de la aplicación en ensayo y producción. Una práctica recomendada es utilizar `main` como el nombre de esta rama. De manera práctica, este enfoque es el comportamiento predeterminado de los clientes Git al configurar nuevos proyectos.
+Un único repositorio Git [inicialmente vacío está aprovisionado](/help/requirements/environment-provisioning.md) para cada programa incorporado en Cloud Manager. Este repositorio puede contener tantas ramas como requiera el proceso de desarrollo, pero debe haber al menos una que utilice la canalización CI/CD para implementar el código de la aplicación en ensayo y producción. Una práctica recomendada es utilizar `main` como el nombre de esta rama. De manera práctica, este enfoque es el comportamiento predeterminado de los clientes Git al configurar nuevos proyectos.
 
 Por ejemplo, al configurar un nuevo proyecto, se ejecuta un conjunto de comandos similar al siguiente.
 
@@ -50,7 +50,7 @@ $ git commit -m "initial commit"
 
 >[!NOTE]
 >
->No es un requisito utilizar el cliente de línea de comandos. Hay una variedad de clientes de Git gráficos disponibles como aplicaciones independientes o como parte de un entorno de desarrollo integrado (IDE) como Eclipse o IntelliJ. Siempre que la aplicación cliente admita Git utilizando HTTPS, debería ser compatible con [!UICONTROL Cloud Manager].
+>No es un requisito utilizar el cliente de línea de comandos. Hay una variedad de clientes de Git gráficos disponibles como aplicaciones independientes o como parte de un entorno de desarrollo integrado (IDE) como Eclipse o IntelliJ. Siempre que la aplicación cliente admita Git usando HTTPS, debería ser compatible con [!UICONTROL Cloud Manager].
 
 ## Empuje su primera rama {#pushing-your-first-branch}
 

@@ -2,19 +2,19 @@
 title: Navegación por la IU de Cloud Manager
 description: Descubra cómo está organizada la IU de Cloud Manager y cómo navegar para administrar sus programas y entornos.
 exl-id: 9c1545ce-1c6d-417f-a6f4-fe53caef3433
-source-git-commit: f855fa91656e4b3806a617d61ea313a51fae13b4
+source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
 workflow-type: tm+mt
 source-wordcount: '1435'
-ht-degree: 41%
+ht-degree: 40%
 
 ---
 
 
-# Navegación por la IU de Cloud Manager {#navigation}
+# Vaya a la interfaz de usuario de Cloud Manager {#navigation}
 
 Descubra cómo está organizada la IU de Cloud Manager y cómo navegar para administrar sus programas y entornos.
 
-La IU de Cloud Manager está compuesta principalmente por dos interfaces gráficas:
+La interfaz de usuario de Cloud Manager está compuesta principalmente por dos interfaces gráficas:
 
 * [En la consola Mis programas](#my-programs-console) podrá ver y administrar todos sus programas.
 * [La ventana Información general del programa](#program-overview) es donde puede ver los detalles de un programa individual y administrarlo.

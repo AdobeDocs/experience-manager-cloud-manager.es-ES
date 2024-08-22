@@ -2,10 +2,10 @@
 title: Configuración del programa
 description: Después de la incorporación, el propietario de la empresa debe realizar alguna configuración inicial del programa.
 exl-id: 795c7112-d564-4fbf-96a1-152a6c286bf2
-source-git-commit: 11a6a53d8cbfb689810a9a8e7d82293a49863084
+source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
 workflow-type: tm+mt
-source-wordcount: '567'
-ht-degree: 53%
+source-wordcount: '564'
+ht-degree: 49%
 
 ---
 
@@ -68,7 +68,7 @@ Los programas se pueden editar una vez configurados. Siga estos pasos para edita
 
 1. Haga clic en **Actualizar** para guardar los cambios.
 
-Tenga en cuenta que los cambios se guardan inmediatamente en Cloud Manager, pero no se reflejarán en los entornos hasta que se ejecute la próxima canalización.
+Los cambios se guardan inmediatamente en Cloud Manager, pero no se reflejan en los entornos hasta que se ejecute la siguiente canalización.
 
 Si todavía no ha creado una canalización, consulte [Configuración de canalizaciones de producción](/help/using/production-pipelines.md) y [Configuración de canalizaciones que no son de producción](/help/using/non-production-pipelines.md).
 

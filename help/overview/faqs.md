@@ -2,10 +2,10 @@
 title: Preguntas frecuentes sobre Cloud Manager
 description: Obtenga información sobre las respuestas a las preguntas más frecuentes acerca de Cloud Manager para clientes de AMS.
 exl-id: 52c1ca23-5b42-4eae-b63a-4b22ef1a5aee
-source-git-commit: 4c4a2688cab8e5c81efa4b7b5e26f3c7b5dc30d6
+source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
 workflow-type: tm+mt
 source-wordcount: '748'
-ht-degree: 57%
+ht-degree: 50%
 
 ---
 
@@ -62,7 +62,7 @@ Vea [Comprender los resultados de la prueba](/help/using/code-quality-testing.md
 
 ## ¿Puedo utilizar SNAPSHOT para la versión del proyecto de Maven? {#snapshot}
 
-Sí. Para implementaciones de desarrolladores, los archivos de la rama de Git `pom.xml` deben contener `-SNAPSHOT` al final del valor `<version>`.
+Sí. Para implementaciones de desarrolladores, los archivos de la rama Git `pom.xml` deben contener `-SNAPSHOT` al final del valor `<version>`.
 
 Al hacerlo, las implementaciones posteriores se pueden seguir instalando cuando la versión no ha cambiado. En implementaciones de desarrolladores, no se agrega ni se genera ninguna versión automática para la generación de Maven.
 
@@ -76,11 +76,11 @@ En las implementaciones de ensayo y producción, se genera una versión automát
 
 Para las versiones personalizadas en las implementaciones de fase y producción, establezca una versión de Maven adecuada como `1.0.0`. Actualice la versión cada vez que implemente en la producción.
 
-Cloud Manager agrega automáticamente su versión a las generaciones de fase y producción y crea una rama de Git. No se requiere ninguna configuración especial. Si no establece una versión de Maven como se describió anteriormente, la implementación se realiza correctamente y se establece una versión automáticamente.
+Cloud Manager agrega automáticamente su versión a las compilaciones de ensayo y producción y crea una rama Git. No se requiere ninguna configuración especial. Si no establece una versión de Maven como se describió anteriormente, la implementación se realiza correctamente y se establece una versión automáticamente.
 
-## Mi generación de Maven falla en las implementaciones de Cloud Manager, pero se genera localmente sin errores. ¿Cuál es el problema? {#maven-build-fail}
+## Mi generación de Maven falla en las implementaciones de Cloud Manager, pero se genera localmente sin errores. ¿Qué está mal? {#maven-build-fail}
 
-Consulte este [recurso de Git](https://github.com/cqsupport/cloud-manager/blob/main/cm-build-step-fails.md) para obtener más información.
+Consulte este [recurso Git](https://github.com/cqsupport/cloud-manager/blob/main/cm-build-step-fails.md) para obtener más información.
 
 ## No puedo establecer una variable mediante un comando aio. ¿Qué puedo hacer? {#set-variable}
 

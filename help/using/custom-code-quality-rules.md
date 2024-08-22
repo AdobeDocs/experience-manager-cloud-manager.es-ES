@@ -2,7 +2,7 @@
 title: Reglas de calidad de código personalizadas
 description: Descubra los detalles específicos de las reglas de calidad de código personalizadas ejecutadas por Cloud Manager durante las pruebas de calidad del código. Estas reglas se basan en las prácticas recomendadas de AEM Engineering.
 exl-id: 7d118225-5826-434e-8869-01ee186e0754
-source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
+source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
 workflow-type: tm+mt
 source-wordcount: '3482'
 ht-degree: 93%
@@ -10,7 +10,7 @@ ht-degree: 93%
 ---
 
 
-# Reglas de calidad del código personalizadas {#custom-code-quality-rules}
+# Reglas de calidad de código personalizadas {#custom-code-quality-rules}
 
 Obtenga más información acerca de las reglas de calidad del código personalizadas ejecutadas por Cloud Manager AEM como parte de [pruebas de calidad del código](/help/using/code-quality-testing.md), según las prácticas recomendadas de ingeniería de.
 

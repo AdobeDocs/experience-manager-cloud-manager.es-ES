@@ -2,7 +2,7 @@
 title: Permisos basados en funciones
 description: Obtenga información sobre los permisos preconfigurados basados en funciones de Cloud Manager para administrar el acceso a los recursos de la nube.
 exl-id: b66533fb-db93-40e8-919d-581261fdbf24
-source-git-commit: 11a6a53d8cbfb689810a9a8e7d82293a49863084
+source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
 workflow-type: tm+mt
 source-wordcount: '616'
 ht-degree: 51%
@@ -62,7 +62,7 @@ Cada una de las funciones tiene permisos preconfigurados específicos asociados.
 | Implementación administrada de modificación de canalización | Permite editar la opción de supervisión de CSE | | x | | | |
 | Eliminación de canalización | Permite la eliminación de la canalización | | x | | | |
 | Lectura de paso | Consulte los resultados de las métricas de calidad de los pasos | x | x | x | x | x |
-| Generar token de acceso personal | Acceso a Git | | x | | x | |
+| Generar token de acceso personal | Acceder a Git | | x | | x | |
 
 Para obtener más información sobre cómo configurar los usuarios, consulte [Configuración de usuarios y funciones](/help/requirements/users-and-roles.md).
 
