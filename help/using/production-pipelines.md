@@ -5,14 +5,14 @@ exl-id: d489fa3c-df1e-480b-82d0-ac8cce78a710
 source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
 workflow-type: tm+mt
 source-wordcount: '1247'
-ht-degree: 46%
+ht-degree: 57%
 
 ---
 
 
 # Configuración de canalizaciones de producción {#configuring-production-pipelines}
 
-Aprenda a utilizar Cloud Manager para crear y configurar canalizaciones de producción para implementar su código. Si desea conocer primero una descripción general más conceptual del funcionamiento de las canalizaciones en Cloud Manager, consulte [Canalizaciones de CI/CD](/help/overview/ci-cd-pipelines.md).
+Aprenda a utilizar Cloud Manager para crear y configurar canalizaciones de producción para implementar su código. Si desea conocer primero una descripción general más conceptual del funcionamiento de las canalizaciones en Cloud Manager, consulte el documento [Canalizaciones de CI/CD](/help/overview/ci-cd-pipelines.md).
 
 ## Información general {#overview}
 
@@ -33,7 +33,7 @@ La función **Administrador de implementación** es responsable de configurar la
 >
 >No se puede configurar una canalización hasta que su repositorio Git asociado tenga al menos una rama y la [configuración del programa](/help/getting-started/program-setup.md) haya finalizado.
 
-## Agregar una nueva canalización de producción {#adding-production-pipeline}
+## Adición de una nueva canalización de producción {#adding-production-pipeline}
 
 Después de usar la interfaz de usuario de [!UICONTROL Cloud Manager] para configurar el programa y tener al menos un entorno, ya puede agregar una canalización de producción.
 
@@ -115,7 +115,7 @@ Después de usar la interfaz de usuario de [!UICONTROL Cloud Manager] para confi
 
            >[!TIP]
            >
-           >Consulte [Implementación de código](/help/using/code-deployment.md) para obtener información sobre cómo establecer la programación de implementación o ejecutar la canalización inmediatamente.
+           >Consulte el documento [Implementación de código](/help/using/code-deployment.md) para obtener información sobre cómo configurar la programación de implementación o ejecutar la canalización inmediatamente.
 
             * **Utilizar la supervisión del ingeniero de éxito del cliente**: si se selecciona esta opción, se involucra un ingeniero de éxito del cliente (CSE) para iniciar la implementación real. Al crear o editar una canalización cuando esta opción está habilitada, la función **Administrador de implementación** tiene las siguientes opciones.
 
@@ -126,11 +126,11 @@ Después de usar la interfaz de usuario de [!UICONTROL Cloud Manager] para confi
 
          * **Configuración de Dispatcher**: defina la configuración de Dispatcher para su entorno de producción. Las opciones son las mismas que para el entorno de ensayo.
 
-1. Haga clic en **Continuar** para avanzar a la pestaña **Prueba de ensayo**, donde puede configurar las pruebas de rendimiento de AEM Sites y AEM Assets, según los productos para los que tenga licencia.
+1. Haga clic en **Continuar** para avanzar a la pestaña **Prueba de ensayo**, donde puede configurar las pruebas de rendimiento de AEM Sites y AEM Assets, en función de los productos para los que disponga de licencia.
 
    >[!TIP]
    >
-   >Consulte [Prueba de calidad de código](/help/using/code-quality-testing.md#performance-testing) para obtener más información sobre las opciones disponibles en la ficha **Prueba de ensayo**.
+   >Consulte el documento [Prueba de calidad del código](/help/using/code-quality-testing.md#performance-testing) para obtener más información sobre las opciones disponibles en la pestaña **Prueba de ensayo**.
 
    1. En la sección **Entrega de contenido de sitios/Peso de carga distribuido**, configure las pruebas de rendimiento del sitio en función de la ponderación de las solicitudes de página entre tres conjuntos de páginas. Puede habilitar o deshabilitar los conjuntos de páginas según sea necesario.
 
@@ -140,7 +140,7 @@ Después de usar la interfaz de usuario de [!UICONTROL Cloud Manager] para confi
 
       ![Peso de carga de los sitios](/help/assets/configure-pipelines/add-prod5.png)
 
-   1. En la sección **Distribución de las pruebas de rendimiento de Assets** , defina la distribución de prueba de imágenes y PDF, y defina sus propios recursos de prueba.
+   1. En la sección **Distribución de pruebas de rendimiento de activos**, puede definir la distribución de prueba de imágenes y PDF, así como sus propios activos de prueba.
 
       * **Imágenes**: ajuste el regulador para ajustar la división de prueba entre imágenes y PDF.
       * **PDF**: ajuste el regulador para ajustar la división de prueba entre imágenes y PDF.
@@ -155,9 +155,9 @@ Después de usar la interfaz de usuario de [!UICONTROL Cloud Manager] para confi
 
 1. Haga clic en **Guardar** para completar la adición de la canalización de producción.
 
-## Los siguientes pasos {#the-next-steps}
+## Pasos siguientes {#the-next-steps}
 
-Después de configurar la canalización, debe implementar el código. Consulte [Implementación de código](/help/using/code-deployment.md) para obtener más información.
+Después de configurar la canalización, debe implementar el código. Consulte la [Implementación de código](/help/using/code-deployment.md) para obtener más información.
 
 ## Tutorial de vídeo {#video-tutorial-one}
 

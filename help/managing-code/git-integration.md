@@ -5,7 +5,7 @@ exl-id: e517f8a4-23f0-4486-8278-91396dba76ec
 source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
 workflow-type: tm+mt
 source-wordcount: '351'
-ht-degree: 14%
+ht-degree: 17%
 
 ---
 
@@ -30,7 +30,7 @@ Esta serie de vídeos supone un conocimiento básico de la administración de Gi
 
 Los pasos y las convenciones de nomenclatura descritos en esta serie de vídeos representan algunas prácticas recomendadas para trabajar con un repositorio Git administrado por el cliente y Cloud Manager. Se espera que los convenios y flujos de trabajo descritos se adapten a los equipos de desarrollo individuales.
 
-Para obtener una descripción general completa de Cloud Manager, consulte [Introducción a Cloud Manager](/help/introduction.md).
+Para obtener una descripción general completa de Cloud Manager, consulte el documento [Introducción a Cloud Manager](/help/introduction.md). 
 
 ## Sincronización inicial {#initial-sync}
 

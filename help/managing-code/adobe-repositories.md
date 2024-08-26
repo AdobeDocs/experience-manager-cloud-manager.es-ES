@@ -5,7 +5,7 @@ exl-id: 24c6ca97-ea70-41b8-b4c7-b8b0f406a57d
 source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
 workflow-type: tm+mt
 source-wordcount: '145'
-ht-degree: 72%
+ht-degree: 93%
 
 ---
 
@@ -29,8 +29,8 @@ La ventana **Repositorios** facilita la adición de repositorios adicionales adm
 
    ![Cuadro de diálogo Agregar repositorio](assets/add-repository-wizard.png)
 
-Cuando se cierra el asistente, el nuevo repositorio se muestra en la tabla de la ventana **Repositorios**. Ahora puede asociar una [canalización de CI/CD](/help/overview/ci-cd-pipelines.md) con ella o administrarla en la ventana [**Repositorios**](managing-repositories.md).
+Cuando se cierra el asistente, el nuevo repositorio se muestra en la tabla de la ventana **Repositorios**. Ahora puede asociar una [CI/CD Pipeline](/help/overview/ci-cd-pipelines.md) con este o administrarlo dentro de la ventana [**Repositorios**](managing-repositories.md).
 
 >[!TIP]
 >
->También puede agregar repositorios de GitHub que administre usted mismo como [repositorios privados](private-repositories.md).
+>También puede añadir repositorios de GitHub que administre usted mismo como [repositorios privados](private-repositories.md).

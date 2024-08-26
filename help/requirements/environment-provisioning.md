@@ -5,7 +5,7 @@ exl-id: eade4255-89b5-4c65-a498-1c6d4e8c73ff
 source-git-commit: 4c977cdfbef438fdabd90ee104d98887f2467b49
 workflow-type: tm+mt
 source-wordcount: '297'
-ht-degree: 27%
+ht-degree: 36%
 
 ---
 
@@ -20,7 +20,7 @@ Durante el proceso de incorporación, Adobe AEM aprovisionará automáticamente 
 
 ## Correo electrónico de bienvenida {#welcome-email}
 
-Una vez completado el proceso de aprovisionamiento del entorno, el administrador de clientes designado recibe un correo electrónico de bienvenida con la confirmación de que se les ha concedido acceso al Adobe [!UICONTROL Experience Cloud]. El correo electrónico de bienvenida contiene información detallada sobre cómo empezar a usar los servicios de [!UICONTROL Experience Cloud AEM], los entornos de nube de [!UICONTROL Managed Services] y el portal de autoservicio [!UICONTROL Cloud Manager]. Además, el correo electrónico contiene información importante, como la información de contacto del ingeniero de éxito del cliente (CSE), dónde buscar recursos de soporte, foros, preguntas frecuentes y mucho más. En la lista de recursos que se proporciona en el correo electrónico, también obtienes detalles sobre cómo acceder a [!UICONTROL Cloud Manager AEM] para los entornos de nube de tu.
+Una vez completado el proceso de aprovisionamiento del entorno, el administrador de clientes designado recibe un correo electrónico de bienvenida con la confirmación de que se les ha concedido acceso al Adobe [!UICONTROL Experience Cloud]. El correo electrónico de bienvenida contiene información detallada sobre cómo empezar a usar los servicios de [!UICONTROL Experience Cloud], los entornos de nube de [!UICONTROL AEM Managed Services], así como el portal de autoservicio [!UICONTROL Cloud Manager]. Además, el correo electrónico contiene información importante, como la información de contacto del ingeniero de éxito del cliente (CSE), dónde buscar recursos de soporte, foros, preguntas frecuentes y mucho más. En la lista de recursos que se proporciona en el correo electrónico, también obtienes detalles sobre cómo acceder a [!UICONTROL Cloud Manager AEM] para los entornos de nube de tu.
 
 ## Pasos siguientes {#next-steps}
 

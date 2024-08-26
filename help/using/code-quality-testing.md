@@ -5,7 +5,7 @@ exl-id: 6a574858-a30e-4768-bafc-8fe79f928294
 source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
 workflow-type: tm+mt
 source-wordcount: '2764'
-ht-degree: 90%
+ht-degree: 96%
 
 ---
 
@@ -46,7 +46,7 @@ Las pruebas de calidad del código analizan el código fuente para asegurarse de
 
 El software lo implementa mediante una combinación de análisis de SonarQube, un examen de nivel de paquete de contenido mediante OakPAL y una validación de Dispatcher mediante la herramienta de optimización de Dispatcher.
 
-Hay más de 100 reglas que combinan reglas genéricas de Java y reglas específicas de AEM. AEM AEM Algunas de las reglas específicas de la se crean en función de las prácticas recomendadas de ingeniería de códigos de la aplicación y se denominan [Reglas de calidad de código personalizadas](/help/using/custom-code-quality-rules.md).
+Hay más de 100 reglas que combinan reglas genéricas de Java y reglas específicas de AEM. Algunas de las reglas específicas de AEM se crean en función de las prácticas recomendadas de AEM Engineering y se denominan [reglas de calidad de código personalizadas](/help/using/custom-code-quality-rules.md).
 
 >[!TIP]
 >
@@ -71,7 +71,7 @@ Los resultados de las pruebas de calidad del código se muestran como una clasif
 
 >[!NOTE]
 >
->Para obtener más información acerca de las reglas de calidad de código personalizadas ejecutadas por [!UICONTROL Cloud Manager], vea [Reglas de calidad de código personalizadas](custom-code-quality-rules.md).
+>Para obtener más información sobre las reglas de calidad de código personalizadas ejecutadas por [!UICONTROL Cloud Manager], consulte [Reglas de calidad de código personalizadas](custom-code-quality-rules.md).
 
 ### Tratamiento de falsos positivos {#dealing-with-false-positives}
 
@@ -172,7 +172,7 @@ Tres conjuntos de páginas seleccionan las páginas. Cloud Manager utiliza los r
 
 ##### Distribución del tráfico entre conjuntos de páginas seleccionados {#distribution-of-traffic}
 
-Puede elegir entre uno y los tres conjuntos de la ficha **Pruebas** de su [configuración de canalización](/help/using/production-pipelines.md). La distribución del tráfico se basa en el número de conjuntos seleccionados. Es decir, si se escogen los tres, se destinará a cada conjunto el 33 % del total de vistas de página. Si se seleccionan dos, va el 50 % a cada conjunto. Si se selecciona uno, el 100 % del tráfico se destina a ese conjunto.
+Puede elegir entre uno y los tres conjuntos de la pestaña **Pruebas** de su [configuración de canalización](/help/using/production-pipelines.md). La distribución del tráfico se basa en el número de conjuntos seleccionados. Es decir, si se escogen los tres, se destinará a cada conjunto el 33 % del total de vistas de página. Si se seleccionan dos, va el 50 % a cada conjunto. Si se selecciona uno, el 100 % del tráfico se destina a ese conjunto.
 
 Consideremos este ejemplo.
 
@@ -188,7 +188,7 @@ Durante el período de prueba de 30 minutos, sucede lo siguiente:
 
 #### Prueba e informe {#testing-reporting}
 
-Cloud Manager ejecuta pruebas de rendimiento para programas de AEM Sites solicitando páginas como un usuario no autenticado de forma predeterminada en el servidor de publicación de ensayo durante un período de prueba de 30 minutos. Mide las métricas generadas por el usuario virtual (tiempo de respuesta, tasa de error, vistas por minuto, etc.) para cada página y varias métricas de nivel de sistema (CPU, memoria, datos de red) para todas las instancias.
+Cloud Manager ejecuta pruebas de rendimiento para programas de AEM Sites solicitando páginas como un usuario no autenticado de forma predeterminada en el servidor de publicación de ensayo durante un período de prueba de 30 minutos. Mide las métricas generadas por el usuario virtual (tiempo de respuesta, tasa de errores, vistas por minuto, etc.) para cada página, así como varias métricas de nivel de sistema (CPU, memoria, datos de red) para todas las instancias.
 
 En la tabla siguiente se resume la matriz de prueba de rendimiento utilizando el sistema de acceso de tres niveles.
 
@@ -298,7 +298,7 @@ Si los únicos elementos dentro de `myco-all-1.0.0-SNAPSHOT.zip` son los dos paq
 
 Para los proyectos que producen decenas de paquetes incrustados, se ha demostrado que esta optimización ahorra más de 10 minutos por ejecución de canalización.
 
-Se puede producir un caso especial cuando el paquete de contenido “todo” contiene una combinación de paquetes de contenido omitidos y paquetes OSGi. Por ejemplo, si `myco-all-1.0.0-SNAPSHOT.zip` contenía los dos paquetes incrustados mencionados anteriormente, así como uno o más paquetes OSGi, entonces se construye un nuevo paquete de contenido mínimo con solo los paquetes OSGi. Este paquete siempre tiene el nombre `cloudmanager-synthetic-jar-package` y los paquetes contenidos se colocan en `/apps/cloudmanager-synthetic-installer/install`.
+Se puede producir un caso especial cuando el paquete de contenido “todo” contiene una combinación de paquetes de contenido omitidos y paquetes OSGi. Por ejemplo, si `myco-all-1.0.0-SNAPSHOT.zip` contenía los dos paquetes incrustados mencionados anteriormente, así como uno o más paquetes OSGi, entonces se construye un nuevo paquete de contenido mínimo con solo los paquetes OSGi. Este paquete siempre tiene el nombre `cloudmanager-synthetic-jar-package`, y los paquetes contenidos se colocan en `/apps/cloudmanager-synthetic-installer/install`.
 
 >[!NOTE]
 >

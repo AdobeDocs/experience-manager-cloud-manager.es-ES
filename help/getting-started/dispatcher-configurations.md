@@ -5,7 +5,7 @@ exl-id: ffc2b60e-bde7-48ca-b268-dea0f8fd4e30
 source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
 workflow-type: tm+mt
 source-wordcount: '575'
-ht-degree: 48%
+ht-degree: 52%
 
 ---
 
@@ -24,7 +24,7 @@ Proyectos generados por Cloud Manager mediante el uso del [asistente de creació
 
 Al implementar en una instancia de Dispatcher, los directorios de la instancia se sustituyen por esos directorios del repositorio de Git. Dado que los archivos de configuración de Dispatcher y del servidor web suelen requerir detalles específicos del entorno, debe colaborar con los ingenieros de éxito del cliente (Customer Success Engineers, CSE) para establecer las variables de entorno apropiadas en `/etc/sysconfig/httpd` antes de utilizar correctamente esta característica.
 
-## Configuración de Dispatcher para clientes de servicios administrados existentes {#steps-for-configuring-dispatcher}
+## Configuración de Dispatcher para clientes de Managed Service existentes {#steps-for-configuring-dispatcher}
 
 Siga estos pasos a continuación para completar la configuración inicial de Dispatcher.
 

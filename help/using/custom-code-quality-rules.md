@@ -1,18 +1,18 @@
 ---
-title: Reglas de calidad de código personalizadas
+title: Reglas de calidad del código personalizadas
 description: Descubra los detalles específicos de las reglas de calidad de código personalizadas ejecutadas por Cloud Manager durante las pruebas de calidad del código. Estas reglas se basan en las prácticas recomendadas de AEM Engineering.
 exl-id: 7d118225-5826-434e-8869-01ee186e0754
 source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
 workflow-type: tm+mt
 source-wordcount: '3482'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
 
 # Reglas de calidad de código personalizadas {#custom-code-quality-rules}
 
-Obtenga más información acerca de las reglas de calidad del código personalizadas ejecutadas por Cloud Manager AEM como parte de [pruebas de calidad del código](/help/using/code-quality-testing.md), según las prácticas recomendadas de ingeniería de.
+Obtenga más información acerca de las reglas de calidad del código personalizadas ejecutadas por Cloud Manager como parte de las [pruebas de calidad del código](/help/using/code-quality-testing.md), en función de las prácticas recomendadas de ingeniería de AEM.
 
 >[!NOTE]
 >
@@ -500,7 +500,7 @@ public void doThis(Resource resource) {
 
 El planificador de Sling no debe utilizarse para tareas que requieren una ejecución garantizada. Los trabajos programados de Sling garantizan la ejecución y son más adecuados para los entornos agrupados y no agrupados.
 
-Consulte [Documentación sobre eventos de Apache Sling y administración de trabajos](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html) para obtener más información sobre cómo se administran los trabajos de Sling en entornos agrupados.
+Consulte la [Documentación sobre eventos de Apache Sling y gestión de trabajos](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html) para obtener más información acerca de cómo se administran los trabajos de Sling en entornos agrupados.
 
 ### Las API en desuso de AEM no deben usarse {#sonarqube-aem-deprecated}
 
@@ -655,7 +655,7 @@ La documentación de Herramientas de modernización AEM proporciona información
 * **Gravedad**: Menor
 * **Desde**: Versión 2020.5.0
 
-La compatibilidad con la replicación inversa no está disponible en las implementaciones de Cloud Service, como se describe en [Notas de la versión: eliminación de agentes de replicación](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/release-notes/aem-cloud-changes#replication-agents).
+La compatibilidad con la replicación inversa no está disponible en las implementaciones de Cloud Service, como se describe en [Notas de la versión: Eliminación de agentes de replicación](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/release-notes/aem-cloud-changes#replication-agents).
 
 Los clientes que utilizan la replicación inversa deben ponerse en contacto con Adobe para obtener soluciones alternativas.
 
@@ -666,7 +666,7 @@ Los clientes que utilizan la replicación inversa deben ponerse en contacto con 
 * **Gravedad**: Menor
 * **Desde**: Versión 2021.2.0
 
-Las bibliotecas cliente de AEM pueden contener recursos estáticos como imágenes y fuentes. Como se describe en [Uso de la documentación de las bibliotecas del cliente](https://experienceleague.adobe.com/es/docs/experience-manager-65/content/implementing/developing/introduction/clientlibs#using-preprocessors), cuando se usan bibliotecas cliente proxy, estos recursos estáticos deben estar contenidos en una carpeta secundaria llamada `resources` para que se haga referencia de forma efectiva en las instancias de publicación.
+Las bibliotecas cliente de AEM pueden contener recursos estáticos como imágenes y fuentes. Como se describe en [Uso de la documentación de las bibliotecas del lado del cliente](https://experienceleague.adobe.com/es/docs/experience-manager-65/content/implementing/developing/introduction/clientlibs#using-preprocessors), cuando se utilizan bibliotecas cliente proxy, estos recursos estáticos deben estar contenidos en una carpeta secundaria denominada `resources` para que se haga referencia de forma efectiva en las instancias de publicación.
 
 #### Código no conforme {#non-compliant-proxy-enabled}
 
@@ -708,9 +708,9 @@ La herramienta de migración de [Repositorio de GitHub de AEM Assets as a Cloud 
 * **Gravedad**: Menor
 * **Desde**: Versión 2021.2.0
 
-Si bien el uso de plantillas estáticas siempre ha sido común, históricamente, en Proyectos AEM, se recomienda encarecidamente el uso de plantillas editables, ya que proporcionan la mayor flexibilidad y admiten funciones adicionales que no están presentes en las plantillas estáticas. Encontrará más información en [Plantillas de página - Documentación editable](https://experienceleague.adobe.com/es/docs/experience-manager-65/content/implementing/developing/platform/templates/page-templates-editable).
+Si bien el uso de plantillas estáticas siempre ha sido común, históricamente, en Proyectos AEM, se recomienda encarecidamente el uso de plantillas editables, ya que proporcionan la mayor flexibilidad y admiten funciones adicionales que no están presentes en las plantillas estáticas. Encontrará más información en el documento [Plantillas de página: editables](https://experienceleague.adobe.com/es/docs/experience-manager-65/content/implementing/developing/platform/templates/page-templates-editable).
 
-AEM La migración de plantillas estáticas a editables se puede automatizar en gran medida mediante las [Herramientas de modernización de la](https://opensource.adobe.com/aem-modernize-tools/).
+La migración de plantillas estáticas a editables se puede automatizar en gran medida mediante el uso de [Herramientas de modernización de AEM](https://opensource.adobe.com/aem-modernize-tools/).
 
 ### Se desaconseja el uso de componentes de base heredados {#oakpal-usage-legacy}
 
@@ -719,7 +719,7 @@ AEM La migración de plantillas estáticas a editables se puede automatizar en g
 * **Gravedad**: Menor
 * **Desde**: Versión 2021.2.0
 
-AEM Los componentes básicos heredados (es decir, los componentes de `/libs/foundation`) han quedado obsoletos durante varias versiones a favor de los [componentes principales](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/introduction). Se desaconseja el uso de los componentes básicos heredados como base para los componentes personalizados, ya sea por superposición o herencia, y deben convertirse al componente principal correspondiente.
+Los componentes básicos heredados (es decir, los componentes en `/libs/foundation`) llevan en desuso varias versiones de AEM a favor de los [Componentes principales](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/introduction). Se desaconseja el uso de los componentes básicos heredados como base para los componentes personalizados, ya sea por superposición o herencia, y deben convertirse al componente principal correspondiente.
 
 [Las herramientas de modernización de AEM](https://opensource.adobe.com/aem-modernize-tools/) pueden facilitar esta conversión.
 
@@ -730,7 +730,7 @@ AEM Los componentes básicos heredados (es decir, los componentes de `/libs/foun
 * **Gravedad**: Menor
 * **Desde**: Versión 2021.2.0
 
-AEM Cloud Service requiere que las definiciones de índice de búsqueda personalizadas (es decir, nodos de tipo `oak:QueryIndexDefinition`) sean nodos secundarios directos de `/oak:index`. Los índices de otras ubicaciones deben moverse para que sean compatibles con AEM Cloud Service. Encontrará más información sobre los índices de búsqueda en la [Documentación sobre búsqueda de contenido e indexación](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/operations/indexing).
+AEM Cloud Service requiere que las definiciones de índice de búsqueda personalizadas (es decir, nodos de tipo `oak:QueryIndexDefinition`) sean nodos secundarios directos de `/oak:index`. Los índices de otras ubicaciones deben moverse para que sean compatibles con AEM Cloud Service. Puede encontrar más información sobre los índices de búsqueda en la [documentación de búsqueda de contenido e indexación](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/operations/indexing).
 
 ### Los nodos de definición de índice de búsqueda personalizada deben tener una compatVersion de 2 {#oakpal-custom-search-compatVersion}
 
@@ -739,7 +739,7 @@ AEM Cloud Service requiere que las definiciones de índice de búsqueda personal
 * **Gravedad**: Menor
 * **Desde**: Versión 2021.2.0
 
-AEM Cloud Service requiere que las definiciones de índice de búsqueda personalizadas (es decir, nodos de tipo `oak:QueryIndexDefinition`) tengan la propiedad `compatVersion` establecida en `2`. AEM Cloud Service no admite ningún otro valor. Encontrará más información sobre los índices de búsqueda en la [Documentación sobre búsqueda de contenido e indexación](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/operations/indexing).
+AEM Cloud Service requiere que las definiciones de índice de búsqueda personalizadas (es decir, nodos de tipo `oak:QueryIndexDefinition`) tengan la propiedad `compatVersion` establecida en `2`. AEM Cloud Service no admite ningún otro valor. Puede encontrar más información sobre los índices de búsqueda en la [documentación de búsqueda de contenido e indexación](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/operations/indexing).
 
 ### Los nodos descendientes de los nodos de definición de índice de búsqueda personalizada deben ser de tipo `nt:unstructured` {#oakpal-descendent-nodes}
 
@@ -757,7 +757,7 @@ Pueden producirse problemas difíciles de solucionar cuando un nodo de definici�
 * **Gravedad**: Menor
 * **Desde**: Versión 2021.2.0
 
-Un nodo de definición de índice de búsqueda personalizada definido correctamente debe contener un nodo secundario denominado `indexRules` que, a su vez, debe tener al menos una tarea secundaria. Encontrará más información en la [documentación de Oak](https://jackrabbit.apache.org/oak/docs/query/lucene.html).
+Un nodo de definición de índice de búsqueda personalizada definido correctamente debe contener un nodo secundario denominado `indexRules` que, a su vez, debe tener al menos una tarea secundaria. Puede encontrar más información en la [documentación de Oak](https://jackrabbit.apache.org/oak/docs/query/lucene.html).
 
 ### Los nodos de definición de índices de búsqueda personalizada deben seguir las convenciones de nombres {#oakpal-custom-search-definitions}
 

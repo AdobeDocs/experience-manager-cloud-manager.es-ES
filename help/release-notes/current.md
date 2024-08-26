@@ -1,32 +1,32 @@
 ---
-title: Notas de la versión de Cloud Manager 2024.8.0
-description: Obtenga información acerca de las notas de la versión para Cloud Manager 2024.8.0.
+title: Notas de la versión 2024.8.0 de Cloud Manager
+description: Estas son las notas de la versión 2024.8.0 de Cloud Manager.
 feature: Release Information
 source-git-commit: 5ced643fabe0a670e456cbea72f9da8196ac774a
 workflow-type: tm+mt
 source-wordcount: '266'
-ht-degree: 3%
+ht-degree: 28%
 
 ---
 
 
 # Notas de la versión de Cloud Manager 2024.8.0 {#release-notes}
 
-Esta página documenta las notas de la versión de [!UICONTROL Cloud Manager] 2024.8.0.
+Esta página documenta las notas de la versión 2024.8.0 de [!UICONTROL Cloud Manager].
 
 >[!NOTE]
 >
->Para ver las últimas notas de la versión de Cloud Manager en AEM as a Cloud Service, consulte [Cloud Manager en las notas de la versión actuales de AEM as a Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/cloud-manager/current).
+>Para ver las últimas notas de la versión de Cloud Manager en AEM as a Cloud Service, consulte [Cloud Manager en las notas de la versión actuales de AEM as a Cloud Service](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/release-notes/cloud-manager/current).
 
 ## Fecha de lanzamiento {#release-date}
 
-La fecha de la versión de [!UICONTROL Cloud Manager] 2024.8.0 es el 14 de agosto de 2024. La próxima versión está planificada para el 14 de septiembre de 2024.
+La fecha de lanzamiento de la versión 2024.8.0 de [!UICONTROL Cloud Manager] es el jueves, 14 de agosto de 2024. La próxima versión está planificada para el 14 de septiembre de 2024.
 
 ## Novedades {#what-is-new}
 
 * Para canalizaciones solo de fase y de producción (disponibles como parte del [programa de adopción anticipada](#staging-production-only-pipelines)), ahora puede ejecutarlas en [modo de emergencia](/help/using/stage-prod-only.md#emergency-mode), omitiendo la prueba de fase.
 
-## Programa de adopción temprana {#early-adoption}
+## Programa para primeros usuarios {#early-adoption}
 
 Forme parte del programa de adopción anticipada de Cloud Manager y tenga la oportunidad de probar algunas de las próximas funciones.
 

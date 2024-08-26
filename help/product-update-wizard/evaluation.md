@@ -6,7 +6,7 @@ exl-id: 1ffcbc21-dc36-435d-b83b-0209f81a15e7
 source-git-commit: 11a6a53d8cbfb689810a9a8e7d82293a49863084
 workflow-type: tm+mt
 source-wordcount: '279'
-ht-degree: 17%
+ht-degree: 31%
 
 ---
 
@@ -39,7 +39,7 @@ El detector de patrones se puede ejecutar en cualquier entorno. Sin embargo, par
 
    ![Ejecutar evaluación](/help/assets/Run-Evaluation.png)
 
-1. El asistente informa el estado de la acción. Aviso **En curso** o **completado** según corresponda cuando se genere el informe de evaluación.
+1. El asistente informa el estado de la acción. Cuando se genere el informe de evaluación, verá **En curso** o **completado** según corresponda.
 
 1. Una vez generado el informe, puede hacer clic en **[!UICONTROL Descargar informe]** para guardar una copia.
 

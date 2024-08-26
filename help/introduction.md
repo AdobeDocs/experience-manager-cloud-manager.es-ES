@@ -4,8 +4,8 @@ description: Empiece aquí para conocer Cloud Manager para Adobe Managed Service
 exl-id: 58344d8a-b869-4177-a9cf-6a8b7dfe9588
 source-git-commit: 4c4a2688cab8e5c81efa4b7b5e26f3c7b5dc30d6
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1256'
+ht-degree: 55%
 
 ---
 
@@ -29,7 +29,7 @@ Empiece aquí para conocer Cloud Manager for AMS (Adobe Managed Services) y cóm
 >
 >Esta documentación describe específicamente las funciones y características de Cloud Manager para Adobe Managed Services (AMS).
 >
->El equivalente para AEM as a Cloud Service se encuentra en [AEM as a Cloud Service documentation](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/home).
+>El equivalente para AEM as a Cloud Service se encuentra en la [Documentación de AEM as a Cloud Service](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/home).
 
 Con Cloud Manager, su equipo de desarrollo se beneficia de las siguientes funciones:
 
@@ -75,7 +75,7 @@ Para obtener más información acerca de la implementación del código y las pr
 
 ## Funciones opcionales en Cloud Manager {#optional-features-in-cloud-manager}
 
-Cloud Manager ofrece funciones avanzadas adicionales, que pueden ser beneficiosas para su proyecto según la configuración y las necesidades de su entorno en particular. Si estas funciones le interesan, póngase en contacto con su ingeniero de éxito del cliente (Customer Success Engineer, CSE) o su representante del Adobe de para hablarlo con más detalle.
+Cloud Manager ofrece funciones avanzadas adicionales, que pueden ser beneficiosas para su proyecto según la configuración y las necesidades de su entorno en particular. Si estas funciones le interesan, póngase en contacto con su ingeniero de éxito del cliente (Customer Success Engineer, CSE) o su representante de Adobe para hablarlo con más detalle.
 
 ### Escalado automático {#autoscaling}
 
@@ -129,5 +129,5 @@ Si le interesa la implementación azul/verde, tenga en cuenta los siguientes req
 * Los pares de previsualización de Dispatcher/publicación no forman parte de las implementaciones azules/verdes.
 * Cada par de Dispatcher/publicación es idéntico a los otros pares de Dispatcher/editor.
 * Azul/verde solo está disponible en el entorno de producción.
-* Azul/verde está disponible en AWS y Azure.
+* Azul/verde está disponible en AWS y en Azure.
 * Azul/verde no está disponible para clientes solo de Assets.

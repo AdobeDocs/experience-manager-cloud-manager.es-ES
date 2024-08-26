@@ -5,12 +5,12 @@ exl-id: 32886133-d6c0-4aed-8bb0-81b84f63e825
 source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
 workflow-type: tm+mt
 source-wordcount: '910'
-ht-degree: 32%
+ht-degree: 44%
 
 ---
 
 
-# Monitorización de entornos {#monitoring-environments}
+# Supervisar entornos {#monitoring-environments}
 
 Obtenga información sobre cómo monitorizar los entornos en Cloud Manager.
 
@@ -54,7 +54,7 @@ El estado de cada categoría es un resumen de las métricas individuales. Si alg
 
 ## Detalles de monitorización del sistema {#system-monitoring-detail}
 
-Para ver los detalles de métricas específicas, haga clic en una de las columnas de categoría de una instancia específica o en el título de categoría en el panel de navegación izquierdo. Cada página de detalles muestra una serie de gráficos para las métricas dentro de esa categoría. Puede ver las métricas de todas las instancias de un entorno o de una específica. Puede cambiar entre el entorno y las instancias mediante los cuadros desplegables de la esquina superior derecha.
+Para ver los detalles de las métricas específicas, haga clic en una de las columnas de categoría de una instancia específica o en el título de categoría en la navegación izquierda. Cada página de detalles muestra una serie de gráficos para las métricas dentro de esa categoría. Puede ver las métricas de todas las instancias de un entorno o de una específica. Puede cambiar entre el entorno y las instancias mediante los cuadros desplegables de la esquina superior derecha.
 
 ![Selección del entorno](/help/assets/System_Monitoring1.png)
 
@@ -96,7 +96,7 @@ Por ejemplo, si hace clic en la serie de umbrales de advertencia, solo verá el 
    * Hay métricas independientes para cada agente de replicación.
 * **Vaciado de Dispatcher**: El número de elementos que hay actualmente en la cola de vaciado de Dispatcher
 
-## Informes de SLA {#sla-reporting}
+## Creación de informes de SLA {#sla-reporting}
 
 Puede ver el rendimiento de su entorno de AEM de producción en relación con el contrato de nivel de servicio (SLA).
 
@@ -114,12 +114,12 @@ La sección **Análisis de eventos** de este gráfico muestra el conjunto de inc
 
 ## Métricas de SLA {#sla-metrics}
 
-* **Contrato de autor**: el SLA definido en su contrato con Adobe Managed Services para el nivel de autor.
+* **Contrato de creación**: Este es el SLA definido en su contrato con Adobe Managed Services para el nivel de creación.
 * **SLA de creación de AMS**: tiempo de actividad medido del nivel de creación de producción, incidentes de factorización causados por proveedores o por Adobe.
-* **SLA de autor**: tiempo de actividad medido del nivel de creación que ignora el tiempo de inactividad programado, como los períodos de mantenimiento.
-* **Contrato de usuario final**: SLA definido en su contrato con Adobe Managed Services para el nivel de publicación.
+* **SLA de creación**: El tiempo de actividad medido del nivel de creación que ignora el tiempo de inactividad programado, como los períodos de mantenimiento.
+* **Contrato de usuario final**: El SLA definido en su contrato con Adobe Managed Services para el nivel de publicación.
 * **SLA de usuario final de AMS**: los tiempos de actividad medidos del nivel de publicación de producción, los incidentes de factorización causados por proveedores o por Adobe.
-* **SLA de usuario final**: el tiempo de actividad medido del nivel de publicación que ignora el tiempo de inactividad programado, como los períodos de mantenimiento.
+* **SLA de usuario final**: El tiempo de actividad medido del nivel de publicación que ignora el tiempo de inactividad programado, como los períodos de mantenimiento.
 
 ## Tutorial de vídeo {#video-tutorial}
 

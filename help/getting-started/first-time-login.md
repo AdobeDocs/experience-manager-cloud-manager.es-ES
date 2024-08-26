@@ -5,7 +5,7 @@ exl-id: eb043437-8566-4a8d-8c5c-c8cf1d33daeb
 source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
 workflow-type: tm+mt
 source-wordcount: '293'
-ht-degree: 30%
+ht-degree: 55%
 
 ---
 
@@ -24,15 +24,15 @@ Una vez que haya establecido la configuración general de [!UICONTROL Cloud Mana
 
    ![Consola de Cloud Manager](/help/assets/cloud-manager-console.png)
 
-1. Haga clic en la tarjeta del programa para desplazarse a la página **Información general** de Cloud Manager.
+1. Pulse o haga clic en la tarjeta del programa para navegar a la página de **Información general** de Cloud Manager.
 
 1. Cloud Manager abre la página de **Información general**.
 
    ![Página de información general de Cloud Manager](/help/assets/program-overview-page.png)
 
-1. Si el programa aún no está configurado, haga clic en **Programa de instalación** en la [llamada a la acción](/help/getting-started/navigation.md#cta) para configurar la descripción del programa y definir los indicadores clave de rendimiento (KPI). Si el programa ya está configurado, la CTA puede ofrecer pasos siguientes adicionales.
+1. Si el programa aún no está configurado, haga clic en **Programa de configuración** en la [llamada a la acción](/help/getting-started/navigation.md#cta) para configurar la descripción del programa y definir los indicadores clave de rendimiento (KPI). Si el programa ya está configurado, la CTA puede ofrecer pasos siguientes adicionales.
 
-Puede continuar con el documento [Configuración del programa](/help/getting-started/program-setup.md) para ver los pasos siguientes en la configuración del programa.
+Continúe con el documento [Configuración del programa](/help/getting-started/program-setup.md) para ver los pasos siguientes en dicho proceso.
 
 ## Actividad de Cloud Manager {#activity}
 

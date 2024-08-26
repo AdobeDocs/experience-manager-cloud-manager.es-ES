@@ -5,7 +5,7 @@ exl-id: 795c7112-d564-4fbf-96a1-152a6c286bf2
 source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
 workflow-type: tm+mt
 source-wordcount: '564'
-ht-degree: 49%
+ht-degree: 55%
 
 ---
 
@@ -50,7 +50,7 @@ Siga estos pasos para configurar el programa y definir los indicadores clave de 
 
 Se crea el programa. Los recursos pueden tardar varios minutos en aprovisionarse antes de que el programa esté listo para su uso.
 
-## Edición de un programa {#editing-program}
+## Editar un programa {#editing-program}
 
 Los programas se pueden editar una vez configurados. Siga estos pasos para editar un programa.
 
@@ -58,7 +58,7 @@ Los programas se pueden editar una vez configurados. Siga estos pasos para edita
 
 1. Vaya al programa desde la pantalla de inicio de Cloud Manager.
 
-1. Haga clic en **Editar programa** para actualizar o modificar su programa desde la página **Información general**.
+1. Haga clic en **Editar programa** para actualizar o modificar el programa desde la página **Información general**.
 
    ![Opción Editar programa](/help/assets/set-up-program/edit-program1.png)
 
@@ -72,7 +72,7 @@ Los cambios se guardan inmediatamente en Cloud Manager, pero no se reflejan en l
 
 Si todavía no ha creado una canalización, consulte [Configuración de canalizaciones de producción](/help/using/production-pipelines.md) y [Configuración de canalizaciones que no son de producción](/help/using/non-production-pipelines.md).
 
-## Cambiar entre programas {#swithing-programs}
+## Cambio entre programas {#swithing-programs}
 
 Al trabajar en un programa, puede cambiar rápidamente a otro sin volver a la página de información general de Cloud Manager.
 
@@ -90,6 +90,6 @@ Las pruebas de rendimiento de Assets implican la carga repetida de recursos dura
 
 Puede tener una red de distribución de contenido (CDN) como Akamai o CloudFront delante del entorno de producción. Dado que [!UICONTROL Cloud Manager] prueba directamente en el entorno de ensayo, los KPI deben reflejar únicamente el tráfico que se espera que pase a través de la red de distribución de contenido (CDN). Es decir, la caché falla. Normalmente, esta experiencia es un subconjunto relativamente pequeño del tráfico total de producción.
 
-## Vídeo introductorio {#video}
+## Información general en vídeo {#video}
 
 >[!VIDEO](https://video.tv.adobe.com/v/26313/)

@@ -5,13 +5,13 @@ exl-id: ccf4b4a2-6e29-4ede-821c-36318b568e5c
 source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
 workflow-type: tm+mt
 source-wordcount: '685'
-ht-degree: 55%
+ht-degree: 64%
 
 ---
 
-# Configuración de canalizaciones que no sean de producción {#configuring-non-production-pipelines}
+# Configurar canalizaciones que no sean de producción {#configuring-non-production-pipelines}
 
-Aprenda a utilizar Cloud Manager para crear y configurar canalizaciones que no son de producción e implementar su código. Si desea conocer primero una descripción general más conceptual del funcionamiento de las canalizaciones en Cloud Manager, consulte [Canalizaciones de CI/CD](/help/overview/ci-cd-pipelines.md).
+Aprenda a utilizar Cloud Manager para crear y configurar canalizaciones que no son de producción e implementar su código. Si desea conocer primero una descripción general más conceptual del funcionamiento de las canalizaciones en Cloud Manager, consulte el documento [Canalizaciones de CI/CD](/help/overview/ci-cd-pipelines.md).
 
 ## Información general {#overview}
 
@@ -31,13 +31,13 @@ Existen dos tipos de canalizaciones que no son de producción:
 >
 >No se puede configurar una canalización hasta que su repositorio Git asociado tenga al menos una rama y la [configuración del programa](/help/getting-started/program-setup.md) haya finalizado. Consulte [Repositorios de Cloud Manager](/help/managing-code/managing-repositories.md) para obtener información sobre cómo agregar y administrar repositorios en Cloud Manager.
 
-## Agregar una canalización que no sea de producción {#add-non-production-pipeline}
+## Adición de una canalización que no es de producción {#add-non-production-pipeline}
 
 Una vez que haya configurado el programa y tenga al menos un entorno utilizando la interfaz de usuario de Cloud Manager, estará listo para agregar una canalización que no sea de producción siguiendo estos pasos.
 
 1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com) y seleccione la organización y el programa adecuados.
 
-1. Acceda a la tarjeta Canalizaciones desde la pantalla de inicio de Cloud Manager. Haga clic en **Agregar** y luego seleccione **Agregar canalización que no sea de producción**.
+1. Acceda a la tarjeta Canalizaciones desde la pantalla de inicio de Cloud Manager. Haga clic en **+Agregar** y seleccione **Añadir canalización que no es de producción**.
 
    ![Agregar canalización que no sea de producción](/help/assets/configure-pipelines/nonprod-pipeline-add1.png)
 
@@ -79,9 +79,9 @@ Una vez que haya configurado el programa y tenga al menos un entorno utilizando 
 
 1. Haga clic en **Guardar**.
 
-## Los siguientes pasos {#the-next-steps}
+## Pasos siguientes {#the-next-steps}
 
-Después de configurar la canalización, puede implementar el código. Consulte [Implementación de código](/help/using/code-deployment.md) para obtener más información.
+Después de configurar la canalización, puede implementar el código. Consulte la [Implementación de código](/help/using/code-deployment.md) para obtener más información.
 
 ## Tutorial de vídeo {#video-tutorial}
 

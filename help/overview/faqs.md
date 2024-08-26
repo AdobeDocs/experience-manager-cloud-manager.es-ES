@@ -5,7 +5,7 @@ exl-id: 52c1ca23-5b42-4eae-b63a-4b22ef1a5aee
 source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
 workflow-type: tm+mt
 source-wordcount: '748'
-ht-degree: 50%
+ht-degree: 54%
 
 ---
 
@@ -29,7 +29,7 @@ Es posible que la generación de AEM Cloud Manager falle al intentar cambiar la 
 [main] [ERROR] Failed to execute goal org.apache.felix:maven-scr-plugin:1.26.4:scr (generate-scr-scrdescriptor) on project helloworld.core: /build_root/build/testsite/src/main/java/com/adobe/HelloWorldServiceImpl.java : Unable to load compiled class: com.adobe.HelloWorldServiceImpl: com/adobe/HelloWorldServiceImpl has been compiled by a more recent version of the Java Runtime (class file version 55.0), this version of the Java Runtime only recognizes class file versions up to 52.0 -> [Help 1]
 ```
 
-Para obtener instrucciones sobre cómo quitar este complemento, [consulte esto](https://cqdump.joerghoh.de/2019/01/03/from-scr-annotations-to-osgi-annotations/).
+Para obtener instrucciones sobre cómo quitar este complemento, haga clic [aquí](https://cqdump.joerghoh.de/2019/01/03/from-scr-annotations-to-osgi-annotations/).
 
 ## Mi generación falla con un error sobre RequireJavaVersion después de cambiar de Java 8 a Java 11. ¿Qué puedo hacer? {#requirejavaversion}
 
@@ -72,7 +72,7 @@ Para obtener más información sobre la administración de versiones, consulte [
 
 ## ¿Cómo funcionan las versiones de paquetes y los paquetes para las implementaciones de ensayo y producción? {#staging-production}
 
-En las implementaciones de ensayo y producción, se genera una versión automática [tal como se documenta aquí](/help/managing-code/maven-project-version.md).
+En las implementaciones de ensayo y producción se genera una versión automática [como se documenta aquí](/help/managing-code/maven-project-version.md).
 
 Para las versiones personalizadas en las implementaciones de fase y producción, establezca una versión de Maven adecuada como `1.0.0`. Actualice la versión cada vez que implemente en la producción.
 

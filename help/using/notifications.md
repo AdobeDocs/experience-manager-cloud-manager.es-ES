@@ -5,7 +5,7 @@ exl-id: cfd5655f-2d2c-4304-b25c-6cdffe7ff64c
 source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
 workflow-type: tm+mt
 source-wordcount: '561'
-ht-degree: 67%
+ht-degree: 81%
 
 ---
 
@@ -36,9 +36,9 @@ La pestaña **Anuncios** incluye anuncios de productos de Adobe. Los anuncios ha
 
 ![Barra lateral de notificaciones](/help/assets/notificaitons-announcements.png)
 
-Haga clic en una notificación o anuncio para ver sus detalles. Las notificaciones vinculadas a actividades como las implementaciones de canalización le llevan a los detalles de esa actividad, como la ventana de ejecución de la canalización.
+Haga clic en una notificación o un anuncio para ver los detalles. Las notificaciones vinculadas a actividades como las implementaciones de canalización le llevan a los detalles de esa actividad, como la ventana de ejecución de canalización.
 
-Haga clic en la opción **Ver todos** en la parte inferior del panel para ver todos los anuncios de la bandeja de entrada.
+Haga clic en la opción **Ver todo** en la parte inferior del panel para ver todos los anuncios de la bandeja de entrada.
 
 Haga clic en la opción **Marcar todo como leído** en la parte inferior del panel para marcar todas las notificaciones no leídas como leídas y borrar el distintivo del icono de la campana.
 
@@ -58,7 +58,7 @@ Las suscripciones definen para qué productos recibe notificaciones y cuáles.
 
 ![Suscripciones de notificaciones](/help/assets/notifications-subscriptions.png)
 
-De forma predeterminada, recibe todas las notificaciones de todos los productos. Haz clic en **Personalizar** junto a un producto para definir los tipos de notificaciones que recibes sobre ese producto.
+De forma predeterminada, recibe todas las notificaciones de todos los productos. Haga clic en **Personalizar** junto a un producto para definir los tipos de notificaciones que recibe de este.
 
 ![Personalización de la suscripción a notificaciones](/help/assets/notifications-subscriptions-customize.png)
 

@@ -5,7 +5,7 @@ exl-id: e36420d2-57c5-4375-99fb-dd47c1c8bffd
 source-git-commit: 8e2c57d2594691e7fb18d8a538caa9b54a26b6bb
 workflow-type: tm+mt
 source-wordcount: '840'
-ht-degree: 41%
+ht-degree: 60%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 41%
 
 Obtenga información sobre cómo administrar las canalizaciones existentes, como editarlas, ejecutarlas y eliminarlas.
 
-## Tarjeta de canalización {#pipeline-card}
+## Tarjeta de canalizaciones {#pipeline-card}
 
 La tarjeta **Canalizaciones** de la página **Información general del programa** en Cloud Manager le ofrece una descripción general de todas sus canalizaciones y de su estado actual.
 
@@ -34,21 +34,21 @@ En la parte inferior de la lista de canalizaciones, tiene las siguientes opcione
 * **Acceder a la info del repositorio**: muestra la información necesaria para acceder al repositorio Git de Cloud Manager.
 * **Más información**: Navega hasta los recursos de documentación de canalización de CI/CD.
 
-## Ventana Canalizaciones {#pipelines}
+## Ventana de canalizaciones {#pipelines}
 
 La ventana **Canalizaciones** muestra una lista completa de todas las canalizaciones para el programa seleccionado. Esta lista es útil porque presenta información más completa que la disponible en la [tarjeta de canalizaciones](#pipeline-card).
 
 1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización y programa adecuados.
 
-1. En la página **Resumen del programa**, haga clic en la ficha **Canalizaciones** para cambiar a la ventana **Canalizaciones**.
+1. En la página **Resumen del programa**, pulse o haga clic en **Canalizaciones** para cambiar a la ventana **Canalizaciones**.
 
-1. Aquí puede ver una lista de todas las canalizaciones para el programa y comenzar y detener la ejecución de la canalización como lo haría en la **Tarjeta de canalizaciones**.
+1. Aquí puede ver una lista de todas las canalizaciones para el programa, así como iniciar y detener la ejecución de la canalización como lo haría en la **Tarjeta de canalizaciones**.
 
-Al hacer clic en el icono `i`, se muestran detalles sobre la última o la ejecución actual de la canalización.
+Al pulsar o hacer clic en el icono `i` se muestran detalles sobre la última o la actual ejecución de la canalización.
 
 ![Detalles de ejecución de canalización](/help/assets/configure-pipelines/pipeline-status.png)
 
-Al hacer clic en **Ver detalles**, accederá a [los detalles de la ejecución de la canalización](#view-details).
+Hacer clic en **Ver detalles** le llevará a los [detalles de la ejecución de la canalización](#view-details).
 
 ## Ventana de actividad {#activity}
 
@@ -56,11 +56,11 @@ La ventana **Actividades** muestra una lista completa de todas las ejecuciones d
 
 1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización y programa adecuados.
 
-1. En la página **Información general del programa**, haga clic en la ficha **Actividad** para cambiar a la ventana **Actividad**.
+1. En la página **Resumen del programa**, pulse o haga clic en **Actividad** para cambiar a la ventana **Actividad**.
 
 1. Aquí puede ver una lista de todas las ejecuciones de canalización del programa, incluidas las ejecuciones actuales e históricas.
 
-Al hacer clic en el icono `i`, se muestran detalles sobre la ejecución de la canalización seleccionada.
+Al hacer clic en el icono `i` se muestran los detalles sobre la ejecución de la canalización seleccionada.
 
 ![Detalles de ejecución de canalización](/help/assets/configure-pipelines/pipeline-activity.png)
 
@@ -118,15 +118,15 @@ Desde aquí puede ver el estado de los distintos pasos de la canalización y rec
 
 Todos los pasos de la ejecución de una canalización se muestran con los que aún no se han iniciado en gris. Los pasos finalizados muestran su duración.
 
-Cuando se completa un paso de una canalización, se presenta un resumen.
+Una vez completado el paso de una canalización, se presenta un resumen.
 
-![Resumen del paso](/help/assets/configure-pipelines/pipeline-step.png)
+![Resumen de pasos](/help/assets/configure-pipelines/pipeline-step.png)
 
-Haga clic en el vínculo **Ver detalles** para mostrar la sección **Duración**. Esta sección incluye la duración promedio de la canalización en función de la tendencia histórica para ese programa.
+Haga clic o pulse en el vínculo **Ver detalles** para mostrar la sección **Duración**. Esta sección incluye la duración promedio de la canalización en función de la tendencia histórica para ese programa.
 
 ![Duración](/help/assets/configure-pipelines/duration.png)
 
-Si la canalización contenía un paso de **escaneo de código** que generó problemas, puede hacer clic en el botón **Descargar detalles** para ver una lista de [pruebas de calidad de código](/help/using/code-quality-testing.md) que no se superaron.
+Si la canalización contenía un paso **Escaneado de códigos** que ha planteado problemas, puede pulsar o hacer clic en el botón **Descargar detalles** para ver una lista de las [pruebas de calidad del código](/help/using/code-quality-testing.md) que no se han superado.
 
 ![Problemas de calidad del código](assets/managing-pipelines-code-quality-issues.png)
 

@@ -5,24 +5,24 @@ exl-id: b7dd0021-d346-464a-a49e-72864b01cce3
 source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
 workflow-type: tm+mt
 source-wordcount: '932'
-ht-degree: 27%
+ht-degree: 42%
 
 ---
 
-# Canalizaciones solo de fase y de producción {#stage-prod-only}
+# Canalizaciones de solo fase y de producción {#stage-prod-only}
 
 Descubra cómo puede dividir las implementaciones de fase y producción mediante canalizaciones dedicadas.
 
 >[!NOTE]
 >
->Esta característica solo está disponible para [el programa que la adoptó por primera vez](/help/release-notes/current.md#early-adoption).
+>Esta funcionalidad solo está disponible para [el programa de clientes pioneros](/help/release-notes/current.md#early-adoption).
 
 ## Información general {#overview}
 
 Los entornos de ensayo y producción están perfectamente asociados. De forma predeterminada, estas implementaciones están vinculadas a una sola canalización. Es decir, una canalización de implementación se implementa en los entornos de ensayo y producción de ese programa. Aunque este acoplamiento suele ser adecuado, hay ciertos casos de uso en los que existen desventajas:
 
 * Si desea implementar solo en fase, rechaza el paso **Promocionar a producción** de la canalización. Sin embargo, la ejecución se marca como cancelada.
-* Si desea implementar el código más reciente en un entorno de ensayo en producción, debe volver a implementar toda la canalización, incluida la implementación de ensayo, aunque no se haya cambiado ningún código allí.
+* Si desea implementar el código más reciente de un entorno de ensayo en el de producción, debe volver a implementar toda la canalización, incluida la implementación de fase, aunque ahí no se haya cambiado ningún código.
 * Los entornos no se pueden actualizar durante las implementaciones. Si se detiene para probar en el entorno de ensayo durante varios días antes de pasar a producción, el entorno de producción permanece bloqueado y no se puede actualizar. Este escenario hace que las tareas que no dependen, como actualizar [variables de entorno](/help/getting-started/build-environment.md#environment-variables), sean imposibles.
 
 Las canalizaciones de solo fase y producción ofrecen soluciones para estos casos de uso al proporcionar opciones de implementación dedicadas.
@@ -34,7 +34,7 @@ Las canalizaciones solo de fase y de solo producción no se ejecutan mientras un
 
 Las canalizaciones solo de producción se activan manualmente, ya que no están vinculadas directamente a un repositorio para **Cambios en Git**.
 
-Estas canalizaciones dedicadas ofrecen más flexibilidad, pero debe tener en cuenta los siguientes detalles de funcionamiento y recomendaciones.
+Estas canalizaciones dedicadas ofrecen más flexibilidad, pero tenga en cuenta los siguientes detalles de funcionamiento y recomendaciones.
 
 >[!NOTE]
 >
@@ -46,7 +46,7 @@ Estas canalizaciones dedicadas ofrecen más flexibilidad, pero debe tener en cue
 
 ## Creación de canalizaciones {#pipeline-creation}
 
-Las canalizaciones solo de producción y solo de fase se crean de manera similar a las [canalizaciones de producción](/help/using/production-pipelines.md) y [canalizaciones que no son de producción](/help/using/non-production-pipelines.md) acopladas estándar. Consulte esos documentos para obtener más detalles.
+Las canalizaciones de solo producción y fase se crean de forma similar a las [canalizaciones de producción](/help/using/production-pipelines.md) asociadas estándar y las [canalizaciones que no sean de producción](/help/using/non-production-pipelines.md). Consulte estos documentos para obtener más información.
 
 1. En la ventana **Canalizaciones**, haga clic en **Agregar canalización**.
 
@@ -59,11 +59,11 @@ Las canalizaciones solo de producción y solo de fase se crean de manera similar
 >
 >Algunas opciones pueden aparecer atenuadas si ya existen las canalizaciones correspondientes.
 >
->* **Agregar canalización solo de producción** no está disponible si todavía no existe una canalización solo de fase.
->* **Agregar canalización de producción** no está disponible si ya existe una canalización acoplada estándar.
+>* **Agregar una canalización de solo producción** no estará disponible si una canalización de solo fase no existe aún.
+>* **Agregar canalización de producción** no está disponible si ya existe una canalización asociada estándar.
 >* Solo se permite una canalización de solo producción y una de solo fase por programa.
 
-### Canalizaciones solo de fase {#stage-only}
+### Canalizaciones de solo fase {#stage-only}
 
 1. Después de seleccionar la opción **Agregar canalización que no sea de producción**, se abre el cuadro de diálogo **Agregar canalización que no sea de producción**.
 1. Para crear una canalización solo de fase, seleccione el entorno de fase en el campo **Entornos de implementación aptos** para su canalización.
@@ -85,7 +85,7 @@ Las canalizaciones solo de producción y solo de fase se crean de manera similar
 
    ![Creación de una canalización de solo producción](/help/assets/configure-pipelines/prod-only-pipeline.png)
 
-## Ejecutar canalizaciones solo de producción y solo de fase {#running}
+## Ejecución de canalizaciones de solo producción y de solo fase {#running}
 
 Las canalizaciones solo de producción y solo de fase se ejecutan en gran medida del mismo modo que [todas las demás canalizaciones se ejecutan](/help/using/managing-pipelines.md#running-pipelines). Consulte esa documentación para obtener más detalles. Sin embargo, hay dos nuevas características de estas canalizaciones.
 
@@ -101,7 +101,7 @@ Al iniciar canalizaciones solo de producción y en línea de ensayo, se le pedir
 
 ![Modo de emergencia](/help/assets/configure-pipelines/emergency-mode.png)
 
-### Canalizaciones solo de fase {#stage-only-run}
+### Canalizaciones de solo fase {#stage-only-run}
 
 Una canalización de solo fase se ejecuta casi del mismo modo que las canalizaciones asociadas estándar. Sin embargo, al final de la ejecución, después de los pasos de prueba, aparece el botón **Promocionar compilación**. Este botón permite iniciar una ejecución de canalización solo de producción utilizando los artefactos implementados en el escenario en la ejecución e implementarlos en la producción.
 

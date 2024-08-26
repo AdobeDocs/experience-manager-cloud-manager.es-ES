@@ -5,7 +5,7 @@ exl-id: 15178de8-8a8a-4300-8510-88875ad0fc8c
 source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
 workflow-type: tm+mt
 source-wordcount: '251'
-ht-degree: 39%
+ht-degree: 47%
 
 ---
 
@@ -24,7 +24,7 @@ Los problemas de [calidad de código](/help/using/code-quality-testing.md) detec
 
 ![Ejemplo de anotación de problema de código](assets/github-check-annotations-example.png)
 
-Se proporciona la línea de código exacta con el problema y puede hacer clic en él para mostrar el código correspondiente. Estas anotaciones se proporcionan para todos los problemas de código, no solo los modificados en la solicitud de extracción.
+Se proporciona la línea exacta de código donde está el problema para que pueda hacer clic en ella y ver el código afectado. Estas anotaciones se proporcionan para todos los problemas de código, no solo los modificados en la solicitud de extracción.
 
 ![Ejemplo de anotación de problema de código](assets/github-check-annotations-example-code.png)
 
