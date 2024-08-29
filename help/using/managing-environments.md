@@ -2,7 +2,7 @@
 title: Administrar entornos
 description: Aprenda a utilizar Cloud Manager para administrar sus entornos.
 exl-id: 700b0b4c-1e1a-4993-b366-426b14a98f8e
-source-git-commit: 6f5d51ef59aef831574bd55cee6b12a29e3d70d2
+source-git-commit: 0b7c926120798e2fdb635752192f4ab2e12c1e24
 workflow-type: tm+mt
 source-wordcount: '273'
 ht-degree: 86%
@@ -64,4 +64,6 @@ La pantalla **Entornos** muestra una tarjeta para los entornos de producción y 
 
 Este vídeo proporciona información general sobre los entornos de Cloud Manager que están compuestos por instancias AEM de creación, publicación y Dispatcher.
 
->[!VIDEO](https://video.tv.adobe.com/v/26318/) (3 minutos, 1 segundo)
+>[!VIDEO](https://video.tv.adobe.com/v/26318/)
+
+*(3 minutos, 1 segundo)*
