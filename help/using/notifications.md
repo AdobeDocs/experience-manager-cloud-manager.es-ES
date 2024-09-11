@@ -3,9 +3,9 @@ title: Notificaciones
 description: Descubra cómo Cloud Manager le notifica de los eventos importantes.
 exl-id: cfd5655f-2d2c-4304-b25c-6cdffe7ff64c
 source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '561'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ Descubra cómo Cloud Manager le notifica de los eventos importantes.
 
 ## Notificaciones en Cloud Manager {#cloud-manager-notifications}
 
-[!UICONTROL Cloud Manager] le envía notificaciones cuando se inicia y finaliza una canalización de producción (con o sin éxito) al comienzo de una implementación de producción. Y, cuando se alcancen los pasos **Aprobación de lanzamiento** y **Programado**. Estas se envían a través del sistema de notificaciones de [!UICONTROL Experience Cloud].
+[!UICONTROL Cloud Manager] le envía notificaciones cuando se inicia y finaliza una canalización de producción (con o sin éxito) al inicio de una implementación de producción. Y, cuando se alcancen los pasos **Aprobación de lanzamiento** y **Programado**. Estas se envían a través del sistema de notificaciones de [!UICONTROL Experience Cloud].
 
 >[!NOTE]
 >
@@ -50,7 +50,7 @@ Haga clic en el icono de engranaje en la parte superior de la barra lateral de n
 
 ![Icono de configuración de notificaciones](/help/assets/notifications-configuration.png)
 
-Se abre la ventana **preferencias de Experience Cloud**, donde puede definir las suscripciones de notificación y cómo recibe las notificaciones.
+Esto abre la ventana de **preferencias de Experience Cloud**, donde puede definir las suscripciones de notificación y cómo recibe las notificaciones.
 
 ### Suscripciones {#subscriptions}
 
@@ -58,7 +58,7 @@ Las suscripciones definen para qué productos recibe notificaciones y cuáles.
 
 ![Suscripciones de notificaciones](/help/assets/notifications-subscriptions.png)
 
-De forma predeterminada, recibe todas las notificaciones de todos los productos. Haga clic en **Personalizar** junto a un producto para definir los tipos de notificaciones que recibe de este.
+De forma predeterminada, recibirá todas las notificaciones de todos los productos. Haga clic en **Personalizar** junto a un producto para definir los tipos de notificaciones que recibe de este.
 
 ![Personalización de la suscripción a notificaciones](/help/assets/notifications-subscriptions-customize.png)
 
@@ -68,7 +68,7 @@ Las alertas de prioridad están marcadas con la etiqueta **HIGH**. Puede configu
 
 ![Prioridad de notificaciones](/help/assets/notifications-priority.png)
 
-Utilice la lista desplegable para añadir a la lista de categorías que cumplen los requisitos de prioridad. Haga clic en `X` junto a los nombres de categoría para quitarlos.
+Utilice la lista desplegable para añadir a la lista de categorías que cumplen los requisitos de prioridad. Haga clic en la `X` situada junto a los nombres de las categorías para quitarlas.
 
 ### Alertas {#alerts}
 
@@ -94,4 +94,4 @@ De forma predeterminada, no se envían correos electrónicos. Puede optar por re
 * Cada día
 * Cada semana
 
-Cuando se eligen **Notificaciones inmediatas**, los mensajes de correo electrónico se envían inmediatamente para cada notificación. Para **Resumen diario** y **Resumen semanal**, puede elegir cuándo se envía el compendio diario y en qué día y cuándo se envía el compendio semanal.
+Cuando se selecciona **Notificaciones inmediatas**, los correos electrónicos se envían inmediatamente para cada notificación. Para **Resumen diario** y **Resumen semanal**, puede elegir cuándo se envía el resumen diario y en qué día y cuándo se envía el resumen semanal.

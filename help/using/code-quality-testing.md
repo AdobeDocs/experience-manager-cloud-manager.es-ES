@@ -3,14 +3,14 @@ title: Prueba de calidad del código
 description: Descubra cómo funcionan las pruebas de calidad del código de las canalizaciones y cómo pueden mejorar la calidad de las implementaciones.
 exl-id: 6a574858-a30e-4768-bafc-8fe79f928294
 source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2764'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
 
-# Prueba de calidad de código {#code-quality-testing}
+# Prueba de calidad del código {#code-quality-testing}
 
 Descubra cómo funcionan las pruebas de calidad del código de las canalizaciones y cómo pueden mejorar la calidad de las implementaciones.
 
@@ -20,7 +20,7 @@ Durante la ejecución de canalización, el software captura una serie de métric
 
 Estos resultados se notifican mediante un sistema de clasificación de tres niveles.
 
-## Clasificaciones de tres niveles {#three-tiered-ratings}
+## Clasificaciones en tres niveles {#three-tiered-ratings}
 
 Hay tres puertas en la canalización:
 
@@ -38,7 +38,7 @@ Para cada una de estas puertas, hay una estructura de tres niveles para los prob
 >
 >En una canalización de solo calidad de código, no se pueden anular los errores importantes en la puerta de calidad del código, ya que el paso de prueba de calidad del código es el último paso de la canalización.
 
-## Prueba de calidad de código {#code-quality-testing-step}
+## Prueba de calidad del código {#code-quality-testing-step}
 
 Este paso de prueba evalúa la calidad del código de la aplicación, que es el propósito principal de una canalización de solo calidad de código. Esto se ejecuta inmediatamente después del paso de generación en todas las canalizaciones que sean y no sean de producción. Para obtener más información, vaya a [Configuración de canalizaciones que no sean de producción](/help/using/non-production-pipelines.md).
 
@@ -73,7 +73,7 @@ Los resultados de las pruebas de calidad del código se muestran como una clasif
 >
 >Para obtener más información sobre las reglas de calidad de código personalizadas ejecutadas por [!UICONTROL Cloud Manager], consulte [Reglas de calidad de código personalizadas](custom-code-quality-rules.md).
 
-### Tratamiento de falsos positivos {#dealing-with-false-positives}
+### Tratar con falsos positivos {#dealing-with-false-positives}
 
 El proceso de análisis de la calidad no es perfecto y a veces identifica incorrectamente problemas que no son realmente problemáticos. Este escenario se denomina como falso positivo.
 
@@ -204,7 +204,7 @@ En la tabla siguiente se resume la matriz de prueba de rendimiento utilizando el
 | Utilización del ancho de banda de red | Importante | >= 90% |
 | Solicitudes por minuto | Información | >= 6000 |
 
-Consulte [Pruebas de rendimiento autenticadas](#authenticated-performance-testing) para obtener más información sobre el uso de la autenticación básica para las pruebas de rendimiento de Sites y Assets.
+Consulte la sección [Pruebas de rendimiento autenticadas](#authenticated-performance-testing) para obtener más información sobre el uso de la autenticación básica para las pruebas de rendimiento de Sites y Assets.
 
 >[!NOTE]
 >
@@ -224,7 +224,7 @@ Para establecer estas variables utilizando la CLI de Cloud Manager, ejecute lo s
 $ aio cloudmanager:set-pipeline-variables <pipeline id> --variable CM_PERF_TEST_BASIC_USERNAME <username> --secret CM_PERF_TEST_BASIC_PASSWORD <password>
 ```
 
-Consulte la documentación de la API [Parche de las variables de canalización de usuarios](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/patchPipelineVariables) para aprender a utilizar la API.
+Consulte la documentación de API de [Variables de canalización de usuarios de parches](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/patchPipelineVariables) para aprender a utilizar la API.
 
 ### AEM Assets {#aem-assets}
 
@@ -236,13 +236,13 @@ Para las pruebas de rendimiento de Assets, el ingeniero de éxito del cliente cr
 
 Este método debe permanecer en la instancia de autor con sus permisos inalterados. Su modificación o eliminación puede provocar errores en las pruebas de rendimiento de Assets.
 
-#### Imágenes y Assets para pruebas {#assets-for-testing}
+#### Imágenes y recursos para pruebas {#assets-for-testing}
 
 Los clientes pueden cargar sus propios recursos para realizar pruebas. Esto se puede hacer desde la pantalla **Configuración de canalización** o **Editar**. Los formatos de imagen frecuentes, como JPEG, PNG, GIF y BMP, son compatibles con los archivos Photoshop, Illustrator y Postscript.
 
 Si no se carga ninguna imagen, Cloud Manager utiliza una imagen predeterminada y documentos de PDF para realizar las pruebas.
 
-#### Distribución de Assets para pruebas {#distribution-of-assets}
+#### Distribución de recursos para pruebas {#distribution-of-assets}
 
 La distribución de cuántos recursos de cada tipo se cargan por minuto se establece en la pantalla **Configuración de canalización** o **Editar**.
 
@@ -254,11 +254,11 @@ Cloud Manager crea una carpeta en la instancia de autor utilizando el nombre de 
 
 >[!TIP]
 >
->Consulte [Configurar canalizaciones de producción](/help/using/production-pipelines.md) para obtener más información. Consulte [Configuración del programa](/help/getting-started/program-setup.md) para obtener información sobre cómo configurar el programa y definir los KPI.
+>Consulte [Configuración de canalizaciones de producción](/help/using/production-pipelines.md) para obtener más información. Consulte [Configuración del programa](/help/getting-started/program-setup.md) para obtener información sobre cómo configurar el programa y definir los KPI.
 
 ### Gráficos de resultados de pruebas de rendimiento {#performance-testing-results-graphs}
 
-Hay varias métricas disponibles en el **cuadro de diálogo Prueba de rendimiento**.
+Hay varias métricas disponibles en el **Cuadro de diálogo Prueba de rendimiento**.
 
 ![Lista de métricas](/help/assets/understand_test-results-screen1.png)
 

@@ -1,11 +1,11 @@
 ---
 title: Configuración del programa
-description: Después de la incorporación, el propietario de la empresa debe realizar alguna configuración inicial del programa.
+description: Después de la incorporación, el propietario de la empresa tiene que llevar a cabo alguna configuración inicial del programa.
 exl-id: 795c7112-d564-4fbf-96a1-152a6c286bf2
 source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '564'
-ht-degree: 55%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ Siga estos pasos para configurar el programa y definir los indicadores clave de 
 
    ![Configuración del programa](/help/assets/set-up-program/setup1.png)
 
-1. En el cuadro de diálogo **Programa de instalación**, puede escribir información del programa en tres fichas:
+1. En el cuadro de diálogo **Configurar programa**, puede introducir información del programa en tres pestañas:
 
    * **General**
    * **KPI**
@@ -68,9 +68,9 @@ Los programas se pueden editar una vez configurados. Siga estos pasos para edita
 
 1. Haga clic en **Actualizar** para guardar los cambios.
 
-Los cambios se guardan inmediatamente en Cloud Manager, pero no se reflejan en los entornos hasta que se ejecute la siguiente canalización.
+Los cambios se guardan inmediatamente en Cloud Manager, pero no se reflejan en los entornos hasta que se ejecute la próxima canalización.
 
-Si todavía no ha creado una canalización, consulte [Configuración de canalizaciones de producción](/help/using/production-pipelines.md) y [Configuración de canalizaciones que no son de producción](/help/using/non-production-pipelines.md).
+Si aún no ha creado una canalización, consulte [Configuración de canalizaciones de producción](/help/using/production-pipelines.md) y [Configuración de canalizaciones que no son de producción](/help/using/non-production-pipelines.md).
 
 ## Cambio entre programas {#swithing-programs}
 
@@ -82,13 +82,13 @@ Utilice la barra de acciones para cambiar a otro programa, editar el actual o ag
 
 ## Indicadores clave de rendimiento (KPI) {#kpis}
 
-Los KPI del sitio se miden en pruebas ejecutadas en el entorno de ensayo. Normalmente, estos KPI se reducen para adaptarse a las capacidades del entorno de ensayo.
+Los indicadores clave de rendimiento (KPI) de sitios se miden en pruebas ejecutadas en el entorno de ensayo. Normalmente, estos KPI se reducen para adaptarse a las capacidades del entorno de ensayo.
 
-Por ejemplo, si un usuario espera un promedio de 1000 vistas de página por minuto en su entorno de producción y tiene cuatro servidores de Dispatcher/publicación en producción, debe escalar este escenario a 250 vistas de página por minuto. Este escenario supone que su entorno de ensayo consiste únicamente en un único par de servidor de Dispatcher/Publicación.
+Por ejemplo, si un usuario espera un promedio de 1000 vistas de página por minuto en su entorno de producción y tiene cuatro servidores de Dispatcher/Publicación en producción, debe escalarlo a 250 vistas de página por minuto. Este contexto supone que su entorno de ensayo consiste únicamente en un único par de servidor de Dispatcher/Publicación.
 
-Las pruebas de rendimiento de Assets implican la carga repetida de recursos durante un periodo de 30 minutos. El tiempo de procesamiento de cada recurso y varias métricas de nivel de sistema se miden a lo largo de la prueba.
+Las pruebas de rendimiento de Assets implican la carga repetida de recursos durante un periodo de 30 minutos. El tiempo de procesamiento de cada recurso y diversas métricas de nivel de sistema se miden a lo largo de la prueba.
 
-Puede tener una red de distribución de contenido (CDN) como Akamai o CloudFront delante del entorno de producción. Dado que [!UICONTROL Cloud Manager] prueba directamente en el entorno de ensayo, los KPI deben reflejar únicamente el tráfico que se espera que pase a través de la red de distribución de contenido (CDN). Es decir, la caché falla. Normalmente, esta experiencia es un subconjunto relativamente pequeño del tráfico total de producción.
+Puede tener una red de distribución de contenido (CDN) como Akamai o CloudFront delante del entorno de producción. Dado que [!UICONTROL Cloud Manager] prueba directamente en el entorno de ensayo, los KPI deben reflejar únicamente el tráfico que se espera que pase a través de la red de distribución de contenido (CDN). Es decir, la caché falla. Esta experiencia suele ser un subconjunto relativamente pequeño del tráfico total de producción.
 
 ## Información general en vídeo {#video}
 

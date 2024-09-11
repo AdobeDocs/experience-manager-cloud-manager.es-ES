@@ -3,22 +3,22 @@ title: Primer inicio de sesión
 description: Vaya esta página si ha definido las configuraciones generales y está listo para usar Cloud Manager por primera vez.
 exl-id: eb043437-8566-4a8d-8c5c-c8cf1d33daeb
 source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '293'
-ht-degree: 55%
+ht-degree: 100%
 
 ---
 
 
 # Primer inicio de sesión {#first-time-login}
 
-Una vez que haya establecido la configuración general de [!UICONTROL Cloud Manager], estará listo para usarlo.
+Una vez establecida la configuración general de [!UICONTROL Cloud Manager], ya puede usarla.
 
 >[!NOTE]
 >
 >Según las funciones asignadas en [!UICONTROL Cloud Manager] y el estado de la aplicación, las pantallas que vea pueden diferir de las ilustraciones.
 
-## Inicie sesión por primera vez {#logging-in-for-the-first-time}
+## Inicio de sesión por primera vez {#logging-in-for-the-first-time}
 
 1. Inicie sesión en Cloud Manager en [`my.cloudmanager.adobe.com`](https://my.cloudmanager.adobe.com/) y verá su lista de programas.
 
@@ -40,8 +40,8 @@ Cloud Manager proporciona una vista consolidada de la actividad de un programa. 
 
 >[!TIP]
 >
->Para obtener más información sobre cómo usar la interfaz de usuario de Cloud Manager, consulte [Navegación por la interfaz de usuario de Cloud Manager](/help/getting-started/navigation.md).
+>Para obtener más información sobre cómo utilizar la IU de Cloud Manager, consulte [Navegación por la IU de Cloud Manager](/help/getting-started/navigation.md).
 
 >[!NOTE]
 >
->AEM De forma predeterminada, un usuario con acceso a un entorno de también tiene la función Usuario de Cloud Manager. Esta función no es suficiente para dar al usuario acceso a la vista de detalles del programa. Un usuario de este tipo que solo tenga la función Usuario de Cloud Manager AEM puede navegar mediante las opciones del menú de programa a la URL de creación del entorno (si existen entornos). Estos usuarios deben ponerse en contacto con su administrador si desean obtener acceso de nivel de programa.
+>De forma predeterminada, un usuario con acceso a un entorno de AEM también tendrá la función de usuario de Cloud Manager. Esta función no es suficiente para dar al usuario acceso a la vista de detalles del programa. Un usuario de este tipo que solo tenga la función de usuario de Cloud Manager puede navegar mediante las opciones del menú de programa a la URL de creación del entorno de AEM (si existen entornos). Estos usuarios deben ponerse en contacto con su administrador si desean obtener acceso de nivel de programa.

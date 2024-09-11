@@ -1,11 +1,11 @@
 ---
 title: Preguntas frecuentes sobre Cloud Manager
-description: Obtenga información sobre las respuestas a las preguntas más frecuentes acerca de Cloud Manager para clientes de AMS.
+description: Conozca las respuestas a las preguntas más frecuentes acerca de Cloud Manager para clientes de AMS.
 exl-id: 52c1ca23-5b42-4eae-b63a-4b22ef1a5aee
 source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '748'
-ht-degree: 54%
+ht-degree: 100%
 
 ---
 
@@ -16,10 +16,10 @@ Este documento proporciona respuestas a las preguntas más frecuentes acerca de 
 
 ## ¿Es posible utilizar Java 11 con generaciones de Cloud Manager? {#java-11}
 
-Sí. Debe agregar `maven-toolchains-plugin` con la configuración correcta para Java 11.
+Sí. Deberá añadir la variable `maven-toolchains-plugin` con la configuración correcta para Java 11.
 
 * Este proceso está documentado [aquí](/help/getting-started/using-the-wizard.md).
-* Para ver un ejemplo, vea el [código de ejemplo del proyecto WKND](https://github.com/adobe/aem-guides-wknd/commit/6cb5238cb6b932735dcf91b21b0d835ae3a7fe75).
+* Para ver un ejemplo, consulte el [código del proyecto de ejemplo WKND](https://github.com/adobe/aem-guides-wknd/commit/6cb5238cb6b932735dcf91b21b0d835ae3a7fe75).
 
 ## Mi generación falla con un error sobre maven-scr-plugin después de cambiar de Java 8 a Java 11. ¿Qué puedo hacer? {#maven-src-plugin}
 
@@ -39,36 +39,36 @@ Para las compilaciones de Cloud Manager, el `maven-enforcer-plugin` puede fallar
 [main] [WARNING] Rule 1: org.apache.maven.plugins.enforcer.RequireJavaVersion
 ```
 
-Este problema conocido se debe a que Cloud Manager utiliza una versión diferente de Java para ejecutar el comando Maven, en comparación con el código de compilación. Omita `requireJavaVersion` de sus configuraciones de `maven-enforcer-plugin`.
+Este es un problema conocido debido a que Cloud Manager utiliza una versión diferente de Java para ejecutar el comando de Maven, en comparación con el código de compilación. Omita `requireJavaVersion` de su configuraciones de `maven-enforcer-plugin`. 
 
-## Error en la comprobación de calidad del código y ahora la implementación está atascada. ¿Hay alguna manera de saltarse esta comprobación? {#deployment-stuck}
+## La comprobación de calidad del código ha fallado y nuestra implementación está atascada. ¿Hay alguna manera de saltarse esta comprobación? {#deployment-stuck}
 
 Sí. Todos los errores de calidad del código, excepto las clasificaciones de seguridad, son métricas no críticas. Como tal, se pueden evitar como parte de una canalización de implementación expandiendo los elementos en la interfaz de usuario de los resultados.
 
-Un usuario con el rol [Administrador de implementación, Administrador de proyectos o Propietario empresarial](/help/requirements/users-and-roles.md#role-definitions) puede anular los problemas. En tal caso, la canalización continúa. O bien, pueden aceptar los problemas, en cuyo caso la canalización se detiene con un error.
+Un usuario con la función [Administrador de implementación, Administrador de proyectos o Propietario empresarial](/help/requirements/users-and-roles.md#role-definitions) puede anular los problemas. En tal caso, la canalización continúa. O bien, pueden aceptar los problemas, en cuyo caso la canalización se detiene con un error.
 
 Vea los documentos [Puertas de tres niveles al ejecutar una canalización](/help/using/code-quality-testing.md#three-tier-gates-while-running-a-pipeline) y [Configuración de canalizaciones que no son de producción](/help/using/non-production-pipelines.md#understanding-the-flow) para obtener más información.
 
-## Las implementaciones de Cloud Manager fallan en el paso de prueba de rendimiento en los entornos de Adobe Managed Services. ¿Cómo se puede depurar este problema para pasar las métricas esenciales? {#debug-critical-metrics}
+## Las implementaciones de Cloud Manager fallan en el paso de prueba de rendimiento en los entornos de Adobe Managed Services. ¿Cómo se puede depurar este problema para superar las métricas esenciales? {#debug-critical-metrics}
 
 No hay una respuesta única a esta pregunta. Sin embargo, puede encontrar útiles los siguientes puntos sobre el paso de la prueba de rendimiento:
 
 * Este paso es de rendimiento web. Es decir, es aproximadamente el momento de cargar la página mediante un explorador web.
 * Las direcciones URL enumeradas en el archivo .csv resultante se cargan en un explorador Chrome en la infraestructura de Cloud Manager durante la prueba.
-* Una métrica común que falla es la tasa de error. Por lo tanto, para que una URL apruebe, la URL principal debe cargarse con el estado `200` y en menos de `20` segundos. Si la carga de una página supera los `20` segundos, se marca como un error `504`.
-* Si el sitio requiere autenticación de usuarios, consulte [Comprender los resultados de la prueba](/help/using/code-quality-testing.md#authenticated-performance-testing) para configurar la prueba y poder autenticarse en el sitio.
+* Una métrica común que falla es la tasa de error. Para que una URL supere la prueba, la URL principal debe cargarse con el estado `200` y en menos de `20` segundos. Si la carga de una página supera los `20` segundos, se marca como un error `504`.
+* Si el sitio requiere autenticación de usuario, consulte el documento [Comprensión de los resultados de la prueba](/help/using/code-quality-testing.md#authenticated-performance-testing) para configurar la prueba para autenticarse en el sitio.
 
-Vea [Comprender los resultados de la prueba](/help/using/code-quality-testing.md) para obtener más información acerca de las comprobaciones de calidad.
+Consulte el documento [Comprensión de los resultados de la prueba](/help/using/code-quality-testing.md) para obtener más información sobre los controles de calidad.
 
 ## ¿Puedo utilizar SNAPSHOT para la versión del proyecto de Maven? {#snapshot}
 
-Sí. Para implementaciones de desarrolladores, los archivos de la rama Git `pom.xml` deben contener `-SNAPSHOT` al final del valor `<version>`.
+Sí. Para implementaciones de desarrolladores, los archivos de la rama de Git `pom.xml` deben contener `-SNAPSHOT` al final del valor `<version>`.
 
-Al hacerlo, las implementaciones posteriores se pueden seguir instalando cuando la versión no ha cambiado. En implementaciones de desarrolladores, no se agrega ni se genera ninguna versión automática para la generación de Maven.
+Esto permite que la implementación posterior se siga instalando si la versión no ha cambiado. En implementaciones de desarrolladores, no se agrega ni se genera ninguna versión automática para la generación de Maven.
 
-También puede establecer la versión a `-SNAPSHOT` para generaciones o implementaciones de fase y producción. Cloud Manager establece automáticamente un número de versión adecuado y crea una etiqueta en Git. Se puede hacer referencia a esta etiqueta más adelante, si es necesario.
+También puede establecer la versión a `-SNAPSHOT` para generaciones o implementaciones de fase y producción. Cloud Manager establece automáticamente un número de versión adecuado y crea una etiqueta para usted en Git. Se puede hacer referencia a esta etiqueta más adelante, si es necesario.
 
-Para obtener más información sobre la administración de versiones, consulte [estos documentos](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/project-version-handling).
+Para obtener más información sobre la administración de versiones, consulte [estos documentos](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/project-version-handling).
 
 ## ¿Cómo funcionan las versiones de paquetes y los paquetes para las implementaciones de ensayo y producción? {#staging-production}
 
@@ -76,11 +76,11 @@ En las implementaciones de ensayo y producción se genera una versión automáti
 
 Para las versiones personalizadas en las implementaciones de fase y producción, establezca una versión de Maven adecuada como `1.0.0`. Actualice la versión cada vez que implemente en la producción.
 
-Cloud Manager agrega automáticamente su versión a las compilaciones de ensayo y producción y crea una rama Git. No se requiere ninguna configuración especial. Si no establece una versión de Maven como se describió anteriormente, la implementación se realiza correctamente y se establece una versión automáticamente.
+Cloud Manager añade automáticamente su versión a las compilaciones de ensayo y producción y crea una rama de Git. No se requiere ninguna configuración especial. Si no establece una versión de Maven como se describió anteriormente, la implementación se realiza correctamente y se establece una versión automáticamente.
 
 ## Mi generación de Maven falla en las implementaciones de Cloud Manager, pero se genera localmente sin errores. ¿Qué está mal? {#maven-build-fail}
 
-Consulte este [recurso Git](https://github.com/cqsupport/cloud-manager/blob/main/cm-build-step-fails.md) para obtener más información.
+Consulte este [recurso de Git](https://github.com/cqsupport/cloud-manager/blob/main/cm-build-step-fails.md) para obtener más información.
 
 ## No puedo establecer una variable mediante un comando aio. ¿Qué puedo hacer? {#set-variable}
 

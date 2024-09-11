@@ -3,9 +3,9 @@ title: Permisos personalizados
 description: Descubra cómo puede utilizar los permisos personalizados para crear nuevos perfiles de estos con permisos configurables para restringir el acceso a programas, canalizaciones y entornos para usuarios de Cloud Manager.
 exl-id: a81eda9f-aa89-40ea-8e4c-52367a0a6aba
 source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1416'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -123,8 +123,8 @@ Los siguientes permisos están disponibles para crear perfiles personalizados.
 | Anular/Rechazar errores de métricas importantes | Permitir que los usuarios anulen o rechacen errores importantes de métricas |
 | Programar implementaciones de producción | Permitir a los usuarios programar un paso de implementación de producción |
 | Acceso a información de repositorios | Permitir a los usuarios acceder a la información del repositorio y generar una contraseña de acceso |
-| Creación de repositorios | Permitir a los usuarios crear nuevos repositorios de Git |
-| Eliminación de repositorios | Permitir que los usuarios eliminen repositorios Git |
+| Creación de repositorios | Permitir que los usuarios creen nuevos repositorios de Git |
+| Eliminación de repositorios | Permitir que los usuarios eliminen repositorios de Git |
 | Edición de repositorios | Permitir que los usuarios editen repositorios de Git |
 | Generación de código de repositorios | Permitir que los usuarios generen proyectos a partir de arquetipos |
 | Administración de copia de contenido | Permitir que los usuarios administren las operaciones de copia de contenido |
@@ -158,7 +158,7 @@ Los elementos de permisos hacen referencia al ámbito en el que se aplicará el 
 | Entorno | Programa A: entorno | Aplicable en un entorno específico |
 | Canalización | Programa A: canalización | Aplicable en una canalización específica |
 
-## Restricciones {#limitations}
+## Limitaciones {#limitations}
 
 Tenga en cuenta las siguientes limitaciones al utilizar los permisos personalizados:
 

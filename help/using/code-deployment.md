@@ -3,9 +3,9 @@ title: Implementación de código
 description: Obtenga información sobre cómo implementar su código y qué sucede en Cloud Manager cuando lo hace.
 exl-id: 3d6610e5-24c2-4431-ad54-903d37f4cdb6
 source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1637'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -159,7 +159,7 @@ Para resolver estas situaciones, la canalización de producción de Cloud Manage
 >
 >La función de modo de ejecución de canalización de emergencia se activa programa por programa. La activación la realizan los ingenieros de éxito del cliente.
 
-### Usar modo de ejecución de canalización de emergencia {#using-emergency-pipeline}
+### Uso del modo de ejecución de canalización de emergencia {#using-emergency-pipeline}
 
 Al iniciar la ejecución de una canalización de producción, puede elegir entre el modo normal o de emergencia en un cuadro de diálogo. Esta opción está disponible si la función de modo de ejecución de canalización de emergencia está activada para el programa. Esta opción está disponible una vez habilitada la función.
 
@@ -191,7 +191,7 @@ En estas circunstancias, cuando se puede volver a ejecutar, la página de estado
 >
 >En una nueva ejecución, el paso de compilación se etiqueta en la IU para reflejar que está copiando artefactos y no reconstruyendo.
 
-### Restricciones     {#limitations}
+### Limitaciones {#limitations}
 
 * Volver a ejecutar el paso de implementación de producción solo está disponible para la última ejecución.
 * Volver a ejecutar no está disponible para ejecuciones de reversión o de actualización del estado.
@@ -202,7 +202,7 @@ En estas circunstancias, cuando se puede volver a ejecutar, la página de estado
 
 Además de estar disponible en IU, puede utilizar [la API de Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Pipeline-Execution) para activar las nuevas ejecuciones, así como identificar las que se activaron como ejecuciones nuevas.
 
-#### Déclencheur de una nueva ejecución {#triggering}
+#### Activación de una nueva ejecución {#triggering}
 
 Para activar una nueva ejecución, se debe realizar la solicitud `PUT` al vínculo HAL `http://ns.adobe.com/adobecloud/rel/pipeline/reExecute` en el estado del paso de implementación de producción.
 

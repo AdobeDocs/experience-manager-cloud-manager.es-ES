@@ -3,9 +3,9 @@ title: Configurar canalizaciones que no sean de producción
 description: Aprenda a utilizar Cloud Manager para crear y configurar canalizaciones que no son de producción e implementar su código.
 exl-id: ccf4b4a2-6e29-4ede-821c-36318b568e5c
 source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '685'
-ht-degree: 64%
+ht-degree: 100%
 
 ---
 
@@ -24,12 +24,12 @@ Este documento se centra en las canalizaciones que no son de producción. Para o
 
 Existen dos tipos de canalizaciones que no son de producción:
 
-* **Canalizaciones de calidad de código**: ejecutan análisis de calidad del código en el código de una rama Git y ejecutan los pasos de compilación y calidad del código.
-* **Canalizaciones de implementación**: además de realizar los pasos de compilación y calidad del código como las canalizaciones de calidad del código, estas también implementan el código en un entorno que no es de producción.
+* **Canalizaciones de calidad del código**: ejecutan análisis de calidad del código de una rama de Git y ejecutan los pasos de compilación y calidad del código.
+* **Canalizaciones de implementación**: además de ejecutar los pasos de compilación y calidad del código como las canalizaciones de calidad del código, estas lo implementan en un entorno que no es de producción.
 
 >[!NOTE]
 >
->No se puede configurar una canalización hasta que su repositorio Git asociado tenga al menos una rama y la [configuración del programa](/help/getting-started/program-setup.md) haya finalizado. Consulte [Repositorios de Cloud Manager](/help/managing-code/managing-repositories.md) para obtener información sobre cómo agregar y administrar repositorios en Cloud Manager.
+>No se puede configurar una canalización hasta que su repositorio de Git asociado tenga al menos una rama y la [configuración del programa](/help/getting-started/program-setup.md) haya finalizado. Consulte el documento [Repositorios de Cloud Manager](/help/managing-code/managing-repositories.md) para aprender a añadir y administrar repositorios en Cloud Manager.
 
 ## Adición de una canalización que no es de producción {#add-non-production-pipeline}
 
@@ -51,23 +51,23 @@ Una vez que haya configurado el programa y tenga al menos un entorno utilizando 
 
 1. Proporcione el repositorio donde la canalización debe obtener el código.
 
-   * **Repositorio**: define desde qué repositorio de Git la canalización debe recuperar el código.
-   * **Rama de Git**: define desde qué rama de Git la canalización seleccionada debe recuperar el código.
+   * **Repositorio**: Define desde qué repositorio de Git la canalización debe recuperar el código.
+   * **Rama de Git**: Define desde qué rama de la canalización seleccionada debe recuperar el código.
 
 1. Defina las opciones de implementación.
 
    1. En **Activador de implementación**, defina qué evento activa la canalización.
 
-      * **Manual**: le permite iniciar manualmente la canalización.
-      * **Cambios en Git**: inicia la canalización cuando se agregan confirmaciones a la rama Git configurada. Con esta opción, aún puede iniciar la canalización manualmente, según sea necesario.
+      * **Manual**: Le permite iniciar manualmente la canalización.
+      * **Cambios en Git**: Inicia la canalización cuando se añaden confirmaciones a la rama de Git configurada. Con esta opción, aún puede iniciar la canalización manualmente, según sea necesario.
 
    1. Para canalizaciones de implementación, en **Comportamiento de los errores de las métricas importantes**, defina el comportamiento de la canalización cuando se encuentre un error importante en cualquiera de las puertas de acceso de calidad.
 
-      * **Preguntar cada vez**: la configuración predeterminada y requiere intervención manual en caso de que se produzca algún error importante.
-      * **Error inmediato**: la canalización se cancela cada vez que se produce un error importante. Se trata, básicamente, de emular a un usuario que rechaza errores manualmente.
-      * **Continuar inmediatamente**: la canalización se ejecuta automáticamente cada vez que se produce un error importante. Se trata, básicamente, de emular a un usuario que aprueba manualmente cada fallo.
+      * **Preguntar cada vez**: La configuración predeterminada y requiere intervención manual en caso de que se produzca algún error importante.
+      * **Fallo inmediatamente**: La canalización se cancela siempre que se produzca un fallo importante. Se trata, básicamente, de emular a un usuario que rechaza errores manualmente.
+      * **Continuar inmediatamente**: La canalización se ejecuta automáticamente cada vez que se produzca un error importante. Se trata, básicamente, de emular a un usuario que aprueba manualmente cada fallo.
 
-   1. **Configuración de Dispatcher AEM** - El rol **Administrador de implementación** puede configurar un conjunto de rutas de contenido que se invalidan o se vacían de la caché de Dispatcher de la cuando se ejecuta una canalización. Estas acciones de caché se realizan como parte del paso de canalización de implementación, justo después de implementar cualquier paquete de contenido. Esta configuración utiliza el comportamiento estándar de AEM Dispatcher. Para configurarlo, haga lo siguiente:
+   1. **Configuración de Dispatcher**: La función **Administrador de implementación** puede configurar un conjunto de rutas de contenido que se invalidarán o vaciarán de la caché de AEM Dispatcher cuando se ejecute una canalización. Estas acciones de caché se ejecutan como parte del paso de canalización de implementación, justo después de implementar cualquier paquete de contenido. Esta configuración utiliza el comportamiento estándar de AEM Dispatcher. Para configurarlo, haga lo siguiente:
 
       1. En **RUTA**, proporcione una ruta de contenido.
       1. En **TIPO**, seleccione la acción que se realizará en esa ruta.

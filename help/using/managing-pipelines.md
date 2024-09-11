@@ -3,9 +3,9 @@ title: Administrar canalizaciones
 description: Obtenga información sobre cómo administrar las canalizaciones existentes, como editarlas, ejecutarlas y eliminarlas.
 exl-id: e36420d2-57c5-4375-99fb-dd47c1c8bffd
 source-git-commit: 8e2c57d2594691e7fb18d8a538caa9b54a26b6bb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '840'
-ht-degree: 60%
+ht-degree: 100%
 
 ---
 
@@ -22,21 +22,21 @@ La tarjeta **Canalizaciones** de la página **Información general del programa*
 
 Al hacer clic en el botón de los tres puntos situado junto a cada canalización, puede realizar las siguientes acciones:
 
-* [Ejecute la canalización](#running-pipelines).
+* [Ejecutar la canalización](#running-pipelines). 
 * [Editar la canalización](#editing-pipelines).
 * [Eliminar la canalización](#deleting-pipelines).
 * [Ver detalles](#view-details).
 
-En la parte inferior de la lista de canalizaciones, tiene las siguientes opciones generales.
+En la parte inferior de la lista de canalizaciones, tiene opciones generales.
 
-* **Agregar** - Para [agregar una nueva canalización de producción](/help/using/production-pipelines.md) o [agregar una nueva canalización que no sea de producción](/help/using/non-production-pipelines.md).
-* **Mostrar todo**: lleva al usuario a la pantalla **Canalizaciones** para ver todas las canalizaciones en una tabla más detallada.
-* **Acceder a la info del repositorio**: muestra la información necesaria para acceder al repositorio Git de Cloud Manager.
-* **Más información**: Navega hasta los recursos de documentación de canalización de CI/CD.
+* **Añadir**: Para añadir [una nueva canalización de producción](/help/using/production-pipelines.md) o [una nueva canalización que no sea de producción](/help/using/non-production-pipelines.md)
+* **Mostrar todo**: lleva al usuario a la pantalla **Canalizaciones** para ver todas las canalizaciones en una tabla más detallada
+* **Acceder a la información de repositorios**: muestra la información necesaria para acceder al repositorio de Git de Cloud Manager
+* **Más información**: navega hasta los recursos de documentación de canalización de CI/CD.
 
 ## Ventana de canalizaciones {#pipelines}
 
-La ventana **Canalizaciones** muestra una lista completa de todas las canalizaciones para el programa seleccionado. Esta lista es útil porque presenta información más completa que la disponible en la [tarjeta de canalizaciones](#pipeline-card).
+La ventana **Canalizaciones** muestra una lista completa de todas las canalizaciones para el programa seleccionado. Esto resulta útil, ya que presenta información más completa que la disponible en la [Tarjeta de canalizaciones](#pipeline-card).
 
 1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización y programa adecuados.
 
@@ -64,7 +64,7 @@ Al hacer clic en el icono `i` se muestran los detalles sobre la ejecución de la
 
 ![Detalles de ejecución de canalización](/help/assets/configure-pipelines/pipeline-activity.png)
 
-Haga clic en **Ver detalles** para revisar [los detalles de la ejecución de la canalización](#view-details).
+Hacer clic en **Ver detalles** le llevará a los [detalles de la ejecución de la canalización](#view-details).
 
 ## Ejecutar canalizaciones {#running-pipelines}
 
@@ -82,7 +82,7 @@ Haga clic en **Ver detalles** para revisar [los detalles de la ejecución de la 
 
 1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización y programa adecuados.
 
-1. Vaya a la tarjeta **Canalizaciones** de la página **Resumen del programa** y haga clic en el botón de puntos suspensivos situado junto a la canalización que desee editar. A continuación, en el menú, seleccione **Editar**.
+1. Vaya a la tarjeta **Canalizaciones** de la página **Información general del programa** y haga clic en el botón de puntos suspensivos situado junto a la canalización que quiere editar. A continuación, seleccione **Editar** en el menú.
 
 1. Aparecerá el cuadro de diálogo **Editar canalización de producción** o **Editar canalización que no sea de producción**. Puede editar los mismos detalles introducidos durante la creación de la canalización.
 
@@ -98,7 +98,7 @@ Haga clic en **Ver detalles** para revisar [los detalles de la ejecución de la 
 
 1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización y programa adecuados.
 
-1. Vaya a la tarjeta **Canalizaciones** de la página **Resumen del programa** y haga clic en el botón de puntos suspensivos situado junto a la canalización que ejecuta. A continuación, en el menú, seleccione **Eliminar**.
+1. Vaya a la tarjeta **Canalizaciones** de la página **Información general del programa** y haga clic en el botón de puntos suspensivos situado junto a la canalización que quiere editar. A continuación, seleccione **Eliminar** en el menú.
 
 >[!NOTE]
 >
@@ -108,13 +108,13 @@ Haga clic en **Ver detalles** para revisar [los detalles de la ejecución de la 
 
 1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización y programa adecuados.
 
-1. Vaya a la tarjeta **Canalizaciones** de la página **Resumen del programa** y haga clic en el botón de puntos suspensivos situado junto a la canalización que ejecuta. A continuación, en el menú, seleccione **Ver detalles**.
+1. Vaya a la tarjeta **Canalizaciones** de la página **Información general del programa** y haga clic en el botón de puntos suspensivos situado junto a la canalización que quiere editar. A continuación, seleccione **Ver detalles** en el menú.
 
 1. Se le redirigirá a la página de detalles de la canalización en ejecución.
 
 ![Detalles de canalización](/help/assets/configure-pipelines/pipeline-running-details.png)
 
-Desde aquí puede ver el estado de los distintos pasos de la canalización y recuperar los registros de generación con fines diagnósticos. Consulte el documento [Implementación de código](/help/using/code-deployment.md) para obtener más información.
+Desde aquí, puede ver el estado de los distintos pasos de la canalización y recuperar los registros de compilación para fines diagnósticos. Consulte el documento [Implementación de código](/help/using/code-deployment.md) para obtener más información.
 
 Todos los pasos de la ejecución de una canalización se muestran con los que aún no se han iniciado en gris. Los pasos finalizados muestran su duración.
 

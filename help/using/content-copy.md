@@ -3,9 +3,9 @@ title: La herramienta Copia de contenido
 description: La herramienta de copia de contenido de Cloud Manager permite a los usuarios copiar contenido mutable bajo demanda desde sus entornos de producción de AEM 6.x a entornos inferiores para realizar pruebas.
 exl-id: 97915e58-a1d3-453f-b5ce-cad55ed73262
 source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1144'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -119,7 +119,7 @@ Una vez creado un conjunto de contenido, puede utilizarlo para copiar contenido.
    >* El usuario no tiene los permisos adecuados.
    >* El entorno tiene una canalización en ejecución o una operación de copia de contenido en curso.
 
-1. En el cuadro de diálogo **Copiar contenido**, especifique los entornos de origen y destino para la acción de copia de contenido.
+1. En el cuadro de diálogo **Copiar contenido**, especifique el origen y el destino de la acción de copia de contenido.
    * Las regiones del entorno de destino deben ser las mismas o un subconjunto de las regiones del entorno de origen.
 
 1. Puedes optar por eliminar o conservar las rutas de exclusión en el entorno de destino. Seleccione la casilla de verificación `Do not delete exclude paths from destination` para conservar `exclude paths` que se han especificado en el conjunto de contenido. Si la casilla de verificación se deja sin marcar, las rutas de exclusión se eliminan del entorno destinatario.
@@ -154,7 +154,7 @@ Una vez que empiece a copiar contenido, el proceso puede tener uno de los siguie
 | Error | Error en la operación de copia de contenido |
 | Completado | La operación de copia de contenido se ha completado correctamente |
 
-## Restricciones {#limitations}
+## Limitaciones {#limitations}
 
 La herramienta de copia de contenido tiene las siguientes limitaciones.
 
@@ -166,10 +166,10 @@ La herramienta de copia de contenido tiene las siguientes limitaciones.
 * La copia de contenido no se puede realizar si hay alguna operación activa ejecutándose en el entorno de destino o de origen, como, por ejemplo, una canalización de CI/CD.
 * Se pueden especificar hasta cincuenta rutas por cada conjunto de contenido. No hay limitación en las rutas excluidas.
 * La herramienta de copia de contenido no debe utilizarse como una herramienta de clonación o reflejo, ya que no puede rastrear el contenido movido o eliminado del origen.
-* Una copia de contenido no se puede pausar ni cancelar una vez iniciada.
-* La herramienta de copia de contenido copia recursos y metadatos de Dynamic Media del entorno superior al entorno inferior seleccionado. A continuación, los recursos copiados deben volver a procesarse mediante la variable [Flujo de trabajo de recursos de proceso DAM](https://experienceleague.adobe.com/es/docs/experience-manager-65/content/assets/using/assets-workflow) en el entorno inferior para utilizar la configuración de Dynamic Media correspondiente.
+* Una copia de contenido no se puede pausar ni cancelar una vez que se inicia.
+* La herramienta de copia de contenido transfiere recursos junto con metadatos relacionados con medios dinámicos desde el entorno superior al entorno inferior seleccionado. A continuación, los recursos copiados deben volver a procesarse mediante la variable [Flujo de trabajo de recursos de proceso DAM](https://experienceleague.adobe.com/es/docs/experience-manager-65/content/assets/using/assets-workflow) en el entorno inferior para utilizar la configuración de Dynamic Media correspondiente.
 * El proceso de copia de contenido es considerablemente más rápido cuando no se copia el historial de versiones.
-* No se admiten [configuraciones de Dynamic Media con tamaños de recursos superiores a 2 GB habilitados](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/dynamic/config-dms7#optional-config-dms7-assets-larger-than-2gb).
+* No se admiten [configuraciones de Dynamic Media con tamaños de recursos superiores a 2 GB habilitados](https://experienceleague.adobe.com/es/docs/experience-manager-65/content/assets/dynamic/config-dms7#optional-config-dms7-assets-larger-than-2gb).
 * Cuando no se copia el historial de versiones, el proceso de copia de contenido es considerablemente más rápido.
 * Las regiones del entorno de destino deben ser las mismas o un subconjunto de las regiones del entorno de origen.
 

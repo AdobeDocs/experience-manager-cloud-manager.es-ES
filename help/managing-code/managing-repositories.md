@@ -1,28 +1,28 @@
 ---
 title: Administración de repositorios en Cloud Manager
-description: Obtenga información sobre cómo crear, ver y editar repositorios Git en Cloud Manager.
+description: Obtenga información sobre cómo crear, ver y editar repositorios de Git en Cloud Manager.
 exl-id: 384b197d-f7a7-4022-9b16-9d83ab788966
 source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '641'
-ht-degree: 68%
+ht-degree: 100%
 
 ---
 
 
 # Repositorios de Cloud Manager {#cloud-manager-repos}
 
-Obtenga información sobre cómo crear, ver y editar repositorios Git en Cloud Manager.
+Obtenga información sobre cómo crear, ver y editar repositorios de Git en Cloud Manager.
 
 ## Información general {#overview}
 
 Los repositorios se utilizan para almacenar y administrar el código del proyecto mediante Git. Cada programa que cree en Cloud Manager tiene un repositorio administrado por Adobe creado para él.
 
-Puede elegir crear repositorios administrados por Adobe adicionales y también agregar sus propios repositorios privados. Todos los repositorios asociados con su programa se pueden ver en la ventana **Repositorios**.
+Puede elegir crear repositorios adicionales administrados por Adobe y también añadir sus propios repositorios privados. Todos los repositorios asociados con su programa se pueden ver en la ventana **Repositorios**.
 
-Los repositorios creados en Cloud Manager también están disponibles para que usted los seleccione al agregar o editar canalizaciones. Consulte [Canalizaciones de CI-CD](/help/overview/ci-cd-pipelines.md) para obtener más información.
+Los repositorios creados en Cloud Manager también estarán disponibles para su selección al añadir o editar canalizaciones. Consulte [Canalizaciones de CI-CD](/help/overview/ci-cd-pipelines.md) para obtener más información.
 
-Hay un único repositorio principal o una rama para una canalización determinada. Con [compatibilidad con el submódulo Git](git-submodules.md), se pueden incluir muchas ramas secundarias en el momento de la compilación.
+Hay un único repositorio principal o una rama para una canalización determinada. Con [compatibilidad con el submódulo git](git-submodules.md), se pueden incluir muchas ramas secundarias en el momento de la compilación.
 
 ## Ventana Repositorios {#repositories-window}
 
@@ -57,10 +57,10 @@ Pulse o haga clic en el botón **Añadir repositorio** de la ventana **Repositor
 
 ![Asistente para la adición de repositorios](assets/add-repository-wizard.png)
 
-Cloud Manager admite ambos repositorios administrados por Adobe (**Repositorio de Adobe**), así como sus propios repositorios autoadministrados (**Repositorio privado**). Los campos obligatorios difieren según el tipo de repositorio que decida añadir.
+Cloud Manager admite ambos repositorios administrados por Adobe (**Repositorio de Adobe**), así como sus propios repositorios autoadministrados (**Repositorio privado**). Los campos obligatorios difieren según el tipo de repositorio que decida añadir. 
 
-Consulte [Agregar repositorios de Adobe en Cloud Manager](adobe-repositories.md).
-Consulte [Agregar repositorios privados en Cloud Manager](private-repositories.md).
+Consulte [Adición de repositorios de Adobe en Cloud Manager](adobe-repositories.md).
+Consulte [Adición de repositorios privados en Cloud Manager](private-repositories.md).
 
 >[!NOTE]
 >
@@ -68,7 +68,7 @@ Consulte [Agregar repositorios privados en Cloud Manager](private-repositories.m
 >
 >Hay un límite de 300 repositorios en todos los programas de cualquier compañía u organización de IMS.
 
-## Acceder a información de repositorio {#repo-info}
+## Acceder a la info del repositorio {#repo-info}
 
 Cuando vea sus repositorios en la ventana **Repositorios**, puede ver los detalles sobre cómo acceder programáticamente a los repositorios administrados por Adobe pulsando o haciendo clic en el botón **Acceder a la info del repositorio** en la barra de herramientas.
 
@@ -80,13 +80,13 @@ La ventana **Información del repositorio** se abre con los detalles. Para obten
 
 La acción **Comprobar ramas/Crear proyecto** realiza dos funciones según el estado del repositorio.
 
-AEM Si el repositorio es de reciente creación, la acción crea un proyecto de ejemplo basado en [el arquetipo del proyecto de](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/developing/archetype/overview).
+Si el repositorio es de nueva creación, la acción crea un proyecto de ejemplo basado en [el tipo de archivo del proyecto de AEM](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/developing/archetype/overview).
 
 Si al repositorio ya se le ha creado el proyecto de muestra, compruebe el estado del repositorio y sus ramas e informes de nuevo si el proyecto de muestra ya existe.
 
 ![Acción Comprobar ramas](assets/check-branches.png)
 
-## Copiar URL del repositorio {#copy-url}
+## Copiar la URL del repositorio {#copy-url}
 
 La acción **Copiar la URL del repositorio** copia la URL del repositorio seleccionado en la ventana **Repositorios** en el portapapeles para utilizarla en otra parte.
 
@@ -98,12 +98,12 @@ La acción **Ver y actualizar** abre el cuadro de diálogo **Actualizar reposito
 
 ## Eliminar {#delete}
 
-La acción **Eliminar** elimina el repositorio del proyecto. Un repositorio no se puede eliminar si está asociado a una canalización.
+La acción **Eliminar** elimina el repositorio del proyecto. Un repositorio no se puede eliminar si está asociado con una canalización.
 
 ![Eliminar](assets/delete.png)
 
 Cuando se elimina un repositorio en Cloud Manager, se marca como eliminado; ya no es accesible para el usuario. Sin embargo, se mantiene en el sistema con fines de recuperación.
 
-Si intenta crear un nuevo repositorio después de eliminar un repositorio con el mismo nombre, recibirá el mensaje de error `An error has occurred while trying to create repository. Contact your CSE or Adobe Support.`
+Si intenta crear un repositorio nuevo después de eliminar uno con el mismo nombre, recibirá el mensaje de error `An error has occurred while trying to create repository. Contact your CSE or Adobe Support.`
 
 Si recibe este mensaje de error, póngase en contacto con el soporte de Adobe para que le ayuden a cambiar el nombre del repositorio eliminado o elija un nombre diferente para el nuevo repositorio.
