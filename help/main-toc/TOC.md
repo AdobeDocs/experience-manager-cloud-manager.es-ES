@@ -10,7 +10,7 @@ role: Admin
 source-git-commit: 45bb148f3e4927feb2e07c723e31fe3204a41387
 workflow-type: tm+mt
 source-wordcount: '545'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -89,7 +89,7 @@ ht-degree: 99%
       + [Notas de la versión 2023.9.0](/help/release-notes/2023/2023-9-0.md)
       + [Notas de la versión 2023.8.0](/help/release-notes/2023/2023-8-0.md)
       + [Notas de la versión 2023.7.0](/help/release-notes/2023/2023-7-0.md)
-      + [Notas de la versión 2023.6.0](/help/release-notes/2023/2023-6-0.md)
+      + [Notas de la versión de 2023.6.0](/help/release-notes/2023/2023-6-0.md)
       + [Notas de la versión 2023.5.0](/help/release-notes/2023/2023-5-0.md)
       + [Notas de la versión 2023.4.0](/help/release-notes/2023/2023-4-0.md)
       + [Notas de la versión 2023.3.0](/help/release-notes/2023/2023-3-0.md)
@@ -97,8 +97,8 @@ ht-degree: 99%
       + [Notas de la versión 2023.1.0](/help/release-notes/2023/2023-1-0.md)
    + 2022 {#rn-2022}
       + [Notas de la versión 2022.12.0](/help/release-notes/2022/2022-12-0.md)
-      + [Notas de la versión 2022.11.0](/help/release-notes/2022/2022-11-0.md)
-      + [Notas de la versión 2022.10.0](/help/release-notes/2022/2022-10-0.md)
+      + [Notas de la versión de 2022.11.0](/help/release-notes/2022/2022-11-0.md)
+      + [Notas de la versión de 2022.10.0](/help/release-notes/2022/2022-10-0.md)
       + [Notas de la versión 2022.9.0](/help/release-notes/2022/2022-9-0.md)
       + [Notas de la versión 2022.8.0](/help/release-notes/2022/2022-8-0.md)
       + [Notas de la versión 2022.7.0](/help/release-notes/2022/2022-7-0.md)

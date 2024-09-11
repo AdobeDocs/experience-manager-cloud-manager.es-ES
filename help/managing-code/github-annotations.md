@@ -5,7 +5,7 @@ exl-id: 15178de8-8a8a-4300-8510-88875ad0fc8c
 source-git-commit: 6f5d51ef59aef831574bd55cee6b12a29e3d70d2
 workflow-type: tm+mt
 source-wordcount: '251'
-ht-degree: 47%
+ht-degree: 98%
 
 ---
 
@@ -16,7 +16,7 @@ Descubra cómo GitHub comprueba las PR de anotación de sus repositorios privado
 
 ## Información general {#overview}
 
-Si usa [repositorios privados](private-repositories.md) para su programa de Cloud Manager, las comprobaciones en GitHub se ejecutan automáticamente para cada solicitud de extracción. Estas comprobaciones incluyen anotaciones con información útil que le ayudará a comprender los problemas con su código lo antes posible.
+Si está utilizando [repositorios privados](private-repositories.md) para su programa Cloud Manager, las comprobaciones en GitHub se ejecutan automáticamente para cada solicitud de extracción. Estas comprobaciones se anotan con información útil para ayudarle a comprender cualquier problema relacionado con el código lo antes posible.
 
 ![Ejemplo de anotaciones de comprobación de GitHub](assets/github-check-annotations.png)
 
@@ -32,12 +32,12 @@ Todas las líneas anotadas se añaden a la pestaña **Archivos modificados** en 
 
 ![Ejemplo de anotaciones en la pestaña de archivos modificados](assets/github-check-annotations-files-changed.png)
 
-## Canalizaciones de calidad de código {#code-quality-pipelines}
+## Código de calidad de las canalizaciones {#code-quality-pipelines}
 
-Los resultados de [Calidad del código](/help/using/code-quality-testing.md) también están visibles en la canalización, que Cloud Manager déclencheur automáticamente en la parte inferior de la pestaña **Comprobaciones**. El acceso también es posible a través de **Detalles** de la comprobación de la solicitud de extracción.
+Los resultados de [calidad de código](/help/using/code-quality-testing.md) también son visibles en la canalización, que Cloud Manager activa automáticamente en la parte inferior de la pestaña **Comprobaciones**. El acceso también es posible a través de **Detalles** de la comprobación de la solicitud de extracción.
 
 ![Ejemplo de anotaciones](assets/github-check-annotations-code-quality.png)
 
 ![Ejemplo de anotaciones](assets/github-check-annotations-code-quality-2.png)
 
-También puede visualizar los problemas en formato CSV. Este método se puede recuperar [viendo los detalles de la ejecución de la canalización en Cloud Manager](/help/using/managing-pipelines.md).
+También puede visualizar los problemas en formato CSV. Este método se puede recuperar [viendo los detalles de la ejecución de canalización en Cloud Manager](/help/using/managing-pipelines.md).

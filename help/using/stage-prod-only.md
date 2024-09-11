@@ -5,7 +5,7 @@ exl-id: b7dd0021-d346-464a-a49e-72864b01cce3
 source-git-commit: 03f7429fd2c4a6dd4c8ae3228eff9c8cdab1ded8
 workflow-type: tm+mt
 source-wordcount: '932'
-ht-degree: 42%
+ht-degree: 98%
 
 ---
 
@@ -19,15 +19,15 @@ Descubra cómo puede dividir las implementaciones de fase y producción mediante
 
 ## Información general {#overview}
 
-Los entornos de ensayo y producción están perfectamente asociados. De forma predeterminada, estas implementaciones están vinculadas a una sola canalización. Es decir, una canalización de implementación se implementa en los entornos de ensayo y producción de ese programa. Aunque este acoplamiento suele ser adecuado, hay ciertos casos de uso en los que existen desventajas:
+Los entornos de ensayo y producción están perfectamente asociados. De forma predeterminada, estas implementaciones están vinculadas a una sola canalización. Es una canalización de implementación que se implementa en los entornos de ensayo y producción de ese programa. Aunque este acoplamiento suele ser adecuado, hay ciertos casos de uso en los que existen desventajas:
 
-* Si desea implementar solo en fase, rechaza el paso **Promocionar a producción** de la canalización. Sin embargo, la ejecución se marca como cancelada.
+* Si desea implementar en solo ensayo, debe rechazar el paso **Promocionar para producción** en la canalización. Sin embargo, la ejecución se marca como cancelada.
 * Si desea implementar el código más reciente de un entorno de ensayo en el de producción, debe volver a implementar toda la canalización, incluida la implementación de fase, aunque ahí no se haya cambiado ningún código.
-* Los entornos no se pueden actualizar durante las implementaciones. Si se detiene para probar en el entorno de ensayo durante varios días antes de pasar a producción, el entorno de producción permanece bloqueado y no se puede actualizar. Este escenario hace que las tareas que no dependen, como actualizar [variables de entorno](/help/getting-started/build-environment.md#environment-variables), sean imposibles.
+* Los entornos no se pueden actualizar durante las implementaciones. Si se detiene para probar en el entorno de ensayo durante varios días antes de pasar a producción, el entorno de producción permanece bloqueado y no se puede actualizar. Esto hace que las tareas no dependientes, como la actualización de las [variables de entorno](/help/getting-started/build-environment.md#environment-variables), sean imposibles.
 
 Las canalizaciones de solo fase y producción ofrecen soluciones para estos casos de uso al proporcionar opciones de implementación dedicadas.
 
-* **Canalizaciones de implementación solo de fase:** Implementa solo en un entorno de ensayo y finaliza la ejecución una vez que se han realizado la implementación y las pruebas. Una canalización de solo fase se comporta de forma idéntica a la canalización de producción de pila completa asociada estándar, pero sin los pasos de implementación de producción (aprobación, programación, implementación).
+* Las **canalizaciones de implementación de solo fase** se implementan solo en un entorno de fase, quedando la ejecución finalizada una vez realizadas la implementación y las pruebas. Una canalización de solo fase se comporta de forma idéntica a la canalización de producción de pila completa asociada estándar, pero sin los pasos de implementación de producción (aprobación, programación, implementación).
 * **Canalizaciones de implementación solo de producción:** Implementa solo en producción al seleccionar la ejecución de fase exitosa más reciente. A continuación, implemente sus artefactos en producción. Las canalizaciones solo de producción reutilizan artefactos de implementación de fase, omitiendo la fase de compilación.
 
 Las canalizaciones solo de fase y de solo producción no se ejecutan mientras una canalización de producción de pila completa está en curso y viceversa. Si tanto la canalización de solo fase como la de producción de pila completa tienen configurado el activador **Cambios en Git** y apuntan a la misma rama y repositorio, solo se inicia automáticamente la canalización de solo fase. Las canalizaciones de solo producción no inician **`On Git Changes`** porque no están vinculadas directamente a un repositorio.
@@ -65,8 +65,8 @@ Las canalizaciones de solo producción y fase se crean de forma similar a las [c
 
 ### Canalizaciones de solo fase {#stage-only}
 
-1. Después de seleccionar la opción **Agregar canalización que no sea de producción**, se abre el cuadro de diálogo **Agregar canalización que no sea de producción**.
-1. Para crear una canalización solo de fase, seleccione el entorno de fase en el campo **Entornos de implementación aptos** para su canalización.
+1. Una vez seleccionada la opción **Añadir canalización que no sea de producción**, se abre el cuadro de diálogo **Añadir canalización que no sea de producción**.
+1. Para crear una canalización de solo fase, seleccione el entorno de fase en el campo **Entornos de implementación aptos** para la canalización. 
 1. Rellene los campos restantes.
 1. Haga clic en **Continuar**.
 
@@ -79,18 +79,18 @@ Las canalizaciones de solo producción y fase se crean de forma similar a las [c
 
 ### Canalizaciones de solo producción {#prod-only}
 
-1. Después de seleccionar la opción **Agregar canalización solo de producción**, se abre el cuadro de diálogo **Agregar canalización solo de producción**.
-1. En el campo **Nombre de canalización**, escriba el nombre que desee. Las opciones y funciones restantes del cuadro de diálogo funcionan igual que las opciones que se encuentran en el cuadro de diálogo de creación de canalización acoplada estándar.
+1. Una vez seleccionada la opción **Añadir una canalización de solo producción**, se abre el cuadro de diálogo **Añadir una canalización de solo producción**.
+1. En el campo **Nombre de canalización**, escriba el nombre que desee. Las opciones y funcionalidades restantes del cuadro de diálogo funcionan igual que las del cuadro de diálogo de creación de canalización asociada estándar. 
 1. En la esquina inferior derecha del cuadro de diálogo, haga clic en **Guardar**.
 
    ![Creación de una canalización de solo producción](/help/assets/configure-pipelines/prod-only-pipeline.png)
 
 ## Ejecución de canalizaciones de solo producción y de solo fase {#running}
 
-Las canalizaciones solo de producción y solo de fase se ejecutan en gran medida del mismo modo que [todas las demás canalizaciones se ejecutan](/help/using/managing-pipelines.md#running-pipelines). Consulte esa documentación para obtener más detalles. Sin embargo, hay dos nuevas características de estas canalizaciones.
+Las canalizaciones de solo producción y de solo fase se ejecutan del mismo modo que [se ejecutan todas las demás canalizaciones](/help/using/managing-pipelines.md#running-pipelines). Consulte la documentación para obtener más detalles. Sin embargo, hay dos nuevas características de estas canalizaciones.
 
 * Las canalizaciones solo de fase y de solo producción ofrecen un nuevo [modo de emergencia](#emergency-mode) para omitir las pruebas.
-* La ejecución de canalizaciones solo de producción se puede activar directamente desde los detalles de ejecución de una [canalización solo de etapa](#stage-only-run).
+* La ejecución de una canalización de solo producción se puede activar directamente desde los detalles de ejecución de una [canalización de solo fase](#stage-only-run).
 
 ### Modo de emergencia {#emergency-mode}
 

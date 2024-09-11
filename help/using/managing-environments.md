@@ -5,7 +5,7 @@ exl-id: 700b0b4c-1e1a-4993-b366-426b14a98f8e
 source-git-commit: 0b7c926120798e2fdb635752192f4ab2e12c1e24
 workflow-type: tm+mt
 source-wordcount: '273'
-ht-degree: 86%
+ht-degree: 95%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 86%
 
 Aprenda a utilizar Cloud Manager para administrar sus entornos.
 
-## Página de información general {#overview-page}
+## Página Información general {#overview-page}
 
 La página **Información general** de Cloud Manager incluye el mosaico **Entornos** que enumera todos los entornos de AEM administrados.
 
@@ -35,7 +35,7 @@ El estado es el resultado de la energía resumido en los nodos del entorno en el
 
 ![Mosaico Entornos](/help/assets/Environments-card-new.png)
 
-## Administración de entornos {#managing-environments-with-cloud-manager}
+## Administrar entornos {#managing-environments-with-cloud-manager}
 
 En el mosaico **Entornos**, haga clic en la fila de cualquier entorno para mostrar la pantalla **Entornos**.
 
@@ -54,7 +54,7 @@ La pantalla **Entornos** muestra una tarjeta para los entornos de producción y 
 
 >[!NOTE]
 >
->Los detalles del entorno, como un nombre, no se pueden cambiar una vez aprovisionados.
+>Los detalles del entorno, como el nombre, no se pueden cambiar una vez aprovisionados.
 
 >[!NOTE]
 >
