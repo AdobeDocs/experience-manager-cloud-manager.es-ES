@@ -1,11 +1,11 @@
 ---
 title: Uso del Asistente para nuevos proyectos
-description: AEM Siga esta página para aprender a utilizar el asistente con el fin de crear un proyecto de aplicación para la creación de un proyecto de aplicación para la creación de un proyecto de aplicación de la.
+description: Siga esta página para aprender a utilizar el asistente y crear un proyecto de aplicación de AEM.
 exl-id: 9d7c6f4c-9379-471c-8dad-772a7099da54
 source-git-commit: 7bc874a8dd14544c22201ef2c470faab84d31f8b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '321'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 

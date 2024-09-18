@@ -3,9 +3,9 @@ title: Integración de Git con Adobe Cloud Manager
 description: Esta serie de vídeos analiza la configuración e integración de un repositorio de Git administrado por el cliente (On-Premise) con Adobe Cloud Manager.
 exl-id: e517f8a4-23f0-4486-8278-91396dba76ec
 source-git-commit: 51bd685a17eb9d68b1ec8245e6167cab02101fc1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '331'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 

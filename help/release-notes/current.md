@@ -3,9 +3,9 @@ title: Notas de la versión 2024.9.0 de Cloud Manager
 description: Estas son las notas de la versión 2024.9.0 de Cloud Manager.
 feature: Release Information
 source-git-commit: 3671772a1369273d89fde101ba084a6e2f8ce8dc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '184'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
@@ -21,12 +21,12 @@ Esta página documenta las notas de la versión 2024.9.0 de [!UICONTROL Cloud Ma
 
 No hay errores ni funciones importantes para la versión de septiembre de Cloud Manager.
 
-La próxima versión está planificada para el viernes, 03 de octubre de 2024.
+La próxima versión está planificada para el 3 de octubre de 2024.
 
 
 ## Novedades {#what-is-new}
 
-* Para canalizaciones solo de fase y de producción (disponibles como parte del [programa de adopción anticipada](#staging-production-only-pipelines)), ahora puede ejecutarlas en [modo de emergencia](/help/using/stage-prod-only.md#emergency-mode), omitiendo la prueba de fase.
+* Para canalizaciones solo de fase y solo de producción (disponibles como parte del [programa para primeros usuarios](#staging-production-only-pipelines)), ahora puede ejecutarlas en [modo de emergencia](/help/using/stage-prod-only.md#emergency-mode), omitiendo la prueba de fase.
 
 ## Programa para primeros usuarios {#early-adoption}
 

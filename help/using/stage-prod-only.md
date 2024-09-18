@@ -3,9 +3,9 @@ title: Canalizaciones de solo fase y de producción
 description: Descubra cómo puede dividir las implementaciones de fase y producción mediante canalizaciones dedicadas.
 exl-id: b7dd0021-d346-464a-a49e-72864b01cce3
 source-git-commit: 03f7429fd2c4a6dd4c8ae3228eff9c8cdab1ded8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '932'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ Los entornos de ensayo y producción están perfectamente asociados. De forma pr
 Las canalizaciones de solo fase y producción ofrecen soluciones para estos casos de uso al proporcionar opciones de implementación dedicadas.
 
 * Las **canalizaciones de implementación de solo fase** se implementan solo en un entorno de fase, quedando la ejecución finalizada una vez realizadas la implementación y las pruebas. Una canalización de solo fase se comporta de forma idéntica a la canalización de producción de pila completa asociada estándar, pero sin los pasos de implementación de producción (aprobación, programación, implementación).
-* **Canalizaciones de implementación solo de producción:** Implementa solo en producción al seleccionar la ejecución de fase exitosa más reciente. A continuación, implemente sus artefactos en producción. Las canalizaciones solo de producción reutilizan artefactos de implementación de fase, omitiendo la fase de compilación.
+* **Canalizaciones de implementación solo de producción:** se implementan solo en producción al seleccionar la ejecución de fase más reciente realizada correctamente. A continuación, implemente sus artefactos en producción. Las canalizaciones solo de producción reutilizan artefactos de implementación de fase, omitiendo la fase de compilación.
 
 Las canalizaciones solo de fase y de solo producción no se ejecutan mientras una canalización de producción de pila completa está en curso y viceversa. Si tanto la canalización de solo fase como la de producción de pila completa tienen configurado el activador **Cambios en Git** y apuntan a la misma rama y repositorio, solo se inicia automáticamente la canalización de solo fase. Las canalizaciones de solo producción no inician **`On Git Changes`** porque no están vinculadas directamente a un repositorio.
 
