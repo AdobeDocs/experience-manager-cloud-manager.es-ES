@@ -1,15 +1,15 @@
 ---
-title: Configurar canalizaciones que no sean de producción
+title: Agregar una canalización que no sea de producción
 description: Aprenda a utilizar Cloud Manager para crear y configurar canalizaciones que no son de producción e implementar su código.
 exl-id: ccf4b4a2-6e29-4ede-821c-36318b568e5c
-source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
-workflow-type: ht
-source-wordcount: '685'
-ht-degree: 100%
+source-git-commit: 1209faf71edbd74cd87acfe24ec438b98ddd4a3a
+workflow-type: tm+mt
+source-wordcount: '688'
+ht-degree: 98%
 
 ---
 
-# Configurar canalizaciones que no sean de producción {#configuring-non-production-pipelines}
+# Adición de una canalización que no es de producción {#configuring-non-production-pipelines}
 
 Aprenda a utilizar Cloud Manager para crear y configurar canalizaciones que no son de producción e implementar su código. Si desea conocer primero una descripción general más conceptual del funcionamiento de las canalizaciones en Cloud Manager, consulte el documento [Canalizaciones de CI/CD](/help/overview/ci-cd-pipelines.md).
 
@@ -31,7 +31,7 @@ Existen dos tipos de canalizaciones que no son de producción:
 >
 >No se puede configurar una canalización hasta que su repositorio de Git asociado tenga al menos una rama y la [configuración del programa](/help/getting-started/program-setup.md) haya finalizado. Consulte el documento [Repositorios de Cloud Manager](/help/managing-code/managing-repositories.md) para aprender a añadir y administrar repositorios en Cloud Manager.
 
-## Adición de una canalización que no es de producción {#add-non-production-pipeline}
+## Agregar una nueva canalización que no sea de producción {#add-non-production-pipeline}
 
 Una vez que haya configurado el programa y tenga al menos un entorno utilizando la interfaz de usuario de Cloud Manager, estará listo para agregar una canalización que no sea de producción siguiendo estos pasos.
 
