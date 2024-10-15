@@ -1,16 +1,16 @@
 ---
-title: Agregar una canalización de producción
+title: Añadir una canalización de producción
 description: Aprenda a utilizar Cloud Manager para crear y configurar canalizaciones de producción para implementar su código.
 exl-id: d489fa3c-df1e-480b-82d0-ac8cce78a710
 source-git-commit: 1209faf71edbd74cd87acfe24ec438b98ddd4a3a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1249'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
 
-# Agregar una canalización de producción {#configuring-production-pipelines}
+# Añadir una canalización de producción {#configuring-production-pipelines}
 
 Aprenda a utilizar Cloud Manager para crear y configurar canalizaciones de producción para implementar su código. Si desea conocer primero una descripción general más conceptual del funcionamiento de las canalizaciones en Cloud Manager, consulte el documento [Canalizaciones de CI/CD](/help/overview/ci-cd-pipelines.md).
 

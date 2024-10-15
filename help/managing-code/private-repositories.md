@@ -4,9 +4,9 @@ description: Obtenga información sobre cómo configurar Cloud Manager para que 
 feature: Release Information
 exl-id: e0d103c9-c147-4040-bf53-835e93d78a0b
 source-git-commit: 5090d7ee9a6742d71122acda9901d074bc254305
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '818'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -124,11 +124,11 @@ Cuando se cierra o se combina la solicitud de extracción, la canalización de c
 
 ## Asociación de repositorios privados con canalizaciones {#pipelines}
 
-Los repositorios privados validados se pueden asociar con [canalizaciones full-stack y front-end](/help/overview/ci-cd-pipelines.md).
+Los repositorios privados validados se pueden asociar a [canalizaciones de pila completa y front-end.](/help/overview/ci-cd-pipelines.md)
 
 
 
-## Restricciones {#limitations}
+## Limitaciones {#limitations}
 
 Se aplican ciertas restricciones al usar repositorios privados con Cloud Manager.
 

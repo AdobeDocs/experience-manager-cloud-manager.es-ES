@@ -8,9 +8,9 @@ feature-set: Experience Manager Cloud Manager, Experience Manager
 feature: Cloud Manager
 role: Admin
 source-git-commit: 1209faf71edbd74cd87acfe24ec438b98ddd4a3a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '342'
-ht-degree: 71%
+ht-degree: 100%
 
 ---
 
@@ -46,7 +46,7 @@ ht-degree: 71%
    + Canalizaciones de CI/CD {#pipelines}
       + [Configuración de una canalización de producción](/help/using/production-pipelines.md)
       + [Añadir una canalización que no es de producción](/help/using/non-production-pipelines.md)
-      + [Dividir canalizaciones de fase y solo producción (pionero)](/help/using/stage-prod-only.md)
+      + [Dividir canalizaciones de fase y producción (primeros usuarios)](/help/using/stage-prod-only.md)
       + [Administrar canalizaciones](/help/using/managing-pipelines.md)
    + [Implementación de código](/help/using/code-deployment.md)
    + [Prueba de calidad del código](/help/using/code-quality-testing.md)
@@ -57,17 +57,17 @@ ht-degree: 71%
    + [Notificaciones](/help/using/notifications.md)
    + [Reglas de calidad de código personalizadas](/help/using/custom-code-quality-rules.md)
    + [Copia de contenido](/help/using/content-copy.md)
-+ Administrar código {#managing-code}
++ Gestionar el código {#managing-code}
    + [Administración de repositorios en Cloud Manager](/help/managing-code/managing-repositories.md)
    + [Información de acceso al repositorio](/help/managing-code/accessing-repositories.md)
-   + [Añadir un repositorio de Adobe](/help/managing-code/adobe-repositories.md)
-   + [Añadir un repositorio privado](/help/managing-code/private-repositories.md)
-   + [Añadir un repositorio externo (usuario que lo adoptó por primera vez)](/help/managing-code/external-repositories.md)
+   + [Adición de un repositorio de Adobe](/help/managing-code/adobe-repositories.md)
+   + [Adición de un repositorio privado](/help/managing-code/private-repositories.md)
+   + [Añadir un repositorio externo (primeros usuarios)](/help/managing-code/external-repositories.md)
    + [Compatibilidad con los submódulos de Git](/help/managing-code/git-submodules.md)
    + [Configuración de comprobación de GitHub](/help/managing-code/github-check-config.md)
    + [Anotaciones de comprobación de GitHub](/help/managing-code/github-annotations.md)
    + [Administrar versiones del proyecto de Maven](/help/managing-code/maven-project-version.md)
-   + [Integración con Git](/help/managing-code/git-integration.md)
+   + [Integrarse con Git](/help/managing-code/git-integration.md)
    + [Trabajar con varios repositorios de Git](/help/managing-code/multiple-git-repos.md)
 + Asistente para la actualización de productos {#product-update-wizard}
    + [Información general](/help/product-update-wizard/overview.md)
@@ -136,7 +136,7 @@ ht-degree: 71%
       + [2020.2.0](/help/release-notes/2020/2020-2-0.md)
       + [2020.1.0](/help/release-notes/2020/2020-1-0.md)
    + 2019 {#rn-2019}
-      + [12.0.0.0.0](/help/release-notes/2019/2019-12-0.md)
+      + [2019.12.0](/help/release-notes/2019/2019-12-0.md)
       + [2019.11.0](/help/release-notes/2019/2019-11-0.md)
       + [2019.10.0](/help/release-notes/2019/2019-10-0.md)
       + [2019.9.0](/help/release-notes/2019/2019-9-0.md)

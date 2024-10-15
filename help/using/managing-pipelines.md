@@ -1,18 +1,18 @@
 ---
 title: Administrar canalizaciones
-description: Obtenga información sobre cómo administrar las canalizaciones existentes, incluido ejecutarlas, editarlas y eliminarlas.
+description: Aprenda a administrar las canalizaciones existentes, así como su edición, ejecución y eliminación.
 exl-id: e36420d2-57c5-4375-99fb-dd47c1c8bffd
 source-git-commit: 9d910e1b1a4aad000a8389ddc22ce380bbccd4ef
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '840'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
 
 # Administrar canalizaciones {#managing-pipelines}
 
-Obtenga información sobre cómo administrar las canalizaciones existentes, incluido ejecutarlas, editarlas y eliminarlas.
+Aprenda a administrar las canalizaciones existentes, así como su edición, ejecución y eliminación.
 
 ## Tarjeta de canalizaciones {#pipeline-card}
 
@@ -36,11 +36,11 @@ En la parte inferior de la lista de canalizaciones, tiene opciones generales.
 
 ## Página Canalizaciones {#pipelines}
 
-La página **Canalizaciones** muestra una lista completa de todas las canalizaciones del programa seleccionado. Esto resulta útil, ya que presenta información más completa que la disponible en la [Tarjeta de canalizaciones](#pipeline-card).
+La página **Canalizaciones** muestra una lista completa de todas las canalizaciones para el programa seleccionado. Esto resulta útil, ya que presenta información más completa que la disponible en la [Tarjeta de canalizaciones](#pipeline-card).
 
 1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización y programa adecuados.
 
-1. En la página **Resumen del programa**, haga clic en la ficha **Canalizaciones** para cambiar a la página **Canalizaciones**.
+1. En la página **Resumen del programa**, haga clic en **Canalizaciones** para cambiar a la página **Canalizaciones**.
 
 1. Aquí puede ver una lista de todas las canalizaciones para el programa, así como iniciar y detener la ejecución de la canalización como lo haría en la **Tarjeta de canalizaciones**.
 
@@ -50,13 +50,13 @@ Al pulsar o hacer clic en el icono `i` se muestran detalles sobre la última o l
 
 Hacer clic en **Ver detalles** le llevará a los [detalles de la ejecución de la canalización](#view-details).
 
-## Página de actividad {#activity}
+## Página Actividad {#activity}
 
 La página **Actividades** muestra una lista completa de todas las ejecuciones de canalizaciones para el programa seleccionado.
 
 1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización y programa adecuados.
 
-1. En la página **Información general del programa**, haga clic en la ficha **Actividad** para cambiar a la página **Actividad**.
+1. En la página **Resumen del programa**, haga clic en la pestaña **Actividad** para cambiar a la página **Actividad**.
 
 1. Aquí puede ver una lista de todas las ejecuciones de canalización del programa, incluidas las ejecuciones actuales e históricas.
 

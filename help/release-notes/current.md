@@ -3,9 +3,9 @@ title: Notas de la versión 2024.10.0 de Cloud Manager
 description: Estas son las notas de la versión 2024.10.0 de Cloud Manager.
 feature: Release Information
 source-git-commit: 74e8f7c0f3896e0e33a02b62c003db322c0d50d8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '369'
-ht-degree: 27%
+ht-degree: 100%
 
 ---
 
@@ -23,44 +23,44 @@ Esta página documenta las notas de la versión 2024.10.0 de [!UICONTROL Cloud M
 
 <!-- SAVE FOR FUTURE POSSIBLE USE No notable bugs or features for the September release of Cloud Manager. -->
 
-La fecha de la versión de [!UICONTROL Cloud Manager] 2024.10.0 es el 3 de octubre de 2024.
+La fecha de lanzamiento de la versión 2024.10.0 de [!UICONTROL Cloud Manager] es el 3 de octubre de 2024. 
 
-La próxima versión está planificada para el viernes, 14 de noviembre de 2024.
+La próxima versión está planificada para el 14 de noviembre de 2024.
 
 
 
 ## Novedades {#what-is-new}
 
-* <!-- BOTH CS & AMS --> AEM La versión del tipo de archivo utilizada en Cloud Manager ahora se actualiza a la versión 26. Ver [https://github.com/adobe/aem-project-archetype/releases](https://github.com/adobe/aem-project-archetype/releases)
+* <!-- BOTH CS & AMS --> La versión del arquetipo de AEM utilizada en Cloud Manager se ha actualizado ya a la versión 26. Consulte [https://github.com/adobe/aem-project-archetype/releases](https://github.com/adobe/aem-project-archetype/releases)
 <!-- (CMGR-59817) -->
 
 
 
 ## Programa para primeros usuarios {#early-adoption}
 
-Forme parte del programa de adopción anticipada de Cloud Manager y tenga la oportunidad de probar las próximas funciones.
+Participe en nuestro programa para primeros usuarios de Cloud Manager y tenga la oportunidad de probar algunas de las próximas funciones.
 
-### Traiga su propio Git: ahora con soporte para GitLab y Bitbucket {#gitlab-bitbucket}
+### Usar su propio Git: ahora se admiten GitLab y Bitbucket {#gitlab-bitbucket}
 
 <!-- BOTH CS & AMS -->
 
-La función **Traer tu propio Git** se ha ampliado para incluir compatibilidad con repositorios externos como GitLab y Bitbucket. Esta nueva compatibilidad se suma a la compatibilidad ya existente con repositorios de GitHub privados y empresariales. Al añadir estos nuevos repositorios, también puede vincularlos directamente a sus canalizaciones. Puede alojar estos repositorios en plataformas de nube públicas o dentro de su infraestructura o nube privada. Esta integración también elimina la necesidad de una sincronización constante del código con el repositorio de Adobe y proporciona la capacidad de validar las solicitudes de extracción antes de combinarlas en una rama principal.
+La función **Usar su propio Git** se ha ampliado para incluir compatibilidad con repositorios externos como GitLab y Bitbucket. Esta nueva compatibilidad se suma a la compatibilidad ya existente con repositorios de GitHub privados y de empresa. Al añadir estos nuevos repositorios, también puede vincularlos directamente a sus canalizaciones. Puede alojar estos repositorios en plataformas públicas en la nube o dentro de su infraestructura o nube privada. Esta integración también elimina la necesidad de sincronización constante del código con el repositorio de Adobe y proporciona la capacidad de validar las solicitudes de extracción antes de combinarlas en una rama principal.
 
-Consulte [Agregar repositorios externos en Cloud Manager](/help/managing-code/external-repositories.md).
+Consulte [Adición de repositorios externos en Cloud Manager](/help/managing-code/external-repositories.md).
 
-![Cuadro de diálogo Agregar repositorio](/help/release-notes/assets/repositories-add-release-notes.png)
+![Cuadro de diálogo Añadir repositorio](/help/release-notes/assets/repositories-add-release-notes.png)
 
 >[!NOTE]
 >
 >Actualmente, las comprobaciones de calidad del código de las solicitudes de extracción listas para usar son exclusivas de los repositorios alojados en GitHub, pero se está trabajando en una actualización para ampliar esta funcionalidad a otros proveedores de Git.
 
-Si está interesado en probar esta nueva característica y compartir sus comentarios, envíe un mensaje de correo electrónico a [Grp-CloudManager_BYOG@adobe.com](mailto:Grp-CloudManager_BYOG@adobe.com) desde su dirección de correo electrónico asociada a su Adobe ID. Asegúrese de incluir qué plataforma Git desea utilizar y si se encuentra en una estructura de repositorio privada/pública o empresarial.
+Si le interesa probar esta nueva función y compartir sus comentarios, envíe un correo electrónico a [Grp-CloudManager_BYOG@adobe.com](mailto:Grp-CloudManager_BYOG@adobe.com) desde su dirección de correo electrónico asociada a su Adobe ID. Asegúrese de incluir qué plataforma Git desea utilizar y si se encuentra en una estructura de repositorio privado/público o de empresa.
 
 ### Canalizaciones solo de fase y de producción {#staging-production-only-pipelines}
 
-El Adobe anuncia la introducción de la compatibilidad con [canalizaciones solo de ensayo y de producción](/help/using/stage-prod-only.md). Esta nueva función le permite dividir las canalizaciones de implementación de producción de pila completa en implementaciones más pequeñas y especializadas.
+Adobe se complace en presentar la compatibilidad con [canalizaciones solo de fase y solo de producción](/help/using/stage-prod-only.md). Esta nueva función le permite dividir las canalizaciones de implementación de producción de pila completa en implementaciones más pequeñas y especializadas.
 
-Si desea probar esta función y proporcionar comentarios, envíe un mensaje de correo electrónico a [Grp-cloudmanager_splitpipelines@adobe.com](mailto:Grp-cloudmanager_splitpipelines@adobe.com) desde la dirección de correo electrónico asociada a su Adobe ID.
+Si le interesa probar esta nueva funcionalidad y compartir sus comentarios, envíe un correo electrónico a [ Grp-cloudmanager_splitpipelines@adobe.com](mailto:Grp-cloudmanager_splitpipelines@adobe.com) desde su dirección de correo electrónico asociada a su Adobe ID.
 
 <!-- ## Bug fixes
 
