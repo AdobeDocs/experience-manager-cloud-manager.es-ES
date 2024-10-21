@@ -2,8 +2,8 @@
 title: Permisos basados en funciones
 description: Obtenga información sobre los permisos preconfigurados basados en funciones de Cloud Manager para administrar el acceso a los recursos de la nube.
 exl-id: b66533fb-db93-40e8-919d-581261fdbf24
-source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
-workflow-type: ht
+source-git-commit: 682b142f35bc233bad82b0ddfa69bc0f2d5b5fdb
+workflow-type: tm+mt
 source-wordcount: '616'
 ht-degree: 100%
 
@@ -45,24 +45,26 @@ Cada una de las funciones tiene permisos preconfigurados específicos asociados.
 | --- | --- | --- | --- | --- | --- | --- |
 | Leer la aplicación | Leer indicadores clave de rendimiento (KPI) de programa | x | x | x | x | x |
 | Escribir aplicación | Configuración o edición del programa | x | | | | |
-| Agregar programa | Agregar programa nuevo | x | | | | |
+| Agregar programa | Agregar programa nuevo | x |  |  |  |  |
 | Entorno de lectura | Consulte los detalles del entorno | x | x | x | x | x |
 | Crear ejecución | Iniciar canalización | x | x | x | | |
 | Leer ejecución | Consulte Estado de ejecución | x | x | x | x | x |
 | Reanudar ejecución | Capacidad para reanudar la ejecución cuando está en pausa | x | x | x | | x |
 | Implementación de ejecución aprobada en producción | Proporcionar aprobación de lanzamiento | x | x | x | | |
 | Implementación de programación de ejecución en producción | Programar implementación de producción | x | x | x | | x |
-| Implementación de ejecución en producción | Implementar la aplicación en producción cuando está en pausa para la supervisión de CSE | | | | | x |
-| Cancelación de ejecución | Cancelar ejecución actual | | | x | | |
-| Errores de portal de calidad de anulación de ejecución | Aprobar errores importantes de la puerta de acceso de calidad | x | x | x | | |
-| Creación de canalización | Configurar/editar canalización | | x | | | |
+| Implementación de ejecución en producción | Implementar la aplicación en producción cuando está en pausa para la supervisión de CSE |  |  |  |  | x |
+| Cancelación de ejecución | Cancelar ejecución actual |  |  | x |  |  |
+| Errores de portal de calidad de anulación de ejecución | Aprobar errores importantes de la puerta de acceso de calidad | x | x | x |  |  |
+| Creación de canalización | Configurar/editar canalización |  | x |  |  |  |
 | Lectura de canalización | Consulte detalles de canalización | x | x | x | x | x |
-| Escritura de canalización | Configurar/editar canalización | | x | | | |
-| Aprobación de modificación de canalización | Permite editar la opción Propietario empresarial | | x | | | |
-| Implementación administrada de modificación de canalización | Permite editar la opción de supervisión de CSE | | x | | | |
-| Eliminación de canalización | Permite la eliminación de la canalización | | x | | | |
+| Escritura de canalización | Configurar/editar canalización |  | x |  |  |  |
+| Aprobación de modificación de canalización | Permite editar la opción Propietario empresarial |  | x |  |  |  |
+| Implementación administrada de modificación de canalización | Permite editar la opción de supervisión de CSE |  | x |  |  |  |
+| Eliminación de canalización | Permite la eliminación de la canalización |  | x |  |  |  |
 | Lectura de paso | Consulte los resultados de las métricas de calidad de los pasos | x | x | x | x | x |
-| Generar token de acceso personal | Acceder a Git | | x | | x | |
+| Generar token de acceso personal | Acceder a Git |  | x |  | x |  |
+
+<!-- CQDOC-22080 | Download log files  |  |  | x |  | x |  | -->
 
 Para obtener más información sobre cómo configurar sus usuarios, consulte [Configuración de usuarios y funciones](/help/requirements/users-and-roles.md).
 
