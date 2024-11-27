@@ -1,33 +1,34 @@
 ---
 title: Notas de la versión 2024.11.0 de Cloud Manager
-description: Obtenga información acerca de la versión de Cloud Manager 2024.11.0.
+description: Obtenga más información sobre la versión de Cloud Manager 2024.11.0.
 feature: Release Information
-source-git-commit: 4c22de9fa675edcd743d7acce6c7a1def8efa414
-workflow-type: tm+mt
+exl-id: 811567af-66c9-4c1f-ae9e-60603b70ef80
+source-git-commit: bea7f2e6e7cab764312a800883d0785ff23fd8bf
+workflow-type: ht
 source-wordcount: '457'
-ht-degree: 65%
+ht-degree: 100%
 
 ---
 
 # Notas de la versión 2024.11.0 de Cloud Manager {#release-notes}
 
-Obtenga información acerca de la versión de [!UICONTROL Cloud Manager] 2024.11.0.
+Obtenga más información sobre la versión de [!UICONTROL Cloud Manager] 2024.11.0.
 
 >[!NOTE]
 >
->Consulte las [notas de la versión actuales de Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/home).
+>Consulte las [notas de la versión actuales de Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/release-notes/home).
 
 ## Fechas de lanzamiento {#release-date}
 
 <!-- SAVE FOR FUTURE POSSIBLE USE No notable bugs or features for the September release of Cloud Manager. -->
 
-La fecha de la versión de [!UICONTROL Cloud Manager] 2024.11.0 es el 7 de noviembre de 2024.
+La fecha de lanzamiento de [!UICONTROL Cloud Manager] versión 2024.11.0 es el 7 de noviembre de 2024. 
 
 La próxima versión planificada es el 5 de diciembre de 2024.
 
 ## Novedades {#what-is-new}
 
-* Cuando las páginas se redirigen a otro dominio durante las pruebas de rendimiento, se excluyen los resultados de las pruebas para esas páginas, ya que no representan con precisión el rendimiento real. <!-- (CMGR-5637) -->
+* Cuando las páginas se redirigen a otro dominio durante las pruebas de rendimiento, se excluyen los resultados de las pruebas de esas páginas, ya que no representan con precisión el rendimiento real. <!-- (CMGR-5637) -->
 
 ## Programa para primeros usuarios {#early-adoption}
 
@@ -55,7 +56,7 @@ Adobe se complace en presentar la compatibilidad con [canalizaciones solo de fas
 
 Si le interesa probar esta nueva funcionalidad y compartir sus comentarios, envíe un correo electrónico a [ Grp-cloudmanager_splitpipelines@adobe.com](mailto:Grp-cloudmanager_splitpipelines@adobe.com) desde su dirección de correo electrónico asociada a su Adobe ID.
 
-## Corrección de errores
+## Correcciones de errores
 
 * Ya se ha resuelto un error en AEM Cloud Manager que provocaba un error &quot;403&quot; durante las actualizaciones de estado para las operaciones de copia de contenido. Este problema, atribuido a una dirección IP de entrada mal configurada, impedía la propagación del estado y provocaba que algunas actividades de copia de contenido parecieran atascadas y se ejecutaran indefinidamente, lo que requería una cancelación manual. La corrección ahora garantiza la creación de informes de estado adecuados y una ejecución más fluida de las tareas de copia de contenido. <!-- (CMGR-62739) -->
 * Una actualización reciente solucionó un problema en SonarQube en el que las contraseñas codificadas no se detectaban en determinados casos. La corrección ahora incluye una comprobación de patrones ampliada y se alinea con los estándares de detección predeterminados en SonarQube. <!-- CMGR-62682 -->
