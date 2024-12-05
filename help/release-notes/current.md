@@ -2,10 +2,10 @@
 title: Notas de la versión 2024.12.0 de Cloud Manager
 description: Obtenga información acerca de la versión de Cloud Manager 2024.12.0 en Adobe Managed Services.
 feature: Release Information
-source-git-commit: e7e2268f866105970e02d4bc54c46613749e5ac0
+source-git-commit: ee79124a012106e53ffaaf9462202712f7078809
 workflow-type: tm+mt
-source-wordcount: '349'
-ht-degree: 66%
+source-wordcount: '348'
+ht-degree: 68%
 
 ---
 
@@ -25,7 +25,7 @@ Obtenga información acerca de la versión de [!UICONTROL Cloud Manager] 2024.12
 
 La fecha de lanzamiento de la versión 2024.12.0 de [!UICONTROL Cloud Manager] es el viernes, 05 de diciembre de 2024. 
 
-La próxima versión planificada es enero de 2024.
+La próxima versión planificada es el viernes, 23 de enero de 2025.
 
 ## Novedades {#what-is-new}
 
