@@ -1,18 +1,19 @@
 ---
-title: Notas de la versión 2024.11.0 de Cloud Manager
-description: Obtenga más información sobre la versión de Cloud Manager 2024.11.0.
+title: Notas de la versión 2024.12.0 de Cloud Manager
+description: Obtenga información acerca de la versión de Cloud Manager 2024.12.0 en Adobe Managed Services.
 feature: Release Information
-exl-id: 811567af-66c9-4c1f-ae9e-60603b70ef80
-source-git-commit: bea7f2e6e7cab764312a800883d0785ff23fd8bf
-workflow-type: ht
-source-wordcount: '457'
-ht-degree: 100%
+source-git-commit: e7e2268f866105970e02d4bc54c46613749e5ac0
+workflow-type: tm+mt
+source-wordcount: '349'
+ht-degree: 66%
 
 ---
 
-# Notas de la versión 2024.11.0 de Cloud Manager {#release-notes}
+# Notas de la versión de Cloud Manager 2024.12.0 en Adobe Managed Services {#release-notes}
 
-Obtenga más información sobre la versión de [!UICONTROL Cloud Manager] 2024.11.0.
+<!-- RELEASE WIKI  https://wiki.corp.adobe.com/display/DMSArchitecture/Cloud+Manager+2024.12.0+Release -->
+
+Obtenga información acerca de la versión de [!UICONTROL Cloud Manager] 2024.12.0 en Adobe Managed Services.
 
 >[!NOTE]
 >
@@ -22,13 +23,13 @@ Obtenga más información sobre la versión de [!UICONTROL Cloud Manager] 2024.1
 
 <!-- SAVE FOR FUTURE POSSIBLE USE No notable bugs or features for the September release of Cloud Manager. -->
 
-La fecha de lanzamiento de [!UICONTROL Cloud Manager] versión 2024.11.0 es el 7 de noviembre de 2024. 
+La fecha de lanzamiento de la versión 2024.12.0 de [!UICONTROL Cloud Manager] es el viernes, 05 de diciembre de 2024. 
 
-La próxima versión planificada es el 5 de diciembre de 2024.
+La próxima versión planificada es enero de 2024.
 
 ## Novedades {#what-is-new}
 
-* Cuando las páginas se redirigen a otro dominio durante las pruebas de rendimiento, se excluyen los resultados de las pruebas de esas páginas, ya que no representan con precisión el rendimiento real. <!-- (CMGR-5637) -->
+* AEM El paso Calidad del código de la ahora utiliza el servidor SonarQube 9.9, que sustituye a la versión 7.4 anterior. Esta actualización incluye comprobaciones adicionales de seguridad, rendimiento y calidad del código, lo que ofrece un análisis y una cobertura más completos para sus proyectos. <!-- CMGR-45683 -->
 
 ## Programa para primeros usuarios {#early-adoption}
 
@@ -38,7 +39,9 @@ Participe en nuestro programa para primeros usuarios de Cloud Manager y tenga la
 
 <!-- BOTH CS & AMS -->
 
-La función **Usar su propio Git** se ha ampliado para incluir compatibilidad con repositorios externos como GitLab y Bitbucket. Esta nueva compatibilidad se suma a la compatibilidad ya existente con repositorios de GitHub privados y de empresa. Al añadir estos nuevos repositorios, también puede vincularlos directamente a sus canalizaciones. Puede alojar estos repositorios en plataformas públicas en la nube o dentro de su infraestructura o nube privada. Esta integración también elimina la necesidad de sincronización constante del código con el repositorio de Adobe y proporciona la capacidad de validar las solicitudes de extracción antes de combinarlas en una rama principal.
+La función **Traer tu propio Git** se ha ampliado para incluir compatibilidad con repositorios externos, como GitLab y Bitbucket. Esta nueva compatibilidad se suma a la compatibilidad ya existente con repositorios de GitHub privados y de empresa. Al añadir estos nuevos repositorios, también puede vincularlos directamente a sus canalizaciones. Puede alojar estos repositorios en plataformas públicas en la nube o dentro de su infraestructura o nube privada. Esta integración también elimina la necesidad de sincronización constante del código con el repositorio de Adobe y proporciona la capacidad de validar las solicitudes de extracción antes de combinarlas en una rama principal.
+
+Las canalizaciones que usan repositorios externos (excepto las hospedadas en GitHub) y el **Déclencheur de implementación** establecido en **Cambios en Git** ahora se inician automáticamente.
 
 Consulte [Adición de repositorios externos en Cloud Manager](/help/managing-code/external-repositories.md).
 
@@ -50,17 +53,11 @@ Consulte [Adición de repositorios externos en Cloud Manager](/help/managing-cod
 
 Si le interesa probar esta nueva función y compartir sus comentarios, envíe un correo electrónico a [Grp-CloudManager_BYOG@adobe.com](mailto:Grp-CloudManager_BYOG@adobe.com) desde su dirección de correo electrónico asociada a su Adobe ID. Asegúrese de incluir qué plataforma Git desea utilizar y si se encuentra en una estructura de repositorio privado/público o de empresa.
 
-### Canalizaciones solo de fase y de producción {#staging-production-only-pipelines}
 
-Adobe se complace en presentar la compatibilidad con [canalizaciones solo de fase y solo de producción](/help/using/stage-prod-only.md). Esta nueva función le permite dividir las canalizaciones de implementación de producción de pila completa en implementaciones más pequeñas y especializadas.
+<!-- ## Bug fixes {#bug-fixes}
 
-Si le interesa probar esta nueva funcionalidad y compartir sus comentarios, envíe un correo electrónico a [ Grp-cloudmanager_splitpipelines@adobe.com](mailto:Grp-cloudmanager_splitpipelines@adobe.com) desde su dirección de correo electrónico asociada a su Adobe ID.
+* A
 
-## Correcciones de errores
-
-* Ya se ha resuelto un error en AEM Cloud Manager que provocaba un error &quot;403&quot; durante las actualizaciones de estado para las operaciones de copia de contenido. Este problema, atribuido a una dirección IP de entrada mal configurada, impedía la propagación del estado y provocaba que algunas actividades de copia de contenido parecieran atascadas y se ejecutaran indefinidamente, lo que requería una cancelación manual. La corrección ahora garantiza la creación de informes de estado adecuados y una ejecución más fluida de las tareas de copia de contenido. <!-- (CMGR-62739) -->
-* Una actualización reciente solucionó un problema en SonarQube en el que las contraseñas codificadas no se detectaban en determinados casos. La corrección ahora incluye una comprobación de patrones ampliada y se alinea con los estándares de detección predeterminados en SonarQube. <!-- CMGR-62682 -->
-
-<!-- Known Issues {#known-issues}
+Known Issues {#known-issues}
 
 * A -->
