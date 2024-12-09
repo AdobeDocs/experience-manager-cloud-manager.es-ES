@@ -2,10 +2,10 @@
 title: Copia de contenido para la coherencia del entorno
 description: La copia de contenido en Cloud Manager permite a los usuarios copiar contenido mutable On-demand desde entornos de producción Adobe Experience Manager 6.x alojados en Managed Services de Adobe a entornos más bajos para realizar pruebas.
 exl-id: 97915e58-a1d3-453f-b5ce-cad55ed73262
-source-git-commit: e47047c85f9d428e268d147b2e24354026dda0f8
+source-git-commit: 228006b424504306e916014bbe8543dc41ba43b5
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1312'
+ht-degree: 33%
 
 ---
 
@@ -85,9 +85,7 @@ Para poder copiar cualquier contenido, se debe definir un conjunto de contenido.
 
    ![Edición de la lista de rutas](/help/assets/add-content-set-excluded-paths.png)
 
-1. Haga clic en **Crear**.
-
-Ahora puede utilizar el conjunto de contenido para copiar contenido entre entornos.
+1. Haga clic en **Crear**. Ahora puede utilizar el conjunto de contenido para copiar contenido entre entornos.
 
 ## Edición o eliminación de un conjunto de contenido {#edit-content-set}
 
@@ -132,21 +130,23 @@ Es posible que un entorno no esté disponible para su selección si se aplica cu
    * Las regiones de un entorno de destino deben ser un subconjunto de regiones en un entorno de origen.
    * Los problemas de compatibilidad se comprueban antes de ejecutar una acción de copia de contenido. Al seleccionar el entorno **Destination**, el sistema valida automáticamente los entornos de origen y destino. Si la validación falla, el proceso se detiene y aparece un mensaje de error en el cuadro de diálogo que explica el motivo del error.
 
+     ![Copia de contenido](/help/assets/copying-content.png)
+
 1. (Opcional) Realice una de las siguientes acciones:
 
    1. Para *conservar* las rutas excluidas en el entorno de destino, marque **`Do not delete exclude paths from destination`**. Esta configuración mantiene intactas las rutas excluidas especificadas en el conjunto de contenido.
    1. Para *eliminar* las rutas excluidas en el entorno de destino, desmarque **`Do not delete exclude paths from destination`**. Esta configuración elimina las rutas excluidas especificadas en el conjunto de contenido.
-   1. Para copiar el historial de versiones de las rutas del entorno de origen al entorno de destino, marque **Copiar versiones**.
+   1. Para copiar el historial de versiones de las rutas del entorno de origen al entorno de destino, marque **Copiar versiones**. El proceso de copia de contenido es considerablemente más rápido cuando el historial de versiones es *no* copiado.
 
-      ![Copia de contenido](/help/assets/copying-content.png)
+
 
 1. Haga clic en **Copiar**. El estado del proceso de copia se refleja en la consola del conjunto de contenido seleccionado.
 
-## Monitorización del estado de la actividad de copia de contenido {#copy-activity}
+## Supervisar estado de copia de contenido {#copy-activity}
 
 Puede controlar el estado de los procesos de la copia en la página **Copiar actividad de contenido**.
 
-**Para supervisar el estado de la actividad de copia de contenido:**
+**Para supervisar el estado de la copia de contenido:**
 
 1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización y programa adecuados.
 
@@ -165,9 +165,7 @@ Puede controlar el estado de los procesos de la copia en la página **Copiar act
    | Error | Error en la operación de copia de contenido. |
 
 
-## Limitaciones {#limitations}
-
-La copia de contenido tiene las siguientes limitaciones:
+## Limitaciones de la copia de contenido {#limitations}
 
 * No se puede realizar una copia de contenido de un entorno inferior a un entorno superior.
 * La copia de contenido solo se puede realizar en el mismo nivel. Es decir, autor-autor o publicación-publicación.
@@ -175,13 +173,10 @@ La copia de contenido tiene las siguientes limitaciones:
 * La copia de contenido para la topología basada en el almacén de datos en la nube solo se puede realizar cuando el entorno de origen y de destino están en el mismo proveedor de nube y en la misma región.
 * No es posible ejecutar operaciones de copia de contenido simultáneas en el mismo entorno.
 * La copia de contenido no se puede realizar si hay alguna operación activa ejecutándose en el entorno de destino o de origen, como, por ejemplo, una canalización de CI/CD.
-* Se pueden especificar hasta cincuenta rutas por cada conjunto de contenido. No hay limitación en las rutas excluidas.
 * La copia de contenido no debe utilizarse como herramienta de clonación o creación de reflejo porque no puede rastrear el contenido movido o eliminado en el origen.
 * Una copia de contenido no se puede pausar ni cancelar una vez que se inicia.
-* La copia de contenido copia recursos y metadatos de Dynamic Media del entorno superior al entorno inferior seleccionado. A continuación, los recursos copiados deben volver a procesarse mediante la variable [Flujo de trabajo de recursos de proceso DAM](https://experienceleague.adobe.com/es/docs/experience-manager-65/content/assets/using/assets-workflow) en el entorno inferior para utilizar la configuración de Dynamic Media correspondiente.
-* El proceso de copia de contenido es considerablemente más rápido cuando no se copia el historial de versiones.
+* La copia de contenido duplica recursos y metadatos de Dynamic Media del entorno superior al entorno inferior seleccionado. A continuación, los recursos copiados deben volver a procesarse mediante la variable [Flujo de trabajo de recursos de proceso DAM](https://experienceleague.adobe.com/es/docs/experience-manager-65/content/assets/using/assets-workflow) en el entorno inferior para utilizar la configuración de Dynamic Media correspondiente.
 * No se admiten [configuraciones de Dynamic Media con tamaños de recursos superiores a 2 GB habilitados](https://experienceleague.adobe.com/es/docs/experience-manager-65/content/assets/dynamic/config-dms7#optional-config-dms7-assets-larger-than-2gb).
-* Cuando no se copia el historial de versiones, el proceso de copia de contenido es considerablemente más rápido.
 * Las regiones del entorno de destino deben ser las mismas o un subconjunto de las regiones del entorno de origen.
 
 ## Problemas conocidos {#known-issues}
