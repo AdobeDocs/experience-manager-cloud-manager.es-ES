@@ -1,20 +1,20 @@
 ---
-title: La herramienta Copia de contenido
+title: Copia de contenido para la coherencia del entorno
 description: La herramienta de copia de contenido de Cloud Manager permite a los usuarios copiar contenido mutable On-demand desde entornos de producción de Adobe Experience Manager 6.x alojados en Managed Services de Adobe a entornos más bajos para realizar pruebas.
 exl-id: 97915e58-a1d3-453f-b5ce-cad55ed73262
-source-git-commit: de9cfaa07dc9ff4a6d1cb200d14c5e776d27767d
+source-git-commit: 2c96feb62a4db2424430c9c410563a7f61320fd2
 workflow-type: tm+mt
-source-wordcount: '1363'
-ht-degree: 42%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 
-# La herramienta Copia de contenido {#content-copy}
+# Copia de contenido para mantener la coherencia del entorno {#content-copy}
 
 La herramienta de copia de contenido de Cloud Manager permite a los usuarios copiar contenido mutable On-demand desde entornos de producción de Adobe Experience Manager 6.x alojados en Managed Services de Adobe a entornos más bajos para realizar pruebas.
 
-## Acerca de la herramienta Copiar contenido{#introduction}
+## Acerca de la copia de contenido {#introduction}
 
 Los datos actuales y reales son valiosos para las pruebas, la validación y la aceptación de usuarios. La herramienta de copia de contenido permite copiar contenido del entorno de AEM 6.x alojado en AMS de producción a un entorno de ensayo o desarrollo. Este flujo de trabajo admite varios escenarios de prueba.
 
