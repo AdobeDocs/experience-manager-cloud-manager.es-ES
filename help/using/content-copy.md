@@ -2,9 +2,9 @@
 title: Copia de contenido para la coherencia del entorno
 description: La copia de contenido en Cloud Manager permite a los usuarios copiar contenido mutable On-demand desde entornos de producción Adobe Experience Manager 6.x alojados en Managed Services de Adobe a entornos más bajos para realizar pruebas.
 exl-id: 97915e58-a1d3-453f-b5ce-cad55ed73262
-source-git-commit: 228006b424504306e916014bbe8543dc41ba43b5
+source-git-commit: 16cc1aa0ff45126df9100f337b6259a3f248038f
 workflow-type: tm+mt
-source-wordcount: '1312'
+source-wordcount: '1321'
 ht-degree: 33%
 
 ---
@@ -35,7 +35,7 @@ Al copiar contenido, el entorno de origen es la fuente de información.
 * Si edita contenido en el entorno de destino, el contenido de origen lo sobrescribe si las rutas coinciden.
 * Si las rutas son diferentes, el contenido del origen se combinará con el contenido del destino.
 
-## Permisos {#permissions}
+### Permisos {#permissions}
 
 Para usar la característica de copia de contenido, el usuario debe estar asignado al rol **Administrador de implementación** en los entornos de origen y destino.
 
@@ -142,11 +142,11 @@ Es posible que un entorno no esté disponible para su selección si se aplica cu
 
 1. Haga clic en **Copiar**. El estado del proceso de copia se refleja en la consola del conjunto de contenido seleccionado.
 
-## Supervisar estado de copia de contenido {#copy-activity}
+## Comprobar el estado de una copia de contenido {#copy-activity}
 
 Puede controlar el estado de los procesos de la copia en la página **Copiar actividad de contenido**.
 
-**Para supervisar el estado de la copia de contenido:**
+**Para comprobar el estado de una copia de contenido:**
 
 1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización y programa adecuados.
 
@@ -179,6 +179,6 @@ Puede controlar el estado de los procesos de la copia en la página **Copiar act
 * No se admiten [configuraciones de Dynamic Media con tamaños de recursos superiores a 2 GB habilitados](https://experienceleague.adobe.com/es/docs/experience-manager-65/content/assets/dynamic/config-dms7#optional-config-dms7-assets-larger-than-2gb).
 * Las regiones del entorno de destino deben ser las mismas o un subconjunto de las regiones del entorno de origen.
 
-## Problemas conocidos {#known-issues}
+## Problemas conocidos de la copia de contenido {#known-issues}
 
 {{content-copy-known-issues}}
