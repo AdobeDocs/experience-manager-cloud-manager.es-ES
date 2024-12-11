@@ -9,8 +9,8 @@ feature: Cloud Manager
 role: Admin
 source-git-commit: 2c96feb62a4db2424430c9c410563a7f61320fd2
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '349'
+ht-degree: 98%
 
 ---
 

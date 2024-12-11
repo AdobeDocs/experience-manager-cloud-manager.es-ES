@@ -1,12 +1,12 @@
 ---
 title: Notas de la versión 2024.12.0 de Cloud Manager
-description: Obtenga información acerca de la versión de Cloud Manager 2024.12.0 en Adobe Managed Services.
+description: Obtenga información sobre la versión de Cloud Manager 2024.11.0 en Adobe Managed Services.
 feature: Release Information
 exl-id: 811567af-66c9-4c1f-ae9e-60603b70ef80
 source-git-commit: e266a4192e2a897f142a6c83ae5766483946320d
 workflow-type: tm+mt
 source-wordcount: '312'
-ht-degree: 75%
+ht-degree: 100%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 75%
 
 <!-- RELEASE WIKI  https://wiki.corp.adobe.com/display/DMSArchitecture/Cloud+Manager+2024.12.0+Release -->
 
-Obtenga información acerca de la versión de [!UICONTROL Cloud Manager] 2024.12.0 en Adobe Managed Services.
+Obtenga información sobre la versión de [!UICONTROL Cloud Manager] 2024.12.0 en Adobe Managed Services.
 
 >[!NOTE]
 >
@@ -24,7 +24,7 @@ Obtenga información acerca de la versión de [!UICONTROL Cloud Manager] 2024.12
 
 <!-- SAVE FOR FUTURE POSSIBLE USE No notable bugs or features for the September release of Cloud Manager. -->
 
-La fecha de lanzamiento de la versión 2024.12.0 de [!UICONTROL Cloud Manager] es el viernes, 05 de diciembre de 2024. 
+La fecha de lanzamiento de la versión 2024.12.0 de [!UICONTROL Cloud Manager] es el 5 de diciembre de 2024. 
 
 La próxima versión planificada es el viernes, 23 de enero de 2025.
 
@@ -40,9 +40,9 @@ Participe en nuestro programa para primeros usuarios de Cloud Manager y tenga la
 
 <!-- BOTH CS & AMS -->
 
-La función **Traer tu propio Git** se ha ampliado para incluir compatibilidad con repositorios externos, como GitLab y Bitbucket. Esta nueva compatibilidad se suma a la compatibilidad ya existente con repositorios de GitHub privados y de empresa. Al añadir estos nuevos repositorios, también puede vincularlos directamente a sus canalizaciones. Puede alojar estos repositorios en plataformas públicas en la nube o dentro de su infraestructura o nube privada. Esta integración también elimina la necesidad de sincronización constante del código con el repositorio de Adobe y proporciona la capacidad de validar las solicitudes de extracción antes de combinarlas en una rama principal.
+La función **Bring Your Own Git** se ha ampliado para incluir compatibilidad con repositorios externos, como GitLab y Bitbucket. Esta nueva compatibilidad se suma a la compatibilidad ya existente con repositorios de GitHub privados y de empresa. Al añadir estos nuevos repositorios, también puede vincularlos directamente a sus canalizaciones. Puede alojar estos repositorios en plataformas públicas en la nube o dentro de su infraestructura o nube privada. Esta integración también elimina la necesidad de sincronización constante del código con el repositorio de Adobe y proporciona la capacidad de validar las solicitudes de extracción antes de combinarlas en una rama principal.
 
-Las canalizaciones que usan repositorios externos (excepto las hospedadas en GitHub) y el **Déclencheur de implementación** establecido en **Cambios en Git** ahora se inician automáticamente.
+Las canalizaciones que usan repositorios externos (excepto las alojadas en GitHub) y el **Activador de la implementación** establecido en **Cambios en Git** ahora se inician automáticamente.
 
 Consulte [Adición de repositorios externos en Cloud Manager](/help/managing-code/external-repositories.md).
 
