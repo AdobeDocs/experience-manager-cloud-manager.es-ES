@@ -2,7 +2,7 @@
 title: Copia de contenido para la coherencia del entorno
 description: La copia de contenido en Cloud Manager permite a los usuarios copiar contenido mutable On-demand desde entornos de producción Adobe Experience Manager 6.x alojados en Managed Services de Adobe a entornos más bajos para realizar pruebas.
 exl-id: 97915e58-a1d3-453f-b5ce-cad55ed73262
-source-git-commit: 16cc1aa0ff45126df9100f337b6259a3f248038f
+source-git-commit: e3a656605ac59ca1f95985426932fddf2b53b7c9
 workflow-type: tm+mt
 source-wordcount: '1321'
 ht-degree: 33%
@@ -32,8 +32,9 @@ Se permiten las siguientes rutas en un conjunto de contenido:
 
 Al copiar contenido, el entorno de origen es la fuente de información.
 
-* Si edita contenido en el entorno de destino, el contenido de origen lo sobrescribe si las rutas coinciden.
-* Si las rutas son diferentes, el contenido del origen se combinará con el contenido del destino.
+Si edita contenido en el entorno de destino, el contenido de origen lo sobrescribe si las rutas coinciden.
+
+Si las rutas son diferentes, el contenido del origen se combinará con el contenido del destino.
 
 ### Permisos {#permissions}
 
@@ -103,7 +104,6 @@ Al editar un conjunto de contenido, es posible que tenga que expandir las rutas 
 
 ![Editar conjunto de contenido](/help/assets/edit-content-set.png)
 
-
 ## Copiar contenido {#copy-content}
 
 Una vez creado un conjunto de contenido, puede utilizarlo para copiar contenido.
@@ -138,8 +138,6 @@ Es posible que un entorno no esté disponible para su selección si se aplica cu
    1. Para *eliminar* las rutas excluidas en el entorno de destino, desmarque **`Do not delete exclude paths from destination`**. Esta configuración elimina las rutas excluidas especificadas en el conjunto de contenido.
    1. Para copiar el historial de versiones de las rutas del entorno de origen al entorno de destino, marque **Copiar versiones**. El proceso de copia de contenido es considerablemente más rápido cuando el historial de versiones es *no* copiado.
 
-
-
 1. Haga clic en **Copiar**. El estado del proceso de copia se refleja en la consola del conjunto de contenido seleccionado.
 
 ## Comprobar el estado de una copia de contenido {#copy-activity}
@@ -160,10 +158,9 @@ Puede controlar el estado de los procesos de la copia en la página **Copiar act
 
    | Estado | Descripción |
    | --- | --- |
-   | En curso | La operación de copia de contenido está en curso. |
-   | Completado | Operación de copia de contenido completada correctamente. |
-   | Error | Error en la operación de copia de contenido. |
-
+   | En curso | El proceso de copia de contenido está en curso. |
+   | Completado | El proceso de copia de contenido se completó correctamente. |
+   | Error | Error en el proceso de copia de contenido. |
 
 ## Limitaciones de la copia de contenido {#limitations}
 
