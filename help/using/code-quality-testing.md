@@ -2,7 +2,7 @@
 title: Prueba de calidad del código
 description: Descubra cómo funcionan las pruebas de calidad del código de las canalizaciones y cómo pueden mejorar la calidad de las implementaciones.
 exl-id: 6a574858-a30e-4768-bafc-8fe79f928294
-source-git-commit: dcf2a4727b800f4364fcc7d757d281bde2738a55
+source-git-commit: f5e6ac81c6454730850bb7e884d82be48d2f8525
 workflow-type: tm+mt
 source-wordcount: '2793'
 ht-degree: 98%
@@ -48,9 +48,9 @@ El software lo implementa mediante una combinación de análisis de SonarQube, u
 
 Hay más de 100 reglas que combinan reglas genéricas de Java y reglas específicas de AEM. Algunas de las reglas específicas de AEM se crean en función de las prácticas recomendadas de AEM Engineering y se denominan [reglas de calidad de código personalizadas](/help/using/custom-code-quality-rules.md).
 
+Puede descargar la lista completa actual de reglas [mediante este vínculo](/help/assets/CodeQuality-rules-latest-AMS.xlsx).
+
 >[!IMPORTANT]
->
->Puede descargar la lista completa actual de reglas [mediante este vínculo](/help/assets/CodeQuality-rules-latest-AMS.xlsx).
 >
 >A partir del jueves, 13 de febrero de 2025 (Cloud Manager 2025.2.0), Calidad del código de Cloud Manager utilizará una versión actualizada de SonarQube 9.9 y una lista actualizada de reglas que puede [descargar aquí](/help/assets/CodeQuality-rules-latest-AMS-2024-12-0.xlsx).
 
