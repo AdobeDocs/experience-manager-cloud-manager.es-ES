@@ -2,10 +2,10 @@
 title: Prueba de calidad del código
 description: Descubra cómo funcionan las pruebas de calidad del código de las canalizaciones y cómo pueden mejorar la calidad de las implementaciones.
 exl-id: 6a574858-a30e-4768-bafc-8fe79f928294
-source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
-workflow-type: ht
-source-wordcount: '2764'
-ht-degree: 100%
+source-git-commit: dcf2a4727b800f4364fcc7d757d281bde2738a55
+workflow-type: tm+mt
+source-wordcount: '2793'
+ht-degree: 98%
 
 ---
 
@@ -48,14 +48,16 @@ El software lo implementa mediante una combinación de análisis de SonarQube, u
 
 Hay más de 100 reglas que combinan reglas genéricas de Java y reglas específicas de AEM. Algunas de las reglas específicas de AEM se crean en función de las prácticas recomendadas de AEM Engineering y se denominan [reglas de calidad de código personalizadas](/help/using/custom-code-quality-rules.md).
 
->[!TIP]
+>[!IMPORTANT]
 >
->Puede descargar la lista completa de reglas [mediante este vínculo](/help/assets/CodeQuality-rules-latest-AMS.xlsx).
+>Puede descargar la lista completa actual de reglas [mediante este vínculo](/help/assets/CodeQuality-rules-latest-AMS.xlsx).
+>
+>A partir del jueves, 13 de febrero de 2025 (Cloud Manager 2025.2.0), Calidad del código de Cloud Manager utilizará una versión actualizada de SonarQube 9.9 y una lista actualizada de reglas que puede [descargar aquí](/help/assets/CodeQuality-rules-latest-AMS-2024-12-0.xlsx).
 
 Los resultados de las pruebas de calidad del código se muestran como una clasificación resumida en esta tabla.
 
 | Nombre | Definición | Categoría | Umbral de error |
-|--- |--- |--- |--- |
+| --- | --- | --- | --- |
 | Clasificación de seguridad | A = Sin vulnerabilidades<br/>B = Al menos una vulnerabilidad menor<br/>C = Al menos una vulnerabilidad importante<br/>D = Al menos una vulnerabilidad esencial<br/>E = Al menos una vulnerabilidad de bloqueo | Esencial | &lt; B |
 | Clasificación de fiabilidad | A = No hay errores<br/>B = Al menos un error menor <br/>C = Al menos un error importante<br/>D = Al menos un error esencial<br/>E = Al menos un error de bloqueo | Importante | &lt; C |
 | Clasificación de mantenimiento | Definido por el coste de corrección pendiente de los olores de código como un porcentaje del tiempo que ya ha pasado a la aplicación<br/><ul><li>A = &lt;=5 %</li><li>B = 6-10 %</li><li>C = 11-20 %</li><li>D = 21-50 %</li><li>E = >50 %</li></ul> | Importante | &lt; A |
@@ -67,7 +69,7 @@ Los resultados de las pruebas de calidad del código se muestran como una clasif
 
 >[!NOTE]
 >
->Para obtener información más detallada, consulte [Definiciones de métricas de SonarQube](https://docs.sonarsource.com/sonarqube/latest/user-guide/code-metrics/metrics-definition/).
+>Para obtener información más detallada, consulte [Definiciones de métricas de SonarQube](https://docs.sonarsource.com/sonarqube-server/latest/user-guide/code-metrics/metrics-definition/).
 
 >[!NOTE]
 >
