@@ -5,7 +5,7 @@ exl-id: 6a574858-a30e-4768-bafc-8fe79f928294
 source-git-commit: f5e6ac81c6454730850bb7e884d82be48d2f8525
 workflow-type: tm+mt
 source-wordcount: '2793'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -48,11 +48,11 @@ El software lo implementa mediante una combinación de análisis de SonarQube, u
 
 Hay más de 100 reglas que combinan reglas genéricas de Java y reglas específicas de AEM. Algunas de las reglas específicas de AEM se crean en función de las prácticas recomendadas de AEM Engineering y se denominan [reglas de calidad de código personalizadas](/help/using/custom-code-quality-rules.md).
 
-Puede descargar la lista completa actual de reglas [mediante este vínculo](/help/assets/CodeQuality-rules-latest-AMS.xlsx).
+Puede descargar la lista completa de reglas [mediante este vínculo](/help/assets/CodeQuality-rules-latest-AMS.xlsx).
 
 >[!IMPORTANT]
 >
->A partir del jueves, 13 de febrero de 2025 (Cloud Manager 2025.2.0), Calidad del código de Cloud Manager utilizará una versión actualizada de SonarQube 9.9 y una lista actualizada de reglas que puede [descargar aquí](/help/assets/CodeQuality-rules-latest-AMS-2024-12-0.xlsx).
+>A partir del jueves, 13 de febrero de 2025 (Cloud Manager 2025.2.0), la Calidad del código de Cloud Manager utilizará una versión actualizada de SonarQube 9.9 y una lista actualizada de reglas que puede [descargar aquí](/help/assets/CodeQuality-rules-latest-AMS-2024-12-0.xlsx).
 
 Los resultados de las pruebas de calidad del código se muestran como una clasificación resumida en esta tabla.
 
@@ -234,7 +234,7 @@ Cloud Manager ejecuta pruebas de rendimiento para programas de AEM Assets cargan
 
 #### Requisito de incorporación {#onboarding-requirement}
 
-Para las pruebas de rendimiento de Assets, el ingeniero de éxito del cliente creará un usuario y contraseña de `cloudmanager` durante la incorporación del autor al entorno de ensayo. Los pasos de la prueba de rendimiento requieren un usuario llamado `cloudmanager` y la contraseña asociada configurada por su CSE. 
+Para las pruebas de rendimiento de Assets, el ingeniero de éxito del cliente creará un usuario y contraseña de `cloudmanager` durante la incorporación del autor al entorno de ensayo. Los pasos de la prueba de rendimiento requieren un usuario llamado `cloudmanager` y la contraseña asociada configurada por su CSE.
 
 Este método debe permanecer en la instancia de autor con sus permisos inalterados. Su modificación o eliminación puede provocar errores en las pruebas de rendimiento de Assets.
 
@@ -288,7 +288,7 @@ Esta funcionalidad está disponible para las siguientes métricas.
 
 ## Optimización del análisis de paquetes de contenido {#content-package-scanning-optimization}
 
-Como parte del proceso de análisis de calidad, Cloud Manager realiza un análisis de los paquetes de contenido producidos por la compilación de Maven. Cloud Manager ofrece optimizaciones para acelerar este proceso, que son efectivas cuando se observan ciertas restricciones de empaquetado. 
+Como parte del proceso de análisis de calidad, Cloud Manager realiza un análisis de los paquetes de contenido producidos por la compilación de Maven. Cloud Manager ofrece optimizaciones para acelerar este proceso, que son efectivas cuando se observan ciertas restricciones de empaquetado.
 
 La optimización clave es para proyectos que generan un solo paquete «todo», que contiene otros paquetes de contenido producidos por la compilación, que se marcan como omitidos. Cuando Cloud Manager detecta este escenario, en lugar de desempaquetar el paquete “todo”, los paquetes de contenido individuales se analizan directamente y se ordenan según las dependencias. Por ejemplo, considere la siguiente salida de compilación.
 
