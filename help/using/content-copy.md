@@ -2,10 +2,10 @@
 title: Copia de contenido para la coherencia del entorno
 description: La copia de contenido en Cloud Manager permite a los usuarios copiar contenido mutable On-demand desde los entornos de producción de Adobe Experience Manager 6.x alojados en Adobe Managed Services a entornos inferiores para realizar pruebas.
 exl-id: 97915e58-a1d3-453f-b5ce-cad55ed73262
-source-git-commit: e3a656605ac59ca1f95985426932fddf2b53b7c9
-workflow-type: ht
+source-git-commit: 84b3366481c2efd497583627eac67046452f6c38
+workflow-type: tm+mt
 source-wordcount: '1321'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -64,7 +64,7 @@ Para poder copiar cualquier contenido, se debe definir un conjunto de contenido.
 
    Solo se pueden incluir las rutas que comienzan con `/content`, `/conf`, `/etc`, `/var/workflow/models` o `/var/commerce`.
 
-1. Haga clic en el **![icono de adición de carpeta](https://spectrum.adobe.com/static/icons/workflow_18/Smock_FolderAdd_18_N.svg) Agregar ruta** para agregar (o incluir) la ruta al conjunto de contenido.
+1. Haga clic en ![Icono de adición de carpeta](https://spectrum.adobe.com/static/icons/workflow_18/Smock_FolderAdd_18_N.svg) **Agregar ruta** para agregar (o incluir) la ruta al conjunto de contenido.
 
 1. (Opcional) Si es necesario, añada las rutas de adición (hasta 50) que sean necesarias repitiendo los dos pasos anteriores. De lo contrario, continúe con el siguiente paso.
 
