@@ -1,20 +1,19 @@
 ---
-title: Notas de la versión 2024.12.0 de Cloud Manager
-description: Obtenga información sobre la versión de Cloud Manager 2024.12.0 en Adobe Managed Services.
+title: Notas de la versión 2025.1.0 de Cloud Manager
+description: Obtenga información sobre la versión de Cloud Manager 2025.1.0 en Adobe Managed Services.
 feature: Release Information
-exl-id: 811567af-66c9-4c1f-ae9e-60603b70ef80
-source-git-commit: 60db60be95318ebf6f2af91a94a9475604a15003
-workflow-type: ht
-source-wordcount: '359'
-ht-degree: 100%
+source-git-commit: c25508b24f00b8f8cfa7bae3cc4b0d6ecf684db3
+workflow-type: tm+mt
+source-wordcount: '193'
+ht-degree: 40%
 
 ---
 
-# Notas de la versión de Cloud Manager 2024.12.0 en Adobe Managed Services {#release-notes}
+# Notas de la versión de Cloud Manager 2025.1.0 en Adobe Managed Services {#release-notes}
 
 <!-- RELEASE WIKI  https://wiki.corp.adobe.com/display/DMSArchitecture/Cloud+Manager+2024.12.0+Release -->
 
-Obtenga información sobre la versión de [!UICONTROL Cloud Manager] 2024.12.0 en Adobe Managed Services.
+Obtenga información sobre la versión de [!UICONTROL Cloud Manager] 2025.1.0 en Adobe Managed Services.
 
 >[!NOTE]
 >
@@ -24,39 +23,33 @@ Obtenga información sobre la versión de [!UICONTROL Cloud Manager] 2024.12.0 e
 
 <!-- SAVE FOR FUTURE POSSIBLE USE No notable bugs or features for the September release of Cloud Manager. -->
 
-La fecha de lanzamiento de la versión 2024.12.0 de [!UICONTROL Cloud Manager] es el 5 de diciembre de 2024.
+La fecha de lanzamiento de la versión 2025.1.0 de [!UICONTROL Cloud Manager] es el martes, 22 de enero de 2024.
 
-La próxima versión planificada es el 23 de enero de 2025.
+La próxima versión planificada es el viernes, 13 de febrero de 2025.
 
 ## Novedades {#what-is-new}
 
-<!-- * The AEM Code Quality step now uses SonarQube 9.9 Server, replacing the older 7.4 version. This upgrade brings additional security, performance, and code quality checks, offering more comprehensive analysis and coverage for your projects. --> <!-- CMGR-45683 -->
+**Reglas de calidad del código:** El paso de calidad del código de Cloud Manager empezará a usar SonarQube Server 9.9 con la versión Cloud Manager 2025.2.0, programada para el jueves 13 de febrero de 2025.
 
-* A partir del jueves, 13 de febrero de 2025, el paso de calidad del código de Cloud Manager utiliza ahora una versión actualizada de SonarQube 9.9.5.90363.
+Para prepararse, las reglas actualizadas de SonarQube ya están disponibles en [Reglas de calidad de código](/help/using/code-quality-testing.md#code-quality-testing-step).
 
-  Las reglas actualizadas, disponibles para AMS en [este vínculo](/help/using/code-quality-testing.md#code-quality-testing-step), determinan las puntuaciones de seguridad y la calidad del código para las canalizaciones de Cloud Manager. Esta actualización puede afectar a las puertas de calidad y bloquear potencialmente las implementaciones.
+Puede &quot;comprobar antes&quot; las nuevas reglas configurando la siguiente variable de texto de canalización (véase la captura de pantalla siguiente):
 
-## Programa para primeros usuarios {#early-adoption}
+`CM_BUILD_IMAGE_OVERRIDE` = `self-service-build:sonar-99-upgrade-java17or21`
 
-Participe en nuestro programa para primeros usuarios de Cloud Manager y tenga la oportunidad de probar algunas de las próximas funciones.
+Además, establezca la siguiente variable para asegurarse de que el paso de calidad del código se ejecuta para la misma confirmación (normalmente se omite para el mismo `commitId`):
 
-### Usar su propio Git: ahora se admiten GitLab y Bitbucket {#gitlab-bitbucket}
+`CM_DISABLE_BUILD_REUSE` = `true`
 
-<!-- BOTH CS & AMS -->
-
-La función **Bring Your Own Git** se ha ampliado para incluir compatibilidad con repositorios externos, como GitLab y Bitbucket. Esta nueva compatibilidad se suma a la compatibilidad ya existente con repositorios de GitHub privados y de empresa. Al añadir estos nuevos repositorios, también puede vincularlos directamente a sus canalizaciones. Puede alojar estos repositorios en plataformas públicas en la nube o dentro de su infraestructura o nube privada. Esta integración también elimina la necesidad de sincronización constante del código con el repositorio de Adobe y proporciona la capacidad de validar las solicitudes de extracción antes de combinarlas en una rama principal.
-
-Las canalizaciones que usan repositorios externos (excepto las alojadas en GitHub) y el **Activador de la implementación** establecido en **Cambios en Git** ahora se inician automáticamente.
-
-Consulte [Adición de repositorios externos en Cloud Manager](/help/managing-code/external-repositories.md).
-
-![Cuadro de diálogo Añadir repositorio](/help/release-notes/assets/repositories-add-release-notes.png)
+![Página de configuración de variables](/help/release-notes/assets/variables-config.png)
 
 >[!NOTE]
 >
->Actualmente, las comprobaciones de calidad del código de las solicitudes de extracción listas para usar son exclusivas de los repositorios alojados en GitHub, pero se está trabajando en una actualización para ampliar esta funcionalidad a otros proveedores de Git.
+>Adobe recomienda crear una nueva canalización de calidad de código de CI/CD, configurada en la misma rama que la canalización de producción principal. Establezca las variables apropiadas *antes* de la versión del 13 de febrero de 2025 para validar que las nuevas reglas aplicadas no introduzcan bloqueadores.
 
-Si le interesa probar esta nueva función y compartir sus comentarios, envíe un correo electrónico a [Grp-CloudManager_BYOG@adobe.com](mailto:Grp-CloudManager_BYOG@adobe.com) desde su dirección de correo electrónico asociada a su Adobe ID. Asegúrese de incluir qué plataforma Git desea utilizar y si se encuentra en una estructura de repositorio privado/público o de empresa.
+<!-- ## Early adoption program {#early-adoption}
+
+Be a part of Cloud Manager's early adoption program and have a chance to test upcoming features. -->
 
 
 <!-- ## Bug fixes {#bug-fixes}
