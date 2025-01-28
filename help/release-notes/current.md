@@ -3,10 +3,11 @@ title: Notas de la versión 2025.1.0 de Cloud Manager
 description: Obtenga información sobre la versión de Cloud Manager 2025.1.0 en Adobe Managed Services.
 feature: Release Information
 exlid: 669b1f2d8fc68526eb091e0f93f70ab93033d193
-source-git-commit: 434740b5ad2dafd5a6c55d0272cf5effdfa6baac
-workflow-type: tm+mt
+exl-id: cc1dc94b-129d-4de7-8e57-8fc5dcba7d9f
+source-git-commit: ca9a07354ff8316f531840a42d6ecdda5c072b9b
+workflow-type: ht
 source-wordcount: '196'
-ht-degree: 39%
+ht-degree: 100%
 
 ---
 
@@ -24,21 +25,21 @@ Obtenga información sobre la versión de [!UICONTROL Cloud Manager] 2025.1.0 en
 
 <!-- SAVE FOR FUTURE POSSIBLE USE No notable bugs or features for the September release of Cloud Manager. -->
 
-La fecha de lanzamiento de la versión 2025.1.0 de [!UICONTROL Cloud Manager] es el martes, 22 de enero de 2024.
+La fecha de lanzamiento de la versión 2025.1.0 de [!UICONTROL Cloud Manager] es el miércoles, 22 de enero de 2024.
 
-La próxima versión planificada es el viernes, 13 de febrero de 2025.
+La próxima versión planificada es el jueves, 13 de febrero de 2025.
 
 ## Novedades {#what-is-new}
 
-**Reglas de calidad del código - Actualización del cubo de Sonar:** El paso de calidad del código de Cloud Manager empezará a utilizar SonarQube Server 9.9 con la versión 2025.2.0 de Cloud Manager, programada para el jueves 13 de febrero de 2025.
+**Reglas de calidad de código - Actualización de Sonar Cube:** el paso de Calidad de código de Cloud Manager empezará a utilizar SonarQube Server 9.9 con la versión 2025.2.0 de Cloud Manager, programada para el jueves, 13 de febrero de 2025.
 
 Para prepararse, las reglas actualizadas de SonarQube ya están disponibles en [Reglas de calidad de código](/help/using/code-quality-testing.md#code-quality-testing-step).
 
-Puede &quot;comprobar antes&quot; las nuevas reglas configurando la siguiente variable de texto de canalización (véase la captura de pantalla siguiente):
+Puede “comprobar por adelantado” las nuevas reglas configurando la siguiente variable de texto de canalización (consulte la captura de pantalla siguiente):
 
 `CM_BUILD_IMAGE_OVERRIDE` = `self-service-build:sonar-99-upgrade-java17or21`
 
-Además, establezca la siguiente variable para asegurarse de que el paso de calidad del código se ejecuta para la misma confirmación (normalmente se omite para el mismo `commitId`):
+Además, establezca la siguiente variable para asegurarse de que el paso de calidad de código se ejecuta para la misma confirmación (normalmente se omite para el mismo `commitId`):
 
 `CM_DISABLE_BUILD_REUSE` = `true`
 
