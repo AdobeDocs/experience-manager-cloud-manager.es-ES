@@ -2,10 +2,10 @@
 title: Navegación por la IU de Cloud Manager
 description: Descubra cómo está organizada la IU de Cloud Manager y cómo navegar para administrar sus programas y entornos.
 exl-id: 9c1545ce-1c6d-417f-a6f4-fe53caef3433
-source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
-workflow-type: ht
-source-wordcount: '1435'
-ht-degree: 100%
+source-git-commit: 53fb666ab6caff7a697d7f1942ce25f2bf27a2ce
+workflow-type: tm+mt
+source-wordcount: '1439'
+ht-degree: 96%
 
 ---
 
@@ -52,11 +52,11 @@ El primero es el encabezado de Cloud Manager. El encabezado se mantiene a medida
 
 ![El encabezado de Experience Cloud](assets/experience-cloud-header.png)
 
-1. El icono de hamburguesa de la izquierda del encabezado es un menú desplegable que proporciona acceso a las pestañas de partes específicas de un programa individual. Según el contexto, también le permite cambiar entre el tablero de licencias y la consola **[Mis programas](#my-programs-console)**.
+1. El icono ![Mostrar menú, hamburguesa](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) en el lado izquierdo del encabezado es un menú desplegable que proporciona acceso a pestañas para partes específicas de un programa individual. Según el contexto, también le permite cambiar entre el tablero de licencias y la consola **[Mis programas](#my-programs-console)**.
    * El tablero de licencias solo se aplica a programas de AEM as a Cloud Service, no de AMS.
    * Para determinar el tipo de servicio que tiene su programa (AMS o AEMaaCS), consulte la [sección Tarjetas de programa](#program-cards) de este documento.
 1. El botón Cloud Manager le devuelve a la consola Mis programas de Cloud Manager independientemente de dónde se encuentre en Cloud Manager.
-1. Haga clic en el botón Comentarios para proporcionar comentarios a Adobe sobre Cloud Manager.
+1. Haga clic en **Comentarios** para proporcionar comentarios a Adobe sobre Cloud Manager.
 1. El selector de organización muestra la organización en la que está conectado actualmente (en este ejemplo, Foundation Internal). Haga clic para cambiar a otra organización si su Adobe ID está asociado a varias.
 1. Al hacer clic en el conmutador de soluciones, puede ir rápidamente a otras soluciones de Experience Cloud.
 1. El icono de ayuda proporciona acceso rápido a los recursos de aprendizaje y asistencia.
@@ -123,7 +123,7 @@ El icono de información también permite acceder rápidamente a la información
 
 ![Información](assets/information-view.png)
 
-El icono de puntos suspensivos le permite acceder a acciones adicionales a realizar en el programa.
+El icono ![Más, puntos suspensivos](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) le proporciona acceso a acciones adicionales que puede realizar en el programa.
 
 ![Botón de puntos suspensivos para programas](assets/program-ellipsis.png)
 

@@ -1,21 +1,21 @@
 ---
-title: Canalizaciones de solo fase y de producción
+title: 'Canalizaciones solo de fase y solo de producción: pionero'
 description: Descubra cómo puede dividir las implementaciones de fase y producción mediante canalizaciones dedicadas.
 exl-id: b7dd0021-d346-464a-a49e-72864b01cce3
-source-git-commit: 03f7429fd2c4a6dd4c8ae3228eff9c8cdab1ded8
-workflow-type: ht
-source-wordcount: '932'
-ht-degree: 100%
+source-git-commit: 2c6f5692ffa31e02d7338e68063d0c1c03a0c73b
+workflow-type: tm+mt
+source-wordcount: '936'
+ht-degree: 98%
 
 ---
 
-# Canalizaciones de solo fase y de producción {#stage-prod-only}
+# Canalizaciones solo de fase y de producción (pionero) {#stage-prod-only}
 
 Descubra cómo puede dividir las implementaciones de fase y producción mediante canalizaciones dedicadas.
 
 >[!NOTE]
 >
->Esta funcionalidad solo está disponible para [el programa de clientes pioneros](/help/release-notes/current.md#early-adoption).
+>Esta funcionalidad solo está disponible para [el programa de clientes pioneros](/help/release-notes/2024/2024-8-0.md).
 
 ## Información general {#overview}
 
@@ -116,3 +116,4 @@ Si no existe ninguna canalización de solo producción, se le solicitará que cr
 Para las canalizaciones solo de producción, asegúrese de identificar los artefactos de origen que desea implementar en producción. Estos detalles se encuentran en el paso **Preparación de artefactos**. Puede navegar a esas ejecuciones para obtener más detalles y registros.
 
 ![Detalles del artefacto](/help/assets/configure-pipelines/prod-only-pipeline-run.png)
+

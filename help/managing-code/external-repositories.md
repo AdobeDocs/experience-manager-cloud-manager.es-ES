@@ -1,11 +1,11 @@
 ---
-title: Añadir repositorios externos en Cloud Manager (primeros usuarios)
+title: 'Adición de repositorios externos en Cloud Manager: usuario que los adoptó por primera vez'
 description: Obtenga información sobre cómo añadir un repositorio administrado a Adobe en Cloud Manager. Cloud Manager admite la integración con repositorios de GitHub, GitLab y Bitbucket.
 exl-id: 4500cacc-5e27-4bbb-b8f6-5144dac7e6da
-source-git-commit: e7e2268f866105970e02d4bc54c46613749e5ac0
-workflow-type: ht
-source-wordcount: '0'
-ht-degree: 100%
+source-git-commit: 58cdebf819f2737be5d8e129ff5b9783888f3c21
+workflow-type: tm+mt
+source-wordcount: '715'
+ht-degree: 98%
 
 ---
 
@@ -63,7 +63,7 @@ La configuración de un repositorio externo en Cloud Manager consta de tres paso
    | --- | --- |
    | **Usar token de acceso existente** | Si ya ha proporcionado un token de acceso al repositorio para su organización y tiene acceso a varios repositorios, puede seleccionar un token existente. Utilice la lista desplegable **Nombre de token** para elegir el token que desea aplicar al repositorio. De lo contrario, añada un nuevo token de acceso. |
    | **Añadir nuevo token de acceso** | **Tipo de repositorio: GitHub**<br>• En el campo de texto **Nombre de token**, escriba un nombre para el token de acceso que va a crear.<br>• Cree un token de acceso personal siguiendo las instrucciones de la [documentación de GitHub](https://docs.github.com/es/enterprise-server@3.14/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens).<br>• Permisos necesarios:<br> •  `Read access to metadata`.<br>  • `Read and write access to code and pull requests`.<br>• En el campo **Token de acceso**, pegue el token que acaba de crear. |
-   |  | **Tipo de repositorio: GitLab**<br>•  En el campo de texto **Nombre de token**, escriba un nombre para el token de acceso que va a crear.<br>• Cree un token de acceso personal siguiendo las instrucciones de la [documentación de GitLab](https://docs.gitlab.com/ee/user/profile/personal_access_tokens.html?lang=es).<br>• Permisos necesarios:<br>  • `api`<br>  • `read_api`<br>  • `read_repository`<br>  • `write_repository`<br>• En el campo **Token de acceso**, pegue el token que acaba de crear. |
+   |  | **Tipo de repositorio: GitLab**<br>•  En el campo de texto **Nombre de token**, escriba un nombre para el token de acceso que va a crear.<br>• Cree un token de acceso personal siguiendo las instrucciones de la [documentación de GitLab](https://docs.gitlab.com/user/profile/personal_access_tokens/).<br>• Permisos necesarios:<br>  • `api`<br>  • `read_api`<br>  • `read_repository`<br>  • `write_repository`<br>• En el campo **Token de acceso**, pegue el token que acaba de crear. |
    |  | **Tipo de repositorio: Bitbucket**<br>· En el campo de texto **Nombre de token**, escriba un nombre para el token de acceso que va a crear.<br>• Cree un token de acceso al repositorio mediante la [documentación de Bitbucket](https://support.atlassian.com/bitbucket-cloud/docs/create-a-repository-access-token/).<br>• Permisos necesarios:<br>• `Read and write access to code and pull requests`. |
 
    >[!NOTE]

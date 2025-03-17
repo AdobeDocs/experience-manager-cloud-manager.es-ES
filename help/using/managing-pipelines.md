@@ -2,10 +2,10 @@
 title: Administrar canalizaciones
 description: Aprenda a administrar las canalizaciones existentes, así como su edición, ejecución y eliminación.
 exl-id: e36420d2-57c5-4375-99fb-dd47c1c8bffd
-source-git-commit: 9d910e1b1a4aad000a8389ddc22ce380bbccd4ef
-workflow-type: ht
-source-wordcount: '840'
-ht-degree: 100%
+source-git-commit: 58cdebf819f2737be5d8e129ff5b9783888f3c21
+workflow-type: tm+mt
+source-wordcount: '845'
+ht-degree: 73%
 
 ---
 
@@ -20,7 +20,7 @@ La tarjeta **Canalizaciones** de la página **Información general del programa*
 
 ![Tarjeta de canalización en Cloud Manager](/help/assets/configure-pipelines/pipelines-card.png)
 
-Al hacer clic en el botón de los tres puntos situado junto a cada canalización, puede realizar las siguientes acciones:
+Al hacer clic en el icono ![Más, puntos suspensivos](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) junto a cada canalización, puede realizar las siguientes acciones:
 
 * [Ejecutar la canalización](#running-pipelines). 
 * [Editar la canalización](#editing-pipelines).
@@ -70,45 +70,56 @@ Hacer clic en **Ver detalles** le llevará a los [detalles de la ejecución de l
 
 1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización y programa adecuados.
 1. Vaya a la tarjeta **Canalizaciones** de la página **Información general del programa**.
-1. Haga clic en el botón de los tres puntos situado junto a la canalización que ejecuta y, a continuación, en el menú, seleccione **Ejecutar**.
+1. Haga clic en el icono ![Más, puntos suspensivos](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) junto a la canalización que ejecuta y, a continuación, haga clic en **Ejecutar**.
 
    La columna Estado indica cuándo comienza la ejecución de la canalización.
 
-   Para ver los detalles de la ejecución, vuelva a hacer clic en el botón de los tres puntos y seleccione **[Ver detalles](#view-details)**.
+   Para ver los detalles de la ejecución, vuelva a hacer clic en ![Más icono, puntos suspensivos](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) y haga clic en **[Ver detalles](#view-details)**.
 
-   Según el tipo de canalización, puede cancelar la ejecución si hace clic de nuevo en el botón de los tres puntos y selecciona **Cancelar**.
+   Según el tipo de canalización, es posible que pueda cancelar la ejecución si hace clic en ![Más iconos, puntos suspensivos](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) de nuevo y hace clic en **Cancelar**.
 
 ## Editar canalizaciones {#editing-pipelines}
 
+No se puede editar una canalización que se esté ejecutando.
+
+**Para editar canalizaciones:**
+
 1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización y programa adecuados.
 
-1. Vaya a la tarjeta **Canalizaciones** de la página **Información general del programa** y haga clic en el botón de puntos suspensivos situado junto a la canalización que quiere editar. A continuación, seleccione **Editar** en el menú.
+1. Desde la página **Resumen del programa**, vaya a la tarjeta **Canalizaciones**.
 
-1. Aparecerá el cuadro de diálogo **Editar canalización de producción** o **Editar canalización que no sea de producción**. Puede editar los mismos detalles introducidos durante la creación de la canalización.
+1. Haga clic en el icono ![Más, puntos suspensivos](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) junto a la canalización que desee editar y, a continuación, haga clic en **Editar**.
+
+1. En el cuadro de diálogo **Editar canalización de producción** o **Editar canalización que no sea de producción**, puede editar los mismos detalles que ingresó durante la creación de la canalización.
 
    Consulte [Configuración de canalizaciones de producción](/help/using/production-pipelines.md) y [Configuración de canalizaciones que no son de producción](/help/using/non-production-pipelines.md) para obtener detalles sobre los campos y las opciones de configuración disponibles para las canalizaciones.
 
-1. Haga clic en **Actualizar** cuando haya terminado.
-
->[!NOTE]
->
->No se puede editar una canalización en ejecución.
+1. Cuando haya terminado, haga clic en **Actualizar**.
 
 ## Eliminar canalizaciones {#deleting-pipelines}
 
-1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización y programa adecuados.
+No se puede eliminar una canalización en ejecución.
 
-1. Vaya a la tarjeta **Canalizaciones** de la página **Información general del programa** y haga clic en el botón de puntos suspensivos situado junto a la canalización que quiere editar. A continuación, seleccione **Eliminar** en el menú.
-
->[!NOTE]
->
->No se puede eliminar una canalización en ejecución.
-
-## Ver detalles {#view-details}
+**Para eliminar canalizaciones:**
 
 1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización y programa adecuados.
 
-1. Vaya a la tarjeta **Canalizaciones** de la página **Información general del programa** y haga clic en el botón de puntos suspensivos situado junto a la canalización que quiere editar. A continuación, seleccione **Ver detalles** en el menú.
+1. Desde la página **Resumen del programa**, vaya a la tarjeta **Canalizaciones**.
+
+1. Haga clic en el icono ![Más, puntos suspensivos](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) junto a la canalización que ejecuta y, a continuación, haga clic en **Eliminar**.
+
+
+## Ver detalles de canalización {#view-details}
+
+Solo puede ver los detalles de una canalización que se esté ejecutando o que se haya ejecutado al menos una vez.
+
+**Para ver detalles de canalización:**
+
+1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización y programa adecuados.
+
+1. Desde la página **Resumen del programa**, vaya a la tarjeta **Canalizaciones**.
+
+1. Haga clic en ![Icono de más, puntos suspensivos](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) junto a la canalización que ejecuta y, a continuación, haga clic en **Ver detalles**.
 
 1. Se le redirigirá a la página de detalles de la canalización en ejecución.
 
@@ -126,15 +137,10 @@ Haga clic o pulse en el vínculo **Ver detalles** para mostrar la sección **Dur
 
 ![Duración](/help/assets/configure-pipelines/duration.png)
 
-Si la canalización contenía un paso **Escaneado de códigos** que ha planteado problemas, puede pulsar o hacer clic en el botón **Descargar detalles** para ver una lista de las [pruebas de calidad del código](/help/using/code-quality-testing.md) que no se han superado.
+Si la canalización contenía un paso de **escaneo de código** que generó problemas, puede hacer clic en **Descargar detalles** para ver una lista de [pruebas de calidad de código](/help/using/code-quality-testing.md) que no se superaron.
 
 ![Problemas de calidad del código](assets/managing-pipelines-code-quality-issues.png)
 
 La columna de **Ubicación de archivos del proyecto** está disponible en el archivo CSV para indicar la ubicación del código infractor. Esta columna es la ruta relativa al proyecto, mientras que la columna **Ubicación del archivo** es generada por Maven.
 
 ![Detalles del problema de análisis de código del proyecto](assets/managing-pipelines-code-quality-details.png)
-
-
->[!NOTE]
->
->Solo puede ver los detalles de una canalización que se esté ejecutando o que se haya ejecutado al menos una vez.

@@ -7,10 +7,10 @@ user-guide-description: Aprenda a utilizar Cloud Manager para autoadministrar Ad
 feature-set: Experience Manager Cloud Manager, Experience Manager
 feature: Cloud Manager
 role: Admin
-source-git-commit: 31ae069c9e121963b4609af3f10ac08ab5539fb8
+source-git-commit: 58cdebf819f2737be5d8e129ff5b9783888f3c21
 workflow-type: tm+mt
-source-wordcount: '356'
-ht-degree: 99%
+source-wordcount: '364'
+ht-degree: 97%
 
 ---
 
@@ -52,6 +52,7 @@ ht-degree: 99%
    + [Prueba de calidad del código](/help/using/code-quality-testing.md)
    + [Administrar entornos](/help/using/managing-environments.md)
    + [Supervisar entornos](/help/using/monitoring-environments.md)
+   + [Actualizaciones de Service Pack para entornos de desarrollo (usuario que lo adoptó por primera vez)](/help/using/service-packs-environments.md)
    + [API de Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/)
    + [CLI de Cloud Manager](https://github.com/adobe/aio-cli-plugin-cloudmanager/blob/main/README.md)
    + [Notificaciones](/help/using/notifications.md)

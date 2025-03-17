@@ -2,10 +2,10 @@
 title: Supervisar entornos
 description: Obtenga información sobre cómo monitorizar los entornos en Cloud Manager.
 exl-id: 32886133-d6c0-4aed-8bb0-81b84f63e825
-source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
-workflow-type: ht
-source-wordcount: '910'
-ht-degree: 100%
+source-git-commit: 53fb666ab6caff7a697d7f1942ce25f2bf27a2ce
+workflow-type: tm+mt
+source-wordcount: '911'
+ht-degree: 98%
 
 ---
 
@@ -28,7 +28,7 @@ Adobe Managed Services establece los umbrales, que puede ver en [!UICONTROL Clou
 
 1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com) y seleccione la organización y programa adecuados.
 
-1. Haga clic en el botón de los tres puntos del programa que desea supervisar.
+1. Haga clic en ![icono Más, puntos suspensivos](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) del programa que desea supervisar.
 1. En el menú, bajo el encabezado **Administrar**, haga clic en **Mostrar supervisión** para abrir la página **Informes** que muestra información de supervisión del sistema.
 
    ![Configuración](/help/assets/first-timea1.png)
