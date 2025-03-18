@@ -1,8 +1,10 @@
 ---
 title: 'Actualizaciones de Service Pack para entornos de desarrollo: usuario que lo adoptó por anticipado'
 description: Descubra cómo ahora puede iniciar actualizaciones de Service Pack para entornos de desarrollo a través de la interfaz de usuario de Cloud Manager.
+hide: true
+hidefromtoc: true
 exl-id: 996a8eee-843f-45a6-8f7a-31ea405c2b32
-source-git-commit: 91691878a2c135cc9fe123c06afcf775a962a2e0
+source-git-commit: 55b33db1bf80f066b1a66bc87c0abeefa4771871
 workflow-type: tm+mt
 source-wordcount: '453'
 ht-degree: 3%
