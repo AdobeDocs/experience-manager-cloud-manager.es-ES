@@ -2,10 +2,10 @@
 title: Administrar canalizaciones
 description: Aprenda a administrar las canalizaciones existentes, así como su edición, ejecución y eliminación.
 exl-id: e36420d2-57c5-4375-99fb-dd47c1c8bffd
-source-git-commit: 58cdebf819f2737be5d8e129ff5b9783888f3c21
+source-git-commit: 91691878a2c135cc9fe123c06afcf775a962a2e0
 workflow-type: tm+mt
-source-wordcount: '845'
-ht-degree: 73%
+source-wordcount: '1054'
+ht-degree: 60%
 
 ---
 
@@ -66,7 +66,7 @@ Al hacer clic en el icono `i` se muestran los detalles sobre la ejecución de la
 
 Hacer clic en **Ver detalles** le llevará a los [detalles de la ejecución de la canalización](#view-details).
 
-## Ejecutar canalizaciones {#running-pipelines}
+## Ejecutar una canalización {#run-one-pipeline}
 
 1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización y programa adecuados.
 1. Vaya a la tarjeta **Canalizaciones** de la página **Información general del programa**.
@@ -77,6 +77,23 @@ Hacer clic en **Ver detalles** le llevará a los [detalles de la ejecución de l
    Para ver los detalles de la ejecución, vuelva a hacer clic en ![Más icono, puntos suspensivos](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) y haga clic en **[Ver detalles](#view-details)**.
 
    Según el tipo de canalización, es posible que pueda cancelar la ejecución si hace clic en ![Más iconos, puntos suspensivos](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) de nuevo y hace clic en **Cancelar**.
+
+## Ejecutar varias canalizaciones {#run-multiple-pipelines}
+
+Con Cloud Manager puede ejecutar varias canalizaciones simultáneamente, lo que mejora la eficacia de la implementación para los clientes de Adobe Managed Services (AMS). La función **Ejecutar selección** le permite seleccionar varias canalizaciones y almacenarlas en déclencheur para ejecutarlas a la vez. Reduce el esfuerzo manual de tener que ejecutar las canalizaciones individualmente y optimiza los flujos de trabajo de compilación e implementación.
+
+**Para ejecutar varias canalizaciones:**
+
+1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización y programa adecuados.
+1. En el menú del lado izquierdo, haga clic en ![Icono de flujo de trabajo ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg) **Canalizaciones**.
+1. En la tabla de la página **Canalización**, active las casillas de verificación situadas junto a las canalizaciones que desee ejecutar.
+Si es necesario, haga clic en ![Icono de filtro, canal](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg) **Filtros** para ordenar canalizaciones por entorno, tipo de código implementado o ambos.
+1. Cerca de la esquina superior derecha de la página, haga clic en **Ejecutar selección (x)**.
+1. En el cuadro de diálogo **Ejecutar canalizaciones seleccionadas (x)**, haga clic en **Ejecutar (x)**.
+
+   El botón **Ejecutar** refleja el número de canalizaciones que pueden continuar. Por ejemplo, puede que haya seleccionado cuatro canalizaciones, pero una ya se está ejecutando. O bien, ya no existe un entorno vinculado a una canalización seleccionada. En estos casos, el sistema se ajusta en consecuencia. El botón se actualiza a &quot;Ejecutar (3)&quot; para indicar que pueden continuar tres canalizaciones.
+
+1. Las canalizaciones comienzan a ejecutarse y su estado se actualiza en la lista **Canalizaciones**.
 
 ## Editar canalizaciones {#editing-pipelines}
 

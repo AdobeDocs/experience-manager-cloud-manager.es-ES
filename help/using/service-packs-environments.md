@@ -1,7 +1,8 @@
 ---
 title: 'Actualizaciones de Service Pack para entornos de desarrollo: usuario que lo adoptó por anticipado'
 description: Descubra cómo ahora puede iniciar actualizaciones de Service Pack para entornos de desarrollo a través de la interfaz de usuario de Cloud Manager.
-source-git-commit: 8da0e6cb4587bc7dfc79bec415ff3aeef2d12e3e
+exl-id: 996a8eee-843f-45a6-8f7a-31ea405c2b32
+source-git-commit: 91691878a2c135cc9fe123c06afcf775a962a2e0
 workflow-type: tm+mt
 source-wordcount: '453'
 ht-degree: 3%
@@ -14,7 +15,7 @@ Descubra cómo puede iniciar actualizaciones de Service Pack para entornos de de
 
 >[!NOTE]
 >
->Esta funcionalidad solo está disponible para [el programa de clientes pioneros](/help/release-notes/current.md).
+>Esta funcionalidad solo está disponible para [el programa de clientes pioneros](/help/release-notes/current.md#early-adoption).
 
 ## Información general {#service-pack-updates-overview}
 
@@ -91,5 +92,3 @@ Una vez finalizada la instalación, se requiere su aprobación (o rechazo) para 
 Se canceló la instalación del Service Pack y no se aplican cambios.
 
    ![Rechazo del Service Pack](/help/using/assets/service-pack-reject.png)
-
-
