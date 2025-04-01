@@ -6,7 +6,7 @@ exl-id: cc1dc94b-129d-4de7-8e57-8fc5dcba7d9f
 source-git-commit: 81894345cd4e0921f3734f6e09a82c192d20f9dd
 workflow-type: tm+mt
 source-wordcount: '150'
-ht-degree: 52%
+ht-degree: 100%
 
 ---
 
@@ -20,19 +20,19 @@ Consulte también las [notas de la versión actual de Adobe Experience Manager a
 
 ## Fechas de lanzamiento {#release-date}
 
-La fecha de lanzamiento de la versión 2025.3.0 de [!UICONTROL Cloud Manager] es el viernes, 13 de marzo de 2025.
+La fecha de lanzamiento de la versión 2025.3.0 de [!UICONTROL Cloud Manager] es el jueves, 13 de marzo de 2025.
 
-La próxima versión planificada es el viernes, 10 de abril de 2025.
+La próxima versión planificada es para el jueves, 10 de abril de 2025.
 
 ## Novedades {#what-is-new}
 
 * **Ejecutar varias canalizaciones**
 
-  La capacidad de ejecutar varias canalizaciones simultáneamente se ha introducido en la página Canalizaciones. Los usuarios deben seleccionar al menos una canalización, pero no más de diez. Cerca de la esquina superior derecha de la página Canalizaciones, haga clic en **Ejecutar seleccionados (x)**. Aparecerá un cuadro de diálogo modal que enumera cualquier canalización que no se pueda iniciar. Haga clic en **Ejecutar** para iniciar todas las canalizaciones válidas.
+  La capacidad de ejecutar varias canalizaciones simultáneamente se ha introducido en la página Canalizaciones. Los usuarios deben seleccionar al menos una canalización, pero no más de diez. Junto a la esquina superior derecha de la página Canalizaciones, haga clic en **Ejecutar seleccionadas (x)**. Aparecerá un cuadro de diálogo modal que lista cualquier canalización que no se pueda iniciar. Haga clic en **Ejecutar** para iniciar todas las canalizaciones válidas.
 
-  ![Ejecutar cuadro de diálogo de canalizaciones seleccionadas](/help/release-notes/assets/run-selected-pipelines.png)
+  ![Cuadro de diálogo Ejecutar canalizaciones seleccionadas](/help/release-notes/assets/run-selected-pipelines.png)
 
-  Ver también [Ejecutar varias canalizaciones](/help/using/managing-pipelines.md#run-multiple-pipelines)
+  Véase también [Ejecutar varias canalizaciones](/help/using/managing-pipelines.md#run-multiple-pipelines)
 
 
 
