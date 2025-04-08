@@ -2,10 +2,10 @@
 title: Reglas de calidad de código personalizadas
 description: Descubra los detalles específicos de las reglas de calidad de código personalizadas ejecutadas por Cloud Manager durante las pruebas de calidad del código. Estas reglas se basan en las prácticas recomendadas de AEM Engineering.
 exl-id: 7d118225-5826-434e-8869-01ee186e0754
-source-git-commit: c50eb54b5603b4370f2d7907a2194477dcc3ba21
-workflow-type: ht
-source-wordcount: '3523'
-ht-degree: 100%
+source-git-commit: 8388edb5510ed4583a7bc703f3781af03d976948
+workflow-type: tm+mt
+source-wordcount: '3644'
+ht-degree: 96%
 
 ---
 
@@ -883,14 +883,33 @@ AEM Cloud Service prohíbe la creación de definiciones de indexación que conte
 
 AEM Cloud Service prohíbe la creación de definiciones de indexación que contengan propiedades haystack.
 
-### La configuración de las definiciones de indexación no debe contener la propiedad: async-previous {#oakpal-indexing-async-previous-property}
+### La configuración de las definiciones de indexación no debe contener la propiedad: async-previous {#oakpal-indexing-unsupported-async-properties}
 
-* **Clave**: IndexAsyncPreviousCheck
+* **Clave**: IndexUnsupportedAsyncPropertiesCheck
 * **Tipo**: mejora
 * **Gravedad**: Menor
-* **Desde**: Versión 2025.2.0
+* **Desde**: Versión 2025.3.0
 
-AEM Cloud Service prohíbe la creación de definiciones de indexación que contengan la propiedad async-previous.
+AEM Cloud Service prohíbe la creación de definiciones de indexación con propiedades asíncronas no admitidas.
+
+### La configuración de las definiciones de indexación no debe tener la misma etiqueta en varios índices {#oakpal-indexing-same-tag-multiple-indexes}
+
+* **Clave**: SameTagInMultipleIndexes
+* **Tipo**: mejora
+* **Gravedad**: Menor
+* **Desde**: Versión 2025.3.0
+
+AEM Cloud Service prohíbe la creación de definiciones de indexación que contengan la misma etiqueta en varios índices.
+
+### La configuración de las definiciones de indexación no debe contener el reemplazo del modo para las rutas prohibidas {#oakpal-xml-mode-analysis}
+
+* **Clave**: FilterXmlModeAnalysis
+* **Tipo**: mejora
+* **Gravedad**: Principal
+* **Desde**: Versión 2025.4.0
+
+El uso del modo &quot;replace&quot; en el almacén de archivos no está permitido para las rutas debajo de /content; no debe usarse para las rutas debajo de /etc y /var.
+El modo &quot;replace&quot; reemplazará todo el contenido ya existente en el repositorio con el proporcionado en el paquete de contenido y los paquetes que activan esta acción no deben formar parte de los paquetes implementados mediante Cloud Manager.
 
 ## Herramienta de optimización de Dispatcher {#dispatcher-optimization-tool-rules}
 
