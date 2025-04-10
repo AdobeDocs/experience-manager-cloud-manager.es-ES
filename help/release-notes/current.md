@@ -1,47 +1,67 @@
 ---
-title: Notas de la versión 2025.3.0 de Cloud Manager
-description: Obtenga información sobre la versión de Cloud Manager 2025.3.0 en Adobe Managed Services.
+title: Notas de la versión 2025.4.0 de Cloud Manager
+description: Obtenga información sobre la versión de Cloud Manager 2025.4.0 en Adobe Managed Services.
 feature: Release Information
 exl-id: cc1dc94b-129d-4de7-8e57-8fc5dcba7d9f
-source-git-commit: 81894345cd4e0921f3734f6e09a82c192d20f9dd
+source-git-commit: 40d093ce7d6839fff4ba16f790c61b96cb88dda5
 workflow-type: tm+mt
-source-wordcount: '150'
-ht-degree: 100%
+source-wordcount: '380'
+ht-degree: 92%
 
 ---
 
-# Notas de la versión de Cloud Manager 2025.3.0 en Adobe Managed Services {#release-notes}
+# Notas de la versión de Cloud Manager 2025.4.0 en Adobe Managed Services {#release-notes}
 
-<!-- RELEASE WIKI  https://wiki.corp.adobe.com/display/DMSArchitecture/Cloud+Manager+2025.02.0+Release -->
+<!-- RELEASE WIKI  https://wiki.corp.adobe.com/display/DMSArchitecture/Cloud+Manager+2025.04.0+Release -->
 
-Obtenga información sobre la versión de [!UICONTROL Cloud Manager] 2025.3.0 en Adobe Managed Services.
+Obtenga información sobre la versión de [!UICONTROL Cloud Manager] 2025.4.0 en Adobe Managed Services.
 
 Consulte también las [notas de la versión actual de Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/release-notes/home).
 
 ## Fechas de lanzamiento {#release-date}
 
-La fecha de lanzamiento de la versión 2025.3.0 de [!UICONTROL Cloud Manager] es el jueves, 13 de marzo de 2025.
+La fecha de lanzamiento de la versión 2025.4.0 de [!UICONTROL Cloud Manager] es el viernes, 10 de abril de 2025.
 
-La próxima versión planificada es para el jueves, 10 de abril de 2025.
+La próxima versión planificada es para el viernes, 08 de mayo de 2025.
 
-## Novedades {#what-is-new}
+<!--
+## What's new {#what-is-new}
 
-* **Ejecutar varias canalizaciones**
+* 
+-->
 
-  La capacidad de ejecutar varias canalizaciones simultáneamente se ha introducido en la página Canalizaciones. Los usuarios deben seleccionar al menos una canalización, pero no más de diez. Junto a la esquina superior derecha de la página Canalizaciones, haga clic en **Ejecutar seleccionadas (x)**. Aparecerá un cuadro de diálogo modal que lista cualquier canalización que no se pueda iniciar. Haga clic en **Ejecutar** para iniciar todas las canalizaciones válidas.
 
-  ![Cuadro de diálogo Ejecutar canalizaciones seleccionadas](/help/release-notes/assets/run-selected-pipelines.png)
+## Programa para primeros usuarios {#early-adoption}
 
-  Véase también [Ejecutar varias canalizaciones](/help/using/managing-pipelines.md#run-multiple-pipelines)
+Participe en el programa de adopción anticipada de Cloud Manager para obtener acceso exclusivo a las próximas funciones antes de su lanzamiento general.
+
+Actualmente están disponibles las siguientes oportunidades de adopción temprana:
+
+### Usar su propio Git: ahora se admiten GitLab y Bitbucket {#gitlab-bitbucket}
+
+La función **Bring Your Own Git** se ha ampliado para incluir compatibilidad con repositorios externos, como GitLab y Bitbucket. Esta nueva compatibilidad se suma a la compatibilidad ya existente con repositorios de GitHub privados y de empresa. Al añadir estos nuevos repositorios, también puede vincularlos directamente a sus canalizaciones. Puede alojar estos repositorios en plataformas públicas en la nube o dentro de su infraestructura o nube privada. Esta integración también elimina la necesidad de sincronización constante del código con el repositorio de Adobe y proporciona la capacidad de validar las solicitudes de extracción antes de combinarlas en una rama principal.
+
+Las canalizaciones que usan repositorios externos (excepto las alojadas en GitHub) y el **Activador de la implementación** establecido en **Cambios en Git** ahora se inician automáticamente.
+
+Consulte [Adición de repositorios externos en Cloud Manager](/help/managing-code/external-repositories.md).
+
+![Cuadro de diálogo Añadir repositorio](/help/release-notes/assets/repositories-add-release-notes.png)
+
+>[!NOTE]
+>
+>Actualmente, las comprobaciones de calidad del código de las solicitudes de extracción listas para usar son exclusivas de los repositorios alojados en GitHub, pero se está trabajando en una actualización para ampliar esta funcionalidad a otros proveedores de Git.
+
+Si le interesa probar esta nueva función y compartir sus comentarios, envíe un correo electrónico a [Grp-CloudManager_BYOG@adobe.com](mailto:Grp-CloudManager_BYOG@adobe.com) desde su dirección de correo electrónico asociada a su Adobe ID. Asegúrese de incluir qué plataforma Git desea utilizar y si se encuentra en una estructura de repositorio privado/público o de empresa.
+
+### Canalizaciones solo de fase y de producción {#staging-production-only-pipelines}
+
+Adobe se complace en presentar la compatibilidad con [canalizaciones solo de fase y solo de producción](/help/using/stage-prod-only.md). Esta nueva función le permite dividir las canalizaciones de implementación de producción de pila completa en implementaciones más pequeñas y especializadas.
+
+Si le interesa probar esta nueva funcionalidad y compartir sus comentarios, envíe un correo electrónico a [ Grp-cloudmanager_splitpipelines@adobe.com](mailto:Grp-cloudmanager_splitpipelines@adobe.com) desde su dirección de correo electrónico asociada a su Adobe ID.
 
 
 
 <!--
-
-## Early adoption program {#early-adoption}
-
-Be a part of Cloud Manager's early adoption program and have a chance to test upcoming features.
-
 ### Self-service Service Pack updates for AMS Cloud Manager customers 
 
 As part of the early adopters program, Adobe Managed Services Cloud Manager customers can now perform self-service service pack updates through the **Cloud Manager** user interface. This feature is currently available *only for development environments* and includes limited error reporting for failures.  
@@ -61,13 +81,14 @@ Once the process is complete, customers must **approve the execution** for the s
 If you are interested in testing this new feature and sharing your feedback, contact your Adobe Customer Success Engineer.
 
 See also [Service Pack Updates for Development Environments - Early Adopter](/help/using/service-packs-environments.md).
+-->
 
 
 
-## Bug fixes {#bug-fixes}
+## Correcciones de errores {#bug-fixes}
 
 * A
 
-Known Issues {#known-issues}
+Problemas conocidos {#known-issues}
 
-* A -->
+* A —>
