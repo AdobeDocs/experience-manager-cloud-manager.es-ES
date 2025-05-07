@@ -2,7 +2,7 @@
 title: Reglas de calidad de código personalizadas
 description: Descubra los detalles específicos de las reglas de calidad de código personalizadas ejecutadas por Cloud Manager durante las pruebas de calidad del código. Estas reglas se basan en las prácticas recomendadas de AEM Engineering.
 exl-id: 7d118225-5826-434e-8869-01ee186e0754
-source-git-commit: 8388edb5510ed4583a7bc703f3781af03d976948
+source-git-commit: 54987d6ccd8c31dab677d90b40466c458743f936
 workflow-type: tm+mt
 source-wordcount: '3644'
 ht-degree: 96%
@@ -801,7 +801,7 @@ AEM Cloud Service prohíbe que las definiciones de índice de búsqueda personal
 
 * **Clave**: IndexNotUnderUIContent
 * **Tipo**: mejora
-* **Gravedad**: Menor
+* **Gravedad**: Principal
 * **Desde**: Versión 2024.6.0
 
 AEM Cloud Service prohíbe que las definiciones de índice de búsqueda personalizadas (nodos de tipo `oak:QueryIndexDefinition`) se implementen en el paquete de contenido de la interfaz de usuario.
@@ -814,7 +814,7 @@ AEM Cloud Service prohíbe que las definiciones de índice de búsqueda personal
 
 * **Clave**: CustomFulltextIndexesOfTheDamAssetCheck
 * **Tipo**: mejora
-* **Gravedad**: Menor
+* **Gravedad**: Principal
 * **Desde**: Versión 2024.6.0
 
 AEM Cloud Service prohíbe que las definiciones de índice de texto completo personalizadas de tipo `damAssetLucene` lleven un prefijo distinto de `damAssetLucene`.
@@ -827,7 +827,7 @@ AEM Cloud Service prohíbe que las definiciones de índice de texto completo per
 
 * **Clave**: DuplicateNameProperty
 * **Tipo**: mejora
-* **Gravedad**: Menor
+* **Gravedad**: Principal
 * **Desde**: Versión 2024.6.0
 
 AEM Cloud Service prohíbe que las definiciones de índice de búsqueda personalizadas (es decir, los nodos de tipo `oak:QueryIndexDefinition`) contengan propiedades con el mismo nombre
@@ -840,7 +840,7 @@ AEM Cloud Service prohíbe que las definiciones de índice de búsqueda personal
 
 * **Clave**: RestrictIndexCustomization
 * **Tipo**: mejora
-* **Gravedad**: Menor
+* **Gravedad**: Principal
 * **Desde**: Versión 2024.6.0
 
 AEM Cloud Service prohíbe las modificaciones no autorizadas de los siguientes índices OOTB:
