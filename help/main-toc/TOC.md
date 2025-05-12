@@ -7,10 +7,10 @@ user-guide-description: Aprenda a utilizar Cloud Manager para autoadministrar Ad
 feature-set: Experience Manager Cloud Manager, Experience Manager
 feature: Cloud Manager
 role: Admin
-source-git-commit: 4c4ffeb689117620bd810f35d277f5ab20bda8d3
+source-git-commit: ecee095cfdf929e38823ace77f184db3108cab92
 workflow-type: tm+mt
-source-wordcount: '366'
-ht-degree: 97%
+source-wordcount: '368'
+ht-degree: 96%
 
 ---
 
@@ -36,7 +36,7 @@ ht-degree: 97%
    + [Primer inicio de sesión](/help/getting-started/first-time-login.md)
    + [Navegación](/help/getting-started/navigation.md)
    + [Configuración del programa](/help/getting-started/program-setup.md)
-   + Creación de un proyecto de AEM {#project-creation}
+   + Creación de proyectos de AEM {#project-creation}
       + [Uso del asistente](/help/getting-started/using-the-wizard.md)
       + [Configuración del proyecto](/help/getting-started/project-setup.md)
       + [El entorno de compilación](/help/getting-started/build-environment.md)
@@ -76,6 +76,7 @@ ht-degree: 97%
 + Notas de la versión {#release-notes}
    + [Actual](/help/release-notes/current.md)
    + 2025 {#rn-2025}
+      + [2025.4.0](/help/release-notes/2025/2025-4-0.md)
       + [2025.3.0](/help/release-notes/2025/2025-3-0.md)
       + [2025.2.0](/help/release-notes/2025/2025-2-0.md)
       + [2025.1.0](/help/release-notes/2025/2025-1-0.md)
