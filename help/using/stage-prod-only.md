@@ -1,22 +1,17 @@
 ---
-title: Canalizaciones de solo fase y de producción
+title: Dividir canalizaciones solo de fase y solo de producción
 description: Descubra cómo puede dividir las implementaciones de fase y producción mediante canalizaciones dedicadas.
-badge: label="Adoptador anticipado" type="Positive" url="/help/release-notes/current.md#staging-production-only-pipelines"
 exl-id: b7dd0021-d346-464a-a49e-72864b01cce3
-source-git-commit: b830c30bb6b2b99ef442577325a30de6b9953ec8
+source-git-commit: 35845e827b0a3fadfe2a55a2171b5e02100cf3eb
 workflow-type: tm+mt
-source-wordcount: '937'
-ht-degree: 99%
+source-wordcount: '924'
+ht-degree: 98%
 
 ---
 
-# Canalizaciones de solo fase y de producción {#stage-prod-only}
+# Dividir canalizaciones solo de fase y de producción {#stage-prod-only}
 
 Descubra cómo puede dividir las implementaciones de fase y producción mediante canalizaciones dedicadas.
-
->[!NOTE]
->
->Esta funcionalidad solo está disponible para [el programa de clientes pioneros](/help/release-notes/current.md#staging-production-only-pipelines).
 
 ## Información general {#overview}
 

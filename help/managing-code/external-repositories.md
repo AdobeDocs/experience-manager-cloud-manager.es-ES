@@ -3,9 +3,9 @@ title: Adición de repositorios externos en Cloud Manager
 description: Obtenga información sobre cómo añadir un repositorio administrado a Adobe en Cloud Manager. Cloud Manager admite la integración con repositorios de GitHub Enterprise, GitLab y Bitbucket.
 badge: label="Adoptador anticipado" type="Positive" url="/help/release-notes/current.md#gitlab-bitbucket"
 exl-id: 4500cacc-5e27-4bbb-b8f6-5144dac7e6da
-source-git-commit: b830c30bb6b2b99ef442577325a30de6b9953ec8
+source-git-commit: 83ba61364d5a492bd7236d7fcaeabf8cf904627a
 workflow-type: tm+mt
-source-wordcount: '1867'
+source-wordcount: '1871'
 ht-degree: 28%
 
 ---
@@ -74,6 +74,8 @@ La configuración de un repositorio externo en Cloud Manager consta de tres paso
    | **Añadir nuevo token de acceso** | **Tipo de repositorio: GitHub Enterprise**<br><ul><li> En el campo de texto **Nombre de token**, escriba un nombre para el token de acceso que está creando.<li>Cree un token de acceso personal siguiendo las instrucciones de la [documentación de GitHub](https://docs.github.com/es/enterprise-server@3.14/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens).<li>Permisos necesarios para el token de acceso personal (PAT) de GitHub Enterprise<br>Estos permisos garantizan que Cloud Manager pueda validar las solicitudes de extracción, administrar las comprobaciones de estado de las confirmaciones y acceder a los detalles necesarios del repositorio.<br>Cuando genere la PAT en GitHub Enterprise, asegúrese de que incluya los siguientes permisos de repositorio:<ul><li>Solicitud de extracción (lectura y escritura)<li>Confirmar estados (lectura y escritura)<li>Metadatos del repositorio (solo lectura)</li></li></ul></li></ul></ul></ul><ul><li>En el campo **Token de acceso**, pegue el token que acaba de crear. |
    | | **Tipo de repositorio: GitLab**<ul><li>En el campo de texto **Nombre de token**, escriba un nombre para el token de acceso que está creando.<li>Cree un token de acceso personal siguiendo las instrucciones de la [documentación de GitLab](https://docs.gitlab.com/user/profile/personal_access_tokens/).<li>Permisos necesarios para el token de acceso personal (PAT) de GitLab<br>Estos ámbitos permiten a Cloud Manager acceder a los datos del repositorio y a la información de usuario según sea necesario para la validación y la integración de ganchos web.<br>Cuando genere la PAT en GitLab, asegúrese de que incluya los siguientes ámbitos de token:<ul><li>api<li>read_user</li></li></ul></li></li></ul></ul></ul><ul><li>En el campo **Token de acceso**, pegue el token que acaba de crear. |
    | | **Tipo de repositorio: Bitbucket**<ul><li>En el campo de texto **Nombre de token**, escriba un nombre para el token de acceso que está creando.<li>Cree un token de acceso al repositorio mediante la [documentación de Bitbucket](https://support.atlassian.com/bitbucket-cloud/docs/create-a-repository-access-token/).<li>Permisos necesarios para el token de acceso personal (PAT) de Bitbucket<br>Estos permisos permiten a Cloud Manager acceder al contenido del repositorio, administrar solicitudes de extracción y configurar eventos de webhook o reaccionar a ellos.<br>Cuando cree la contraseña de la aplicación en Bitbucket, asegúrese de que incluya los siguientes permisos obligatorios para la contraseña de la aplicación:<ul><li>Repositorio (solo lectura)<li>Solicitudes de extracción (lectura y escritura)<li>Webhooks (leer y escribir)</li></li></ul></li></li></ul></ul></ul><ul><li>En el campo **Token de acceso**, pegue el token que acaba de crear. |
+
+   Consulte [Administrar tokens de acceso](/help/managing-code/manage-access-tokens.md).
 
    >[!NOTE]
    >

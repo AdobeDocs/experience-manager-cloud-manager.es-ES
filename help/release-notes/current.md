@@ -1,38 +1,51 @@
 ---
-title: Notas de la versión 2025.5.0 de Cloud Manager
+title: Notas de la versión 2025.6.0 de Cloud Manager
 description: Obtenga información sobre la versión de Cloud Manager 2025.5.0 en Adobe Managed Services.
 feature: Release Information
 exl-id: cc1dc94b-129d-4de7-8e57-8fc5dcba7d9f
-source-git-commit: 802844e15dc2b610e658e9fac4f0304f0ec878c6
+source-git-commit: 13e6f33e7ef92f4a27ae30c7550351b20d3e86ed
 workflow-type: tm+mt
-source-wordcount: '389'
-ht-degree: 96%
+source-wordcount: '560'
+ht-degree: 67%
 
 ---
 
-# Notas de la versión de Cloud Manager 2025.5.0 en Adobe Managed Services {#release-notes}
+# Notas de la versión de Cloud Manager 2025.6.0 en Adobe Managed Services {#release-notes}
 
 <!-- RELEASE WIKI  https://wiki.corp.adobe.com/display/DMSArchitecture/Cloud+Manager+2025.04.0+Release -->
 
-Obtenga información sobre la versión de [!UICONTROL Cloud Manager] 2025.5.0 en Adobe Managed Services.
+Obtenga información sobre la versión de [!UICONTROL Cloud Manager] 2025.6.0 en Adobe Managed Services.
 
 Consulte también las [notas de la versión actual de Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/release-notes/home).
 
 ## Fechas de lanzamiento {#release-date}
 
-La fecha de lanzamiento de la versión 2025.5.0 de [!UICONTROL Cloud Manager] es el viernes, 08 de mayo de 2025.
+La fecha de lanzamiento de la versión 2025.6.0 de [!UICONTROL Cloud Manager] es el viernes, 05 de junio de 2025.
 
-No hay nuevas funciones ni correcciones de errores significativas en la versión de mayo de Cloud Manager.
+<!-- There are no significant new features or bug fixes in the May Cloud Manager release. -->
 
-La próxima versión planificada es para el viernes, 05 de junio de 2025.
+La próxima versión planificada es para el viernes, 10 de julio de 2025.
 
 <!-- SAVE FOR FUTURE POSSIBLE USE There are no significant new features or bug fixes in the May Cloud Manager release. -->
 
-<!--
-## What's new {#what-is-new}
 
-* 
--->
+## Novedades {#what-is-new}
+
+* **(IU) canalizaciones solo de ensayo y solo de producción**
+
+  Cloud Manager ahora es compatible con canalizaciones solo de ensayo y de producción. Esta función le permite dividir implementaciones de producción de pila completa en canalizaciones más pequeñas y específicas para fines específicos. <!-- This feature went into GA from Early Adopter in the June 5, 2025 CM release -->
+
+  ![Agregar cuadro de diálogo de canalización que no sea de producción con el botón de opción Código de pila completa seleccionado y el entorno de ensayo seleccionado](/help/release-notes/assets/add-non-production-pipeline.png)
+
+  Consulte [Canalizaciones solo de fase y solo de producción](/help/using/stage-prod-only.md).
+
+* **(IU) Favoritos de canalización**
+
+  En esta versión, Cloud Manager introduce la capacidad de fijar canalizaciones favoritas, lo que permite marcar canalizaciones específicas como favoritas para que aparezcan en la parte superior de la lista en la página **Canalizaciones**. Esta mejora facilita la búsqueda y ejecución de las canalizaciones a las que se accede con frecuencia. <!-- CMGR-68293 -->
+
+  ![Canalizaciones marcadas como favoritas](/help/release-notes/assets/pipeline-favorites.png) *Dos canalizaciones marcadas como favoritas.*
+
+  Consulte [Marcar favoritos de canalización](/help/using/managing-pipelines.md#pipeline-favorites).
 
 
 ## Programa para primeros usuarios {#early-adoption}
@@ -40,6 +53,16 @@ La próxima versión planificada es para el viernes, 05 de junio de 2025.
 Participe en el programa para primeros usuarios de Cloud Manager para obtener acceso exclusivo a las próximas funciones antes de su lanzamiento general.
 
 Actualmente están disponibles las siguientes oportunidades para primeros usuarios:
+
+
+### Administrar tokens de acceso{#access-tokens}
+
+Utilice la función **Administrar tokens de acceso** en Cloud Manager para ver, cambiar el nombre y eliminar los tokens de acceso asociados con repositorios externos de Git propios, como GitHub Enterprise, GitLab, Bitbucket y Azure DevOps.
+
+Consulte [Administrar tokens de acceso](/help/managing-code/manage-access-tokens.md).
+
+Si le interesa probar esta nueva función y compartir sus comentarios, envíe un correo electrónico a [Grp-CloudManager_BYOG@adobe.com](mailto:Grp-CloudManager_BYOG@adobe.com) desde su dirección de correo electrónico asociada a su Adobe ID. Asegúrese de incluir qué plataforma Git desea utilizar y si se encuentra en una estructura de repositorio privado/público o de empresa.
+
 
 ### Usar su propio Git: ahora se admiten GitLab y Bitbucket {#gitlab-bitbucket}
 
@@ -57,18 +80,12 @@ Consulte [Adición de repositorios externos en Cloud Manager](/help/managing-cod
 
 Si le interesa probar esta nueva función y compartir sus comentarios, envíe un correo electrónico a [Grp-CloudManager_BYOG@adobe.com](mailto:Grp-CloudManager_BYOG@adobe.com) desde su dirección de correo electrónico asociada a su Adobe ID. Asegúrese de incluir qué plataforma Git desea utilizar y si se encuentra en una estructura de repositorio privado/público o de empresa.
 
-### Canalizaciones solo de fase y de producción {#staging-production-only-pipelines}
 
-Adobe se complace en presentar la compatibilidad con [canalizaciones solo de fase y solo de producción](/help/using/stage-prod-only.md). Esta nueva función le permite dividir las canalizaciones de implementación de producción de pila completa en implementaciones más pequeñas y especializadas.
+## Corrección de errores {#bug-fixes}
 
-Si le interesa probar esta nueva funcionalidad y compartir sus comentarios, envíe un correo electrónico a [ Grp-cloudmanager_splitpipelines@adobe.com](mailto:Grp-cloudmanager_splitpipelines@adobe.com) desde su dirección de correo electrónico asociada a su Adobe ID.
-
+* AEM Cloud Manager ahora asigna correctamente los errores de compilación de Maven causados por errores 409 (conflictos) al recuperar artefactos del cliente en un error causado por el cliente. Este cambio mejora los mensajes de error al distinguir entre errores internos y problemas relacionados con la configuración del entorno del cliente. <!-- CMGR-66673 -->
 
 <!--
-## Bug fixes {#bug-fixes}
-
-* A
-
 Known Issues {#known-issues}
 
 * A -->
