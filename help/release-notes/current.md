@@ -3,9 +3,9 @@ title: Notas de la versión 2025.6.0 de Cloud Manager
 description: Obtenga información sobre la versión de Cloud Manager 2025.5.0 en Adobe Managed Services.
 feature: Release Information
 exl-id: cc1dc94b-129d-4de7-8e57-8fc5dcba7d9f
-source-git-commit: 13e6f33e7ef92f4a27ae30c7550351b20d3e86ed
+source-git-commit: d0acd47ea6011dc5896d20d76ab0fcaa970df6ac
 workflow-type: tm+mt
-source-wordcount: '560'
+source-wordcount: '558'
 ht-degree: 67%
 
 ---
@@ -31,7 +31,7 @@ La próxima versión planificada es para el viernes, 10 de julio de 2025.
 
 ## Novedades {#what-is-new}
 
-* **(IU) canalizaciones solo de ensayo y solo de producción**
+* **Canalizaciones solo de ensayo y de producción**
 
   Cloud Manager ahora es compatible con canalizaciones solo de ensayo y de producción. Esta función le permite dividir implementaciones de producción de pila completa en canalizaciones más pequeñas y específicas para fines específicos. <!-- This feature went into GA from Early Adopter in the June 5, 2025 CM release -->
 
@@ -39,7 +39,7 @@ La próxima versión planificada es para el viernes, 10 de julio de 2025.
 
   Consulte [Canalizaciones solo de fase y solo de producción](/help/using/stage-prod-only.md).
 
-* **(IU) Favoritos de canalización**
+* **Favoritos de canalización**
 
   En esta versión, Cloud Manager introduce la capacidad de fijar canalizaciones favoritas, lo que permite marcar canalizaciones específicas como favoritas para que aparezcan en la parte superior de la lista en la página **Canalizaciones**. Esta mejora facilita la búsqueda y ejecución de las canalizaciones a las que se accede con frecuencia. <!-- CMGR-68293 -->
 
