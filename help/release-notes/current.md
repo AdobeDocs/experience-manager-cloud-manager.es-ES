@@ -3,10 +3,10 @@ title: Notas de la versión 2025.6.0 de Cloud Manager
 description: Obtenga información sobre la versión de Cloud Manager 2025.5.0 en Adobe Managed Services.
 feature: Release Information
 exl-id: cc1dc94b-129d-4de7-8e57-8fc5dcba7d9f
-source-git-commit: d0acd47ea6011dc5896d20d76ab0fcaa970df6ac
+source-git-commit: b2a14280e84bb934053968b0e93e33d30fb6086a
 workflow-type: tm+mt
 source-wordcount: '558'
-ht-degree: 67%
+ht-degree: 62%
 
 ---
 
@@ -33,7 +33,7 @@ La próxima versión planificada es para el viernes, 10 de julio de 2025.
 
 * **Canalizaciones solo de ensayo y de producción**
 
-  Cloud Manager ahora es compatible con canalizaciones solo de ensayo y de producción. Esta función le permite dividir implementaciones de producción de pila completa en canalizaciones más pequeñas y específicas para fines específicos. <!-- This feature went into GA from Early Adopter in the June 5, 2025 CM release -->
+  Cloud Manager ahora es compatible con canalizaciones solo de ensayo y de producción. Esta función le permite dividir implementaciones de producción de pila completa en canalizaciones más pequeñas y específicas para fines específicos. <!-- This feature went into GA from Private beta in the June 5, 2025 CM release -->
 
   ![Agregar cuadro de diálogo de canalización que no sea de producción con el botón de opción Código de pila completa seleccionado y el entorno de ensayo seleccionado](/help/release-notes/assets/add-non-production-pipeline.png)
 
@@ -48,11 +48,11 @@ La próxima versión planificada es para el viernes, 10 de julio de 2025.
   Consulte [Marcar favoritos de canalización](/help/using/managing-pipelines.md#pipeline-favorites).
 
 
-## Programa para primeros usuarios {#early-adoption}
+## Programa beta privado {#beta-program}
 
-Participe en el programa para primeros usuarios de Cloud Manager para obtener acceso exclusivo a las próximas funciones antes de su lanzamiento general.
+Participe en el programa beta privado de Cloud Manager para obtener acceso exclusivo a las próximas funciones antes de su lanzamiento general.
 
-Actualmente están disponibles las siguientes oportunidades para primeros usuarios:
+Actualmente están disponibles las siguientes oportunidades de beta privada:
 
 
 ### Administrar tokens de acceso{#access-tokens}

@@ -1,12 +1,12 @@
 ---
 title: Adición de repositorios externos en Cloud Manager
 description: Obtenga información sobre cómo añadir un repositorio administrado a Adobe en Cloud Manager. Cloud Manager admite la integración con repositorios de GitHub Enterprise, GitLab y Bitbucket.
-badge: label="Adoptador anticipado" type="Positive" url="/help/release-notes/current.md#gitlab-bitbucket"
+badge: label="Beta privada" type="Positive" url="/help/release-notes/current.md#gitlab-bitbucket"
 exl-id: 4500cacc-5e27-4bbb-b8f6-5144dac7e6da
-source-git-commit: 83ba61364d5a492bd7236d7fcaeabf8cf904627a
+source-git-commit: b2a14280e84bb934053968b0e93e33d30fb6086a
 workflow-type: tm+mt
 source-wordcount: '1871'
-ht-degree: 28%
+ht-degree: 27%
 
 ---
 
@@ -16,7 +16,7 @@ Obtenga información sobre cómo añadir un repositorio administrado a Adobe en 
 
 >[!NOTE]
 >
->Las funciones descritas en este artículo solo están disponibles a través del programa de adopción temprana. Para obtener más información y registrarse como uno de los primeros usuarios, consulte [Traer su propio Git](/help/release-notes/current.md#gitlab-bitbucket).
+>Las funciones descritas en este artículo solo están disponibles a través del programa beta privado. Para obtener más información y registrarse en la versión beta privada, consulte [Traer su propio Git](/help/release-notes/current.md#gitlab-bitbucket).
 
 ## Configurar un repositorio externo
 
@@ -79,7 +79,7 @@ La configuración de un repositorio externo en Cloud Manager consta de tres paso
 
    >[!NOTE]
    >
-   >La característica **Añadir nuevo token de acceso** se encuentra actualmente en la fase para primeros usuarios. Se están planificando funciones adicionales. Como resultado, los permisos necesarios para los tokens de acceso pueden cambiar. Además, la interfaz de usuario para administrar tokens se puede actualizar, lo que incluye potencialmente características como las fechas de caducidad de los tokens. Y comprobaciones automatizadas para garantizar que los tokens vinculados a repositorios siguen siendo válidos.
+   >La característica **Agregar nuevo token de acceso** se encuentra actualmente en la fase beta privada. Se están planificando funciones adicionales. Como resultado, los permisos necesarios para los tokens de acceso pueden cambiar. Además, la interfaz de usuario para administrar tokens se puede actualizar, lo que incluye potencialmente características como las fechas de caducidad de los tokens. Y comprobaciones automatizadas para garantizar que los tokens vinculados a repositorios siguen siendo válidos.
 
 1. Haga clic en **Validar**.
 

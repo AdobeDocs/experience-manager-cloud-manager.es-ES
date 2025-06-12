@@ -1,23 +1,23 @@
 ---
-title: 'Actualizaciones de Service Pack para entornos de desarrollo: usuario que lo adoptó por anticipado'
+title: 'Actualizaciones de Service Pack para entornos de desarrollo: beta privada'
 description: Descubra cómo ahora puede iniciar actualizaciones de Service Pack para entornos de desarrollo a través de la interfaz de usuario de Cloud Manager.
 hide: true
 hidefromtoc: true
 exl-id: 996a8eee-843f-45a6-8f7a-31ea405c2b32
-source-git-commit: 55b33db1bf80f066b1a66bc87c0abeefa4771871
+source-git-commit: b2a14280e84bb934053968b0e93e33d30fb6086a
 workflow-type: tm+mt
 source-wordcount: '453'
-ht-degree: 3%
+ht-degree: 1%
 
 ---
 
-# Actualizaciones de Service Pack para entornos de desarrollo (usuario que lo adoptó por anticipado) {#stage-prod-only}
+# Actualizaciones de Service Pack para entornos de desarrollo (beta privada) {#stage-prod-only}
 
 Descubra cómo puede iniciar actualizaciones de Service Pack para entornos de desarrollo a través de la interfaz de usuario de Cloud Manager.
 
 >[!NOTE]
 >
->Esta funcionalidad solo está disponible para [el programa de clientes pioneros](/help/release-notes/current.md#early-adoption).
+>Esta característica solo está disponible para [el programa beta privado](/help/release-notes/current.md#beta-program).
 
 ## Información general {#service-pack-updates-overview}
 
