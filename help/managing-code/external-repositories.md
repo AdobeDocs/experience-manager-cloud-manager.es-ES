@@ -3,9 +3,9 @@ title: Adición de repositorios externos en Cloud Manager
 description: Obtenga información sobre cómo añadir un repositorio administrado a Adobe en Cloud Manager. Cloud Manager admite la integración con repositorios de GitHub Enterprise, GitLab y Bitbucket.
 badge: label="Beta privada" type="Positive" url="/help/release-notes/current.md#gitlab-bitbucket"
 exl-id: 4500cacc-5e27-4bbb-b8f6-5144dac7e6da
-source-git-commit: b2a14280e84bb934053968b0e93e33d30fb6086a
+source-git-commit: dfdbc66c6a447d47d669eb84e6ddf8dca86fc632
 workflow-type: tm+mt
-source-wordcount: '1871'
+source-wordcount: '1864'
 ht-degree: 27%
 
 ---
@@ -23,8 +23,9 @@ Obtenga información sobre cómo añadir un repositorio administrado a Adobe en 
 La configuración de un repositorio externo en Cloud Manager consta de tres pasos:
 
 1. [Añada un repositorio externo](#add-external-repo) a un programa seleccionado.
-1. Proporcione un token de acceso al repositorio externo.
-1. Valide la propiedad del repositorio privado de GitHub.
+1. [Vincule un repositorio externo validado a una canalización](#validate-ext-repo).
+<!-- 1. Provide an access token to the external repository.
+1. Validate ownership of the private GitHub repository. -->
 1. [Configurar un webhook](#configure-webhook) en un repositorio externo.
 
 
