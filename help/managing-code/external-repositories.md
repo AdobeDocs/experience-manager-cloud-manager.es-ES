@@ -3,10 +3,10 @@ title: Adición de repositorios externos en Cloud Manager
 description: Obtenga información sobre cómo añadir un repositorio administrado a Adobe en Cloud Manager. Cloud Manager admite la integración con repositorios de GitHub Enterprise, GitLab y Bitbucket.
 badge: label="Beta privada" type="Positive" url="/help/release-notes/current.md#gitlab-bitbucket"
 exl-id: 4500cacc-5e27-4bbb-b8f6-5144dac7e6da
-source-git-commit: 06fa04f8a459885a20f2b626ccf5d648ccc5fb57
+source-git-commit: bacb4b6e79519e4fef4cf01e04154d492cc888e2
 workflow-type: tm+mt
-source-wordcount: '2150'
-ht-degree: 26%
+source-wordcount: '2035'
+ht-degree: 27%
 
 ---
 
@@ -63,6 +63,8 @@ La configuración de un repositorio externo en Cloud Manager consta de tres paso
    | **Descripción** | Opcional. Breve descripción del repositorio. |
 
 1. Seleccione **Guardar** para añadir el repositorio. 
+
+   Ahora, proporcione un token de acceso para validar la propiedad del repositorio externo.
 
 1. En el cuadro de diálogo **Validación de propiedad de repositorio privado**, proporcione un token de acceso para validar la propiedad del repositorio externo y así poder acceder a él y, a continuación, haga clic en **Validar**.
 
@@ -129,6 +131,7 @@ Consulte también [Administrar tokens de acceso](/help/managing-code/manage-acce
 >
 >Para obtener más información sobre la administración de repositorios en Cloud Manager, consulte el documento [Repositorios de Cloud Manager](/help/managing-code/managing-repositories.md).
 
+
 ## Configuración de un webhook para un repositorio externo {#configure-webhook}
 
 Cloud Manager permite configurar los enlaces web para los repositorios Git externos que haya añadido. Consulte [Agregar un repositorio externo](#add-ext-repo). Estos webhooks permiten que Cloud Manager reciba eventos relacionados con diferentes acciones dentro de su solución de proveedor de Git.
@@ -172,60 +175,44 @@ Pegue el secreto en un archivo de texto sin formato. El secreto copiado es neces
 
    Todos los detalles de la configuración del gancho web y los eventos necesarios para cada proveedor están disponibles en [Agregar un repositorio externo](#add-ext-repo). En el paso 8, consulte la tabla con pestañas.
 
+1. Busque la sección Configuración de **Webhook** de la solución.
+1. Pegue la dirección URL del webhook copiada anteriormente en el campo de texto URL.
+   1. Reemplace el parámetro de consulta `api_key` en la dirección URL del webhook por su propia clave de API real.
+
+      Para generar una clave de API, debe crear un proyecto de integración en Adobe Developer Console. Consulte [Creación de un proyecto de integración de API](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/create-api-integration/) para obtener información detallada.
+
+1. Pegue el secreto de webhook que copió anteriormente en el campo de texto **Secreto** (o **Clave secreta**, o **Token secreto**).
+1. Configure el webhook para enviar los eventos que requiere Cloud Manager. Utilice la siguiente tabla para determinar los eventos correctos para su proveedor de Git.
+
 >[!BEGINTABS]
 
 >[!TAB GitHub Enterprise]
 
-1. Busque la sección Configuración de **Webhook** de la solución.
-1. Pegue la dirección URL del webhook copiada anteriormente en el campo de texto URL.
-   1. Reemplace el parámetro de consulta `api_key` en la dirección URL del webhook por su propia clave de API real.
-
-      Para generar una clave de API, debe crear un proyecto de integración en Adobe Developer Console. Consulte [Creación de un proyecto de integración de API](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/create-api-integration/) para obtener información detallada.
-
-1. Pegue el secreto de webhook que copió anteriormente en el campo de texto **Secreto** (o **Clave secreta**, o **Token secreto**).
-1. Configure el webhook para enviar los eventos requeridos que espera Cloud Manager.
-
-   | Eventos de gancho web requeridos |
-   | --- |
-   | Estos eventos permiten que Cloud Manager responda a la actividad de GitHub, como la validación de solicitudes de extracción, los déclencheur basados en push para canalizaciones o la sincronización de código de Edge Delivery Services.<br>Asegúrese de que el gancho web esté configurado para el déclencheur en los siguientes eventos de gancho web necesarios:<ul><li>Solicitudes de extracción<li>Inserciones<li>Comentarios sobre problemas</li></li></li></ul></ul></ul> |
+    | Eventos de gancho web requeridos |
+    | — |
+    | Estos eventos permiten que Cloud Manager responda a la actividad de GitHub, como la validación de solicitudes de extracción, los déclencheur basados en push para canalizaciones o la sincronización de código de Edge Delivery Services.&lt;br>Asegúrese de que el webhook esté configurado para el déclencheur en los siguientes eventos de webhook necesarios:&lt;ul>&lt;li>Solicitudes de extracción&lt;li>Inserciones&lt;li>Comentarios del problema&lt;/li>&lt;/li>&lt;/li>&lt;/ul>&lt;/ul>&lt;/ul> |
 
 >[!TAB GitLab]
 
-1. Busque la sección Configuración de **Webhook** de la solución.
-1. Pegue la dirección URL del webhook copiada anteriormente en el campo de texto URL.
-   1. Reemplace el parámetro de consulta `api_key` en la dirección URL del webhook por su propia clave de API real.
-
-      Para generar una clave de API, debe crear un proyecto de integración en Adobe Developer Console. Consulte [Creación de un proyecto de integración de API](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/create-api-integration/) para obtener información detallada.
-
-1. Pegue el secreto de webhook que copió anteriormente en el campo de texto **Secreto** (o **Clave secreta**, o **Token secreto**).
-1. Configure el webhook para enviar los eventos requeridos que espera Cloud Manager.
-
-   | Eventos de gancho web requeridos |
-   | --- |
-   | Estos eventos de gancho web permiten a Cloud Manager almacenar en déclencheur las canalizaciones cuando se inserta código o se envía una solicitud de combinación. También rastrean los comentarios relacionados con la validación de solicitudes de extracción (a través de eventos de nota).<br>Asegúrese de que el gancho web esté configurado para el déclencheur en los siguientes eventos de gancho web requeridos<ul><li>Eventos push<li>Combinar eventos de solicitud<li>Eventos de nota</li></li></li></ul></ul></ul> |
+    | Eventos de gancho web requeridos |
+    | — |
+    | Estos eventos de gancho web permiten a Cloud Manager almacenar en déclencheur las canalizaciones cuando se inserta código o se envía una solicitud de combinación. También rastrean los comentarios relacionados con la validación de solicitudes de extracción (a través de eventos de nota).&lt;br>Asegúrese de que el webhook esté configurado para el déclencheur en los siguientes eventos de webhook necesarios&lt;ul>&lt;li>Eventos push&lt;li>Eventos de solicitud de combinación&lt;li>Eventos de nota&lt;/li>&lt;/li>&lt;/ul>&lt;/ul>&lt;/ul>&lt;/ul> |
 
 >[!TAB Bits]
 
-1. Busque la sección Configuración de **Webhook** de la solución.
-1. Pegue la dirección URL del webhook copiada anteriormente en el campo de texto URL.
-   1. Reemplace el parámetro de consulta `api_key` en la dirección URL del webhook por su propia clave de API real.
-
-      Para generar una clave de API, debe crear un proyecto de integración en Adobe Developer Console. Consulte [Creación de un proyecto de integración de API](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/create-api-integration/) para obtener información detallada.
-
-1. Pegue el secreto de webhook que copió anteriormente en el campo de texto **Secreto** (o **Clave secreta**, o **Token secreto**).
-1. Configure el webhook para enviar los eventos requeridos que espera Cloud Manager.
-
-   | Eventos de gancho web requeridos |
-   | --- |
-   | Estos eventos garantizan que Cloud Manager pueda validar las solicitudes de extracción, responder a inserciones de código e interactuar con comentarios para la coordinación de canalizaciones.<br>Asegúrese de que el gancho web esté configurado para el déclencheur en los siguientes eventos de gancho web requeridos<ul><li>Solicitud de extracción: creada<li>Solicitud de extracción: actualizada<li>Solicitudes de extracción: combinadas<li>Solicitud de extracción: comentario<li>Repositorio: push</li></li></li></ul></ul></ul> |
+    | Eventos de gancho web requeridos |
+    | — |
+    | Estos eventos garantizan que Cloud Manager pueda validar las solicitudes de extracción, responder a inserciones de código e interactuar con comentarios para la coordinación de canalizaciones.&lt;br>Asegúrese de que el webhook esté configurado para el déclencheur en los siguientes eventos de webhook necesarios&lt;ul>&lt;li>Solicitud de extracción: Creada&lt;li>Solicitud de extracción: Actualizada&lt;li>Solicitudes de extracción: Combinada&lt;li>Solicitud de extracción: Comentario&lt;li>Repositorio: Insertar&lt;/li>&lt;/li>&lt;/li>&lt;/ul>&lt;/ul>&lt;/ul> |
 
 >[!ENDTABS]
 
+
 ### Validación de solicitudes de extracción con webhooks
 
-Una vez configurados correctamente los enlaces web, Cloud Manager déclencheur automáticamente las ejecuciones de canalización o las comprobaciones de validación de PR de su repositorio.
+Una vez configurados correctamente los enlaces web, Cloud Manager déclencheur automáticamente las ejecuciones de canalización o las comprobaciones de validación de solicitudes de extracción (PR) de su repositorio.
 
-En función del repositorio externo que utilice, se aplican los siguientes comportamientos:
+El comportamiento varía según el proveedor de Git que utilice, como se describe a continuación.
+
 
 >[!BEGINTABS]
 
