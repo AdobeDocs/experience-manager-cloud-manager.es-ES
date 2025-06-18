@@ -3,10 +3,10 @@ title: Adición de repositorios externos en Cloud Manager
 description: Obtenga información sobre cómo añadir un repositorio administrado a Adobe en Cloud Manager. Cloud Manager admite la integración con repositorios de GitHub Enterprise, GitLab y Bitbucket.
 badge: label="Beta privada" type="Positive" url="/help/release-notes/current.md#gitlab-bitbucket"
 exl-id: 4500cacc-5e27-4bbb-b8f6-5144dac7e6da
-source-git-commit: 523e8ef1c90bf88aa846e067aa1cca9e6ed5d8ce
+source-git-commit: a0836dd24dd3b711c9d1b78f28755e2db98b051c
 workflow-type: tm+mt
-source-wordcount: '2283'
-ht-degree: 30%
+source-wordcount: '2210'
+ht-degree: 17%
 
 ---
 
@@ -73,48 +73,46 @@ La configuración de un repositorio externo en Cloud Manager consta de tres paso
 
 >[!TAB GitHub Enterprise]
 
-| Tipo de token | Descripción |
-| --- | --- |
-| **Usar token de acceso existente** | Si ya ha proporcionado un token de acceso al repositorio para su organización y tiene acceso a varios repositorios, puede seleccionar un token existente. Utilice la lista desplegable **Nombre de token** para elegir el token que desea aplicar al repositorio. De lo contrario, añada un nuevo token de acceso. |
-| **Añadir nuevo token de acceso** | <ul><li> En el campo de texto **Nombre de token**, escriba un nombre para el token de acceso que está creando.<li>Cree un token de acceso personal siguiendo las instrucciones de la [documentación de GitHub](https://docs.github.com/es/enterprise-server@3.14/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens).<li>Permisos necesarios para el token de acceso personal (PAT) de GitHub Enterprise<br>Estos permisos garantizan que Cloud Manager pueda validar las solicitudes de extracción, administrar las comprobaciones de estado de las confirmaciones y acceder a los detalles necesarios del repositorio.<br>Cuando genere la PAT en GitHub Enterprise, asegúrese de que incluya los siguientes permisos de repositorio:<ul><li>Solicitud de extracción (lectura y escritura)<li>Confirmar estados (lectura y escritura)<li>Metadatos del repositorio (solo lectura)</li></li></ul></li></ul></ul></ul><ul><li>En el campo **Token de acceso**, pegue el token que acaba de crear. |
-
-Consulte [Administrar tokens de acceso](/help/managing-code/manage-access-tokens.md).
-
->[!NOTE]
->
->La característica **Agregar nuevo token de acceso** se encuentra actualmente en la fase beta privada. Se están planificando funciones adicionales. Como resultado, los permisos necesarios para los tokens de acceso pueden cambiar. Además, la interfaz de usuario para administrar tokens se puede actualizar, lo que incluye potencialmente características como las fechas de caducidad de los tokens. Y comprobaciones automatizadas para garantizar que los tokens vinculados a repositorios siguen siendo válidos.
+    | Tipo de token | Descripción |
+    | — | — |
+    | **Utilice el token de acceso existente** | Si ya ha proporcionado un token de acceso al repositorio para su organización y tiene acceso a varios repositorios, puede seleccionar un token existente. Utilice la lista desplegable **Nombre del token** para elegir el token que desea aplicar al repositorio. De lo contrario, agregue un nuevo token de acceso. |
+    | **Agregar nuevo token de acceso** |&lt;ul>&lt;li> En el campo de texto **Nombre del token**, escriba un nombre para el token de acceso que está creando.&lt;li>Cree un token de acceso personal siguiendo las instrucciones de la [documentación de GitHub](https://docs.github.com/en/enterprise-server@3.14/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens).&lt;li>Permisos necesarios para el token de acceso personal (PAT) de GitHub Enterprise&lt;br>Estos permisos garantizan que Cloud Manager pueda validar solicitudes de extracción, administrar comprobaciones de estado de confirmación y acceder a los detalles de repositorios necesarios.&lt;br>Cuando genere el PAT en GitHub Enterprise, asegúrese de que incluye los siguientes permisos de repositorio:&lt;ul>&lt;li>Solicitud de extracción (lectura y escritura)&lt;li>Estados de confirmación (lectura y escritura)&lt;li>Metadatos de repositorio (solo lectura)&lt;/li>&lt;/li>&lt;/ul>&lt;/li>&lt;/ul>&lt;/ul>&lt;/ul>&lt;ul>&lt;li>En el campo **Token de acceso**, pegue el token que acaba de crear. |
+    
+    1. Haga clic en **Validar**.
+    
+    Después de la validación, el repositorio externo está listo para usarse y vincularse a una canalización.
+    
+    Consulte también [Administrar tokens de acceso](/help/managing-code/manage-access-tokens.md).
 
 >[!TAB GitLab]
 
-| Tipo de token | Descripción |
-| --- | --- |
-| **Usar token de acceso existente** | Si ya ha proporcionado un token de acceso al repositorio para su organización y tiene acceso a varios repositorios, puede seleccionar un token existente. Utilice la lista desplegable **Nombre de token** para elegir el token que desea aplicar al repositorio. De lo contrario, añada un nuevo token de acceso. |
-| **Añadir nuevo token de acceso** | <ul><li>En el campo de texto **Nombre de token**, escriba un nombre para el token de acceso que está creando.<li>Cree un token de acceso personal siguiendo las instrucciones de la [documentación de GitLab](https://docs.gitlab.com/user/profile/personal_access_tokens/).<li>Permisos necesarios para el token de acceso personal (PAT) de GitLab<br>Estos ámbitos permiten a Cloud Manager acceder a los datos del repositorio y a la información de usuario según sea necesario para la validación y la integración de ganchos web.<br>Cuando genere la PAT en GitLab, asegúrese de que incluya los siguientes ámbitos de token:<ul><li>api<li>read_user</li></li></ul></li></li></ul></ul></ul><ul><li>En el campo **Token de acceso**, pegue el token que acaba de crear. |
-
-Consulte [Administrar tokens de acceso](/help/managing-code/manage-access-tokens.md).
-
->[!NOTE]
->
->La característica **Agregar nuevo token de acceso** se encuentra actualmente en la fase beta privada. Se están planificando funciones adicionales. Como resultado, los permisos necesarios para los tokens de acceso pueden cambiar. Además, la interfaz de usuario para administrar tokens se puede actualizar, lo que incluye potencialmente características como las fechas de caducidad de los tokens. Y comprobaciones automatizadas para garantizar que los tokens vinculados a repositorios siguen siendo válidos.
-
->[!TAB Bits]
-
-| Tipo de token | Descripción |
-| --- | --- |
-| **Usar token de acceso existente** | Si ya ha proporcionado un token de acceso al repositorio para su organización y tiene acceso a varios repositorios, puede seleccionar un token existente. Utilice la lista desplegable **Nombre de token** para elegir el token que desea aplicar al repositorio. De lo contrario, añada un nuevo token de acceso. |
-| **Añadir nuevo token de acceso** | <ul><li>En el campo de texto **Nombre de token**, escriba un nombre para el token de acceso que está creando.<li>Cree un token de acceso al repositorio mediante la [documentación de Bitbucket](https://support.atlassian.com/bitbucket-cloud/docs/create-a-repository-access-token/).<li>Permisos necesarios para el token de acceso personal (PAT) de Bitbucket<br>Estos permisos permiten a Cloud Manager acceder al contenido del repositorio, administrar solicitudes de extracción y configurar eventos de webhook o reaccionar a ellos.<br>Cuando cree la contraseña de la aplicación en Bitbucket, asegúrese de que incluya los siguientes permisos obligatorios para la contraseña de la aplicación:<ul><li>Repositorio (solo lectura)<li>Solicitudes de extracción (lectura y escritura)<li>Webhooks (leer y escribir)</li></li></ul></li></li></ul></ul></ul><ul><li>En el campo **Token de acceso**, pegue el token que acaba de crear. |
-
-Consulte [Administrar tokens de acceso](/help/managing-code/manage-access-tokens.md).
-
->[!NOTE]
->
->La característica **Agregar nuevo token de acceso** se encuentra actualmente en la fase beta privada. Se están planificando funciones adicionales. Como resultado, los permisos necesarios para los tokens de acceso pueden cambiar. Además, la interfaz de usuario para administrar tokens se puede actualizar, lo que incluye potencialmente características como las fechas de caducidad de los tokens. Y comprobaciones automatizadas para garantizar que los tokens vinculados a repositorios siguen siendo válidos.
-
->[!ENDTABS]
+    | Tipo de token | Descripción |
+    | — | — |
+    | **Utilice el token de acceso existente** | Si ya ha proporcionado un token de acceso al repositorio para su organización y tiene acceso a varios repositorios, puede seleccionar un token existente. Utilice la lista desplegable **Nombre del token** para elegir el token que desea aplicar al repositorio. De lo contrario, agregue un nuevo token de acceso. |
+    | **Agregar nuevo token de acceso** |&lt;ul>&lt;li>En el campo de texto **Nombre del token**, escriba un nombre para el token de acceso que está creando.&lt;li>Cree un token de acceso personal siguiendo las instrucciones de la [documentación de GitLab](https://docs.gitlab.com/user/profile/personal_access_tokens/).&lt;li>Permisos necesarios para el token de acceso personal (PAT) de GitLab&lt;br>Estos ámbitos permiten a Cloud Manager acceder a los datos del repositorio y a la información de usuario según sea necesario para la validación y la integración de ganchos web.&lt;br>Cuando genere la PAT en GitLab, asegúrese de que incluya los siguientes ámbitos de token:&lt;ul>&lt;li>api&lt;li>read_user&lt;/li>&lt;/li>&lt;/ul>&lt;/li>&lt;/li>&lt;/ul>&lt;/ul>&lt;ul>&lt;li>En el campo **Token de acceso**, pegue el token que acaba de crear. |
 
 1. Haga clic en **Validar**.
 
-Después de la validación, el repositorio externo estará listo para usarse y vincularse a una canalización.
+   Después de la validación, el repositorio externo estará listo para usarse y vincularse a una canalización.
+
+   Consulte también [Administrar tokens de acceso](/help/managing-code/manage-access-tokens.md).
+
+
+>[!TAB Bits]
+
+    | Tipo de token | Descripción |
+    | — | — |
+    | **Utilice el token de acceso existente** | Si ya ha proporcionado un token de acceso al repositorio para su organización y tiene acceso a varios repositorios, puede seleccionar un token existente. Utilice la lista desplegable **Nombre del token** para elegir el token que desea aplicar al repositorio. De lo contrario, agregue un nuevo token de acceso. |
+    | **Agregar nuevo token de acceso** |&lt;ul>&lt;li>En el campo de texto **Nombre del token**, escriba un nombre para el token de acceso que está creando.&lt;li>Cree un token de acceso al repositorio con la [documentación de Bitbucket](https://support.atlassian.com/bitbucket-cloud/docs/create-a-repository-access-token/).&lt;li>Permisos necesarios para el token de acceso personal (PAT) de Bitbucket&lt;br>Estos permisos permiten a Cloud Manager acceder al contenido del repositorio, administrar solicitudes de extracción y configurar eventos de webhook o reaccionar a ellos.&lt;br>Cuando cree la contraseña de la aplicación en Bitbucket, asegúrese de que incluya los siguientes permisos de contraseña de la aplicación necesarios:&lt;ul>&lt;li>Repositorio (solo lectura)&lt;li>Solicitudes de extracción (lectura y escritura)&lt;li>Webhooks (lectura y escritura)&lt;/li>&lt;/li>&lt;/ul>&lt;/li>&lt;/li>&lt;/ul>&lt;/ul>&lt;ul>&lt;li>En el campo **Token de acceso**, pegue el token que acaba de crear. |
+    
+    1. Haga clic en **Validar**.
+    
+    Después de la validación, el repositorio externo está listo para usarse y vincularse a una canalización.
+    
+    Consulte también [Administrar tokens de acceso](/help/managing-code/manage-access-tokens.md).
+
+>[!ENDTABS]
+
 
 ## Vincular un repositorio externo validado a una canalización {#validate-ext-repo}
 
