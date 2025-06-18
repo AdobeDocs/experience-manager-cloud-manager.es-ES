@@ -3,9 +3,9 @@ title: Adición de repositorios externos en Cloud Manager
 description: Obtenga información sobre cómo añadir un repositorio administrado a Adobe en Cloud Manager. Cloud Manager admite la integración con repositorios de GitHub Enterprise, GitLab y Bitbucket.
 badge: label="Beta privada" type="Positive" url="/help/release-notes/current.md#gitlab-bitbucket"
 exl-id: 4500cacc-5e27-4bbb-b8f6-5144dac7e6da
-source-git-commit: 073f1024891e1a1d4298c5c593df011f5572e820
+source-git-commit: 523e8ef1c90bf88aa846e067aa1cca9e6ed5d8ce
 workflow-type: tm+mt
-source-wordcount: '2295'
+source-wordcount: '2283'
 ht-degree: 30%
 
 ---
@@ -73,8 +73,6 @@ La configuración de un repositorio externo en Cloud Manager consta de tres paso
 
 >[!TAB GitHub Enterprise]
 
-**GitHub Enterprise**
-
 | Tipo de token | Descripción |
 | --- | --- |
 | **Usar token de acceso existente** | Si ya ha proporcionado un token de acceso al repositorio para su organización y tiene acceso a varios repositorios, puede seleccionar un token existente. Utilice la lista desplegable **Nombre de token** para elegir el token que desea aplicar al repositorio. De lo contrario, añada un nuevo token de acceso. |
@@ -88,8 +86,6 @@ Consulte [Administrar tokens de acceso](/help/managing-code/manage-access-tokens
 
 >[!TAB GitLab]
 
-**GitLab**
-
 | Tipo de token | Descripción |
 | --- | --- |
 | **Usar token de acceso existente** | Si ya ha proporcionado un token de acceso al repositorio para su organización y tiene acceso a varios repositorios, puede seleccionar un token existente. Utilice la lista desplegable **Nombre de token** para elegir el token que desea aplicar al repositorio. De lo contrario, añada un nuevo token de acceso. |
@@ -102,8 +98,6 @@ Consulte [Administrar tokens de acceso](/help/managing-code/manage-access-tokens
 >La característica **Agregar nuevo token de acceso** se encuentra actualmente en la fase beta privada. Se están planificando funciones adicionales. Como resultado, los permisos necesarios para los tokens de acceso pueden cambiar. Además, la interfaz de usuario para administrar tokens se puede actualizar, lo que incluye potencialmente características como las fechas de caducidad de los tokens. Y comprobaciones automatizadas para garantizar que los tokens vinculados a repositorios siguen siendo válidos.
 
 >[!TAB Bits]
-
-**Bits**
 
 | Tipo de token | Descripción |
 | --- | --- |
@@ -190,8 +184,6 @@ Pegue el secreto en un archivo de texto sin formato. El secreto copiado es neces
 
 >[!TAB GitHub Enterprise]
 
-**GitHub Enterprise**
-
 1. Busque la sección Configuración de **Webhook** de la solución.
 1. Pegue la dirección URL del webhook copiada anteriormente en el campo de texto URL.
    1. Reemplace el parámetro de consulta `api_key` en la dirección URL del webhook por su propia clave de API real.
@@ -207,8 +199,6 @@ Pegue el secreto en un archivo de texto sin formato. El secreto copiado es neces
 
 >[!TAB GitLab]
 
-**GitLab**
-
 1. Busque la sección Configuración de **Webhook** de la solución.
 1. Pegue la dirección URL del webhook copiada anteriormente en el campo de texto URL.
    1. Reemplace el parámetro de consulta `api_key` en la dirección URL del webhook por su propia clave de API real.
@@ -223,8 +213,6 @@ Pegue el secreto en un archivo de texto sin formato. El secreto copiado es neces
    | Estos eventos de gancho web permiten a Cloud Manager almacenar en déclencheur las canalizaciones cuando se inserta código o se envía una solicitud de combinación. También rastrean los comentarios relacionados con la validación de solicitudes de extracción (a través de eventos de nota).<br>Asegúrese de que el gancho web esté configurado para el déclencheur en los siguientes eventos de gancho web requeridos<ul><li>Eventos push<li>Combinar eventos de solicitud<li>Eventos de nota</li></li></li></ul></ul></ul> |
 
 >[!TAB Bits]
-
-**Bits**
 
 1. Busque la sección Configuración de **Webhook** de la solución.
 1. Pegue la dirección URL del webhook copiada anteriormente en el campo de texto URL.
@@ -251,15 +239,11 @@ Se aplican los siguientes comportamientos:
 
 >[!TAB GitHub Enterprise]
 
-**GitHub Enterprise**
-
 Cuando se crea la comprobación, aparece como la siguiente captura de pantalla a continuación. La diferencia clave de `GitHub.com` es que `GitHub.com` usa una ejecución de comprobación, mientras que GitHub Enterprise (que usa tokens de acceso personal) genera un estado de confirmación:
 
 ![Confirmar estado para indicar el proceso de validación de PR en GitHub Enterprise](/help/managing-code/assets/repository-webhook-github-pr-validation.png)
 
 >[!TAB GitLab]
-
-**GitLab**
 
 Las interacciones de GitLab se basan únicamente en comentarios. Cuando comienza la validación, se agrega un comentario. Cuando finaliza la validación (ya sea correcta o errónea), el comentario inicial se elimina y se reemplaza por un nuevo comentario que contiene los resultados de validación o los detalles del error.
 
@@ -280,8 +264,6 @@ Cuando falla la validación de calidad del código debido a problemas con los cl
 ![Cuando falla la validación de calidad del código debido a problemas con el cliente](/help/managing-code/assets/repository-webhook-gitlab4.png)
 
 >[!TAB Bits]
-
-**Bits**
 
 Cuando se ejecuta la validación de calidad del código:
 
