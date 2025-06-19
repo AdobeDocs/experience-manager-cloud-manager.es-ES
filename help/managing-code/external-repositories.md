@@ -3,7 +3,7 @@ title: Adición de repositorios externos en Cloud Manager
 description: Obtenga información sobre cómo añadir un repositorio administrado a Adobe en Cloud Manager. Cloud Manager admite la integración con repositorios de GitHub Enterprise, GitLab y Bitbucket.
 badge: label="Beta privada" type="Positive" url="/help/release-notes/current.md#gitlab-bitbucket"
 exl-id: 4500cacc-5e27-4bbb-b8f6-5144dac7e6da
-source-git-commit: cd2a71bc83a8ac7173089daea9670d25b68e62ba
+source-git-commit: c8ded11e36bc68d442a0296a599f40066be73867
 workflow-type: tm+mt
 source-wordcount: '2003'
 ht-degree: 28%
@@ -75,6 +75,8 @@ La configuración de un repositorio externo en Cloud Manager consta de tres paso
 
 >[!TAB GitHub Enterprise]
 
+<!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/github -->
+
 | Opción de token de acceso | Descripción |
 | --- | --- |
 | **Usar token de acceso existente** | Si ya ha proporcionado un token de acceso al repositorio para su organización y tiene acceso a varios repositorios, puede seleccionar un token existente. Utilice la lista desplegable **Nombre de token** para elegir el token que desea aplicar al repositorio. De lo contrario, añada un nuevo token de acceso. |
@@ -85,6 +87,8 @@ Después de la validación, el repositorio externo estará listo para usarse y v
 Consulte también [Administrar tokens de acceso](/help/managing-code/manage-access-tokens.md).
 
 >[!TAB GitLab]
+
+<!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/gitlab -->
 
 | Opción de token de acceso | Descripción |
 | --- | --- |
@@ -97,6 +101,8 @@ Consulte también [Administrar tokens de acceso](/help/managing-code/manage-acce
 
 
 >[!TAB Bits]
+
+<!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/bitbucket -->
 
 | Opción de token de acceso | Descripción |
 | --- | --- |
@@ -188,17 +194,23 @@ Pegue el secreto en un archivo de texto sin formato. El secreto copiado es neces
 
 >[!TAB GitHub Enterprise]
 
+<!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/github -->
+
 | Eventos de gancho web requeridos |
 | --- |
 | Estos eventos permiten que Cloud Manager responda a la actividad de GitHub, como la validación de solicitudes de extracción, los déclencheur basados en push para canalizaciones o la sincronización de código de Edge Delivery Services.<br>Asegúrese de que el gancho web esté configurado para el déclencheur en los siguientes eventos de gancho web necesarios:<ul><li>Solicitudes de extracción<li>Inserciones<li>Comentarios sobre problemas</li></li></li></ul></ul></ul> |
 
 >[!TAB GitLab]
 
+<!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/gitlab -->
+
 | Eventos de gancho web requeridos |
 | --- |
 | Estos eventos de gancho web permiten a Cloud Manager almacenar en déclencheur las canalizaciones cuando se inserta código o se envía una solicitud de combinación. También rastrean los comentarios relacionados con la validación de solicitudes de extracción (a través de eventos de nota).<br>Asegúrese de que el gancho web esté configurado para el déclencheur en los siguientes eventos de gancho web requeridos<ul><li>Eventos push<li>Combinar eventos de solicitud<li>Eventos de nota</li></li></li></ul></ul></ul> |
 
 >[!TAB Bits]
+
+<!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/bitbucket -->
 
 | Eventos de gancho web requeridos |
 | --- |
@@ -218,11 +230,15 @@ El comportamiento varía según el proveedor de Git que utilice, como se describ
 
 >[!TAB GitHub Enterprise]
 
+<!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/github -->
+
 Cuando se crea la comprobación, aparece como la siguiente captura de pantalla a continuación. La diferencia clave de `GitHub.com` es que `GitHub.com` usa una ejecución de comprobación, mientras que GitHub Enterprise (que usa tokens de acceso personal) genera un estado de confirmación:
 
 ![Confirmar estado para indicar el proceso de validación de PR en GitHub Enterprise](/help/managing-code/assets/repository-webhook-github-pr-validation.png)
 
 >[!TAB GitLab]
+
+<!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/gitlab -->
 
 Las interacciones de GitLab se basan únicamente en comentarios. Cuando comienza la validación, se agrega un comentario. Cuando finaliza la validación (ya sea correcta o errónea), el comentario inicial se elimina y se reemplaza por un nuevo comentario que contiene los resultados de validación o los detalles del error.
 
@@ -243,6 +259,8 @@ Cuando falla la validación de calidad del código debido a problemas con los cl
 ![Cuando falla la validación de calidad del código debido a problemas con el cliente](/help/managing-code/assets/repository-webhook-gitlab4.png)
 
 >[!TAB Bits]
+
+<!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/bitbucket -->
 
 Cuando se ejecuta la validación de calidad del código:
 
