@@ -92,4 +92,4 @@ Puede tener una red de distribución de contenido (CDN) como Akamai o CloudFront
 
 ## Información general en vídeo {#video}
 
->[!VIDEO](https://video.tv.adobe.com/v/26313/)
+>[!VIDEO](https://video.tv.adobe.com/v/34622?captions=spa)
