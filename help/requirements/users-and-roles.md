@@ -2,10 +2,10 @@
 title: Agregar usuarios y funciones
 description: Aprenda a utilizar Admin Console para agregar usuarios y funciones y crear perfiles.
 exl-id: 40086cf0-a1c4-4dde-9dbf-84ea5fa53b84
-source-git-commit: 53fb666ab6caff7a697d7f1942ce25f2bf27a2ce
+source-git-commit: 012359b4ecf872ece036b27b48fededf150493d2
 workflow-type: tm+mt
-source-wordcount: '762'
-ht-degree: 89%
+source-wordcount: '872'
+ht-degree: 75%
 
 ---
 
@@ -35,14 +35,14 @@ La siguiente tabla resume las funciones en Cloud Manager.
 | Administrador de programa | Este usuario emplea [!UICONTROL Cloud Manager] para realizar la configuración del equipo, revisar el estado y ver los indicadores clave de rendimiento (KPI) y puede aprobar errores importantes de tres niveles cuando sea necesario. |
 | Administrador de implementación | Administra operaciones de implementación y usa [!UICONTROL Cloud Manager] para ejecutar implementaciones de ensayo y producción, editar canalizaciones CI/CD y aprobar errores críticos de tres niveles cuando sea necesario. También tienen acceso al repositorio de Git. |
 | Desarrollador | Desarrolla y prueba el código de aplicación personalizado y emplea principalmente [!UICONTROL Cloud Manager] para ver el estado de implementación y puede acceder al repositorio de Git para confirmaciones de código. |
-| Ingeniero de éxito del cliente (Customer Success Engineer) | El CSE suele admitir el éxito de los clientes para los clientes de AMS. Interactúan con [!UICONTROL Cloud Manager] con el fin de ejecutar implementaciones que requieren supervisión del ingeniero de éxito del cliente (CSE). |
+| Ingeniero de éxito del cliente (Customer Success Engineer) | El CSE suele admitir el éxito del cliente para clientes de AMS. Interactúan con [!UICONTROL Cloud Manager] con el fin de ejecutar implementaciones que requieren supervisión del ingeniero de éxito del cliente (CSE). |
 | Autor de contenido | Este usuario generalmente no interactúa con [!UICONTROL Cloud Manager], pero puede utilizar el conmutador de programas de [!UICONTROL Cloud Manager] para acceder a AEM. |
 
 >[!NOTE]
 >
 >El personaje ficticio del desarrollador en Admin Console no está relacionado con la función de desarrollador en [!UICONTROL Cloud Manager].
 
-## Creación de un perfil con el Admin Console {#using-admin-console-to-create-a-profile}
+## Creación de un perfil de producto con Admin Console {#using-admin-console-to-create-a-profile}
 
 Las funciones de [!UICONTROL Cloud Manager] se administran desde Admin Console. Las suscripciones a funciones específicas se proporcionan añadiendo el usuario a un perfil de producto de [!UICONTROL Cloud Manager].
 
@@ -55,7 +55,13 @@ Un administrador debe crear nuevos perfiles de producto en el contexto de produc
 * Desarrollador
 * Administrador de programa
 
-Puede crear o agregar usuarios/grupos a estos perfiles de producto con Admin Console.
+Cree o agregue usuarios o grupos a estos perfiles de producto con Admin Console.
+
+>[!IMPORTANT]
+>
+>Debido a una limitación actual en Admin Console y Cloud Manager, los perfiles no se pueden guardar con **Ningún permiso** seleccionado. Al intentar hacerlo, se produce un error de servidor. Este comportamiento afecta a la creación de perfiles del Administrador de implementación. Como solución alternativa, seleccione al menos un permiso al crear un perfil nuevo.
+
+**Para crear un perfil de producto con Admin Console:**
 
 1. Inicie sesión en Admin Console en [`https://adminconsole.adobe.com`](https://adminconsole.adobe.com).
 
@@ -76,6 +82,10 @@ Puede crear o agregar usuarios/grupos a estos perfiles de producto con Admin Con
    * **Nombre del perfil**: el **Nombre del perfil** puede ser cualquier cosa, aunque, para evitar confusiones, se recomienda usar los valores de la columna **Nombre de perfil recomendado**.
    * **Nombre para mostrar**: el **Nombre para mostrar** debe ser el valor técnico definido por [!UICONTROL Cloud Manager] (véase la tabla siguiente).
    * **Grupo de permisos**: puede elegir un grupo de permisos para el perfil (no siempre disponible).
+
+     >[!IMPORTANT]
+     >
+     >Debido a una limitación actual en Admin Console y Cloud Manager, los perfiles no se pueden guardar con **Ningún permiso** seleccionado. Al intentar hacerlo, se produce un error de servidor. Este comportamiento afecta a la creación de perfiles del Administrador de implementación. Como solución alternativa, seleccione al menos un permiso al crear un perfil nuevo.
 
    ![Creación de un nuevo perfil](/help/assets/screen_shot_2018-05-04at171819.png)
 
