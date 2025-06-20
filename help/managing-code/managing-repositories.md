@@ -2,10 +2,10 @@
 title: Administración de repositorios en Cloud Manager
 description: Obtenga información sobre cómo ver, añadir y eliminar repositorios de Git en Cloud Manager.
 exl-id: 384b197d-f7a7-4022-9b16-9d83ab788966
-source-git-commit: ee84c682b6bd2b9144b3f75d544dea33a5ad944b
-workflow-type: ht
-source-wordcount: '732'
-ht-degree: 100%
+source-git-commit: fb3c2b3450cfbbd402e9e0635b7ae1bd71ce0501
+workflow-type: tm+mt
+source-wordcount: '730'
+ht-degree: 97%
 
 ---
 
@@ -73,7 +73,7 @@ La ventana **Información del repositorio** se abre con los detalles. Para obten
 
 ## Comprobar ramas/Crear proyecto {#check-branches}
 
-En **AEM Cloud Manager**, la acción **Comprobar ramas/Crear proyecto** tiene dos propósitos, según el estado actual del repositorio.
+En **AEM Cloud Manager**, **Comprobar ramas / Crear proyecto** tiene dos propósitos, dependiendo del estado actual del repositorio.
 
 * Si el repositorio es de nueva creación, esta acción crea un proyecto de muestra usando [el tipo de archivo del proyecto AEM](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/developing/archetype/overview).
 * Si el proyecto de muestra ya está creado en el repositorio, la acción comprueba el estado del repositorio y sus ramas, y proporciona comentarios sobre si el proyecto de muestra ya existe.

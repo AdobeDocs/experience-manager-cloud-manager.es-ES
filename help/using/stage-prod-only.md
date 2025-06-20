@@ -2,16 +2,16 @@
 title: Dividir canalizaciones solo de fase y solo de producción
 description: Descubra cómo puede dividir las implementaciones de fase y producción mediante canalizaciones dedicadas.
 exl-id: b7dd0021-d346-464a-a49e-72864b01cce3
-source-git-commit: 35845e827b0a3fadfe2a55a2171b5e02100cf3eb
+source-git-commit: fb3c2b3450cfbbd402e9e0635b7ae1bd71ce0501
 workflow-type: tm+mt
-source-wordcount: '924'
-ht-degree: 98%
+source-wordcount: '917'
+ht-degree: 96%
 
 ---
 
 # Dividir canalizaciones solo de fase y de producción {#stage-prod-only}
 
-Descubra cómo puede dividir las implementaciones de fase y producción mediante canalizaciones dedicadas.
+Puede dividir las implementaciones de ensayo y producción mediante canalizaciones dedicadas.
 
 ## Información general {#overview}
 
@@ -75,7 +75,7 @@ Las canalizaciones de solo producción y fase se crean de forma similar a las [c
 
 ### Canalizaciones de solo producción {#prod-only}
 
-1. Una vez seleccionada la opción **Añadir una canalización de solo producción**, se abre el cuadro de diálogo **Añadir una canalización de solo producción**.
+1. Después de hacer clic en **Agregar canalización solo de producción**, se abre el cuadro de diálogo asociado.
 1. En el campo **Nombre de canalización**, escriba el nombre que desee. Las opciones y funcionalidades restantes del cuadro de diálogo funcionan igual que las del cuadro de diálogo de creación de canalización asociada estándar. 
 1. En la esquina inferior derecha del cuadro de diálogo, haga clic en **Guardar**.
 

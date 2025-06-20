@@ -2,10 +2,10 @@
 title: Prueba de calidad del código
 description: Descubra cómo funcionan las pruebas de calidad del código de las canalizaciones y cómo pueden mejorar la calidad de las implementaciones.
 exl-id: 6a574858-a30e-4768-bafc-8fe79f928294
-source-git-commit: f5e6ac81c6454730850bb7e884d82be48d2f8525
-workflow-type: ht
-source-wordcount: '2793'
-ht-degree: 100%
+source-git-commit: fb3c2b3450cfbbd402e9e0635b7ae1bd71ce0501
+workflow-type: tm+mt
+source-wordcount: '2783'
+ht-degree: 98%
 
 ---
 
@@ -126,18 +126,18 @@ La siguiente tabla enumera las comprobaciones de estado.
 | Se ha cargado el cortafuegos de deserialización. | [Cortafuegos de deserialización cargado](https://experienceleague.adobe.com/es/docs/experience-manager-65/content/security/mitigating-serialization-issues#security) | Esencial |
 | La implementación `AuthorizableNodeName` no expone el ID autorizado en el nombre o la ruta del nodo. | [Generación del nombre de nodo con autorización](https://experienceleague.adobe.com/es/docs/experience-manager-65/content/security/security-checklist#security) | Esencial |
 | Se han cambiado las contraseñas predeterminadas. | [Cuentas de inicio de sesión predeterminado](https://experienceleague.adobe.com/es/docs/experience-manager-65/content/security/security#users-and-groups-in-aem) | Esencial |
-| El servlet de GET predeterminado de Sling está protegido de ataques DOS. | Sling Get Servlet | Esencial |
-| El controlador Sling JavaScript está configurado correctamente. | Controlador Sling JavaScript | Esencial |
-| El controlador Sling JSP Script está configurado correctamente. | Controlador Sling JSP Script | Esencial |
+| El servlet GET predeterminado `Sling` está protegido de ataques DOS. | `Sling Get` servlet | Crítico |
+| El controlador de JavaScript `Sling` está configurado correctamente. | Controlador de JavaScript `Sling` | Crítico |
+| El controlador JSP Script `Sling` está configurado correctamente. | Controlador de JSP Script `Sling` | Esencial |
 | SSL está configurado correctamente. | Configuración SSL | Esencial |
 | Obviamente, no se encuentran políticas de perfil de usuario inseguras. | Acceso predeterminado del perfil de usuario | Esencial |
-| El filtro Referente de Sling está configurado para evitar ataques de CSRF. | [Filtro de remitente del reenvío de Sling](https://experienceleague.adobe.com/es/docs/experience-manager-65/content/security/security-checklist#security) | Importante |
+| El filtro de referente de `Sling` está configurado para evitar ataques de CSRF. | [Filtro de remitente del reenvío de Sling](https://experienceleague.adobe.com/es/docs/experience-manager-65/content/security/security-checklist#security) | Importante |
 | El Administrador de bibliotecas HTML de Adobe Granite está configurado correctamente. | Configuración del administrador de bibliotecas HTML de CQ | Importante |
 | El paquete de soporte CRXDE está deshabilitado. | Compatibilidad con CRXDE | Importante |
-| El paquete y el servlet Sling DavEx están deshabilitados. | Comprobación de estado de DavEx | Importante |
+| El paquete y el servlet DavEx `Sling` están deshabilitados. | Comprobación de estado de DavEx | Importante |
 | El contenido de muestra no está instalado. | Paquetes de contenido de ejemplo | Importante |
 | El filtro de solicitud de gestión de contenidos web y el filtro de depuración de gestión de contenidos web están desactivados. | [Configuración de filtros de gestión de contenidos web](https://experienceleague.adobe.com/es/docs/experience-manager-65/content/implementing/deploying/configuring/osgi-configuration-settings#configuring) | Importante |
-| El paquete y el servlet Sling WebDAV están correctamente configurados. | Comprobación de estado de WebDAV | Importante |
+| El paquete y el servlet WebDAV `Sling` están correctamente configurados. | Comprobación de estado de WebDAV | Importante |
 | El servidor web está configurado para evitar el secuestro de clics (clickjacking). | Configuración de servidor web | Importante |
 | La replicación no emplea el usuario `admin`. | Replicación y usuarios de transporte | Información |
 

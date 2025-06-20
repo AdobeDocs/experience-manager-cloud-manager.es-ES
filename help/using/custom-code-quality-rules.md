@@ -2,10 +2,10 @@
 title: Reglas de calidad de código personalizadas
 description: Descubra los detalles específicos de las reglas de calidad de código personalizadas ejecutadas por Cloud Manager durante las pruebas de calidad del código. Estas reglas se basan en las prácticas recomendadas de AEM Engineering.
 exl-id: 7d118225-5826-434e-8869-01ee186e0754
-source-git-commit: 54987d6ccd8c31dab677d90b40466c458743f936
+source-git-commit: fb3c2b3450cfbbd402e9e0635b7ae1bd71ce0501
 workflow-type: tm+mt
-source-wordcount: '3644'
-ht-degree: 96%
+source-wordcount: '3636'
+ht-degree: 95%
 
 ---
 
@@ -227,7 +227,7 @@ public void orDoThis(Session session) throws Exception {
 * **Gravedad**: Principal
 * **Desde**: Versión 2018.4.0
 
-Como se describe en la [Documentación de Sling](https://sling.apache.org/documentation/the-sling-engine/servlets.html), se desaconseja enlazar los servlets por rutas. Los servlets enlazados a rutas no pueden utilizar controles de acceso JCR estándar y, como resultado, requieren un rigor de seguridad adicional. En lugar de utilizar servlets enlazados a rutas, se recomienda crear nodos en el repositorio y registrar servlets por tipo de recurso.
+Como se describe en [Documentación de Sling](https://sling.apache.org/documentation/the-sling-engine/servlets.html), se desaconsejan los servlets de enlace por rutas. Los servlets enlazados a rutas no pueden utilizar controles de acceso JCR estándar y, como resultado, requieren un rigor de seguridad adicional. En lugar de utilizar servlets enlazados a rutas, se recomienda crear nodos en el repositorio y registrar servlets por tipo de recurso.
 
 #### Código no conforme {#non-compliant-code-5}
 
@@ -475,7 +475,7 @@ public void doThis() {
 * **Gravedad**: Menor
 * **Desde**: Versión 2018.4.0
 
-Las rutas que comienzan por `/libs` y `/apps` generalmente no deberían estar codificadas. Estas rutas se suelen almacenar en relación con la ruta de búsqueda de Sling, que tiene el valor predeterminado `/libs,/apps`. El uso de la ruta absoluta puede introducir defectos sutiles que solo aparecerían más adelante en el ciclo de vida del proyecto.
+Las rutas que comienzan por `/libs` y `/apps` generalmente no deberían estar codificadas. Estas rutas generalmente se almacenan en relación con la ruta de búsqueda `Sling`, que tiene el valor predeterminado `/libs,/apps`. El uso de la ruta absoluta puede introducir defectos sutiles que solo aparecerían más adelante en el ciclo de vida del proyecto.
 
 #### Código no conforme {#non-compliant-code-13}
 
@@ -500,7 +500,7 @@ public void doThis(Resource resource) {
 * **Gravedad**: Menor
 * **Desde**: Versión 2020.5.0
 
-El planificador de Sling no debe utilizarse para tareas que requieren una ejecución garantizada. Los trabajos programados de Sling garantizan la ejecución y son más adecuados para los entornos agrupados y no agrupados.
+No utilice el Planificador de Sling para tareas que requieran una ejecución garantizada. Los trabajos programados de Sling garantizan la ejecución y son más adecuados para los entornos agrupados y no agrupados.
 
 Consulte la [Documentación sobre eventos de Apache Sling y gestión de trabajos](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html) para obtener más información acerca de cómo se administran los trabajos de Sling en entornos agrupados.
 
@@ -908,8 +908,7 @@ AEM Cloud Service prohíbe la creación de definiciones de indexación que conte
 * **Gravedad**: Principal
 * **Desde**: Versión 2025.4.0
 
-El uso del modo &quot;replace&quot; en el almacén de archivos no está permitido para las rutas debajo de /content; no debe usarse para las rutas debajo de /etc y /var.
-El modo &quot;replace&quot; reemplazará todo el contenido ya existente en el repositorio con el proporcionado en el paquete de contenido y los paquetes que activan esta acción no deben formar parte de los paquetes implementados mediante Cloud Manager.
+El uso del modo &quot;reemplazo&quot; en el almacén de archivos no está permitido para las rutas de acceso por debajo de `/content`; no debería usarse para las rutas de acceso por debajo de `/etc` y `/var.`. El modo &quot;replace&quot; sobrescribe el contenido existente del repositorio con el contenido que proviene del paquete. Los paquetes que almacenan en déclencheur esta acción no deben incluirse en los paquetes implementados a través de Cloud Manager.
 
 ## Herramienta de optimización de Dispatcher {#dispatcher-optimization-tool-rules}
 

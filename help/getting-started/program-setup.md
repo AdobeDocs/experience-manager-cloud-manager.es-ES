@@ -2,10 +2,10 @@
 title: Configuración del programa
 description: Después de la incorporación, el propietario de la empresa tiene que llevar a cabo alguna configuración inicial del programa.
 exl-id: 795c7112-d564-4fbf-96a1-152a6c286bf2
-source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
-workflow-type: ht
+source-git-commit: fb3c2b3450cfbbd402e9e0635b7ae1bd71ce0501
+workflow-type: tm+mt
 source-wordcount: '564'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 
@@ -40,7 +40,7 @@ Siga estos pasos para configurar el programa y definir los indicadores clave de 
 
    ![Definición de los indicadores clave de rendimiento (KPI)](/help/assets/Setup_Program-KPIs.png)
 
-1. En la pestaña **Aprovisionamiento**, puede definir las opciones de escalado bajo demanda para sus entornos si el escalado automático está habilitado para su programa.
+1. En la ficha **Aprovisionamiento**, puede definir las opciones de escalado Bajo demanda para sus entornos si el escalado automático está habilitado para su programa.
 
    El escalado automático solo se aplica al entorno de producción y es posible que no esté disponible para todos los programas de clientes.
 
@@ -84,7 +84,7 @@ Utilice la barra de acciones para cambiar a otro programa, editar el actual o ag
 
 Los indicadores clave de rendimiento (KPI) de sitios se miden en pruebas ejecutadas en el entorno de ensayo. Normalmente, estos KPI se reducen para adaptarse a las capacidades del entorno de ensayo.
 
-Por ejemplo, si un usuario espera un promedio de 1000 vistas de página por minuto en su entorno de producción y tiene cuatro servidores de Dispatcher/Publicación en producción, debe escalarlo a 250 vistas de página por minuto. Este contexto supone que su entorno de ensayo consiste únicamente en un único par de servidor de Dispatcher/Publicación.
+Por ejemplo, si un usuario espera un promedio de 1000 vistas de página por minuto en su entorno de producción y tiene cuatro servidores de Dispatcher/Publicación en producción, debe escalarlo a 250 vistas de página por minuto. En este escenario se da por hecho que el entorno de ensayo consiste únicamente en un único par de servidor de Dispatcher/publicación.
 
 Las pruebas de rendimiento de Assets implican la carga repetida de recursos durante un periodo de 30 minutos. El tiempo de procesamiento de cada recurso y diversas métricas de nivel de sistema se miden a lo largo de la prueba.
 
@@ -92,4 +92,4 @@ Puede tener una red de distribución de contenido (CDN) como Akamai o CloudFront
 
 ## Información general en vídeo {#video}
 
->[!VIDEO](https://video.tv.adobe.com/v/34622?captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/26313/)

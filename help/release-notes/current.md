@@ -3,10 +3,10 @@ title: Notas de la versión 2025.6.0 de Cloud Manager
 description: Obtenga información sobre la versión de Cloud Manager 2025.5.0 en Adobe Managed Services.
 feature: Release Information
 exl-id: cc1dc94b-129d-4de7-8e57-8fc5dcba7d9f
-source-git-commit: 38d398caf2323b603afd293aa9152308fefd323f
+source-git-commit: fb3c2b3450cfbbd402e9e0635b7ae1bd71ce0501
 workflow-type: tm+mt
-source-wordcount: '560'
-ht-degree: 58%
+source-wordcount: '556'
+ht-degree: 71%
 
 ---
 
@@ -24,7 +24,7 @@ La fecha de lanzamiento de la versión 2025.6.0 de [!UICONTROL Cloud Manager] es
 
 <!-- There are no significant new features or bug fixes in the May Cloud Manager release. -->
 
-La próxima versión planificada es para el viernes, 10 de julio de 2025.
+La próxima versión está planificada para el jueves 10 de julio de 2025.
 
 <!-- SAVE FOR FUTURE POSSIBLE USE There are no significant new features or bug fixes in the May Cloud Manager release. -->
 
@@ -39,13 +39,13 @@ La próxima versión planificada es para el viernes, 10 de julio de 2025.
 
   Consulte [Canalizaciones solo de fase y solo de producción](/help/using/stage-prod-only.md).
 
-* **Favoritos de canalización**
+* **Canalizaciones favoritas**
 
   En esta versión, Cloud Manager introduce la capacidad de fijar canalizaciones favoritas, lo que permite marcar canalizaciones específicas como favoritas para que aparezcan en la parte superior de la lista en la página **Canalizaciones**. Esta mejora facilita la búsqueda y ejecución de las canalizaciones a las que se accede con frecuencia. <!-- CMGR-68293 -->
 
   ![Canalizaciones marcadas como favoritas](/help/release-notes/assets/pipeline-favorites.png) *Dos canalizaciones marcadas como favoritas.*
 
-  Consulte [Marcar favoritos de canalización](/help/using/managing-pipelines.md#pipeline-favorites).
+  Consulte [Marcado de canalizaciones como favoritas](/help/using/managing-pipelines.md#pipeline-favorites).
 
 
 ## Programa beta privado {#beta-program}
@@ -71,18 +71,18 @@ Consulte [Adición de repositorios externos en Cloud Manager](/help/managing-cod
 
 Si le interesa probar esta nueva función y compartir sus comentarios, envíe un correo electrónico a [Grp-CloudManager_BYOG@adobe.com](mailto:Grp-CloudManager_BYOG@adobe.com) desde su dirección de correo electrónico asociada a su Adobe ID. Asegúrese de incluir qué plataforma Git desea utilizar y si se encuentra en una estructura de repositorio privado/público o de empresa.
 
-#### Administrar tokens de acceso{#access-tokens}
+#### Administrar tókenes de acceso{#access-tokens}
 
-Utilice la función **Administrar tokens de acceso**, junto con BYOG, para ver, cambiar el nombre y eliminar los tokens de acceso asociados con repositorios externos de Git propios, como GitHub Enterprise, GitLab, Bitbucket y Azure DevOps.
+Use **Administrar tokens de acceso** con BYOG para ver, cambiar el nombre y eliminar los tokens de acceso asociados con repositorios externos de Git Traer su propio Git, como GitHub Enterprise, GitLab, Bitbucket y Azure DevOps.
 
-Consulte [Administrar tokens de acceso](/help/managing-code/manage-access-tokens.md).
+Consulte [Administración de tokens de acceso](/help/managing-code/manage-access-tokens.md).
 
 Si le interesa probar esta nueva función y compartir sus comentarios, envíe un correo electrónico a [Grp-CloudManager_BYOG@adobe.com](mailto:Grp-CloudManager_BYOG@adobe.com) desde su dirección de correo electrónico asociada a su Adobe ID. Asegúrese de incluir qué plataforma Git desea utilizar y si se encuentra en una estructura de repositorio privado/público o de empresa.
 
 
 ## Corrección de errores {#bug-fixes}
 
-* AEM Cloud Manager ahora asigna correctamente los errores de compilación de Maven causados por errores 409 (conflictos) al recuperar artefactos del cliente en un error causado por el cliente. Este cambio mejora los mensajes de error al distinguir entre errores internos y problemas relacionados con la configuración del entorno del cliente. <!-- CMGR-66673 -->
+* AEM Cloud Manager ahora asigna correctamente los errores de compilación de Maven provocados por errores 409 (conflictos) al recuperar artefactos del cliente en un error ocasionado por el cliente. Este cambio mejora los mensajes de error porque permite distinguir entre errores internos y problemas relacionados con la configuración del entorno del cliente. <!-- CMGR-66673 -->
 
 <!--
 Known Issues {#known-issues}

@@ -2,10 +2,10 @@
 title: Configuración de ramas
 description: Obtenga información sobre cómo configurar su primera rama en Git y cómo la canalización CI/CD la usa para implementar el código de la aplicación.
 exl-id: ff2ae28f-902e-4fb2-aeb1-3636cb5cd9bb
-source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
-workflow-type: ht
-source-wordcount: '324'
-ht-degree: 100%
+source-git-commit: fb3c2b3450cfbbd402e9e0635b7ae1bd71ce0501
+workflow-type: tm+mt
+source-wordcount: '323'
+ht-degree: 95%
 
 ---
 
@@ -74,7 +74,7 @@ To <url>
 
 ## Ramas adicionales {#additional-branches}
 
-Una sola rama `main` puede ser suficiente para proyectos muy sencillos, pero en la mayoría de los casos se necesita una estrategia de ramificación más compleja. Muchos clientes siguen un proceso en el que las actividades de desarrollo cotidianas se realizan en una rama denominada `develop`. A continuación, la rama de desarrollo se combina con la rama `main` cuando es el momento de una implementación.
+Una sola rama `main` puede ser suficiente para proyectos muy sencillos, pero en la mayoría de los casos se necesita una estrategia de ramificación más compleja. Muchos clientes siguen un proceso en el que las actividades de desarrollo cotidianas se realizan en una rama denominada `develop`. A continuación, la rama `develop` se combina con la rama `main` cuando es el momento de una implementación.
 
 >[!TIP]
 >

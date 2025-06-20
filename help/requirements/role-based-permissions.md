@@ -2,10 +2,10 @@
 title: Permisos basados en funciones
 description: Obtenga información sobre los permisos preconfigurados basados en funciones de Cloud Manager para administrar el acceso a los recursos de la nube.
 exl-id: b66533fb-db93-40e8-919d-581261fdbf24
-source-git-commit: 682b142f35bc233bad82b0ddfa69bc0f2d5b5fdb
-workflow-type: ht
-source-wordcount: '616'
-ht-degree: 100%
+source-git-commit: fb3c2b3450cfbbd402e9e0635b7ae1bd71ce0501
+workflow-type: tm+mt
+source-wordcount: '560'
+ht-degree: 99%
 
 ---
 
@@ -32,7 +32,7 @@ La siguiente tabla enumera las funciones que puede asignar en Admin Console.
 |---|---|
 | Propietario del negocio | Este es el usuario principal que completa la configuración inicial de [!UICONTROL Cloud Manager] y es responsable de definir los indicadores clave de rendimiento (KPI), aprobar implementaciones de producción y anular errores importantes de tres niveles cuando sea necesario. |
 | Autor de contenido | El usuario generalmente no interactúa con Cloud Manager, pero puede usar el conmutador del programa Cloud Manager (al navegar desde Experience Cloud) para acceder a Adobe Experience Manager (AEM). |
-| Ingeniero de éxito del cliente (Customer Success Engineer) | El usuario admite principalmente el éxito de los clientes de AMS y se involucra con [!UICONTROL Cloud Manager] para ejecutar implementaciones. Estas implementaciones requieren la supervisión de un ingeniero de éxito del cliente (Customer Success Engineer, CSE) de Adobe. |
+| Ingeniero de éxito del cliente (Customer Success Engineer) | El usuario admite principalmente el éxito del cliente de AMS y se involucra con [!UICONTROL Cloud Manager] para ejecutar implementaciones. Estas implementaciones requieren la supervisión de un ingeniero de éxito del cliente (Customer Success Engineer, CSE) de Adobe. |
 | Administrador de implementación | Este usuario gestiona las operaciones de implementación mediante [!UICONTROL Cloud Manager] para ejecutar implementaciones de fase y producción, puede aprobar errores importantes de tres niveles cuando sea necesario y tiene acceso al repositorio de Git. |
 | Desarrollador | Este usuario desarrolla y prueba el código de aplicación personalizado, que utiliza principalmente [!UICONTROL Cloud Manager] para ver el estado de implementación y tiene acceso de confirmación al repositorio de Git. |
 | Administrador de programa | Este usuario utiliza [!UICONTROL Cloud Manager] para realizar la configuración del equipo, revisar el estado, ver los indicadores clave de rendimiento (KPI) y aprobar errores importantes de tres niveles cuando sea necesario. |
@@ -43,26 +43,26 @@ Cada una de las funciones tiene permisos preconfigurados específicos asociados.
 
 | Permiso | Descripción | Propietario del negocio | Administrador de implementación | Administrador de programa | Desarrollador | CSE |
 | --- | --- | --- | --- | --- | --- | --- |
-| Leer la aplicación | Leer indicadores clave de rendimiento (KPI) de programa | x | x | x | x | x |
-| Escribir aplicación | Configuración o edición del programa | x | | | | |
-| Agregar programa | Agregar programa nuevo | x |  |  |  |  |
-| Entorno de lectura | Consulte los detalles del entorno | x | x | x | x | x |
-| Crear ejecución | Iniciar canalización | x | x | x | | |
-| Leer ejecución | Consulte Estado de ejecución | x | x | x | x | x |
-| Reanudar ejecución | Capacidad para reanudar la ejecución cuando está en pausa | x | x | x | | x |
-| Implementación de ejecución aprobada en producción | Proporcionar aprobación de lanzamiento | x | x | x | | |
-| Implementación de programación de ejecución en producción | Programar implementación de producción | x | x | x | | x |
-| Implementación de ejecución en producción | Implementar la aplicación en producción cuando está en pausa para la supervisión de CSE |  |  |  |  | x |
-| Cancelación de ejecución | Cancelar ejecución actual |  |  | x |  |  |
-| Errores de portal de calidad de anulación de ejecución | Aprobar errores importantes de la puerta de acceso de calidad | x | x | x |  |  |
-| Creación de canalización | Configurar/editar canalización |  | x |  |  |  |
-| Lectura de canalización | Consulte detalles de canalización | x | x | x | x | x |
-| Escritura de canalización | Configurar/editar canalización |  | x |  |  |  |
-| Aprobación de modificación de canalización | Permite editar la opción Propietario empresarial |  | x |  |  |  |
-| Implementación administrada de modificación de canalización | Permite editar la opción de supervisión de CSE |  | x |  |  |  |
-| Eliminación de canalización | Permite la eliminación de la canalización |  | x |  |  |  |
-| Lectura de paso | Consulte los resultados de las métricas de calidad de los pasos | x | x | x | x | x |
-| Generar token de acceso personal | Acceder a Git |  | x |  | x |  |
+| `Read the Application` | Leer indicadores clave de rendimiento (KPI) de programa | x | x | x | x | x |
+| `Write Application` | Configuración o edición del programa | x | | | | |
+| `Add Program` | Agregar programa nuevo | x |  |  |  |  |
+| `Read Environment` | Consulte los detalles del entorno | x | x | x | x | x |
+| `Create Execution` | Iniciar canalización | x | x | x | | |
+| `Read Execution` | Consulte Estado de ejecución | x | x | x | x | x |
+| `Resume Execution` | Capacidad para reanudar la ejecución cuando está en pausa | x | x | x | | x |
+| `Execution Approve Deploy to Production` | Proporcionar aprobación de lanzamiento | x | x | x | | |
+| `Execution Schedule Deploy to Production` | Programar implementación de producción | x | x | x | | x |
+| `Execution Deploy to Production` | Implementar la aplicación en producción cuando está en pausa para la supervisión de CSE |  |  |  |  | x |
+| `Execution Cancel` | Cancelar ejecución actual |  |  | x |  |  |
+| `Execution Override Quality Gate Failures` | Aprobar errores importantes de la puerta de acceso de calidad | x | x | x |  |  |
+| `Pipeline Create` | Configurar/editar canalización |  | x |  |  |  |
+| `Pipeline Read` | Consulte detalles de canalización | x | x | x | x | x |
+| `Pipeline Write` | Configurar/editar canalización |  | x |  |  |  |
+| P`ipeline Modify Approval` | Permite editar la opción Propietario empresarial |  | x |  |  |  |
+| `Pipeline Modify Managed Deployment` | Permite editar la opción de supervisión de CSE |  | x |  |  |  |
+| `Pipeline Delete` | Permite la eliminación de la canalización |  | x |  |  |  |
+| `Step Read` | Consulte los resultados de las métricas de calidad de los pasos | x | x | x | x | x |
+| `Generate Personal Access Token` | Acceder a Git |  | x |  | x |  |
 
 <!-- CQDOC-22080 | Download log files  |  |  | x |  | x |  | -->
 

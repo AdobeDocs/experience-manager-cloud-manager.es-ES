@@ -2,10 +2,10 @@
 title: El entorno de compilación
 description: Obtenga información sobre el entorno de compilación especializado en el que los usuarios de Cloud Manager generan y prueban su código.
 exl-id: b3543320-66d4-4358-8aba-e9bdde00d976
-source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
-workflow-type: ht
-source-wordcount: '1263'
-ht-degree: 100%
+source-git-commit: fb3c2b3450cfbbd402e9e0635b7ae1bd71ce0501
+workflow-type: tm+mt
+source-wordcount: '1262'
+ht-degree: 97%
 
 ---
 
@@ -33,7 +33,7 @@ Los entornos de compilación de Cloud Manager tienen los atributos siguientes.
    * `graphicsmagick`
 * Se pueden instalar otros paquetes en el momento de la compilación, tal como se describe en la sección [Instalación de paquetes de sistema adicionales](#installing-additional-system-packages).
 * Cada compilación se realiza en un entorno en buen estado. El contenedor de compilación no mantiene ningún estado entre las ejecuciones.
-* Maven siempre se ejecuta con estos tres comandos:
+* Maven se ejecuta con estos tres comandos:
    * `mvn --batch-mode org.apache.maven.plugins:maven-dependency-plugin:3.1.2:resolve-plugins`
    * `mvn --batch-mode org.apache.maven.plugins:maven-clean-plugin:3.1.0:clean -Dmaven.clean.failOnError=false`
    * `mvn --batch-mode org.jacoco:jacoco-maven-plugin:prepare-agent package`
@@ -117,7 +117,7 @@ Las combinaciones de proveedor/versión disponibles actualmente son:
 
 También es posible seleccionar Oracle 8 u 11 como JDK para toda la ejecución de Maven. A diferencia de las opciones de cadenas de herramientas, esto cambia el JDK utilizado para todos los complementos, a menos que también se establezca la configuración de cadenas de herramientas, en cuyo caso esta se sigue aplicando a los complementos de Maven compatibles con ella. Como resultado, funcionará el comprobar y aplicar la versión de Java mediante el [Complemento Apache Maven Enforcer](https://maven.apache.org/enforcer/maven-enforcer-plugin/).
 
-Para ello, cree un archivo con el nombre `.cloudmanager/java-version` en la rama del repositorio de Git utilizada por la canalización. Este archivo puede tener el contenido `11` o `8`. Se omite cualquier otro valor. Si se especifica `11`, se usa Oracle 11 y la variable de entorno `JAVA_HOME` se establece en `/usr/lib/jvm/jdk-11.0.22`. Si se especifica `8`, se utiliza Oracle 8 y la variable de entorno `JAVA_HOME` se establece en `/usr/lib/jvm/jdk1.8.0_401`.
+Para ello, cree un archivo con el nombre `.cloudmanager/java-version` en la rama del repositorio de Git utilizada por la canalización. Este archivo puede tener el contenido `11` o `8`. Se omite cualquier otro valor. Si se especifica `11`, el sistema usa Oracle 11 y establece la variable de entorno `JAVA_HOME` en `/usr/lib/jvm/jdk-11.0.22`. Si se especifica `8`, el sistema usa Oracle 8 y establece la variable de entorno `JAVA_HOME` en `/usr/lib/jvm/jdk1.8.0_401`.
 
 ## Variables del entorno {#environment-variables}
 
@@ -155,11 +155,11 @@ Sin embargo, las variables de entorno no se pueden usar en directivas `IfDefine`
 
 >[!TIP]
 >
->Debe validar el uso de variables de entorno con [Dispatcher localmente](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools.html?lang=es) antes de la implementación.
+>Debe validar el uso de variables de entorno con [Dispatcher localmente](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools) antes de la implementación.
 
 #### Configuraciones de OSGi {#osgi}
 
-Tanto las variables de entorno normales como los secretos se pueden utilizar en las [configuraciones OSGi](https://experienceleague.adobe.com/es_es/docs/experience-manager-65/content/implementing/deploying/configuring/configuring-osgi).
+Tanto las variables de entorno normales como los secretos se pueden utilizar en las [configuraciones OSGi](https://experienceleague.adobe.com/es/docs/experience-manager-65/content/implementing/deploying/configuring/configuring-osgi).
 
 ### Variables de canalización {#pipeline-variables}
 

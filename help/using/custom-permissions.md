@@ -2,10 +2,10 @@
 title: Permisos personalizados
 description: Descubra cómo puede utilizar los permisos personalizados para crear nuevos perfiles de estos con permisos configurables para restringir el acceso a programas, canalizaciones y entornos para usuarios de Cloud Manager.
 exl-id: a81eda9f-aa89-40ea-8e4c-52367a0a6aba
-source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
-workflow-type: ht
-source-wordcount: '1416'
-ht-degree: 100%
+source-git-commit: fb3c2b3450cfbbd402e9e0635b7ae1bd71ce0501
+workflow-type: tm+mt
+source-wordcount: '1373'
+ht-degree: 98%
 
 ---
 
@@ -111,23 +111,23 @@ Consulte la sección **Adición de usuarios y grupos de usuarios a un perfil de 
 Los siguientes permisos están disponibles para crear perfiles personalizados.
 
 | Permiso | Descripción |
-|---|---|
-| Acceso al programa | Permitir que los usuarios tengan acceso a los programas |
-| Edición del programa | Permitir que los usuarios editen programas |
-| Creación de canalización | Permitir que los usuarios creen nuevas canalizaciones |
-| Eliminación de canalización | Permitir que los usuarios eliminen canalizaciones |
-| Edición de canalizaciones | Permitir que los usuarios editen canalizaciones |
-| Aprobar/Rechazar implementaciones de producción | Permitir que los usuarios aprueben o rechacen un paso de implementación de producción |
-| Cancelar ejecuciones de canalización | Permitir a los usuarios cancelar las ejecuciones de canalización |
-| Iniciar ejecuciones de canalizaciones | Permitir que los usuarios inicien nuevas ejecuciones de canalizaciones |
-| Anular/Rechazar errores de métricas importantes | Permitir que los usuarios anulen o rechacen errores importantes de métricas |
-| Programar implementaciones de producción | Permitir a los usuarios programar un paso de implementación de producción |
-| Acceso a información de repositorios | Permitir a los usuarios acceder a la información del repositorio y generar una contraseña de acceso |
-| Creación de repositorios | Permitir que los usuarios creen nuevos repositorios de Git |
-| Eliminación de repositorios | Permitir que los usuarios eliminen repositorios de Git |
-| Edición de repositorios | Permitir que los usuarios editen repositorios de Git |
-| Generación de código de repositorios | Permitir que los usuarios generen proyectos a partir de arquetipos |
-| Administración de copia de contenido | Permitir que los usuarios administren las operaciones de copia de contenido |
+| --- | --- |
+| `Program Access` | Permitir que los usuarios tengan acceso a los programas |
+| `Program Edit` | Permitir que los usuarios editen programas |
+| `Pipeline Create` | Permitir que los usuarios creen nuevas canalizaciones |
+| `Pipeline Delete` | Permitir que los usuarios eliminen canalizaciones |
+| `Pipeline Edit` | Permitir que los usuarios editen canalizaciones |
+| `Production Deployments Approve/Reject` | Permitir que los usuarios aprueben o rechacen un paso de implementación de producción |
+| `Pipeline Executions Cancel` | Permitir a los usuarios cancelar las ejecuciones de canalización |
+| `Pipeline Executions Start` | Permitir que los usuarios inicien nuevas ejecuciones de canalizaciones |
+| `Override/Reject Important Metric Failures` | Permitir que los usuarios anulen o rechacen errores importantes de métricas |
+| `Production Deployments Schedule` | Permitir a los usuarios programar un paso de implementación de producción |
+| `Repository Info Access` | Permitir a los usuarios acceder a la información del repositorio y generar una contraseña de acceso |
+| `Repository Create` | Permitir que los usuarios creen nuevos repositorios de Git |
+| `Repository Delete` | Permitir que los usuarios eliminen repositorios de Git |
+| `Repository Edit` | Permitir que los usuarios editen repositorios de Git |
+| `Repository Code Generate` | Permitir que los usuarios generen proyectos a partir de arquetipos |
+| `Content Copy Manage` | Permitir que los usuarios administren las operaciones de copia de contenido |
 
 ### Permisos de nivel de organización {#organization-level}
 
@@ -142,7 +142,7 @@ Consulte el documento [Repositorio de códigos de origen](/help/requirements/sou
 Los siguientes términos se utilizan para crear y administrar permisos personalizados y funciones predefinidas.
 
 | Término | Descripción |
-|---|---|
+| --- | --- |
 | Permisos predefinidos | Funciones predefinidas como **Propietario del negocio**, **Administrador de implementación**, etc. para regular varias funciones de Cloud Manager. Para obtener más información sobre las funciones predefinidas, consulte [Permisos basados en funciones](/help/requirements/role-based-permissions.md). |
 | Permisos personalizados | Características de Cloud Manager que permiten a los usuarios crear perfiles de permiso para definir funciones que regulen las funciones compatibles con Cloud Manager |
 | Perfil de permisos | Se crea en Admin Console para administrar permisos configurables que se aplicarán a los usuarios que forman parte del perfil de permisos |
@@ -152,11 +152,11 @@ Los siguientes términos se utilizan para crear y administrar permisos personali
 Los elementos de permisos hacen referencia al ámbito en el que se aplicará el permiso. Normalmente, será uno de los siguientes:
 
 | Tipo de elemento de permiso | Ejemplos | Descripción |
-|---|---|---|
+| --- | --- | --- |
 | Organización | organization:companyA | Todos los recursos aplicables de una organización. Un recurso puede ser un programa, un entorno o una canalización. Si el usuario añade una organización para cualquier permiso, todos los recursos nuevos de esa organización también tendrán ese permiso. |
-| Programa | Programa A | Todos los recursos aplicables de un programa |
-| Entorno | Programa A: entorno | Aplicable en un entorno específico |
-| Canalización | Programa A: canalización | Aplicable en una canalización específica |
+| Programa | Programa A | Todos los recursos aplicables de un programa. |
+| Entorno | Programa A: entorno | Aplicable en un entorno específico. |
+| Canalización | Programa A: canalización | Aplicable en una canalización específica. |
 
 ## Limitaciones {#limitations}
 

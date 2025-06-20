@@ -3,25 +3,24 @@ title: Fase de evaluación
 seo-title: Evaluation Phase
 description: Descubra cómo la fase de evaluación del Asistente para actualización de productos evalúa la complejidad de la actualización con el detector de patrones.
 exl-id: 1ffcbc21-dc36-435d-b83b-0209f81a15e7
-source-git-commit: 11a6a53d8cbfb689810a9a8e7d82293a49863084
-workflow-type: ht
-source-wordcount: '279'
-ht-degree: 100%
+source-git-commit: fb3c2b3450cfbbd402e9e0635b7ae1bd71ce0501
+workflow-type: tm+mt
+source-wordcount: '257'
+ht-degree: 57%
 
 ---
 
 
 # Fase de evaluación {#evaluation}
 
-La primera fase del asistente de actualización de productos es la de **[!UICONTROL Evaluación]**, que mide la complejidad de la actualización con el detector de patrones directamente dentro del asistente. Al final de este paso, tendrá acceso a un informe de evaluación.
+La primera fase del Asistente para la actualización de productos es la fase **[!UICONTROL Evaluación]**. Ejecuta el detector de patrones dentro del asistente para evaluar la complejidad de la actualización. Al final de este paso, puede ver el informe de evaluación.
 
-El informe generado permite comprobar la idoneidad de la instancia de autor para la actualización mediante la detección de patrones que realizan lo siguiente:
+El informe comprueba la preparación de la actualización de la instancia de autor mediante la detección de patrones para lo siguiente:
 
-* Rompa ciertas reglas relacionadas con las áreas afectadas o sobrescritas por la actualización.
+* Infracciones de reglas en áreas afectadas o sobrescritas por la actualización.
+* Utiliza funciones o API de AEM 6.x que no son compatibles con versiones anteriores y pueden romperse después de la actualización.
 
-* Utilizan una función AEM 6.x o una API que no sea compatible con la nueva versión de AEM y que pueda romperse después de la actualización.
-
-El informe sirve para evaluar las actividades de desarrollo que se realizan para actualizar a Adobe Experience Manager (AEM) 6.5.
+Este informe ayuda a calcular el esfuerzo de desarrollo necesario para actualizar a Adobe Experience Manager (AEM) 6.5.
 
 >[!NOTE]
 >
@@ -45,4 +44,4 @@ El detector de patrones se puede ejecutar en cualquier entorno. Sin embargo, par
 
    ![Informe creado](/help/assets/Evaluation-1.png)
 
-La versión actual del Asistente para la actualización de productos en Cloud Manager es compatible con la fase de **Evaluación** solamente. Las otras cuatro fases, a saber: **Corrección**, **Ejecución**, **Validación** y **Finalización** aparecerán pronto.
+El Asistente para la actualización de productos actual de Cloud Manager sólo admite la fase **Evaluación**. Las otras cuatro fases, a saber: **Corrección**, **Ejecución**, **Validación** y **Finalización** aparecerán pronto.
