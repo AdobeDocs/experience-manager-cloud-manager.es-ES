@@ -2,10 +2,10 @@
 title: Agregar usuarios y funciones
 description: Aprenda a utilizar Admin Console para agregar usuarios y funciones y crear perfiles.
 exl-id: 40086cf0-a1c4-4dde-9dbf-84ea5fa53b84
-source-git-commit: 012359b4ecf872ece036b27b48fededf150493d2
+source-git-commit: 9ad9af206fafea45f8bbf61b02950de0776b5a9f
 workflow-type: tm+mt
-source-wordcount: '872'
-ht-degree: 75%
+source-wordcount: '770'
+ht-degree: 85%
 
 ---
 
@@ -57,9 +57,10 @@ Un administrador debe crear nuevos perfiles de producto en el contexto de produc
 
 Cree o agregue usuarios o grupos a estos perfiles de producto con Admin Console.
 
+<!-- CQDOC-22790
 >[!IMPORTANT]
 >
->Debido a una limitación actual en Admin Console y Cloud Manager, los perfiles no se pueden guardar con **Ningún permiso** seleccionado. Al intentar hacerlo, se produce un error de servidor. Este comportamiento afecta a la creación de perfiles del Administrador de implementación. Como solución alternativa, seleccione al menos un permiso al crear un perfil nuevo.
+>Due to a current limitation in the Admin Console and Cloud Manager, profiles cannot be saved with **No permissions** selected. Attempting to do so results in a backend error. This behavior affects the creation of Deployment Manager profiles. As a workaround, select at least one permission when creating a new profile. -->
 
 **Para crear un perfil de producto con Admin Console:**
 
@@ -83,18 +84,19 @@ Cree o agregue usuarios o grupos a estos perfiles de producto con Admin Console.
    * **Nombre para mostrar**: el **Nombre para mostrar** debe ser el valor técnico definido por [!UICONTROL Cloud Manager] (véase la tabla siguiente).
    * **Grupo de permisos**: puede elegir un grupo de permisos para el perfil (no siempre disponible).
 
-     >[!IMPORTANT]
-     >
-     >Debido a una limitación actual en Admin Console y Cloud Manager, los perfiles no se pueden guardar con **Ningún permiso** seleccionado. Al intentar hacerlo, se produce un error de servidor. Este comportamiento afecta a la creación de perfiles del Administrador de implementación. Como solución alternativa, seleccione al menos un permiso al crear un perfil nuevo.
+<!-- CQDOC-22790
+      >[!IMPORTANT]
+      >
+      >Due to a current limitation in the Admin Console and Cloud Manager, profiles cannot be saved with **No permissions** selected. Attempting to do so results in a backend error. This behavior affects the creation of Deployment Manager profiles. As a workaround, select at least one permission when creating a new profile. -->
 
-   ![Creación de un nuevo perfil](/help/assets/screen_shot_2018-05-04at171819.png)
+![Creación de un nuevo perfil](/help/assets/screen_shot_2018-05-04at171819.png)
 
-   | Función | Nombre para mostrar (obligatorio) | Nombre de perfil recomendado |
-   |---|---|---|
-   | Propietario del negocio | `CM_BUSINESS_OWNER_ROLE_PROFILE` | [!UICONTROL Cloud Manager]: función de propietario de la empresa |
-   | Administrador de implementación | `CM_DEPLOYMENT_MANAGER_ROLE_PROFILE` | [!UICONTROL Cloud Manager]: función de administrador de implementación |
-   | Desarrollador | `CM_DEVELOPER_ROLE_PROFILE` | [!UICONTROL Cloud Manager]: función de desarrollador |
-   | Administrador de programa | `CM_PROGRAM_MANAGER_ROLE_PROFILE` | [!UICONTROL Cloud Manager]: función de administrador de programas |
+| Función | Nombre para mostrar (obligatorio) | Nombre de perfil recomendado |
+|---|---|---|
+| Propietario del negocio | `CM_BUSINESS_OWNER_ROLE_PROFILE` | [!UICONTROL Cloud Manager]: función de propietario de la empresa |
+| Administrador de implementación | `CM_DEPLOYMENT_MANAGER_ROLE_PROFILE` | [!UICONTROL Cloud Manager]: función de administrador de implementación |
+| Desarrollador | `CM_DEVELOPER_ROLE_PROFILE` | [!UICONTROL Cloud Manager]: función de desarrollador |
+| Administrador de programa | `CM_PROGRAM_MANAGER_ROLE_PROFILE` | [!UICONTROL Cloud Manager]: función de administrador de programas |
 
 
 1. Haga clic en **Listo** para guardar el nuevo perfil.
