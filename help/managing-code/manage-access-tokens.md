@@ -1,11 +1,10 @@
 ---
 title: Administración de tokens de acceso en Cloud Manager
 description: Obtenga información sobre cómo ver, editar y eliminar los tokens de acceso utilizados para Traer su propio Git en Cloud Manager en Adobe Managed Services.
-badge: label="Beta privada" type="Positive" url="/help/release-notes/current.md#access-tokens"
 exl-id: 873aad0b-d7c6-4bc3-a70d-bbfdc1e02193
-source-git-commit: 254ad0ac77e793657292e34ae4a6bf3baecea8d5
+source-git-commit: d6f058c3f6dc010f08a5cb75a0fb152b56111e79
 workflow-type: tm+mt
-source-wordcount: '398'
+source-wordcount: '388'
 ht-degree: 3%
 
 ---
@@ -14,7 +13,7 @@ ht-degree: 3%
 
 Cloud Manager utiliza tokens de acceso para administrar repositorios alojados en plataformas Git externas. Anteriormente, si un token caducaba, el repositorio asociado tenía que volver a incorporarse para permanecer operativo.
 
-Ahora, la función **Administrar tokens de acceso** le permite administrar los tokens de manera más eficiente. Puede ver, cambiar el nombre o quitar tokens conectados a proveedores de Git externos admitidos, como GitHub Enterprise, GitLab, Bitbucket y Azure DevOps.
+Ahora, **Administrar tokens de acceso** le permite administrar los tokens de manera más eficiente. Puede ver, cambiar el nombre o quitar tokens conectados a proveedores de Git externos admitidos, como GitHub Enterprise, GitLab, Bitbucket y Azure DevOps.
 
 Consulte también [Agregar repositorios externos en Cloud Manager](/help/managing-code/external-repositories.md).
 
@@ -55,4 +54,4 @@ Consulte también [Agregar repositorios externos en Cloud Manager](/help/managin
 
    El icono está deshabilitado (![Eliminar icono de esquema](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DeleteOutline_18_N.svg)) para los tokens que se están utilizando en ese momento.
 
-1. En el cuadro de diálogo **Eliminar token de acceso**, haga clic en **Eliminar** para quitar el token de forma permanente.
+1. En **Eliminar token de acceso**, haga clic en **Eliminar** para quitar el token de forma permanente.
