@@ -3,10 +3,10 @@ title: Notas de la versión 2025.8.0 de Cloud Manager
 description: Obtenga información sobre la versión de Cloud Manager 2025.8.0 en Adobe Managed Services.
 feature: Release Information
 exl-id: cc1dc94b-129d-4de7-8e57-8fc5dcba7d9f
-source-git-commit: 73a094f47f518e2782ac96357e1adc4e923a0b63
+source-git-commit: cba5f331d2b4093822dce4470147966e2cac15b7
 workflow-type: tm+mt
-source-wordcount: '625'
-ht-degree: 73%
+source-wordcount: '469'
+ht-degree: 69%
 
 ---
 
@@ -81,27 +81,6 @@ Use **Administrar tokens de acceso** en Cloud Manager para ver, cambiar el nombr
 Consulte [Administración de tokens de acceso](/help/managing-code/manage-access-tokens.md).
 
 Si le interesa probar esta nueva función y compartir sus comentarios, envíe un correo electrónico a [Grp-CloudManager_BYOG@adobe.com](mailto:grp-cloudmanager_byog@adobe.com) desde su dirección de correo electrónico asociada a su Adobe ID. 
-
-
-
-
-
-
-
-
-La función **Traer tu propio Git** (BYOG) se ha ampliado para incluir compatibilidad con repositorios externos, como GitLab y Bitbucket. Esta nueva compatibilidad se suma a la compatibilidad ya existente con repositorios de GitHub privados y de empresa. Al añadir estos nuevos repositorios, también puede vincularlos directamente a sus canalizaciones. Puede alojar estos repositorios en plataformas públicas en la nube o dentro de su infraestructura o nube privada. Esta integración también elimina la necesidad de sincronización constante del código con el repositorio de Adobe y proporciona la capacidad de validar las solicitudes de extracción antes de combinarlas en una rama principal.
-
-Las canalizaciones que usan repositorios externos (excepto las alojadas en GitHub) y el **Activador de la implementación** establecido en **Cambios en Git** ahora se inician automáticamente.
-
-Consulte [Adición de repositorios externos en Cloud Manager](/help/managing-code/external-repositories.md).
-
-![Cuadro de diálogo Añadir repositorio](/help/release-notes/assets/repositories-add-release-notes.png)
-
->[!NOTE]
->
->Actualmente, las comprobaciones de calidad del código de las solicitudes de extracción listas para usar son exclusivas de los repositorios alojados en GitHub, pero se está trabajando en una actualización para ampliar esta funcionalidad a otros proveedores de Git.
-
-<!-- If you are interested in testing this new feature and sharing your feedback, send an email to [Grp-CloudManager_BYOG@adobe.com](mailto:Grp-CloudManager_BYOG@adobe.com) from your email address associated with your Adobe ID. Be sure to include which Git platform you want to use and whether you are on a private/public or enterprise repository structure. -->
 
 #### Administrar tókenes de acceso{#access-tokens}
 
