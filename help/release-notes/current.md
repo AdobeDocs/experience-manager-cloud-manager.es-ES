@@ -3,10 +3,10 @@ title: Notas de la versión 2025.8.0 de Cloud Manager
 description: Obtenga información sobre la versión de Cloud Manager 2025.8.0 en Adobe Managed Services.
 feature: Release Information
 exl-id: cc1dc94b-129d-4de7-8e57-8fc5dcba7d9f
-source-git-commit: cba5f331d2b4093822dce4470147966e2cac15b7
+source-git-commit: a96bc45242ee6c6b06b4354756a67562150f385c
 workflow-type: tm+mt
-source-wordcount: '469'
-ht-degree: 69%
+source-wordcount: '432'
+ht-degree: 73%
 
 ---
 
@@ -81,12 +81,6 @@ Use **Administrar tokens de acceso** en Cloud Manager para ver, cambiar el nombr
 Consulte [Administración de tokens de acceso](/help/managing-code/manage-access-tokens.md).
 
 Si le interesa probar esta nueva función y compartir sus comentarios, envíe un correo electrónico a [Grp-CloudManager_BYOG@adobe.com](mailto:grp-cloudmanager_byog@adobe.com) desde su dirección de correo electrónico asociada a su Adobe ID. 
-
-#### Administrar tókenes de acceso{#access-tokens}
-
-Use **Administrar tokens de acceso** con BYOG para ver, cambiar el nombre y eliminar los tokens de acceso asociados con repositorios externos de Git Traer su propio Git, como GitHub Enterprise, GitLab, Bitbucket y Azure DevOps.
-
-Consulte [Administración de tokens de acceso](/help/managing-code/manage-access-tokens.md).
 
 <!-- If you are interested in testing this new feature and sharing your feedback, send an email to [Grp-CloudManager_BYOG@adobe.com](mailto:Grp-CloudManager_BYOG@adobe.com) from your email address associated with your Adobe ID. Be sure to include which Git platform you want to use and whether you are on a private/public or enterprise repository structure. -->
 
