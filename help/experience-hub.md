@@ -1,10 +1,11 @@
 ---
 title: Acerca de Experience Hub
 description: Obtenga información acerca de la página de Experience Hub de Adobe.
-hide: false
-hidefromtoc: false
+hide: true
+hidefromtoc: true
+index: false
 exl-id: adc8996f-671a-4018-a195-1212ea662284
-source-git-commit: 2a67253253bb06b888bc0283d07838a6f0779532
+source-git-commit: ea64d9ac8d430642a5795c67d7e4d90bb1d62b9f
 workflow-type: tm+mt
 source-wordcount: '547'
 ht-degree: 5%
