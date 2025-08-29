@@ -20,7 +20,7 @@ Una vez establecida la configuración general de [!UICONTROL Cloud Manager], ya 
 
 ## Inicio de sesión por primera vez {#logging-in-for-the-first-time}
 
-1. Inicie sesión en Cloud Manager en [experience.adobe.com](https://experience.adobe.com/experiencemanager). Para obtener más información, consulta [Acerca de Adobe Experience Hub](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/experience-hub/experience-hub)
+1. Inicie sesión en Cloud Manager en [experience.adobe.com](https://experience.adobe.com/experiencemanager). Para obtener más información, consulta [Acerca de Adobe Experience Hub](https://experienceleague.adobe.com/es/docs/experience-manager-65/content/experience-hub/experience-hub)
 1. En el panel lateral izquierdo, haga clic en **Cloud Manager**.
 
    ![Cloud Manager en el panel lateral izquierdo de Experience Manager](/help/getting-started/assets/cloud-manager-experiencemanager.png)
