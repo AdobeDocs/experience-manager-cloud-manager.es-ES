@@ -2,10 +2,10 @@
 title: Primer inicio de sesión
 description: Vaya esta página si ha definido las configuraciones generales y está listo para usar Cloud Manager por primera vez.
 exl-id: eb043437-8566-4a8d-8c5c-c8cf1d33daeb
-source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
-workflow-type: ht
-source-wordcount: '293'
-ht-degree: 100%
+source-git-commit: 89fa72fb3950f6040f42066fdcbca3a61bb76f5b
+workflow-type: tm+mt
+source-wordcount: '288'
+ht-degree: 88%
 
 ---
 
@@ -20,15 +20,22 @@ Una vez establecida la configuración general de [!UICONTROL Cloud Manager], ya 
 
 ## Inicio de sesión por primera vez {#logging-in-for-the-first-time}
 
-1. Inicie sesión en Cloud Manager en [`my.cloudmanager.adobe.com`](https://my.cloudmanager.adobe.com/) y verá su lista de programas.
+1. Inicie sesión en Cloud Manager en [experience.adobe.com](https://experience.adobe.com/experiencemanager). Para obtener más información, consulta [Acerca de Adobe Experience Hub](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/experience-hub/experience-hub)
+1. En el panel lateral izquierdo, haga clic en **Cloud Manager**.
 
-   ![Consola de Cloud Manager](/help/assets/cloud-manager-console.png)
+   ![Cloud Manager en el panel lateral izquierdo de Experience Manager](/help/getting-started/assets/cloud-manager-experiencemanager.png)
 
-1. Pulse o haga clic en la tarjeta del programa para navegar a la página de **Información general** de Cloud Manager.
+<!-- 
+1. Log into Cloud Manager at [`my.cloudmanager.adobe.com`](https://my.cloudmanager.adobe.com/) and you see your list of programs.
 
-1. Cloud Manager abre la página de **Información general**.
+   ![Cloud Manager console](/help/assets/cloud-manager-console.png)
 
-   ![Página de información general de Cloud Manager](/help/assets/program-overview-page.png)
+1. Click your program's card to navigate to Cloud Manager's **Overview** page. 
+
+1. Cloud Manager opens to the **Overview** page.
+
+   ![Cloud Manager overview page](/help/assets/program-overview-page.png) -->
+
 
 1. Si el programa aún no está configurado, haga clic en **Programa de configuración** en la [llamada a la acción](/help/getting-started/navigation.md#cta) para configurar la descripción del programa y definir los indicadores clave de rendimiento (KPI). Si el programa ya está configurado, la CTA puede ofrecer pasos siguientes adicionales.
 
