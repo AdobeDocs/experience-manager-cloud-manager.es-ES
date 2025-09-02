@@ -2,10 +2,10 @@
 title: Navegación por la IU de Cloud Manager
 description: Descubra cómo está organizada la IU de Cloud Manager y cómo navegar para administrar sus programas y entornos.
 exl-id: 9c1545ce-1c6d-417f-a6f4-fe53caef3433
-source-git-commit: 5cde30f97eb4fb9e784179cb85fba36eccca9dbc
+source-git-commit: cc41d4716aa3c3683010b6dd392b5355b129d1ef
 workflow-type: tm+mt
-source-wordcount: '1501'
-ht-degree: 60%
+source-wordcount: '1530'
+ht-degree: 52%
 
 ---
 
@@ -44,20 +44,19 @@ Hay dos barras de herramientas una encima de la otra.
 
 El primero es el encabezado de Cloud Manager. El encabezado se mantiene a medida que navega por Cloud Manager. Es un anclaje que le permite acceder a la configuración y a la información que se aplican a todos los programas de Cloud Manager.
 
-![El encabezado de Experience Cloud](/help/getting-started/assets/cloud-manager-header.png)
+![El encabezado de Experience Cloud](/help/getting-started/assets/cloud-manager-header-toolbar.png)
 
-|   | Área | Descripción |
-| --- | --- | --- |
-| 1 | ![Mostrar icono de menú, hamburguesa](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) | Menú desplegable que proporciona acceso a las fichas de partes específicas de un programa individual.<br>Para determinar el tipo de servicio que tiene su programa (AMS o AEMaaCS), consulte la [sección Tarjetas de programa](#program-cards) de este documento. |
-| 2 | Adobe Cloud Manager | Haga clic para abrir la consola **Mis programas** de Cloud Manager, independientemente de su ubicación en Cloud Manager. |
-| 3 | Organización seleccionada | El selector de organización muestra la organización en la que está conectado actualmente (en este ejemplo, Foundation Internal). Haga clic aquí para cambiar a otra organización si Adobe ID está asociado a varias organizaciones. |
-| 4 | Icono de comentarios | Haga clic en para proporcionar comentarios a Adobe sobre Cloud Manager. |
-| 5 | Icono de asistente de IA | Ofrece una interfaz conversacional diseñada para agilizar la búsqueda de respuestas a sus consultas relacionadas con AEM. Ver [Asistente de IA](https://experienceleague.adobe.com/es/docs/experience-manager-65/content/ai-assistant/ai-assistant-in-aem) |
-| 6 | ![Icono de ayuda](https://spectrum.adobe.com/static/icons/workflow_18/Smock_HelpOutline_18_N.svg) | Haga clic en para proporcionar acceso rápido a los recursos de aprendizaje y asistencia. |
-| 7 | ![Icono de campana](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Bell_18_N.svg) | Haga clic para ver el número de [notificaciones](/help/using/notifications.md) incompletas asignadas actualmente |
-| 8 | ![Icono de aplicaciones](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Apps_18_N.svg) | Haga clic en para desplazarse rápidamente entre la página de inicio de AEM y las soluciones de AEM |
-| 9 | Icono de aplicación | Haz clic para acceder a **Configuración de la cuenta** y **Configuración del programa**, o para cerrar la sesión. |
-
+| Área | Descripción |
+| --- | --- |
+| ![Mostrar icono de menú, hamburguesa](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) | Menú desplegable que proporciona acceso a las fichas de partes específicas de un programa individual.<br>Para determinar el tipo de servicio que tiene su programa (AMS o AEMaaCS), consulte la [sección Tarjetas de programa](#program-cards) de este documento. |
+| ![Icono rojo y blanco de Adobe](/help/getting-started/assets/AdobeLogoWhiteOnRed.svg) Cloud Manager | Haga clic para abrir la consola **Mis programas** de Cloud Manager, independientemente de su ubicación en Cloud Manager. |
+| *`Name of selected organization`* | El selector de organización muestra la organización en la que está conectado actualmente (en este ejemplo, *Foundation Internal*). Haga clic aquí para cambiar a otra organización si Adobe ID está asociado a varias organizaciones. |
+| ![Icono de comentarios](/help/getting-started/assets/AppComment.svg) Comentarios | Haga clic en para proporcionar comentarios a Adobe sobre Cloud Manager. |
+| ![icono del Asistente de IA](/help/getting-started/assets/AIChat.svg) | El asistente de IA ofrece una interfaz conversacional diseñada para agilizar la búsqueda de respuestas a sus consultas relacionadas con AEM. Ver [Asistente de IA](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/ai-assistant/ai-assistant-in-aem) |
+| ![Icono de ayuda](https://spectrum.adobe.com/static/icons/workflow_18/Smock_HelpOutline_18_N.svg) | Haga clic en para proporcionar acceso rápido a los recursos de aprendizaje y asistencia. |
+| ![Icono de campana blanca](/help/getting-started/assets/Bell.svg) | Haga clic para ver el número de [notificaciones](/help/using/notifications.md) incompletas asignadas actualmente |
+| ![Icono de aplicaciones](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Apps_18_N.svg) | Haga clic en para desplazarse rápidamente entre la página de inicio de AEM y las soluciones de AEM |
+| *`Dynamic Account icon`* | Haz clic en tu imagen de usuario para acceder a **Configuración de la cuenta** y **Configuración del programa**, o para cerrar la sesión.<br>Si elige no agregar una imagen de usuario, se asigna aleatoriamente un icono (como se ve en la imagen de la barra de herramientas anterior). |
 
 <!--
 1. The ![Show menu icon, hamburger](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) icon on the left side of the header is  
@@ -80,8 +79,8 @@ La barra de herramientas del programa proporciona vínculos para cambiar entre l
 |   | Área | Descripción |
 | --- | --- | --- |
 | 1 | Mis programas | Haga clic para abrir una lista desplegable en la que puede elegir agregar un programa, seleccionar otros programas existentes o volver a la página principal de Experience Manager. |
-| 2 | Introducción | Haga clic para acceder al [recorrido de la documentación de incorporación](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/onboarding/journey/overview) y ponerlo en marcha con Cloud Manager.<br>El recorrido de incorporación está diseñado para Cloud Manager en Adobe Experience Manager as a Cloud Service (AEMaaCS) y no para Cloud Manager en Adobe Managed Services (AMS). Sin embargo, muchos conceptos son los mismos. |
-| 3 | Botón de acción dinámica | El botón de acción ofrece acciones adecuadas al contexto, como agregar un programa, un dominio o un certificado SSL. |
+| 2 | ![Icono de información](/help/getting-started/assets/Info.svg) Introducción | Haga clic para acceder al [recorrido de la documentación de incorporación](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/onboarding/journey/overview) y ponerlo en marcha con Cloud Manager.<br>El recorrido de incorporación está diseñado para Cloud Manager en Adobe Experience Manager as a Cloud Service (AEMaaCS) y no para Cloud Manager en Adobe Managed Services (AMS). Sin embargo, muchos conceptos son los mismos. |
+| 3 | *`Dynamic action button`* | El botón de acción ofrece acciones apropiadas al contexto en las que puede hacer clic, como **Agregar programa** (visto en el ejemplo anterior) o agregar un dominio. |
 
 ### Llamadas a la acción y estadísticas {#cta-statistics}
 
@@ -101,7 +100,7 @@ Según sus privilegios, es posible que no pueda seleccionar determinados program
 
 Puede utilizar las siguientes opciones de ordenación para encontrar rápidamente el programa que desea:
 
-![Opciones de ordenación](assets/my-programs-sorting.png)
+![Opciones de ordenación](/help/getting-started/assets/cloud-manager-my-programs-sorting.png)
 
 * Ordenar por:
    * Fecha de creación
@@ -114,25 +113,26 @@ Puede utilizar las siguientes opciones de ordenación para encontrar rápidament
 
 Cada programa está representado por una tarjeta o fila en una tabla, que proporciona información general del programa y vínculos rápidos para realizar acciones.
 
-![Tarjeta de programa](assets/program-card.png)
+![Tarjeta de programa](/help/getting-started/assets/cloud-manager-program-card.png)
 
 * Imagen del programa (si está configurada)
-* Nombre del programa
+* Nombre del programa (en el ejemplo anterior, *WKND Magazine*)
 * Tipo de servicio:
    * **Experience Manager** para programas de AMS
    * **Experience Manager Cloud** para [programas de AEM as a Cloud Service](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/home)
-* Estado
+* Estado (en el ejemplo anterior, *Listo*)
 * Soluciones configuradas
 * Fecha de creación
 
-El icono de información también permite acceder rápidamente a la información adicional sobre el programa (útil en la vista de listas).
+Haz clic en ![Icono de información](/help/getting-started/assets/Info.svg) para obtener acceso rápido a información adicional sobre el programa (útil en la vista de lista).
 
-![Información](assets/information-view.png)
+![Ventana emergente de información en Cloud Manager AMS](/help/getting-started/assets/cloud-manager-information-view.png)
 
-El icono ![Más, puntos suspensivos](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) le proporciona acceso a acciones adicionales que puede realizar en el programa.
+Haga clic en el icono ![Más, los puntos suspensivos](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) le proporcionan acceso a acciones adicionales que puede realizar en el programa.
 
-![Botón de puntos suspensivos para programas](assets/program-ellipsis.png)
+![Botón de puntos suspensivos para programas](/help/getting-started/assets/cloud-manager-program-ellipsis.png)
 
+* Inicio de Experience Manager
 * Navegue a un [entorno](/help/using/managing-environments.md) particular del programa
 * Abra la [información general del programa](#program-overview)
 * [Edite el programa](/help/getting-started/program-setup.md)
@@ -146,16 +146,15 @@ La sección de vínculos rápidos le permite acceder a útiles recursos relacion
 
 Si selecciona un programa en la consola [**Mis programas**](#my-programs-console), accederá a la página **Información general del programa**.
 
-![Información general del programa](assets/program-overview.png)
+![Información general del programa](/help/getting-started/assets/cloud-manager-program-overview.png)
 
-La descripción general del programa le permite acceder a todos los detalles de un programa de Cloud Manager. Al igual que la consola Mis programas, está formada por varias partes.
+**Información general del programa** le proporciona acceso a todos los detalles de un programa de Cloud Manager. Al igual que **Mis programas**, consta de varias partes.
 
 1. [Barras de herramientas](#program-overview-toolbar) para volver rápidamente a la consola **Mis programas** y navegar por el programa.
-1. [Pestañas](#program-tabs) para cambiar entre los diferentes aspectos del programa.
+1. [Área de fichas](#program-tabs) para cambiar entre diferentes aspectos del programa.
 1. Una [llamada a la acción](#cta) basada en las últimas acciones del programa.
-1. Una [descripción general de los entornos](#environments) del programa.
-1. Una [descripción general de las canalizaciones](#pipelines) del programa.
-1. Vínculos a [recursos útiles](#useful-resources).
+1. [Entornos](#environments) asociados del programa.
+1. [Canalizaciones](#pipelines) asociadas del programa.
 
 ### Barras de herramientas {#program-overview-toolbar}
 
