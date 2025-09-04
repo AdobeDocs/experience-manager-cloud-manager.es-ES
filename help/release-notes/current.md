@@ -3,7 +3,7 @@ title: Notas de la versión 2025.9.0 de Cloud Manager
 description: Obtenga información sobre la versión de Cloud Manager 2025.9.0 en Adobe Managed Services.
 feature: Release Information
 exl-id: cc1dc94b-129d-4de7-8e57-8fc5dcba7d9f
-source-git-commit: 979430b92a03abbc8c600e4cc0e10cff5041f425
+source-git-commit: 68e546c1337122f823d63529ebd68d6966bb132a
 workflow-type: tm+mt
 source-wordcount: '363'
 ht-degree: 75%
