@@ -3,10 +3,10 @@ title: Notas de la versión 2025.9.0 de Cloud Manager
 description: Obtenga información sobre la versión de Cloud Manager 2025.9.0 en Adobe Managed Services.
 feature: Release Information
 exl-id: cc1dc94b-129d-4de7-8e57-8fc5dcba7d9f
-source-git-commit: 68e546c1337122f823d63529ebd68d6966bb132a
+source-git-commit: 24ec1d82f9a700b57cd74c2c83c8d9d00b8bece1
 workflow-type: tm+mt
-source-wordcount: '363'
-ht-degree: 75%
+source-wordcount: '376'
+ht-degree: 72%
 
 ---
 
@@ -31,13 +31,13 @@ La próxima versión está planificada para el viernes, 02 de octubre de 2025.
 
 ## Novedades {#what-is-new}
 
-* **Se ha agregado compatibilidad para repositorios privados de Azure DevOps**
+* **Se ha agregado compatibilidad con las operaciones de desarrollo de Azure (repositorios privados)**
 
   Las actualizaciones de la documentación incluyen pasos de configuración para Traer su propio Git con Azure DevOps y validación de solicitudes de extracción. Consulte [Agregar repositorios externos en Cloud Manager](/help/managing-code/external-repositories.md).
 
-* **Comprobaciones de solicitudes de extracción para repositorios privados**
+* **Brinde su propia compatibilidad con Git (BYOG) a las canalizaciones de configuración (repositorios privados)**
 
-  Cloud Manager ahora admite canalizaciones de configuración con repositorios privados en GitHub, Bitbucket, Azure DevOps y GitLab. Consulte ![Comprobaciones de solicitudes de extracción para repositorios privados](/help/managing-code/github-check-config.md).
+  Cloud Manager ahora admite canalizaciones de configuración con repositorios privados en GitHub, Bitbucket, Azure DevOps y GitLab. Esta compatibilidad acelera aún más el ciclo de desarrollo. Consulte ![Comprobaciones de solicitudes de extracción para repositorios privados](/help/managing-code/github-check-config.md).
 
 ## Programas Beta {#beta-program}
 
