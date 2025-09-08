@@ -2,10 +2,10 @@
 title: Introducción a Cloud Manager para AMS
 description: Empiece aquí para conocer Cloud Manager para Adobe Managed Services (AMS) y cómo permite a las organizaciones autoadministrar Adobe Experience Manager en la nube.
 exl-id: 58344d8a-b869-4177-a9cf-6a8b7dfe9588
-source-git-commit: 4c4a2688cab8e5c81efa4b7b5e26f3c7b5dc30d6
-workflow-type: ht
-source-wordcount: '1256'
-ht-degree: 100%
+source-git-commit: 8f29a06f63b8dc10cb3d28e2f38da1ead84f32f5
+workflow-type: tm+mt
+source-wordcount: '1250'
+ht-degree: 95%
 
 ---
 
@@ -34,26 +34,23 @@ Empiece aquí para conocer Cloud Manager para AMS (Adobe Manage Services) y cóm
 Con Cloud Manager, su equipo de desarrollo se beneficia de las siguientes funciones:
 
 * Integración y entrega continuas (CI/CD) del código para reducir el tiempo de salida al mercado de meses o semanas a días u horas.
-
 * Inspección del código, pruebas de rendimiento y validación de seguridad basadas en procedimientos recomendados antes de pasar a producción, para minimizar las interrupciones en esta última.
-
 * Conectividad de API para complementar los procesos de DevOps existentes.
-
 * Escalado automático que detecta de forma inteligente la necesidad de aumentar la capacidad y pone en línea automáticamente segmentos adicionales de Dispatcher/publicación.
 
 ![CI/CD flow](/help/assets/screen_shot_2018-05-12at73843pm.png)El flujo del proceso de CI/CD que se usa en [!UICONTROL Cloud Manager].
 
 ## Funciones opcionales en [!UICONTROL Cloud Manager] {#key-features-in-cloud-manager}
 
-A continuación se profundiza en algunas características clave de Cloud Manager.
+Las siguientes secciones resaltan las funciones clave de Cloud Manager.
 
 ### Interfaz de autoservicio {#self-service-interface}
 
-La interfaz de usuario (IU) para [!UICONTROL Cloud Manager] permite a los clientes acceder y administrar fácilmente el entorno de la nube y la canalización de CI/CD para sus aplicaciones de Adobe Experience Manager.
+Para explorar y empezar con la IU de [!UICONTROL Cloud Manager], consulte el documento [Primer inicio de sesión](/help/getting-started/first-time-login.md).
+
+La interfaz de usuario (IU) para [!UICONTROL Cloud Manager] le permite acceder y administrar fácilmente el entorno de la nube y la canalización de CI/CD para sus aplicaciones de Adobe Experience Manager.
 
 Puede definir indicadores clave de rendimiento (KPI) específicos de la aplicación, como las vistas de página máximas por minuto o el tiempo de respuesta de carga de página esperado. Estos KPI sirven de base para medir el éxito de la implementación. Las funciones y los permisos de los distintos integrantes del equipo se pueden definir fácilmente. La interfaz de autoservicio le proporciona control total. También proporciona enlaces a recursos sobre prácticas recomendadas y acceso a expertos en Adobe para obtener orientación cuando sea necesario.
-
-Para explorar y empezar con la IU de [!UICONTROL Cloud Manager], consulte el documento [Primer inicio de sesión](/help/getting-started/first-time-login.md).
 
 ### Canalización de CI/CD {#ci-cd-pipeline}
 
@@ -95,7 +92,7 @@ La implementación azul/verde es una técnica que reduce el tiempo de inactivida
 
 En cualquier momento, solo uno de los entornos está activo, y sirve todo el tráfico de producción. En general, el azul es el entorno activo actual y el verde está inactivo.
 
-* La implementación azul/verde es un complemento de las canalizaciones de CI/CD de Cloud Manager en el que se crea un segundo conjunto de instancias de publicación y Dispatcher (verde) y se utiliza para implementaciones. A continuación, las instancias verdes se adjuntan al equilibrador de carga de producción y las instancias antiguas (azules) se eliminan y finalizan.
+* La implementación azul/verde es un complemento de las canalizaciones de CI/CD de Cloud Manager en el que se crea un segundo conjunto de instancias de publicación y Dispatcher (verde) y se utiliza para implementaciones. A continuación, las instancias verdes se adjuntan al equilibrador de carga de producción y las instancias antiguas (azules) se eliminan y terminan.
 * Esta implementación azul/verde trata las instancias como transitorias y cada iteración de una canalización azul/verde crea un nuevo conjunto de servidores de publicación y Dispatcher.
 * Se crea un equilibrador de carga verde como parte de la configuración. Este equilibrador de carga no cambia, y es a lo que debería apuntar su URL verde o de “prueba”.
 * Durante una implementación azul/verde, se creará una réplica exacta de los niveles de publicación/Dispatcher existentes.
@@ -105,16 +102,16 @@ En cualquier momento, solo uno de los entornos está activo, y sirve todo el tr�
 Cuando la implementación azul/verde está habilitada, el flujo de implementación difiere del flujo de implementación de Cloud Service estándar.
 
 | Etapa | Implementación azul/verde | Implementación estándar |
-|---|---|---|
+| --- | --- | --- |
 | 1 | Implementación de autor | Implementación de autor |
 | 2 | Pausa para pruebas | - |
 | 3 | Creación de una infraestructura verde | - |
-| 4 | Implementación en niveles verdes de publicación/Dispatcher | Implementación en publicador |
+| 4 | Implementación en niveles verdes de Publish/Dispatcher | Implementación en publicador |
 | 5 | Pausa para pruebas (hasta 24 horas) | - |
 | 6 | Adición de la infraestructura verde al equilibrador de carga de producción | - |
-| 7 | Eliminación de la infraestructura azul del equilibrador de carga de producción |
+| 7 | Eliminación de la infraestructura azul del equilibrador de carga de producción | - |
 | 8 | Pausa para la aprobación final (hasta 24 horas) | - |
-| 9 | La infraestructura azul se cierra automáticamente | - |
+| 9 | La infraestructura azul se termina automáticamente | - |
 | 10 | La canalización finaliza | - |
 
 #### Implementación de azul/verde {#implementing}
