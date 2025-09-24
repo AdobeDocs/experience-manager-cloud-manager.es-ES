@@ -2,10 +2,10 @@
 title: Dividir canalizaciones solo de fase y solo de producción
 description: Descubra cómo puede dividir las implementaciones de fase y producción mediante canalizaciones dedicadas.
 exl-id: b7dd0021-d346-464a-a49e-72864b01cce3
-source-git-commit: 34c0b39d50dd4998cb75cc032d71d24798dee729
+source-git-commit: 92237ea156e3921b5dc55cea3abdecee9d26b14b
 workflow-type: tm+mt
 source-wordcount: '917'
-ht-degree: 96%
+ht-degree: 94%
 
 ---
 
@@ -103,7 +103,7 @@ Una canalización de solo fase se ejecuta casi del mismo modo que las canalizaci
 
 ![Ejecución de canalización de solo fase](/help/assets/configure-pipelines/stage-only-pipeline-run.png)
 
-Al hacer clic en **Promocionar compilación**, se le solicitará que confirme la ejecución de la canalización de solo fase relacionada ya sea de forma normal o en [modo de emergencia](#emergency-mode).
+Al hacer clic en **Promocionar compilación**, se le pedirá que confirme la ejecución de la canalización de solo producción relacionada, ya sea de forma normal o en [modo de emergencia](#emergency-mode).
 
 Si no existe ninguna canalización de solo producción, se le solicitará que cree una.
 
