@@ -3,10 +3,10 @@ title: Notas de la versión 2025.10.0 de Cloud Manager
 description: Obtenga información sobre la versión de Cloud Manager 2025.10.0 en Adobe Managed Services.
 feature: Release Information
 exl-id: cc1dc94b-129d-4de7-8e57-8fc5dcba7d9f
-source-git-commit: e203ab018908ec0a47e8d472079843d5db05dce0
+source-git-commit: 8477b55292be4591b679200ff11b976a2da3a7be
 workflow-type: tm+mt
-source-wordcount: '474'
-ht-degree: 57%
+source-wordcount: '581'
+ht-degree: 47%
 
 ---
 
@@ -41,7 +41,7 @@ Actualmente están disponibles las siguientes oportunidades:
 
 ### Extensibilidad y personalización de Experience Hub {#exp-hub-extensibility}
 
-[Experience Hub](https://experienceleague.adobe.com/es/docs/experience-manager-65/content/experience-hub/experience-hub) sirve como punto de entrada a AEM, personalizado para las necesidades de la organización. Informe a Adobe sobre las extensiones de la interfaz de usuario de AEM existentes para que puedan ayudarle a habilitarlas en Experience Hub con el mínimo esfuerzo.
+[Experience Hub](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/experience-hub/experience-hub) sirve como punto de entrada a AEM, personalizado para las necesidades de la organización. Informe a Adobe sobre las extensiones de la interfaz de usuario de AEM existentes para que puedan ayudarle a habilitarlas en Experience Hub con el mínimo esfuerzo.
 
 ![Diagrama del flujo de trabajo de personalización y extensibilidad de Experience Hub](/help/release-notes/assets/experience-hub-extensibility-customization.png)
 
@@ -53,7 +53,16 @@ Incruste experiencias personalizadas en Experience Hub para ampliar y personaliz
 
 Un nuevo modelo de compilación compila solo los módulos modificados (en lugar de todo el repositorio) mediante el almacenamiento en caché de nivel de módulo para acortar los tiempos de compilación. Se aplica a las canalizaciones de calidad de código, de pila completa y de solo ensayo.
 
-¿Te interesa la versión beta? Envíe un correo electrónico a [beta_quickbuild_cmpipelines@adobe.com](mailto:beta_quickbuild_cmpipelines@adobe.com) con su identificador de organización de Adobe y el identificador de programa.
+![Editar canalización que no sea de producción cuadro de diálogo que muestra las dos opciones de Estrategia de compilación que son Compilación completa y Compilación inteligente](/help/release-notes/assets/non-production-pipeline-edit.png) *Editar canalización que no sea de producción cuadro de diálogo que muestra las dos opciones de Estrategia de compilación que son Compilación completa y Compilación inteligente.*
+
+En el cuadro de diálogo **Agregar o editar canalización**, en la ficha **Código Source**, una nueva sección de **Estrategia de compilación** le permite elegir una de las siguientes opciones de compilación:
+
+* **Compilación completa**: genera todos los módulos del repositorio en cada ejecución.
+* **Compilación inteligente**: genera solo módulos que han cambiado desde la última confirmación, lo que acorta el tiempo de compilación general.
+
+Usted controla qué canalizaciones utilizan **Smart Build**. Durante la versión beta, esta opción solo aparece para las canalizaciones **Calidad del código** y **Implementación de desarrolladores**.
+
+¿Interesado? Envíe un correo electrónico a [beta_quickbuild_cmpipelines@adobe.com](mailto:beta_quickbuild_cmpipelines@adobe.com) con su identificador de organización de Adobe y el identificador de programa.
 
 <!-- You can deactivate incremental builds at the pipeline level by setting the property `CM_BUILD_DISABLE_MODULE_CACHING` to `true` (effective during the `BUILD` step). For how to add pipeline variables, see [Pipeline variables](/help/getting-started/build-environment.md#pipeline-variables). -->
 
