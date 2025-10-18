@@ -2,17 +2,17 @@
 title: Uso del Asistente para nuevos proyectos
 description: Siga esta página para aprender a utilizar el asistente y crear un proyecto de aplicación de AEM.
 exl-id: 9d7c6f4c-9379-471c-8dad-772a7099da54
-source-git-commit: f3617eb50147f5af33282cb0f25ada7dc423d434
+source-git-commit: b98e1711f1f98f52977dd6cb4cd2bc834d81a360
 workflow-type: tm+mt
-source-wordcount: '320'
-ht-degree: 92%
+source-wordcount: '322'
+ht-degree: 82%
 
 ---
 
 
 # Uso del asistente de nuevo proyecto {#using-the-wizard}
 
-Cuando se incorporó a Cloud Manager como nuevo cliente, se le proporcionó un repositorio de Git vacío. Para ayudarle a empezar, Cloud Manager ofrece un asistente para crear un proyecto de AEM mínimo basado en el [Arquetipo de proyecto de AEM](https://github.com/adobe/aem-project-archetype) como punto de partida.
+Cuando se incorpora a Cloud Manager como nuevo cliente, se le proporciona un repositorio de Git vacío. Para ayudarle a empezar, Cloud Manager ofrece un asistente para crear un proyecto de AEM mínimo basado en el [Arquetipo de proyecto de AEM](https://github.com/adobe/aem-project-archetype) como punto de partida.
 
 Siga estos pasos para crear un proyecto de AEM con el asistente.
 
@@ -39,6 +39,6 @@ Ahora tiene un proyecto base. Es hora de configurar sus canalizaciones.
 
 ## Clientes existentes o que migran {#existing-migrating}
 
-Si es cliente actual de Adobe Managed Services (AMS) o cliente On-Premise de AEM que está migrando, es probable que ya tenga código de proyecto en Git u otro sistema de control de versiones.
+Si es cliente actual de Adobe Managed Services (AMS) o cliente On-Premise de AEM que está migrando, es probable que tenga código de proyecto ya en Git u otro sistema de control de versiones.
 
 En estos casos, importará el proyecto en el repositorio de Git de Cloud Manager.

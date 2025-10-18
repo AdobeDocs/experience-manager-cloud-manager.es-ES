@@ -2,10 +2,10 @@
 title: Implementación de código
 description: Obtenga información sobre cómo implementar su código y qué sucede en Cloud Manager cuando lo hace.
 exl-id: 3d6610e5-24c2-4431-ad54-903d37f4cdb6
-source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
-workflow-type: ht
-source-wordcount: '1637'
-ht-degree: 100%
+source-git-commit: b98e1711f1f98f52977dd6cb4cd2bc834d81a360
+workflow-type: tm+mt
+source-wordcount: '1636'
+ht-degree: 98%
 
 ---
 
@@ -67,7 +67,7 @@ El paso **Implementación de producción** incluye las siguientes acciones:
    * Esta opción está habilitada al configurar la canalización.
    * La fecha y la hora programadas se especifican en términos de la zona horaria del usuario.
      ![Programar implementación](/help/assets/Production_Deployment1.png)
-* **Compatibilidad con CSE** (si está activado)
+* **Compatibilidad con CSE** (si está habilitado)
 * **Implementar en producción**
 
 ![Implementación de producción](/help/assets/Prod_Deployment1.png)
@@ -120,7 +120,7 @@ Cuando Cloud Manager se implementa en topologías que no son de producción, la 
    1. Se realiza una copia de seguridad de las configuraciones actuales y se copian en una ubicación temporal.
    1. Todas las configuraciones se eliminan, excepto los archivos inmutables. Consulte [Configuraciones de Dispatcher](/help/getting-started/dispatcher-configurations.md) para obtener más información. Esto borra los directorios para garantizar que no queden archivos huérfanos.
    1. El artefacto se extrae al directorio `httpd`. Los archivos inmutables no se sobrescriben. Los cambios que realice en los archivos inmutables del repositorio de Git se ignoran en el momento de la implementación. Estos archivos son fundamentales para el marco de trabajo de Dispatcher de AMS y no se pueden cambiar.
-   1. Apache realiza una prueba de configuración. Si no se encuentran errores, el servicio se vuelve a cargar. Si se produce un error, las configuraciones se restauran desde la copia de seguridad, el servicio se vuelve a cargar y el error se devuelve a Cloud Manager.
+   1. Apache realiza una prueba de configuración. Si no se encuentran errores, el servicio se vuelve a cargar. Si se encuentran errores, las configuraciones se restauran desde la copia de seguridad, el servicio se vuelve a cargar y el error se devuelve a Cloud Manager.
    1. Cada ruta especificada en la configuración de la canalización se invalida o se vacía de la caché de Dispatcher.
 
    >[!NOTE]
