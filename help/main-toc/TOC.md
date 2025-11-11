@@ -7,10 +7,10 @@ user-guide-description: Aprenda a utilizar Cloud Manager para autoadministrar Ad
 feature-set: Experience Manager Cloud Manager, Experience Manager
 feature: Cloud Manager
 role: Admin
-source-git-commit: edbf6ed4b8991df69adda569da8b509cf6d861d6
+source-git-commit: c08c4e4fdfa8927acf1f0bfd1fe346afdc3ce5a3
 workflow-type: tm+mt
-source-wordcount: '386'
-ht-degree: 89%
+source-wordcount: '388'
+ht-degree: 90%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 89%
 # Documentación de Cloud Manager {#content}
 
 + [Cloud Manager para AMS](/help/introduction.md)
-+ [Experience Hub](https://experienceleague.adobe.com/es/docs/experience-manager-65/content/experience-hub/experience-hub)
++ [Experience Hub](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/experience-hub/experience-hub)
 + Información general {#overview}
    + [Conceptos clave](/help/overview/key-concepts.md)
    + [Recorrido del usuario](/help/overview/user-journey.md)
@@ -67,7 +67,7 @@ ht-degree: 89%
    + [Añadir un repositorio externo (beta privada)](/help/managing-code/external-repositories.md)
    + [Administrar tokens de acceso (beta privada)](/help/managing-code/manage-access-tokens.md)
    + [Compatibilidad con los submódulos de Git](/help/managing-code/git-submodules.md)
-   + [Extraer solicitudes de comprobación de repositorios privados](/help/managing-code/github-check-config.md)
+   + [Comprobaciones de solicitudes de extracción para repositorios privados](/help/managing-code/github-check-config.md)
    + [Anotaciones de comprobación de GitHub](/help/managing-code/github-annotations.md)
    + [Administrar versiones del proyecto de Maven](/help/managing-code/maven-project-version.md)
    + [Integrarse con Git](/help/managing-code/git-integration.md)
@@ -78,6 +78,7 @@ ht-degree: 89%
 + Notas de la versión {#release-notes}
    + [Actual](/help/release-notes/current.md)
    + 2025 {#rn-2025}
+      + [2025.10.0](/help/release-notes/2025/2025-10-0.md)
       + [2025.9.0](/help/release-notes/2025/2025-9-0.md)
       + [2025.8.0](/help/release-notes/2025/2025-8-0.md)
       + [2025.7.0](/help/release-notes/2025/2025-7-0.md)
