@@ -1,13 +1,13 @@
 ---
-source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
-workflow-type: ht
-source-wordcount: '498'
-ht-degree: 100%
+source-git-commit: 23930ee54667561b5f3983056af4406301f28da2
+workflow-type: tm+mt
+source-wordcount: '500'
+ht-degree: 92%
 
 ---
-# Contribución a la documentación de Adobe Experience Manager Screens
+# Contribución a la documentación de Adobe Experience Manager Cloud Manager
 
-Gracias por su contribución a la documentación de Adobe Experience Manager Screens. Adobe agradece las contribuciones de contenido de toda la comunidad de lectores, así como de otros empleados de Adobe.
+Gracias por contribuir con la documentación de Adobe Experience Manager Cloud Manager. Adobe agradece las contribuciones de contenido de toda la comunidad de lectores, así como de otros empleados de Adobe.
 
 Este archivo describe cómo puede contribuir, así como las directrices que debe seguir al realizar sus contribuciones.
 
@@ -19,7 +19,7 @@ Este proyecto ha adoptado el [Código de conducta de código abierto de Adobe](c
 
 Si bien Adobe agradece cualquier contribución para mejorar la documentación de AEM, pedimos que las contribuciones se ajusten a determinadas directrices y normas, siempre que sea posible. Consulte las [Directrices para contribuir a la documentación de AEM](guidelines.md) para obtener más información.
 
-## Contribuciones
+## Cómo contribuir
 
 Adobe quiere facilitar al máximo el envío de sus contribuciones. Puede contribuir de las siguientes dos maneras:
 
@@ -44,7 +44,7 @@ Si ve un problema y sabe exactamente cómo solucionarlo, plantéese crear una so
 
 Todas las solicitudes de extracción deben tener un [contrato de licencia de colaborador o CLA](https://opensource.adobe.com/cla.html) que esté firmado. El CLA otorga permiso a Adobe para redistribuir sus contribuciones como parte del proyecto. Solo debe mandar un CLA de Adobe, así que si ya mandó uno en el pasado, con ese es suficiente.
 
-### Vídeo introductorio breve
+### Introducción rápida a vídeo
 
 Consulte el siguiente vídeo para obtener una descripción general rápida de cómo crear incidencias y solicitudes de extracción.
 
@@ -56,6 +56,6 @@ Si es un empleado de Adobe y tiene una contribución que hacer, utilice la organ
 
 Adobe está encantado de recibir cualquier contribución y revisa su contribución si la realiza en el repositorio público. Sin embargo, las solicitudes de extracción de los empleados de Adobe son más fáciles de procesar y pueden aprobarse más rápidamente en el repositorio corporativo. Asegúrese de que la información confidencial solo se trate en el repositorio corporativo.
 
-## Información adicional
+## Más información
 
-Consulte la [Guía del colaborador de documentos de Adobe](https://experienceleague.adobe.com/es_es/docs/contributor/contributor-guide/introduction) para obtener más información sobre cómo utilizar la plataforma de creación de GitHub.
+Consulte la [Guía del colaborador de documentos de Adobe](https://experienceleague.adobe.com/es/docs/contributor/contributor-guide/introduction) para obtener más información sobre cómo utilizar la plataforma de creación de GitHub.
