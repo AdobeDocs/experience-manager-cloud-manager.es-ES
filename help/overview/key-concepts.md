@@ -2,10 +2,10 @@
 title: Conceptos clave
 description: Al igual que todas las herramientas potentes, Cloud Manager engloba muchos conceptos y términos. Este documento resume algunos de los más importantes para usted a medida que comienza a utilizarlo.
 exl-id: 86dfc976-f3da-479a-9faa-08f40ca909e0
-source-git-commit: f855fa91656e4b3806a617d61ea313a51fae13b4
-workflow-type: ht
+source-git-commit: 75baacd1fd6f36ca1d6ea5c1993516569ab6ef47
+workflow-type: tm+mt
 source-wordcount: '414'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -42,7 +42,7 @@ Una instancia es un servidor virtual específico que ejecuta la [solución](#sol
 
 ## Organización {#organization}
 
-Una organización es un constructo de Adobe que representa a un cliente empresarial. Una compañía puede tener varias organizaciones en función de cómo se hayan aprovisionado en el sistema Identity Management de Adobe (IMS).
+Una organización es un constructo de Adobe que representa a un cliente empresarial. Una compañía puede tener varias organizaciones en función de cómo se ofrezcan en el sistema Identity Management de Adobe (IMS).
 
 ## Canalización {#pipeline}
 
