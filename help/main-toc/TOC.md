@@ -18,7 +18,7 @@ ht-degree: 91%
 # Documentación de Cloud Manager {#content}
 
 + [Cloud Manager para AMS](/help/introduction.md)
-+ [Experience Hub](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/experience-hub/experience-hub)
++ [Experience Hub](https://experienceleague.adobe.com/es/docs/experience-manager-65/content/experience-hub/experience-hub)
 + Información general {#overview}
    + [Conceptos clave](/help/overview/key-concepts.md)
    + [Recorrido del usuario](/help/overview/user-journey.md)
