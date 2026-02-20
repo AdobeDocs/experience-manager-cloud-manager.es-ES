@@ -7,10 +7,10 @@ user-guide-description: Aprenda a utilizar Cloud Manager para autoadministrar Ad
 feature-set: Experience Manager Cloud Manager, Experience Manager
 feature: Cloud Manager
 role: Admin
-source-git-commit: 28841719e820e47577b411a4034ebc7a8e1bb556
+source-git-commit: 8ceaefebdddefb508a4c296c00f053e6b4dfb248
 workflow-type: tm+mt
-source-wordcount: '390'
-ht-degree: 90%
+source-wordcount: '388'
+ht-degree: 91%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 90%
 # Documentación de Cloud Manager {#content}
 
 + [Cloud Manager para AMS](/help/introduction.md)
-+ [Experience Hub](https://experienceleague.adobe.com/es/docs/experience-manager-65/content/experience-hub/experience-hub)
++ [Experience Hub](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/experience-hub/experience-hub)
 + Información general {#overview}
    + [Conceptos clave](/help/overview/key-concepts.md)
    + [Recorrido del usuario](/help/overview/user-journey.md)
@@ -65,7 +65,7 @@ ht-degree: 90%
    + [Adición de un repositorio de Adobe](/help/managing-code/adobe-repositories.md)
    + [Adición de un repositorio privado](/help/managing-code/private-repositories.md)
    + [Añadir un repositorio externo](/help/managing-code/external-repositories.md)
-   + [Administrar tokens de acceso (beta privada)](/help/managing-code/manage-access-tokens.md)
+   + [Administrar tókenes de acceso](/help/managing-code/manage-access-tokens.md)
    + [Compatibilidad con los submódulos de Git](/help/managing-code/git-submodules.md)
    + [Comprobaciones de solicitudes de extracción para repositorios privados](/help/managing-code/github-check-config.md)
    + [Anotaciones de comprobación de GitHub](/help/managing-code/github-annotations.md)

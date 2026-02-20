@@ -2,7 +2,7 @@
 title: Adición de repositorios externos en Cloud Manager
 description: Obtenga información sobre cómo añadir un repositorio administrado a Adobe en Cloud Manager. Cloud Manager admite la integración con repositorios de GitHub Enterprise, GitLab, Bitbucket y Azure DevOps.
 exl-id: 4500cacc-5e27-4bbb-b8f6-5144dac7e6da
-source-git-commit: 76a5cb04514bc1961c8f9008e9bea5d1d6fe1c19
+source-git-commit: 651d9fc9964d599cb51556f7b6ba255fe8092d7f
 workflow-type: tm+mt
 source-wordcount: '2453'
 ht-degree: 27%
@@ -15,15 +15,12 @@ ht-degree: 27%
 
 Obtenga información sobre cómo añadir un repositorio administrado a Adobe en Cloud Manager. Cloud Manager admite la integración con repositorios de GitHub Enterprise, GitLab y Bitbucket.
 
-Los clientes ahora también pueden incorporar sus repositorios Git de Azure DevOps en Cloud Manager, con compatibilidad tanto con los repositorios modernos de Azure DevOps como con los repositorios VSTS heredados (Visual Studio Team Services).
+Los clientes ahora también pueden incorporar sus repositorios Git de DevOps de Azure en Cloud Manager, con compatibilidad tanto con los repositorios modernos de DevOps de Azure como con los repositorios VSTS heredados (Visual Studio Team Services).
 
 * Para los usuarios de Edge Delivery Services, el repositorio incorporado se puede utilizar para sincronizar e implementar el código del sitio.
 * Para los usuarios de AEM as a Cloud Service y Adobe Managed Services (AMS), el repositorio se puede vincular a canalizaciones de pila completa y de front-end.
 
-<!--
->[!NOTE]
->
->The support added for Azure DevOps described in this article is available only through the private beta program. For more details and to sign up for the beta, see [Bring Your Own Git](/help/release-notes/current.md). -->
+
 
 ## Configurar un repositorio externo
 
@@ -127,7 +124,7 @@ Consulte también [Administrar tokens de acceso](/help/managing-code/manage-acce
 | Opción de token de acceso | Descripción |
 | --- | --- |
 | **Usar token de acceso existente** | Si ya ha proporcionado un token de acceso al repositorio para su organización y tiene acceso a varios repositorios, puede seleccionar un token existente. Utilice la lista desplegable **Nombre de token** para elegir el token que desea aplicar al repositorio. De lo contrario, añada un nuevo token de acceso. |
-| **Añadir nuevo token de acceso** | <ul><li>En el campo de texto **Nombre de token**, escriba un nombre para el token de acceso que está creando.<li>Cree un token de acceso al repositorio con la [documentación de Azure DevOps](https://learn.microsoft.com/en-us/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?view=azure-devops&tabs=Windows).<li>Permisos necesarios para el token de acceso personal (PAT) de Azure DevOps.<br>Estos permisos permiten a Cloud Manager acceder al contenido del repositorio, administrar solicitudes de extracción y configurar eventos de gancho web o reaccionar a ellos.<br>Cuando cree la contraseña de la aplicación en Azure DevOps, asegúrese de que incluya los siguientes permisos de contraseña de aplicación necesarios:<ul><li>Código (lectura)</li><li>Código (estado)</li><li>Threads de solicitud de extracción (lectura y escritura)</li></ul></li></li></ul></ul></ul><ul><li>En el campo **Token de acceso**, pegue el token que acaba de crear. |
+| **Añadir nuevo token de acceso** | <ul><li>En el campo de texto **Nombre de token**, escriba un nombre para el token de acceso que está creando.<li>Cree un token de acceso al repositorio con la [documentación de Azure DevOps](https://learn.microsoft.com/en-us/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?view=azure-devops&tabs=Windows).<li>Permisos necesarios para el token de acceso personal (PAT) de Azure DevOps.<br>Estos permisos permiten a Cloud Manager acceder al contenido del repositorio, administrar solicitudes de extracción y configurar eventos de gancho web o reaccionar a ellos.<br>Cuando cree la contraseña de la aplicación en Azure DevOps, asegúrese de que incluya los siguientes permisos de contraseña de la aplicación necesarios:<ul><li>Código (lectura)</li><li>Código (estado)</li><li>Threads de solicitud de extracción (lectura y escritura)</li></ul></li></li></ul></ul></ul><ul><li>En el campo **Token de acceso**, pegue el token que acaba de crear. |
 
 Después de la validación, el repositorio externo estará listo para usarse y vincularse a una canalización.
 
@@ -170,7 +167,7 @@ Por ejemplo, los enlaces web permiten a Cloud Manager almacenar en déclencheur 
 
 La configuración de webhook no es necesaria para los repositorios alojados en `GitHub.com` porque Cloud Manager se integra directamente a través de la aplicación GitHub.
 
-Para todos los demás repositorios externos incorporados con un token de acceso, como GitHub Enterprise, GitLab, Bitbucket y Azure DevOps, la configuración del webhook está disponible y debe configurarse manualmente.
+Para todos los demás repositorios externos incorporados con un token de acceso, como GitHub Enterprise, GitLab, Bitbucket y DevOps de Azure, la configuración de webhook está disponible y debe configurarse manualmente.
 
 **Para configurar un webhook para un repositorio externo:**
 
@@ -300,23 +297,23 @@ Utiliza el estado de confirmación para rastrear el progreso de validación de P
 
 >[!TAB DevOps de Azure]
 
-Azure DevOps rastrea la validación de solicitudes de extracción a través de comprobaciones de estado. Cuando Cloud Manager ejecuta la validación de solicitudes de extracción, agrega comprobaciones de estado que aparecen en la interfaz de solicitudes de extracción de Azure DevOps.
+Azure DevOps realiza un seguimiento de la validación de solicitudes de extracción mediante comprobaciones de estado. Cuando Cloud Manager ejecuta la validación de solicitudes de extracción, agrega comprobaciones de estado que aparecen en la interfaz de solicitudes de extracción de Azure DevOps.
 
 Durante la validación de la calidad del código, una comprobación de estado muestra que el proceso está en curso:
 
-![Validación de Azure DevOps de solicitudes de extracción con webhooks-1](/help/managing-code/assets/azure-devops-validation-of-pull-requests-with-webhooks-1.png)
+![Validación de DevOps de Azure de solicitudes de extracción con webhooks-1](/help/managing-code/assets/azure-devops-validation-of-pull-requests-with-webhooks-1.png)
 
 Cuando se complete la validación de calidad del código, la comprobación de estado se actualiza para reflejar los resultados:
 
-![Validación de Azure DevOps de solicitudes de extracción con webhooks-2](/help/managing-code/assets/azure-devops-validation-of-pull-requests-with-webhooks-2.png)
+![Validación de DevOps de Azure de solicitudes de extracción con webhooks-2](/help/managing-code/assets/azure-devops-validation-of-pull-requests-with-webhooks-2.png)
 
 Si la validación falla, se proporciona información detallada sobre el error en los detalles de la comprobación de estado. Puede hacer clic en la comprobación de estado para ver los resultados de validación completos en Cloud Manager.
 
-Validación de ![Azure DevOps de solicitudes de extracción con webhooks-3](/help/managing-code/assets/azure-devops-validation-of-pull-requests-with-webhooks-3.png)
+![Validación de DevOps de Azure de solicitudes de extracción con webhooks-3](/help/managing-code/assets/azure-devops-validation-of-pull-requests-with-webhooks-3.png)
 
-Para comentarios y sugerencias sobre solicitudes de extracción, Cloud Manager agrega comentarios directamente a la solicitud de extracción en Azure DevOps con detalles de validación y las acciones necesarias.
+Para comentarios y sugerencias sobre solicitudes de extracción, Cloud Manager agrega comentarios directamente a la solicitud de extracción en las oficinas de desarrollo de Azure con detalles de validación y las acciones necesarias.
 
-Validación de ![Azure DevOps de solicitudes de extracción con webhooks-4](/help/managing-code/assets/azure-devops-validation-of-pull-requests-with-webhooks-4.png)
+![Validación de DevOps de Azure de solicitudes de extracción con webhooks-4](/help/managing-code/assets/azure-devops-validation-of-pull-requests-with-webhooks-4.png)
 
 
 >[!ENDTABS]
