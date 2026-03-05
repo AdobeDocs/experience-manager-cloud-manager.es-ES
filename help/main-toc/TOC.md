@@ -7,10 +7,10 @@ user-guide-description: Aprenda a utilizar Cloud Manager para autoadministrar Ad
 feature-set: Experience Manager Cloud Manager, Experience Manager
 feature: Cloud Manager
 role: Admin
-source-git-commit: 8ceaefebdddefb508a4c296c00f053e6b4dfb248
+source-git-commit: 77f5000f0a237dc82e183eb074eddb23e3a2eb44
 workflow-type: tm+mt
-source-wordcount: '388'
-ht-degree: 91%
+source-wordcount: '334'
+ht-degree: 87%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 91%
 # Documentación de Cloud Manager {#content}
 
 + [Cloud Manager para AMS](/help/introduction.md)
-+ [Experience Hub](https://experienceleague.adobe.com/es/docs/experience-manager-65/content/experience-hub/experience-hub)
++ [Experience Hub](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/experience-hub/experience-hub)
 + Información general {#overview}
    + [Conceptos clave](/help/overview/key-concepts.md)
    + [Recorrido del usuario](/help/overview/user-journey.md)
@@ -77,6 +77,9 @@ ht-degree: 91%
    + [Evaluación](/help/product-update-wizard/evaluation.md)
 + Notas de la versión {#release-notes}
    + [Actual](/help/release-notes/current.md)
+   + 2026 {#rn-2026}
+      + [2026.2.0](/help/release-notes/2026/2026-2-0.md)
+      + [2026.1.0](/help/release-notes/2026/2026-1-0.md)
    + 2025 {#rn-2025}
       + [2025.12.0](/help/release-notes/2025/2025-12-0.md)
       + [2025.11.0](/help/release-notes/2025/2025-11-0.md)
