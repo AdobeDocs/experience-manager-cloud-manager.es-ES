@@ -2,10 +2,10 @@
 title: Permisos personalizados
 description: Descubra cómo puede utilizar los permisos personalizados para crear nuevos perfiles de estos con permisos configurables para restringir el acceso a programas, canalizaciones y entornos para usuarios de Cloud Manager.
 exl-id: a81eda9f-aa89-40ea-8e4c-52367a0a6aba
-source-git-commit: fb3c2b3450cfbbd402e9e0635b7ae1bd71ce0501
+source-git-commit: ee49b0732fdb870c4f768764aa75b240fd101b59
 workflow-type: tm+mt
-source-wordcount: '1373'
-ht-degree: 98%
+source-wordcount: '1391'
+ht-degree: 97%
 
 ---
 
@@ -86,7 +86,7 @@ Ahora que tiene un nuevo perfil de producto, puede asignarle permisos personaliz
 
    ![Editar elementos de permiso](/help/assets/edit-permission-items.png)
 
-1. Haga clic en el signo más (`+`) junto al elemento de permiso para añadirlo a la columna **Elementos de permisos incluidos**. Pulse en el icono `i` situado junto a un elemento de permiso para obtener más información al respecto.
+1. Haga clic en el signo más (`+`) junto al elemento de permiso para añadirlo a la columna **Elementos de permisos incluidos**. Haga clic en el icono `i` situado junto a un elemento de permiso para obtener más información al respecto.
 
 1. En la parte superior de la columna **Permisos disponibles**, haga clic en **Agregar todos** para agregar todos los permisos. Del mismo modo, pulse o haga clic en **Quitar todo** para quitar todos los permisos seleccionados previamente.
 
@@ -153,7 +153,7 @@ Los elementos de permisos hacen referencia al ámbito en el que se aplicará el 
 
 | Tipo de elemento de permiso | Ejemplos | Descripción |
 | --- | --- | --- |
-| Organización | organization:companyA | Todos los recursos aplicables de una organización. Un recurso puede ser un programa, un entorno o una canalización. Si el usuario añade una organización para cualquier permiso, todos los recursos nuevos de esa organización también tendrán ese permiso. |
+| Organización | organización:companyA | Todos los recursos aplicables de una organización. Un recurso puede ser un programa, un entorno o una canalización. Si el usuario añade una organización para cualquier permiso, todos los recursos nuevos de esa organización también tendrán ese permiso. |
 | Programa | Programa A | Todos los recursos aplicables de un programa. |
 | Entorno | Programa A: entorno | Aplicable en un entorno específico. |
 | Canalización | Programa A: canalización | Aplicable en una canalización específica. |
@@ -163,7 +163,7 @@ Los elementos de permisos hacen referencia al ámbito en el que se aplicará el 
 Tenga en cuenta las siguientes limitaciones al utilizar los permisos personalizados:
 
 * Un [conjunto limitado de permisos está disponible](#configurable-permissions) para crear perfiles personalizados.
-* Recursos como programa, entorno, canalización, etc. Los permisos creados en Cloud Manager pueden tardar dos minutos en mostrarse en Admin Console para la configuración de permisos.
+* Los recursos como programa, entorno, canalización, etc. creados en Cloud Manager pueden tardar dos minutos en mostrarse en Admin Console para la configuración de permisos.
 * En casos excepcionales en los que el servicio de permisos personalizados no responde, los perfiles predefinidos siguen estando disponibles y teniendo el acceso adecuado.
 
 ## Preguntas frecuentes {#faq}
