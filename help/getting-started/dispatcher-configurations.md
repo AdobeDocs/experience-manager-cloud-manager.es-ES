@@ -30,7 +30,7 @@ Siga estos pasos a continuación para completar la configuración inicial de Dis
 
 1. Obtenga los archivos de configuración de producción actuales de su CSE.
 1. Elimine los datos específicos de entorno con código no modificable, como la IP del procesador de publicación, y reemplácelos por variables.
-1. Defina las variables necesarias en pares de clave-valor para cada Dispatcher de destino y agréguelas a la carpeta [variables](https://experienceleague.adobe.com/docs/experience-manager-learn/ams/dispatcher/variables.html?lang=en#variables-files-(.vars)) de cada instancia.
+1. Defina las variables necesarias en pares de clave-valor para cada Dispatcher de destino y agréguelas a la carpeta [variables](https://experienceleague.adobe.com/docs/experience-manager-learn/ams/dispatcher/variables.html?lang=es#variables-files-(.vars)) de cada instancia.
 1. Pruebe las configuraciones actualizadas en el entorno de ensayo.
 1. Una vez probada, solicite a su CSE que implemente en producción.
 1. Transfiera los archivos al repositorio de Git.
