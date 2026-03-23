@@ -3,10 +3,10 @@ title: Notas de la versión de Cloud Manager 2026.3.0
 description: Obtenga información acerca de la versión de Cloud Manager 2026.3.0 en Adobe Managed Services.
 feature: Release Information
 exl-id: cc1dc94b-129d-4de7-8e57-8fc5dcba7d9f
-source-git-commit: ee49b0732fdb870c4f768764aa75b240fd101b59
+source-git-commit: b7e651b72d1943aef69c1c69915d4752a6163931
 workflow-type: tm+mt
-source-wordcount: '444'
-ht-degree: 19%
+source-wordcount: '461'
+ht-degree: 16%
 
 ---
 
@@ -30,7 +30,7 @@ La próxima versión planificada es el jueves, 2 de abril de 2026.
 ## Novedades {#what-is-new}
 
 * **Compatibilidad con la extensibilidad de la IU en AEM Experience Hub**
-Ya está habilitada la compatibilidad con las extensiones de IU en [AEM Experience Hub](https://experienceleague.adobe.com/es/docs/experience-manager-65/content/experience-hub/experience-hub), lo que permite a los desarrolladores ampliar la interfaz con funcionalidad y widgets personalizados creados con Adobe App Builder.
+Ya está habilitada la compatibilidad con las extensiones de IU en [AEM Experience Hub](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/experience-hub/experience-hub), lo que permite a los desarrolladores ampliar la interfaz con funcionalidad y widgets personalizados creados con Adobe App Builder.
 
   Para obtener más información, consulta [AEM Experience Hub](https://developer.adobe.com/uix/docs/services/aem-experience-hub/).
 
@@ -41,7 +41,7 @@ Ya está habilitada la compatibilidad con las extensiones de IU en [AEM Experien
   ![Opción Ver/Editar variables en el menú desplegable de una canalización seleccionada](/help/release-notes/assets/view-edit-variables-option.png)
   *Opción Ver/Editar variables en el menú desplegable de una canalización seleccionada.*
 
-  ![Cuadro de diálogo Configuración de variables &#x200B;](/help/release-notes/assets/view-edit-variables-variablesconfig-dialogbox.png)*Cuadro de diálogo Configuración de variables.*
+  ![Cuadro de diálogo Configuración de variables ](/help/release-notes/assets/view-edit-variables-variablesconfig-dialogbox.png)*Cuadro de diálogo Configuración de variables.*
 
 * **Mayor estabilidad, rendimiento y confiabilidad**
 
@@ -57,7 +57,7 @@ Actualmente están disponibles las siguientes oportunidades:
 <!--
 ### Experience Hub Extensibility and Customization {#exp-hub-extensibility}
 
-[Experience Hub](https://experienceleague.adobe.com/es/docs/experience-manager-65/content/experience-hub/experience-hub) serves as your entry point to AEM, customized for your organization's needs. Tell Adobe about your existing AEM UI extensions so they can help you enable them in Experience Hub with minimal effort.
+[Experience Hub](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/experience-hub/experience-hub) serves as your entry point to AEM, customized for your organization's needs. Tell Adobe about your existing AEM UI extensions so they can help you enable them in Experience Hub with minimal effort.
 
 ![Diagram of Experience Hub extensibility and customization workflow](/help/release-notes/assets/experience-hub-extensibility-customization.png)
 
@@ -68,7 +68,7 @@ Interested in the beta? Email [beta_exphubextensibility@adobe.com](mailto:beta_e
 
 ### Compilaciones más rápidas con almacenamiento en caché de módulos {#quick-build-cm-pipelines}
 
-Un nuevo modelo de compilación solo compila los módulos modificados (en lugar de todo el repositorio) mediante el almacenamiento en caché a nivel de módulo para acortar los tiempos de compilación. Se aplica a las canalizaciones de calidad de código, de pila completa y de solo ensayo.
+Un nuevo modelo de compilación solo compila los módulos modificados (en lugar de todo el repositorio) mediante el almacenamiento en caché a nivel de módulo para acortar los tiempos de compilación. Se aplica a las canalizaciones Calidad del código y Pila completa.
 
 ![Editar canalización que no sea de producción en el cuadro de diálogo que muestra las dos opciones de Estrategia de compilación que son Versión completa y Versión inteligente](/help/release-notes/assets/non-production-pipeline-edit.png)
 *Editar canalización que no sea de producción en el cuadro de diálogo que muestra las dos opciones de estrategia de compilación, compilación completa y compilación inteligente.*
@@ -78,7 +78,9 @@ En el cuadro de diálogo **Agregar o editar canalización**, en la ficha **Códi
 * **Compilación completa**: genera todos los módulos del repositorio en cada ejecución.
 * **Compilación inteligente**: genera solo módulos que han cambiado desde la última confirmación, lo que acorta el tiempo de compilación general.
 
-Usted controla qué canalizaciones utilizan **Smart Build**. Durante la versión beta, esta opción solo aparece para las canalizaciones **Calidad del código** y **Implementación de desarrolladores**.
+Vea [Agregar una canalización que no es de producción](/help/using/non-production-pipelines.md#add-non-production-pipeline) y [Acerca del uso de Smart Build en una canalización que no es de producción](/help/using/non-production-pipelines.md#about-smart-build).
+
+Usted controla qué canalizaciones utilizan **Smart Build**. Durante la versión beta, esta opción solo aparece para las canalizaciones **Calidad del código** y **Implementación de código de pila completa de desarrolladores**.
 
 ¿Le interesa? Envíe un correo electrónico a [beta_quickbuild_cmpipelines@adobe.com](mailto:beta_quickbuild_cmpipelines@adobe.com) con su identificador de organización de Adobe y el identificador de programa.
 
