@@ -2,7 +2,7 @@
 title: Adición de una canalización que no es de producción
 description: Aprenda a utilizar Cloud Manager para crear y configurar canalizaciones que no son de producción e implementar su código.
 exl-id: ccf4b4a2-6e29-4ede-821c-36318b568e5c
-source-git-commit: eaf3db69bd3cc0a06aafd1b415c5bdb467019c1b
+source-git-commit: 2a022c10ce64bb42d4bffd63bea01de25af0bd41
 workflow-type: tm+mt
 source-wordcount: '1992'
 ht-degree: 27%
@@ -139,7 +139,7 @@ La mejora del rendimiento obtenida mediante el uso de Smart Build depende de var
 * La frecuencia y el ámbito del código cambian.
 * La distribución de dependencias entre módulos.
 
-Por lo general, los proyectos con muchos módulos independientes son los que experimentan la mayor mejora.
+Generalmente, los proyectos con muchos módulos independientes pueden ver la mayor mejora.
 
 ### Exclusión de caché por módulo{#smart-build-cache-optout}
 
@@ -226,4 +226,4 @@ Después de configurar la canalización, puede implementar el código. Consulte 
 
 Este vídeo ofrece información general sobre el proceso de creación de canalizaciones, que se detalla en este documento.
 
->[!VIDEO](https://video.tv.adobe.com/v/327617?captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/26316/)
