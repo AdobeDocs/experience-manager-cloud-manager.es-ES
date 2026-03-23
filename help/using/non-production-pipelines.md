@@ -2,7 +2,7 @@
 title: Adición de una canalización que no es de producción
 description: Aprenda a utilizar Cloud Manager para crear y configurar canalizaciones que no son de producción e implementar su código.
 exl-id: ccf4b4a2-6e29-4ede-821c-36318b568e5c
-source-git-commit: 57de7b00b382e4fb65ad3e03948960022ec02de1
+source-git-commit: eaf3db69bd3cc0a06aafd1b415c5bdb467019c1b
 workflow-type: tm+mt
 source-wordcount: '1992'
 ht-degree: 27%
@@ -33,7 +33,7 @@ Existen dos tipos de canalizaciones que no son de producción:
 
 ## Adición de una nueva canalización que no es de producción {#add-non-production-pipeline}
 
-Después de configurar un programa y tener al menos un entorno usando la interfaz de usuario de Cloud Manager, puede agregar canalizaciones que no sean de producción para probar la calidad del código antes de implementarlas en entornos de producción.
+Después de configurar un programa y al menos un entorno en la interfaz de usuario de Cloud Manager, puede agregar canalizaciones que no sean de producción. Utilice estas canalizaciones para probar la calidad del código antes de implementarlo en entornos de producción.
 
 1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com) y seleccione la organización y el programa adecuados.
 
@@ -226,4 +226,4 @@ Después de configurar la canalización, puede implementar el código. Consulte 
 
 Este vídeo ofrece información general sobre el proceso de creación de canalizaciones, que se detalla en este documento.
 
->[!VIDEO](https://video.tv.adobe.com/v/327617?captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/26316/)
