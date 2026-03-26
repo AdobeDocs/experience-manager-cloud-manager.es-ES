@@ -2,7 +2,7 @@
 title: Adición de una canalización que no es de producción
 description: Aprenda a utilizar Cloud Manager para crear y configurar canalizaciones que no son de producción e implementar su código.
 exl-id: ccf4b4a2-6e29-4ede-821c-36318b568e5c
-source-git-commit: 2a022c10ce64bb42d4bffd63bea01de25af0bd41
+source-git-commit: ee409c97269a70aa9cf4ee4a39c425e62bc156e0
 workflow-type: tm+mt
 source-wordcount: '1992'
 ht-degree: 27%
