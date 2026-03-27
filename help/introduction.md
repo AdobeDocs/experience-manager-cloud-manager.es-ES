@@ -4,8 +4,8 @@ description: Empiece aquí para conocer Cloud Manager para Adobe Managed Service
 exl-id: 58344d8a-b869-4177-a9cf-6a8b7dfe9588
 source-git-commit: 8f29a06f63b8dc10cb3d28e2f38da1ead84f32f5
 workflow-type: tm+mt
-source-wordcount: '1250'
-ht-degree: 95%
+source-wordcount: '1299'
+ht-degree: 96%
 
 ---
 
@@ -54,9 +54,9 @@ Puede definir indicadores clave de rendimiento (KPI) específicos de la aplicaci
 
 ### Canalización de CI/CD {#ci-cd-pipeline}
 
-Una de las funcionalidades clave de [!UICONTROL Cloud Manager] es la capacidad de utilizar una canalización de CD/CI optimizada para acelerar el envío de código personalizado o las actualizaciones, como la adición de nuevos componentes en el sitio web.
+Una de las funcionalidades clave de [!UICONTROL Cloud Manager] es la capacidad de utilizar una CI/CD Pipeline optimizada para acelerar el envío de código personalizado o las actualizaciones, como la adición de nuevos componentes en el sitio web.
 
-A través de la IU de [!UICONTROL Cloud Manager], los clientes pueden configurar y poner en marcha su canalización de CD/CI. Como parte de esta canalización, se realiza un análisis exhaustivo del código para garantizar que solo las aplicaciones de alta calidad pasen al entorno de producción.
+A través de la IU de [!UICONTROL Cloud Manager], los clientes pueden configurar y poner en marcha su CI/CD Pipeline. Como parte de esta canalización, se realiza un análisis exhaustivo del código para garantizar que solo las aplicaciones de alta calidad pasen al entorno de producción.
 
 Para obtener más información acerca de la configuración de la canalización desde la IU de [!UICONTROL Cloud Manager], consulte los documentos [Configuración de canalizaciones de producción](/help/using/production-pipelines.md) y [Configuración de canalizaciones que no son de producción](/help/using/non-production-pipelines.md).
 
