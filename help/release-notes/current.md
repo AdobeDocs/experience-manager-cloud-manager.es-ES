@@ -3,12 +3,15 @@ title: Notas de la versión de Cloud Manager 2026.4.0
 description: Obtenga información acerca de la versión de Cloud Manager 2026.4.0 en Adobe Managed Services.
 feature: Release Information
 exl-id: cc1dc94b-129d-4de7-8e57-8fc5dcba7d9f
-source-git-commit: 0ad5d533e6f8749a9c141d5a095f0a2fed37efcf
+source-git-commit: 147695c1dc61b1836a09129f81b072c3a4299e93
 workflow-type: tm+mt
 source-wordcount: '467'
 ht-degree: 14%
 
 ---
+
+
+<!-- add "hold: true" to metadata above to be able to commit/merge to Main WITHOUT Publishig -->
 
 # Notas de la versión de Cloud Manager 2026.4.0 en Adobe Managed Services {#release-notes}
 
