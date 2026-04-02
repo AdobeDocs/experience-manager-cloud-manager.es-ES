@@ -3,7 +3,7 @@ title: Notas de la versión de Cloud Manager 2026.4.0
 description: Obtenga información acerca de la versión de Cloud Manager 2026.4.0 en Adobe Managed Services.
 feature: Release Information
 exl-id: cc1dc94b-129d-4de7-8e57-8fc5dcba7d9f
-source-git-commit: 4f2fdc8d04b0ab48d3d18cc7d2cacfe0075b48f9
+source-git-commit: 0ad5d533e6f8749a9c141d5a095f0a2fed37efcf
 workflow-type: tm+mt
 source-wordcount: '467'
 ht-degree: 14%
@@ -14,7 +14,7 @@ ht-degree: 14%
 
 <!-- RELEASE WIKI  https://wiki.corp.adobe.com/display/DMSArchitecture/Cloud+Manager+2025.04.0+Release -->
 
-Obtenga información acerca de la versión de [!UICONTROL Cloud Manager] 2026.4.0 en Adobe Managed Services.
+Obtenga información acerca del lanzamiento de [!UICONTROL Cloud Manager] 2026.4.0 en Adobe Managed Services.
 
 Consulte también las [notas de la versión actual de Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/release-notes/home).
 
@@ -31,7 +31,7 @@ La próxima versión planificada es el jueves, 7 de mayo de 2026.
 
 * **Compatibilidad con la extensibilidad de la interfaz de usuario en AEM Experience Hub.**
 
-  Ahora está habilitada la compatibilidad con las extensiones de la interfaz de usuario en [AEM Experience Hub](https://experienceleague.adobe.com/es/docs/experience-manager-65/content/experience-hub/experience-hub), lo que permite a los desarrolladores ampliar la interfaz con funcionalidad y widgets personalizados creados con Adobe App Builder.
+  Ahora está habilitada la compatibilidad con las extensiones de la interfaz de usuario en [AEM Experience Hub](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/experience-hub/experience-hub), lo que permite a los desarrolladores ampliar la interfaz con funcionalidad y widgets personalizados creados con Adobe App Builder.
 
   Para obtener más información, consulta [AEM Experience Hub](https://developer.adobe.com/uix/docs/services/aem-experience-hub/).
 
@@ -42,7 +42,7 @@ La próxima versión planificada es el jueves, 7 de mayo de 2026.
   ![Opción Ver/Editar variables en el menú desplegable de una canalización seleccionada](/help/release-notes/assets/view-edit-variables-option.png)
   *Opción Ver/Editar variables en el menú desplegable de una canalización seleccionada.*
 
-  ![Cuadro de diálogo Configuración de variables &#x200B;](/help/release-notes/assets/view-edit-variables-variablesconfig-dialogbox.png)*Cuadro de diálogo Configuración de variables.*
+  ![Cuadro de diálogo Configuración de variables ](/help/release-notes/assets/view-edit-variables-variablesconfig-dialogbox.png)*Cuadro de diálogo Configuración de variables.*
 
 * **Se mejoró la estabilidad, el rendimiento y la confiabilidad.**
 
@@ -58,7 +58,7 @@ Actualmente están disponibles las siguientes oportunidades:
 <!--
 ### Experience Hub Extensibility and Customization {#exp-hub-extensibility}
 
-[Experience Hub](https://experienceleague.adobe.com/es/docs/experience-manager-65/content/experience-hub/experience-hub) serves as your entry point to AEM, customized for your organization's needs. Tell Adobe about your existing AEM UI extensions so they can help you enable them in Experience Hub with minimal effort.
+[Experience Hub](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/experience-hub/experience-hub) serves as your entry point to AEM, customized for your organization's needs. Tell Adobe about your existing AEM UI extensions so they can help you enable them in Experience Hub with minimal effort.
 
 ![Diagram of Experience Hub extensibility and customization workflow](/help/release-notes/assets/experience-hub-extensibility-customization.png)
 
