@@ -2,12 +2,11 @@
 title: 'Actualizaciones de Service Pack para entornos de desarrollo: beta privada'
 description: Descubra cómo ahora puede iniciar actualizaciones de Service Pack para entornos de desarrollo a través de la interfaz de usuario de Cloud Manager.
 hide: true
-hidefromtoc: true
 exl-id: 996a8eee-843f-45a6-8f7a-31ea405c2b32
-source-git-commit: b2a14280e84bb934053968b0e93e33d30fb6086a
+source-git-commit: 9ef2f45331c0aaf5c619af1151da38278cfc3c5d
 workflow-type: tm+mt
-source-wordcount: '453'
-ht-degree: 1%
+source-wordcount: '468'
+ht-degree: 2%
 
 ---
 
