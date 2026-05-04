@@ -4,9 +4,13 @@ description: Obtenga información acerca de la versión de Cloud Manager 2026.4.
 feature: Release Information
 exl-id: cc1dc94b-129d-4de7-8e57-8fc5dcba7d9f
 TQID: https://experienceleague.adobe.com/4zfTpSYuFwrJZ-oeL1SObT14v2Rd--Z1hKn5JllHAro
-product_v2: id: c68cd75e-5bca-4bc3-a60e-9e183f816441id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2: id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+product_v2:
+  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
 source-git-commit: 8964aad406d3e7fc5b911b98f928ad0427511230
 workflow-type: tm+mt
 source-wordcount: 467
@@ -49,7 +53,7 @@ La próxima versión planificada es el jueves, 7 de mayo de 2026.
   ![Opción Ver/Editar variables en el menú desplegable de una canalización seleccionada](/help/release-notes/assets/view-edit-variables-option.png)
   *Opción Ver/Editar variables en el menú desplegable de una canalización seleccionada.*
 
-  ![Cuadro de diálogo Configuración de variables ](/help/release-notes/assets/view-edit-variables-variablesconfig-dialogbox.png)*Cuadro de diálogo Configuración de variables.*
+  ![Cuadro de diálogo Configuración de variables &#x200B;](/help/release-notes/assets/view-edit-variables-variablesconfig-dialogbox.png)*Cuadro de diálogo Configuración de variables.*
 
 * **Se mejoró la estabilidad, el rendimiento y la confiabilidad.**
 
