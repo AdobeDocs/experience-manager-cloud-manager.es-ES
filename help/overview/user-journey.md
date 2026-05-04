@@ -2,13 +2,16 @@
 title: Recorrido del usuario
 description: Obtenga información acerca de los diferentes escenarios de incorporación y la introducción a Cloud Manager.
 exl-id: deb3429c-dfcf-4e52-9aba-d9368aa240e6
-source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
-workflow-type: ht
-source-wordcount: '532'
+TQID: https://experienceleague.adobe.com/EnNaMZzu5bLUD3Jjsp6ovqFvoFM30ju4FOQJfmySLEk
+product_v2: id: c68cd75e-5bca-4bc3-a60e-9e183f816441id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2: id: cd2426f1-5719-4006-b8c2-738e5969754b
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
+workflow-type: tm+mt
+source-wordcount: 560
 ht-degree: 100%
 
 ---
-
 
 # Recorrido del usuario {#user-journey}
 
@@ -50,7 +53,7 @@ Para obtener información adicional sobre las ventajas de actualizar a AEM 6.5, 
 
 ## Acceso a [!UICONTROL Cloud Manager] {#accessing-cloud-manager}
 
-Inicie sesión en la página de aterrizaje de [!UICONTROL Experience Cloud] con sus credenciales de Identity Management de Adobe. Desde allí, seleccione AEM del conmutador de soluciones para acceder a [!UICONTROL Cloud Manager] y a sus entornos de AEM.
+Inicie sesión en la página de destino de [!UICONTROL Experience Cloud] con sus credenciales de Identity Management de Adobe. Desde allí, seleccione AEM del conmutador de soluciones para acceder a [!UICONTROL Cloud Manager] y a sus entornos de AEM.
 
 Tras iniciar sesión en [!UICONTROL Cloud Manager] por primera vez, tendrá acceso a los entornos de AEM directamente desde la IU de [!UICONTROL Cloud Manager]. En este punto, ya puede explorar todas las posibilidades de [!UICONTROL Cloud Manager] y preparar su primera rama de código para implementarla en los entornos de ensayo y producción.
 

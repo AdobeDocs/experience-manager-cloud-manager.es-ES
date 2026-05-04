@@ -2,13 +2,15 @@
 title: Administrar versiones del proyecto de Maven
 description: Descubra cómo Maven gestiona las versiones de proyectos en Cloud Manager.
 exl-id: a1d676e0-27cc-4b0d-8799-527c0520946a
-source-git-commit: ee49b0732fdb870c4f768764aa75b240fd101b59
+TQID: https://experienceleague.adobe.com/bJu9-2gYrKZW78jEpaKbXiJ9b5NZEGdjICFjC4J0Dyg
+product_v2: id: c68cd75e-5bca-4bc3-a60e-9e183f816441id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
 workflow-type: tm+mt
-source-wordcount: '251'
+source-wordcount: 251
 ht-degree: 100%
 
 ---
-
 
 # Administrar versiones del proyecto de Maven {#project-version}
 

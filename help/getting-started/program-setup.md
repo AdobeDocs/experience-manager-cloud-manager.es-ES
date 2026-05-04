@@ -2,13 +2,16 @@
 title: Configuración del programa
 description: Después de la incorporación, el propietario de la empresa tiene que llevar a cabo alguna configuración inicial del programa.
 exl-id: 795c7112-d564-4fbf-96a1-152a6c286bf2
-source-git-commit: fb3c2b3450cfbbd402e9e0635b7ae1bd71ce0501
+TQID: https://experienceleague.adobe.com/AqaA4GSOptV11h2y4V1Mt15KmEhEYBaiM-RvBFjtfWY
+product_v2: id: c68cd75e-5bca-4bc3-a60e-9e183f816441id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2: id: cd2426f1-5719-4006-b8c2-738e5969754b
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
 workflow-type: tm+mt
-source-wordcount: '564'
+source-wordcount: 570
 ht-degree: 93%
 
 ---
-
 
 # Configuración del programa {#program-setup}
 
@@ -92,4 +95,4 @@ Puede tener una red de distribución de contenido (CDN) como Akamai o CloudFront
 
 ## Información general en vídeo {#video}
 
->[!VIDEO](https://video.tv.adobe.com/v/34622?captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/26313/)

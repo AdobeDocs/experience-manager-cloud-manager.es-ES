@@ -2,9 +2,13 @@
 title: Dividir canalizaciones solo de fase y solo de producción
 description: Descubra cómo puede dividir las implementaciones de fase y producción mediante canalizaciones dedicadas.
 exl-id: b7dd0021-d346-464a-a49e-72864b01cce3
-source-git-commit: 92237ea156e3921b5dc55cea3abdecee9d26b14b
+TQID: https://experienceleague.adobe.com/whq-Hkwp3mjTr0iftoKZHKdsi0xaKtVXazXjUENoaLk
+product_v2: id: c68cd75e-5bca-4bc3-a60e-9e183f816441id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2: id: cd2426f1-5719-4006-b8c2-738e5969754b
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
 workflow-type: tm+mt
-source-wordcount: '917'
+source-wordcount: 980
 ht-degree: 94%
 
 ---
@@ -62,7 +66,7 @@ Las canalizaciones de solo producción y fase se crean de forma similar a las [c
 ### Canalizaciones de solo fase {#stage-only}
 
 1. Una vez seleccionada la opción **Añadir canalización que no sea de producción**, se abre el cuadro de diálogo **Añadir canalización que no sea de producción**.
-1. Para crear una canalización de solo fase, seleccione el entorno de fase en el campo **Entornos de implementación aptos** para la canalización. 
+1. Para crear una canalización de solo fase, seleccione el entorno de fase en el campo **Entornos de implementación aptos** para la canalización.
 1. Rellene los campos restantes.
 1. Haga clic en **Continuar**.
 
@@ -76,7 +80,7 @@ Las canalizaciones de solo producción y fase se crean de forma similar a las [c
 ### Canalizaciones de solo producción {#prod-only}
 
 1. Después de hacer clic en **Agregar canalización solo de producción**, se abre el cuadro de diálogo asociado.
-1. En el campo **Nombre de canalización**, escriba el nombre que desee. Las opciones y funcionalidades restantes del cuadro de diálogo funcionan igual que las del cuadro de diálogo de creación de canalización asociada estándar. 
+1. En el campo **Nombre de canalización**, escriba el nombre que desee. Las opciones y funcionalidades restantes del cuadro de diálogo funcionan igual que las del cuadro de diálogo de creación de canalización asociada estándar.
 1. En la esquina inferior derecha del cuadro de diálogo, haga clic en **Guardar**.
 
    ![Creación de una canalización de solo producción](/help/assets/configure-pipelines/prod-only-pipeline.png)

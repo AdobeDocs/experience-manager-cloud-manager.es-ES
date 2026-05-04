@@ -2,13 +2,17 @@
 title: Supervisar entornos
 description: Obtenga información sobre cómo monitorizar los entornos en Cloud Manager.
 exl-id: 32886133-d6c0-4aed-8bb0-81b84f63e825
-source-git-commit: fb3c2b3450cfbbd402e9e0635b7ae1bd71ce0501
+TQID: https://experienceleague.adobe.com/1WlZ7i3267CTPVQrvLi9FlzJuTjzSzpghePEMlSygjY
+product_v2: id: c68cd75e-5bca-4bc3-a60e-9e183f816441id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2: id: cd2426f1-5719-4006-b8c2-738e5969754b
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
 workflow-type: tm+mt
-source-wordcount: '865'
+source-wordcount: 873
 ht-degree: 74%
 
 ---
-
 
 # Supervisar entornos {#monitoring-environments}
 
@@ -18,9 +22,9 @@ Obtenga información sobre cómo monitorizar los entornos en Cloud Manager.
 
 La Monitorización del sistema, en [!UICONTROL Cloud Manager], se lleva a cabo observando las instancias individuales dentro de un entorno y con el seguimiento de una variedad de métricas para cada una. Cada métrica tiene dos umbrales definidos: un umbral de *advertencia* y un umbral *esencial*.
 
-Si una métrica supera su umbral de advertencia (pero está por debajo del esencial), se considera que está en estado de advertencia. 
+Si una métrica supera su umbral de advertencia (pero está por debajo del esencial), se considera que está en estado de advertencia.
 
-Si una métrica supera su umbral esencial, se considera que está en estado crítico. 
+Si una métrica supera su umbral esencial, se considera que está en estado crítico.
 
 Adobe Managed Services establece los umbrales, que puede ver en [!UICONTROL Cloud Manager]. En la mayoría de los casos, los umbrales son coherentes entre los clientes, pero, en algunos casos, Adobe Managed Services los modificará para adaptarlos a los requisitos específicos del cliente. Dirija cualquier pregunta que tenga acerca de los umbrales a su ingeniero de éxito del cliente (Customer Success Engineer, CSE).
 
@@ -125,4 +129,4 @@ La sección **Análisis de eventos** bajo este gráfico muestra el conjunto de i
 
 Este vídeo proporciona información general sobre el uso de los gráficos creados por los informes de Cloud Manager para obtener una vista de los entornos de su programa.
 
->[!VIDEO](https://video.tv.adobe.com/v/34624?captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/26315/)

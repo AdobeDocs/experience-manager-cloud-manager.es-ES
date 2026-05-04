@@ -2,13 +2,17 @@
 title: Copia de contenido para la coherencia del entorno
 description: La copia de contenido en Cloud Manager permite a los usuarios copiar contenido mutable On-demand desde los entornos de producción de Adobe Experience Manager 6.x alojados en Adobe Managed Services a entornos inferiores para realizar pruebas.
 exl-id: 97915e58-a1d3-453f-b5ce-cad55ed73262
-source-git-commit: 84b3366481c2efd497583627eac67046452f6c38
-workflow-type: ht
-source-wordcount: '1321'
-ht-degree: 100%
+TQID: https://experienceleague.adobe.com/ffcf9UNSOp7oIpDZdtLcoFWp-Ww-A1XV3kCDmKqJLSw
+product_v2: id: c68cd75e-5bca-4bc3-a60e-9e183f816441id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2: id: cd2426f1-5719-4006-b8c2-738e5969754b
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
+workflow-type: tm+mt
+source-wordcount: 1452
+ht-degree: 99%
 
 ---
-
 
 # Copia de contenido para la coherencia del entorno {#content-copy}
 
@@ -75,7 +79,7 @@ Para poder copiar cualquier contenido, se debe definir un conjunto de contenido.
    1. A la derecha de una ruta de contenido incluida que desee restringir, haga clic en el ![icono de eliminación de carpeta](https://spectrum.adobe.com/static/icons/workflow_18/Smock_FolderDelete_18_N.svg).
    1. En el campo de texto, escriba una ruta relativa a la ruta raíz que aparece en el cuadro de diálogo.
    1. Haga clic en el ![icono de eliminación de carpeta](https://spectrum.adobe.com/static/icons/workflow_18/Smock_FolderDelete_18_N.svg) **Excluir ruta**.
-   1. Si es necesario, repita los pasos i. a iii. arriba para añadir más rutas de exclusión; no hay limitación. De lo contrario, continúe con el siguiente paso.
+   1. Si es necesario, repita los pasos en. a iii. arriba para añadir más rutas de exclusión; no hay limitación. De lo contrario, continúe con el siguiente paso.
 
    ![Exclusión de rutas](/help/assets/add-content-set-paths-excluded.png)
 
@@ -96,7 +100,7 @@ Al editar el conjunto de contenido, es posible que tenga que expandir las rutas 
 
 1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización y programa adecuados.
 
-1. En la esquina superior izquierda de la página, haga clic en el ![icono de Mostrar menú](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) para mostrar el menú del lado izquierdo.
+1. En la esquina superior izquierda de la página, haga clic en el ![icono de Mostrar menú](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) para abrir el menú del lado izquierdo.
 
 1. En el menú del lado izquierdo, debajo de **Servicios**, haga clic en el ![icono de Cuadro ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Box_18_N.svg) **Conjuntos de contenido**.
 
@@ -117,7 +121,7 @@ Es posible que un entorno no esté disponible para su selección si se aplica cu
 
 1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización y programa adecuados.
 
-1. En la esquina superior izquierda de la página, haga clic en el ![icono de Mostrar menú](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) para mostrar el menú del lado izquierdo.
+1. En la esquina superior izquierda de la página, haga clic en el ![icono de Mostrar menú](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) para abrir el menú del lado izquierdo.
 
 1. En el menú del lado izquierdo, debajo de **Servicios**, haga clic en el ![icono de Cuadro ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Box_18_N.svg) **Conjuntos de contenido**.
 
@@ -142,13 +146,13 @@ Es posible que un entorno no esté disponible para su selección si se aplica cu
 
 ## Comprobación del estado de una copia de contenido {#copy-activity}
 
-Puede controlar el estado de los procesos de la copia en la página **Copiar actividad de contenido**.
+Puede controlar el estado de los procesos de la copia en la página **Actividad de copia de contenido**.
 
 **Para comprobar el estado de una copia de contenido:**
 
 1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización y programa adecuados.
 
-1. En la esquina superior izquierda de la página, haga clic en el ![icono de Mostrar menú](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) para mostrar el menú del lado izquierdo.
+1. En la esquina superior izquierda de la página, haga clic en el ![icono de Mostrar menú](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) para abrir el menú del lado izquierdo.
 
 1. En el menú del lado izquierdo, debajo de **Servicios**, haga clic en el ![icono de Historial ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_History_18_N.svg) **Actividad de copia de contenido**.
 
@@ -167,7 +171,7 @@ Puede controlar el estado de los procesos de la copia en la página **Copiar act
 * No se puede realizar una copia de contenido de un entorno inferior a un entorno superior.
 * La copia de contenido solo se puede realizar en el mismo nivel. Es decir, autor-autor o publicación-publicación.
 * No es posible copiar contenido entre programas o entre regiones.
-* La copia de contenido para la topología basada en el almacén de datos en la nube solo se puede realizar cuando el entorno de origen y de destino están en el mismo proveedor de nube y en la misma región.
+* La copia de contenido para la topología basada en el almacén de datos en la nube solo se puede realizar cuando el entorno de origen y de destino están en el mismo proveedor de servicios en la nube y en la misma región.
 * No es posible ejecutar operaciones de copia de contenido simultáneas en el mismo entorno.
 * La copia de contenido no se puede realizar si hay alguna operación activa ejecutándose en el entorno de destino o de origen, como, por ejemplo, una canalización de CI/CD.
 * La copia de contenido no debe utilizarse como una herramienta de clonación o espejo, ya que no puede rastrear el contenido movido o eliminado del origen.

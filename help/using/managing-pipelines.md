@@ -2,13 +2,15 @@
 title: Administrar canalizaciones
 description: Aprenda a administrar las canalizaciones existentes, así como su edición, ejecución y eliminación.
 exl-id: e36420d2-57c5-4375-99fb-dd47c1c8bffd
-source-git-commit: 91eda02d55134fba167f30830a142a80717e9083
+TQID: https://experienceleague.adobe.com/5SdiydpBmjwCLtzujtle4gW1JyRRvR2qNFN3fdN5A0w
+product_v2: id: c68cd75e-5bca-4bc3-a60e-9e183f816441id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
 workflow-type: tm+mt
-source-wordcount: '1170'
+source-wordcount: 1244
 ht-degree: 55%
 
 ---
-
 
 # Administrar canalizaciones {#managing-pipelines}
 
@@ -22,7 +24,7 @@ La tarjeta **Canalizaciones** de la página **Información general del programa*
 
 Al hacer clic en el icono ![Más, puntos suspensivos](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) junto a cada canalización, puede realizar las siguientes acciones:
 
-* [Ejecutar la canalización](#running-pipelines). 
+* [Ejecutar la canalización](#running-pipelines).
 * [Editar la canalización](#editing-pipelines).
 * [Eliminar la canalización](#deleting-pipelines).
 * [Ver detalles](#view-details).
@@ -97,9 +99,9 @@ Con Cloud Manager puede ejecutar varias canalizaciones simultáneamente, lo que 
 **Para ejecutar varias canalizaciones:**
 
 1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización y programa adecuados.
-1. En el menú del lado izquierdo, haga clic en ![Icono de flujo de trabajo &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg) **Canalizaciones**.
+1. En el menú del lado izquierdo, haga clic en ![Icono de flujo de trabajo ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg) **Canalizaciones**.
 1. En la tabla de la página **Canalización**, active las casillas de verificación situadas junto a las canalizaciones que desee ejecutar.
-Si es necesario, haga clic en el icono ![Filtro, embudo](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg) **Filtros** para ordenar las canalizaciones por nombre, o entorno, o tipo de código implementado, o una combinación de los tres.
+Si es necesario, haga clic en el icono ![Filtro, funnel](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg) **Filtros** para ordenar las canalizaciones por nombre, o entorno, o tipo de código implementado, o una combinación de los tres.
 1. Cerca de la esquina superior derecha de la página, haga clic en **Ejecutar selección (x)**.
 1. En el cuadro de diálogo **Ejecutar canalizaciones seleccionadas (x)**, haga clic en **Ejecutar (x)**.
 

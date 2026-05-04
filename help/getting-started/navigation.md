@@ -2,13 +2,16 @@
 title: Navegación por la IU de Cloud Manager
 description: Descubra cómo está organizada la IU de Cloud Manager y cómo navegar para administrar sus programas y entornos.
 exl-id: 9c1545ce-1c6d-417f-a6f4-fe53caef3433
-source-git-commit: ee49b0732fdb870c4f768764aa75b240fd101b59
+TQID: https://experienceleague.adobe.com/qTv4G7eSJahDusX68iNXzcw64Aq8xxP6SRAtn-SB0t4
+product_v2: id: c68cd75e-5bca-4bc3-a60e-9e183f816441id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2: id: cd2426f1-5719-4006-b8c2-738e5969754b
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
 workflow-type: tm+mt
-source-wordcount: '1657'
+source-wordcount: 1660
 ht-degree: 52%
 
 ---
-
 
 # Navegar por la IU de Cloud Manager {#navigation}
 
@@ -31,7 +34,7 @@ La consola **Mis programas** proporciona una descripción general de todos los p
 | --- | --- | --- |
 | 1 | [Barras de herramientas](#toolbars-my-programs-toolbars) | Se utiliza para la selección de organizaciones, alertas y configuración de cuentas. |
 | 2 | Pestaña del panel lateral izquierdo | Varias fichas que le permiten alternar la vista actual de sus programas, incluidas las siguientes:<br><ul><li>**Experience Manager** abre la página principal de las distintas soluciones de AEM</li><li>**Todos los programas** que muestran todos los programas disponibles.</li><li>**Licencia** abre el tablero de licencias. El Tablero de licencias solo se aplica a *programas de AEM as a Cloud Service* (AEMaaCS), no a programas de Adobe Managed Services como AEM 6.5 y AEM 6.5 LTS. Para determinar el tipo de servicio que tiene su programa (AEMaaCS o AMS), consulte la [sección Tarjetas de programa](#program-cards) de este artículo. Las pestañas se cierran de forma predeterminada y se pueden mostrar con el menú desplegable ![Mostrar icono de menú, hamburguesa](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg), ubicado a la izquierda del [encabezado de Cloud Manager](#cloud-manager-header).</li></ol> |
-| 3 | [Mis programas](#my-programs-section) | Enumera todos los programas disponibles que puede seleccionar.<br>Consulte [Programas y tipos de programas](/help/getting-started/program-setup.md) para obtener información detallada sobre los programas. |
+| 3 | [Mis programas](#my-programs-section) | Enumera todos los programas disponibles que puede seleccionar.<br>Consulte [Programas y tipos de programas](/help/getting-started/program-setup.md) para obtener detalles sobre los programas. |
 | 4 | [Estadísticas y llamadas a la acción](#cta-statistics) | Proporciona una descripción general de la actividad reciente. |
 | 5 | [Vínculos rápidos](#quick-links) | Acceso rápido a recursos relacionados. |
 
@@ -48,15 +51,15 @@ El primero es el encabezado de Cloud Manager. El encabezado se mantiene a medida
 
 | Área | Descripción |
 | --- | --- |
-| ![Mostrar icono de menú, hamburguesa](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) | Un menú desplegable que proporciona acceso a las fichas de partes específicas de un programa individual.<br>Para determinar el tipo de servicio que tiene su programa (AMS o AEMaaCS), consulte la [sección Tarjetas de programa](#program-cards) de este documento. |
+| ![Mostrar icono de menú, hamburguesa](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) | Menú desplegable que proporciona acceso a las fichas de partes específicas de un programa individual.<br>Para determinar el tipo de servicio que tiene su programa (AMS o AEMaaCS), consulte la [sección Tarjetas de programa](#program-cards) de este documento. |
 | ![Icono rojo y blanco de Adobe](/help/getting-started/assets/AdobeLogoWhiteOnRed.svg) Cloud Manager | Haga clic para abrir la consola **Mis programas** de Cloud Manager, independientemente de su ubicación en Cloud Manager. |
 | *`Name of selected organization`* | El selector de organización muestra la organización en la que está conectado actualmente (en este ejemplo, *Foundation Internal*). Haga clic aquí para cambiar a otra organización si Adobe ID está asociado a varias organizaciones. |
 | ![Icono de comentarios](/help/getting-started/assets/AppComment.svg) Comentarios | Haga clic en para proporcionar comentarios a Adobe sobre Cloud Manager. |
-| ![icono del Asistente de IA](/help/getting-started/assets/AIChat.svg) | El asistente de IA ofrece una interfaz conversacional diseñada para agilizar la búsqueda de respuestas a sus consultas relacionadas con AEM. Ver [Asistente de IA](https://experienceleague.adobe.com/es/docs/experience-manager-65/content/ai-in-aem/ai-assistant/ai-assistant-in-aem#) |
+| ![icono del Asistente de IA](/help/getting-started/assets/AIChat.svg) | El asistente de IA ofrece una interfaz conversacional diseñada para agilizar la búsqueda de respuestas a sus consultas relacionadas con AEM. Ver [Asistente de IA](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/ai-in-aem/ai-assistant/ai-assistant-in-aem#) |
 | ![Icono de ayuda](https://spectrum.adobe.com/static/icons/workflow_18/Smock_HelpOutline_18_N.svg) | Haga clic en para proporcionar acceso rápido a los recursos de aprendizaje y asistencia. |
 | ![Icono de campana blanca](/help/getting-started/assets/Bell.svg) | Haga clic para ver el número de [notificaciones](/help/using/notifications.md) incompletas asignadas actualmente |
 | ![Icono de aplicaciones](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Apps_18_N.svg) | Haga clic para desplazarse rápidamente entre la página de inicio de AEM y las soluciones de AEM |
-| *`Dynamic Account icon`* | Haga clic en la imagen de usuario para obtener acceso a **Configuración de la cuenta** y **Configuración del programa**, o para cerrar la sesión.<br>Si elige no agregar una imagen de usuario, se asigna aleatoriamente un icono (como se ve en la imagen de la barra de herramientas anterior). |
+| *`Dynamic Account icon`* | Haz clic en tu imagen de usuario para acceder a **Configuración de la cuenta** y **Configuración del programa**, o para cerrar la sesión.<br>Si elige no agregar una imagen de usuario, se asigna aleatoriamente un icono (como se ve en la imagen de la barra de herramientas anterior). |
 
 <!--
 1. The ![Show menu icon, hamburger](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) icon on the left side of the header is  
