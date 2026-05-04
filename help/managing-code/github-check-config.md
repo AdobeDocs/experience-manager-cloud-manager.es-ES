@@ -1,11 +1,17 @@
 ---
-title: Extraer solicitudes de comprobación de repositorios privados
+title: Comprobaciones de solicitudes de extracción para repositorios privados
 description: Obtenga información sobre cómo controlar las canalizaciones que se crean automáticamente para validar cada solicitud de extracción en un repositorio privado.
 exl-id: 29c9e487-e196-411a-8cda-6751b0a56066
-source-git-commit: 1ae6792f8bc628c3530a63004c3d38f215c72778
+TQID: https://experienceleague.adobe.com/duceoXUt2SqWI0ZXzyuqZtszLfJkWr53G5O5ze4nxTY
+product_v2:
+  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
 workflow-type: tm+mt
-source-wordcount: '237'
-ht-degree: 92%
+source-wordcount: 237
+ht-degree: 95%
 
 ---
 

@@ -3,9 +3,21 @@ title: 'Actualizaciones de Service Pack para entornos de desarrollo: beta privad
 description: Descubra cómo ahora puede iniciar actualizaciones de Service Pack para entornos de desarrollo a través de la interfaz de usuario de Cloud Manager.
 hide: true
 exl-id: 996a8eee-843f-45a6-8f7a-31ea405c2b32
-source-git-commit: 17edfbaea9bb2bd9b817a0ee5726b0883cdd31f2
+TQID: https://experienceleague.adobe.com/jdKXZuiGX-MZMKrsWCM6BzZ2hGfZLnvwMh2XTstMmZs
+product_v2:
+  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2:
+  - id: cd2426f1-5719-4006-b8c2-738e5969754b
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: 8964aad406d3e7fc5b911b98f928ad0427511230
 workflow-type: tm+mt
-source-wordcount: '468'
+source-wordcount: 468
 ht-degree: 2%
 
 ---

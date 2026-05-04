@@ -2,13 +2,27 @@
 title: Prueba de calidad del código
 description: Descubra cómo funcionan las pruebas de calidad del código de las canalizaciones y cómo pueden mejorar la calidad de las implementaciones.
 exl-id: 6a574858-a30e-4768-bafc-8fe79f928294
-source-git-commit: fb3c2b3450cfbbd402e9e0635b7ae1bd71ce0501
+TQID: https://experienceleague.adobe.com/gAO8BdTx9-Sq8evIuI3hIaHIUixk-IulQagCI-Jssrc
+product_v2:
+  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2:
+  - id: cd2426f1-5719-4006-b8c2-738e5969754b
+  - id: ff09c71c-26a9-449a-85f8-2aeb8ce96100
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
 workflow-type: tm+mt
-source-wordcount: '2783'
-ht-degree: 98%
+source-wordcount: 2911
+ht-degree: 97%
 
 ---
-
 
 # Prueba de calidad del código {#code-quality-testing}
 
@@ -113,7 +127,7 @@ A continuación, la solución correcta es quitar la contraseña codificada.
 
 [!UICONTROL Cloud Manager] ejecuta las comprobaciones de estado de seguridad de AEM existentes en el entorno de ensayo después de la implementación, e informa del estado a través de la IU. Los resultados se agregan de todas las instancias AEM del entorno.
 
-Estas mismas comprobaciones de estado se pueden ejecutar en cualquier momento a través de la consola web o el tablero de operaciones.
+Estas mismas comprobaciones de estado se pueden ejecutar en cualquier momento a través de la consola web o el panel de control de operaciones.
 
 Si alguno de los casos indica un error en una comprobación de estado determinada, todo el entorno falla en esa comprobación de estado. Al igual que con las pruebas de calidad y el rendimiento de código, estas comprobaciones de estado se organizan en categorías y se comunican utilizando el sistema de acceso de tres niveles. La única distinción es que no hay umbral si hay pruebas de seguridad. Todas las comprobaciones de estado se aprueban o no.
 

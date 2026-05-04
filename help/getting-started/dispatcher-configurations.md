@@ -2,13 +2,20 @@
 title: Configuraciones de Dispatcher
 description: Obtenga información sobre cómo implementar archivos de configuración de Dispatcher mediante Cloud Manager.
 exl-id: ffc2b60e-bde7-48ca-b268-dea0f8fd4e30
-source-git-commit: 037a296c21adde6f7fa731c71ee4a75cea042780
+TQID: https://experienceleague.adobe.com/KpGTN-444bigrhLddGnZvxkZsThcVc1B--oEoAKTdos
+product_v2:
+  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
 workflow-type: tm+mt
-source-wordcount: '595'
-ht-degree: 89%
+source-wordcount: 595
+ht-degree: 92%
 
 ---
-
 
 # Configuraciones de Dispatcher {#manage-your-dispatcher-configurations}
 
@@ -88,7 +95,7 @@ La estructura específica de archivos y directorios puede variar en función de 
    </project>
    ```
 
-   * Al igual que en el paso 1, artifactId y el nombre aquí pueden ser otros valores si lo desea. `dispatcher` se utiliza aquí solo a modo de ejemplo.
+   * Como en el paso 1, artifactId y el nombre aquí pueden ser otros valores si lo desea. `dispatcher` se utiliza aquí solo a modo de ejemplo.
 
 1. El complemento Maven Assembly requiere un `descriptor` para definir cómo se crea el archivo .zip. Para crear este descriptor, cree un archivo en el `dispatcher` subdirectorio denominado `assembly.xml` con el siguiente contenido. Tenga en cuenta que se hace referencia a este nombre de archivo en la línea 26 de la sección `pom.xml` más arriba.
 

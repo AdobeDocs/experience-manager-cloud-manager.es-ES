@@ -2,13 +2,26 @@
 title: Canalizaciones de CI/CD
 description: Obtenga información acerca de las canalizaciones de CI/CD y cómo administran las implementaciones en entornos de ensayo y producción en Cloud Manager.
 exl-id: 7130e5b7-6986-48c8-900c-90f3e4187f91
-source-git-commit: b7e651b72d1943aef69c1c69915d4752a6163931
+TQID: https://experienceleague.adobe.com/BwkZH2MIbXrzSxf0yk9yeDZZIpw7-Ldue-OPQPkWrdg
+product_v2:
+  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2:
+  - id: cd2426f1-5719-4006-b8c2-738e5969754b
+  - id: ff09c71c-26a9-449a-85f8-2aeb8ce96100
+subfeature_v2:
+  - id: c14b2f98-ee16-4c49-b87b-919c91b01d9d
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
 workflow-type: tm+mt
-source-wordcount: '639'
+source-wordcount: 639
 ht-degree: 81%
 
 ---
-
 
 # Canalizaciones de CI/CD {#ci-cd-pipeline}
 

@@ -2,13 +2,26 @@
 title: Reglas de calidad de código personalizadas
 description: Descubra los detalles específicos de las reglas de calidad de código personalizadas ejecutadas por Cloud Manager durante las pruebas de calidad del código. Estas reglas se basan en las prácticas recomendadas de AEM Engineering.
 exl-id: 7d118225-5826-434e-8869-01ee186e0754
-source-git-commit: fb3c2b3450cfbbd402e9e0635b7ae1bd71ce0501
+TQID: https://experienceleague.adobe.com/Iee3iEbblEV7TDJxtYpBH8F6oomtD9EJMPX1SSRGIGA
+product_v2:
+  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2:
+  - id: a01bfd36-4ab8-4bf8-9dc0-5b45b890552e
+  - id: ff09c71c-26a9-449a-85f8-2aeb8ce96100
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
 workflow-type: tm+mt
-source-wordcount: '3636'
-ht-degree: 95%
+source-wordcount: 4156
+ht-degree: 91%
 
 ---
-
 
 # Reglas de calidad de código personalizadas {#custom-code-quality-rules}
 
@@ -30,7 +43,7 @@ La siguiente sección detalla las reglas de SonarQube ejecutadas por Cloud Manag
 
 ### No utilizar funciones potencialmente peligrosas {#do-not-use-potentially-dangerous-functions}
 
-* **Clave**: CQRules: CWE-676
+* **Clave**: CQRules:CWE-676
 * **Tipo**: Vulnerabilidad
 * **Gravedad**: Principal
 * **Desde**: Versión 2018.4.0
@@ -86,7 +99,7 @@ public class DoThis implements Runnable {
 
 ### No usar cadenas de formato que puedan estar controladas externamente {#do-not-use-format-strings-which-may-be-externally-controlled}
 
-* **Clave**: CQRules: CWE-134
+* **Clave**: CQRules:CWE-134
 * **Tipo**: Vulnerabilidad
 * **Gravedad**: Principal
 * **Desde**: Versión 2018.4.0
@@ -310,7 +323,7 @@ public void doThis() throws Exception {
 
 ### Evitar iniciar sesión en la información al gestionar solicitudes GET o HEAD {#avoid-logging-at-info-when-handling-get-or-head-requests}
 
-* **Clave**: CQRules:CQBP-44—LogInfoInGetOrHeadRequests
+* **Clave**: CQRules:CQBP-44---LogInfoInGetOrHeadRequests
 * **Tipo**: `Code Smell`
 * **Gravedad**: Menor
 
@@ -914,9 +927,9 @@ El uso del modo &quot;reemplazo&quot; en el almacén de archivos no está permit
 
 En la sección siguiente se enumeran las comprobaciones de la Herramienta de optimización de Dispatcher (DOT) ejecutadas por Cloud Manager. Siga los vínculos para cada comprobación de su definición y detalles de GitHub.
 
-* [Tokens inesperados de configuración de Dispatcher](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---parsing-violation---dispatcher-configuration-unexpected-tokens)
+* [tokens inesperados de configuración de Dispatcher](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---parsing-violation---dispatcher-configuration-unexpected-tokens)
 
-* [Presupuesto no coincidente de configuración de Dispatcher](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---parsing-violation---dispatcher-configuration-unmatched-quote)
+* [Presupuesto sin coincidencias de configuración de Dispatcher](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---parsing-violation---dispatcher-configuration-unmatched-quote)
 
 * [Falta la llave de configuración de Dispatcher](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---parsing-violation---dispatcher-configuration-missing-brace)
 
@@ -924,28 +937,28 @@ En la sección siguiente se enumeran las comprobaciones de la Herramienta de opt
 
 * [Falta la propiedad obligatoria de configuración de Dispatcher](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---parsing-violation---dispatcher-configuration-missing-mandatory-property)
 
-* [Propiedad de configuración de Dispatcher en desuso](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---parsing-violation---dispatcher-configuration-deprecated-property)
+* [Propiedad de configuración de Dispatcher obsoleta](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---parsing-violation---dispatcher-configuration-deprecated-property)
 
 * [Configuración de Dispatcher no encontrada](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---parsing-violation---dispatcher-configuration-not-found)
 
-* [Archivo de configuración de Httpd no encontrado](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---parsing-violation---httpd-configuration-include-file-not-found)
+* [La configuración Httpd incluye un archivo no encontrado](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---parsing-violation---httpd-configuration-include-file-not-found)
 
 * [Configuración general de Dispatcher](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---parsing-violation---dispatcher-configuration-general)
 
-* [La caché del conjunto de servidores de publicación de Dispatcher debe tener `serveStaleOnError` activado](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-cache-should-have-servestaleonerror-enabled)
+* [La caché de la granja de servidores de publicación de Dispatcher debe tener `serveStaleOnError` habilitado](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-cache-should-have-servestaleonerror-enabled)
 
-* [Los filtros de conjunto de servidores de publicación de Dispatcher deben contener las reglas de denegación predeterminadas de la versión 6.x.x del arquetipo de AEM](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-filters-should-contain-the-default-deny-rules-from-the-6xx-version-of-the-aem-archetype)
+* [Los filtros del conjunto de servidores de publicación de Dispatcher deben contener las reglas de denegación predeterminadas de la versión 6.x.x del arquetipo de AEM](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-filters-should-contain-the-default-deny-rules-from-the-6xx-version-of-the-aem-archetype)
 
-* [La propiedad `statfileslevel` de la caché del conjunto de servidores de publicación de Dispatcher debe ser >= 2](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-cache-statfileslevel-property-should-be--2)
+* [La propiedad de la caché de conjunto de servidores de publicación de Dispatcher `statfileslevel` debe ser >= 2](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-cache-statfileslevel-property-should-be--2)
 
-* [La propiedad `gracePeriod` del conjunto de servidores de publicación de Dispatcher debe ser >= 2](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-graceperiod-property-should-be--2)
+* [La propiedad de la granja de servidores de publicación de Dispatcher `gracePeriod` debe ser >= 2](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-graceperiod-property-should-be--2)
 
 * [Cada conjunto de servidores de Dispatcher debe tener un nombre único](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---each-dispatcher-farm-should-have-a-unique-name)
 
-* [La caché del conjunto de servidores de publicación de Dispatcher debe tener sus reglas `ignoreUrlParams` configuradas en forma de lista de permitidos](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-cache-should-have-its-ignoreurlparams-rules-configured-in-an-allow-list-manner)
+* [La caché de la granja de servidores de publicación de Dispatcher debe tener sus reglas `ignoreUrlParams` configuradas de forma de lista de permitidos](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-cache-should-have-its-ignoreurlparams-rules-configured-in-an-allow-list-manner)
 
-* [Los filtros del conjunto de servidores de publicación de Dispatcher deben especificar los selectores Sling permitidos en forma de lista de permitidos](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-filters-should-specify-the-allowed-sling-selectors-in-an-allow-list-manner)
+* [Los filtros del conjunto de servidores de publicación de Dispatcher deben especificar los selectores de Sling permitidos de forma de lista de permitidos](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-filters-should-specify-the-allowed-sling-selectors-in-an-allow-list-manner)
 
-* [Los filtros del conjunto de servidores de publicación de Dispatcher deben especificar los patrones de sufijos de Sling permitidos en forma de lista de permitidos](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-filters-should-specify-the-allowed-sling-suffix-patterns-in-an-allow-list-manner)
+* [Los filtros del conjunto de servidores de publicación de Dispatcher deben especificar los patrones de sufijos de Sling permitidos de forma de lista de permitidos](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-filters-should-specify-the-allowed-sling-suffix-patterns-in-an-allow-list-manner)
 
-* [No utilice la directiva “Requerir todo concedido” en una sección del Directorio VirtualHost con una ruta de acceso de directorio raíz](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-require-all-granted-directive-should-not-be-used-in-a-virtualhost-directory-section-with-a-root-directory-path)
+* [No utilice la directiva &quot;Requerir todo concedido&quot; en una sección del Directorio VirtualHost con una ruta de acceso de directorio raíz](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-require-all-granted-directive-should-not-be-used-in-a-virtualhost-directory-section-with-a-root-directory-path)

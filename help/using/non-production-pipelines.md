@@ -2,9 +2,15 @@
 title: Adición de una canalización que no es de producción
 description: Aprenda a utilizar Cloud Manager para crear y configurar canalizaciones que no son de producción e implementar su código.
 exl-id: ccf4b4a2-6e29-4ede-821c-36318b568e5c
-source-git-commit: 261c4334a514ee2101444e83a559d300bba3d507
+TQID: https://experienceleague.adobe.com/Dj7SjKdao6RU-cIS7D1AQxg5qpKrJMTcYQJBfiqc-Gg
+product_v2:
+  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
 workflow-type: tm+mt
-source-wordcount: '1994'
+source-wordcount: 1999
 ht-degree: 22%
 
 ---
@@ -58,7 +64,7 @@ Después de configurar un programa y al menos un entorno en la interfaz de usuar
 |  | **Pruebas** | Solo visible al editar una canalización que no es de producción.<br>La interfaz de usuario muestra las categorías de prueba que ejecuta la canalización como parte de la validación de calidad del código.<ul><li>**Prueba de código estático**: analiza el código para detectar problemas de calidad y corrección.<li>**Prueba de carga/rendimiento**: evalúa el comportamiento relacionado con el rendimiento como parte de las pruebas de canalización.<li>**Prueba de seguridad**: comprueba el código y el resultado de la canalización en busca de problemas relacionados con la seguridad. |
 | **Opciones de implementación** | **Déclencheur de implementación** | <ul><li>**Manual**: Le permite iniciar manualmente la canalización.<li>**Cambios en Git**: Inicia la canalización cuando se añaden confirmaciones a la rama de Git configurada. Con esta opción, aún puede iniciar la canalización manualmente, según sea necesario. |
 |  | **Comportamiento de errores de métricas importantes** | <ul><li>**Preguntar cada vez**: esta es la configuración predeterminada y requiere intervención manual en caso de que se produzca algún error importante.<li>**Error inmediato**: si se selecciona, la canalización se cancela cada vez que se produce un error importante. Básicamente, emula a un usuario rechazando manualmente cada error.<li>**Continuar inmediatamente**: si se selecciona, la canalización se ejecuta automáticamente cada vez que se produce un error importante. Básicamente, emula al usuario que aprueba manualmente cada error.</li></ul> |
-|  | **Aprobar después de la implementación de la fase** | Solo visible al editar una canalización que no sea de producción.<br>Seleccione esta opción para requerir aprobación después de la implementación en el entorno de ensayo antes de que la canalización pueda continuar. Si no se selecciona esta opción, la canalización continúa según el comportamiento configurado. |
+|  | **Aprobar después de la implementación de la fase** | Solo visible al editar una canalización que no es de producción.<br>Seleccione esta opción para requerir la aprobación después de la implementación en el entorno de ensayo antes de que la canalización pueda continuar. Si no se selecciona esta opción, la canalización continúa según el comportamiento configurado. |
 
 >[!TAB Canalización de implementación: ficha Configuración]
 
@@ -69,7 +75,7 @@ Después de configurar un programa y al menos un entorno en la interfaz de usuar
 |   | **Pruebas** | Solo visible al editar una canalización que no es de producción.<br>La interfaz de usuario muestra las categorías de prueba que ejecuta la canalización como parte de la validación de calidad del código.<ul><li>**Prueba de código estático**: analiza el código para detectar problemas de calidad y corrección.<li>**Prueba de carga/rendimiento**: evalúa el comportamiento relacionado con el rendimiento como parte de las pruebas de canalización.<li>**Prueba de seguridad**: comprueba el código y el resultado de la canalización en busca de problemas relacionados con la seguridad.</li></ul> |
 | **Opciones de implementación** | **Déclencheur de implementación** | <ul><li>**Manual**: Le permite iniciar manualmente la canalización.<li>**Cambios en Git**: Inicia la canalización cuando se añaden confirmaciones a la rama de Git configurada. Con esta opción, aún puede iniciar la canalización manualmente, según sea necesario. |
 |   | **Comportamiento de errores de métricas importantes** | <ul><li>**Preguntar cada vez**: la configuración predeterminada y pide al usuario que decida cómo continuar cuando falle una métrica importante.<li>**Error inmediato**: la canalización se cancela cada vez que falla una métrica importante. Se trata, básicamente, de emular a un usuario que rechaza errores manualmente.<li>**Continuar inmediatamente**: la canalización se ejecuta automáticamente cada vez que falla una métrica importante. Se trata, básicamente, de emular a un usuario que aprueba manualmente cada fallo.</li></ul> |
-|  | **Aprobar después de la implementación de la fase** | Solo visible al editar una canalización que no sea de producción.<br>Seleccione esta opción para requerir aprobación después de la implementación en el entorno de ensayo antes de que la canalización pueda continuar. Si no se selecciona esta opción, la canalización continúa según el comportamiento configurado. |
+|  | **Aprobar después de la implementación de la fase** | Solo visible al editar una canalización que no es de producción.<br>Seleccione esta opción para requerir la aprobación después de la implementación en el entorno de ensayo antes de que la canalización pueda continuar. Si no se selecciona esta opción, la canalización continúa según el comportamiento configurado. |
 |  | **Omitir cambios del equilibrador de carga** | Seleccione esta opción para evitar que la canalización realice cambios en el equilibrador de carga durante el despliegue. |
 |  | **Configuración de Dispatcher** | El rol **Administrador de implementación** puede configurar un conjunto de rutas de contenido que se invalidan o se vacían de la caché de AEM Dispatcher cuando se ejecuta una canalización. Cloud Manager ejecuta estas acciones de caché como parte del paso de canalización de implementación, justo después de implementar cualquier paquete de contenido. Esta configuración utiliza el comportamiento estándar de AEM Dispatcher. Para configurar `Dispatcher`, haga lo siguiente:<ul><li>En **RUTA**, proporcione una ruta de contenido que quiera que la canalización vacíe o invalide.<li>En **TIPO**, seleccione la acción que se realizará en esa ruta.<ul><li>**Vaciar**: realice una eliminación de caché en la ruta de acceso especificada.</li><li>**Invalidar**: efectúe una invalidación de caché, similar a cuando el contenido se activa desde una instancia de creación a una instancia de publicación.</li><li>Haga clic en **Agregar ruta** para añadir la ruta especificada. Puede agregar hasta 100 rutas por entorno.</li></ul> |
 | **Canalización** | **Auditoría de experiencias** casilla de verificación | Seleccione esta opción para incluir un paso Auditoría de experiencias en la canalización. Cuando se habilita, la canalización incluye el paso Auditoría de experiencias después de la pestaña Código de Source. |
