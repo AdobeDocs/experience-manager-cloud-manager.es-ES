@@ -1,82 +1,58 @@
 ---
-title: Notas de la versión de Cloud Manager 2026.4.0
-description: Obtenga información acerca de la versión de Cloud Manager 2026.4.0 en Adobe Managed Services.
+title: Notas de la versión de Cloud Manager 2026.5.0
+description: Obtenga información acerca de la versión de Cloud Manager 2026.5.0 en Adobe Managed Services.
 feature: Release Information
 exl-id: cc1dc94b-129d-4de7-8e57-8fc5dcba7d9f
 TQID: https://experienceleague.adobe.com/4zfTpSYuFwrJZ-oeL1SObT14v2Rd--Z1hKn5JllHAro
-product_v2:
-  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
-  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-source-git-commit: 8964aad406d3e7fc5b911b98f928ad0427511230
+product_v2: id: c68cd75e-5bca-4bc3-a60e-9e183f816441id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+source-git-commit: 0c2a9a946df6d5e1b0e4d5edb2715d8db98e9974
 workflow-type: tm+mt
-source-wordcount: 467
-ht-degree: 14%
+source-wordcount: 512
+ht-degree: 15%
 
 ---
 
 
-# Notas de la versión de Cloud Manager 2026.4.0 en Adobe Managed Services {#release-notes}
+# Notas de la versión de Cloud Manager 2026.5.0 en Adobe Managed Services {#release-notes}
 
 <!-- add "hold: true" to metadata above to be able to commit/merge to Main WITHOUT Publishig -->
 
 <!-- RELEASE WIKI  https://wiki.corp.adobe.com/display/DMSArchitecture/Cloud+Manager+2025.04.0+Release -->
 
-Obtenga información acerca del lanzamiento de [!UICONTROL Cloud Manager] 2026.4.0 en Adobe Managed Services.
+Obtenga información acerca del lanzamiento de [!UICONTROL Cloud Manager] 2026.5.0 en Adobe Managed Services.
 
 Consulte también las [notas de la versión actual de Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/release-notes/home).
 
 ## Fechas de lanzamiento {#release-date}
 
-La fecha del lanzamiento de [!UICONTROL Cloud Manager] 2026.4.0 es el jueves, 2 de abril de 2026.
+La fecha de la versión de [!UICONTROL Cloud Manager] 2026.5.0 es el jueves, 7 de mayo de 2026.
 <!-- There are no significant new features or bug fixes in the May Cloud Manager release. -->
 
-La próxima versión planificada es el jueves, 7 de mayo de 2026.
+La próxima versión planificada es el jueves, 4 de junio de 2026.
 
 <!-- SAVE FOR FUTURE POSSIBLE USE There are no significant new features or bug fixes in the May Cloud Manager release. -->
 
 ## Novedades {#what-is-new}
 
-* **Compatibilidad con la extensibilidad de la interfaz de usuario en AEM Experience Hub.**
-
-  Ahora está habilitada la compatibilidad con las extensiones de la interfaz de usuario en [AEM Experience Hub](https://experienceleague.adobe.com/es/docs/experience-manager-65/content/experience-hub/experience-hub), lo que permite a los desarrolladores ampliar la interfaz con funcionalidad y widgets personalizados creados con Adobe App Builder.
-
-  Para obtener más información, consulta [AEM Experience Hub](https://developer.adobe.com/uix/docs/services/aem-experience-hub/).
-
-* **Las canalizaciones de configuración ahora admiten secretos administrados.**
-
-  Los usuarios ahora pueden agregar y administrar secretos directamente en las canalizaciones de configuración de Cloud Manager. Estos secretos anulan de forma segura los valores de las especificaciones de configuración de la canalización y admiten implementaciones flexibles y específicas del entorno.
-
-  ![Opción Ver/Editar variables en el menú desplegable de una canalización seleccionada](/help/release-notes/assets/view-edit-variables-option.png)
-  *Opción Ver/Editar variables en el menú desplegable de una canalización seleccionada.*
-
-  ![Cuadro de diálogo Configuración de variables &#x200B;](/help/release-notes/assets/view-edit-variables-variablesconfig-dialogbox.png)*Cuadro de diálogo Configuración de variables.*
-
-* **Se mejoró la estabilidad, el rendimiento y la confiabilidad.**
-
-  Esta versión incluye actualizaciones de optimización y mantenimiento que mejoraron la estabilidad, el rendimiento y la fiabilidad de Cloud Manager.
-
+No hay funciones nuevas significativas en la versión de mayo de 2026 de Cloud Manager en AMS.
 
 ## Programas Beta {#beta-program}
 
-Participe en los programas de Beta de Cloud Manager para obtener acceso exclusivo a las próximas funciones antes de su lanzamiento general.
+Participe en los programas Beta de Cloud Manager para obtener acceso exclusivo a las próximas funciones antes de su lanzamiento general.
 
-Actualmente están disponibles las siguientes oportunidades:
+>[!IMPORTANT]
+>
+>Las versiones de Beta pueden contener defectos y se proporcionan &quot;TAL CUAL&quot; sin garantía de ningún tipo. Adobe no tiene obligación de mantener, corregir, actualizar, cambiar, modificar o admitir de otro modo (mediante los Servicios de soporte de Adobe o de otro modo) las versiones beta. Adobe recomienda a los clientes tener cuidado y no depender del funcionamiento o el rendimiento correctos de las versiones beta, ni de la documentación o los materiales adjuntos. Las funciones y las API de la versión beta están sujetas a cambios sin previo aviso. Por lo tanto, cualquier uso de las versiones beta es totalmente bajo el propio riesgo del cliente.
 
-<!--
-### Experience Hub Extensibility and Customization {#exp-hub-extensibility}
+Actualmente están disponibles las siguientes oportunidades del programa beta:
 
-[Experience Hub](https://experienceleague.adobe.com/es/docs/experience-manager-65/content/experience-hub/experience-hub) serves as your entry point to AEM, customized for your organization's needs. Tell Adobe about your existing AEM UI extensions so they can help you enable them in Experience Hub with minimal effort.
+### Canalizaciones de nivel web para AEM Managed Services {#web-tier-pipelines}
 
-![Diagram of Experience Hub extensibility and customization workflow](/help/release-notes/assets/experience-hub-extensibility-customization.png)
+Cloud Manager ahora admite canalizaciones de nivel web dedicadas para programas de AMS, lo que permite a los equipos implementar configuraciones de nivel web y Dispatcher independientemente de las implementaciones de pila completa. Esto permite una iteración más rápida en los cambios del nivel web y reduce las ejecuciones innecesarias de la canalización completa. Cuando se configura una canalización de nivel web, las canalizaciones de pila completa omiten automáticamente la implementación de nivel web para ese entorno para evitar conflictos de implementación. Al eliminar la canalización de nivel web, se restaura automáticamente el comportamiento de implementación predeterminado.
 
-Embed custom experiences in Experience Hub to extend and personalize your organization's dashboard. In addition to Adobe's built-in widgets, add your own using the [UI Extensibility](https://developer.adobe.com/uix/docs/) framework. Build JavaScript-based UI apps and surface them to your users to meet business-specific requirements and workflows. 
-
-Interested in the beta? Email [beta_exphubextensibility@adobe.com](mailto:beta_exphubextensibility@adobe.com) with your Adobe OrgID and a short description of the customization you intend to create.
--->
+Para unirse a Beta, póngase en contacto con su ingeniero de éxito del cliente de Adobe para obtener más información.
 
 ### Compilaciones más rápidas con almacenamiento en caché de módulos {#quick-build-cm-pipelines}
 
@@ -100,7 +76,7 @@ Para unirte a Beta, envía un correo electrónico a [beta_quickbuild_cmpipelines
 
 ## Correcciones de errores {#bug-fixes}
 
-No hay correcciones de errores significativas en la versión de abril de 2026 de Cloud Manager en AMS.
+No hay correcciones de errores significativas en la versión de mayo de 2026 de Cloud Manager en AMS.
 
 <!--
 Known Issues {#known-issues}
