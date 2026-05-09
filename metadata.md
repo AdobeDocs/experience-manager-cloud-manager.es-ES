@@ -7,7 +7,7 @@ landing-page-name: experience-manager
 landing-page-breadcrumb-title: AEM
 type: Documentation
 cloud: Experience Cloud
-git-repo: https://github.com/AdobeDocs/experience-manager-cloud-manager.en
+git-repo: https://github.com/AdobeDocs/experience-manager-cloud-manager.es-ES
 index: true
 recommendations: noDisplay
 source-git-commit: b232450189ce5094d304b7c4312a431ffd6dcc1f
