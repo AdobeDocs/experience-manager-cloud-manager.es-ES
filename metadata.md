@@ -1,6 +1,8 @@
 ---
 solution: Experience Manager, Experience Manager Cloud Manager
-product_v2: id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8id: c68cd75e-5bca-4bc3-a60e-9e183f816441
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
 usetq: true
 landing-page-name: experience-manager
 landing-page-breadcrumb-title: AEM
