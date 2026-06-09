@@ -3,14 +3,11 @@ title: Adición de una canalización que no es de producción
 description: Aprenda a utilizar Cloud Manager para crear y configurar canalizaciones que no son de producción e implementar su código.
 exl-id: ccf4b4a2-6e29-4ede-821c-36318b568e5c
 TQID: https://experienceleague.adobe.com/Dj7SjKdao6RU-cIS7D1AQxg5qpKrJMTcYQJBfiqc-Gg
-product_v2:
-  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
-  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
+product_v2: id: c68cd75e-5bca-4bc3-a60e-9e183f816441id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: badb64b816e83ca08a39b2b39eda13335f6a3c1d
 workflow-type: tm+mt
-source-wordcount: 1999
+source-wordcount: 2096
 ht-degree: 22%
 
 ---
@@ -91,6 +88,10 @@ Después de configurar un programa y al menos un entorno en la interfaz de usuar
 
 Implementa la aplicación AEM completa, incluido el código de la aplicación y, de forma predeterminada, la configuración del nivel web.
 
+>[!NOTE]
+>
+>Si ya existe una canalización de código de pila completa para el entorno seleccionado, esta selección se desactiva.
+
 | Sección | Opción | Descripción |
 | --- | --- | --- |
 | **Código Source** | **Repositorio** | En la lista desplegable, elija el repositorio de Git que la canalización utiliza como origen. Cloud Manager genera código a partir del repositorio que elija aquí. |
@@ -105,11 +106,19 @@ Implementa únicamente la configuración del nivel web, como las propiedades de 
 
 Si ya existe una canalización de pila completa, Cloud Manager muestra un aviso de que la creación de una canalización de configuración de capa web hace que la canalización de pila completa existente ignore la configuración de la capa web. Después de crear la canalización de configuración de nivel web, Cloud Manager administra las implementaciones de configuración de nivel web a través de esa canalización en lugar de la canalización de pila completa.
 
+>[!NOTE]
+>
+>Si ya existe una canalización de configuración de nivel web para el entorno seleccionado, esta selección está deshabilitada. En cualquier momento, solo puede haber una canalización de configuración de nivel web por entorno.
+
 | Sección | Opción | Descripción |
 | --- | --- | --- |
 | **Código Source** | **Repositorio** | En la lista desplegable, seleccione el repositorio Git que contiene la configuración del nivel web. |
 |   | **Rama Git** | Seleccione la rama del repositorio elegido que Cloud Manager utiliza para la implementación. Si es necesario, haga clic en **Actualizar** para actualizar la lista de ramas disponibles para el repositorio seleccionado. Utilice esta opción si una rama creada recientemente no aparece en la lista. |
 |   | **Ubicación del código** | Introduzca la ruta en el repositorio seleccionado que contiene la configuración del nivel web que se va a desplegar. La ubicación predeterminada es la raíz del repositorio (`/`). |
+
+>[!NOTE]
+>
+>Si Ubicación del código no señala a la ubicación del código de Dispatcher, se podría extraer el código de aplicación adicional en el paquete del artefacto e implementarlo en Dispatcher, lo que ocasionaría que Apache falle al reiniciar y que la canalización falle. Asegúrese de establecer la ruta correcta a los archivos de Dispatcher en el repositorio.
 
 >[!ENDTABS]
 
@@ -232,4 +241,4 @@ Después de configurar la canalización, puede implementar el código. Consulte 
 
 Este vídeo ofrece información general sobre el proceso de creación de canalizaciones, que se detalla en este documento.
 
->[!VIDEO](https://video.tv.adobe.com/v/327617?captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/26316/)

@@ -3,17 +3,13 @@ title: Añadir una canalización de producción
 description: Aprenda a utilizar Cloud Manager para crear y configurar canalizaciones de producción para implementar su código.
 exl-id: d489fa3c-df1e-480b-82d0-ac8cce78a710
 TQID: https://experienceleague.adobe.com/WH6W8bZNCWo0BAGLwnMOPpB3bk5P6Fd7c5b-dRT5Vc0
-product_v2:
-  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
-  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
+product_v2: id: c68cd75e-5bca-4bc3-a60e-9e183f816441id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: badb64b816e83ca08a39b2b39eda13335f6a3c1d
 workflow-type: tm+mt
-source-wordcount: 1256
-ht-degree: 100%
+source-wordcount: 1665
+ht-degree: 73%
 
 ---
 
@@ -50,24 +46,11 @@ Una vez que haya utilizado la IU de [!UICONTROL Cloud Manager] para configurar e
 
 1. Haga clic en **+Agregar** y seleccione **Añadir canalización que no es de producción**.
 
-   ![Agregar una canalización de producción](/help/assets/configure-pipelines/add-prod1.png)
+   ![Agregar una canalización de producción](/help/assets/configure-pipelines/add-prod7.png)
 
 1. El cuadro de diálogo **Agregar canalización de producción** se abre a la pestaña **Configuración**, en la que se deben definir varias opciones para la canalización. Estas opciones se agrupan en secciones contraíbles y se describen en los pasos siguientes.
 
    1. Proporcione un nombre descriptivo para la canalización en el campo **Nombre de la canalización**.
-
-   1. En la sección **Código fuente** defina dónde la canalización recupera el código que procesará.
-
-      * **Repositorio**: Define desde qué repositorio de Git la canalización debe recuperar el código.
-
-      >[!TIP]
-      >
-      >Consulte el documento [Configuración del programa](/help/getting-started/program-setup.md) para aprender a añadir y administrar repositorios en Cloud Manager.
-
-      * **Rama de Git**: Define desde qué rama de la canalización seleccionada debe recuperar el código.
-      * **Ubicación del código**: Esta opción define la ruta en la rama del repositorio seleccionado desde la que la canalización debe recuperar el código.
-
-      ![Definir repositorios para la canalización](/help/assets/configure-pipelines/add-prod2.png)
 
    1. En la sección **Entornos** puede definir qué activa una implementación y cómo debe desplegarse por entorno.
 
@@ -133,7 +116,16 @@ Una vez que haya utilizado la IU de [!UICONTROL Cloud Manager] para configurar e
 
          * **Configuración de Dispatcher**: Defina la configuración de Dispatcher para su entorno de producción. Las opciones son las mismas que para el entorno de ensayo.
 
-1. Haga clic en **Continuar** para avanzar a la pestaña **Prueba de ensayo**, donde puede configurar las pruebas de rendimiento de AEM Sites y AEM Assets, en función de los productos para los que disponga de licencia.
+1. Haga clic en **Continuar** para avanzar a la pestaña **Código Source**, donde seleccionará el tipo de código que se va a implementar y configurará el repositorio de origen.
+
+   1. En **Seleccionar código para implementar**, elija el tipo de implementación:
+
+      * **[Código de pila completa](#full-stack-code)**: código para la aplicación AEM completa.
+      * **[Configuración de nivel web](#web-tier-config)**: propiedades de Dispatcher para almacenar, procesar y entregar páginas web al cliente.
+
+      Consulte [Canalizaciones de CI/CD](/help/overview/ci-cd-pipelines.md#code-sources) para obtener más información sobre estos tipos de implementación. Los pasos restantes para completar la configuración de la canalización dependen del tipo seleccionado. Siga los vínculos anteriores para ir a la sección correspondiente de este documento.
+
+1. Haga clic en **Continuar** para avanzar a la pestaña **Prueba de ensayo**, donde puede configurar las pruebas de rendimiento de AEM Sites y AEM Assets, en función de los productos para los que disponga de licencia. {#stage-testing}
 
    >[!TIP]
    >
@@ -145,7 +137,7 @@ Una vez que haya utilizado la IU de [!UICONTROL Cloud Manager] para configurar e
       * **Otras páginas en directo**
       * **Nuevas páginas**
 
-      ![Peso de carga de los sitios](/help/assets/configure-pipelines/add-prod5.png)
+      ![Peso de carga de los sitios](/help/assets/configure-pipelines/add-prod8.png)
 
    1. En la sección **Distribución de pruebas de rendimiento de activos**, puede definir la distribución de prueba de imágenes y PDF, así como sus propios activos de prueba.
 
@@ -162,6 +154,57 @@ Una vez que haya utilizado la IU de [!UICONTROL Cloud Manager] para configurar e
 
 1. Haga clic en **Guardar** para completar la adición de la canalización de producción.
 
+### Código de pila completa {#full-stack-code}
+
+Una canalización de código de pila completa implementa compilaciones de código de back-end y front-end junto con la configuración HTTPD/Dispatcher.
+
+>[!NOTE]
+>
+>Si ya existe una canalización de producción de pila completa, esta selección está deshabilitada.
+
+**Para configurar una canalización de producción de código de pila completa:**
+
+1. En la ficha **Código Source**, defina las siguientes opciones.
+
+   * **Repositorio**: Define desde qué repositorio de Git la canalización debe recuperar el código.
+
+   >[!TIP]
+   >
+   >Consulte el documento [Configuración del programa](/help/getting-started/program-setup.md) para aprender a añadir y administrar repositorios en Cloud Manager.
+
+   * **Rama de Git**: define desde qué rama la canalización debe recuperar el código.
+   * **Ignorar configuración de nivel web**: cuando se selecciona, la canalización no implementa la configuración del nivel web. Si ya existe una canalización de configuración de nivel web para el mismo entorno, esta casilla de verificación se selecciona automáticamente y se desactiva porque esa canalización administra la configuración de nivel web en su lugar. Cuando no existe ninguna canalización de configuración de nivel web, puede seleccionar o desactivar esta opción para controlar si la canalización de pila completa implementa la configuración de Dispatcher.
+
+   ![Origen del código de pila completa](/help/assets/configure-pipelines/add-prod-fullstack-source.png)
+
+1. Haga clic en **Continuar** para avanzar a la pestaña **Prueba de ensayo**. Consulte [Prueba de ensayo](#stage-testing) para obtener más información.
+
+### Configuración de nivel web {#web-tier-config}
+
+Una canalización de configuración de nivel web solo implementa la configuración de HTTPD/Dispatcher. Consulte [Canalizaciones de CI/CD](/help/overview/ci-cd-pipelines.md#deployment-types) para obtener más información sobre este tipo de canalización.
+
+>[!NOTE]
+>
+>Si ya existe una canalización de producción de configuración de nivel web, esta selección está deshabilitada.
+
+Si crea una canalización de configuración de nivel web para un entorno con una canalización de pila completa existente, se ignorará la configuración de nivel web en la canalización de pila completa. Este cambio solo afecta a la configuración del nivel web en ese entorno.
+
+**Para configurar una canalización de producción de configuración de nivel web:**
+
+1. En la ficha **Código Source**, defina las siguientes opciones.
+
+   * **Repositorio**: en la lista desplegable, seleccione el repositorio Git que contiene la configuración del nivel web.
+   * **Rama de Git**: seleccione la rama en el repositorio elegido que Cloud Manager usa para la implementación.
+   * **Ubicación del código**: escriba la ruta de acceso en el repositorio seleccionado que contiene la configuración del nivel web que se va a implementar. La ubicación predeterminada es la raíz del repositorio (`/`).
+
+   >[!NOTE]
+   >
+   >Si Ubicación del código no señala a la ubicación del código de Dispatcher, se podría extraer el código de aplicación adicional en el paquete del artefacto e implementarlo en Dispatcher, lo que ocasionaría que Apache falle al reiniciar y que la canalización falle. Asegúrese de establecer la ruta correcta a los archivos de Dispatcher en el repositorio.
+
+   ![Origen de configuración de nivel web](/help/assets/configure-pipelines/add-prod-webtier-source.png)
+
+1. Haga clic en **Continuar** para avanzar a la pestaña **Prueba de ensayo**. Consulte [Prueba de ensayo](#stage-testing) para obtener más información.
+
 ## Pasos siguientes {#the-next-steps}
 
 Después de configurar la canalización, puede implementar el código. Consulte la [Implementación de código](/help/using/code-deployment.md) para obtener más información.
@@ -170,4 +213,4 @@ Después de configurar la canalización, puede implementar el código. Consulte 
 
 Este vídeo ofrece información general sobre el proceso de creación de canalizaciones, que se detalla en este documento.
 
->[!VIDEO](https://video.tv.adobe.com/v/327603?captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/26314/)
