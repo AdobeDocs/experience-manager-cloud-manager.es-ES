@@ -16,10 +16,10 @@ role_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
+source-git-commit: badb64b816e83ca08a39b2b39eda13335f6a3c1d
 workflow-type: tm+mt
-source-wordcount: 639
-ht-degree: 81%
+source-wordcount: 1091
+ht-degree: 51%
 
 ---
 
@@ -51,6 +51,63 @@ Este diagrama ilustra lo que sucede una vez que se activa una versión en [!UICO
 | &#x200B;8. Implementación del déclencheur de producción | Una vez completadas las pruebas automatizadas, [!UICONTROL Cloud Manager] inicia la implementación en producción. |
 | &#x200B;9. [!UICONTROL Cloud Manager] obtiene artefactos para implementar | [!UICONTROL Cloud Manager] extrae los artefactos de la versión almacenados. |
 | &#x200B;10. Implementar artefactos en producción | Los artefactos de la versión se implementan en el entorno de producción. |
+
+### Fuentes de código {#code-sources}
+
+Las canalizaciones también pueden variar según el tipo de código que implementan, además de la producción y la no producción.
+
+* **[Canalizaciones de pila completa](#full-stack-pipeline)**: implemente el código completo de la aplicación AEM junto con las configuraciones de HTTPD/Dispatcher.
+* **[Canalizaciones de configuración de nivel web](#web-tier-config-pipelines)**: implementen solo configuraciones de HTTPD/Dispatcher.
+
+### Canalizaciones de pila completa {#full-stack-pipeline}
+
+Las canalizaciones de pila completa implementan el código de aplicación de AEM completo en el tiempo de ejecución de AEM y, de forma predeterminada, también implementan configuraciones de nivel web.
+
+Se aplican las siguientes restricciones.
+
+* Un usuario debe iniciar sesión con el rol **Administrador de implementación** para configurar o ejecutar canalizaciones.
+* En cualquier momento, solo puede haber una canalización de pila completa por entorno.
+
+A continuación se describe cómo la canalización de pila completa interactúa con una [canalización de configuración de nivel web](#web-tier-config-pipelines).
+
+* La canalización de pila completa para un entorno ignora la configuración de Dispatcher si existe la canalización de configuración de nivel web correspondiente.
+* Si la canalización de configuración del nivel web correspondiente para el entorno no existe, el usuario puede configurar la canalización de pila completa para incluir o ignorar la configuración de Dispatcher.
+
+Las canalizaciones de pila completa pueden ser canalizaciones de calidad del código o implementación.
+
+#### Configuración de canalizaciones de pila completa {#configure-full-stack}
+
+Consulte [Agregar una canalización de producción](/help/using/production-pipelines.md#full-stack-code).
+Consulte [Agregar una canalización que no sea de producción](/help/using/non-production-pipelines.md#add-non-production-pipeline).
+
+### Canalizaciones de configuración de nivel web {#web-tier-config-pipelines}
+
+Las canalizaciones de configuración de nivel web permiten la implementación exclusiva de la configuración de HTTPD/Dispatcher en el tiempo de ejecución de AEM, desacoplándola de otros cambios de código. Es una canalización optimizada que proporciona a los usuarios que solo desean implementar los cambios de configuración de Dispatcher, un medio acelerado para hacerlo en solo unos minutos.
+
+>[!TIP]
+>
+>Las canalizaciones de configuración de nivel web le permiten almacenar su configuración web en la misma ubicación de origen o en una diferente como canalización de pila completa, según lo que mejor se adapte a la estructura de su proyecto.
+
+Se aplican las siguientes restricciones.
+
+* Un usuario debe iniciar sesión con el rol **Administrador de implementación** para configurar o ejecutar canalizaciones.
+* En cualquier momento, solo puede haber una canalización de configuración de nivel web por entorno.
+* El usuario no puede configurar una canalización de configuración de nivel web cuando se está ejecutando su canalización de pila completa correspondiente.
+
+A continuación se describe cómo la canalización de configuración del nivel web interactúa con la [canalización de pila completa](#full-stack-pipeline).
+
+* Si no se configura una canalización de configuración de nivel web para un entorno, el usuario puede elegir incluir o ignorar la configuración de Dispatcher al configurar la canalización de pila completa.
+* Una vez que una canalización de configuración de nivel web está configurada para un entorno, su canalización de pila completa correspondiente (si existe) ignora la configuración de Dispatcher durante la ejecución y la implementación.
+* Después de eliminar una canalización de configuración de nivel web, su canalización de pila completa correspondiente (si existe) se restablece para implementar las configuraciones de Dispatcher durante su ejecución.
+
+>[!NOTE]
+>
+>Para los programas de AMS con la implementación azul-verde habilitada, las actualizaciones de nivel web utilizan la implementación móvil de forma predeterminada. Utilice una canalización de pila completa si necesita una implementación azul-verde para los cambios del nivel web.
+
+#### Configuración de canalizaciones de nivel web {#configure-web-tier}
+
+Consulte [Agregar una canalización de producción](/help/using/production-pipelines.md#web-tier-config).
+Consulte [Agregar una canalización que no sea de producción](/help/using/non-production-pipelines.md#add-non-production-pipeline).
 
 ### Compilaciones más rápidas con Smart Build {#use=smart-build}
 
