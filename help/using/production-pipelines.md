@@ -3,17 +3,13 @@ title: Añadir una canalización de producción
 description: Aprenda a utilizar Cloud Manager para crear y configurar canalizaciones de producción para implementar su código.
 exl-id: d489fa3c-df1e-480b-82d0-ac8cce78a710
 TQID: https://experienceleague.adobe.com/WH6W8bZNCWo0BAGLwnMOPpB3bk5P6Fd7c5b-dRT5Vc0
-product_v2:
-  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
-  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: badb64b816e83ca08a39b2b39eda13335f6a3c1d
+product_v2: id: c68cd75e-5bca-4bc3-a60e-9e183f816441id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 4c73ab16ff7eab406c31a6d26cdd09360a94b3ea
 workflow-type: tm+mt
-source-wordcount: 1665
-ht-degree: 73%
+source-wordcount: 2101
+ht-degree: 58%
 
 ---
 
@@ -40,7 +36,7 @@ La función **Administrador de implementación** es responsable de configurar la
 >
 >No se puede configurar una canalización hasta que su repositorio de Git asociado tenga al menos una rama y la [configuración del programa](/help/getting-started/program-setup.md) haya finalizado.
 
-## Adición de una nueva canalización de producción {#adding-production-pipeline}
+## Añadir una canalización de producción {#adding-production-pipeline}
 
 Una vez que haya utilizado la IU de [!UICONTROL Cloud Manager] para configurar el programa y tener al menos un entorno, ya puede añadir una canalización de producción.
 
@@ -209,6 +205,83 @@ Si crea una canalización de configuración de nivel web para un entorno con una
 
 1. Haga clic en **Continuar** para avanzar a la pestaña **Prueba de ensayo**. Consulte [Prueba de ensayo](#stage-testing) para obtener más información.
 
+
+## Acerca del uso de Smart Build en una canalización de producción{#about-smart-build}
+
+**Smart Build** en Cloud Manager es una estrategia de compilación optimizada para canalizaciones de producción. La versión inteligente reduce los tiempos de compilación al almacenar en caché los módulos y reconstruir solo los módulos que han cambiado desde la última ejecución correcta. Los módulos no modificados se reutilizan desde la caché, mientras que solo se reconstruyen los módulos modificados y sus dependencias, lo que mejora la eficacia de los flujos de trabajo de desarrollo iterativos.
+
+Smart Build está disponible actualmente para lo siguiente:
+
+* Código de calidad de las canalizaciones.
+* Canalizaciones de implementación de pila completa de desarrollo, fase y producción.
+
+>[!NOTE]
+>
+>La primera ejecución después de habilitar Smart Build se comporta como una compilación completa porque la caché está vacía.
+
+Se recomienda Smart Build cuando se dispone de lo siguiente:
+
+* Está desarrollando y comprometiendo activamente cambios incrementales frecuentes.
+* El proyecto contiene varios módulos Maven.
+* Las compilaciones completas están tardando un tiempo considerable.
+
+Smart Build no siempre es ideal cuando se tiene lo siguiente:
+
+* Su compilación se basa en gran medida en complementos que realizan operaciones fuera del gráfico de dependencias de Maven.
+* Se requiere una validación de regeneración completa en cada ejecución.
+
+### Comprender el rendimiento de compilación{#smart-build-performance}
+
+La mejora del rendimiento obtenida mediante el uso de Smart Build depende de varios factores, entre los que se incluyen los siguientes:
+
+* Número de módulos del proyecto.
+* La frecuencia y el ámbito del código cambian.
+* La distribución de dependencias entre módulos.
+
+Generalmente, los proyectos con muchos módulos independientes pueden ver la mayor mejora.
+
+### Exclusión de caché por módulo{#smart-build-cache-optout}
+
+Smart Build proporciona un control detallado que le permite deshabilitar el almacenamiento en caché para módulos específicos. Esta capacidad es útil cuando se utilizan ciertos módulos:
+
+* Use complementos, como `exec-maven-plugin` o `maven-antrun-plugin`.
+* Realizar operaciones de archivo no rastreadas por dependencias de Maven.
+* Produzca resultados incoherentes cuando se almacene en caché.
+
+### Deshabilitar el almacenamiento en caché de un módulo{#smart-build-disable-caching}
+
+Puede agregar la siguiente propiedad al `pom.xml` del módulo afectado:
+
+```xml
+<properties>
+  <maven.build.cache.enabled>false</maven.build.cache.enabled>
+</properties>
+```
+
+Esta sintaxis fuerza al módulo a reconstruir en cada ejecución de canalización, mientras que otros módulos siguen beneficiándose del almacenamiento en caché.
+
+### Limitaciones y consideraciones al utilizar Smart Build{#smart-build-limitations}
+
+Tenga en cuenta lo siguiente al utilizar Smart Build:
+
+* La generación inteligente se basa en el análisis de dependencias de Maven.
+* Los cambios fuera del gráfico de dependencias no pueden almacenar en déclencheur las regeneraciones.
+* Es posible que algunos complementos no sean totalmente compatibles con el almacenamiento en caché.
+* Puede volver a **Compilación completa** en cualquier momento editando la canalización que no sea de producción.
+
+Si encuentra un comportamiento de compilación inesperado, considere la posibilidad de deshabilitar el almacenamiento en caché para módulos específicos o cambiar temporalmente su estrategia de compilación a **Compilación completa**.
+
+### Solución de problemas de Smart Build{#smart-build-troubleshoot}
+
+| Problema | Soluciones sugeridas |
+| --- | --- |
+| Los resultados de la compilación son incoherentes | · Deshabilite el almacenamiento en caché para los módulos afectados.<br>· Compruebe el comportamiento de los complementos (especialmente los complementos `exec`/`antrun`). |
+| Sin mejora de rendimiento | · Asegúrese de que se han producido varias ejecuciones (calentamiento de caché).<br>· Compruebe si la mayoría de los módulos cambian con frecuencia. |
+| Artefactos inesperados o cambios que faltan | · Revise si los cambios están fuera del seguimiento de dependencias de Maven.<br>· Use **Compilación completa** para la verificación. |
+
+Consulte [Agregar una canalización de producción](#adding-production-pipeline) para habilitar Smart Build.
+
+
 ## Pasos siguientes {#the-next-steps}
 
 Después de configurar la canalización, puede implementar el código. Consulte la [Implementación de código](/help/using/code-deployment.md) para obtener más información.
@@ -217,4 +290,4 @@ Después de configurar la canalización, puede implementar el código. Consulte 
 
 Este vídeo ofrece información general sobre el proceso de creación de canalizaciones, que se detalla en este documento.
 
->[!VIDEO](https://video.tv.adobe.com/v/327603?captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/26314/)

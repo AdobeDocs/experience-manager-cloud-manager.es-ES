@@ -3,23 +3,15 @@ title: Canalizaciones de CI/CD
 description: Obtenga información acerca de las canalizaciones de CI/CD y cómo administran las implementaciones en entornos de ensayo y producción en Cloud Manager.
 exl-id: 7130e5b7-6986-48c8-900c-90f3e4187f91
 TQID: https://experienceleague.adobe.com/BwkZH2MIbXrzSxf0yk9yeDZZIpw7-Ldue-OPQPkWrdg
-product_v2:
-  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
-  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-feature_v2:
-  - id: cd2426f1-5719-4006-b8c2-738e5969754b
-  - id: ff09c71c-26a9-449a-85f8-2aeb8ce96100
-subfeature_v2:
-  - id: c14b2f98-ee16-4c49-b87b-919c91b01d9d
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: badb64b816e83ca08a39b2b39eda13335f6a3c1d
+product_v2: id: c68cd75e-5bca-4bc3-a60e-9e183f816441id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2: id: cd2426f1-5719-4006-b8c2-738e5969754bid: ff09c71c-26a9-449a-85f8-2aeb8ce96100
+subfeature_v2: id: c14b2f98-ee16-4c49-b87b-919c91b01d9d
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: 694d3e8dad6e2ba86186a4bf6fdda3739e1041da
 workflow-type: tm+mt
-source-wordcount: 1091
-ht-degree: 51%
+source-wordcount: 1122
+ht-degree: 50%
 
 ---
 
@@ -77,8 +69,7 @@ Las canalizaciones de pila completa pueden ser canalizaciones de calidad del có
 
 #### Configuración de canalizaciones de pila completa {#configure-full-stack}
 
-Consulte [Agregar una canalización de producción](/help/using/production-pipelines.md#full-stack-code).
-Consulte [Agregar una canalización que no sea de producción](/help/using/non-production-pipelines.md#add-non-production-pipeline).
+Consulte [Agregar una canalización de producción](/help/using/production-pipelines.md#full-stack-code).Consulte [Agregar una canalización que no sea de producción](/help/using/non-production-pipelines.md#add-non-production-pipeline).
 
 ### Canalizaciones de configuración de nivel web {#web-tier-config-pipelines}
 
@@ -106,14 +97,13 @@ A continuación se describe cómo la canalización de configuración del nivel w
 
 #### Configuración de canalizaciones de nivel web {#configure-web-tier}
 
-Consulte [Agregar una canalización de producción](/help/using/production-pipelines.md#web-tier-config).
-Consulte [Agregar una canalización que no sea de producción](/help/using/non-production-pipelines.md#add-non-production-pipeline).
+Consulte [Agregar una canalización de producción](/help/using/production-pipelines.md#web-tier-config).Consulte [Agregar una canalización que no sea de producción](/help/using/non-production-pipelines.md#add-non-production-pipeline).
 
 ### Compilaciones más rápidas con Smart Build {#use=smart-build}
 
 Cloud Manager ahora usa una estrategia de compilación optimizada llamada **Smart Build**, que usa el almacenamiento en caché a nivel de módulo para acelerar el proceso de compilación. Durante cada compilación, solo se reconstruyen los módulos que han cambiado, mientras que los módulos sin modificar se reutilizan de la caché.
 
-La generación inteligente solo está disponible para canalizaciones de implementación de calidad de código y Pila completa de desarrollador.
+La generación inteligente está disponible para canalizaciones de implementación de calidad de código y pila completa (desarrollo, fase y producción).
 
 Vea [Agregar una canalización que no es de producción](/help/using/non-production-pipelines.md#add-non-production-pipeline) y [Acerca del uso de Smart Build en una canalización que no es de producción](/help/using/non-production-pipelines.md#about-smart-build).
 

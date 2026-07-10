@@ -3,14 +3,11 @@ title: Adición de una canalización que no es de producción
 description: Aprenda a utilizar Cloud Manager para crear y configurar canalizaciones que no son de producción e implementar su código.
 exl-id: ccf4b4a2-6e29-4ede-821c-36318b568e5c
 TQID: https://experienceleague.adobe.com/Dj7SjKdao6RU-cIS7D1AQxg5qpKrJMTcYQJBfiqc-Gg
-product_v2:
-  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
-  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: badb64b816e83ca08a39b2b39eda13335f6a3c1d
+product_v2: id: c68cd75e-5bca-4bc3-a60e-9e183f816441id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: 4c73ab16ff7eab406c31a6d26cdd09360a94b3ea
 workflow-type: tm+mt
-source-wordcount: 2096
+source-wordcount: 2080
 ht-degree: 22%
 
 ---
@@ -37,7 +34,7 @@ Existen dos tipos de canalizaciones que no son de producción:
 >
 >No puede configurar una canalización hasta que su repositorio Git asociado tenga al menos una rama y la [configuración del programa](/help/getting-started/program-setup.md) se haya completado. Consulte el documento [Repositorios de Cloud Manager](/help/managing-code/managing-repositories.md) para aprender a añadir y administrar repositorios en Cloud Manager.
 
-## Adición de una nueva canalización que no es de producción {#add-non-production-pipeline}
+## Adición de una canalización que no es de producción {#add-non-production-pipeline}
 
 Después de configurar un programa y al menos un entorno en la interfaz de usuario de Cloud Manager, puede agregar canalizaciones que no sean de producción. Utilice estas canalizaciones para probar la calidad del código antes de implementarlo en entornos de producción.
 
@@ -99,7 +96,7 @@ Implementa la aplicación AEM completa, incluido el código de la aplicación y,
 | --- | --- | --- |
 | **Código Source** | **Repositorio** | En la lista desplegable, elija el repositorio de Git que la canalización utiliza como origen. Cloud Manager genera código a partir del repositorio que elija aquí. |
 |   | **Rama Git** | En la lista desplegable, elija desde qué rama del repositorio seleccionado debe crearse la canalización. El valor predeterminado es `main`. La canalización utiliza la rama elegida como origen para la compilación y la implementación. Si es necesario, haga clic en **Actualizar** para actualizar la lista de ramas disponibles para el repositorio seleccionado. Utilice esta opción si una rama creada recientemente no aparece en la lista. |
-|   | **Estrategia de compilación** | <ul><li>**Compilación completa**: genera todos los módulos del repositorio cada vez<li>BETA **Smart Build**: genera solo módulos que han cambiado desde la última confirmación.<br>Obtenga más información acerca de [cómo usar Smart Build en una canalización que no es de producción](#about-smart-build).</li></ol>**Importante**: La compilación inteligente solo está disponible para canalizaciones de calidad de código y canalizaciones de implementación de código de pila completa de desarrolladores. |
+|   | **Estrategia de compilación** | <ul><li>**Compilación completa**: genera todos los módulos del repositorio cada vez<li>**Smart Build**: genera solo módulos que han cambiado desde la última confirmación.<br>Obtenga más información acerca de [cómo usar Smart Build en una canalización que no es de producción](#about-smart-build).</li></ol> |
 |   | **Ignorar configuración de nivel web** | Seleccione esta opción para omitir la implementación de la configuración del nivel web en una canalización de código de pila completa. Deje la opción sin seleccionar para implementar la configuración del nivel web junto con el código de la canalización. |
 | **Canalización** | **Auditoría de experiencias** casilla de verificación | Seleccione esta opción para incluir un paso Auditoría de experiencias en la canalización. Cuando se habilita, la canalización incluye el paso Auditoría de experiencias después de la pestaña Código de Source. |
 
@@ -127,25 +124,28 @@ Si ya existe una canalización de pila completa, Cloud Manager muestra un aviso 
 
 1. Haga clic en **Guardar**.
 
-## Acerca del uso de Smart Build en una canalización que no es de producción{#about-smart-build}
+## Acerca del uso de Smart Build en la canalización que no es de producción{#about-smart-build}
 
 **Smart Build** en Cloud Manager es una estrategia de compilación optimizada para canalizaciones que no son de producción. La versión inteligente reduce los tiempos de compilación al almacenar en caché los módulos y reconstruir solo los módulos que han cambiado desde la última ejecución correcta. Los módulos no modificados se reutilizan desde la caché, mientras que solo se reconstruyen los módulos modificados y sus dependencias, lo que mejora la eficacia de los flujos de trabajo de desarrollo iterativos.
 
-Actualmente, Smart Build solo está disponible para lo siguiente:
+Smart Build está disponible actualmente para lo siguiente:
 
 * Código de calidad de las canalizaciones.
-* Desarrollo de canalizaciones de implementación de pila completa.
+* Canalizaciones de implementación de pila completa de desarrollo, fase y que no sean de producción.
+
 
 >[!NOTE]
 >
 >La primera ejecución después de habilitar Smart Build se comporta como una compilación completa porque la caché está vacía.
 
 Se recomienda Smart Build cuando se dispone de lo siguiente:
+
 * Está desarrollando y comprometiendo activamente cambios incrementales frecuentes.
 * El proyecto contiene varios módulos Maven.
 * Las compilaciones completas están tardando un tiempo considerable.
 
 Smart Build no siempre es ideal cuando se tiene lo siguiente:
+
 * Su compilación se basa en gran medida en complementos que realizan operaciones fuera del gráfico de dependencias de Maven.
 * Se requiere una validación de regeneración completa en cada ejecución.
 
@@ -244,4 +244,4 @@ Después de configurar la canalización, puede implementar el código. Consulte 
 
 Este vídeo ofrece información general sobre el proceso de creación de canalizaciones, que se detalla en este documento.
 
->[!VIDEO](https://video.tv.adobe.com/v/327617?captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/26316/)
