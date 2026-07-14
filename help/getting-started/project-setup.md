@@ -3,15 +3,12 @@ title: Configuración del proyecto
 description: Obtenga información sobre cómo configurar el proyecto para que pueda administrarlo e implementarlo con Cloud Manager.
 exl-id: ed994daf-0195-485a-a8b1-87796bc013fa
 TQID: https://experienceleague.adobe.com/OhaZ2-x6p1b6aF0xHwr2G-RNTYPd15pqHVxKVwv-GDM
-product_v2:
-  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
-  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
+product_v2: id: c68cd75e-5bca-4bc3-a60e-9e183f816441id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: fa6be369b979682cebf68852603725d8754605ab
 workflow-type: tm+mt
-source-wordcount: 1430
-ht-degree: 100%
+source-wordcount: 1411
+ht-degree: 65%
 
 ---
 
@@ -25,23 +22,23 @@ Los proyectos AEM existentes deben adherirse a algunas reglas básicas para crea
 
 * Los proyectos deben crearse con Apache Maven.
 * Debe haber un archivo `pom.xml` en la raíz del repositorio de Git.
-   * El archivo `pom.xml` puede hacer referencia a tantos submódulos (que a su vez pueden tener otros submódulos) como sea necesario.
+   * Este archivo de `pom.xml` puede hacer referencia a tantos módulos secundarios (que a su vez tienen otros módulos secundarios) como sea necesario.
    * Puede agregar referencias a repositorios de artefactos Maven adicionales en sus archivos `pom.xml`.
    * El acceso a [repositorios de artefactos protegidos por contraseña](#password-protected-maven-repositories) se admite cuando se configura. Sin embargo, no se admite el acceso a repositorios de artefactos protegidos por la red.
-* Los paquetes de contenido implementables se descubren analizando los archivos .zip del paquete de contenido que hay en un directorio llamado `target`.
-   * Cualquier número de submódulos puede producir paquetes de contenido.
-* Los artefactos de Dispatcher implementables se detectan analizando archivos `zip` contenidos en subdirectorios de `target` llamados `conf` y `conf.d`.
+* Cloud Manager detecta paquetes de contenido implementables al analizar los archivos .zip del paquete de contenido que hay en un directorio denominado `target`.
+   * Cualquier número de módulos secundarios produce paquetes de contenido.
+* Cloud Manager detecta artefactos de Dispatcher implementables al analizar `zip` archivos contenidos en subdirectorios de `target` llamados `conf` y `conf.d`.
 * Si hay más de un paquete de contenido, no se garantiza el pedido de las implementaciones de paquetes.
-* Si se necesita un orden específico, se pueden utilizar dependencias del paquete de contenido para definir el orden.
-* Los paquetes pueden ser [omitidos](#skipping-content-packages) desde la implementación.
+   * Si se necesita un orden específico, se pueden utilizar dependencias del paquete de contenido para definir el orden.
+* Se pueden [omitir](#skipping-content-packages) paquetes de la implementación.
 
 ## Activación de perfiles de Maven en Cloud Manager {#activating-maven-profiles-in-cloud-manager}
 
-En algunos casos limitados, es posible que tenga que variar ligeramente el proceso de generación al ejecutarse dentro de Cloud Manager, en lugar de cuando se ejecuta en estaciones de trabajo para desarrolladores. En estos casos, se pueden utilizar [Perfiles de Maven](https://maven.apache.org/guides/introduction/introduction-to-profiles.html) para definir cómo la generación debe ser distinta en diferentes entornos, incluido Cloud Manager.
+En algunos casos limitados, modifique ligeramente el proceso de compilación al ejecutarse dentro de Cloud Manager. Esto difiere de cuando se ejecuta en estaciones de trabajo para desarrolladores. Para estos casos, [Perfiles de Maven](https://maven.apache.org/guides/introduction/introduction-to-profiles.html) definen las diferencias de compilación en diferentes entornos, incluido Cloud Manager.
 
-La activación de un perfil de Maven dentro del entorno de generación de Cloud Manager debe realizarse al buscar la `CM_BUILD` [variable de entorno](/help/getting-started/build-environment.md#environment-variables). Por el contrario, un perfil que se vaya a usar solamente fuera del entorno de compilación de Cloud Manager debe realizarse buscando la ausencia de esta variable.
+La activación de un perfil Maven dentro del entorno de compilación de Cloud Manager debe realizarse al buscar la `CM_BUILD` [variable de entorno](/help/getting-started/build-environment.md#environment-variables). Por el contrario, un perfil que se vaya a usar solamente fuera del entorno de compilación de Cloud Manager debe activarse buscando la ausencia de esta variable.
 
-Por ejemplo, si desea que salga un mensaje simple cuando la generación se ejecuta solamente dentro de Cloud Manager, debe hacer lo siguiente:
+Por ejemplo, si desea que salga un mensaje simple cuando la generación se ejecuta solamente dentro de Cloud Manager, haga lo siguiente:
 
 ```xml
         <profile>
@@ -79,7 +76,7 @@ Por ejemplo, si desea que salga un mensaje simple cuando la generación se ejecu
 >
 >Para probar este perfil en una estación de trabajo para desarrolladores, puede habilitarlo en la línea de comandos (con `-PcmBuild`) o en su entorno de desarrollo integrado (IDE).
 
-Y si desea que salga un mensaje simple cuando la generación se ejecuta solamente fuera de Cloud Manager, debe hacer lo siguiente:
+Y si desea que salga un mensaje simple cuando la generación se ejecuta solamente fuera de Cloud Manager, haga lo siguiente:
 
 ```xml
         <profile>
@@ -115,19 +112,19 @@ Y si desea que salga un mensaje simple cuando la generación se ejecuta solament
 
 ## Compatibilidad con repositorios Maven protegidos por contraseña {#password-protected-maven-repositories}
 
-Los artefactos de un repositorio Maven protegido por contraseña deben utilizarse con precaución porque el código implementado de esta manera no está completamente sujeto a las comprobaciones de calidad impuestas por las puertas de calidad de Cloud Manager. Adobe también recomienda implementar las fuentes Java, así como todo el código fuente del proyecto junto con el binario.
+Los artefactos de un repositorio Maven protegido por contraseña deben utilizarse con precaución, ya que el código implementado de esta manera no está completamente sujeto a las comprobaciones de calidad que aplican los estándares de calidad de Cloud Manager. Adobe también recomienda implementar las fuentes Java y todo el código fuente del proyecto junto con el binario.
 
 >[!TIP]
 >
->Los artefactos de repositorios Maven protegidos por contraseña solo deben utilizarse en casos excepcionales y para un código no vinculado a AEM.
+>Los artefactos de repositorios Maven protegidos por contraseña solo deben utilizarse en casos poco frecuentes y para un código no vinculado a AEM.
 
 Para utilizar un repositorio Maven protegido por contraseña de Cloud Manager, especifique la contraseña (y, opcionalmente, el nombre de usuario) como secreto [Variable de canalización](/help/getting-started/build-environment.md#pipeline-variables) y después haga referencia a ese secreto dentro del archivo llamado `.cloudmanager/maven/settings.xml` en el repositorio de Git. Este archivo sigue el esquema [Archivo de configuración de Maven](https://maven.apache.org/settings.html).
 
-Cuando se inicia el proceso de generación de Cloud Manager, el elemento `<servers>` de este archivo se combina con el archivo `settings.xml` predeterminado que provee Cloud Manager. Los servidores personalizados no deben usar identificadores de servidor que comiencen por `adobe` y `cloud-manager`. Estos ID se consideran reservados. Cloud Manager refleja únicamente los Id. de servidor que coinciden con uno de los prefijos especificados o con el Id. predeterminado `central`.
+Cuando se inicia el proceso de generación de Cloud Manager, el elemento `<servers>` de este archivo se combina con el archivo `settings.xml` predeterminado que provee Cloud Manager. Los servidores personalizados usan identificadores de servidor que no comienzan con `adobe` o `cloud-manager`. Estos ID se consideran reservados. Cloud Manager refleja únicamente los Id. de servidor que coinciden con uno de los prefijos especificados o con el Id. predeterminado `central`.
 
-Con este archivo en su lugar, se hará referencia al ID de servidor desde un elemento `<repository>` o `<pluginRepository>` dentro del archivo `pom.xml`. Generalmente, los elementos `<repository>` o `<pluginRepository>` estarían contenidos dentro de un [Perfil específico de Cloud Manager](#activating-maven-profiles-in-cloud-manager), aunque esto no es estrictamente necesario.
+Con este archivo en su lugar, se hace referencia al Id. de servidor desde un elemento `<repository>` o `<pluginRepository>` dentro del archivo `pom.xml`. Estos elementos `<repository>` y/o `<pluginRepository>` están contenidos dentro de un [perfil específico de Cloud Manager](#activating-maven-profiles-in-cloud-manager), aunque no es estrictamente necesario.
 
-Por ejemplo, supongamos que el repositorio se encuentra en `https://repository.myco.com/maven2`, el nombre de usuario de Cloud Manager que debe usar es `cloudmanager` y la contraseña es `secretword`.
+Por ejemplo, suponga que el repositorio se encuentra en `https://repository.myco.com/maven2`, que el nombre de usuario que utiliza Cloud Manager es `cloudmanager` y que la contraseña es `secretword`.
 
 Primero, establezca la contraseña como un secreto en la canalización:
 
@@ -217,7 +214,7 @@ Configure las variables `maven-source-plugin` en el proyecto:
 
 ### Implementación de fuentes de proyecto {#deploying-project-sources}
 
-Se recomienda implementar todo el origen del proyecto junto con el binario en un repositorio Maven. Esto permite reconstruir el artefacto exacto.
+Se recomienda implementar todo el código fuente del proyecto junto con el binario en un repositorio Maven. Esto permite reconstruir el artefacto exacto.
 
 Configure las variables `maven-assembly-plugin` en el proyecto:
 
@@ -244,9 +241,9 @@ Configure las variables `maven-assembly-plugin` en el proyecto:
 
 ## Omitir paquetes de contenido {#skipping-content-packages}
 
-En Cloud Manager, las generaciones pueden producir cualquier cantidad de paquetes de contenido. Por varios motivos, puede ser recomendable producir un paquete de contenido, pero no implementarlo. Por ejemplo, este método puede resultar útil cuando genera paquetes de contenido únicamente para realizar pruebas o cuando otro paso en el proceso de generación los vuelve a empaquetar. Es decir, un subpaquete de otro paquete.
+En Cloud Manager, las compilaciones pueden producir cualquier cantidad de paquetes de contenido. Por varios motivos, puede ser deseable producir un paquete de contenido, pero no implementarlo. Por ejemplo, este método puede resultar útil cuando genera paquetes de contenido únicamente para realizar pruebas o cuando otro paso en el proceso de generación los vuelve a empaquetar. Es decir, un subpaquete de otro paquete.
 
-Para dar cabida a estos escenarios, Cloud Manager busca una propiedad denominada `cloudManagerTarget` en las propiedades de los paquetes de contenido creados. Si esta propiedad se establece en `none`, el paquete se omite y no se implementa. El mecanismo para establecer esta propiedad depende de la forma en que la compilación produce el paquete de contenido. Por ejemplo, con el `filevault-maven-plugin` puede configurar el complemento de esta manera:
+Para dar cabida a estos escenarios, Cloud Manager busca una propiedad denominada `cloudManagerTarget` en las propiedades de los paquetes de contenido creados. Si esta propiedad se establece en `none`, el paquete se omite y no se implementa. El mecanismo para establecer esta propiedad depende de la forma en que la compilación produce el paquete de contenido. Por ejemplo, con `filevault-maven-plugin`, configure el complemento de la siguiente manera:
 
 ```xml
         <plugin>
@@ -282,7 +279,7 @@ Con `content-package-maven-plugin` es similar:
 
 En muchos casos, el mismo código se implementa en varios entornos de AEM. Cuando sea posible, Cloud Manager evita la reconstrucción del código base cuando detecte que se utiliza la misma confirmación de Git en varias ejecuciones de canalización full-stack.
 
-Cuando se inicia una ejecución, se extrae el compromiso de HEAD actual para la canalización de ramas. El hash de confirmación se puede ver en la interfaz de usuario y a través de la API. Cuando el paso de generación se completa correctamente, los artefactos resultantes se almacenan en base a ese hash de compromiso y se pueden reutilizar en ejecuciones de canalización posteriores.
+Cuando se inicia una ejecución, se extrae el compromiso de HEAD actual para la canalización de ramas. El hash de confirmación se puede ver en la interfaz de usuario y a través de la API. Cuando el paso de generación se completa correctamente, los artefactos resultantes se almacenan en función de ese hash de compromiso y se pueden reutilizar en ejecuciones de canalización posteriores.
 
 Los paquetes se reutilizan en todas las canalizaciones si están en el mismo programa. Al buscar paquetes que puedan reutilizarse, AEM ignora las ramas y vuelve a utilizar artefactos a través de las ramas.
 
@@ -339,7 +336,7 @@ Si lo desea, el comportamiento de reutilización se puede deshabilitar para cana
 
 * Los artefactos de generación no se reutilizan en programas diferentes, independientemente de si el hash de compromiso es idéntico.
 * Los artefactos de compilación se reutilizan dentro del mismo programa, aunque sean diferentes la rama o la canalización.
-* La [Administración de versiones de Maven](/help/managing-code/maven-project-version.md) reemplaza la versión del proyecto solo en las canalizaciones de producción. Si se utiliza el mismo compromiso tanto para las canalizaciones de desarrollo como de producción, y la canalización de desarrollo se ejecuta primero, las versiones se implementan en fase y producción sin cambios. Sin embargo, se seguirá creando una etiqueta en este caso.
+* [La administración de versiones de Maven](/help/managing-code/maven-project-version.md) reemplaza la versión del proyecto solamente en las canalizaciones de producción. Si se utiliza el mismo compromiso tanto para las canalizaciones de desarrollo como de producción, y la canalización de desarrollo se ejecuta primero, las versiones se implementan en ensayo y producción sin cambios. Sin embargo, se seguirá creando una etiqueta en este caso.
 * Si la recuperación de los artefactos almacenados no se realiza correctamente, el paso de generación se ejecuta como si no se hubieran almacenado artefactos.
 * Las variables de canalización distintas de `CM_DISABLE_BUILD_REUSE` no se tienen en cuenta cuando Cloud Manager decide reutilizar los artefactos de generación creados anteriormente.
 
