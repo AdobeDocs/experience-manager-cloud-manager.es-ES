@@ -3,27 +3,23 @@ title: Configuración de ramas
 description: Obtenga información sobre cómo configurar su primera rama en Git y cómo la canalización CI/CD la usa para implementar el código de la aplicación.
 exl-id: ff2ae28f-902e-4fb2-aeb1-3636cb5cd9bb
 TQID: https://experienceleague.adobe.com/Mxmx725a6m7J9UtwkI5o3tJGzZ7O3c3Bgv-fF393sZg
-product_v2:
-  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
-  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
+product_v2: id: c68cd75e-5bca-4bc3-a60e-9e183f816441id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 1692390e24f8fa7d719bd8293a99586ec4ec36d4
 workflow-type: tm+mt
-source-wordcount: 332
-ht-degree: 95%
+source-wordcount: 314
+ht-degree: 47%
 
 ---
 
 # Configurar ramas {#configuring-branches}
 
-Obtenga información sobre cómo configurar su primera rama en Git y cómo la canalización CI/CD la usa para implementar el código de la aplicación.
+Obtenga información sobre cómo configurar su primera rama en Git y cómo la canalización CI/CD la utiliza para implementar el código de la aplicación.
 
 ## Configuración de la primera rama en Git {#setting-up-your-first-branch-in-git}
 
-Un único repositorio de Git, inicialmente vacío, [se aprovisiona](/help/requirements/environment-provisioning.md) para cada programa incorporado en Cloud Manager. Este repositorio puede contener tantas ramas como requiera el proceso de desarrollo, pero debe haber al menos una que utilice la canalización CI/CD para implementar el código de la aplicación en ensayo y producción. Una práctica recomendada es utilizar `main` como el nombre de esta rama. De manera práctica, este es el comportamiento por defecto de los clientes de Git cuando se configuran nuevos proyectos.
+Un único repositorio de Git, inicialmente vacío, [se aprovisiona](/help/requirements/environment-provisioning.md) para cada programa incorporado en Cloud Manager. Este repositorio puede contener tantas ramas como requiera el proceso de desarrollo, pero la canalización CI/CD debe utilizar al menos una rama para implementar el código de la aplicación en ensayo y producción. Una práctica recomendada es utilizar `main` como el nombre de esta rama. Este es el comportamiento predeterminado de los clientes Git al configurar nuevos proyectos.
 
 Por ejemplo, al hacerlo, se ejecuta un conjunto de comandos similar al siguiente.
 
@@ -57,7 +53,7 @@ $ git commit -m "initial commit"
 
 >[!NOTE]
 >
->No es un requisito emplear el cliente de línea de comandos. Hay una variedad de clientes de Git gráficos disponibles como aplicaciones independientes o como parte de un entorno de desarrollo integrado (IDE) como Eclipse o IntelliJ. Siempre que la aplicación cliente admita Git utilizando HTTPS, debería ser compatible con [!UICONTROL Cloud Manager].
+>No es un requisito emplear el cliente de línea de comandos. Hay una variedad de clientes de Git gráficos disponibles como aplicaciones independientes o como parte de un entorno de desarrollo integrado (IDE) como Eclipse o IntelliJ. Siempre que la aplicación cliente admita Git usando HTTPS, será compatible con [!UICONTROL Cloud Manager].
 
 ## Inserción de la primera rama {#pushing-your-first-branch}
 
@@ -77,12 +73,12 @@ To <url>
 
 >[!NOTE]
 >
->La dirección URL específica, junto con sus credenciales, la proporcionará su ingeniero de éxito del cliente (Adobe CSE) durante la incorporación a [!UICONTROL Cloud Manager].
+>Su CSE de Adobe (ingeniero de éxito del cliente) proporciona la dirección URL específica, junto con sus credenciales, durante la incorporación de [!UICONTROL Cloud Manager].
 
 ## Ramas adicionales {#additional-branches}
 
-Una sola rama `main` puede ser suficiente para proyectos muy sencillos, pero en la mayoría de los casos se necesita una estrategia de ramificación más compleja. Muchos clientes siguen un proceso en el que las actividades de desarrollo cotidianas se realizan en una rama denominada `develop`. A continuación, la rama `develop` se combina con la rama `main` cuando es el momento de una implementación.
+Una rama `main` es suficiente para proyectos simples, pero se recomienda una estrategia de ramificación más compleja. Muchos clientes siguen un proceso en el que las actividades de desarrollo rutinarias se realizan en una rama denominada `develop`. A continuación, la rama `develop` se combina con la rama `main` cuando es el momento de una implementación.
 
 >[!TIP]
 >
->Para ver los comandos de Git comunes, consulte la [Hoja de características clave de Git](https://training.github.com/downloads/github-git-cheat-sheet).
+>Para ver los comandos de Git comunes, consulte la [Guía de referencia de Git](https://training.github.com/downloads/github-git-cheat-sheet/).

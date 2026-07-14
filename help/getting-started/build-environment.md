@@ -3,28 +3,21 @@ title: El entorno de compilación
 description: Obtenga información sobre el entorno de compilación especializado en el que los usuarios de Cloud Manager generan y prueban su código.
 exl-id: b3543320-66d4-4358-8aba-e9bdde00d976
 TQID: https://experienceleague.adobe.com/AdGVWjyF0DXEX7jH5S39JQ506oVnNYGtYqAWNHcQeP8
-product_v2:
-  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
-  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-feature_v2:
-  - id: a01bfd36-4ab8-4bf8-9dc0-5b45b890552e
-  - id: cd2426f1-5719-4006-b8c2-738e5969754b
-subfeature_v2:
-  - id: d9eb3b3e-9447-4ed4-bf4a-96c7b245cb27
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
+product_v2: id: c68cd75e-5bca-4bc3-a60e-9e183f816441id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2: id: a01bfd36-4ab8-4bf8-9dc0-5b45b890552eid: cd2426f1-5719-4006-b8c2-738e5969754b
+subfeature_v2: id: d9eb3b3e-9447-4ed4-bf4a-96c7b245cb27
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: 1692390e24f8fa7d719bd8293a99586ec4ec36d4
 workflow-type: tm+mt
-source-wordcount: 1243
-ht-degree: 81%
+source-wordcount: 1205
+ht-degree: 50%
 
 ---
 
 # El entorno de compilación {#build-environment}
 
-Obtenga información sobre el entorno de compilación especializado en el que los usuarios de Cloud Manager generan y prueban su código.
+Obtenga información sobre el entorno de compilación especializado que utiliza Cloud Manager para generar y probar su código.
 
 ## Detalles del entorno {#details}
 
@@ -37,14 +30,14 @@ Los entornos de compilación de Cloud Manager tienen los atributos siguientes.
    * `/usr/lib/jvm/jdk1.8.0_401`
    * `/usr/lib/jvm/jdk-11.0.22`
 * De forma predeterminada, la variable de entorno `JAVA_HOME` está configurada en `/usr/lib/jvm/jdk1.8.0_401`, que contiene JDK 8u401 de Oracle. Consulte la sección [Versión JDK de ejecución de Maven alternativa](#alternate-maven) para obtener más información.
-* Hay algunos paquetes de sistema adicionales instalados que son necesarios.
+* Se instalan los paquetes de sistema adicionales necesarios.
    * `bzip2`
    * `unzip`
    * `libpng`
    * `imagemagick`
    * `graphicsmagick`
-* Se pueden instalar otros paquetes en el momento de la compilación, tal como se describe en la sección [Instalación de paquetes de sistema adicionales](#installing-additional-system-packages).
-* Cada compilación se realiza en un entorno en buen estado. El contenedor de compilación no mantiene ningún estado entre las ejecuciones.
+* Otros paquetes se instalan en el momento de la compilación como se describe en la sección [Instalación de paquetes de sistema adicionales](#installing-additional-system-packages).
+* Cada compilación se realiza en un entorno nuevo. El contenedor de compilación no conserva los datos entre ejecuciones.
 * Maven se ejecuta con estos tres comandos:
    * `mvn --batch-mode org.apache.maven.plugins:maven-dependency-plugin:3.1.2:resolve-plugins`
    * `mvn --batch-mode org.apache.maven.plugins:maven-clean-plugin:3.1.0:clean -Dmaven.clean.failOnError=false`
@@ -61,19 +54,19 @@ Los entornos de compilación de Cloud Manager tienen los atributos siguientes.
 
 >[!TIP]
 >
->Consulte los siguientes recursos adicionales para aprender a utilizar las API de Cloud Manager:
+>Para aprender a utilizar las API de Cloud Manager, consulte los siguientes recursos adicionales:
 >
 >* [aio-cli-plugin-cloudmanager](https://github.com/adobe/aio-cli-plugin-cloudmanager)
->* [Creación de una integración de API](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/create-api-integration/)
->* [Permisos de API](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/permissions/)
+>* [Creación de una integración de API](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/create-api-integration)
+>* [Permisos de API](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/permissions)
 
 ## Repositorios de Maven HTTPS {#https-maven}
 
-Cloud Manager [2023.10.0](/help/release-notes/2023/2023-10-0.md) inició una actualización gradual del entorno de compilación (que se completó con la versión 2023.12.0), que incluyó una actualización de Maven 3.8.8. Un cambio significativo introducido en Maven 3.8.1 fue una mejora de la seguridad destinada a mitigar posibles vulnerabilidades. En concreto, Maven ahora deshabilita de forma predeterminada todas las duplicaciones de `http://*` inseguras, tal como se describe en las [Notas de la versión de Maven](http://maven.apache.org/docs/3.8.1/release-notes.html#cve-2021-26291).
+Cloud Manager [2023.10.0](/help/release-notes/2023/2023-10-0.md) inició una actualización gradual del entorno de compilación (que se completó con la versión 2023.12.0), que incluyó una actualización de Maven 3.8.8. Un cambio introducido en Maven 3.8.1 fue una mejora de seguridad para abordar posibles vulnerabilidades. En concreto, Maven ahora deshabilita de forma predeterminada todas las duplicaciones de `http://*` inseguras, tal como se describe en las [Notas de la versión de Maven](http://maven.apache.org/docs/3.8.1/release-notes.html#cve-2021-26291).
 
-Como resultado de esta mejora de seguridad, algunas personas pueden tener problemas durante el paso de compilación, especialmente al descargar artefactos de repositorios Maven que utilizan conexiones HTTP no seguras.
+Algunos usuarios encuentran problemas durante el paso de generación al descargar artefactos de repositorios Maven que utilizan conexiones HTTP no seguras.
 
-Para garantizar una experiencia sin problemas con la versión actualizada, Adobe recomienda actualizar los repositorios de Maven para que utilicen HTTPS en lugar de HTTP. Este ajuste se ha llevado a cabo para adaptarse a la adopción creciente de la industria de protocolos de comunicación seguros y ayuda a mantener un proceso de compilación seguro y fiable.
+Para garantizar una experiencia sin problemas con la versión actualizada, Adobe recomienda actualizar los repositorios de Maven para que utilicen HTTPS en lugar de HTTP. Este ajuste respalda la transición de la industria hacia protocolos de comunicación seguros y mantiene un proceso de construcción seguro y fiable.
 
 ## Uso de una versión de Java específica {#using-java-version}
 
@@ -81,12 +74,12 @@ De forma predeterminada, los proyectos se crean mediante el proceso de compilaci
 
 >[!IMPORTANT]
 >
->Maven Toolchains ya no es compatible con Cloud Manager 2025.06.0. Tenga en cuenta que las canalizaciones que contienen una configuración de maven-toolchain-plugin fallarán con `Cannot find matching toolchain definitions.`. Use el archivo `.cloudmanager/java-version` para seleccionar JDK 11, 17 o 21 en su lugar.
+>Maven Toolchains ya no es compatible con Cloud Manager 2025.06.0. Tenga en cuenta que las canalizaciones que contienen una configuración de maven-toolchain-plugin fallan con `Cannot find matching toolchain definitions.`. Use el archivo `.cloudmanager/java-version` para seleccionar JDK 11, 17 o 21 en su lugar.
 >
 >**Guía de migración:**
 >
 >1. Elimine las cadenas de herramientas eliminando cualquier entrada `org.apache.maven.plugins:maven-toolchains-plugin` y cualquier `toolchains.xml` confirmado en el control de código fuente.
->1. Elija un JDK con `.cloudmanager/java-version`(21, 17 u 11) como se describe en [Versión alternativa del JDK de ejecución de Maven](#alternate-maven).
+>1. Elija un JDK con `.cloudmanager/java-version` (21, 17 u 11) como se describe en [Versión alternativa del JDK de ejecución de Maven](#alternate-maven).
 >1. Adobe recomienda borrar la caché de la versión de Cloud Manager o activar una nueva ejecución de canalización.
 >
 
@@ -142,17 +135,17 @@ The currently available vendor/version combinations are:
 
 ### Versión alternativa del JDK de ejecución de Maven {#alternate-maven}
 
-Es posible seleccionar Oracle 8 o Oracle 11 como JDK para toda la ejecución de Maven. Este método cambia el JDK utilizado para todos los complementos. Como resultado, funcionará el comprobar y aplicar la versión de Java mediante el [Complemento Apache Maven Enforcer](https://maven.apache.org/enforcer/maven-enforcer-plugin/).
+Es posible seleccionar Oracle 8 o Oracle 11 como JDK para toda la ejecución de Maven. Este método cambia el JDK utilizado para todos los complementos. Como resultado, es compatible comprobar y aplicar la versión de Java mediante el [complemento Apache Maven Enforcer](https://maven.apache.org/enforcer/maven-enforcer-plugin/).
 
-Para ello, cree un archivo con el nombre `.cloudmanager/java-version` en la rama del repositorio de Git utilizada por la canalización. Este archivo puede tener el contenido `11` o `8`. Se omite cualquier otro valor. Si se especifica `11`, el sistema usa Oracle 11 y establece la variable de entorno `JAVA_HOME` en `/usr/lib/jvm/jdk-11.0.22`. Si se especifica `8`, el sistema usa Oracle 8 y establece la variable de entorno `JAVA_HOME` en `/usr/lib/jvm/jdk1.8.0_401`.
+Para realizar este proceso, cree un archivo con el nombre `.cloudmanager/java-version` en la rama del repositorio Git utilizada por la canalización. Este archivo puede tener el contenido `11` o `8`. Se omite cualquier otro valor. Si se especifica `11`, el sistema usa Oracle 11 y establece la variable de entorno `JAVA_HOME` en `/usr/lib/jvm/jdk-11.0.22`. Si se especifica `8`, el sistema usa Oracle 8 y establece la variable de entorno `JAVA_HOME` en `/usr/lib/jvm/jdk1.8.0_401`.
 
 ## Variables del entorno {#environment-variables}
 
 ### Variables de entorno estándar {#standard-environ-variables}
 
-En algunos casos, puede que sea necesario variar el proceso de compilación en función de la información acerca del programa o la canalización.
+En algunos casos, es necesario variar el proceso de compilación en función de la información sobre el programa o la canalización.
 
-Por ejemplo, al utilizar una herramienta como gulp para la minificación de JavaScript, es posible que prefiera diferentes niveles de minificación para los entornos de desarrollo frente a los de ensayo y producción.
+Por ejemplo, cuando utilice una herramienta como gulp para la minificación de JavaScript, utilice diferentes niveles de minificación para los entornos de desarrollo frente a los de ensayo y producción.
 
 Para ello, Cloud Manager añade variables de entorno estándar al contenedor de compilación para cada ejecución.
 
@@ -190,9 +183,9 @@ Tanto las variables de entorno normales como los secretos se pueden utilizar en 
 
 ### Variables de canalización {#pipeline-variables}
 
-En algunos casos, el proceso de compilación puede depender de variables de configuración específicas que no serían adecuadas para colocarse en el repositorio de Git o que necesitarían variar entre ejecuciones de canalización que utilicen la misma rama.
+En algunos casos, el proceso de generación depende de variables de configuración específicas. Estas variables no son adecuadas para colocarse en el repositorio Git o deben variar entre ejecuciones de canalización que utilicen la misma rama.
 
-Cloud Manager permite que estas variables se configuren mediante la API de Cloud Manager o la CLI de Cloud Manager por canalización. Las variables pueden almacenarse como texto sin formato o cifrarse en reposo. En cualquier caso, las variables están disponibles en el entorno de compilación como una variable de entorno a la que se puede hacer referencia desde dentro del archivo `pom.xml` u otros scripts de compilación.
+Cloud Manager permite que estas variables se configuren mediante la API de Cloud Manager o la CLI de Cloud Manager por canalización. Las variables se almacenan como texto sin formato o se cifran en reposo. En cualquier caso, las variables están disponibles en el entorno de compilación como una variable de entorno a la que se puede hacer referencia desde dentro del archivo `pom.xml` u otros scripts de compilación.
 
 Para establecer una variable mediante la CLI, ejecute un comando similar al siguiente.
 
@@ -208,8 +201,8 @@ $ aio cloudmanager:list-pipeline-variables PIPELINEID
 
 Las variables deben cumplir ciertas limitaciones.
 
-* Los nombres de las variables solo pueden contener caracteres alfanuméricos y el guion bajo (`_`).
-   * Por convención, los nombres deberían estar en mayúsculas.
+* Los nombres de variables solo pueden contener caracteres alfanuméricos y el guion bajo (`_`).
+   * Por convención, los nombres están en mayúsculas.
 * Hay un límite de 200 variables por canalización.
 * Cada nombre debe tener menos de 100 caracteres.
 * Cada valor de cadena debe tener menos de 2048 caracteres.
@@ -233,7 +226,7 @@ Cuando se utiliza dentro de un archivo `pom.xml` de Maven, suele resultar útil 
 
 ## Instalación de paquetes de sistema adicionales {#installing-additional-system-packages}
 
-Para funcionar completamente, algunas compilaciones requieren que se instalen paquetes de sistema adicionales. Por ejemplo, una compilación puede invocar un script de Python o Ruby y, como resultado, necesita tener instalado un intérprete de idioma adecuado. Esto se puede hacer llamando a la función [`exec-maven-plugin`](https://www.mojohaus.org/exec-maven-plugin/) para invocar APT. Esta ejecución debe envolverse generalmente en un perfil Maven específico de Cloud Manager. Por ejemplo, para instalar Python puede hacer lo siguiente:
+Para funcionar correctamente, algunas compilaciones requieren que se instalen paquetes de sistema adicionales. Por ejemplo, una compilación invoca un script de Python o Ruby y necesita instalar un intérprete de idioma adecuado. Este escenario se puede controlar llamando a [`exec-maven-plugin`](https://www.mojohaus.org/exec-maven-plugin/) para invocar APT. Esta ejecución está envuelta en un perfil Maven específico de Cloud Manager. Por ejemplo, para instalar Python puede hacer lo siguiente:
 
 ```xml
         <profile>
@@ -286,7 +279,7 @@ Para funcionar completamente, algunas compilaciones requieren que se instalen pa
         </profile>
 ```
 
-Esta técnica también se puede utilizar para instalar paquetes específicos del idioma. Es decir, usar `gem` para RubyGems o `pip` para paquetes Python.
+Este método también se puede utilizar para instalar paquetes específicos del idioma. Es decir, usar `gem` para RubyGems o `pip` para paquetes de Python.
 
 >[!NOTE]
 >
