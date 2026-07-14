@@ -15,7 +15,7 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 1692390e24f8fa7d719bd8293a99586ec4ec36d4
+source-git-commit: fa6be369b979682cebf68852603725d8754605ab
 workflow-type: tm+mt
 source-wordcount: 1205
 ht-degree: 50%
@@ -44,7 +44,7 @@ Los entornos de compilación de Cloud Manager tienen los atributos siguientes.
    * `imagemagick`
    * `graphicsmagick`
 * Otros paquetes se instalan en el momento de la compilación como se describe en la sección [Instalación de paquetes de sistema adicionales](#installing-additional-system-packages).
-* Cada compilación se realiza en un entorno nuevo. El contenedor de compilación no conserva los datos entre ejecuciones.
+* Cada compilación se realiza en un entorno nuevo. El contenedor de compilación no mantiene los datos entre ejecuciones.
 * Maven se ejecuta con estos tres comandos:
    * `mvn --batch-mode org.apache.maven.plugins:maven-dependency-plugin:3.1.2:resolve-plugins`
    * `mvn --batch-mode org.apache.maven.plugins:maven-clean-plugin:3.1.0:clean -Dmaven.clean.failOnError=false`
@@ -73,7 +73,7 @@ Cloud Manager [2023.10.0](/help/release-notes/2023/2023-10-0.md) inició una act
 
 Algunos usuarios encuentran problemas durante el paso de generación al descargar artefactos de repositorios Maven que utilizan conexiones HTTP no seguras.
 
-Para garantizar una experiencia sin problemas con la versión actualizada, Adobe recomienda actualizar los repositorios de Maven para que utilicen HTTPS en lugar de HTTP. Este ajuste respalda la transición de la industria hacia protocolos de comunicación seguros y mantiene un proceso de construcción seguro y fiable.
+Para garantizar una experiencia sin problemas con la versión actualizada, Adobe recomienda actualizar los repositorios de Maven para que utilicen HTTPS en lugar de HTTP. Este ajuste respalda la transición del sector hacia protocolos de comunicación seguros y mantiene un proceso de fabricación seguro y fiable.
 
 ## Uso de una versión de Java específica {#using-java-version}
 
