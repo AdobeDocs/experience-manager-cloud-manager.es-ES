@@ -3,16 +3,12 @@ title: Adición de repositorios externos en Cloud Manager
 description: Obtenga información sobre cómo añadir un repositorio administrado a Adobe en Cloud Manager. Cloud Manager admite la integración con repositorios de GitHub Enterprise, GitLab, Bitbucket y Azure DevOps.
 exl-id: 4500cacc-5e27-4bbb-b8f6-5144dac7e6da
 TQID: https://experienceleague.adobe.com/uLIqzfR3sTBSMHCewIQPPADP9opdLQoT2PNQy5YZTKo
-product_v2:
-  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
-  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
+product_v2: id: c68cd75e-5bca-4bc3-a60e-9e183f816441id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+source-git-commit: a7e83374a2282e4d63efb409d40722ebe9b4697e
 workflow-type: tm+mt
-source-wordcount: 2568
+source-wordcount: 2528
 ht-degree: 27%
 
 ---
@@ -80,11 +76,11 @@ THIS BULLET REMOVED AS PER https://wiki.corp.adobe.com/display/DMSArchitecture/C
 
 1. Seleccione **Guardar** para añadir el repositorio.
 
-   Ahora, proporcione un token de acceso para validar la propiedad del repositorio externo.
+   Para validar la propiedad del repositorio externo, proporcione un token de acceso.
 
-1. En el cuadro de diálogo **Validación de propiedad de repositorio privado**, proporcione un token de acceso para validar la propiedad del repositorio externo y así poder acceder a él y, a continuación, haga clic en **Validar**.
+1. Para validar la propiedad del repositorio externo y poder obtener acceso a él, proporcione un token de acceso en el cuadro de diálogo **Validación de propiedad del repositorio privado** y, a continuación, haga clic en **Validar**.
 
-   ![Seleccionar un token de acceso existente para un repositorio](/help/managing-code/assets/repositories-exisiting-access-token.png)
+   ![Selección de un token de acceso existente para un repositorio](/help/managing-code/assets/repositories-exisiting-access-token.png)
    *Seleccionar un token de acceso existente para un repositorio de bloque de bits (solo para ilustración).*
 
 >[!BEGINTABS]
@@ -157,10 +153,10 @@ Consulte también [Administrar tokens de acceso](/help/managing-code/manage-acce
 
 1. Añada o edite una canalización:
    * [Añadir una canalización de producción](/help/using/production-pipelines.md#adding-production-pipeline)
-   * [Añadir canalizaciones que no son de producción](/help/using/non-production-pipelines.md#add-non-production-pipeline)
+   * [Adición de una canalización que no es de producción](/help/using/non-production-pipelines.md#add-non-production-pipeline)
    * [Editar una canalización](/help/using/managing-pipelines.md#editing-pipelines)
 
-   ![Repositorio de código fuente y rama Git de la canalización](/help/managing-code/assets/pipeline-repo-gitbranch.png)
+   ![Repositorio de código fuente de la canalización y rama Git](/help/managing-code/assets/pipeline-repo-gitbranch.png)
    *Cuadro de diálogo Añadir canalización que no es de producción con el repositorio seleccionado y la rama Git.*
 
 1. Cuando añada o edite una canalización, para especificar la ubicación del **Código fuente** para su nueva canalización o una existente, elija el repositorio externo que desee utilizar en la lista desplegable **Repositorio**.
@@ -210,9 +206,9 @@ Para todos los demás repositorios externos incorporados con un token de acceso,
 1. En el cuadro de diálogo **Configurar webhook**, haga lo siguiente:
 
    1. Junto al campo **URL de webhook**, haga clic en ![Icono de copia](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg).
-Pegue la dirección URL en un archivo de texto sin formato. La URL copiada es necesaria para la configuración del webhook del proveedor Git.
+      Pegue la dirección URL en un archivo de texto sin formato. La URL copiada es necesaria para la configuración del webhook del proveedor Git.
    1. Junto al campo de clave/token **Secreto de webhook**, haz clic en **Generar** y luego haz clic en ![Icono de copiar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg).
-Pegue el secreto en un archivo de texto sin formato. El secreto copiado es necesario para la configuración del webhook del proveedor Git.
+      Pegue el secreto en un archivo de texto sin formato. El secreto copiado es necesario para la configuración del webhook del proveedor Git.
 1. Haga clic en **Cerrar**.
 1. Vaya a la solución de su proveedor de Git (GitHub Enterprise, GitLab, Bitbucket o Azure DevOps).
 
@@ -222,10 +218,10 @@ Pegue el secreto en un archivo de texto sin formato. El secreto copiado es neces
 1. Pegue la dirección URL del webhook copiada anteriormente en el campo de texto URL.
    1. Reemplace el parámetro de consulta `api_key` en la dirección URL del webhook por su propia clave de API real.
 
-      Para generar una clave de API, debe crear un proyecto de integración en Adobe Developer Console. Consulte [Creación de un proyecto de integración de API](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/create-api-integration/) para obtener información detallada.
+      Para generar una clave de API, debe crear un proyecto de integración en Adobe Developer Console. Consulte [Creación de un proyecto de integración de API](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/create-api-integration) para obtener información detallada.
 
 1. Pegue el secreto de webhook que copió anteriormente en el campo de texto **Secreto** (o **Clave secreta**, o **Token secreto**).
-1. Configure el webhook para enviar los eventos que requiere Cloud Manager. Utilice la siguiente tabla para determinar los eventos correctos para su proveedor de Git.
+1. Para enviar los eventos que requiere Cloud Manager, configure el webhook. Utilice la siguiente tabla para determinar los eventos correctos para su proveedor de Git.
 
 >[!BEGINTABS]
 
@@ -277,7 +273,7 @@ El comportamiento varía según el proveedor de Git que utilice, como se describ
 
 <!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/github -->
 
-Cuando se crea la comprobación, aparece como la siguiente captura de pantalla a continuación. La diferencia clave de `GitHub.com` es que `GitHub.com` usa una ejecución de comprobación, mientras que GitHub Enterprise (que usa tokens de acceso personal) genera un estado de confirmación:
+Cuando se crea la comprobación, aparece como la siguiente captura de pantalla. La diferencia clave de `GitHub.com` es que `GitHub.com` usa una ejecución de comprobación, mientras que GitHub Enterprise (que usa tokens de acceso personal) genera un estado de confirmación:
 
 ![Confirmar estado para indicar el proceso de validación de PR en GitHub Enterprise](/help/managing-code/assets/repository-webhook-github-pr-validation.png)
 
@@ -285,15 +281,15 @@ Cuando se crea la comprobación, aparece como la siguiente captura de pantalla a
 
 <!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/gitlab -->
 
-Las interacciones de GitLab se basan únicamente en comentarios. Cuando comienza la validación, se agrega un comentario. Cuando finaliza la validación (ya sea correcta o errónea), el comentario inicial se elimina y se reemplaza por un nuevo comentario que contiene los resultados de validación o los detalles del error.
+Las interacciones de GitLab dependen solo de los comentarios. Cuando comienza la validación, se agrega un comentario. Cuando finaliza la validación (ya sea correcta o errónea), el comentario inicial se elimina y se reemplaza por un nuevo comentario que contiene los resultados de validación o los detalles del error.
 
 Cuando se ejecuta la validación de calidad del código:
 
 ![Cuando se está ejecutando la validación de calidad del código](/help/managing-code/assets/repository-webhook-gitlab1.png)
 
-Cuando finalice la validación de calidad en frío:
+Cuando finalice la validación de calidad del código:
 
-![Cuando finalice la validación de la calidad en frío](/help/managing-code/assets/repository-webhook-gitlab2.png)
+![Cuando finaliza la validación de calidad del código](/help/managing-code/assets/repository-webhook-gitlab2.png)
 
 Cuando la validación de calidad del código falla con un error:
 
