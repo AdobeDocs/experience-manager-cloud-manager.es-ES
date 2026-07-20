@@ -3,15 +3,12 @@ title: Administración de tokens de acceso en Cloud Manager
 description: Obtenga información sobre cómo ver, editar y eliminar los tokens de acceso utilizados para Traer su propio Git en Cloud Manager en Adobe Managed Services.
 exl-id: 873aad0b-d7c6-4bc3-a70d-bbfdc1e02193
 TQID: https://experienceleague.adobe.com/o-kW-Wuj-afgXomU0kErSwYsNZziQFkpvtxvU0PQj3M
-product_v2:
-  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
-  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
+product_v2: id: c68cd75e-5bca-4bc3-a60e-9e183f816441id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: b52942282fe5f825181123b3839ef155753c5e23
 workflow-type: tm+mt
-source-wordcount: 387
-ht-degree: 6%
+source-wordcount: 382
+ht-degree: 3%
 
 ---
 
@@ -19,7 +16,7 @@ ht-degree: 6%
 
 Cloud Manager utiliza tokens de acceso para administrar repositorios alojados en plataformas Git externas. Anteriormente, si un token caducaba, el repositorio asociado tenía que volver a incorporarse para permanecer operativo.
 
-Ahora, **Administrar tokens de acceso** le permite administrar los tokens de manera más eficiente. Puede ver, cambiar el nombre o quitar tokens conectados a proveedores de Git externos admitidos, como GitHub Enterprise, GitLab, Bitbucket y Azure DevOps.
+Ahora, **Administrar tokens de acceso** le permite administrar los tokens de manera más eficiente. Puede administrar tokens para los proveedores de Git admitidos: GitHub Enterprise, GitLab, Bitbucket y DevOps de Azure.
 
 Consulte también [Agregar repositorios externos en Cloud Manager](/help/managing-code/external-repositories.md).
 
