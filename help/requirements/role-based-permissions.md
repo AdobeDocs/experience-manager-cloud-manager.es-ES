@@ -29,7 +29,7 @@ ht-degree: 85%
 
 ## Funciones de los usuarios {#user-roles}
 
-La administración de funciones para [!UICONTROL Cloud Manager] se realiza utilizando la [Admin Console](https://helpx.adobe.com/business/enterprise/plan-your-deployment/basic-concepts/admin-console.html). Cualquier usuario de [!UICONTROL Cloud Manager] debe ser miembro de la organización IMS del cliente y tener el contexto del producto de Adobe Managed Services. Para proporcionar suscripciones a funciones específicas, agregue el usuario a un perfil de producto de [!UICONTROL Cloud Manager] en Admin Console.
+La administración de funciones para [!UICONTROL Cloud Manager] se realiza utilizando la [Admin Console](https://helpx.adobe.com/es/business/enterprise/plan-your-deployment/basic-concepts/admin-console.html). Cualquier usuario de [!UICONTROL Cloud Manager] debe ser miembro de la organización IMS del cliente y tener el contexto del producto de Adobe Managed Services. Para proporcionar suscripciones a funciones específicas, agregue el usuario a un perfil de producto de [!UICONTROL Cloud Manager] en Admin Console.
 
 Para obtener más información sobre cómo configurar las funciones, consulte el documento [Configuración de usuarios y funciones](/help/requirements/users-and-roles.md).
 
