@@ -4,17 +4,13 @@ description: Obtenga información acerca de la versión de Cloud Manager 2026.7.
 feature: Release Information
 exl-id: cc1dc94b-129d-4de7-8e57-8fc5dcba7d9f
 TQID: https://experienceleague.adobe.com/4zfTpSYuFwrJZ-oeL1SObT14v2Rd--Z1hKn5JllHAro
-product_v2:
-  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
-  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-source-git-commit: acd33650c938d49bac5c319f8c938202fe543bbd
+product_v2: id: c68cd75e-5bca-4bc3-a60e-9e183f816441id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+source-git-commit: 3b9ef92a96dab9c1f4b93466d8a2d15185b5864f
 workflow-type: tm+mt
-source-wordcount: 391
-ht-degree: 14%
+source-wordcount: 390
+ht-degree: 10%
 
 ---
 
@@ -47,16 +43,16 @@ Un nuevo modelo de compilación compila solo los módulos modificados (en lugar 
 
   Para obtener más información, consulte lo siguiente:
 
-   * [Acerca del uso de Smart Build en una canalización de producción](/help/using/production-pipelines.md#about-smart-build) y [Acerca del uso de Smart Build en una canalización que no es de producción](/help/using/non-production-pipelines.md#about-smart-build)
-   * [Agregar una canalización de producción](/help/using/production-pipelines.md##adding-production-pipeline) y [Agregar una canalización que no sea de producción](/help/using/non-production-pipelines.md#add-non-production-pipeline).
+  * [Acerca del uso de Smart Build en una canalización de producción](/help/using/production-pipelines.md#about-smart-build) y [Acerca del uso de Smart Build en una canalización que no es de producción](/help/using/non-production-pipelines.md#about-smart-build)
+  * [Agregar una canalización de producción](/help/using/production-pipelines.md#adding-production-pipeline) y [Agregar una canalización que no sea de producción](/help/using/non-production-pipelines.md#add-non-production-pipeline).
 
 ## Programas Beta {#beta-program}
 
-Participe en los programas Beta de Cloud Manager para obtener acceso exclusivo a las próximas funciones antes de su lanzamiento general.
+Para obtener acceso exclusivo a las próximas funciones antes de su lanzamiento general, participe en los programas beta de Cloud Manager.
 
 >[!IMPORTANT]
 >
->Las versiones de Beta contienen defectos y se proporcionan &quot;TAL CUAL&quot; sin garantía de ningún tipo. Adobe no tiene obligación de mantener, corregir, actualizar, cambiar, modificar o admitir de otro modo (mediante los Servicios de soporte de Adobe o de otro modo) las versiones beta. Los clientes utilizan las versiones beta por su cuenta y riesgo, y no deben confiar en el funcionamiento o el rendimiento correctos de las versiones beta ni en la documentación o los materiales adjuntos. Las funciones y las API de la versión beta están sujetas a cambios sin previo aviso. Cualquier uso de las versiones beta corre por cuenta y riesgo del cliente.
+>Las versiones de Beta contienen defectos y se proporcionan &quot;TAL CUAL&quot; sin garantía de ningún tipo. Adobe no tiene obligación de mantener, corregir, actualizar, cambiar, modificar o admitir de otro modo (mediante los Servicios de soporte de Adobe o de otro modo) las versiones beta. Los clientes utilizan las versiones beta por su cuenta y riesgo. No confíe en el funcionamiento o el rendimiento correctos de las versiones beta ni en la documentación o los materiales que las acompañan. Las funciones y las API de la versión beta están sujetas a cambios sin previo aviso. Cualquier uso de las versiones beta corre por cuenta y riesgo del cliente.
 
 Actualmente están disponibles las siguientes oportunidades del programa beta:
 
