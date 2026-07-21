@@ -21,6 +21,6 @@ ht-degree: 64%
 
 Póngase en contacto con su ingeniero de éxito del cliente (Customer Success Engineer, CSE) de Managed Services de Adobe para obtener ayuda con [!UICONTROL Cloud Manager]. Pueden informarle si pueden resolver su problema o si necesita enviar un vale de soporte al Servicio de atención al cliente de Adobe.
 
-Puede acceder a [Soporte para empresas](https://experienceleague.adobe.com/?support-tab=home&lang=es#support) para crear vales de soporte.
+Puede acceder a [Soporte para empresas](https://experienceleague.adobe.com/es?support-tab=home&lang=es#support) para crear vales de soporte.
 
-Consulte [Acceso al portal de asistencia de AEM](https://helpx.adobe.com/business/enterprise/get-help/support-and-expert-services.html) para obtener más información sobre la creación de vales de soporte en el Servicio de atención al cliente de Adobe.
+Consulte [Acceso al portal de asistencia de AEM](https://helpx.adobe.com/es/business/enterprise/get-help/support-and-expert-services.html) para obtener más información sobre la creación de vales de soporte en el Servicio de atención al cliente de Adobe.
