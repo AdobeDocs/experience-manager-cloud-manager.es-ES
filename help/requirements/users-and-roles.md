@@ -3,25 +3,21 @@ title: Agregar usuarios y funciones
 description: Aprenda a utilizar Admin Console para agregar usuarios y funciones y crear perfiles.
 exl-id: 40086cf0-a1c4-4dde-9dbf-84ea5fa53b84
 TQID: https://experienceleague.adobe.com/95vfyk6-SMg7GFaCVWkiaaGObo603DJqvExEgPFrwqw
-product_v2:
-  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
-  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
+product_v2: id: c68cd75e-5bca-4bc3-a60e-9e183f816441id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 130406286e65ad0e0651451766ca740f3458a9c1
 workflow-type: tm+mt
-source-wordcount: 796
-ht-degree: 85%
+source-wordcount: 797
+ht-degree: 75%
 
 ---
 
 # Agregar usuarios y funciones {#add-users-and-roles}
 
-Muchas funciones de [!UICONTROL Cloud Manager] requieren permisos específicos para su uso. Por ejemplo, solo se permite a determinados usuarios establecer los indicadores clave de rendimiento (KPI) de un programa. Estos permisos se agrupan lógicamente en funciones.
+Muchas funciones de [!UICONTROL Cloud Manager] requieren permisos específicos para su uso. Por ejemplo, solo los usuarios autorizados pueden establecer los indicadores clave de rendimiento (KPI) de un programa. Estos permisos se agrupan lógicamente en funciones.
 
-[!UICONTROL Cloud Manager] actualmente define cuatro funciones de los usuarios que rigen la disponibilidad de las siguientes funciones específicas:
+[!UICONTROL Cloud Manager] define cuatro funciones de los usuarios, que rigen la disponibilidad de características específicas:
 
 * Propietario del negocio
 * Administrador de programa
@@ -51,9 +47,9 @@ La siguiente tabla resume las funciones en Cloud Manager.
 
 ## Creación de un perfil de producto con Admin Console {#using-admin-console-to-create-a-profile}
 
-Las funciones de [!UICONTROL Cloud Manager] se administran desde Admin Console. Las suscripciones a funciones específicas se proporcionan añadiendo el usuario a un perfil de producto de [!UICONTROL Cloud Manager].
+Las funciones de [!UICONTROL Cloud Manager] se administran desde Admin Console. Agregar el usuario a un perfil de producto de [!UICONTROL Cloud Manager] proporciona suscripciones a funciones específicas.
 
-Admin Console es una ubicación central para administrar los derechos de Adobe en toda la organización. Para obtener más información sobre Adobe Admin Console, consulte la documentación de [Admin Console](https://helpx.adobe.com/es/enterprise/using/admin-console.html).
+Admin Console es una ubicación central para administrar los derechos de Adobe en toda la organización. Para obtener más información sobre Adobe Admin Console, consulte la documentación de [Admin Console](https://helpx.adobe.com/business/enterprise/plan-your-deployment/basic-concepts/admin-console.html).
 
 Un administrador debe crear nuevos perfiles de producto en el contexto de producto de [!UICONTROL AEM Managed Services] para asignar permisos basados en funciones a los usuarios de [!UICONTROL Cloud Manager], correspondientes a cada una de las cuatro funciones de [!UICONTROL Cloud Manager].
 
@@ -87,11 +83,11 @@ CQDOC-22790
 
    ![Perfil nuevo](/help/assets/admin-console-product-profiles.png)
 
-1. Proporcione la información para establecer una función nueva para [!UICONTROL Cloud Manager].
+1. Para configurar una función nueva para [!UICONTROL Cloud Manager], proporcione la información.
 
    * **Nombre del perfil**: el **Nombre del perfil** puede ser cualquier cosa, aunque, para evitar confusiones, se recomienda usar los valores de la columna **Nombre de perfil recomendado**.
    * **Nombre para mostrar**: el **Nombre para mostrar** debe ser el valor técnico definido por [!UICONTROL Cloud Manager] (véase la tabla siguiente).
-   * **Grupo de permisos**: puede elegir un grupo de permisos para el perfil (no siempre disponible).
+   * **Grupo de permisos**: elija un grupo de permisos para el perfil (no siempre disponible).
 
 <!-- 
 CQDOC-22790
@@ -137,6 +133,6 @@ Una vez creados los perfiles de producto, puede asignarles usuarios o grupos de 
 
 1. Haga clic en **Guardar** para guardar los perfiles en el usuario.
 
-Repita los mismos pasos para asignar perfiles a grupos de usuarios, pero seleccione **Grupos de usuarios** del panel de navegación izquierdo de la pestaña **Usuarios**. Haga clic en un grupo de usuarios y seleccione los **Perfiles de productos asignados** y haga clic en **Asignar perfil de productos** para asignar perfiles.
+Repita los mismos pasos para asignar perfiles a grupos de usuarios, pero seleccione **Grupos de usuarios** del panel de navegación izquierdo de la pestaña **Usuarios**. Haga clic en un grupo de usuarios y seleccione los **Perfiles de productos asignados**; a continuación, haga clic en **Asignar perfil de productos** para asignar perfiles.
 
 ![Asignar perfiles al grupo](/help/assets/admin-console-edit-user-groups.png)
