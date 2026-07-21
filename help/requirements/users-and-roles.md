@@ -53,7 +53,7 @@ La siguiente tabla resume las funciones en Cloud Manager.
 
 Las funciones de [!UICONTROL Cloud Manager] se administran desde Admin Console. Agregar el usuario a un perfil de producto de [!UICONTROL Cloud Manager] proporciona suscripciones a funciones específicas.
 
-Admin Console es una ubicación central para administrar los derechos de Adobe en toda la organización. Para obtener más información sobre Adobe Admin Console, consulte la documentación de [Admin Console](https://helpx.adobe.com/business/enterprise/plan-your-deployment/basic-concepts/admin-console.html).
+Admin Console es una ubicación central para administrar los derechos de Adobe en toda la organización. Para obtener más información sobre Adobe Admin Console, consulte la documentación de [Admin Console](https://helpx.adobe.com/es/business/enterprise/plan-your-deployment/basic-concepts/admin-console.html).
 
 Un administrador debe crear nuevos perfiles de producto en el contexto de producto de [!UICONTROL AEM Managed Services] para asignar permisos basados en funciones a los usuarios de [!UICONTROL Cloud Manager], correspondientes a cada una de las cuatro funciones de [!UICONTROL Cloud Manager].
 
