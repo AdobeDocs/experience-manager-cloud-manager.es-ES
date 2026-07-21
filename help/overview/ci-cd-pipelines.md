@@ -3,22 +3,14 @@ title: Canalizaciones de CI/CD
 description: Obtenga información acerca de las canalizaciones de CI/CD y cómo administran las implementaciones en entornos de ensayo y producción en Cloud Manager.
 exl-id: 7130e5b7-6986-48c8-900c-90f3e4187f91
 TQID: https://experienceleague.adobe.com/BwkZH2MIbXrzSxf0yk9yeDZZIpw7-Ldue-OPQPkWrdg
-product_v2:
-  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
-  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-feature_v2:
-  - id: cd2426f1-5719-4006-b8c2-738e5969754b
-  - id: ff09c71c-26a9-449a-85f8-2aeb8ce96100
-subfeature_v2:
-  - id: c14b2f98-ee16-4c49-b87b-919c91b01d9d
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 694d3e8dad6e2ba86186a4bf6fdda3739e1041da
+product_v2: id: c68cd75e-5bca-4bc3-a60e-9e183f816441id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2: id: cd2426f1-5719-4006-b8c2-738e5969754bid: ff09c71c-26a9-449a-85f8-2aeb8ce96100
+subfeature_v2: id: c14b2f98-ee16-4c49-b87b-919c91b01d9d
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: f83ddaa74a656abd2328cd3969ff0cc10b79d729
 workflow-type: tm+mt
-source-wordcount: 1122
+source-wordcount: 1085
 ht-degree: 50%
 
 ---
@@ -54,7 +46,7 @@ Este diagrama ilustra lo que sucede una vez que se activa una versión en [!UICO
 
 ### Fuentes de código {#code-sources}
 
-Las canalizaciones también pueden variar según el tipo de código que implementan, además de la producción y la no producción.
+Las canalizaciones también pueden diferir por el tipo de código que implementan, además de la producción y la no producción.
 
 * **[Canalizaciones de pila completa](#full-stack-pipeline)**: implemente el código completo de la aplicación AEM junto con las configuraciones de HTTPD/Dispatcher.
 * **[Canalizaciones de configuración de nivel web](#web-tier-config-pipelines)**: implementen solo configuraciones de HTTPD/Dispatcher.
@@ -71,17 +63,18 @@ Se aplican las siguientes restricciones.
 A continuación se describe cómo la canalización de pila completa interactúa con una [canalización de configuración de nivel web](#web-tier-config-pipelines).
 
 * La canalización de pila completa para un entorno ignora la configuración de Dispatcher si existe la canalización de configuración de nivel web correspondiente.
-* Si la canalización de configuración del nivel web correspondiente para el entorno no existe, el usuario puede configurar la canalización de pila completa para incluir o ignorar la configuración de Dispatcher.
+* Si la canalización de configuración del nivel web correspondiente para el entorno no existe, el usuario puede incluir o ignorar la configuración de Dispatcher al configurar la canalización de pila completa.
 
 Las canalizaciones de pila completa pueden ser canalizaciones de calidad del código o implementación.
 
 #### Configuración de canalizaciones de pila completa {#configure-full-stack}
 
-Consulte [Agregar una canalización de producción](/help/using/production-pipelines.md#full-stack-code).Consulte [Agregar una canalización que no sea de producción](/help/using/non-production-pipelines.md#add-non-production-pipeline).
+Consulte [Agregar una canalización de producción](/help/using/production-pipelines.md#full-stack-code).
+Consulte [Agregar una canalización que no sea de producción](/help/using/non-production-pipelines.md#add-non-production-pipeline).
 
 ### Canalizaciones de configuración de nivel web {#web-tier-config-pipelines}
 
-Las canalizaciones de configuración de nivel web permiten la implementación exclusiva de la configuración de HTTPD/Dispatcher en el tiempo de ejecución de AEM, desacoplándola de otros cambios de código. Es una canalización optimizada que proporciona a los usuarios que solo desean implementar los cambios de configuración de Dispatcher, un medio acelerado para hacerlo en solo unos minutos.
+Las canalizaciones de configuración de nivel web permiten la implementación exclusiva de la configuración de HTTPD/Dispatcher en el tiempo de ejecución de AEM, desacoplándola de otros cambios de código. Se trata de una canalización optimizada que proporciona a los usuarios que solo desean implementar los cambios de configuración de Dispatcher un medio eficaz para hacerlo rápidamente.
 
 >[!TIP]
 >
@@ -105,7 +98,8 @@ A continuación se describe cómo la canalización de configuración del nivel w
 
 #### Configuración de canalizaciones de nivel web {#configure-web-tier}
 
-Consulte [Agregar una canalización de producción](/help/using/production-pipelines.md#web-tier-config).Consulte [Agregar una canalización que no sea de producción](/help/using/non-production-pipelines.md#add-non-production-pipeline).
+Consulte [Agregar una canalización de producción](/help/using/production-pipelines.md#web-tier-config).
+Consulte [Agregar una canalización que no sea de producción](/help/using/non-production-pipelines.md#add-non-production-pipeline).
 
 ### Compilaciones más rápidas con Smart Build {#use=smart-build}
 
@@ -131,7 +125,7 @@ La canalización de CI/CD proporciona puertas de calidad o criterios de aceptaci
 Para cada una de estas puertas, hay tres niveles de problemas que se pueden identificar:
 
 * **Crítico**: los problemas críticos identificados por la puerta causan un fallo inmediato de la canalización.
-* **Importante**: los problemas importantes identificados por la puerta hacen que la canalización entre en un estado de pausa. Un administrador de implementación, un administrador de proyectos o un propietario empresarial pueden anular los problemas, lo que permite que la canalización continúe. De forma alternativa, pueden aceptar los problemas, lo cual haría que la canalización se detenga con un error.
+* **Importante**: los problemas importantes identificados por la puerta hacen que la canalización entre en un estado de pausa. Un administrador de implementación, un administrador de proyectos o un líder empresarial pueden anular los problemas, lo que permite que la canalización continúe. De forma alternativa, pueden aceptar los problemas, lo cual haría que la canalización se detenga con un error.
 * **Información**: los problemas de información identificados por la puerta se proporcionan exclusivamente con fines informativos y no tienen impacto en la ejecución de la canalización.
 
 Este es un ejemplo de análisis de código con problemas identificados.
