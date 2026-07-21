@@ -3,9 +3,13 @@ title: Preguntas frecuentes sobre Cloud Manager
 description: Conozca las respuestas a las preguntas más frecuentes acerca de Cloud Manager para clientes de AMS.
 exl-id: 52c1ca23-5b42-4eae-b63a-4b22ef1a5aee
 TQID: https://experienceleague.adobe.com/aBIiazPCm-krE6rew6k-HSl-Uvc79eagMzM7uYciWdc
-product_v2: id: c68cd75e-5bca-4bc3-a60e-9e183f816441id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2: id: d095671a-1355-40aa-8b5f-06c33c68080b
+product_v2:
+  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
 source-git-commit: 4dcc367f82c51626ca449ff389a9c9574a562ff7
 workflow-type: tm+mt
 source-wordcount: 764
