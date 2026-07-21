@@ -10,10 +10,10 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
+source-git-commit: c2a6d2f87cf9f9c98f2af818f73b1fb2793c2e46
 workflow-type: tm+mt
-source-wordcount: 421
-ht-degree: 100%
+source-wordcount: 420
+ht-degree: 82%
 
 ---
 
@@ -77,7 +77,7 @@ Consulte el [manual de referencia de Git](https://git-scm.com/book/en/v2/Git-Too
 Cuando utilice submódulos Git, tenga en cuenta las siguientes limitaciones:
 
 * La dirección URL de Git debe ser exacta como la sintaxis descrita anteriormente.
-* Por motivos de seguridad, no incruste credenciales en estas direcciones URL.
+* Por motivos de seguridad, no incluya credenciales en estas direcciones URL.
 * Solo se admiten submódulos en la raíz de la rama.
 * Las referencias del submódulo Git se almacenan en confirmaciones de Git específicas. Como resultado, cuando se realizan cambios en el repositorio de submódulos, es necesario actualizar la confirmación a la que se hace referencia. Por ejemplo, utilizando `git submodule update --remote`.
 * A menos que sea necesario, Adobe recomienda usar submódulos &quot;superficiales&quot; ejecutando `git config -f .gitmodules submodule.<submodule path>.shallow true` para cada submódulo.
@@ -87,7 +87,7 @@ Cuando utilice submódulos Git, tenga en cuenta las siguientes limitaciones:
 
 La compatibilidad con los submódulos de Git al utilizar [repositorios privados](private-repositories.md) es prácticamente la misma que cuando se usan repositorios de Adobe.
 
-Sin embargo, después de configurar su archivo `pom.xml` y ejecutar los comandos `git submodule`, debe añadir un archivo `.gitmodules` al directorio raíz del repositorio de agregación para que Cloud Manager detecte la configuración del submódulo.
+Sin embargo, para que Cloud Manager detecte la configuración del submódulo, debe agregar un archivo `.gitmodules` al directorio raíz del repositorio del agregador después de configurar el archivo `pom.xml` y ejecutar los comandos `git submodule`.
 
 ![Archivo .gitmodules](assets/gitmodules.png)
 

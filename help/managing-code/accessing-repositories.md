@@ -8,10 +8,10 @@ product_v2:
   - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
+source-git-commit: c1c7a8a36bd770401393fe7e2c62b306c1a2573d
 workflow-type: tm+mt
-source-wordcount: 403
-ht-degree: 100%
+source-wordcount: 400
+ht-degree: 72%
 
 ---
 
@@ -21,14 +21,14 @@ Obtenga información sobre cómo acceder y gestionar sus repositorios de Git adm
 
 ## Acceso a la información del repositorio desde la página de información general {#overview-page}
 
-Cloud Manager facilita la recuperación de la información de acceso al repositorio para los repositorios administrados por Adobe mediante **Acceder a la info del repositorio** disponible en la tarjeta **Canalizaciones**.
+Con Cloud Manager, puede recuperar la información de acceso al repositorio de los repositorios administrados por Adobe mediante **Acceder a la info del repositorio** desde la tarjeta **Canalizaciones**.
 
 El cuadro de diálogo **Información del repositorio** le permite ver la siguiente información de acceso para los repositorios administrados por Adobe:
 
 * El nombre de usuario de Git.
 * La contraseña de Git.
 * La dirección URL del repositorio de Git de Cloud Manager.
-* Comandos de Git prediseñados para añadir rápidamente un remoto a su repositorio Git y enviar códigos.
+* Comandos Git creados previamente para añadir un remoto al repositorio Git y código push.
 
   ![Ventana Información del repositorio](assets/repository-info.png)
 
@@ -44,7 +44,7 @@ La función **Acceder a la info del repositorio** es visible para los usuarios c
 
    ![Acceso a la información del repositorio en la tarjeta Canalizaciones](/help/managing-code/assets/pipelines-card2.png)
 
-1. Para acceder a la contraseña, debe generar una nueva. En el cuadro de diálogo **Información del repositorio**, seleccione **Generar contraseña**.
+1. Para acceder a la contraseña, debe generar una nueva contraseña. En el cuadro de diálogo **Información del repositorio**, seleccione **Generar contraseña**.
 
 1. En el cuadro de diálogo de confirmación, seleccione **Generar contraseña**.
 
@@ -52,11 +52,11 @@ La función **Acceder a la info del repositorio** es visible para los usuarios c
 
    * La generación de la contraseña invalida la anterior.
    * Cloud Manager no guarda la contraseña. Es responsabilidad suya guardar la contraseña de forma segura.
-   * Como Cloud Manager no guarda la contraseña, si la olvida, deberá generar una nueva.
+   * Como Cloud Manager no guarda la contraseña, si la pierde, debe generar una nueva.
 
    ![Copiar la contraseña del cuadro de diálogo Información del repositorio](/help/managing-code/assets/repository-copy-password.png)
 
-Con estas credenciales, puede clonar una copia local del repositorio, realizar cambios en ese repositorio local y, luego, confirmar cualquier cambio de código en el repositorio remoto de códigos en Cloud Manager.
+Con estas credenciales, puede clonar una copia local del repositorio, realizar cambios en ese repositorio local y, cuando esté listo, enviar los cambios de código de nuevo al repositorio de código remoto en Cloud Manager.
 
 ## Información de acceso al repositorio desde la ventana Repositorios {#repositories-window}
 
@@ -66,4 +66,4 @@ La función **Acceder a la info del repositorio** también está disponible en l
 
 Puede revocar una contraseña de acceso en cualquier momento.
 
-Para ello, [cree un vale de asistencia para esta solicitud](https://experienceleague.adobe.com/es?support-solution=Experience+Manager&support-tab=home&lang=es#support). El vale tiene prioridad alta y debería revocarse en un día.
+Para ello, [cree un vale de asistencia para esta solicitud](https://experienceleague.adobe.com/es?support-solution=Experience+Manager&support-tab=home&lang=es#support). Al ticket se le asigna una prioridad alta y, por lo general, se resuelve en un día.

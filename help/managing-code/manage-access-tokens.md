@@ -8,10 +8,10 @@ product_v2:
   - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
+source-git-commit: b52942282fe5f825181123b3839ef155753c5e23
 workflow-type: tm+mt
-source-wordcount: 387
-ht-degree: 6%
+source-wordcount: 382
+ht-degree: 3%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 6%
 
 Cloud Manager utiliza tokens de acceso para administrar repositorios alojados en plataformas Git externas. Anteriormente, si un token caducaba, el repositorio asociado tenía que volver a incorporarse para permanecer operativo.
 
-Ahora, **Administrar tokens de acceso** le permite administrar los tokens de manera más eficiente. Puede ver, cambiar el nombre o quitar tokens conectados a proveedores de Git externos admitidos, como GitHub Enterprise, GitLab, Bitbucket y Azure DevOps.
+Ahora, **Administrar tokens de acceso** le permite administrar los tokens de manera más eficiente. Puede administrar tokens para los proveedores de Git admitidos: GitHub Enterprise, GitLab, Bitbucket y DevOps de Azure.
 
 Consulte también [Agregar repositorios externos en Cloud Manager](/help/managing-code/external-repositories.md).
 
