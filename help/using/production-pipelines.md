@@ -3,29 +3,25 @@ title: Añadir una canalización de producción
 description: Aprenda a utilizar Cloud Manager para crear y configurar canalizaciones de producción para implementar su código.
 exl-id: d489fa3c-df1e-480b-82d0-ac8cce78a710
 TQID: https://experienceleague.adobe.com/WH6W8bZNCWo0BAGLwnMOPpB3bk5P6Fd7c5b-dRT5Vc0
-product_v2:
-  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
-  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 4c73ab16ff7eab406c31a6d26cdd09360a94b3ea
+product_v2: id: c68cd75e-5bca-4bc3-a60e-9e183f816441id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: b44ffa027df5c60b1e5b2b81ec0702bb60c7078c
 workflow-type: tm+mt
-source-wordcount: 2101
-ht-degree: 58%
+source-wordcount: 2085
+ht-degree: 54%
 
 ---
 
 # Añadir una canalización de producción {#configuring-production-pipelines}
 
-Aprenda a utilizar Cloud Manager para crear y configurar canalizaciones de producción para implementar su código. Si desea conocer primero una descripción general más conceptual del funcionamiento de las canalizaciones en Cloud Manager, consulte el documento [Canalizaciones de CI/CD](/help/overview/ci-cd-pipelines.md).
+Aprenda a utilizar Cloud Manager para crear y configurar canalizaciones de producción para implementar su código. Para obtener una descripción general más conceptual del funcionamiento de las canalizaciones en Cloud Manager, consulte [Canalizaciones de CI/CD](/help/overview/ci-cd-pipelines.md).
 
 ## Información general {#overview}
 
 Al usar el mosaico **Configuración de canalización** en [!UICONTROL Cloud Manager], puede crear dos tipos diferentes de canalizaciones.
 
-* **Canalizaciones de producción**: Una canalización de producción está estructurada y formada específicamente por una serie de pasos organizados para tomar el código fuente de su repositorio de Git y llevarlo a la producción.
+* **Canalizaciones de producción**: una canalización de producción está diseñada específicamente y formada por una serie de pasos organizados para llevar el código fuente de su repositorio Git a la producción.
 * **Canalizaciones que no son de producción**: una canalización que no es de producción sirve principalmente para ejecutar el análisis de calidad del código o para implementar el código fuente en un entorno de desarrollo.
 
 Este documento se centra en las canalizaciones de producción. Para obtener más información sobre cómo configurar canalizaciones que no son de producción, consulte el documento [Configuración de canalizaciones que no son de producción](/help/using/non-production-pipelines.md).
@@ -40,7 +36,7 @@ La función **Administrador de implementación** es responsable de configurar la
 >
 >No se puede configurar una canalización hasta que su repositorio de Git asociado tenga al menos una rama y la [configuración del programa](/help/getting-started/program-setup.md) haya finalizado.
 
-## Añadir una canalización de producción {#adding-production-pipeline}
+## Añadir una canalización de producción {#add-a-production-pipeline}
 
 Una vez que haya utilizado la IU de [!UICONTROL Cloud Manager] para configurar el programa y tener al menos un entorno, ya puede añadir una canalización de producción.
 
@@ -62,34 +58,34 @@ Una vez que haya utilizado la IU de [!UICONTROL Cloud Manager] para configurar e
 
          * **Activador de implementación**: tiene las siguientes opciones para definir los activadores de implementación para iniciar la canalización.
 
-            * **Manual**: Inicie la canalización manualmente mediante la interfaz de usuario de Cloud Manager.
-            * **Cambios en Git**: esta opción inicia la canalización CI/CD cada vez que se añaden confirmaciones a la rama de Git configurada. Con esta opción, sigue pudiendo iniciar la canalización de forma manual según sea necesario.
+           * **Manual**: Inicie la canalización manualmente mediante la interfaz de usuario de Cloud Manager.
+           * **Cambios en Git**: esta opción inicia la canalización CI/CD cada vez que se añaden confirmaciones a la rama de Git configurada. Con esta opción, sigue pudiendo iniciar la canalización de forma manual según sea necesario.
 
          * **Comportamiento de los errores de las métricas importantes**: durante la configuración o edición de la canalización, el administrador de implementación tiene la opción de definir el comportamiento de la canalización cuando se encuentra un error importante en cualquiera de las puertas de calidad. Las opciones disponibles son las siguientes:
 
-            * **Preguntar cada vez**: La configuración predeterminada y requiere intervención manual en caso de que se produzca algún error importante.
-            * **Fallo inmediatamente**: La canalización se cancela siempre que se produzca un fallo importante. Se trata de emular a un usuario que rechaza errores manualmente.
-            * **Continuar inmediatamente**: La canalización se ejecuta automáticamente cada vez que se produzca un error importante. Se trata de emular a un usuario que aprueba manualmente cada fallo.
+           * **Preguntar cada vez**: La configuración predeterminada y requiere intervención manual en caso de que se produzca algún error importante.
+           * **Fallo inmediatamente**: La canalización se cancela siempre que se produzca un fallo importante. Se trata de emular a un usuario que rechaza errores manualmente.
+           * **Continuar inmediatamente**: La canalización se ejecuta automáticamente cada vez que se produzca un error importante. Se trata de emular a un usuario que aprueba manualmente cada fallo.
 
          ![Activador de implementación](/help/assets/configure-pipelines/add-prod3.png)
 
          * **Opciones de implementación**: puede acelerar ciertas tareas de implementación.
 
-            * **Aprobar después de la implementación de la fase**: esta aprobación se produce después de la implementación en el entorno de ensayo antes de realizar cualquier prueba. De lo contrario, la aprobación se produce antes de la implementación de producción, que se realiza después de completar todas las pruebas.
+           * **Aprobar después de la implementación de la fase**: esta aprobación se produce después de la implementación en el entorno de ensayo antes de realizar cualquier prueba. De lo contrario, la aprobación se produce antes de la implementación de producción, que se realiza después de completar todas las pruebas.
 
-            * **Omitir los cambios del equilibrador de carga**: no se realizan cambios en el equilibrador de carga.
+           * **Omitir los cambios del equilibrador de carga**: no se realizan cambios en el equilibrador de carga.
 
          ![Opciones de implementación de ensayo](/help/assets/configure-pipelines/add-prod4.png)
 
-         * **Configuración de Dispatcher**: La función **Administrador de implementación** puede configurar un conjunto de rutas de contenido que se invalidarán o vaciarán de la caché de AEM Dispatcher cuando se ejecute una canalización. Estas acciones de caché se ejecutan como parte del paso de canalización de implementación, justo después de implementar cualquier paquete de contenido. Esta configuración utiliza el comportamiento estándar de AEM Dispatcher. Para configurarlo, haga lo siguiente:
+         * **Configuración de Dispatcher**: La función **Administrador de implementación** puede configurar un conjunto de rutas de contenido que se invalidarán o vaciarán de la caché de AEM Dispatcher cuando se ejecute una canalización. Estas acciones de caché se realizan como parte del paso de canalización de implementación después de implementar cualquier paquete de contenido. Esta configuración utiliza el comportamiento estándar de AEM Dispatcher. Para configurarlo, haga lo siguiente:
 
-            1. En **RUTA**, proporcione una ruta de contenido.
-            1. En **TIPO**, seleccione la acción que se realizará en esa ruta.
+           1. En **RUTA**, proporcione una ruta de contenido.
+           1. En **TIPO**, seleccione la acción que se realizará en esa ruta.
 
-               * **Vaciado**: realice una eliminación de caché.
-               * **Invalidar**: efectúe una invalidación de caché, similar a cuando el contenido se activa desde una instancia de creación a una instancia de publicación.
+              * **Vaciado**: realice una eliminación de caché.
+              * **Invalidar**: efectúe una invalidación de caché, similar a cuando el contenido se activa desde una instancia de creación a una instancia de publicación.
 
-            1. Haga clic en **Agregar ruta** para añadir la ruta especificada. Puede agregar hasta 100 rutas por entorno.
+           1. Haga clic en **Agregar ruta** para añadir la ruta especificada. Puede agregar hasta 100 rutas por entorno.
 
          ![Configuración de Dispatcher](/help/assets/configure-pipelines/dispatcher-stage.png)
 
@@ -101,20 +97,20 @@ Una vez que haya utilizado la IU de [!UICONTROL Cloud Manager] para configurar e
 
          * **Opciones de implementación**: puede definir los parámetros que controlan la implementación de producción.
 
-            * **Usar la aprobación de GoLive**: un usuario con la función de **Propietario del negocio**, **Administrador de proyectos** o **Administrador de implementación** a través de la interfaz de usuario de [!UICONTROL Cloud Manager] debe aprobar manualmente una implementación.
-            * **Programado**: Detiene la canalización antes de la implementación de producción para permitir que se programe. Si se selecciona esta opción, la canalización se detendrá después de la implementación en el entorno de ensayo y se preguntará al usuario qué acción debe hacerse.
-               * **`Now`**: Implementa en producción de inmediato y completa efectivamente la canalización.
-               * **Fecha**: Permite al usuario programar en qué momento se debe completar la implementación.
-               * **Detener ejecución**: Anula la implementación en producción.
+           * **Usar la aprobación de GoLive**: un usuario con la función de **Propietario del negocio**, **Administrador de proyectos** o **Administrador de implementación** a través de la interfaz de usuario de [!UICONTROL Cloud Manager] debe aprobar manualmente una implementación.
+           * **Programado**: Detiene la canalización antes de la implementación de producción para permitir que se programe. Si se selecciona esta opción, la canalización se detendrá después de la implementación en el entorno de ensayo y se preguntará al usuario qué acción debe hacerse.
+             * **`Now`**: Implementa en producción de inmediato y completa efectivamente la canalización.
+             * **Fecha**: Permite al usuario programar en qué momento se debe completar la implementación.
+             * **Detener ejecución**: Anula la implementación en producción.
 
            >[!TIP]
            >
            >Consulte el documento [Implementación de código](/help/using/code-deployment.md) para obtener información sobre cómo configurar la programación de implementación o ejecutar la canalización inmediatamente.
 
-            * **Usar la supervisión de CSE**: si se selecciona esta opción, se involucra un ingeniero de éxito del cliente (CSE) para que inicie la propia implementación. Al crear o editar una canalización cuando esta opción está habilitada, la función **Administrador de implementación** tiene las siguientes opciones.
+           * **Usar la supervisión de CSE**: si se selecciona esta opción, se involucra un ingeniero de éxito del cliente (CSE) para que inicie la propia implementación. Al crear o editar una canalización cuando esta opción está habilitada, la función **Administrador de implementación** tiene las siguientes opciones.
 
-               * **Cualquier CSE**: Esta opción permite que cualquier CSE disponible inicie la implementación.
-               * **Mi CSE**: Esta opción solo permite que el CSE específico asignado al cliente inicie la implementación. Esta opción también se aplica al CSE sustituto, si el asignado no está disponible.
+             * **Cualquier CSE**: Esta opción permite que cualquier CSE disponible inicie la implementación.
+             * **Mi CSE**: Esta opción solo permite que el CSE específico asignado al cliente inicie la implementación. Esta opción también se aplica al CSE sustituto, si el asignado no está disponible.
 
            ![Opciones de implementación de producción](/help/assets/configure-pipelines/prod-deploymentoptions.png)
 
@@ -150,9 +146,9 @@ Una vez que haya utilizado la IU de [!UICONTROL Cloud Manager] para configurar e
 
       * Defina sus propios activos personalizados cargándolos.
 
-         1. **FORMATO**: elija si el activo personalizado es un PDF de una imagen.
-         1. **NOMBRE DEL ARCHIVO**: utilice el botón del explorador de archivos para seleccionar una imagen del equipo local.
-         1. **Agregar archivo de prueba**: haga clic en para cargar el activo seleccionado.
+        1. **FORMATO**: elija si el recurso personalizado es un PDF o una imagen.
+        1. **NOMBRE DEL ARCHIVO**: utilice el botón del explorador de archivos para seleccionar una imagen del equipo local.
+        1. **Agregar archivo de prueba**: haga clic en para cargar el activo seleccionado.
 
       ![Distribución de pruebas de activos](/help/assets/configure-pipelines/add-prod6.png)
 
@@ -170,13 +166,13 @@ Una canalización de código de pila completa implementa compilaciones de códig
 
 1. En la ficha **Código Source**, defina las siguientes opciones.
 
-   * **Repositorio**: Define desde qué repositorio de Git la canalización debe recuperar el código.
+   * **Repositorio**: define desde qué repositorio de Git la canalización recupera el código.
 
    >[!TIP]
    >
    >Consulte el documento [Configuración del programa](/help/getting-started/program-setup.md) para aprender a añadir y administrar repositorios en Cloud Manager.
 
-   * **Rama de Git**: define desde qué rama la canalización debe recuperar el código.
+   * **Rama Git**: define desde qué rama recupera el código la canalización.
    * **Ignorar configuración de nivel web**: cuando se selecciona, la canalización no implementa la configuración del nivel web. Si ya existe una canalización de configuración de nivel web para el mismo entorno, esta casilla de verificación se selecciona automáticamente y se desactiva porque esa canalización administra la configuración de nivel web en su lugar. Cuando no existe ninguna canalización de configuración de nivel web, puede seleccionar o desactivar esta opción para controlar si la canalización de pila completa implementa la configuración de Dispatcher.
 
    ![Origen del código de pila completa](/help/assets/configure-pipelines/add-prod-fullstack-source.png)
@@ -210,7 +206,7 @@ Si crea una canalización de configuración de nivel web para un entorno con una
 1. Haga clic en **Continuar** para avanzar a la pestaña **Prueba de ensayo**. Consulte [Prueba de ensayo](#stage-testing) para obtener más información.
 
 
-## Acerca del uso de Smart Build en una canalización de producción{#about-smart-build}
+## Uso de Smart Build en una canalización de producción{#about-smart-build}
 
 **Smart Build** en Cloud Manager es una estrategia de compilación optimizada para canalizaciones de producción. La versión inteligente reduce los tiempos de compilación al almacenar en caché los módulos y reconstruir solo los módulos que han cambiado desde la última ejecución correcta. Los módulos no modificados se reutilizan desde la caché, mientras que solo se reconstruyen los módulos modificados y sus dependencias, lo que mejora la eficacia de los flujos de trabajo de desarrollo iterativos.
 
@@ -242,7 +238,7 @@ La mejora del rendimiento obtenida mediante el uso de Smart Build depende de var
 * La frecuencia y el ámbito del código cambian.
 * La distribución de dependencias entre módulos.
 
-Generalmente, los proyectos con muchos módulos independientes pueden ver la mayor mejora.
+Los proyectos con muchos módulos independientes pueden ver la mayor mejora.
 
 ### Exclusión de caché por módulo{#smart-build-cache-optout}
 
@@ -269,13 +265,13 @@ Esta sintaxis fuerza al módulo a reconstruir en cada ejecución de canalizació
 Tenga en cuenta lo siguiente al utilizar Smart Build:
 
 * La generación inteligente se basa en el análisis de dependencias de Maven.
-* Los cambios fuera del gráfico de dependencias no pueden almacenar en déclencheur las regeneraciones.
-* Es posible que algunos complementos no sean totalmente compatibles con el almacenamiento en caché.
-* Puede volver a **Compilación completa** en cualquier momento editando la canalización que no sea de producción.
+* Los cambios fuera del gráfico de dependencias no almacenan en déclencheur las regeneraciones.
+* Algunos complementos no son totalmente compatibles con el almacenamiento en caché.
+* Puede volver a **Compilación completa** en cualquier momento editando la canalización de producción.
 
 Si encuentra un comportamiento de compilación inesperado, considere la posibilidad de deshabilitar el almacenamiento en caché para módulos específicos o cambiar temporalmente su estrategia de compilación a **Compilación completa**.
 
-### Solución de problemas de Smart Build{#smart-build-troubleshoot}
+### Resolver problemas de generación inteligente{#smart-build-troubleshoot}
 
 | Problema | Soluciones sugeridas |
 | --- | --- |
@@ -283,7 +279,7 @@ Si encuentra un comportamiento de compilación inesperado, considere la posibili
 | Sin mejora de rendimiento | · Asegúrese de que se han producido varias ejecuciones (calentamiento de caché).<br>· Compruebe si la mayoría de los módulos cambian con frecuencia. |
 | Artefactos inesperados o cambios que faltan | · Revise si los cambios están fuera del seguimiento de dependencias de Maven.<br>· Use **Compilación completa** para la verificación. |
 
-Consulte [Agregar una canalización de producción](#adding-production-pipeline) para habilitar Smart Build.
+Para habilitar Smart Build, consulte [Agregar una canalización de producción](#add-a-production-pipeline).
 
 
 ## Pasos siguientes {#the-next-steps}
@@ -294,4 +290,4 @@ Después de configurar la canalización, puede implementar el código. Consulte 
 
 Este vídeo ofrece información general sobre el proceso de creación de canalizaciones, que se detalla en este documento.
 
->[!VIDEO](https://video.tv.adobe.com/v/327603?captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/26314/)
