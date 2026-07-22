@@ -73,6 +73,6 @@ La pantalla **Entornos** muestra cada entorno de producción y ensayo del progra
 
 Este vídeo proporciona una introducción a los entornos de Cloud Manager que están compuestos por instancias de AEM de creación, publicación y Dispatcher.
 
->[!VIDEO](https://video.tv.adobe.com/v/26318/)
+>[!VIDEO](https://video.tv.adobe.com/v/34623?captions=spa)
 
 *(3 minutos, 1 segundo)*
