@@ -3,10 +3,15 @@ title: Copia de contenido para la coherencia del entorno
 description: La copia de contenido en Cloud Manager permite a los usuarios copiar contenido mutable On-demand desde los entornos de producción de Adobe Experience Manager 6.x alojados en Adobe Managed Services a entornos inferiores para realizar pruebas.
 exl-id: 97915e58-a1d3-453f-b5ce-cad55ed73262
 TQID: https://experienceleague.adobe.com/ffcf9UNSOp7oIpDZdtLcoFWp-Ww-A1XV3kCDmKqJLSw
-product_v2: id: c68cd75e-5bca-4bc3-a60e-9e183f816441id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-feature_v2: id: cd2426f1-5719-4006-b8c2-738e5969754b
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+product_v2:
+  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2:
+  - id: cd2426f1-5719-4006-b8c2-738e5969754b
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
 source-git-commit: 845c182685d59844a2349c90d176d3e7c8a594cf
 workflow-type: tm+mt
 source-wordcount: 1435
@@ -102,7 +107,7 @@ Para mostrar las subrutas excluidas, expanda las rutas configuradas.
 
 1. En la esquina superior izquierda de la página, haga clic en el ![icono de Mostrar menú](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) para abrir el menú del lado izquierdo.
 
-1. En el menú del lado izquierdo, debajo de **Servicios**, haga clic en el ![icono de Cuadro ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Box_18_N.svg) **Conjuntos de contenido**.
+1. En el menú del lado izquierdo, debajo de **Servicios**, haga clic en el ![icono de Cuadro &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Box_18_N.svg) **Conjuntos de contenido**.
 
 1. En la tabla de la página **Conjuntos de contenido**, haga clic en el ![icono de Más](https://spectrum.adobe.com/static/icons/ui_18/More.svg) a la derecha de una ruta de contenido incluida y, a continuación, haga clic en **Editar** o **Eliminar**.
 
@@ -123,7 +128,7 @@ Un entorno no puede estar disponible para su selección si se aplica cualquiera 
 
 1. En la esquina superior izquierda de la página, haga clic en el ![icono de Mostrar menú](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) para abrir el menú del lado izquierdo.
 
-1. En el menú del lado izquierdo, debajo de **Servicios**, haga clic en el ![icono de Cuadro ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Box_18_N.svg) **Conjuntos de contenido**.
+1. En el menú del lado izquierdo, debajo de **Servicios**, haga clic en el ![icono de Cuadro &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Box_18_N.svg) **Conjuntos de contenido**.
 
 1. En la tabla de la página **Conjuntos de contenido**, a la derecha de la ruta de contenido incluida que desea copiar, haga clic en el ![icono de Más](https://spectrum.adobe.com/static/icons/ui_18/More.svg) y, a continuación, haga clic en **Copiar contenido**.
 
