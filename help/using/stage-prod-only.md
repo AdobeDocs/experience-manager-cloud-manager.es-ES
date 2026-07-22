@@ -3,9 +3,13 @@ title: Dividir canalizaciones solo de fase y solo de producción
 description: Descubra cómo puede dividir las implementaciones de fase y producción mediante canalizaciones dedicadas.
 exl-id: b7dd0021-d346-464a-a49e-72864b01cce3
 TQID: https://experienceleague.adobe.com/whq-Hkwp3mjTr0iftoKZHKdsi0xaKtVXazXjUENoaLk
-product_v2: id: c68cd75e-5bca-4bc3-a60e-9e183f816441id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-feature_v2: id: cd2426f1-5719-4006-b8c2-738e5969754b
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+product_v2:
+  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2:
+  - id: cd2426f1-5719-4006-b8c2-738e5969754b
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 source-git-commit: 6b0075d2405e89dce1c883a2b5fc0bd952a3fddd
 workflow-type: tm+mt
 source-wordcount: 975
