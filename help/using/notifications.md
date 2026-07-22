@@ -3,8 +3,11 @@ title: Notificaciones
 description: Descubra cómo Cloud Manager le notifica de los eventos importantes.
 exl-id: cfd5655f-2d2c-4304-b25c-6cdffe7ff64c
 TQID: https://experienceleague.adobe.com/WBAHeIAH1XL6oVy342wLaUAoAHkUoN1AbcAl2Erkte4
-product_v2: id: c68cd75e-5bca-4bc3-a60e-9e183f816441id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+product_v2:
+  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 source-git-commit: 65b260abe417925f26d647fb9857d32c30455f9b
 workflow-type: tm+mt
 source-wordcount: 562
