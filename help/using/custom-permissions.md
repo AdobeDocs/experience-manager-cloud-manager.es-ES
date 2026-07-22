@@ -118,7 +118,7 @@ Ahora puede asignar usuarios al nuevo perfil de producto que ha creado con permi
 
 1. Haga clic en **Añadir usuarios** y asigne usuarios a su nuevo perfil de productos con permisos personalizados.
 
-Consulte la sección **Adición de usuarios y grupos de usuarios a un perfil de producto** del documento [Administración de perfiles de producto para usuarios empresariales](https://helpx.adobe.com/business/enterprise/manage-products-and-entitlements/manage-products-and-product-profiles/manage-product-profiles.html) para obtener más información sobre cómo utilizar Admin Console.
+Consulte la sección **Adición de usuarios y grupos de usuarios a un perfil de producto** del documento [Administración de perfiles de producto para usuarios empresariales](https://helpx.adobe.com/es/business/enterprise/manage-products-and-entitlements/manage-products-and-product-profiles/manage-product-profiles.html) para obtener más información sobre cómo utilizar Admin Console.
 
 ## Permisos configurables {#configurable-permissions}
 
