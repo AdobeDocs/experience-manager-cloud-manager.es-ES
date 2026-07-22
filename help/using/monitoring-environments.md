@@ -135,4 +135,4 @@ La sección **Análisis de eventos** bajo este gráfico muestra el conjunto de i
 
 Este vídeo proporciona información general sobre el uso de los gráficos creados por los informes de Cloud Manager para monitorizar los entornos de su programa.
 
->[!VIDEO](https://video.tv.adobe.com/v/26315/)
+>[!VIDEO](https://video.tv.adobe.com/v/34624?captions=spa)
