@@ -10,10 +10,10 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
+source-git-commit: e073ce238767608bb127b7d927a4a51adf06b228
 workflow-type: tm+mt
-source-wordcount: 91
-ht-degree: 100%
+source-wordcount: 92
+ht-degree: 64%
 
 ---
 
@@ -23,4 +23,4 @@ Póngase en contacto con su ingeniero de éxito del cliente (Customer Success En
 
 Puede acceder a [Soporte para empresas](https://experienceleague.adobe.com/es?support-tab=home&lang=es#support) para crear vales de soporte.
 
-Consulte [Acceso al portal de asistencia de AEM](https://helpx.adobe.com/es/enterprise/using/support-and-expert-services.html) para obtener más información sobre la creación de vales de soporte en el Servicio de atención al cliente de Adobe.
+Consulte [Acceso al portal de asistencia de AEM](https://helpx.adobe.com/es/business/enterprise/get-help/support-and-expert-services.html) para obtener más información sobre la creación de vales de soporte en el Servicio de atención al cliente de Adobe.

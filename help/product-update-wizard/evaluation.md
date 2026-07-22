@@ -11,10 +11,10 @@ feature_v2:
   - id: a01bfd36-4ab8-4bf8-9dc0-5b45b890552e
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
+source-git-commit: 1b146c2a01d3371ed2fe014a15a84ddee2cd9b6c
 workflow-type: tm+mt
 source-wordcount: 270
-ht-degree: 59%
+ht-degree: 40%
 
 ---
 
@@ -25,7 +25,7 @@ La primera fase del Asistente para la actualización de productos es la fase **[
 El informe comprueba la preparación de la actualización de la instancia de autor mediante la detección de patrones para lo siguiente:
 
 * Infracciones de reglas en áreas afectadas o sobrescritas por la actualización.
-* Utiliza funciones o API de AEM 6.x que no son compatibles con versiones anteriores y pueden romperse después de la actualización.
+* Detecta funciones o API de AEM 6.x que no son compatibles con versiones anteriores y pueden fallar después de la actualización.
 
 Este informe ayuda a calcular el esfuerzo de desarrollo necesario para actualizar a Adobe Experience Manager (AEM) 6.5.
 
@@ -35,7 +35,7 @@ Este informe ayuda a calcular el esfuerzo de desarrollo necesario para actualiza
 
 ## Ejecutar el informe de evaluación {#running}
 
-El detector de patrones se puede ejecutar en cualquier entorno. Sin embargo, para aumentar la tasa de detección y evitar cualquier ralentización en las instancias esenciales para el negocio, Cloud Manager la ejecutará en el entorno de ensayo de la instancia de autor.
+El detector de patrones se puede ejecutar en cualquier entorno. Sin embargo, para aumentar la tasa de detección y evitar cualquier impacto en el rendimiento de las instancias críticas, Cloud Manager la ejecuta en el entorno de ensayo de la instancia de autor.
 
 **Para ejecutar el informe de evaluación:**
 
@@ -45,10 +45,10 @@ El detector de patrones se puede ejecutar en cualquier entorno. Sin embargo, par
 
    ![Ejecutar evaluación](/help/assets/Run-Evaluation.png)
 
-1. El asistente informa el estado de la acción. Cuando se genere el informe de evaluación, verá **En curso** o **completado** según corresponda.
+1. El asistente informa el estado de la acción. Nota **En curso** o **Completada**, según corresponda, mientras se genera el informe de evaluación.
 
 1. Una vez generado el informe, puede hacer clic en **[!UICONTROL Descargar informe]** para guardar una copia.
 
    ![Informe creado](/help/assets/Evaluation-1.png)
 
-El Asistente para la actualización de productos actual de Cloud Manager sólo admite la fase **Evaluación**. Las otras cuatro fases, a saber: **Corrección**, **Ejecución**, **Validación** y **Finalización** aparecerán pronto.
+El Asistente para la actualización de productos actual de Cloud Manager sólo admite la fase **Evaluación**. Las otras cuatro fases, a saber: **Remediación**, **Ejecución**, **Validación** y **Finalización**, estarán disponibles pronto.

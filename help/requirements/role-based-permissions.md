@@ -10,16 +10,16 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
+source-git-commit: e94834c5e13825a468ef5344e77024c4fe4a29e6
 workflow-type: tm+mt
-source-wordcount: 592
-ht-degree: 99%
+source-wordcount: 596
+ht-degree: 85%
 
 ---
 
 # Permisos basados en funciones {#role-based-permissions}
 
-[!UICONTROL Cloud Manager] tiene funciones preconfiguradas con los permisos adecuados. Por ejemplo, un desarrollador elabora códigos y tiene permiso para insertarlos en el repositorio de Git. Un propietario de una empresa tiene diferentes permisos que les permiten definir los indicadores clave de rendimiento (KPI) y aprobar implementaciones.
+[!UICONTROL Cloud Manager] incluye funciones preconfiguradas con los permisos apropiados. Por ejemplo, los desarrolladores de software escriben código y tienen permiso para insertarlo en el repositorio de Git. Los posibles clientes empresariales tienen diferentes permisos que les permiten definir los indicadores clave de rendimiento (KPI) y aprobar implementaciones.
 
 >[!NOTE]
 >
@@ -29,7 +29,7 @@ ht-degree: 99%
 
 ## Funciones de los usuarios {#user-roles}
 
-La administración de funciones para [!UICONTROL Cloud Manager] se realiza utilizando la [Admin Console](https://helpx.adobe.com/es/enterprise/using/admin-console.html). Cualquier usuario de [!UICONTROL Cloud Manager] debe ser miembro de la organización IMS del cliente y tener el contexto del producto de Adobe Managed Services. Las suscripciones a funciones específicas se proporcionan añadiendo el usuario a un perfil de producto de [!UICONTROL Cloud Manager] en Admin Console.
+La administración de funciones para [!UICONTROL Cloud Manager] se realiza utilizando la [Admin Console](https://helpx.adobe.com/es/business/enterprise/plan-your-deployment/basic-concepts/admin-console.html). Cualquier usuario de [!UICONTROL Cloud Manager] debe ser miembro de la organización IMS del cliente y tener el contexto del producto de Adobe Managed Services. Para proporcionar suscripciones a funciones específicas, agregue el usuario a un perfil de producto de [!UICONTROL Cloud Manager] en Admin Console.
 
 Para obtener más información sobre cómo configurar las funciones, consulte el documento [Configuración de usuarios y funciones](/help/requirements/users-and-roles.md).
 
@@ -46,7 +46,7 @@ La siguiente tabla enumera las funciones que puede asignar en Admin Console.
 
 ## Permisos de usuario {#user-permissions}
 
-Cada una de las funciones tiene permisos preconfigurados específicos asociados. Esta tabla enumera los permisos disponibles y las funciones que pueden ejecutarlos.
+Cada una de las funciones tiene permisos preconfigurados específicos asociados. En la tabla siguiente se enumeran los permisos disponibles y las funciones que pueden ejecutarlos.
 
 | Permiso | Descripción | Propietario del negocio | Administrador de implementación | Administrador de programa | Desarrollador | CSE |
 | --- | --- | --- | --- | --- | --- | --- |

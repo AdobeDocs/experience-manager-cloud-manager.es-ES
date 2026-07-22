@@ -12,10 +12,10 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
+source-git-commit: 845c182685d59844a2349c90d176d3e7c8a594cf
 workflow-type: tm+mt
-source-wordcount: 1452
-ht-degree: 99%
+source-wordcount: 1435
+ht-degree: 84%
 
 ---
 
@@ -27,7 +27,7 @@ La copia de contenido en Cloud Manager permite a los usuarios copiar contenido m
 
 Los datos actuales y reales son valiosos para las pruebas, la validación y la aceptación de usuarios. La copia de contenido le permite copiar contenido de su entorno AEM 6.x alojado en AMS de producción a un entorno de ensayo o desarrollo. Este flujo de trabajo admite varios escenarios de prueba.
 
-Un conjunto de contenido define el contenido que se va a copiar. Un conjunto de contenido incluye una lista de rutas JCR con el contenido mutable que se va a copiar. El contenido pasa de un entorno de origen a un entorno de destino. Todo dentro del mismo programa de Cloud Manager.
+Un conjunto de contenido define el contenido que se va a copiar. Un conjunto de contenido incluye una lista de rutas JCR con el contenido mutable que se va a copiar. El contenido pasa de un entorno de origen a un entorno de destino. Esta operación se realiza dentro del mismo programa de Cloud Manager.
 
 Se permiten las siguientes rutas en un conjunto de contenido:
 
@@ -39,7 +39,7 @@ Se permiten las siguientes rutas en un conjunto de contenido:
 /var/commerce/**
 ```
 
-Al copiar contenido, el entorno de origen es la fuente de información.
+Al copiar contenido, el entorno de origen es la referencia principal.
 
 Si edita contenido en el entorno de destino, el contenido de origen lo sobrescribe si las rutas coinciden.
 
@@ -51,7 +51,7 @@ Para utilizar la función de copia de contenido, el usuario debe estar asignado 
 
 ## Creación de un conjunto de contenido {#create-content-set}
 
-Para poder copiar cualquier contenido, se debe definir un conjunto de contenido. Una vez definidos, los conjuntos de contenido se pueden reutilizar para copiar contenido. Siga estos pasos para crear un conjunto de contenido.
+Para poder copiar cualquier contenido, se debe definir un conjunto de contenido. Una vez definidos, los conjuntos de contenido se pueden reutilizar para copiar contenido.
 
 **Para crear un conjunto de contenido:**
 
@@ -59,7 +59,7 @@ Para poder copiar cualquier contenido, se debe definir un conjunto de contenido.
 
 1. En la esquina superior izquierda de la página, haga clic en el ![icono de Mostrar menú](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) para abrir el menú del lado izquierdo.
 
-1. En el menú del lado izquierdo, en la página **Servicios**, haga clic en el ![icono de Cuadro &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Box_18_N.svg) **Conjuntos de contenido**.
+1. En el menú del lado izquierdo, debajo de **Servicios**, haga clic en ![Icono de cuadro](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Box_18_N.svg) **Conjuntos de contenido**.
 
 1. Cerca de la esquina superior derecha de la página, haga clic en **Añadir conjunto de contenido**.
 
@@ -75,16 +75,16 @@ Para poder copiar cualquier contenido, se debe definir un conjunto de contenido.
 
 1. Haga clic en el ![icono de adición de carpeta](https://spectrum.adobe.com/static/icons/workflow_18/Smock_FolderAdd_18_N.svg) **Añadir ruta** para añadir (o incluir) la ruta al conjunto de contenido.
 
-1. (Opcional) Si es necesario, añada las rutas de adición (hasta 50) que sean necesarias repitiendo los dos pasos anteriores. De lo contrario, continúe con el siguiente paso.
+1. (Opcional) Si es necesario, agregue rutas adicionales (hasta 50) repitiendo los dos pasos anteriores. De lo contrario, continúe con el siguiente paso.
 
    ![Añadir rutas al conjunto de contenido](/help/assets/add-content-set-paths.png)
 
-1. (Opcional) Para reducir el conjunto de contenido, puede especificar, opcionalmente, subrutas dentro de una ruta de contenido incluida que deban excluirse.
+1. (Opcional) Para restringir el conjunto de contenido, puede especificar opcionalmente subrutas dentro de una ruta de contenido incluida que deban excluirse.
 
-   1. A la derecha de una ruta de contenido incluida que desee restringir, haga clic en el ![icono de eliminación de carpeta](https://spectrum.adobe.com/static/icons/workflow_18/Smock_FolderDelete_18_N.svg).
+   1. A la derecha de una ruta de contenido incluido que desee excluir, haga clic en ![Icono de eliminación de carpeta](https://spectrum.adobe.com/static/icons/workflow_18/Smock_FolderDelete_18_N.svg).
    1. En el campo de texto, escriba una ruta relativa a la ruta raíz que aparece en el cuadro de diálogo.
    1. Haga clic en el ![icono de eliminación de carpeta](https://spectrum.adobe.com/static/icons/workflow_18/Smock_FolderDelete_18_N.svg) **Excluir ruta**.
-   1. Si es necesario, repita los pasos en. a iii. arriba para añadir más rutas de exclusión; no hay limitación. De lo contrario, continúe con el siguiente paso.
+   1. Repita los pasos i, ii y iii para agregar más rutas excluidas; no hay límite. De lo contrario, continúe con el siguiente paso.
 
    ![Exclusión de rutas](/help/assets/add-content-set-paths-excluded.png)
 
@@ -99,7 +99,7 @@ Para poder copiar cualquier contenido, se debe definir un conjunto de contenido.
 
 ## Edición o eliminación de un conjunto de contenido {#edit-content-set}
 
-Al editar el conjunto de contenido, es posible que tenga que expandir las rutas configuradas para mostrar las subrutas excluidas.
+Para mostrar las subrutas excluidas, expanda las rutas configuradas.
 
 **Para editar o eliminar un conjunto de contenido:**
 
@@ -117,7 +117,7 @@ Al editar el conjunto de contenido, es posible que tenga que expandir las rutas 
 
 Una vez creado un conjunto de contenido, puede utilizarlo para copiar contenido.
 
-Es posible que un entorno no esté disponible para su selección si se aplica cualquiera de las siguientes condiciones:
+Un entorno no puede estar disponible para su selección si se aplica cualquiera de las siguientes condiciones:
 
 * El usuario carece de los permisos necesarios.
 * Se está ejecutando una operación de canalización o de copia de contenido en el entorno.
@@ -143,8 +143,8 @@ Es posible que un entorno no esté disponible para su selección si se aplica cu
 
 1. (Opcional) Realice una de las siguientes acciones:
 
-   1. Para *conservar* las rutas excluidas en el entorno de destino, marque **`Do not delete exclude paths from destination`**. Esta configuración mantiene intactas las rutas excluidas especificadas en el conjunto de contenido.
-   1. Para *quitar* las rutas excluidas en el entorno de destino, desmarque **`Do not delete exclude paths from destination`**. Esta configuración elimina las rutas excluidas especificadas en el conjunto de contenido.
+   1. Para *conservar* las rutas excluidas en el entorno de destino, marque **`Do not delete excluded paths from destination`**. Esta configuración mantiene intactas las rutas excluidas especificadas en el conjunto de contenido.
+   1. Para *quitar* las rutas excluidas en el entorno de destino, desmarque **`Do not delete excluded paths from destination`**. Esta configuración elimina las rutas excluidas especificadas en el conjunto de contenido.
    1. Para copiar el historial de versiones de las rutas del entorno de origen en el entorno de destino, marque **Copiar versiones**. El proceso de copia de contenido es considerablemente más rápido cuando *no* se copia el historial de versiones.
 
 1. Haga clic en **Copiar**. El estado del proceso de copia se refleja en la consola del conjunto de contenido seleccionado.
@@ -159,7 +159,7 @@ Puede controlar el estado de los procesos de la copia en la página **Actividad 
 
 1. En la esquina superior izquierda de la página, haga clic en el ![icono de Mostrar menú](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) para abrir el menú del lado izquierdo.
 
-1. En el menú del lado izquierdo, debajo de **Servicios**, haga clic en el ![icono de Historial &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_History_18_N.svg) **Actividad de copia de contenido**.
+1. En el menú del lado izquierdo, debajo de **Servicios**, haga clic en ![Icono de historial](https://spectrum.adobe.com/static/icons/workflow_18/Smock_History_18_N.svg) **Copiar actividad de contenido**.
 
    ![Actividad de la copia de contenido](/help/assets/copy-content-activity.png)
 
@@ -174,15 +174,15 @@ Puede controlar el estado de los procesos de la copia en la página **Actividad 
 ## Limitaciones de la copia de contenido {#limitations}
 
 * No se puede realizar una copia de contenido de un entorno inferior a un entorno superior.
-* La copia de contenido solo se puede realizar en el mismo nivel. Es decir, autor-autor o publicación-publicación.
+* La copia de contenido solo se puede realizar en el mismo nivel. En concreto, esto significa autor a autor o publicación a publicación.
 * No es posible copiar contenido entre programas o entre regiones.
-* La copia de contenido para la topología basada en el almacén de datos en la nube solo se puede realizar cuando el entorno de origen y de destino están en el mismo proveedor de servicios en la nube y en la misma región.
+* La copia de contenido para la topología basada en almacenes de datos en la nube solo se puede realizar cuando los entornos de origen y destino están en el mismo proveedor de nube y en la misma región.
 * No es posible ejecutar operaciones de copia de contenido simultáneas en el mismo entorno.
 * La copia de contenido no se puede realizar si hay alguna operación activa ejecutándose en el entorno de destino o de origen, como, por ejemplo, una canalización de CI/CD.
 * La copia de contenido no debe utilizarse como una herramienta de clonación o espejo, ya que no puede rastrear el contenido movido o eliminado del origen.
 * Una copia de contenido no se puede pausar ni cancelar una vez que se inicia.
-* La copia de contenido duplica los recursos junto con metadatos de Dynamic Media desde el entorno superior al entorno inferior seleccionado. A continuación, los recursos copiados deben volver a procesarse mediante la variable [Flujo de trabajo de recursos de proceso DAM](https://experienceleague.adobe.com/es/docs/experience-manager-65/content/assets/using/assets-workflow) en el entorno inferior para utilizar la configuración de Dynamic Media correspondiente.
-* No se admiten [configuraciones de Dynamic Media con tamaños de recursos superiores a 2 GB habilitados](https://experienceleague.adobe.com/es/docs/experience-manager-65/content/assets/dynamic/config-dms7#optional-config-dms7-assets-larger-than-2gb).
+* La copia de contenido duplica los recursos junto con metadatos de Dynamic Media desde el entorno superior al entorno inferior seleccionado. A continuación, es necesario volver a procesar los recursos copiados mediante el [flujo de trabajo de recursos de proceso DAM](https://experienceleague.adobe.com/es/docs/experience-manager-65/content/assets/using/assets-workflow) en el entorno inferior. Este reprocesamiento es necesario para utilizar la configuración de Dynamic Media correspondiente.
+* No se admiten [configuraciones de Dynamic Media con tamaños de recurso mayores a 2 GB habilitados](https://experienceleague.adobe.com/es/docs/experience-manager-65/content/assets/dynamic/config-dms7#optional-config-dms7-assets-larger-than-2gb).
 * Las regiones del entorno de destino deben ser las mismas o un subconjunto de las regiones del entorno de origen.
 
 ## Problemas conocidos de la copia de contenido {#known-issues}
