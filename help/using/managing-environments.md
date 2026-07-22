@@ -3,19 +3,14 @@ title: Administrar entornos
 description: Aprenda a utilizar Cloud Manager para administrar sus entornos.
 exl-id: 700b0b4c-1e1a-4993-b366-426b14a98f8e
 TQID: https://experienceleague.adobe.com/Dz3Z5i-gSNSorc7Na74RKgm3e0P9b-3vjVRdJvu6a0c
-product_v2:
-  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
-  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-feature_v2:
-  - id: cd2426f1-5719-4006-b8c2-738e5969754b
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
+product_v2: id: c68cd75e-5bca-4bc3-a60e-9e183f816441id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2: id: cd2426f1-5719-4006-b8c2-738e5969754b
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 0dde660205ad28bc5924a5cc14404c48a0533ceb
 workflow-type: tm+mt
-source-wordcount: 275
-ht-degree: 100%
+source-wordcount: 261
+ht-degree: 57%
 
 ---
 
@@ -35,11 +30,11 @@ Cada uno de los entornos enumerados muestra su estado asociado.
 
 El mosaico **Entornos** muestra los entornos de producción y ensayo aprovisionados en el programa junto con el estado.
 
-El estado es el resultado de la energía resumido en los nodos del entorno en el siguiente orden de prioridad.
+El estado es el estado de energía agregado en los nodos de entorno enumerados en orden.
 
 * Verde: todos los nodos se están ejecutando
-* Rojo: están detenidos uno o más nodos.
-* Azul: uno o más nodos se están acercando.
+* Rojo: uno o más nodos están detenidos.
+* Azul: se están iniciando uno o más nodos.
 * Amarillo: uno o varios nodos tienen un estado de alimentación no disponible.
 
 ![Mosaico Entornos](/help/assets/Environments-card-new.png)
@@ -48,7 +43,7 @@ El estado es el resultado de la energía resumido en los nodos del entorno en el
 
 En el mosaico **Entornos**, haga clic en la fila de cualquier entorno para mostrar la pantalla **Entornos**.
 
-La pantalla **Entornos** muestra una tarjeta para los entornos de producción y ensayo de su programa. El nombre del entorno se muestra encima de cada tarjeta. La tarjeta incluye una tabla de nodos en el entorno junto con el tamaño de la CPU, el almacenamiento, la región y el estado.
+La pantalla **Entornos** muestra cada entorno de producción y ensayo del programa. El nombre del entorno aparece encima de cada tarjeta. La tarjeta incluye una tabla de nodos en el entorno junto con el tamaño de la CPU, el almacenamiento, la región y el estado.
 
 >[!NOTE]
 >
@@ -56,7 +51,7 @@ La pantalla **Entornos** muestra una tarjeta para los entornos de producción y 
 
 * Verde: en ejecución
 * Rojo: detenido
-* Azul: próximamente
+* Azul: inicio
 * Amarillo: no disponible
 
 ![Pestaña Entornos](/help/assets/Environments-tab.png)
@@ -67,12 +62,12 @@ La pantalla **Entornos** muestra una tarjeta para los entornos de producción y 
 
 >[!NOTE]
 >
->Solicite los registros de entorno a través de su ingeniero de éxito del cliente.
+>Solicite los registros de entorno a través de su representante de éxito del cliente.
 
 ## Tutorial de vídeo {#video-tutorial}
 
-Este vídeo proporciona información general sobre los entornos de Cloud Manager que están compuestos por instancias AEM de creación, publicación y Dispatcher.
+Este vídeo proporciona una introducción a los entornos de Cloud Manager que están compuestos por instancias de AEM de creación, publicación y Dispatcher.
 
->[!VIDEO](https://video.tv.adobe.com/v/34623?captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/26318/)
 
 *(3 minutos, 1 segundo)*
