@@ -15,9 +15,9 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 8964aad406d3e7fc5b911b98f928ad0427511230
+source-git-commit: b4846046c6c410642d3e23f2cc2c002a6d53b3b7
 workflow-type: tm+mt
-source-wordcount: 468
+source-wordcount: 455
 ht-degree: 2%
 
 ---
@@ -28,7 +28,7 @@ Descubra cómo puede iniciar actualizaciones de Service Pack para entornos de de
 
 >[!NOTE]
 >
->Esta característica solo está disponible para [el programa beta privado](/help/release-notes/current.md#beta-program).
+>Esta característica solo está disponible en [el programa beta privado](/help/release-notes/current.md#beta-program).
 
 ## Información general {#service-pack-updates-overview}
 
@@ -71,7 +71,7 @@ Después de iniciar la actualización, puede monitorizar el progreso en la Pági
 **Para realizar un seguimiento de la actualización del Service Pack:**
 
 1. Navegue hasta la página Actividad del panel de Cloud Manager.
-1. Busque la entrada de instalación del paquete de servicio.
+1. Busque la entrada Instalación del paquete de servicio.
 
    ![Instalaciones de Service Pack](/help/using/assets/service-pack-installation.png)
 
@@ -102,6 +102,6 @@ Una vez finalizada la instalación, se requiere su aprobación (o rechazo) para 
    ![Aprobación del Service Pack](/help/using/assets/service-pack-approve.png)
 
    * Para cancelar la actualización, haz clic en **Rechazar**.
-Se canceló la instalación del Service Pack y no se aplican cambios.
+     Se canceló la instalación del Service Pack y no se aplican cambios.
 
    ![Rechazo del Service Pack](/help/using/assets/service-pack-reject.png)

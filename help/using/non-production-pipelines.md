@@ -8,34 +8,34 @@ product_v2:
   - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: 4c73ab16ff7eab406c31a6d26cdd09360a94b3ea
+source-git-commit: 38a0aa1ab543c976c8e7526ac2ba78d06c9b06d6
 workflow-type: tm+mt
-source-wordcount: 2080
-ht-degree: 22%
+source-wordcount: 2070
+ht-degree: 20%
 
 ---
 
 # Adición de una canalización que no es de producción {#configuring-non-production-pipelines}
 
-Aprenda a utilizar Cloud Manager para crear y configurar canalizaciones que no son de producción e implementar su código. Si desea conocer primero una descripción general más conceptual del funcionamiento de las canalizaciones en Cloud Manager, consulte el documento [Canalizaciones de CI/CD](/help/overview/ci-cd-pipelines.md).
+Aprenda a utilizar Cloud Manager para crear y configurar canalizaciones que no son de producción e implementar su código. Para obtener una descripción general más conceptual del funcionamiento de las canalizaciones en Cloud Manager, consulte [Canalizaciones de CI/CD](/help/overview/ci-cd-pipelines.md).
 
 ## Información general {#overview}
 
 Con el mosaico **Canalizaciones** en [!UICONTROL Cloud Manager], el **Administrador de implementación** puede crear dos tipos diferentes de canalizaciones.
 
-* **Canalizaciones de producción**: una canalización de producción está diseñada específicamente y formada por una serie de pasos organizados para llevar el código fuente hasta la producción.
+* **Canalizaciones de producción**: una canalización de producción es una canalización diseñada específicamente que consta de una serie de pasos organizados para implementar el código fuente en la producción.
 * **Canalizaciones que no son de producción**: una canalización que no es de producción sirve principalmente para ejecutar un análisis de calidad del código o para implementar código fuente en un entorno de desarrollo.
 
 Este documento se centra en las canalizaciones que no son de producción. Para obtener más información sobre cómo configurar canalizaciones de producción, consulte el documento [Configuración de canalizaciones de producción](/help/using/production-pipelines.md).
 
 Existen dos tipos de canalizaciones que no son de producción:
 
-* **Canalizaciones de calidad del código**: ejecutan análisis de calidad del código de una rama de Git y ejecutan los pasos de compilación y calidad del código.
+* **Canalizaciones de calidad de código**: ejecutan análisis de calidad del código en el código de una rama Git y ejecutan los pasos de compilación y calidad del código.
 * **Canalizaciones de implementación**: además de ejecutar los pasos de compilación y calidad del código como las canalizaciones de calidad del código, estas lo implementan en un entorno que no es de producción.
 
 >[!NOTE]
 >
->No puede configurar una canalización hasta que su repositorio Git asociado tenga al menos una rama y la [configuración del programa](/help/getting-started/program-setup.md) se haya completado. Consulte el documento [Repositorios de Cloud Manager](/help/managing-code/managing-repositories.md) para aprender a añadir y administrar repositorios en Cloud Manager.
+>No puede configurar una canalización hasta que su repositorio Git asociado tenga al menos una rama y la [configuración del programa](/help/getting-started/program-setup.md) se haya completado. Para aprender a agregar y administrar repositorios en Cloud Manager, consulte [Repositorios de Cloud Manager](/help/managing-code/managing-repositories.md).
 
 ## Adición de una canalización que no es de producción {#add-non-production-pipeline}
 
@@ -127,7 +127,7 @@ Si ya existe una canalización de pila completa, Cloud Manager muestra un aviso 
 
 1. Haga clic en **Guardar**.
 
-## Acerca del uso de Smart Build en la canalización que no es de producción{#about-smart-build}
+## Utilizar Smart Build en la canalización que no sea de producción{#about-smart-build}
 
 **Smart Build** en Cloud Manager es una estrategia de compilación optimizada para canalizaciones que no son de producción. La versión inteligente reduce los tiempos de compilación al almacenar en caché los módulos y reconstruir solo los módulos que han cambiado desde la última ejecución correcta. Los módulos no modificados se reutilizan desde la caché, mientras que solo se reconstruyen los módulos modificados y sus dependencias, lo que mejora la eficacia de los flujos de trabajo de desarrollo iterativos.
 
@@ -160,7 +160,7 @@ La mejora del rendimiento obtenida mediante el uso de Smart Build depende de var
 * La frecuencia y el ámbito del código cambian.
 * La distribución de dependencias entre módulos.
 
-Generalmente, los proyectos con muchos módulos independientes pueden ver la mayor mejora.
+Los proyectos con muchos módulos independientes pueden ver la mayor mejora.
 
 ### Exclusión de caché por módulo{#smart-build-cache-optout}
 
@@ -187,13 +187,13 @@ Esta sintaxis fuerza al módulo a reconstruir en cada ejecución de canalizació
 Tenga en cuenta lo siguiente al utilizar Smart Build:
 
 * La generación inteligente se basa en el análisis de dependencias de Maven.
-* Los cambios fuera del gráfico de dependencias no pueden almacenar en déclencheur las regeneraciones.
-* Es posible que algunos complementos no sean totalmente compatibles con el almacenamiento en caché.
+* Los cambios fuera del gráfico de dependencias no almacenan en déclencheur las regeneraciones.
+* Algunos complementos no son totalmente compatibles con el almacenamiento en caché.
 * Puede volver a **Compilación completa** en cualquier momento editando la canalización que no sea de producción.
 
 Si encuentra un comportamiento de compilación inesperado, considere la posibilidad de deshabilitar el almacenamiento en caché para módulos específicos o cambiar temporalmente su estrategia de compilación a **Compilación completa**.
 
-### Solución de problemas de Smart Build{#smart-build-troubleshoot}
+### Resolver problemas de generación inteligente{#smart-build-troubleshoot}
 
 | Problema | Soluciones sugeridas |
 | --- | --- |
