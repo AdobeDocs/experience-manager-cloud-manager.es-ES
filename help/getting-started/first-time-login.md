@@ -3,14 +3,10 @@ title: Primer inicio de sesión
 description: Vaya esta página si ha definido las configuraciones generales y está listo para usar Cloud Manager por primera vez.
 exl-id: eb043437-8566-4a8d-8c5c-c8cf1d33daeb
 TQID: https://experienceleague.adobe.com/2fA-qKPKPhxCCRzxWC5pujXWQCa9vcP8tJtnSXSdipU
-product_v2:
-  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
-  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-feature_v2:
-  - id: cd2426f1-5719-4006-b8c2-738e5969754b
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: 1692390e24f8fa7d719bd8293a99586ec4ec36d4
+product_v2: id: c68cd75e-5bca-4bc3-a60e-9e183f816441id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2: id: cd2426f1-5719-4006-b8c2-738e5969754b
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: dac18093bc590afbd33e358582b3f1c703ce23e1
 workflow-type: tm+mt
 source-wordcount: 294
 ht-degree: 30%
@@ -27,7 +23,7 @@ Después de completar la configuración general de [!UICONTROL Cloud Manager], e
 
 ## Inicio de sesión por primera vez {#logging-in-for-the-first-time}
 
-1. Inicie sesión en Cloud Manager en [experience.adobe.com](https://experience.adobe.com/experiencemanager). Para obtener más información, consulta [Acerca de Adobe Experience Hub](https://experienceleague.adobe.com/es/docs/experience-manager-65/content/experience-hub/experience-hub)
+1. Inicie sesión en Cloud Manager en [experience.adobe.com](https://experience.adobe.com/experiencemanager). Para obtener más información, consulta [Acerca de Adobe Experience Hub](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/experience-hub/experience-hub)
 1. En el panel lateral izquierdo, haga clic en **Cloud Manager**.
 
    ![Cloud Manager en el panel lateral izquierdo de Experience Manager](/help/getting-started/assets/cloud-manager-experiencemanager.png)
@@ -59,4 +55,4 @@ Cloud Manager proporciona una vista consolidada de la actividad de un programa. 
 
 >[!NOTE]
 >
->De forma predeterminada, un usuario con acceso a un entorno de AEM también tendrá la función de usuario de Cloud Manager. Esta función no concede al usuario acceso a la vista de detalles del programa. Un usuario con solo la función de usuario de Cloud Manager puede navegar mediante las opciones del menú de programa a la URL de creación del entorno de AEM (si existen entornos). Estos usuarios deben ponerse en contacto con sus administradores si desean obtener acceso de nivel de programa.
+>De forma predeterminada, un usuario con acceso a un entorno de AEM también tendrá la función de usuario de Cloud Manager. Esta función no proporciona al usuario acceso a la vista de detalles del programa. Un usuario con solo la función de usuario de Cloud Manager puede navegar mediante las opciones del menú de programa a la URL de creación del entorno de AEM (si existen entornos). Estos usuarios deben ponerse en contacto con sus administradores si desean obtener acceso de nivel de programa.
