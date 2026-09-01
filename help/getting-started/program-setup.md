@@ -99,4 +99,4 @@ Tiene una red de entrega de contenido (CDN) como Akamai o CloudFront configurada
 
 ## Información general en vídeo {#video}
 
->[!VIDEO](https://video.tv.adobe.com/v/26313/)
+>[!VIDEO](https://video.tv.adobe.com/v/34622?captions=spa)
