@@ -8,7 +8,7 @@ product_v2:
   - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: fa6be369b979682cebf68852603725d8754605ab
+source-git-commit: 4381c51e54aaf1286b69c149dbf57c77bcd9a8bd
 workflow-type: tm+mt
 source-wordcount: 1411
 ht-degree: 65%
@@ -25,14 +25,14 @@ Los proyectos AEM existentes deben adherirse a algunas reglas básicas para crea
 
 * Los proyectos deben crearse con Apache Maven.
 * Debe haber un archivo `pom.xml` en la raíz del repositorio de Git.
-   * Este archivo de `pom.xml` puede hacer referencia a tantos módulos secundarios (que a su vez tienen otros módulos secundarios) como sea necesario.
-   * Puede agregar referencias a repositorios de artefactos Maven adicionales en sus archivos `pom.xml`.
-   * El acceso a [repositorios de artefactos protegidos por contraseña](#password-protected-maven-repositories) se admite cuando se configura. Sin embargo, no se admite el acceso a repositorios de artefactos protegidos por la red.
+  * Este archivo de `pom.xml` puede hacer referencia a tantos módulos secundarios (que a su vez tienen otros módulos secundarios) como sea necesario.
+  * Puede agregar referencias a repositorios de artefactos Maven adicionales en sus archivos `pom.xml`.
+  * El acceso a [repositorios de artefactos protegidos por contraseña](#password-protected-maven-repositories) se admite cuando se configura. Sin embargo, no se admite el acceso a repositorios de artefactos protegidos por la red.
 * Cloud Manager detecta paquetes de contenido implementables al analizar los archivos .zip del paquete de contenido que hay en un directorio denominado `target`.
-   * Cualquier número de módulos secundarios produce paquetes de contenido.
+  * Cualquier número de módulos secundarios produce paquetes de contenido.
 * Cloud Manager detecta artefactos de Dispatcher implementables al analizar `zip` archivos contenidos en subdirectorios de `target` llamados `conf` y `conf.d`.
 * Si hay más de un paquete de contenido, no se garantiza el pedido de las implementaciones de paquetes.
-   * Si se necesita un orden específico, se pueden utilizar dependencias del paquete de contenido para definir el orden.
+  * Si se necesita un orden específico, se pueden utilizar dependencias del paquete de contenido para definir el orden.
 * Se pueden [omitir](#skipping-content-packages) paquetes de la implementación.
 
 ## Activación de perfiles de Maven en Cloud Manager {#activating-maven-profiles-in-cloud-manager}
@@ -115,7 +115,7 @@ Y si desea que salga un mensaje simple cuando la generación se ejecuta solament
 
 ## Compatibilidad con repositorios Maven protegidos por contraseña {#password-protected-maven-repositories}
 
-Los artefactos de un repositorio Maven protegido por contraseña deben utilizarse con precaución, ya que el código implementado de esta manera no está completamente sujeto a las comprobaciones de calidad que aplican los estándares de calidad de Cloud Manager. Adobe también recomienda implementar las fuentes Java y todo el código fuente del proyecto junto con el binario.
+Los artefactos de un repositorio Maven protegido por contraseña deben utilizarse con precaución porque el código implementado de esta manera no está completamente sujeto a las comprobaciones de calidad que aplican los estándares de calidad de Cloud Manager. Adobe también recomienda implementar las fuentes Java y todo el código fuente del proyecto junto con el binario.
 
 >[!TIP]
 >

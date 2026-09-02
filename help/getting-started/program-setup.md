@@ -10,10 +10,10 @@ feature_v2:
   - id: cd2426f1-5719-4006-b8c2-738e5969754b
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: fa6be369b979682cebf68852603725d8754605ab
+source-git-commit: 4381c51e54aaf1286b69c149dbf57c77bcd9a8bd
 workflow-type: tm+mt
-source-wordcount: 549
-ht-degree: 65%
+source-wordcount: 548
+ht-degree: 60%
 
 ---
 
@@ -81,7 +81,7 @@ Si aún no ha creado una canalización, consulte [Configuración de canalizacion
 
 ## Cambio entre programas {#swithing-programs}
 
-Al trabajar en un programa, puede cambiar rápidamente a otro sin volver a la página de información general de Cloud Manager.
+Al trabajar en un programa, puede cambiar a otro sin volver a la página de información general de Cloud Manager.
 
 Utilice la barra de acciones para cambiar a otro programa, editar el actual o agregar uno nuevo.
 
@@ -91,11 +91,11 @@ Utilice la barra de acciones para cambiar a otro programa, editar el actual o ag
 
 Los indicadores clave de rendimiento (KPI) de sitios se miden en pruebas ejecutadas en el entorno de ensayo. Normalmente, estos KPI se ajustan para que coincidan con las capacidades del entorno de ensayo.
 
-Por ejemplo, un usuario que espera un promedio de 1000 vistas de página por minuto en su entorno de producción y que tiene cuatro servidores de Dispatcher/publicación en producción, reduce este escenario a 250 vistas de página por minuto. En este escenario se da por hecho que el entorno de ensayo consiste únicamente en un único par de servidor de Dispatcher/publicación.
+Por ejemplo, un equipo que espera un promedio de 1000 vistas de página por minuto en su entorno de producción y que tiene cuatro servidores de Dispatcher/publicación en producción escala este escenario a 250 vistas de página por minuto. En este escenario se da por hecho que el entorno de ensayo consiste únicamente en un único par de servidor de Dispatcher/publicación.
 
 Las pruebas de rendimiento de Assets implican la carga repetida de recursos durante un periodo de 30 minutos. El tiempo de procesamiento de cada recurso y diversas métricas de nivel de sistema se miden a lo largo de la prueba.
 
-Tiene una red de entrega de contenido (CDN) como Akamai o CloudFront configurada para su entorno de producción. Como [!UICONTROL Cloud Manager] prueba directamente en el entorno de ensayo, el KPI refleja únicamente el tráfico que se espera que pase a través de la red de distribución de contenido (CDN). Es decir, la caché falla. Normalmente, este tráfico es un subconjunto relativamente pequeño del tráfico total de producción.
+Tiene una red de entrega de contenido (CDN) como Akamai o CloudFront configurada para su entorno de producción. Como [!UICONTROL Cloud Manager] prueba directamente en el entorno de ensayo, el KPI refleja únicamente el tráfico que se espera que pase a través de la red de distribución de contenido (CDN). Esto se refiere a errores de caché. Normalmente, este tráfico es un subconjunto relativamente pequeño del tráfico total de producción.
 
 ## Información general en vídeo {#video}
 
