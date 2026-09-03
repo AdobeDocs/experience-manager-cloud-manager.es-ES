@@ -7,9 +7,9 @@ user-guide-description: Aprenda a utilizar Cloud Manager para autoadministrar Ad
 feature-set: Experience Manager Cloud Manager, Experience Manager
 feature: Cloud Manager
 role: Admin
-source-git-commit: 40d52d486e16f247b2edd249c9afaae2d91c0643
+source-git-commit: e10c3c15c01c28f6bad0a9cf0464288937402cb7
 workflow-type: tm+mt
-source-wordcount: '339'
+source-wordcount: '340'
 ht-degree: 85%
 
 ---
@@ -52,7 +52,7 @@ ht-degree: 85%
   + [Implementación de código](/help/using/code-deployment.md)
   + [Prueba de calidad del código](/help/using/code-quality-testing.md)
   + [Administrar entornos](/help/using/managing-environments.md)
-  + [Supervisar entornos](/help/using/monitoring-environments.md)
+  + [Monitorizar entornos](/help/using/monitoring-environments.md)
   + {hide-from-toc}[Actualizaciones de Service Pack para entornos de desarrollo (beta privada)](/help/using/service-packs-environments.md)
   + [API de Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api)
   + [CLI de Cloud Manager](https://github.com/adobe/aio-cli-plugin-cloudmanager/blob/main/README.md)
@@ -78,6 +78,7 @@ ht-degree: 85%
 + Notas de la versión {#release-notes}
   + [Actual](/help/release-notes/current.md)
   + 2026 {#rn-2026}
+    + [2026.8.0](/help/release-notes/2026/2026-8-0.md)
     + [2026.7.0](/help/release-notes/2026/2026-7-0.md)
     + [2026.6.0](/help/release-notes/2026/2026-6-0.md)
     + [2026.5.0](/help/release-notes/2026/2026-5-0.md)
