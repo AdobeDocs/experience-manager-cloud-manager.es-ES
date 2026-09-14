@@ -5,26 +5,34 @@ exl-id: 58344d8a-b869-4177-a9cf-6a8b7dfe9588
 TQID: https://experienceleague.adobe.com/VR-H6ubMFgVrkfzDvY4JWYlUtM-Dkztdewr5LiSZK1w
 product_v2:
   - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
+    internal-label: Experience Manager Cloud Manager
   - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
 feature_v2:
   - id: cd2426f1-5719-4006-b8c2-738e5969754b
+    internal-label: Environments
   - id: ff09c71c-26a9-449a-85f8-2aeb8ce96100
+    internal-label: Implementation
 subfeature_v2:
   - id: a4d14782-c381-4db2-89e3-8cf3f31b103c
+    internal-label: Code deployment
   - id: c14b2f98-ee16-4c49-b87b-919c91b01d9d
+    internal-label: CI/CD Pipelines
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
 source-git-commit: ee4f497a8bb5fb2d37fd8283721ebc9891f9053a
 workflow-type: tm+mt
-source-wordcount: 1266
-ht-degree: 69%
-
+source-wordcount: '1266'
+ht-degree: 71%
 ---
-
 # Introducción a [!UICONTROL Cloud Manager] para AMS {#introduction-to-cloud-manager}
 
 Para conocer Cloud Manager for AMS (Adobe Managed Services) y cómo permite a las organizaciones autoadministrar Adobe Experience Manager en la nube, comience aquí.
@@ -32,7 +40,7 @@ Para conocer Cloud Manager for AMS (Adobe Managed Services) y cómo permite a la
 >[!CONTEXTUALHELP]
 >id="aemcloud_cloudmanager_introduction"
 >title="Introducción a Cloud Manager para AMS"
->abstract="Permite a las organizaciones autoadministrar Adobe Experience Manager en la nube mediante un marco de trabajo de CI/CD. Este marco ayuda a los equipos a acelerar las personalizaciones o actualizaciones sin poner en riesgo el rendimiento o la seguridad."
+>abstract="Permite a las organizaciones autoadministrar Adobe Experience Manager en la nube mediante un marco de trabajo de CI/CD. Este marco de trabajo ayuda a los equipos a acelerar las personalizaciones o actualizaciones sin poner en riesgo el rendimiento o la seguridad."
 >additional-url="https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/cloud-manager/programs#cloud-manager" text="Creación de programas"
 >additional-url="https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/cloud-manager/environments#cloud-manager" text="Creación de entornos"
 
