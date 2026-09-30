@@ -2,26 +2,42 @@
 title: El entorno de compilación
 description: Obtenga información sobre el entorno de compilación especializado en el que los usuarios de Cloud Manager generan y prueban su código.
 exl-id: b3543320-66d4-4358-8aba-e9bdde00d976
-TQID: https://experienceleague.adobe.com/AdGVWjyF0DXEX7jH5S39JQ506oVnNYGtYqAWNHcQeP8
+autotag-review: '2026-09-28T18:27:41.054Z'
+TQID: 'https://experienceleague.adobe.com/DNcpDvFCu798nnK81kUEN8JmIv8DP72cas0YaVKPw40'
 product_v2:
   - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
+    internal-label: Experience Manager Cloud Manager
   - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
 feature_v2:
   - id: a01bfd36-4ab8-4bf8-9dc0-5b45b890552e
+    internal-label: APIs
   - id: cd2426f1-5719-4006-b8c2-738e5969754b
+    internal-label: Environments
+  - id: 143cda9c-8952-5316-be5f-2cd421ad8ecc
+    internal-label: Dispatcher
+  - id: 2741637d-a621-529a-b21b-bfe9be07a9c8
+    internal-label: Dispatcher
+  - id: 2e0e1a8a-56e7-5bd5-b805-f35a7c0c2ca7
+    internal-label: Projects
+  - id: 5be0fc8f-1cff-5c3e-bb92-2903a56a3de6
+    internal-label: Migration
+  - id: d54b7e32-ec14-504f-8821-22c27fbf278b
+    internal-label: Production
 subfeature_v2:
   - id: d9eb3b3e-9447-4ed4-bf4a-96c7b245cb27
+    internal-label: Cloud Manager APIs
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: fa6be369b979682cebf68852603725d8754605ab
+    internal-label: Security
+source-git-commit: 9b75e449f463ef5512ed4e42c4f749852d8c945a
 workflow-type: tm+mt
-source-wordcount: 1205
+source-wordcount: '1205'
 ht-degree: 50%
-
 ---
-
 # El entorno de compilación {#build-environment}
 
 Obtenga información sobre el entorno de compilación especializado que utiliza Cloud Manager para generar y probar su código.
@@ -32,23 +48,23 @@ Los entornos de compilación de Cloud Manager tienen los atributos siguientes.
 
 * El entorno de compilación está basado en Linux, derivado de Ubuntu 22.04.
 * Apache Maven 3.9.4 está instalado.
-   * Adobe recomienda [actualizar los repositorios de Maven para que utilicen HTTPS en lugar de HTTP](#https-maven).
+  * Adobe recomienda [actualizar los repositorios de Maven para que utilicen HTTPS en lugar de HTTP](#https-maven).
 * Las versiones de Java instaladas son JDK 8u401 y JDK 11.0.22 de Oracle.
-   * `/usr/lib/jvm/jdk1.8.0_401`
-   * `/usr/lib/jvm/jdk-11.0.22`
+  * `/usr/lib/jvm/jdk1.8.0_401`
+  * `/usr/lib/jvm/jdk-11.0.22`
 * De forma predeterminada, la variable de entorno `JAVA_HOME` está configurada en `/usr/lib/jvm/jdk1.8.0_401`, que contiene JDK 8u401 de Oracle. Consulte la sección [Versión JDK de ejecución de Maven alternativa](#alternate-maven) para obtener más información.
 * Se instalan los paquetes de sistema adicionales necesarios.
-   * `bzip2`
-   * `unzip`
-   * `libpng`
-   * `imagemagick`
-   * `graphicsmagick`
+  * `bzip2`
+  * `unzip`
+  * `libpng`
+  * `imagemagick`
+  * `graphicsmagick`
 * Otros paquetes se instalan en el momento de la compilación como se describe en la sección [Instalación de paquetes de sistema adicionales](#installing-additional-system-packages).
 * Cada compilación se realiza en un entorno nuevo. El contenedor de compilación no mantiene los datos entre ejecuciones.
 * Maven se ejecuta con estos tres comandos:
-   * `mvn --batch-mode org.apache.maven.plugins:maven-dependency-plugin:3.1.2:resolve-plugins`
-   * `mvn --batch-mode org.apache.maven.plugins:maven-clean-plugin:3.1.0:clean -Dmaven.clean.failOnError=false`
-   * `mvn --batch-mode org.jacoco:jacoco-maven-plugin:prepare-agent package`
+  * `mvn --batch-mode org.apache.maven.plugins:maven-dependency-plugin:3.1.2:resolve-plugins`
+  * `mvn --batch-mode org.apache.maven.plugins:maven-clean-plugin:3.1.0:clean -Dmaven.clean.failOnError=false`
+  * `mvn --batch-mode org.jacoco:jacoco-maven-plugin:prepare-agent package`
 * Maven se configura a nivel de sistema con un archivo `settings.xml`, que incluye automáticamente el repositorio de artefactos de Adobe público usando un perfil denominado `adobe-public`. Consulte el [Repositorio de Maven público de Adobe](https://repo1.maven.org/) para obtener más información.
 * Node.js 18 está disponible para [canalizaciones front-end](/help/overview/ci-cd-pipelines.md).
 
@@ -209,7 +225,7 @@ $ aio cloudmanager:list-pipeline-variables PIPELINEID
 Las variables deben cumplir ciertas limitaciones.
 
 * Los nombres de variables solo pueden contener caracteres alfanuméricos y el guion bajo (`_`).
-   * Por convención, los nombres están en mayúsculas.
+  * Por convención, los nombres están en mayúsculas.
 * Hay un límite de 200 variables por canalización.
 * Cada nombre debe tener menos de 100 caracteres.
 * Cada valor de cadena debe tener menos de 2048 caracteres.
