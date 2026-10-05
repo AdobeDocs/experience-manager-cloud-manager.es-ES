@@ -1,9 +1,8 @@
 ---
 source-git-commit: 9d910e1b1a4aad000a8389ddc22ce380bbccd4ef
 workflow-type: tm+mt
-source-wordcount: '57'
+source-wordcount: '58'
 ht-degree: 0%
-
 ---
 # Fragmentos (#snippets)
 
