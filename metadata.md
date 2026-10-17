@@ -2,22 +2,22 @@
 solution: Experience Manager, Experience Manager Cloud Manager
 product_v2:
   - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: "Experience Manager"
   - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
+    internal-label: "Experience Manager Cloud Manager"
 usetq: true
 landing-page-name: experience-manager
 landing-page-breadcrumb-title: AEM
 type: Documentation
 cloud: Experience Cloud
-git-repo: https://github.com/AdobeDocs/experience-manager-cloud-manager.es-ES
+git-repo: https://github.com/AdobeDocs/experience-manager-cloud-manager.en
 index: true
 recommendations: noDisplay
 source-git-commit: 10e055af714807a30120bb0b1bc160b77eeb64b6
 workflow-type: tm+mt
-source-wordcount: 130
+source-wordcount: '123'
 ht-degree: 0%
-
 ---
-
 
 # Metadatos para uso interno
 
