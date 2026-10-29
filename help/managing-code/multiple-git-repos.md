@@ -5,9 +5,12 @@ exl-id: 53bf78bb-489a-4a83-8459-c361f532d54a
 TQID: https://experienceleague.adobe.com/xKzqOfbi12A0POy-C7Gm7-n649DEBX9JP3LfXA5UC3Y
 product_v2:
   - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
+    internal-label: Experience Manager Cloud Manager
   - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 source-git-commit: a07522b4a3c0619bb57b414de58633c65d9c7b5c
 workflow-type: tm+mt
 source-wordcount: 727
