@@ -7,9 +7,9 @@ user-guide-description: Aprenda a utilizar Cloud Manager para autoadministrar Ad
 feature-set: Experience Manager Cloud Manager, Experience Manager
 feature: Cloud Manager
 role: Admin
-source-git-commit: 8ad70f139304d55e3f6508e8ebf3c90b870e0541
+source-git-commit: 772379fc5c641fcde07165a2beb2d49e964b481d
 workflow-type: tm+mt
-source-wordcount: '341'
+source-wordcount: '342'
 ht-degree: 85%
 ---
 
@@ -76,6 +76,7 @@ ht-degree: 85%
 + Notas de la versión {#release-notes}
   + [Actual](/help/release-notes/current.md)
   + 2026 {#rn-2026}
+    + [2026.10.0](/help/release-notes/2026/2026-10-0.md)
     + [2026.9.0](/help/release-notes/2026/2026-9-0.md)
     + [2026.8.0](/help/release-notes/2026/2026-8-0.md)
     + [2026.7.0](/help/release-notes/2026/2026-7-0.md)
