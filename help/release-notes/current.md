@@ -1,6 +1,6 @@
 ---
-title: Notas de la versión de Cloud Manager 2026.10.0
-description: Obtenga información acerca del lanzamiento de Cloud Manager 2026.10.0 en Adobe Managed Services.
+title: Notas de la versión de Cloud Manager 2026.11.0
+description: Obtenga información acerca del lanzamiento de Cloud Manager 2026.11.0 en Adobe Managed Services.
 feature: Release Information
 exl-id: cc1dc94b-129d-4de7-8e57-8fc5dcba7d9f
 TQID: 'https://experienceleague.adobe.com/4zfTpSYuFwrJZ-oeL1SObT14v2Rd--Z1hKn5JllHAro'
@@ -21,34 +21,34 @@ role_v2:
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
     internal-label: Optimization
-source-git-commit: 14893646d1f46cf53a9b5e40123a28613fdb9f6d
+source-git-commit: 772379fc5c641fcde07165a2beb2d49e964b481d
 workflow-type: tm+mt
 source-wordcount: '358'
 ht-degree: 9%
 ---
 
-# Notas de la versión de Cloud Manager 2026.10.0 en Adobe Managed Services {#release-notes}
+# Notas de la versión de Cloud Manager 2026.11.0 en Adobe Managed Services {#release-notes}
 
 <!-- add "hold: true" to metadata above to be able to commit/merge to Main WITHOUT Publishig -->
 
 <!-- RELEASE WIKI  https://wiki.corp.adobe.com/display/DMSArchitecture/Cloud+Manager+2025.04.0+Release -->
 
-Obtenga información acerca del lanzamiento de [!UICONTROL Cloud Manager] 2026.10.0 en Adobe Managed Services.
+Obtenga información acerca del lanzamiento de [!UICONTROL Cloud Manager] 2026.11.0 en Adobe Managed Services.
 
 Consulte también las [notas de la versión actual de Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/release-notes/home).
 
 ## Fechas de lanzamiento {#release-date}
 
-La fecha de la versión de [!UICONTROL Cloud Manager] 2026.10.0 es el jueves, 1 de octubre de 2026.
+La fecha de la versión de [!UICONTROL Cloud Manager] 2026.11.0 es el jueves, 5 de noviembre de 2026.
 <!-- There are no significant new features or bug fixes in the May Cloud Manager release. -->
 
-La próxima versión planificada es el jueves, 5 de noviembre de 2026.
+La próxima versión planificada es el jueves, 3 de diciembre de 2026.
 
 <!-- SAVE FOR FUTURE POSSIBLE USE There are no significant new features or bug fixes in the May Cloud Manager release. -->
 
 ## Nuevas funciones {#new-features}
 
-No hay funciones nuevas significativas en la versión de octubre de 2026 de Cloud Manager en AMS.
+No hay funciones nuevas significativas en la versión de noviembre de 2026 de Cloud Manager en AMS.
 
 
 ## Programas Beta {#beta-program}
@@ -68,9 +68,9 @@ Cloud Manager ahora admite canalizaciones de nivel web dedicadas para programas 
 Para unirse a Beta, póngase en contacto con su ingeniero de éxito del cliente de Adobe para obtener más información.
 
 
-## Correcciones de errores {#bug-fixes}
+## Corrección de errores {#bug-fixes}
 
-* La prueba de seguridad posterior al despliegue falla intermitentemente. En programas de Adobe Managed Services, la comprobación de configuración SSL de la prueba de seguridad posterior a la implementación falla intermitentemente en muchos programas y luego pasa los reintentos, lo que provoca errores de canalización innecesarios. La comprobación se ha estabilizado para que ya no falle inesperadamente. (CMGR-79870)
+* La prueba de seguridad posterior al despliegue falla intermitentemente. En programas de Adobe Managed Services, la comprobación de configuración SSL de la prueba de seguridad posterior a la implementación falla intermitentemente en muchos programas y luego pasa los reintentos, lo que provoca errores de canalización innecesarios. La comprobación se ha actualizado para que ya no falle incorrectamente. (CMGR-79870)
 
 <!--
 Known Issues {#known-issues}
